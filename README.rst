@@ -20,9 +20,10 @@ Currently the sources we have include:
      * `schema products <target/kbase/>`__
      * `docs <docs/kbase/>`__
  * mixs
+     * INCOMPLETE
      * code is currently external
-     * `schema products <target/neon/>`__
-     * `docs <docs/neon/>`__
+     * `schema products <target/mixs/>`__
+     * `docs <docs/mixs/>`__
 
 
 Building Targets
@@ -35,4 +36,8 @@ Help:
     make test
     make all
 
+Mappings
+========
+
+TODO
 

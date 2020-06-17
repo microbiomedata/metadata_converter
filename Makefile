@@ -43,4 +43,4 @@ target/%-docs: target/%.yaml
 	pipenv run gen-markdown --dir $@ $<
 
 deploy-docs:
-	$(foreach s,$(SOURCES), cp -pr target/$s/$s-docs docs/$s ;)
+	$(foreach s,$(SOURCES), cp -pr target/$s/$s-docs/ docs/$s ;)

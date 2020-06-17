@@ -1,0 +1,1405 @@
+
+# Type: mpr_perrootsample_in
+
+
+
+
+URI: [neon:MprPerrootsampleIn](https://data.neonscience.org/MprPerrootsampleIn)
+
+
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+
+## Attributes
+
+
+### Own
+
+ * [depthIncrementCode](depthIncrementCode.md)  <sub>OPT</sub>
+    * Description: Barcode of the depth increment
+    * range: [String](types/String.md)
+ * [depthIncrementFate](depthIncrementFate.md)  <sub>OPT</sub>
+    * Description: Fate of depth increment
+    * range: [String](types/String.md)
+ * [duplicateSampleIDQF](duplicateSampleIDQF.md)  <sub>OPT</sub>
+    * Description: Quality Flag for duplicate records at the sample ID level
+    * range: [Integer](types/Integer.md)
+
+### Inherited from cdw_densitylog_pub:
+
+ * [sizeCategory](sizeCategory.md)  <sub>OPT</sub>
+    * Description: Categorical size class of an individual or sample
+    * range: [String](types/String.md)
+ * [vstTagID](vstTagID.md)  <sub>OPT</sub>
+    * Description: The vegetation structure tagID value
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [branchBarkCover](branchBarkCover.md)  <sub>OPT</sub>
+    * Description: Visually estimated cover class of bark remaining on branches attached to a coarse downed wood particle
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [branchesPresent](branchesPresent.md)  <sub>OPT</sub>
+    * Description: Categorical indicator of branches > 1 cm diameter present on a coarse downed wood particle
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [decayClass](decayClass.md)  <sub>OPT</sub>
+    * Description: The categorical decay class assigned to a sampled log
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [leavesPresent](leavesPresent.md)  <sub>OPT</sub>
+    * Description: Categorical indicator of leaf/needle presence on a coarse downed wood particle
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [logBarkCover](logBarkCover.md)  <sub>OPT</sub>
+    * Description: Visually estimated cover class of bark remaining on the bole of a coarse downed wood particle
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [logDistance](logDistance.md)  <sub>OPT</sub>
+    * Description: The distance, to the nearest 0.1 meters, from the log to a reference point with known position (typically the transect origin)
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [logHandBreakable](logHandBreakable.md)  <sub>OPT</sub>
+    * Description: Categorical indicator that the outer-most wood from a coarse downed wood particle can be broken apart by hand
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [logHoldShape](logHoldShape.md)  <sub>OPT</sub>
+    * Description: Categorical indicator that a piece of coarse downed wood particle holds its original shape
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [logID](logID.md)  <sub>OPT</sub>
+    * Description: Identifier for each log sampled
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [twigsPresent](twigsPresent.md)  <sub>OPT</sub>
+    * Description: Categorical indicator of twigs < 1 cm diameter present on a coarse downed wood particle
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [logAzimuth](logAzimuth.md)  <sub>OPT</sub>
+    * Description: The azimuth relative to true north, to the nearest degree, measured from the plot centroid facing toward the sampled log
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [mappingMethod](mappingMethod.md)  <sub>OPT</sub>
+    * Description: Indicator for whether or not the specified location is mapped and the method used
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [sampleEasting](sampleEasting.md)  <sub>OPT</sub>
+    * Description: Easting value of sampled location
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [sampleNorthing](sampleNorthing.md)  <sub>OPT</sub>
+    * Description: Northing value of sampled location
+    * range: [Double](types/Double.md)
+    * inherited from: None
+
+### Inherited from csd_pressureGaugeRelationship_pub:
+
+ * [siteID](siteID.md)  <sub>OPT</sub>
+    * Description: NEON site code
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [dataQF](dataQF.md)  <sub>OPT</sub>
+    * Description: Data quality flag
+    * range: [String](types/String.md)
+ * [namedLocation](namedLocation.md)  <sub>OPT</sub>
+    * Description: Name of the measurement location in the NEON database
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [assetID](assetID.md)  <sub>OPT</sub>
+    * Description: MxAssetID from the calibration file
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [calCertificateFile](calCertificateFile.md)  <sub>OPT</sub>
+    * Description: Calibration certificate file
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [calculatedStage](calculatedStage.md)  <sub>OPT</sub>
+    * Description: Stage calculated from the sum of the water column height and sensorStaffGaugeOffset
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [calcWaterColumnHeight](calcWaterColumnHeight.md)  <sub>OPT</sub>
+    * Description: Calculated water column height based off of the calibratedPressMean
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [calibratedPressMean](calibratedPressMean.md)  <sub>OPT</sub>
+    * Description: Mean calibrated surface water pressure
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [calibratedPressObsCount](calibratedPressObsCount.md)  <sub>OPT</sub>
+    * Description: Number of observations included in the calibratedPressMean
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [calibratedPressStdDev](calibratedPressStdDev.md)  <sub>OPT</sub>
+    * Description: Stanrdard deviation of calibrated surface water pressure
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [gaugeHeight](gaugeHeight.md)  <sub>OPT</sub>
+    * Description: Height of water at staff gauge
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [sensorStaffGaugeOffset](sensorStaffGaugeOffset.md)  <sub>OPT</sub>
+    * Description: Offset between the pressure sensor and the staff gauge; i.e. the staff gauge reading when the water level is just at a reading of 0 pressure
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [calibrationID](calibrationID.md)  <sub>OPT</sub>
+    * Description: Calibration ID that corresponds to the ID assigned by CI to a set of calibration factors for a measurement stream
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [gaugeCollectDate](gaugeCollectDate.md)  <sub>OPT</sub>
+    * Description: Date of the gauge height reading collection event
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [stationHorizontalID](stationHorizontalID.md)  <sub>OPT</sub>
+    * Description: Horizontal code for station
+    * range: [String](types/String.md)
+    * inherited from: None
+
+### Inherited from inv_pervial_pub:
+
+ * [sampleID](sampleID.md)  <sub>OPT</sub>
+    * Description: Identifier for sample
+    * range: [String](types/String.md)
+ * [slideID](slideID.md)  <sub>OPT</sub>
+    * Description: Unique identifier associated with each slide per sampleID or subsampleID
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [referenceCount](referenceCount.md)  <sub>OPT</sub>
+    * Description: Number of individuals removed from this sample and placed in reference collection
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [referenceID](referenceID.md)  <sub>OPT</sub>
+    * Description: Unique identifier associated with the reference collection
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [sampleCode](sampleCode.md)  <sub>OPT</sub>
+    * Description: Barcode of a sample
+    * range: [String](types/String.md)
+ * [slideCode](slideCode.md)  <sub>OPT</sub>
+    * Description: Barcode of a slide
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [referenceCode](referenceCode.md)  <sub>OPT</sub>
+    * Description: Barcode of a reference sample
+    * range: [String](types/String.md)
+    * inherited from: None
+
+### Inherited from mam_barcoding_in:
+
+ * [specimenSource](specimenSource.md)  <sub>OPT</sub>
+    * Description: Physical source from which individual was obtained
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [archiveID](archiveID.md)  <sub>OPT</sub>
+    * Description: Identifier for the archive sample
+    * range: [String](types/String.md)
+ * [archiveLaboratoryName](archiveLaboratoryName.md)  <sub>OPT</sub>
+    * Description: Name of the laboratory or facility that is processing the archive sample
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [archiveFacilityID](archiveFacilityID.md)  <sub>OPT</sub>
+    * Description: Identifier at archive facility
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [associatedSpecimens](associatedSpecimens.md)  <sub>OPT</sub>
+    * Description: A list of specimens associated with the subject specimen at the time of its collection. References to other specimen identifiers should be preceded by the relationship
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [associatedTaxa](associatedTaxa.md)  <sub>OPT</sub>
+    * Description: A list of taxa associated with the taxon at the time of its collection. References to taxa are preceded by the relationship
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [externalURLs](externalURLs.md)  <sub>OPT</sub>
+    * Description: Pipe-delimited list of web accessible links that provide additional information about the specimen
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [sampleStatus](sampleStatus.md)  <sub>OPT</sub>
+    * Description: Status of sample for downstream processing and/or analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [wellCoordinates](wellCoordinates.md)  <sub>OPT</sub>
+    * Description: Location of sample in multi-well storage box or plate
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [identifier](identifier.md)  <sub>OPT</sub>
+    * Description: Full name of primary individual who assigned the specimen to a taxonomic group
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [identifierEmail](identifierEmail.md)  <sub>OPT</sub>
+    * Description: E-mail address of the primary identifier
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [identifierInstitution](identifierInstitution.md)  <sub>OPT</sub>
+    * Description: The full name of the institutional or organizational affiliation of the identifier
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [reproduction](reproduction.md)  <sub>OPT</sub>
+    * Description: The presumed method of reproduction
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [trappingDays](trappingDays.md)  <sub>OPT</sub>
+    * Description: Decimal days between trap setting and collecting events
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [depth](depth.md)  <sub>OPT</sub>
+    * Description: For organisms collected beneath the surface of a water body
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [depthPrecision](depthPrecision.md)  <sub>OPT</sub>
+    * Description: A numerical representation of the precision of the depth given in meters and is represented as greater or less than the depth value
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [eventTime](eventTime.md)  <sub>OPT</sub>
+    * Description: The time or time of day during which the sample was collected
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [netDepth](netDepth.md)  <sub>OPT</sub>
+    * Description: Deployment depth of the net
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [plateID](plateID.md)  <sub>OPT</sub>
+    * Description: Identifier of the multi-well storage plate
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [BOLDsequenceURL](BOLDsequenceURL.md)  <sub>OPT</sub>
+    * Description: Sequence from BOLD
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [BOLDtraceURL](BOLDtraceURL.md)  <sub>OPT</sub>
+    * Description: Trace from BOLD
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [NEONsequenceURL](NEONsequenceURL.md)  <sub>OPT</sub>
+    * Description: Sequence from BOLD hosted in NEON ECS
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [NEONtraceURL](NEONtraceURL.md)  <sub>OPT</sub>
+    * Description: Trace from BOLD hosted in NEON ECS
+    * range: [String](types/String.md)
+    * inherited from: None
+
+### Inherited from mos_archivepooling_pub:
+
+ * [archiveVialIDList](archiveVialIDList.md)  <sub>OPT</sub>
+    * Description: Identifier(s) for the vial(s) containing specimens for archive
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [archivedCount](archivedCount.md)  <sub>OPT</sub>
+    * Description: Number of individuals in the archive vial
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [archiveIDCode](archiveIDCode.md)  <sub>OPT</sub>
+    * Description: Barcode of the Archive sample
+    * range: [String](types/String.md)
+
+### Inherited from mpr_perrootsample_pub:
+
+ * [pitNamedLocation](pitNamedLocation.md)  <sub>OPT</sub>
+    * Description: Named location identifier for the soil pit
+    * range: [String](types/String.md)
+ * [rootStatus](rootStatus.md)  <sub>OPT</sub>
+    * Description: The state of an individual or sample
+    * range: [String](types/String.md)
+ * [depthIncrementID](depthIncrementID.md)  <sub>OPT</sub>
+    * Description: An identifier for the depth increment within a pit profile
+    * range: [String](types/String.md)
+ * [rootDryMass](rootDryMass.md)  <sub>OPT</sub>
+    * Description: Oven-dried mass of root sample or subsample
+    * range: [Double](types/Double.md)
+ * [incrementRootBiomass](incrementRootBiomass.md)  <sub>OPT</sub>
+    * Description: Root biomass per horizontal surface area per depth increment
+    * range: [Double](types/Double.md)
+ * [incrementRootDensity](incrementRootDensity.md)  <sub>OPT</sub>
+    * Description: Root biomass per collected soil volume per depth increment
+    * range: [Double](types/Double.md)
+
+### Inherited from spc_perbiogeosample_in:
+
+ * [labProjID](labProjID.md)  <sub>OPT</sub>
+    * Description: Identifier for soil physical properties analyses
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [biogeoTotWeight](biogeoTotWeight.md)  <sub>OPT</sub>
+    * Description: Total dry weight of the biogeochemistry soil sample
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [biogeoTotWeight2To5](biogeoTotWeight2To5.md)  <sub>OPT</sub>
+    * Description: Total dry weight of the 2-5 mm size fraction of the biogeochemistry soil sample
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [biogeoTotWeight5To20](biogeoTotWeight5To20.md)  <sub>OPT</sub>
+    * Description: Total dry weight of the 5-20 mm size fraction of the biogeochemistry soil sample
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [biogeoTotWeight20To75](biogeoTotWeight20To75.md)  <sub>OPT</sub>
+    * Description: Total dry weight of the 20-75 mm size fraction of the biogeochemistry soil sample
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [gypsum](gypsum.md)  <sub>OPT</sub>
+    * Description: Gypsum content of the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [caco3](caco3.md)  <sub>OPT</sub>
+    * Description: Carbonate content of the <2 mm fraction experssed as calcium carbonate
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [caNh4d](caNh4d.md)  <sub>OPT</sub>
+    * Description: Ammonium acetate extractable Calcium from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [kNh4d](kNh4d.md)  <sub>OPT</sub>
+    * Description: Ammonium acetate extractable potassium from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [mgNh4d](mgNh4d.md)  <sub>OPT</sub>
+    * Description: Ammonium acetate extractable magnesium from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [naNh4d](naNh4d.md)  <sub>OPT</sub>
+    * Description: Ammonium acetate extractable sodium from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [cecdNh4](cecdNh4.md)  <sub>OPT</sub>
+    * Description: Ammonium acetate cation exchange capacity (CEC) of the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [alSatCecd33](alSatCecd33.md)  <sub>OPT</sub>
+    * Description: Aluminum saturation of the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [baseSumCecd10](baseSumCecd10.md)  <sub>OPT</sub>
+    * Description: Sum of Ammonium acetate extractable bases from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [bsesatCecd10](bsesatCecd10.md)  <sub>OPT</sub>
+    * Description: Base saturation of the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [ececCecd33](ececCecd33.md)  <sub>OPT</sub>
+    * Description: Effective cation exchange capacity (CEC) of the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [alKcl](alKcl.md)  <sub>OPT</sub>
+    * Description: KCl extractable aluminum from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [feKcl](feKcl.md)  <sub>OPT</sub>
+    * Description: KCl extractable iron from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [mnKcl](mnKcl.md)  <sub>OPT</sub>
+    * Description: KCl extractable manganese from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [phCacl2](phCacl2.md)  <sub>OPT</sub>
+    * Description: pH of the <2 mm fraction in CaCl2
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [phH2o](phH2o.md)  <sub>OPT</sub>
+    * Description: pH of the <2 mm fraction in water
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [ec12pre](ec12pre.md)  <sub>OPT</sub>
+    * Description: 1:2 Electrical conductivity of the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [bSatx](bSatx.md)  <sub>OPT</sub>
+    * Description: Boron in the saturation extract from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [brSatx](brSatx.md)  <sub>OPT</sub>
+    * Description: Bromine in the saturation extract from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [caSatx](caSatx.md)  <sub>OPT</sub>
+    * Description: Calcium in the saturation extract from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [clSatx](clSatx.md)  <sub>OPT</sub>
+    * Description: Chlorine in the saturation extract from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [co3Satx](co3Satx.md)  <sub>OPT</sub>
+    * Description: Carbonate in the saturation extract from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [ecSatp](ecSatp.md)  <sub>OPT</sub>
+    * Description: Electrical conductivity of the saturated paste from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [flSatx](flSatx.md)  <sub>OPT</sub>
+    * Description: Florine in the saturation extract from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [hco3Sx](hco3Sx.md)  <sub>OPT</sub>
+    * Description: Bicarbonate in the saturation extract from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [kSatx](kSatx.md)  <sub>OPT</sub>
+    * Description: Potassium in the saturation extract from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [mgSatx](mgSatx.md)  <sub>OPT</sub>
+    * Description: Magnesium in the saturation extract from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [naSatx](naSatx.md)  <sub>OPT</sub>
+    * Description: Sodium in the saturation extract from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [no2Satx](no2Satx.md)  <sub>OPT</sub>
+    * Description: Nitrite in the saturation extract from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [no3Satx](no3Satx.md)  <sub>OPT</sub>
+    * Description: Nitrate in the saturation extract from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [pSatx](pSatx.md)  <sub>OPT</sub>
+    * Description: Phosphate in the saturation extract from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [phSp](phSp.md)  <sub>OPT</sub>
+    * Description: pH of the saturation extract from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [resist](resist.md)  <sub>OPT</sub>
+    * Description: Resistivity of the saturation extract from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [so4Satx](so4Satx.md)  <sub>OPT</sub>
+    * Description: Sulfate in the saturation extract from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [cTot](cTot.md)  <sub>OPT</sub>
+    * Description: Total carbon of the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [nTot](nTot.md)  <sub>OPT</sub>
+    * Description: Total nitrogen of the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [sTot](sTot.md)  <sub>OPT</sub>
+    * Description: Total sulfur of the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [eoc](eoc.md)  <sub>OPT</sub>
+    * Description: Estimated organic carbon of the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [analysisStartDate](analysisStartDate.md)  <sub>OPT</sub>
+    * Description: The start date or dateTime of analysis
+    * range: [Time](types/Time.md)
+    * inherited from: None
+ * [archiveFate](archiveFate.md)  <sub>OPT</sub>
+    * Description: Fate of the Archive sample
+    * range: [String](types/String.md)
+ * [caco3Conc](caco3Conc.md)  <sub>OPT</sub>
+    * Description: Carbonate concentration of the <2 mm fraction expressed as calcium carbonate
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [carbonTot](carbonTot.md)  <sub>OPT</sub>
+    * Description: Total carbon concentration of the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [estimatedOC](estimatedOC.md)  <sub>OPT</sub>
+    * Description: Estimated organic carbon concentration of the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [gypsumConc](gypsumConc.md)  <sub>OPT</sub>
+    * Description: Gypsum concentration of the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [nitrogenTot](nitrogenTot.md)  <sub>OPT</sub>
+    * Description: Total nitrogen concentration of the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [sulfurTot](sulfurTot.md)  <sub>OPT</sub>
+    * Description: Total sulfur concentration of the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [waterSatx](waterSatx.md)  <sub>OPT</sub>
+    * Description: Water content on a mass basis of the saturation extract from the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [biogeoNrcsFate](biogeoNrcsFate.md)  <sub>OPT</sub>
+    * Description: Fate of the sample used by NRCS for biogeochemistry measurements
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [sandVeryCoarseContent](sandVeryCoarseContent.md)  <sub>OPT</sub>
+    * Description: Very coarse sand (1-2 mm) content on a weight basis of the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [acidity](acidity.md)  <sub>OPT</sub>
+    * Description: Extractable acidity measured as the amount of acid neutralized in BaCl2-TEA at pH 8.2
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [acidOxalateMethod](acidOxalateMethod.md)  <sub>OPT</sub>
+    * Description: Methods used for acid oxalate extraction
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [acidOxalateMethodPub](acidOxalateMethodPub.md)  <sub>OPT</sub>
+    * Description: Citation for publication describing the methods used for acid oxalate extraction
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [acidOxalateProcessedDate](acidOxalateProcessedDate.md)  <sub>OPT</sub>
+    * Description: Date of processing sample for acid oxalate extraction
+    * range: [Time](types/Time.md)
+    * inherited from: None
+ * [airDryOvenDryMethod](airDryOvenDryMethod.md)  <sub>OPT</sub>
+    * Description: Methods used for air-dried to oven-dried ratio analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [airDryOvenDryMethodPub](airDryOvenDryMethodPub.md)  <sub>OPT</sub>
+    * Description: Citation for publication describing the methods used for air-dried to oven-dried ratio analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [airDryOvenDryProcessedDate](airDryOvenDryProcessedDate.md)  <sub>OPT</sub>
+    * Description: Date of processing sample for air-dried to oven-dried ratio analysis
+    * range: [Time](types/Time.md)
+    * inherited from: None
+ * [airDryOvenDryRatio](airDryOvenDryRatio.md)  <sub>OPT</sub>
+    * Description: Airdry to ovendry ratio of the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [alCitDithionate](alCitDithionate.md)  <sub>OPT</sub>
+    * Description: Dithionite citrate extractable aluminum content, indicates the amount of aluminum substituted for iron in iron oxides, reported as weight percent on the <2mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [alOxalate](alOxalate.md)  <sub>OPT</sub>
+    * Description: Total soil Al as estimated by the ammonium oxalate extraction method, reported as weight percent on the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [archiveCode](archiveCode.md)  <sub>OPT</sub>
+    * Description: Barcode of the archive sample
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [archiveRemarks](archiveRemarks.md)  <sub>OPT</sub>
+    * Description: Remarks from sample archiving
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [Bray1PExtractable](Bray1PExtractable.md)  <sub>OPT</sub>
+    * Description: Total phosphorus extracted by the Bray 1 solution
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [Bray1PMethod](Bray1PMethod.md)  <sub>OPT</sub>
+    * Description: Method used for Bray extraction phosphorus analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [Bray1PMethodPub](Bray1PMethodPub.md)  <sub>OPT</sub>
+    * Description: Citation for publication describing the methods used for Bray extraction phosphorus analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [Bray1PProcessedDate](Bray1PProcessedDate.md)  <sub>OPT</sub>
+    * Description: Date of processing sample for Bray extraction phosphorus analysis
+    * range: [Time](types/Time.md)
+    * inherited from: None
+ * [caco3Method](caco3Method.md)  <sub>OPT</sub>
+    * Description: Method used for calcium carbonate analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [caco3MethodPub](caco3MethodPub.md)  <sub>OPT</sub>
+    * Description: Citation for publication describing the methods used for calcium carbonate analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [caco3ProcessedDate](caco3ProcessedDate.md)  <sub>OPT</sub>
+    * Description: Date of processing sample for calcium carbonate analysis
+    * range: [Time](types/Time.md)
+    * inherited from: None
+ * [cecMethod](cecMethod.md)  <sub>OPT</sub>
+    * Description: Method used for cation exchange capacity analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [cecMethodPub](cecMethodPub.md)  <sub>OPT</sub>
+    * Description: Citation for publication describing the methods used for cation exchange capacity analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [cecProcessedDate](cecProcessedDate.md)  <sub>OPT</sub>
+    * Description: Date of processing sample for cation exchange capacity analysis
+    * range: [Time](types/Time.md)
+    * inherited from: None
+ * [citrateDithioMethod](citrateDithioMethod.md)  <sub>OPT</sub>
+    * Description: Methods used for citrate dithionate extraction
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [citrateDithioMethodPub](citrateDithioMethodPub.md)  <sub>OPT</sub>
+    * Description: Citation for publication describing the methods used for citrate dithionate extraction
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [citrateDithioProcessedDate](citrateDithioProcessedDate.md)  <sub>OPT</sub>
+    * Description: Date of processing sample for citrate dithionate extraction
+    * range: [Time](types/Time.md)
+    * inherited from: None
+ * [ctonRatio](ctonRatio.md)  <sub>OPT</sub>
+    * Description: Ratio of total Carbon to total Nitrogen of the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [ecMethod](ecMethod.md)  <sub>OPT</sub>
+    * Description: Method used for electrical conductivity analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [ecMethodPub](ecMethodPub.md)  <sub>OPT</sub>
+    * Description: Citation for publication describing the methods used for electrical conductivity analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [ecProcessedDate](ecProcessedDate.md)  <sub>OPT</sub>
+    * Description: Date of processing sample for electrical conductivity analysis
+    * range: [Time](types/Time.md)
+    * inherited from: None
+ * [extractAcidityMethod](extractAcidityMethod.md)  <sub>OPT</sub>
+    * Description: Method used for acidity analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [extractAcidityMethodPub](extractAcidityMethodPub.md)  <sub>OPT</sub>
+    * Description: Citation for publication describing the methods used for acidity analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [extractAcidityProcessedDate](extractAcidityProcessedDate.md)  <sub>OPT</sub>
+    * Description: Date of processing sample for acidity analysis
+    * range: [Time](types/Time.md)
+    * inherited from: None
+ * [feCitDithionate](feCitDithionate.md)  <sub>OPT</sub>
+    * Description: Dithionite citrate extractable iron, a general measure of total pedogenic iron, reported as weight percent on the <2mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [feOxalate](feOxalate.md)  <sub>OPT</sub>
+    * Description: Total soil noncrystalline iron as measured by the ammonium oxalate extraction method, reported as weight percent on the <2mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [gypsumMethod](gypsumMethod.md)  <sub>OPT</sub>
+    * Description: Method used for gypsum analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [gypsumMethodPub](gypsumMethodPub.md)  <sub>OPT</sub>
+    * Description: Citation for publication describing the methods used for gypsum analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [gypsumProcessedDate](gypsumProcessedDate.md)  <sub>OPT</sub>
+    * Description: Date of processing sample for gypsum analysis
+    * range: [Time](types/Time.md)
+    * inherited from: None
+ * [h2oReten15BarMethod](h2oReten15BarMethod.md)  <sub>OPT</sub>
+    * Description: Methods used for water retention analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [h2oReten15BarMethodPub](h2oReten15BarMethodPub.md)  <sub>OPT</sub>
+    * Description: Citation for publication describing the methods used for water retention analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [h2oReten15BarProcessedDate](h2oReten15BarProcessedDate.md)  <sub>OPT</sub>
+    * Description: Date of processing sample for water retention analysis
+    * range: [Time](types/Time.md)
+    * inherited from: None
+ * [KClExtractMethod](KClExtractMethod.md)  <sub>OPT</sub>
+    * Description: Method used for routine KCl extraction
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [KClExtractMethodPub](KClExtractMethodPub.md)  <sub>OPT</sub>
+    * Description: Citation for publication describing the methods used for KCl extraction
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [KClExtractProcessedDate](KClExtractProcessedDate.md)  <sub>OPT</sub>
+    * Description: Date of processing sample for KCl extraction
+    * range: [Time](types/Time.md)
+    * inherited from: None
+ * [MehlichIIIPMethod](MehlichIIIPMethod.md)  <sub>OPT</sub>
+    * Description: Method used for Mehlich phosphorus analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [MehlichIIIPMethodPub](MehlichIIIPMethodPub.md)  <sub>OPT</sub>
+    * Description: Citation for publication describing the methods used for Mehlich phosphorus analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [MehlichIIIPProcessedDate](MehlichIIIPProcessedDate.md)  <sub>OPT</sub>
+    * Description: Date of processing sample for Mehlich phosphorus analysis
+    * range: [Time](types/Time.md)
+    * inherited from: None
+ * [MehlichIIITotP](MehlichIIITotP.md)  <sub>OPT</sub>
+    * Description: Total phosphorus extracted by the Mehlich III solution
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [mnCitDithionate](mnCitDithionate.md)  <sub>OPT</sub>
+    * Description: Dithionite citrate extractable manganese content, reported as weight percent on the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [mnOxalate](mnOxalate.md)  <sub>OPT</sub>
+    * Description: Total soil manganese content fraction held in noncrystalline compounds as measured by the ammonium oxalate extraction method and reported as milligrams per kilogram on a <2 mm base
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [OlsenPExtractable](OlsenPExtractable.md)  <sub>OPT</sub>
+    * Description: Total phosphorus extracted by the Olsen solution
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [OlsenPMethod](OlsenPMethod.md)  <sub>OPT</sub>
+    * Description: Method used for Olsen phosphorus analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [OlsenPMethodPub](OlsenPMethodPub.md)  <sub>OPT</sub>
+    * Description: Citation for publication describing the methods used for Olsen phosphorus analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [OlsenPProcessedDate](OlsenPProcessedDate.md)  <sub>OPT</sub>
+    * Description: Date of processing sample for Olsen phosphorus analysis
+    * range: [Time](types/Time.md)
+    * inherited from: None
+ * [optDensityOxalate](optDensityOxalate.md)  <sub>OPT</sub>
+    * Description: Optical density of the ammonium oxalate soil extract
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [pOxalate](pOxalate.md)  <sub>OPT</sub>
+    * Description: Soil phosphorus measured by the ammonium oxalate extraction method
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [processingRemarks](processingRemarks.md)  <sub>OPT</sub>
+    * Description: Remarks from sample processing
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [routinepHProcessedDate](routinepHProcessedDate.md)  <sub>OPT</sub>
+    * Description: Date of processing sample for routine pH analysis
+    * range: [Time](types/Time.md)
+    * inherited from: None
+ * [routinepHMethod](routinepHMethod.md)  <sub>OPT</sub>
+    * Description: Method used for routine pH analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [routinepHMethodPub](routinepHMethodPub.md)  <sub>OPT</sub>
+    * Description: Citation for publication describing the methods used for routine pH analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [satPasteMethod](satPasteMethod.md)  <sub>OPT</sub>
+    * Description: Method used for saturated paste analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [satPasteMethodPub](satPasteMethodPub.md)  <sub>OPT</sub>
+    * Description: Citation for publication describing the methods used for saturated paste analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [satPasteProcessedDate](satPasteProcessedDate.md)  <sub>OPT</sub>
+    * Description: Date of processing sample for saturated paste analysis
+    * range: [Time](types/Time.md)
+    * inherited from: None
+ * [siliconCitrateDithionate](siliconCitrateDithionate.md)  <sub>OPT</sub>
+    * Description: Dithionite citrate extractable silicon, reported as weight percent on the <2mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [siOxalate](siOxalate.md)  <sub>OPT</sub>
+    * Description: Total soil silica content as measured by the ammonium oxalate extraction method, reported as a weight percent on a <2 mm base
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [TotalNCSMethod](TotalNCSMethod.md)  <sub>OPT</sub>
+    * Description: Methods used for total carbon, nitrogen and sulfur analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [TotalNCSMethodPub](TotalNCSMethodPub.md)  <sub>OPT</sub>
+    * Description: Citation for publication describing the methods used for total carbon, nitrogen and sulfur analysis
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [TotalNCSProcessedDate](TotalNCSProcessedDate.md)  <sub>OPT</sub>
+    * Description: Date of processing sample for total carbon, nitrogen and sulfur analysis
+    * range: [Time](types/Time.md)
+    * inherited from: None
+ * [waterRetention15Bar](waterRetention15Bar.md)  <sub>OPT</sub>
+    * Description: Water content after equilibration at 15 bars water tension, reported as gravimetric percent on the <2 mm fraction
+    * range: [Double](types/Double.md)
+    * inherited from: None
+
+### Inherited from waq_instantaneous_pub:
+
+ * [specificConductance](specificConductance.md)  <sub>OPT</sub>
+    * Description: Conductivity auto-corrected to 25 degrees C
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [startDate](startDate.md)  <sub>OPT</sub>
+    * Description: The start date-time or interval during which an event occurred
+    * range: [Time](types/Time.md)
+ * [endDate](endDate.md)  <sub>OPT</sub>
+    * Description: The end date-time or interval during which an event occurred
+    * range: [Time](types/Time.md)
+ * [dissolvedOxygen](dissolvedOxygen.md)  <sub>OPT</sub>
+    * Description: Dissolved Oxygen Concentration
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [dissolvedOxygenSaturation](dissolvedOxygenSaturation.md)  <sub>OPT</sub>
+    * Description: Dissolved Oxygen Percent Saturation
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [pH](pH.md)  <sub>OPT</sub>
+    * Description: Measurement of pH in sample
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [chlorophyll](chlorophyll.md)  <sub>OPT</sub>
+    * Description: Chlorophyll a concentration in water
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [fDOM](fDOM.md)  <sub>OPT</sub>
+    * Description: Fluorescent dissolved organic matter concentration as quinine sulfate equivalents
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [turbidity](turbidity.md)  <sub>OPT</sub>
+    * Description: Turbidity of water as FNU
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [sensorDepth](sensorDepth.md)  <sub>OPT</sub>
+    * Description: Water depth of measurement
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [sensorDepthValidCalQF](sensorDepthValidCalQF.md)  <sub>OPT</sub>
+    * Description: Quality flag for the valid calibration check of sensor depth detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [specificConductanceValidCalQF](specificConductanceValidCalQF.md)  <sub>OPT</sub>
+    * Description: Quality flag for the valid calibration check of specific conductance detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [buoyNAFlag](buoyNAFlag.md)  <sub>OPT</sub>
+    * Description: Flag indicating that data could not be published due to an error on the buoy (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [chlorophyllAlphaQF](chlorophyllAlphaQF.md)  <sub>OPT</sub>
+    * Description: Chlorophyll a quality assurance and quality control report for the alchlorophyll aa quality flag that indicates if one or more quality analysis failed for a datum detailed in NEON.DOC.001113 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [chlorophyllBetaQF](chlorophyllBetaQF.md)  <sub>OPT</sub>
+    * Description: Chlorophyll a quality assurance and quality control report for the beta quality flag which indicates if one or more quality analysis could not be run for a datum detailed in NEON.DOC.001113 (1=fail 0=pass -1=NA (i.e could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [chlorophyllConsistQF](chlorophyllConsistQF.md)  <sub>OPT</sub>
+    * Description: Chlorophyll a quality flag for the consistency test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [chlorophyllExpUncert](chlorophyllExpUncert.md)  <sub>OPT</sub>
+    * Description: Expanded uncertainty for chlorophyll a
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [chlorophyllFinalQF](chlorophyllFinalQF.md)  <sub>OPT</sub>
+    * Description: Chlorophyll a final quality flag indicating whether a data product has passed or failed an overall assessment of its quality; detailed in ATBD (1=fail; 0=pass)
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [chlorophyllFinalQFSciRvw](chlorophyllFinalQFSciRvw.md)  <sub>OPT</sub>
+    * Description: Chlorophyll a final quality flag indicating whether a data product has failed a science review of its quality detailed in NEON.DOC.001113 (1=fail; 0=pass/not-reviewed)
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [chlorophyllGapQF](chlorophyllGapQF.md)  <sub>OPT</sub>
+    * Description: Chlorophyll a quality flag for the gap test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [chlorophyllNullQF](chlorophyllNullQF.md)  <sub>OPT</sub>
+    * Description: Chlorophyll a quality flag for the null test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [chlorophyllPersistenceQF](chlorophyllPersistenceQF.md)  <sub>OPT</sub>
+    * Description: Chlorophyll a quality flag for the persistence test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [chlorophyllRangeQF](chlorophyllRangeQF.md)  <sub>OPT</sub>
+    * Description: Chlorophyll a quality flag for the range test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [chlorophyllSpikeQF](chlorophyllSpikeQF.md)  <sub>OPT</sub>
+    * Description: Chlorophyll a quality flag for the spike test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [chlorophyllStepQF](chlorophyllStepQF.md)  <sub>OPT</sub>
+    * Description: Chlorophyll a quality flag for the step test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [chlorophyllValidCalQF](chlorophyllValidCalQF.md)  <sub>OPT</sub>
+    * Description: Quality flag for the valid calibration check of chlorophyll a detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenAlphaQF](dissolvedOxygenAlphaQF.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen quality assurance and quality control report for the alpha quality flag that indicates if one or more quality analysis failed for a datum detailed in NEON.DOC.001113 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenBetaQF](dissolvedOxygenBetaQF.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen quality assurance and quality control report for the beta quality flag which indicates if one or more quality analysis could not be run for a datum detailed in NEON.DOC.001113 (1=fail 0=pass -1=NA (i.e could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenConsistQF](dissolvedOxygenConsistQF.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen quality flag for the consistency test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenExpUncert](dissolvedOxygenExpUncert.md)  <sub>OPT</sub>
+    * Description: Expanded uncertainty for dissolved oxygen
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [dissolvedOxygenFinalQF](dissolvedOxygenFinalQF.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen final quality flag indicating whether a data product has passed or failed an overall assessment of its quality; detailed in ATBD (1=fail; 0=pass)
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenFinalQFSciRvw](dissolvedOxygenFinalQFSciRvw.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen final quality flag indicating whether a data product has failed a science review of its quality detailed in NEON.DOC.001113 (1=fail; 0=pass/not-reviewed)
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenGapQF](dissolvedOxygenGapQF.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen quality flag for the gap test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenNullQF](dissolvedOxygenNullQF.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen quality flag for the null test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenPersistenceQF](dissolvedOxygenPersistenceQF.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen quality flag for the persistence test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenRangeQF](dissolvedOxygenRangeQF.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen quality flag for the range test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenSatAlphaQF](dissolvedOxygenSatAlphaQF.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen saturation quality assurance and quality control report for the alpha quality flag that indicates if one or more quality analysis failed for a datum detailed in NEON.DOC.001113 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenSatBetaQF](dissolvedOxygenSatBetaQF.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen saturation quality assurance and quality control report for the beta quality flag which indicates if one or more quality analysis could not be run for a datum detailed in NEON.DOC.001113 (1=fail 0=pass -1=NA (i.e could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenSatConsistQF](dissolvedOxygenSatConsistQF.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen saturation quality flag for the consistency test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenSatExpUncert](dissolvedOxygenSatExpUncert.md)  <sub>OPT</sub>
+    * Description: Expanded uncertainty for dissolved oxygen saturation
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [dissolvedOxygenSatFinalQF](dissolvedOxygenSatFinalQF.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen saturation final quality flag indicating whether a data product has passed or failed an overall assessment of its quality; detailed in ATBD (1=fail; 0=pass)
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [dissolvedOxygenSatFinalQFSciRvw](dissolvedOxygenSatFinalQFSciRvw.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen saturation final quality flag indicating whether a data product has failed a science review of its quality detailed in NEON.DOC.001113 (1=fail; 0=pass/not-reviewed)
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [dissolvedOxygenSatGapQF](dissolvedOxygenSatGapQF.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen saturation quality flag for the gap test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenSatNullQF](dissolvedOxygenSatNullQF.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen saturation quality flag for the null test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenSatPersistQF](dissolvedOxygenSatPersistQF.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen saturation quality flag for the persistence test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenSatRangeQF](dissolvedOxygenSatRangeQF.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen saturation quality flag for the range test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenSatSpikeQF](dissolvedOxygenSatSpikeQF.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen saturation quality flag for the spike test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenSatStepQF](dissolvedOxygenSatStepQF.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen saturation quality flag for the step test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenSatValidCalQF](dissolvedOxygenSatValidCalQF.md)  <sub>OPT</sub>
+    * Description: Quality flag for the valid calibration check of dissolved oxygen saturation detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenSpikeQF](dissolvedOxygenSpikeQF.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen quality flag for the spike test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenStepQF](dissolvedOxygenStepQF.md)  <sub>OPT</sub>
+    * Description: Dissolved oxygen quality flag for the step test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenValidCalQF](dissolvedOxygenValidCalQF.md)  <sub>OPT</sub>
+    * Description: Quality flag for the valid calibration check of dissolved oxygen detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [fDOMAbsQF](fDOMAbsQF.md)  <sub>OPT</sub>
+    * Description: Quality flag indicating that fDOM absorbance corrections were applied = 0; unable to be applied = 1; absorbance values were high = 2; calculated correction factor was 1 (i.e. no absorbance correction was made) = 3
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [fDOMAlphaQF](fDOMAlphaQF.md)  <sub>OPT</sub>
+    * Description: fDOM quality assurance and quality control report for the alfDOMa quality flag that indicates if one or more quality analysis failed for a datum detailed in NEON.DOC.001113 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [fDOMBetaQF](fDOMBetaQF.md)  <sub>OPT</sub>
+    * Description: fDOM quality assurance and quality control report for the beta quality flag which indicates if one or more quality analysis could not be run for a datum detailed in NEON.DOC.001113 (1=fail 0=pass -1=NA (i.e could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [fDOMConsistQF](fDOMConsistQF.md)  <sub>OPT</sub>
+    * Description: fDOM quality flag for the consistency test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [fDOMExpUncert](fDOMExpUncert.md)  <sub>OPT</sub>
+    * Description: Expanded uncertainty for fDOM
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [fDOMFinalQF](fDOMFinalQF.md)  <sub>OPT</sub>
+    * Description: fDOM final quality flag indicating whether a data product has passed or failed an overall assessment of its quality; detailed in ATBD (1=fail; 0=pass)
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [fDOMFinalQFSciRvw](fDOMFinalQFSciRvw.md)  <sub>OPT</sub>
+    * Description: fDOM final quality flag indicating whether a data product has failed a science review of its quality detailed in NEON.DOC.001113 (1=fail; 0=pass/not-reviewed)
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [fDOMGapQF](fDOMGapQF.md)  <sub>OPT</sub>
+    * Description: fDOM quality flag for the gap test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [fDOMNullQF](fDOMNullQF.md)  <sub>OPT</sub>
+    * Description: fDOM quality flag for the null test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [fDOMPersistenceQF](fDOMPersistenceQF.md)  <sub>OPT</sub>
+    * Description: fDOM quality flag for the persistence test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [fDOMRangeQF](fDOMRangeQF.md)  <sub>OPT</sub>
+    * Description: fDOM quality flag for the range test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [fDOMSpikeQF](fDOMSpikeQF.md)  <sub>OPT</sub>
+    * Description: fDOM quality flag for the spike test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [fDOMStepQF](fDOMStepQF.md)  <sub>OPT</sub>
+    * Description: fDOM quality flag for the step test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [fDOMTempQF](fDOMTempQF.md)  <sub>OPT</sub>
+    * Description: Quality flag indicating that fDOM temperature corrections were applied = 0 or unable to be applied = 1
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [fDOMValidCalQF](fDOMValidCalQF.md)  <sub>OPT</sub>
+    * Description: Quality flag for the valid calibration check of fDOM detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [pHAlphaQF](pHAlphaQF.md)  <sub>OPT</sub>
+    * Description: pH quality assurance and quality control report for the alpha quality flag that indicates if one or more quality analysis failed for a datum detailed in NEON.DOC.001113 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [pHBetaQF](pHBetaQF.md)  <sub>OPT</sub>
+    * Description: pH quality assurance and quality control report for the beta quality flag which indicates if one or more quality analysis could not be run for a datum detailed in NEON.DOC.001113 (1=fail 0=pass -1=NA (i.e could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [pHConsistQF](pHConsistQF.md)  <sub>OPT</sub>
+    * Description: pH quality flag for the consistency test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [pHExpUncert](pHExpUncert.md)  <sub>OPT</sub>
+    * Description: Expanded uncertainty for pH
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [pHFinalQF](pHFinalQF.md)  <sub>OPT</sub>
+    * Description: pH final quality flag indicating whether a data product has passed or failed an overall assessment of its quality; detailed in ATBD (1=fail; 0=pass)
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [pHFinalQFSciRvw](pHFinalQFSciRvw.md)  <sub>OPT</sub>
+    * Description: pH final quality flag indicating whether a data product has failed a science review of its quality detailed in NEON.DOC.001113 (1=fail; 0=pass/not-reviewed)
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [pHGapQF](pHGapQF.md)  <sub>OPT</sub>
+    * Description: pH quality flag for the gap test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [pHNullQF](pHNullQF.md)  <sub>OPT</sub>
+    * Description: pH quality flag for the null test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [pHPersistenceQF](pHPersistenceQF.md)  <sub>OPT</sub>
+    * Description: pH quality flag for the persistence test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [pHRangeQF](pHRangeQF.md)  <sub>OPT</sub>
+    * Description: pH quality flag for the range test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [pHSpikeQF](pHSpikeQF.md)  <sub>OPT</sub>
+    * Description: pH quality flag for the spike test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [pHStepQF](pHStepQF.md)  <sub>OPT</sub>
+    * Description: pH quality flag for the step test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [pHValidCalQF](pHValidCalQF.md)  <sub>OPT</sub>
+    * Description: Quality flag for the valid calibration check of pH detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [sensorDepthExpUncert](sensorDepthExpUncert.md)  <sub>OPT</sub>
+    * Description: Expanded uncertainty for sensor depth
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [sensorDepthFinalQFSciRvw](sensorDepthFinalQFSciRvw.md)  <sub>OPT</sub>
+    * Description: Sensor depth quality flag indicating whether a data product has failed a science review of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass/not-reviewed)
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [specificCondFinalQFSciRvw](specificCondFinalQFSciRvw.md)  <sub>OPT</sub>
+    * Description: Specific conductance final quality flag indicating whether a data product has failed a science review of its quality detailed in NEON.DOC.001113 (1=fail; 0=pass/not-reviewed)
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [specificConductanceAlphaQF](specificConductanceAlphaQF.md)  <sub>OPT</sub>
+    * Description: Specific conductance quality assurance and quality control report for the alpha quality flag that indicates if one or more quality analysis failed for a datum detailed in NEON.DOC.001113 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [specificConductanceBetaQF](specificConductanceBetaQF.md)  <sub>OPT</sub>
+    * Description: Specific conductance quality assurance and quality control report for the beta quality flag which indicates if one or more quality analysis could not be run for a datum detailed in NEON.DOC.001113 (1=fail 0=pass -1=NA (i.e could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [specificConductanceConsistQF](specificConductanceConsistQF.md)  <sub>OPT</sub>
+    * Description: Specific conductance quality flag for the consistency test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [specificConductanceExpUncert](specificConductanceExpUncert.md)  <sub>OPT</sub>
+    * Description: Expanded uncertainty for specific conductance
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [specificCondFinalQF](specificCondFinalQF.md)  <sub>OPT</sub>
+    * Description: Specific conductance final quality flag indicating whether a data product has passed or failed an overall assessment of its quality; detailed in ATBD (1=fail; 0=pass)
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [specificConductanceGapQF](specificConductanceGapQF.md)  <sub>OPT</sub>
+    * Description: Specific conductance quality flag for the gap test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [specificConductanceNullQF](specificConductanceNullQF.md)  <sub>OPT</sub>
+    * Description: Specific conductance quality flag for the null test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [specificConductancePersistQF](specificConductancePersistQF.md)  <sub>OPT</sub>
+    * Description: Specific conductance quality flag for the persistence test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [specificConductanceRangeQF](specificConductanceRangeQF.md)  <sub>OPT</sub>
+    * Description: Specific conductance quality flag for the range test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [specificConductanceSpikeQF](specificConductanceSpikeQF.md)  <sub>OPT</sub>
+    * Description: Specific conductance quality flag for the spike test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [specificConductanceStepQF](specificConductanceStepQF.md)  <sub>OPT</sub>
+    * Description: Specific conductance quality flag for the step test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [turbidityAlphaQF](turbidityAlphaQF.md)  <sub>OPT</sub>
+    * Description: Turbidity quality assurance and quality control report for the alturbiditya quality flag that indicates if one or more quality analysis failed for a datum detailed in NEON.DOC.001113 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [turbidityBetaQF](turbidityBetaQF.md)  <sub>OPT</sub>
+    * Description: Turbidity quality assurance and quality control report for the beta quality flag which indicates if one or more quality analysis could not be run for a datum detailed in NEON.DOC.001113 (1=fail 0=pass -1=NA (i.e could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [turbidityConsistQF](turbidityConsistQF.md)  <sub>OPT</sub>
+    * Description: Turbidity quality flag for the consistency test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [turbidityExpUncert](turbidityExpUncert.md)  <sub>OPT</sub>
+    * Description: Expanded uncertainty for turbidity
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [turbidityFinalQF](turbidityFinalQF.md)  <sub>OPT</sub>
+    * Description: Turbidity final quality flag indicating whether a data product has passed or failed an overall assessment of its quality; detailed in ATBD (1=fail; 0=pass)
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [turbidityFinalQFSciRvw](turbidityFinalQFSciRvw.md)  <sub>OPT</sub>
+    * Description: Turbidity final quality flag indicating whether a data product has failed a science review of its quality detailed in NEON.DOC.001113 (1=fail; 0=pass/not-reviewed)
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [turbidityGapQF](turbidityGapQF.md)  <sub>OPT</sub>
+    * Description: Turbidity quality flag for the gap test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [turbidityNullQF](turbidityNullQF.md)  <sub>OPT</sub>
+    * Description: Turbidity quality flag for the null test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [turbidityPersistenceQF](turbidityPersistenceQF.md)  <sub>OPT</sub>
+    * Description: Turbidity quality flag for the persistence test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [turbidityRangeQF](turbidityRangeQF.md)  <sub>OPT</sub>
+    * Description: Turbidity quality flag for the range test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [turbiditySpikeQF](turbiditySpikeQF.md)  <sub>OPT</sub>
+    * Description: Turbidity quality flag for the spike test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [turbidityStepQF](turbidityStepQF.md)  <sub>OPT</sub>
+    * Description: Turbidity quality flag for the step test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [turbidityValidCalQF](turbidityValidCalQF.md)  <sub>OPT</sub>
+    * Description: Quality flag for the valid calibration check of turbidity detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [sensorDepthAlphaQF](sensorDepthAlphaQF.md)  <sub>OPT</sub>
+    * Description: Water depth of measurement quality assurance and quality control report for the alpha quality flag that indicates if one or more quality analysis failed for a datum detailed in NEON.DOC.001113 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [sensorDepthBetaQF](sensorDepthBetaQF.md)  <sub>OPT</sub>
+    * Description: Water depth of measurement quality assurance and quality control report for the beta quality flag which indicates if one or more quality analysis could not be run for a datum detailed in NEON.DOC.001113 (1=fail 0=pass -1=NA (i.e could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [sensorDepthConsistQF](sensorDepthConsistQF.md)  <sub>OPT</sub>
+    * Description: Water depth of measurement quality flag for the consistency test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [sensorDepthGapQF](sensorDepthGapQF.md)  <sub>OPT</sub>
+    * Description: Water depth of measurement quality flag for the gap test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [sensorDepthNullQF](sensorDepthNullQF.md)  <sub>OPT</sub>
+    * Description: Water depth of measurement quality flag for the null test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [sensorDepthPersistQF](sensorDepthPersistQF.md)  <sub>OPT</sub>
+    * Description: Water depth of measurement quality flag for the persistence test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [sensorDepthRangeQF](sensorDepthRangeQF.md)  <sub>OPT</sub>
+    * Description: Water depth of measurement quality flag for the range test detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [spectrumCount](spectrumCount.md)  <sub>OPT</sub>
+    * Description: The number of absorbance spectra (AKA SUNA light frames) that were averaged to correct the fDOM and or chla data. Up to 50 light frames will be averaged
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [rawCalibratedfDOM](rawCalibratedfDOM.md)  <sub>OPT</sub>
+    * Description: Calibrated fluorescent dissolved organic matter concentration as quinine sulfate equivalents without temperature or absorbance corrections
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [chlorophyllSuspectCalQF](chlorophyllSuspectCalQF.md)  <sub>OPT</sub>
+    * Description: Quality flag for the suspect calibration check of chlorophyll a detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissolvedOxygenSuspectCalQF](dissolvedOxygenSuspectCalQF.md)  <sub>OPT</sub>
+    * Description: Quality flag for the suspect calibration check of dissolved oxygen detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [dissOxygenSatSuspectCalQF](dissOxygenSatSuspectCalQF.md)  <sub>OPT</sub>
+    * Description: Quality flag for the suspect calibration check of dissolved oxygen saturation detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [fDOMSuspectCalQF](fDOMSuspectCalQF.md)  <sub>OPT</sub>
+    * Description: Quality flag for the suspect calibration check of fDOM detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [pHSuspectCalQF](pHSuspectCalQF.md)  <sub>OPT</sub>
+    * Description: Quality flag for the suspect calibration check of pH detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [sensorDepthSuspectCalQF](sensorDepthSuspectCalQF.md)  <sub>OPT</sub>
+    * Description: Quality flag for the suspect calibration check of sensor depth detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [specificCondSuspectCalQF](specificCondSuspectCalQF.md)  <sub>OPT</sub>
+    * Description: Quality flag for the suspect calibration check of specific conductance detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [turbiditySuspectCalQF](turbiditySuspectCalQF.md)  <sub>OPT</sub>
+    * Description: Quality flag for the suspect calibration check of turbidity detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e. could not be run))
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+ * [sensorDepthFinalQF](sensorDepthFinalQF.md)  <sub>OPT</sub>
+    * Description: Water depth final quality flag indicating whether a data product has passed or failed an overall assessment of its quality; detailed in ATBD (1=fail; 0=pass)
+    * range: [Integer](types/Integer.md)
+    * inherited from: None
+
+### Inherited from wc_externalLabDataByAnalyte_in:
+
+ * [stationID](stationID.md)  <sub>OPT</sub>
+    * Description: Identifier for station where sample was collected
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [coolerTemp](coolerTemp.md)  <sub>OPT</sub>
+    * Description: Temperature of the cooler when the sample arrived at the external lab
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [externalLabMetadata](externalLabMetadata.md)  <sub>OPT</sub>
+    * Description: The external lab's metadata
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [shipmentWarmQF](shipmentWarmQF.md)  <sub>OPT</sub>
+    * Description: Quality Flag for cooler arriving at external lab too warm (above 6 C)
+    * range: [Double](types/Double.md)
+    * inherited from: None
+ * [uploadDate](uploadDate.md)  <sub>OPT</sub>
+    * Description: Date the file was uploaded
+    * range: [Time](types/Time.md)
+    * inherited from: None
+ * [analyteUnits](analyteUnits.md)  <sub>OPT</sub>
+    * Description: Associated units of measure for analyte
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [sampleFate](sampleFate.md)  <sub>OPT</sub>
+    * Description: Fate of a sample
+    * range: [String](types/String.md)
+ * [runID](runID.md)  <sub>OPT</sub>
+    * Description: A linking value provided by the external lab that associates the sample data to the run metadata, including QA values
+    * range: [String](types/String.md)
+    * inherited from: None
+
+### Inherited from zoo_dnaRawDataFiles_pub:
+
+ * [uid](uid.md)  <sub>OPT</sub>
+    * Description: Unique ID within NEON database; an identifier for the record
+    * range: [String](types/String.md)
+ * [domainID](domainID.md)  <sub>OPT</sub>
+    * Description: Unique identifier of the NEON domain
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [remarks](remarks.md)  <sub>OPT</sub>
+    * Description: Technician notes; free text comments accompanying the record
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [setDate](setDate.md)  <sub>OPT</sub>
+    * Description: Date that trap was set
+    * range: [Time](types/Time.md)
+    * inherited from: None
+ * [collectDate](collectDate.md)  <sub>OPT</sub>
+    * Description: Date of the collection event
+    * range: [Time](types/Time.md)
+    * inherited from: None
+ * [processedDate](processedDate.md)  <sub>OPT</sub>
+    * Description: Date or date and time of processing event
+    * range: [Time](types/Time.md)
+    * inherited from: None
+ * [laboratoryName](laboratoryName.md)  <sub>OPT</sub>
+    * Description: Name of the laboratory or facility that is processing the sample
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [internalLabID](internalLabID.md)  <sub>OPT</sub>
+    * Description: Internal identifier used by the external facility
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [dnaSampleID](dnaSampleID.md)  <sub>OPT</sub>
+    * Description: Identifier for DNA sample
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [dnaSampleCode](dnaSampleCode.md)  <sub>OPT</sub>
+    * Description: Barcode of a DNA sample
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [sequencerRunID](sequencerRunID.md)  <sub>OPT</sub>
+    * Description: Identifier for the sequencing run
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [rawDataFileName](rawDataFileName.md)  <sub>OPT</sub>
+    * Description: Name of file or folder containing raw data, including file extension
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [rawDataFilePath](rawDataFilePath.md)  <sub>OPT</sub>
+    * Description: The system path identifying the raw data file location
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [sequencingFacilityID](sequencingFacilityID.md)  <sub>OPT</sub>
+    * Description: Name of the laboratory or facility that is sequencing samples
+    * range: [String](types/String.md)
+    * inherited from: None
+ * [rawDataFileDescription](rawDataFileDescription.md)  <sub>OPT</sub>
+    * Description: Description of the contents and type of file
+    * range: [String](types/String.md)
+    * inherited from: None
+
+## Other properties
+
+|  |  |  |
+| --- | --- | --- |
+| **Mappings:** | | neon:mpr_perrootsample_in |
+

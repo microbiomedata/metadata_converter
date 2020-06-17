@@ -1,0 +1,304 @@
+{
+   "$id": "https://microbiomedata/schema/mixs",
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "definitions": {
+      "Activity": {
+         "additionalProperties": false,
+         "description": "a provence-generating activity",
+         "properties": {
+            "activity_id": {
+               "type": "string"
+            },
+            "ended_at_time": {
+               "type": "string"
+            },
+            "started_at_time": {
+               "type": "string"
+            },
+            "used": {
+               "type": "string"
+            },
+            "was_associated_with": {
+               "$ref": "#/definitions/Agent"
+            },
+            "was_informed_by": {
+               "type": "string"
+            }
+         },
+         "required": [
+            "activity_id"
+         ],
+         "title": "Activity",
+         "type": "object"
+      },
+      "Agent": {
+         "additionalProperties": false,
+         "description": "a provence-generating agent",
+         "properties": {
+            "acted_on_behalf_of": {
+               "$ref": "#/definitions/Agent"
+            },
+            "was_informed_by": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "Agent",
+         "type": "object"
+      },
+      "AttributeValue": {
+         "additionalProperties": false,
+         "description": "The value for any value of a attribute for a sample. This object can hold both the un-normalized atomic value and the structured value",
+         "properties": {
+            "has_raw_value": {
+               "description": "The value that was specified for an annotation in raw form, i.e. a string. E.g. \"2 cm\" or \"2-4 cm\"",
+               "type": "string"
+            },
+            "was_generated_by": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "AttributeValue",
+         "type": "object"
+      },
+      "BooleanValue": {
+         "additionalProperties": false,
+         "description": "A value that is a boolean",
+         "properties": {
+            "has_boolean_value": {
+               "description": "Links a quantity value to a boolean",
+               "type": "boolean"
+            },
+            "has_raw_value": {
+               "description": "The value that was specified for an annotation in raw form, i.e. a string. E.g. \"2 cm\" or \"2-4 cm\"",
+               "type": "string"
+            },
+            "was_generated_by": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "BooleanValue",
+         "type": "object"
+      },
+      "ControlledTermValue": {
+         "additionalProperties": false,
+         "description": "A controlled term or class from an ontology",
+         "properties": {
+            "has_raw_value": {
+               "description": "The value that was specified for an annotation in raw form, i.e. a string. E.g. \"2 cm\" or \"2-4 cm\"",
+               "type": "string"
+            },
+            "term": {
+               "$ref": "#/definitions/OntologyClass",
+               "description": "pointer to an ontology class"
+            },
+            "was_generated_by": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "ControlledTermValue",
+         "type": "object"
+      },
+      "EnvironmentalMaterialTerm": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "alternate_identifiers": {
+               "description": "Non-primary identifiers",
+               "items": {
+                  "type": "string"
+               },
+               "type": "array"
+            },
+            "description": {
+               "description": "a human-readable description of a thing",
+               "type": "string"
+            },
+            "id": {
+               "description": "A unique identifier for a thing. Must be either a CURIE shorthand for a URI or a complete URI",
+               "type": "string"
+            },
+            "name": {
+               "description": "A human readable label for an entity",
+               "type": "string"
+            }
+         },
+         "required": [
+            "id"
+         ],
+         "title": "EnvironmentalMaterialTerm",
+         "type": "object"
+      },
+      "GeolocationValue": {
+         "additionalProperties": false,
+         "description": "A normalized value for a location on the earth's surface",
+         "properties": {
+            "has_raw_value": {
+               "type": "string"
+            },
+            "latitude": {
+               "description": "latitude",
+               "type": "number"
+            },
+            "longitude": {
+               "description": "longitude",
+               "type": "number"
+            },
+            "was_generated_by": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "GeolocationValue",
+         "type": "object"
+      },
+      "IntegerValue": {
+         "additionalProperties": false,
+         "description": "A value that is an integer",
+         "properties": {
+            "has_numeric_value": {
+               "description": "Links a quantity value to a number",
+               "type": "number"
+            },
+            "has_raw_value": {
+               "description": "The value that was specified for an annotation in raw form, i.e. a string. E.g. \"2 cm\" or \"2-4 cm\"",
+               "type": "string"
+            },
+            "was_generated_by": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "IntegerValue",
+         "type": "object"
+      },
+      "OntologyClass": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "alternate_identifiers": {
+               "description": "Non-primary identifiers",
+               "items": {
+                  "type": "string"
+               },
+               "type": "array"
+            },
+            "description": {
+               "description": "a human-readable description of a thing",
+               "type": "string"
+            },
+            "id": {
+               "description": "A unique identifier for a thing. Must be either a CURIE shorthand for a URI or a complete URI",
+               "type": "string"
+            },
+            "name": {
+               "description": "A human readable label for an entity",
+               "type": "string"
+            }
+         },
+         "required": [
+            "id"
+         ],
+         "title": "OntologyClass",
+         "type": "object"
+      },
+      "PersonValue": {
+         "additionalProperties": false,
+         "description": "An attribute value representing a person",
+         "properties": {
+            "has_raw_value": {
+               "type": "string"
+            },
+            "orcid": {
+               "type": "string"
+            },
+            "was_generated_by": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "PersonValue",
+         "type": "object"
+      },
+      "QuantityValue": {
+         "additionalProperties": false,
+         "description": "A simple quantity, e.g. 2cm",
+         "properties": {
+            "has_numeric_value": {
+               "type": "number"
+            },
+            "has_raw_value": {
+               "type": "string"
+            },
+            "has_unit": {
+               "type": "string"
+            },
+            "was_generated_by": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "QuantityValue",
+         "type": "object"
+      },
+      "TextValue": {
+         "additionalProperties": false,
+         "description": "A basic string value",
+         "properties": {
+            "has_raw_value": {
+               "description": "The value that was specified for an annotation in raw form, i.e. a string. E.g. \"2 cm\" or \"2-4 cm\"",
+               "type": "string"
+            },
+            "language": {
+               "description": "Should use ISO 639-1 code e.g. \"en\", \"fr\"",
+               "type": "string"
+            },
+            "was_generated_by": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "TextValue",
+         "type": "object"
+      },
+      "TimestampValue": {
+         "additionalProperties": false,
+         "description": "A value that is a timestamp. The range should be ISO-8601",
+         "properties": {
+            "has_raw_value": {
+               "description": "The value that was specified for an annotation in raw form, i.e. a string. E.g. \"2 cm\" or \"2-4 cm\"",
+               "type": "string"
+            },
+            "was_generated_by": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "TimestampValue",
+         "type": "object"
+      },
+      "UrlValue": {
+         "additionalProperties": false,
+         "description": "A value that is a string that conforms to URL syntax",
+         "properties": {
+            "has_raw_value": {
+               "description": "The value that was specified for an annotation in raw form, i.e. a string. E.g. \"2 cm\" or \"2-4 cm\"",
+               "type": "string"
+            },
+            "was_generated_by": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "UrlValue",
+         "type": "object"
+      }
+   },
+   "properties": {},
+   "title": "mixs",
+   "type": "object"
+}
+

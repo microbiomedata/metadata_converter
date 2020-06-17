@@ -1,0 +1,110 @@
+type Activity
+  {
+    activityId: String!
+    startedAtTime: String
+    endedAtTime: String
+    wasInformedBy: Activity
+    wasAssociatedWith: Agent
+    used: String
+  }
+
+type Agent
+  {
+    actedOnBehalfOf: Agent
+    wasInformedBy: Activity
+  }
+
+type AttributeValue
+  {
+    hasRawValue: String
+    wasGeneratedBy: Activity
+  }
+
+type BooleanValue
+  {
+    hasRawValue: String
+    wasGeneratedBy: Activity
+    hasBooleanValue: Boolean
+  }
+
+type ControlledTermValue
+  {
+    hasRawValue: String
+    wasGeneratedBy: Activity
+    term: OntologyClass
+  }
+
+type EnvironmentalMaterialTerm
+  {
+    id: String!
+    name: String
+    description: String
+    alternateIdentifiers: [String]
+  }
+
+type GeolocationValue
+  {
+    hasRawValue: String
+    wasGeneratedBy: Activity
+    latitude: DecimalDegree
+    longitude: DecimalDegree
+  }
+
+type IntegerValue
+  {
+    hasRawValue: String
+    wasGeneratedBy: Activity
+    hasNumericValue: Float
+  }
+
+interface NamedThing
+  {
+    id: String!
+    name: String
+    description: String
+    alternateIdentifiers: [String]
+  }
+
+type OntologyClass
+  {
+    id: String!
+    name: String
+    description: String
+    alternateIdentifiers: [String]
+  }
+
+type PersonValue
+  {
+    hasRawValue: String
+    wasGeneratedBy: Activity
+    orcid: String
+  }
+
+type QuantityValue
+  {
+    hasRawValue: String
+    wasGeneratedBy: Activity
+    hasUnit: Unit
+    hasNumericValue: Double
+  }
+
+type TextValue
+  {
+    hasRawValue: String
+    wasGeneratedBy: Activity
+    language: LanguageCode
+  }
+
+type TimestampValue
+  {
+    hasRawValue: String
+    wasGeneratedBy: Activity
+  }
+
+type UrlValue
+  {
+    hasRawValue: String
+    wasGeneratedBy: Activity
+  }
+
+

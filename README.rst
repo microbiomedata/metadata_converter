@@ -1,46 +1,38 @@
 metadata_converter
 ==================
 
-Dumb python library and CLI for performing expansion of IDs and
-controlled terms in TSVs and other documents.
+This repo contains code and target outputs for a metadata converter with a
+focus on environmental sample metadata.
 
-For example, given a TSV with an identifier column, insert an extra
-column with the corresponding label from the identifier.
+Source schemas/templates/variable lists are in a variety of different formats.
+We choose the biolinkml schema language as our base representation (see below).
+We convert all source schemas to biolinkml. From here we convert to other representations
+such as json-schema.
 
-Another example: expand an ID with the reflexive transitive ancestors
-in an ontology graph; the resulting document is optimized for lookups
-by ontology term (the "golr closure pattern")
+Currently the sources we have include:
 
-It is also possible to a weak form of concept recognition: provide a
-lookup table of name or synonym -> ID, and use this to expand a column
-with names.
+ * neon
+     * `code <src/metadata_converter/neon.py>`__
+     * `schema products <target/neon/>`__
+     * `docs <docs/neon/>`__
+ * kbase
+     * `code <src/metadata_converter/kbase.py>`__
+     * `schema products <target/kbase/>`__
+     * `docs <docs/kbase/>`__
+ * mixs
+     * code is currently external
+     * `schema products <target/neon/>`__
+     * `docs <docs/neon/>`__
 
-Expansions can come from pre-made lookup tables, or an ontology can be
-used as source.
 
-See the tests folder for more information
-
-The data model is deliberately simple. There can be any number of
-named lookup tables. A lookup table is a mapping between a string and
-a list of strings. The list of strings is stored internally as a
-pipe-separated string. The lookup tables can be loaded from a TSV, or
-constructed from an ontology (requires obojson).
-
-Command Line
-============
+Building Targets
+================
 
 Help:
 
 .. code-block:: sh
 
-    expando --help
+    make test
+    make all
 
 
-Currently there are two main commands: tsv and text, for expanding a
-tsv doc and a general text doc
-
-Expand a GPAD file, using a gene product ID (non-CURIE) to name lookup table:    
-
-.. code-block:: sh
-
-    expando -t tests/data/gp2name.tsv -l tests/data/go-small.json  -e id2name tsv -x  tests/data/pombase-small.gpad

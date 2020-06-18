@@ -29,7 +29,7 @@ Currently the sources we have include:
 Mappings
 ========
 
-See `mappings/ <mappings/>` __
+See `mappings folder <mappings/>` __
 
 Building Targets
 ================

@@ -1,5 +1,5 @@
 # Auto generated from neon.yaml by pythongen.py version: 0.4.0
-# Generation date: 2020-06-17 10:46
+# Generation date: 2020-06-17 22:28
 # Schema: neon
 #
 # id: https://microbiomedata/schema/neon
@@ -23,13 +23,19 @@ from biolinkml.utils.curienamespace import CurieNamespace
 from biolinkml.utils.metamodelcore import XSDTime
 from includes.types import Double, Integer, String, Time
 
-metamodel_version = "1.4.3"
+metamodel_version = "1.4.4"
 
 # Overwrite dataclasses _init_fn to add **kwargs in __init__
 dataclasses._init_fn = dataclasses_init_fn_with_kwargs
 
 # Namespaces
+DWC_V2007_04_17 = CurieNamespace('DWC_v2007-04-17', 'http://example.org/UNKNOWN/DWC_v2007-04-17/')
+DWC_V2009_04_24 = CurieNamespace('DWC_v2009-04-24', 'http://example.org/UNKNOWN/DWC_v2009-04-24/')
+DWC_V2009_08_24 = CurieNamespace('DWC_v2009-08-24', 'http://example.org/UNKNOWN/DWC_v2009-08-24/')
+DWC_V2013_05_25 = CurieNamespace('DWC_v2013-05-25', 'http://example.org/UNKNOWN/DWC_v2013-05-25/')
+DWC_V2014_10_23 = CurieNamespace('DWC_v2014-10-23', 'http://example.org/UNKNOWN/DWC_v2014-10-23/')
 BIOLINKML = CurieNamespace('biolinkml', 'https://w3id.org/biolink/biolinkml/')
+MIXS = CurieNamespace('mixs', 'http://example.org/UNKNOWN/mixs/')
 NEON = CurieNamespace('neon', 'https://data.neonscience.org/')
 DEFAULT_ = NEON
 
@@ -11752,19 +11758,19 @@ slots.uid = Slot(uri=NEON.uid, name="uid", curie=NEON.curie('uid'),
                       model_uri=NEON.uid, domain=None, range=Optional[str])
 
 slots.domainID = Slot(uri=NEON.domainID, name="domainID", curie=NEON.curie('domainID'),
-                      model_uri=NEON.domainID, domain=None, range=Optional[str])
+                      model_uri=NEON.domainID, domain=None, range=Optional[str], mappings = [DWC_V2009-04-24.locationID])
 
 slots.siteID = Slot(uri=NEON.siteID, name="siteID", curie=NEON.curie('siteID'),
-                      model_uri=NEON.siteID, domain=None, range=Optional[str])
+                      model_uri=NEON.siteID, domain=None, range=Optional[str], mappings = [DWC_V2009-04-24.locationID])
 
 slots.plotID = Slot(uri=NEON.plotID, name="plotID", curie=NEON.curie('plotID'),
                       model_uri=NEON.plotID, domain=None, range=Optional[str])
 
 slots.date = Slot(uri=NEON.date, name="date", curie=NEON.curie('date'),
-                      model_uri=NEON.date, domain=None, range=Optional[Union[str, XSDTime]])
+                      model_uri=NEON.date, domain=None, range=Optional[Union[str, XSDTime]], mappings = [DWC_V2009-04-24.eventDate])
 
 slots.samplingProtocol = Slot(uri=NEON.samplingProtocol, name="samplingProtocol", curie=NEON.curie('samplingProtocol'),
-                      model_uri=NEON.samplingProtocol, domain=None, range=Optional[str])
+                      model_uri=NEON.samplingProtocol, domain=None, range=Optional[str], mappings = [DWC_V2009-04-24.samplingProtocol])
 
 slots.identificationReferences = Slot(uri=NEON.identificationReferences, name="identificationReferences", curie=NEON.curie('identificationReferences'),
                       model_uri=NEON.identificationReferences, domain=None, range=Optional[str])
@@ -11860,10 +11866,10 @@ slots.measuredBy = Slot(uri=NEON.measuredBy, name="measuredBy", curie=NEON.curie
                       model_uri=NEON.measuredBy, domain=None, range=Optional[str])
 
 slots.recordedBy = Slot(uri=NEON.recordedBy, name="recordedBy", curie=NEON.curie('recordedBy'),
-                      model_uri=NEON.recordedBy, domain=None, range=Optional[str])
+                      model_uri=NEON.recordedBy, domain=None, range=Optional[str], mappings = [DWC_V2014-10-23.recordedBy])
 
 slots.eventID = Slot(uri=NEON.eventID, name="eventID", curie=NEON.curie('eventID'),
-                      model_uri=NEON.eventID, domain=None, range=Optional[str])
+                      model_uri=NEON.eventID, domain=None, range=Optional[str], mappings = [DWC_V2009-04-24.eventID])
 
 slots.night = Slot(uri=NEON.night, name="night", curie=NEON.curie('night'),
                       model_uri=NEON.night, domain=None, range=Optional[str])
@@ -11893,25 +11899,25 @@ slots.nlcdClass = Slot(uri=NEON.nlcdClass, name="nlcdClass", curie=NEON.curie('n
                       model_uri=NEON.nlcdClass, domain=None, range=Optional[str])
 
 slots.decimalLatitude = Slot(uri=NEON.decimalLatitude, name="decimalLatitude", curie=NEON.curie('decimalLatitude'),
-                      model_uri=NEON.decimalLatitude, domain=None, range=Optional[float])
+                      model_uri=NEON.decimalLatitude, domain=None, range=Optional[float], mappings = [DWC_V2009-04-24.decimalLatitude])
 
 slots.decimalLongitude = Slot(uri=NEON.decimalLongitude, name="decimalLongitude", curie=NEON.curie('decimalLongitude'),
-                      model_uri=NEON.decimalLongitude, domain=None, range=Optional[float])
+                      model_uri=NEON.decimalLongitude, domain=None, range=Optional[float], mappings = [DWC_V2009-04-24.decimalLongitude])
 
 slots.geodeticDatum = Slot(uri=NEON.geodeticDatum, name="geodeticDatum", curie=NEON.curie('geodeticDatum'),
-                      model_uri=NEON.geodeticDatum, domain=None, range=Optional[str])
+                      model_uri=NEON.geodeticDatum, domain=None, range=Optional[str], mappings = [DWC_V2007-04-17.geodeticDatum])
 
 slots.coordinateUncertainty = Slot(uri=NEON.coordinateUncertainty, name="coordinateUncertainty", curie=NEON.curie('coordinateUncertainty'),
-                      model_uri=NEON.coordinateUncertainty, domain=None, range=Optional[float])
+                      model_uri=NEON.coordinateUncertainty, domain=None, range=Optional[float], mappings = [DWC_V2009-04-24.coordinateUncertaintyInMeters])
 
 slots.elevation = Slot(uri=NEON.elevation, name="elevation", curie=NEON.curie('elevation'),
-                      model_uri=NEON.elevation, domain=None, range=Optional[float])
+                      model_uri=NEON.elevation, domain=None, range=Optional[float], mappings = [DWC_V2009-04-24.verbatimElevation])
 
 slots.elevationUncertainty = Slot(uri=NEON.elevationUncertainty, name="elevationUncertainty", curie=NEON.curie('elevationUncertainty'),
                       model_uri=NEON.elevationUncertainty, domain=None, range=Optional[float])
 
 slots.scientificName = Slot(uri=NEON.scientificName, name="scientificName", curie=NEON.curie('scientificName'),
-                      model_uri=NEON.scientificName, domain=None, range=Optional[str])
+                      model_uri=NEON.scientificName, domain=None, range=Optional[str], mappings = [DWC_V2009-04-24.scientificName])
 
 slots.taxonRank = Slot(uri=NEON.taxonRank, name="taxonRank", curie=NEON.curie('taxonRank'),
                       model_uri=NEON.taxonRank, domain=None, range=Optional[str])
@@ -11947,13 +11953,13 @@ slots.boutNumber = Slot(uri=NEON.boutNumber, name="boutNumber", curie=NEON.curie
                       model_uri=NEON.boutNumber, domain=None, range=Optional[str])
 
 slots.sampleID = Slot(uri=NEON.sampleID, name="sampleID", curie=NEON.curie('sampleID'),
-                      model_uri=NEON.sampleID, domain=None, range=Optional[str])
+                      model_uri=NEON.sampleID, domain=None, range=Optional[str], mappings = [DWC_V2013-05-25.materialSampleID])
 
 slots.setDate = Slot(uri=NEON.setDate, name="setDate", curie=NEON.curie('setDate'),
                       model_uri=NEON.setDate, domain=None, range=Optional[Union[str, XSDTime]])
 
 slots.collectDate = Slot(uri=NEON.collectDate, name="collectDate", curie=NEON.curie('collectDate'),
-                      model_uri=NEON.collectDate, domain=None, range=Optional[Union[str, XSDTime]])
+                      model_uri=NEON.collectDate, domain=None, range=Optional[Union[str, XSDTime]], mappings = [DWC_V2009-04-24.eventDate])
 
 slots.cupStatus = Slot(uri=NEON.cupStatus, name="cupStatus", curie=NEON.curie('cupStatus'),
                       model_uri=NEON.cupStatus, domain=None, range=Optional[str])
@@ -14866,7 +14872,7 @@ slots.titrationData = Slot(uri=NEON.titrationData, name="titrationData", curie=N
                       model_uri=NEON.titrationData, domain=None, range=Optional[str])
 
 slots.startDate = Slot(uri=NEON.startDate, name="startDate", curie=NEON.curie('startDate'),
-                      model_uri=NEON.startDate, domain=None, range=Optional[Union[str, XSDTime]])
+                      model_uri=NEON.startDate, domain=None, range=Optional[Union[str, XSDTime]], mappings = [DWC_V2009-04-24.eventDate])
 
 slots.endDate = Slot(uri=NEON.endDate, name="endDate", curie=NEON.curie('endDate'),
                       model_uri=NEON.endDate, domain=None, range=Optional[Union[str, XSDTime]])
@@ -15586,7 +15592,7 @@ slots.dissolvedOxygenSaturation = Slot(uri=NEON.dissolvedOxygenSaturation, name=
                       model_uri=NEON.dissolvedOxygenSaturation, domain=None, range=Optional[float])
 
 slots.collectedBy = Slot(uri=NEON.collectedBy, name="collectedBy", curie=NEON.curie('collectedBy'),
-                      model_uri=NEON.collectedBy, domain=None, range=Optional[str])
+                      model_uri=NEON.collectedBy, domain=None, range=Optional[str], mappings = [DWC_V2014-10-23.recordedBy])
 
 slots.streamStage = Slot(uri=NEON.streamStage, name="streamStage", curie=NEON.curie('streamStage'),
                       model_uri=NEON.streamStage, domain=None, range=Optional[float])
@@ -16915,7 +16921,7 @@ slots.instrument = Slot(uri=NEON.instrument, name="instrument", curie=NEON.curie
                       model_uri=NEON.instrument, domain=None, range=Optional[str])
 
 slots.method = Slot(uri=NEON.method, name="method", curie=NEON.curie('method'),
-                      model_uri=NEON.method, domain=None, range=Optional[str])
+                      model_uri=NEON.method, domain=None, range=Optional[str], mappings = [DWC_V2009-04-24.samplingProtocol])
 
 slots.methodModification = Slot(uri=NEON.methodModification, name="methodModification", curie=NEON.curie('methodModification'),
                       model_uri=NEON.methodModification, domain=None, range=Optional[str])
@@ -17089,7 +17095,7 @@ slots.identificationRemarks = Slot(uri=NEON.identificationRemarks, name="identif
                       model_uri=NEON.identificationRemarks, domain=None, range=Optional[str])
 
 slots.testingVialID = Slot(uri=NEON.testingVialID, name="testingVialID", curie=NEON.curie('testingVialID'),
-                      model_uri=NEON.testingVialID, domain=None, range=Optional[str])
+                      model_uri=NEON.testingVialID, domain=None, range=Optional[str], mappings = [DWC_V2013-05-25.materialSampleID])
 
 slots.poolSize = Slot(uri=NEON.poolSize, name="poolSize", curie=NEON.curie('poolSize'),
                       model_uri=NEON.poolSize, domain=None, range=Optional[str])
@@ -17104,7 +17110,7 @@ slots.archiveMedium = Slot(uri=NEON.archiveMedium, name="archiveMedium", curie=N
                       model_uri=NEON.archiveMedium, domain=None, range=Optional[str])
 
 slots.deprecatedVialID = Slot(uri=NEON.deprecatedVialID, name="deprecatedVialID", curie=NEON.curie('deprecatedVialID'),
-                      model_uri=NEON.deprecatedVialID, domain=None, range=Optional[str])
+                      model_uri=NEON.deprecatedVialID, domain=None, range=Optional[str], mappings = [DWC_V2009-04-24.eventID])
 
 slots.testedDate = Slot(uri=NEON.testedDate, name="testedDate", curie=NEON.curie('testedDate'),
                       model_uri=NEON.testedDate, domain=None, range=Optional[Union[str, XSDTime]])
@@ -21256,7 +21262,7 @@ slots.riparianClass = Slot(uri=NEON.riparianClass, name="riparianClass", curie=N
                       model_uri=NEON.riparianClass, domain=None, range=Optional[str])
 
 slots.riparianDominantVegetation = Slot(uri=NEON.riparianDominantVegetation, name="riparianDominantVegetation", curie=NEON.curie('riparianDominantVegetation'),
-                      model_uri=NEON.riparianDominantVegetation, domain=None, range=Optional[str])
+                      model_uri=NEON.riparianDominantVegetation, domain=None, range=Optional[str], mappings = [DWC_V2009-08-24.taxonID])
 
 slots.riparianSubclass = Slot(uri=NEON.riparianSubclass, name="riparianSubclass", curie=NEON.curie('riparianSubclass'),
                       model_uri=NEON.riparianSubclass, domain=None, range=Optional[str])
@@ -21331,7 +21337,7 @@ slots.totalDensiometerPoints = Slot(uri=NEON.totalDensiometerPoints, name="total
                       model_uri=NEON.totalDensiometerPoints, domain=None, range=Optional[str])
 
 slots.samplingImpractical = Slot(uri=NEON.samplingImpractical, name="samplingImpractical", curie=NEON.curie('samplingImpractical'),
-                      model_uri=NEON.samplingImpractical, domain=None, range=Optional[str])
+                      model_uri=NEON.samplingImpractical, domain=None, range=Optional[str], mappings = [DWC_V2009-04-24.samplingProtocol])
 
 slots.incubationMethod = Slot(uri=NEON.incubationMethod, name="incubationMethod", curie=NEON.curie('incubationMethod'),
                       model_uri=NEON.incubationMethod, domain=None, range=Optional[str])
@@ -21553,7 +21559,7 @@ slots.trapSize = Slot(uri=NEON.trapSize, name="trapSize", curie=NEON.curie('trap
                       model_uri=NEON.trapSize, domain=None, range=Optional[float])
 
 slots.namedLocation = Slot(uri=NEON.namedLocation, name="namedLocation", curie=NEON.curie('namedLocation'),
-                      model_uri=NEON.namedLocation, domain=None, range=Optional[str])
+                      model_uri=NEON.namedLocation, domain=None, range=Optional[str], mappings = [DWC_V2009-04-24.locationID])
 
 slots.soilCO2FinalQF = Slot(uri=NEON.soilCO2FinalQF, name="soilCO2FinalQF", curie=NEON.curie('soilCO2FinalQF'),
                       model_uri=NEON.soilCO2FinalQF, domain=None, range=Optional[str])
@@ -22171,13 +22177,13 @@ slots.sequencingPlatformModel = Slot(uri=NEON.sequencingPlatformModel, name="seq
                       model_uri=NEON.sequencingPlatformModel, domain=None, range=Optional[str])
 
 slots.seq_model = Slot(uri=NEON.seq_model, name="seq_model", curie=NEON.curie('seq_model'),
-                      model_uri=NEON.seq_model, domain=None, range=Optional[str])
+                      model_uri=NEON.seq_model, domain=None, range=Optional[str], mappings = [MIXS.seq_model])
 
 slots.sequencingMethod = Slot(uri=NEON.sequencingMethod, name="sequencingMethod", curie=NEON.curie('sequencingMethod'),
                       model_uri=NEON.sequencingMethod, domain=None, range=Optional[str])
 
 slots.investigation_type = Slot(uri=NEON.investigation_type, name="investigation_type", curie=NEON.curie('investigation_type'),
-                      model_uri=NEON.investigation_type, domain=None, range=Optional[str])
+                      model_uri=NEON.investigation_type, domain=None, range=Optional[str], mappings = [MIXS.investigation_type])
 
 slots.sequencingConcentration = Slot(uri=NEON.sequencingConcentration, name="sequencingConcentration", curie=NEON.curie('sequencingConcentration'),
                       model_uri=NEON.sequencingConcentration, domain=None, range=Optional[float])
@@ -22684,7 +22690,7 @@ slots.boatWetMassSum = Slot(uri=NEON.boatWetMassSum, name="boatWetMassSum", curi
                       model_uri=NEON.boatWetMassSum, domain=None, range=Optional[float])
 
 slots.morphospeciesCreatedDate = Slot(uri=NEON.morphospeciesCreatedDate, name="morphospeciesCreatedDate", curie=NEON.curie('morphospeciesCreatedDate'),
-                      model_uri=NEON.morphospeciesCreatedDate, domain=None, range=Optional[Union[str, XSDTime]])
+                      model_uri=NEON.morphospeciesCreatedDate, domain=None, range=Optional[Union[str, XSDTime]], mappings = [DWC_V2009-04-24.eventDate])
 
 slots.morphospeciesResolved = Slot(uri=NEON.morphospeciesResolved, name="morphospeciesResolved", curie=NEON.curie('morphospeciesResolved'),
                       model_uri=NEON.morphospeciesResolved, domain=None, range=Optional[str])
@@ -22939,10 +22945,10 @@ slots.voucherSampleFate = Slot(uri=NEON.voucherSampleFate, name="voucherSampleFa
                       model_uri=NEON.voucherSampleFate, domain=None, range=Optional[str])
 
 slots.identifier = Slot(uri=NEON.identifier, name="identifier", curie=NEON.curie('identifier'),
-                      model_uri=NEON.identifier, domain=None, range=Optional[str])
+                      model_uri=NEON.identifier, domain=None, range=Optional[str], mappings = [DWC_V2014-10-23.identifiedBy])
 
 slots.identifierEmail = Slot(uri=NEON.identifierEmail, name="identifierEmail", curie=NEON.curie('identifierEmail'),
-                      model_uri=NEON.identifierEmail, domain=None, range=Optional[str])
+                      model_uri=NEON.identifierEmail, domain=None, range=Optional[str], mappings = [DWC_V2014-10-23.identifiedBy])
 
 slots.identifierInstitution = Slot(uri=NEON.identifierInstitution, name="identifierInstitution", curie=NEON.curie('identifierInstitution'),
                       model_uri=NEON.identifierInstitution, domain=None, range=Optional[str])
@@ -23020,7 +23026,7 @@ slots.vstTagID = Slot(uri=NEON.vstTagID, name="vstTagID", curie=NEON.curie('vstT
                       model_uri=NEON.vstTagID, domain=None, range=Optional[str])
 
 slots.sampleGeodeticDatum = Slot(uri=NEON.sampleGeodeticDatum, name="sampleGeodeticDatum", curie=NEON.curie('sampleGeodeticDatum'),
-                      model_uri=NEON.sampleGeodeticDatum, domain=None, range=Optional[str])
+                      model_uri=NEON.sampleGeodeticDatum, domain=None, range=Optional[str], mappings = [DWC_V2007-04-17.geodeticDatum])
 
 slots.archiveVialID = Slot(uri=NEON.archiveVialID, name="archiveVialID", curie=NEON.curie('archiveVialID'),
                       model_uri=NEON.archiveVialID, domain=None, range=Optional[str])
@@ -25420,16 +25426,16 @@ slots.collectionDateAccuracy = Slot(uri=NEON.collectionDateAccuracy, name="colle
                       model_uri=NEON.collectionDateAccuracy, domain=None, range=Optional[str])
 
 slots.collectionEventID = Slot(uri=NEON.collectionEventID, name="collectionEventID", curie=NEON.curie('collectionEventID'),
-                      model_uri=NEON.collectionEventID, domain=None, range=Optional[str])
+                      model_uri=NEON.collectionEventID, domain=None, range=Optional[str], mappings = [DWC_V2009-04-24.eventID])
 
 slots.collectionNotes = Slot(uri=NEON.collectionNotes, name="collectionNotes", curie=NEON.curie('collectionNotes'),
-                      model_uri=NEON.collectionNotes, domain=None, range=Optional[str])
+                      model_uri=NEON.collectionNotes, domain=None, range=Optional[str], mappings = [DWC_V2009-04-24.identificationRemarks])
 
 slots.collectors = Slot(uri=NEON.collectors, name="collectors", curie=NEON.curie('collectors'),
-                      model_uri=NEON.collectors, domain=None, range=Optional[str])
+                      model_uri=NEON.collectors, domain=None, range=Optional[str], mappings = [DWC_V2014-10-23.recordedBy])
 
 slots.coordinateAccuracy = Slot(uri=NEON.coordinateAccuracy, name="coordinateAccuracy", curie=NEON.curie('coordinateAccuracy'),
-                      model_uri=NEON.coordinateAccuracy, domain=None, range=Optional[float])
+                      model_uri=NEON.coordinateAccuracy, domain=None, range=Optional[float], mappings = [DWC_V2009-04-24.coordinateUncertaintyInMeters])
 
 slots.countryOcean = Slot(uri=NEON.countryOcean, name="countryOcean", curie=NEON.curie('countryOcean'),
                       model_uri=NEON.countryOcean, domain=None, range=Optional[str])
@@ -25453,7 +25459,7 @@ slots.extraInfo = Slot(uri=NEON.extraInfo, name="extraInfo", curie=NEON.curie('e
                       model_uri=NEON.extraInfo, domain=None, range=Optional[str])
 
 slots.gpsSource = Slot(uri=NEON.gpsSource, name="gpsSource", curie=NEON.curie('gpsSource'),
-                      model_uri=NEON.gpsSource, domain=None, range=Optional[str])
+                      model_uri=NEON.gpsSource, domain=None, range=Optional[str], mappings = [DWC_V2007-04-17.geodeticDatum])
 
 slots.habitat = Slot(uri=NEON.habitat, name="habitat", curie=NEON.curie('habitat'),
                       model_uri=NEON.habitat, domain=None, range=Optional[str])
@@ -25465,16 +25471,16 @@ slots.institutionStoring = Slot(uri=NEON.institutionStoring, name="institutionSt
                       model_uri=NEON.institutionStoring, domain=None, range=Optional[str])
 
 slots.latitude = Slot(uri=NEON.latitude, name="latitude", curie=NEON.curie('latitude'),
-                      model_uri=NEON.latitude, domain=None, range=Optional[float])
+                      model_uri=NEON.latitude, domain=None, range=Optional[float], mappings = [DWC_V2009-04-24.decimalLatitude])
 
 slots.longitude = Slot(uri=NEON.longitude, name="longitude", curie=NEON.curie('longitude'),
-                      model_uri=NEON.longitude, domain=None, range=Optional[float])
+                      model_uri=NEON.longitude, domain=None, range=Optional[float], mappings = [DWC_V2009-04-24.decimalLongitude])
 
 slots.museumID = Slot(uri=NEON.museumID, name="museumID", curie=NEON.curie('museumID'),
-                      model_uri=NEON.museumID, domain=None, range=Optional[str])
+                      model_uri=NEON.museumID, domain=None, range=Optional[str], mappings = [DWC_V2013-05-25.materialSampleID])
 
 slots.notes = Slot(uri=NEON.notes, name="notes", curie=NEON.curie('notes'),
-                      model_uri=NEON.notes, domain=None, range=Optional[str])
+                      model_uri=NEON.notes, domain=None, range=Optional[str], mappings = [DWC_V2009-04-24.identificationRemarks])
 
 slots.region = Slot(uri=NEON.region, name="region", curie=NEON.curie('region'),
                       model_uri=NEON.region, domain=None, range=Optional[str])
@@ -25483,16 +25489,16 @@ slots.sector = Slot(uri=NEON.sector, name="sector", curie=NEON.curie('sector'),
                       model_uri=NEON.sector, domain=None, range=Optional[str])
 
 slots.siteCode = Slot(uri=NEON.siteCode, name="siteCode", curie=NEON.curie('siteCode'),
-                      model_uri=NEON.siteCode, domain=None, range=Optional[str])
+                      model_uri=NEON.siteCode, domain=None, range=Optional[str], mappings = [DWC_V2009-04-24.locationID])
 
 slots.species = Slot(uri=NEON.species, name="species", curie=NEON.curie('species'),
-                      model_uri=NEON.species, domain=None, range=Optional[str])
+                      model_uri=NEON.species, domain=None, range=Optional[str], mappings = [DWC_V2009-04-24.specificEpithet])
 
 slots.stateProvince = Slot(uri=NEON.stateProvince, name="stateProvince", curie=NEON.curie('stateProvince'),
                       model_uri=NEON.stateProvince, domain=None, range=Optional[str])
 
 slots.taxonomyNotes = Slot(uri=NEON.taxonomyNotes, name="taxonomyNotes", curie=NEON.curie('taxonomyNotes'),
-                      model_uri=NEON.taxonomyNotes, domain=None, range=Optional[str])
+                      model_uri=NEON.taxonomyNotes, domain=None, range=Optional[str], mappings = [DWC_V2009-04-24.identificationRemarks])
 
 slots.tissueDescriptor = Slot(uri=NEON.tissueDescriptor, name="tissueDescriptor", curie=NEON.curie('tissueDescriptor'),
                       model_uri=NEON.tissueDescriptor, domain=None, range=Optional[str])

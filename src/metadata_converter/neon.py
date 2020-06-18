@@ -1,3 +1,7 @@
+
+"""
+converts NEON data definition csvs to yaml
+"""
 import yaml
 from dataclasses import dataclass, field
 from typing import Optional, Set, List, Union, Dict, Any
@@ -81,8 +85,8 @@ class NeonConverter:
             slot = {'slot_uri': f'neon:{k}',
                     'description': v['termDesc'],
                     'range': convert_range(v['dataType']),
-                    'aliases': [n]}
-                    #'mappings': xrefs}
+                    'aliases': [n],
+                    'mappings': xrefs}
             slots[k] = slot
             # TODO units https://github.com/biolink/biolinkml/issues/159
 

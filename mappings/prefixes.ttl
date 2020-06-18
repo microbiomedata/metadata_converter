@@ -4,6 +4,10 @@
 [
 
   sh:declare
+    [ sh:prefix "ENVO" ; sh:namespace "http://purl.obolibrary.org/obo/ENVO_"],
+    [ sh:prefix "UO" ; sh:namespace "http://purl.obolibrary.org/obo/UO_"],
+    [ sh:prefix "PATO" ; sh:namespace "http://purl.obolibrary.org/obo/PATO_"],
+    [ sh:prefix "OBI" ; sh:namespace "http://purl.obolibrary.org/obo/OBI_"],
     [ sh:prefix "mixs" ; sh:namespace "https://microbiomedata/schema/mixs#"],
     [ sh:prefix "kbase" ; sh:namespace "http://kbase.us/"],
     [ sh:prefix "neon" ; sh:namespace "https://data.neonscience.org/"],

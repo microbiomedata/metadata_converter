@@ -26,6 +26,11 @@ Currently the sources we have include:
      * `docs <docs/mixs/>`__
 
 
+Mappings
+========
+
+See `mappings/ <mappings/>` __
+
 Building Targets
 ================
 

@@ -1,3 +1,6 @@
+"""
+Converts kbase sample service desription
+"""
 import yaml
 from dataclasses import dataclass, field
 from typing import Optional, Set, List, Union, Dict, Any

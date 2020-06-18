@@ -5,647 +5,1076 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://microbiomedata/schema/kbase> a owl:Ontology ;
-    rdfs:label "kbase" ;
-    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
-    skos:definition "NMDC rendering of KBase metadata schema" ;
-    meta:generation_date "2020-06-17 10:46" ;
-    meta:metamodel_version "1.4.3" ;
-    meta:source_file "kbase.yaml" ;
-    meta:source_file_date "Wed Jun 17 10:45:05 2020" ;
-    meta:source_file_size 21048 .
-
-meta:ENIGMA a owl:Class,
+<http://kbase.us/ENIGMA> a owl:Class,
         meta:ClassDefinition ;
     rdfs:label "ENIGMA" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:boring_refusal ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/well_status> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:functional_area ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/lower_seal_start_depth_ft_bgs> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:installation_method ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/packing_type> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:biome ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/drive_casing_type> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:max_water_level_ft_amsl ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/rock_formation> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:environmental_package ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/recovery_factor> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:drive_casing_end_depth_ft_bgs ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/origination_or_plug_abandon> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:lower_seal_type_ft_bgs ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/open_casing_depth_ft_bgs> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:leucine_activity_ngc_day_cell ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
+            owl:onProperty <http://kbase.us/depth> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:double ;
-            owl:onProperty meta:moisture ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/date> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:experiment_name ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/biome> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:description ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/conductivity_ms_cm> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:pore_water_extraction_microliters ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/average_water_level_ft_amsl> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:packing_type ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/country> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:well ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/open_hole_depth_ft_bgs> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:env_pakcage ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/dapi_cell_count_cells_g> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:condition ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/sampleid> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:open_casing_depth_ft_bgs ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/upper_seal_end_depth_ft_bgs> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:average_water_level_ft_amsl ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/total_nitrogen_mg_g_dry_weight> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:lower_seal_end_depth_ft_bgs ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/boring_refusal> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:elevation ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/open_interval_end_depth_ft_bgs> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:time ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/upper_seal_start_depth_ft_bgs> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:geological_zone ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
+            owl:onProperty <http://kbase.us/longitude> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:open_casing_type ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/total_carbon_mg_g_dry_weight> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:rock_formation ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/open_hole_diameter_in> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:aquifer ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/condition> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:open_interval_diameter_in ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/boring_diameter_in> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:id ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/open> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:fractures_cavities_waterbreaks ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/name> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:packing_depth_end_ft_bgs ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/topofweatheredbedrock_ft_bgs> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:total_carbon_mg_g_dry_weight ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/min_water_level_ft_amsl> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:area_name ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
+            owl:onProperty <http://kbase.us/ph> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:drive_casing_od_in ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/treatment> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:conductivity_ms_cm ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/leucine_activity_ngc_day_cell> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:drive_casing_id_in ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/description> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:temperature_celsius ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/timezone> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:time_zone ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/feature> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:double ;
-            owl:onProperty meta:ph ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/well_casing_od_in> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:open_casing_id_in ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/installation_method> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:collection_time ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/well_casing_id_in> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:feature ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/drive_casing_start_depth_ft_bgs> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:drive_casing_start_depth_ft_bgs ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/well> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:screen_type ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/temperature_celsius> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:open_interval_end_depth_ft_bgs ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/type_of_well> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:replicate ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/ground_elevation_ft_amsl> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:min_water_level_ft_amsl ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/open_casing_type> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:lower_seal_start_depth_ft_bgs ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/pore_water_extraction_microliters> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:upper_seal_type ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/packing_depth_end_ft_bgs> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:open ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/fraction> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:treatment ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
+            owl:onProperty <http://kbase.us/latitude> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:recovery_factor ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/dna_picogreen_total_ng> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:sampleid ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/fractures_cavities_waterbreaks> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:packing_depth_start_ft_bgs ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/lower_seal_type_ft_bgs> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:dna_picogreen_total_ng ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/well_casing_type> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:double ;
-            owl:onProperty meta:longitude ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/experiment_name> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:well_status ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/area_name> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:boring_diameter_in ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/collection_time> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:ground_elevation_ft_amsl ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/drive_casing_end_depth_ft_bgs> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:biomass_carbon_mg_g ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/region> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:open_hole_diameter_in ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/open_interval_diameter_in> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:double ;
-            owl:onProperty meta:latitude ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/screened> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:topoffreshbedrock_ft_bgs ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/env_pakcage> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:well_name ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/open_casing_od_in> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:env_package ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/id> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:method ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
+            owl:onProperty <http://kbase.us/moisture> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:material ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/aquifer> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:drive_casing_type ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/elevation> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:region ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/screen_type> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:open_hole_depth_ft_bgs ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/replicate> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:maturation_time ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/other_name> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:screened ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/maturation_time> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:double ;
-            owl:onProperty meta:depth ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/lower_seal_end_depth_ft_bgs> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:origination_or_plug_abandon ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/geological_zone> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:open_interval_start_depth_ft_bgs ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/biomass_carbon_mg_g> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:boring_ft_bgs ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/drive_casing_od_in> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:date ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/well_name> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:other_name ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/upper_seal_type> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:timezone ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/boring_ft_bgs> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:open_casing_od_in ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/environmental_package> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:type_of_well ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/env_package> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:fraction ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/packing_depth_start_ft_bgs> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:name ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/time> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:well_casing_id_in ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/max_water_level_ft_amsl> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:upper_seal_start_depth_ft_bgs ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/open_interval_start_depth_ft_bgs> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:well_casing_type ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/drive_casing_id_in> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:total_nitrogen_mg_g_dry_weight ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/method> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:topofweatheredbedrock_ft_bgs ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/topoffreshbedrock_ft_bgs> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:well_casing_od_in ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/continent> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:continent ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/time_zone> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:dapi_cell_count_cells_g ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/open_casing_id_in> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:upper_seal_end_depth_ft_bgs ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/functional_area> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:country ] ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/material> ] ;
     skos:definition "TODO" .
 
-meta:SESAR a owl:Class,
+<http://kbase.us/SESAR> a owl:Class,
         meta:ClassDefinition ;
     rdfs:label "SESAR" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:size_unit ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/sample_description> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:location_description ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/original_archive> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:double ;
-            owl:onProperty meta:latitude ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
+            owl:onProperty <http://kbase.us/depth> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:description ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/original_archive_contact> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:date ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/sub-object_type> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:time ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/classification> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:field_program_cruise ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/timezone> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:locality ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/platform_type> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:well ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/collector_chief_scientist_address> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:collection_time_end ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/current_archive> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:env_pakcage ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/size_unit> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:sample_description ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/collection_method_description> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:name ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/name_of_physiographic_feature> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:age_unit ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/navigation_type> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:original_archive_contact ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/country> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:platform_type ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/collector_chief_scientist> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:purpose ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/purpose> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:geological_unit ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/zone> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:field_name_informal_classification ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/depth_scale> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:classification ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/name> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:depth_scale ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/vertical_datum> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:locality_description ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/locality_description> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:double ;
-            owl:onProperty meta:depth ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/id> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:vertical_datum ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/collection_date_precision> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:original_archive ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/well> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:country ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/time> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:sub-object_type ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/launch_id> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:collection_method_description ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/sample_name> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:navigation_type ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/collection_method> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:name_of_physiographic_feature ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/city_township> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:collection_date_precision ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/location_description> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:collection_method ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/date> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:platform_name ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/collection_time_end> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:double ;
-            owl:onProperty meta:size ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
+            owl:onProperty <http://kbase.us/longitude> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:material ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
+            owl:onProperty <http://kbase.us/size> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:sample_name ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/other_names> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:collector_chief_scientist_address ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/age_unit> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:launch_platform_name ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/platform_name> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:related_identifiers ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/county> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:state_province ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/launch_platform_name> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:other_names ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/primary_physiographic_feature> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:current_archive ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/field_program_cruise> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:county ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/locality> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:id ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/elevation> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:timezone ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/material> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:primary_physiographic_feature ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/related_identifiers> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:zone ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/description> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:launch_id ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/field_name_informal_classification> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:city_township ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/env_pakcage> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:collection_time ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/collection_time> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:double ;
-            owl:onProperty meta:longitude ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/state_province> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:collector_chief_scientist ],
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/geological_unit> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass meta:string ;
-            owl:onProperty meta:elevation ] ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
+            owl:onProperty <http://kbase.us/latitude> ] ;
     skos:definition "TODO" .
+
+<http://kbase.us/age_max> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "age_max" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Age (max)" ;
+    skos:definition "maximum age in years" .
+
+<http://kbase.us/age_min> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "age_min" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Age (min)" ;
+    skos:definition "minimum age in years" .
+
+<http://kbase.us/aodc> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "aodc" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "AODC" ;
+    skos:definition "units in cells per gram" .
+
+<http://kbase.us/average_water_level> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "average_water_level" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Average Water Level" ;
+    skos:definition "units in ft above mean sea level (ft AMSL)" .
+
+<http://kbase.us/biomass_carbon> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "biomass_carbon" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Biomass Carbon" ;
+    skos:definition "units in milligrams per gram" .
+
+<http://kbase.us/boncat_activity> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "boncat_activity" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "BONCAT Activity" ;
+    skos:definition "units in cells per gram" .
+
+<http://kbase.us/boring> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "boring" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Boring depth" ;
+    skos:definition "boring depth in ft below groud surface (ft BGS)" .
+
+<http://kbase.us/boring_diameter> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "boring_diameter" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Boring Diameter" ;
+    skos:definition "boring diameter in inches" .
+
+<http://kbase.us/collection_date> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "collection_date" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Collection date" .
+
+<http://kbase.us/collection_date_end> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "collection_date_end" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Collection date (end)" .
+
+<http://kbase.us/conductivity> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "conductivity" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Conductivity" ;
+    skos:definition "conductivity in millisiemens per centimeter" .
+
+<http://kbase.us/coordinate_precision?> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "coordinate_precision?" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Coordinate Precision" .
+
+<http://kbase.us/current_archive_contact> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "current_archive_contact" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Current archive contact name" .
+
+<http://kbase.us/dapi_cell_count> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "dapi_cell_count" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "DAPI Cell Count" ;
+    skos:definition "DAPI cell count in cells per gram" .
+
+<http://kbase.us/depth_in_core_max> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "depth_in_core_max" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Depth in Core (max)" ;
+    skos:definition "maximum depth in core in meters" .
+
+<http://kbase.us/depth_in_core_min> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "depth_in_core_min" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Depth in Core (min)" ;
+    skos:definition "minimum depth in core in meters" .
+
+<http://kbase.us/dna_picogreen_total> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "dna_picogreen_total" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "DNA Picogreen Total" ;
+    skos:definition "units in nanograms" .
+
+<http://kbase.us/drive_casing_end_depth> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "drive_casing_end_depth" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Drive Casing End Depth" ;
+    skos:definition "drive casing end depth in ft below ground surface (ft BGS)" .
+
+<http://kbase.us/drive_casing_id> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "drive_casing_id" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Drive Casing ID" ;
+    skos:definition "drive casing inner diameter in inches" .
+
+<http://kbase.us/drive_casing_od> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "drive_casing_od" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Drive Casing OD" ;
+    skos:definition "drive casing outer diameter in inches" .
+
+<http://kbase.us/drive_casing_start_depth> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "drive_casing_start_depth" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Drive Casing Start Depth" ;
+    skos:definition "units in ft below ground surface (ft BGS)" .
+
+<http://kbase.us/easting> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "easting" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Easting" ;
+    skos:definition "Easting in meters" .
+
+<http://kbase.us/elevation_end> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "elevation_end" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Elevation end" ;
+    skos:definition "Elevation end in meters" .
+
+<http://kbase.us/elevation_start> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "elevation_start" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Elevation start" ;
+    skos:definition "Elevation start in meters" .
+
+<http://kbase.us/filter> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "filter" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Filter" ;
+    skos:definition "Filter pore size in microns" .
+
+<http://kbase.us/geological_age> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "geological_age" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Geological Age" ;
+    skos:definition "Geological Age in years * 1000000" .
+
+<http://kbase.us/ground_elevation> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "ground_elevation" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Ground Elevation" ;
+    skos:definition "ground elevation in ft above mean sea level (ft AMSL)" .
+
+<http://kbase.us/igsn> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "igsn" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "IGSN" .
+
+<http://kbase.us/lower_seal_end_depth> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "lower_seal_end_depth" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Lower Seal End Depth" ;
+    skos:definition "Lower seal end depth in ft below ground surface (ft BGS)" .
+
+<http://kbase.us/lower_seal_start_depth> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "lower_seal_start_depth" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Lower Seal Start Depth" ;
+    skos:definition "Lower seal start depth in ft below ground surface (ft BGS)" .
+
+<http://kbase.us/lower_seal_type> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "lower_seal_type" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Lower Seal Type" .
+
+<http://kbase.us/max_water_level> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "max_water_level" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Max Water Level" ;
+    skos:definition "Maximum water level in ft above mean sea level (ft AMSL)" .
+
+<http://kbase.us/min_water_level> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "min_water_level" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Min Water Level" ;
+    skos:definition "Minimum water level in ft above mean sea level (ft AMSL)" .
+
+<http://kbase.us/northing> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "northing" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Northing" ;
+    skos:definition "Northing in meters" .
+
+<http://kbase.us/open_casing_depth> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "open_casing_depth" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Open Casing Depth" ;
+    skos:definition "Open casing depth in ft below ground surface (ft BGS)" .
+
+<http://kbase.us/open_casing_id> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "open_casing_id" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Open Casing ID" ;
+    skos:definition "open casing inner diameter in inches (in)" .
+
+<http://kbase.us/open_casing_od> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "open_casing_od" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Open Casing OD" ;
+    skos:definition "open casing outer diameter in inches (in)" .
+
+<http://kbase.us/open_hole_depth> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "open_hole_depth" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Open Hole Depth" ;
+    skos:definition "Open hole depth in ft below ground surface (ft BGS)" .
+
+<http://kbase.us/open_hole_diameter> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "open_hole_diameter" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Open Hole Diameter" ;
+    skos:definition "Open hole diameter in inches" .
+
+<http://kbase.us/open_interval_diameter> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "open_interval_diameter" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Open Interval Diameter" ;
+    skos:definition "Open interval diameter in inches" .
+
+<http://kbase.us/open_interval_end_depth> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "open_interval_end_depth" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Open Interval End Depth" ;
+    skos:definition "Open interval end depth in ft below ground surface (ft BGS)" .
+
+<http://kbase.us/open_interval_start_depth> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "open_interval_start_depth" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Open Interval Start Depth" ;
+    skos:definition "Open interval start depth in ft below ground surface (ft BGS)" .
+
+<http://kbase.us/organic_carbon> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "organic_carbon" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Organic Carbon" ;
+    skos:definition "Organic carbon in milligrams per gram dry weight" .
+
+<http://kbase.us/packing_depth_end> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "packing_depth_end" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Packing Depth End" ;
+    skos:definition "Packind depth end in ft below ground surface (ft BGS)" .
+
+<http://kbase.us/packing_depth_start> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "packing_depth_start" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Packing Depth Start" ;
+    skos:definition "Packind depth start in ft below ground surface (ft BGS)" .
+
+<http://kbase.us/parent_id> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "parent_id" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Parent_id" ;
+    skos:definition "id field of parent" .
+
+<http://kbase.us/parent_igsn> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "parent_igsn" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Parent IGSN" .
+
+<http://kbase.us/pore_water_extraction> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "pore_water_extraction" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Pore Water Extraction" ;
+    skos:definition "Pore water extraction in microliters" .
+
+<http://kbase.us/redox_potential_?> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "redox_potential_?" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Redox Potential" .
+
+<http://kbase.us/relation_type> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "relation_type" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Relation Type" .
+
+<http://kbase.us/release_date> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "release_date" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Release date" .
+
+<http://kbase.us/screen_bottom_elevation> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "screen_bottom_elevation" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Screen Bottom Elevation" ;
+    skos:definition "Screen bottom elevation in ft above mean sea level (ft AMSL)" .
+
+<http://kbase.us/screen_end_depth> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "screen_end_depth" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Screen End Depth" ;
+    skos:definition "Screen end depth in ft below ground surface (ft BGS)" .
+
+<http://kbase.us/screen_start_depth> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "screen_start_depth" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Screen Start Depth" ;
+    skos:definition "Screen start depth in ft below ground surface (ft BGS)" .
+
+<http://kbase.us/screen_top_elevation> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "screen_top_elevation" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Screen Top Elevation" ;
+    skos:definition "Screen top elevation in ft above mean sea level (ft AMSL)" .
+
+<http://kbase.us/screened_interval> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "screened_interval" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Screened Interval" ;
+    skos:definition "Screened interval in ft" .
+
+<http://kbase.us/temperature> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "temperature" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Temperature" .
+
+<http://kbase.us/top_of_casing_elevation> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "top_of_casing_elevation" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Top of Casing Elevation" ;
+    skos:definition "Top of casing elevation in ft above mean sea level (ft AMSL)" .
+
+<http://kbase.us/top_of_casing_stickup> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "top_of_casing_stickup" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Top of Casing Stickup" ;
+    skos:definition "Top of casing stickup in ft" .
+
+<http://kbase.us/top_of_fresh_bedrock> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "top_of_fresh_bedrock" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Top of Fresh Bedrock" ;
+    skos:definition "Top of fresh bedrock in ft below ground surface (ft BGS)" .
+
+<http://kbase.us/top_of_weathered_bedrock> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "top_of_weathered_bedrock" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Top of Weathered Bedrock" ;
+    skos:definition "Top of weathered bedrock in ft below ground surface (ft BGS)" .
+
+<http://kbase.us/total_carbon> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "total_carbon" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Total Carbon" ;
+    skos:definition "Total carbon in milligrams per gram dry weight" .
+
+<http://kbase.us/total_nitrogen> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "total_nitrogen" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Total Nitrogen" ;
+    skos:definition "Total nitrogen in milligrams per gram dry weight" .
+
+<http://kbase.us/upper_seal_end_depth> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "upper_seal_end_depth" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Upper Seal End Depth" ;
+    skos:definition "Upper seal end depth in ft below ground surface (ft BGS)" .
+
+<http://kbase.us/upper_seal_start_depth> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "upper_seal_start_depth" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Upper Seal Start Depth" ;
+    skos:definition "Upper seal start depth in ft below ground surface (ft BGS)" .
+
+<http://kbase.us/well_casing_depth> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "well_casing_depth" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Well Casing Depth" ;
+    skos:definition "Well casing depth in ft below ground surface (ft BGS)" .
+
+<http://kbase.us/well_casing_id> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "well_casing_id" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Well Casing ID" ;
+    skos:definition "Well casing inner diameter. units in inches" .
+
+<http://kbase.us/well_casing_od> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "well_casing_od" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Well Casing OD" ;
+    skos:definition "Well casing outer diameter. units in inches" .
+
+<https://microbiomedata/schema/kbase> a owl:Ontology ;
+    rdfs:label "kbase" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    skos:definition "NMDC rendering of KBase metadata schema" ;
+    meta:generation_date "2020-06-17 23:06" ;
+    meta:metamodel_version "1.4.4" ;
+    meta:source_file "kbase.yaml" ;
+    meta:source_file_date "Wed Jun 17 10:45:05 2020" ;
+    meta:source_file_size 21048 .
 
 meta:SubsetDefinition a owl:Class ;
     rdfs:label "subset_definition" ;
     skos:definition "the name and description of a subset" .
 
-meta:age_max a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "age_max" ;
-    rdfs:range meta:double ;
-    skos:definition "maximum age in years" .
-
-meta:age_min a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "age_min" ;
-    rdfs:range meta:double ;
-    skos:definition "minimum age in years" .
-
-meta:aodc a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "aodc" ;
-    rdfs:range meta:double ;
-    skos:definition "units in cells per gram" .
-
-meta:average_water_level a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "average_water_level" ;
-    rdfs:range meta:double ;
-    skos:definition "units in ft above mean sea level (ft AMSL)" .
-
-meta:biomass_carbon a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "biomass_carbon" ;
-    rdfs:range meta:double ;
-    skos:definition "units in milligrams per gram" .
-
-meta:boncat_activity a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "boncat_activity" ;
-    rdfs:range meta:double ;
-    skos:definition "units in cells per gram" .
-
-meta:boolean a owl:Class,
+<https://w3id.org/biolink/biolinkml/type/Boolean> a owl:Class,
         meta:TypeDefinition ;
     rdfs:label "boolean" ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -654,51 +1083,17 @@ meta:boolean a owl:Class,
             owl:qualifiedCardinality 1 ] ;
     skos:definition "A binary (true or false) value" .
 
-meta:boring a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "boring" ;
-    rdfs:range meta:double ;
-    skos:definition "boring depth in ft below groud surface (ft BGS)" .
+<https://w3id.org/biolink/biolinkml/type/Date> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "date" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:date ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "a date (year, month and day) in an idealized calendar" ;
+    skos:editorialNote "URI is dateTime because OWL reasoners don't work with straight date or time" .
 
-meta:boring_diameter a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "boring_diameter" ;
-    rdfs:range meta:double ;
-    skos:definition "boring diameter in inches" .
-
-meta:collection_date a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "collection_date" ;
-    rdfs:range meta:string .
-
-meta:collection_date_end a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "collection_date_end" ;
-    rdfs:range meta:string .
-
-meta:conductivity a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "conductivity" ;
-    rdfs:range meta:double ;
-    skos:definition "conductivity in millisiemens per centimeter" .
-
-<https://w3id.org/biolink/biolinkml/meta/coordinate_precision?> a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "coordinate_precision?" ;
-    rdfs:range meta:string .
-
-meta:current_archive_contact a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "current_archive_contact" ;
-    rdfs:range meta:string .
-
-meta:dapi_cell_count a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "dapi_cell_count" ;
-    rdfs:range meta:string ;
-    skos:definition "DAPI cell count in cells per gram" .
-
-meta:datetime a owl:Class,
+<https://w3id.org/biolink/biolinkml/type/Datetime> a owl:Class,
         meta:TypeDefinition ;
     rdfs:label "datetime" ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -707,73 +1102,7 @@ meta:datetime a owl:Class,
             owl:qualifiedCardinality 1 ] ;
     skos:definition "The combination of a date and time" .
 
-meta:depth_in_core_max a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "depth_in_core_max" ;
-    rdfs:range meta:double ;
-    skos:definition "maximum depth in core in meters" .
-
-meta:depth_in_core_min a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "depth_in_core_min" ;
-    rdfs:range meta:double ;
-    skos:definition "minimum depth in core in meters" .
-
-meta:dna_picogreen_total a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "dna_picogreen_total" ;
-    rdfs:range meta:double ;
-    skos:definition "units in nanograms" .
-
-meta:drive_casing_end_depth a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "drive_casing_end_depth" ;
-    rdfs:range meta:double ;
-    skos:definition "drive casing end depth in ft below ground surface (ft BGS)" .
-
-meta:drive_casing_id a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "drive_casing_id" ;
-    rdfs:range meta:double ;
-    skos:definition "drive casing inner diameter in inches" .
-
-meta:drive_casing_od a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "drive_casing_od" ;
-    rdfs:range meta:double ;
-    skos:definition "drive casing outer diameter in inches" .
-
-meta:drive_casing_start_depth a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "drive_casing_start_depth" ;
-    rdfs:range meta:double ;
-    skos:definition "units in ft below ground surface (ft BGS)" .
-
-meta:easting a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "easting" ;
-    rdfs:range meta:double ;
-    skos:definition "Easting in meters" .
-
-meta:elevation_end a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "elevation_end" ;
-    rdfs:range meta:double ;
-    skos:definition "Elevation end in meters" .
-
-meta:elevation_start a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "elevation_start" ;
-    rdfs:range meta:double ;
-    skos:definition "Elevation start in meters" .
-
-meta:filter a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "filter" ;
-    rdfs:range meta:double ;
-    skos:definition "Filter pore size in microns" .
-
-meta:float a owl:Class,
+<https://w3id.org/biolink/biolinkml/type/Float> a owl:Class,
         meta:TypeDefinition ;
     rdfs:label "float" ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -782,24 +1111,7 @@ meta:float a owl:Class,
             owl:qualifiedCardinality 1 ] ;
     skos:definition "A real number that conforms to the xsd:float specification" .
 
-meta:geological_age a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "geological_age" ;
-    rdfs:range meta:double ;
-    skos:definition "Geological Age in years * 1000000" .
-
-meta:ground_elevation a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "ground_elevation" ;
-    rdfs:range meta:double ;
-    skos:definition "ground elevation in ft above mean sea level (ft AMSL)" .
-
-meta:igsn a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "igsn" ;
-    rdfs:range meta:string .
-
-meta:integer a owl:Class,
+<https://w3id.org/biolink/biolinkml/type/Integer> a owl:Class,
         meta:TypeDefinition ;
     rdfs:label "integer" ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -808,36 +1120,7 @@ meta:integer a owl:Class,
             owl:qualifiedCardinality 1 ] ;
     skos:definition "An integer" .
 
-meta:lower_seal_end_depth a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "lower_seal_end_depth" ;
-    rdfs:range meta:double ;
-    skos:definition "Lower seal end depth in ft below ground surface (ft BGS)" .
-
-meta:lower_seal_start_depth a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "lower_seal_start_depth" ;
-    rdfs:range meta:double ;
-    skos:definition "Lower seal start depth in ft below ground surface (ft BGS)" .
-
-meta:lower_seal_type a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "lower_seal_type" ;
-    rdfs:range meta:string .
-
-meta:max_water_level a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "max_water_level" ;
-    rdfs:range meta:double ;
-    skos:definition "Maximum water level in ft above mean sea level (ft AMSL)" .
-
-meta:min_water_level a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "min_water_level" ;
-    rdfs:range meta:double ;
-    skos:definition "Minimum water level in ft above mean sea level (ft AMSL)" .
-
-meta:ncname a owl:Class,
+<https://w3id.org/biolink/biolinkml/type/Ncname> a owl:Class,
         meta:TypeDefinition ;
     rdfs:label "ncname" ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -846,7 +1129,7 @@ meta:ncname a owl:Class,
             owl:qualifiedCardinality 1 ] ;
     skos:definition "Prefix part of CURIE" .
 
-meta:nodeidentifier a owl:Class,
+<https://w3id.org/biolink/biolinkml/type/Nodeidentifier> a owl:Class,
         meta:TypeDefinition ;
     rdfs:label "nodeidentifier" ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -855,13 +1138,7 @@ meta:nodeidentifier a owl:Class,
             owl:qualifiedCardinality 1 ] ;
     skos:definition "A URI, CURIE or BNODE that represents a node in a model." .
 
-meta:northing a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "northing" ;
-    rdfs:range meta:double ;
-    skos:definition "Northing in meters" .
-
-meta:objectidentifier a owl:Class,
+<https://w3id.org/biolink/biolinkml/type/Objectidentifier> a owl:Class,
         meta:TypeDefinition ;
     rdfs:label "objectidentifier" ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -871,188 +1148,17 @@ meta:objectidentifier a owl:Class,
     skos:definition "A URI or CURIE that represents an object in the model." ;
     skos:note "Used for inheritence and type checking" .
 
-meta:open_casing_depth a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "open_casing_depth" ;
-    rdfs:range meta:double ;
-    skos:definition "Open casing depth in ft below ground surface (ft BGS)" .
+<https://w3id.org/biolink/biolinkml/type/Time> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "time" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:dateTime ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "A time object represents a (local) time of day, independent of any particular day" ;
+    skos:editorialNote "URI is dateTime because OWL reasoners don't work with straight date or time" .
 
-meta:open_casing_id a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "open_casing_id" ;
-    rdfs:range meta:double ;
-    skos:definition "open casing inner diameter in inches (in)" .
-
-meta:open_casing_od a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "open_casing_od" ;
-    rdfs:range meta:double ;
-    skos:definition "open casing outer diameter in inches (in)" .
-
-meta:open_hole_depth a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "open_hole_depth" ;
-    rdfs:range meta:double ;
-    skos:definition "Open hole depth in ft below ground surface (ft BGS)" .
-
-meta:open_hole_diameter a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "open_hole_diameter" ;
-    rdfs:range meta:double ;
-    skos:definition "Open hole diameter in inches" .
-
-meta:open_interval_diameter a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "open_interval_diameter" ;
-    rdfs:range meta:double ;
-    skos:definition "Open interval diameter in inches" .
-
-meta:open_interval_end_depth a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "open_interval_end_depth" ;
-    rdfs:range meta:double ;
-    skos:definition "Open interval end depth in ft below ground surface (ft BGS)" .
-
-meta:open_interval_start_depth a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "open_interval_start_depth" ;
-    rdfs:range meta:double ;
-    skos:definition "Open interval start depth in ft below ground surface (ft BGS)" .
-
-meta:organic_carbon a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "organic_carbon" ;
-    rdfs:range meta:double ;
-    skos:definition "Organic carbon in milligrams per gram dry weight" .
-
-meta:packing_depth_end a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "packing_depth_end" ;
-    rdfs:range meta:double ;
-    skos:definition "Packind depth end in ft below ground surface (ft BGS)" .
-
-meta:packing_depth_start a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "packing_depth_start" ;
-    rdfs:range meta:double ;
-    skos:definition "Packind depth start in ft below ground surface (ft BGS)" .
-
-meta:parent_id a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "parent_id" ;
-    rdfs:range meta:string ;
-    skos:definition "id field of parent" .
-
-meta:parent_igsn a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "parent_igsn" ;
-    rdfs:range meta:string .
-
-meta:pore_water_extraction a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "pore_water_extraction" ;
-    rdfs:range meta:double ;
-    skos:definition "Pore water extraction in microliters" .
-
-<https://w3id.org/biolink/biolinkml/meta/redox_potential_?> a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "redox_potential_?" ;
-    rdfs:range meta:string .
-
-meta:relation_type a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "relation_type" ;
-    rdfs:range meta:string .
-
-meta:release_date a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "release_date" ;
-    rdfs:range meta:string .
-
-meta:screen_bottom_elevation a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "screen_bottom_elevation" ;
-    rdfs:range meta:double ;
-    skos:definition "Screen bottom elevation in ft above mean sea level (ft AMSL)" .
-
-meta:screen_end_depth a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "screen_end_depth" ;
-    rdfs:range meta:double ;
-    skos:definition "Screen end depth in ft below ground surface (ft BGS)" .
-
-meta:screen_start_depth a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "screen_start_depth" ;
-    rdfs:range meta:double ;
-    skos:definition "Screen start depth in ft below ground surface (ft BGS)" .
-
-meta:screen_top_elevation a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "screen_top_elevation" ;
-    rdfs:range meta:double ;
-    skos:definition "Screen top elevation in ft above mean sea level (ft AMSL)" .
-
-meta:screened_interval a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "screened_interval" ;
-    rdfs:range meta:double ;
-    skos:definition "Screened interval in ft" .
-
-meta:temperature a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "temperature" ;
-    rdfs:range meta:double .
-
-meta:top_of_casing_elevation a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "top_of_casing_elevation" ;
-    rdfs:range meta:double ;
-    skos:definition "Top of casing elevation in ft above mean sea level (ft AMSL)" .
-
-meta:top_of_casing_stickup a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "top_of_casing_stickup" ;
-    rdfs:range meta:double ;
-    skos:definition "Top of casing stickup in ft" .
-
-meta:top_of_fresh_bedrock a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "top_of_fresh_bedrock" ;
-    rdfs:range meta:double ;
-    skos:definition "Top of fresh bedrock in ft below ground surface (ft BGS)" .
-
-meta:top_of_weathered_bedrock a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "top_of_weathered_bedrock" ;
-    rdfs:range meta:double ;
-    skos:definition "Top of weathered bedrock in ft below ground surface (ft BGS)" .
-
-meta:total_carbon a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "total_carbon" ;
-    rdfs:range meta:double ;
-    skos:definition "Total carbon in milligrams per gram dry weight" .
-
-meta:total_nitrogen a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "total_nitrogen" ;
-    rdfs:range meta:double ;
-    skos:definition "Total nitrogen in milligrams per gram dry weight" .
-
-meta:upper_seal_end_depth a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "upper_seal_end_depth" ;
-    rdfs:range meta:double ;
-    skos:definition "Upper seal end depth in ft below ground surface (ft BGS)" .
-
-meta:upper_seal_start_depth a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "upper_seal_start_depth" ;
-    rdfs:range meta:double ;
-    skos:definition "Upper seal start depth in ft below ground surface (ft BGS)" .
-
-meta:uri a owl:Class,
+<https://w3id.org/biolink/biolinkml/type/Uri> a owl:Class,
         meta:TypeDefinition ;
     rdfs:label "uri" ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -1061,7 +1167,7 @@ meta:uri a owl:Class,
             owl:qualifiedCardinality 1 ] ;
     skos:definition "a complete URI" .
 
-meta:uriorcurie a owl:Class,
+<https://w3id.org/biolink/biolinkml/type/Uriorcurie> a owl:Class,
         meta:TypeDefinition ;
     rdfs:label "uriorcurie" ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -1070,743 +1176,798 @@ meta:uriorcurie a owl:Class,
             owl:qualifiedCardinality 1 ] ;
     skos:definition "a URI or a CURIE" .
 
-meta:well_casing_depth a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "well_casing_depth" ;
-    rdfs:range meta:double ;
-    skos:definition "Well casing depth in ft below ground surface (ft BGS)" .
-
-meta:well_casing_id a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "well_casing_id" ;
-    rdfs:range meta:double ;
-    skos:definition "Well casing inner diameter. units in inches" .
-
-meta:well_casing_od a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "well_casing_od" ;
-    rdfs:range meta:double ;
-    skos:definition "Well casing outer diameter. units in inches" .
-
-meta:age_unit a owl:ObjectProperty,
+<http://kbase.us/age_unit> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "age_unit" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:aquifer a owl:ObjectProperty,
+<http://kbase.us/aquifer> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "aquifer" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Aquifer" .
 
-meta:area_name a owl:ObjectProperty,
+<http://kbase.us/area_name> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "area_name" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Area Name" .
 
-meta:average_water_level_ft_amsl a owl:ObjectProperty,
+<http://kbase.us/average_water_level_ft_amsl> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "average_water_level_ft_amsl" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:biomass_carbon_mg_g a owl:ObjectProperty,
+<http://kbase.us/biomass_carbon_mg_g> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "biomass_carbon_mg_g" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:biome a owl:ObjectProperty,
+<http://kbase.us/biome> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "biome" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Biome" .
 
-meta:boring_diameter_in a owl:ObjectProperty,
+<http://kbase.us/boring_diameter_in> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "boring_diameter_in" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:boring_ft_bgs a owl:ObjectProperty,
+<http://kbase.us/boring_ft_bgs> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "boring_ft_bgs" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:boring_refusal a owl:ObjectProperty,
+<http://kbase.us/boring_refusal> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "boring_refusal" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Boring Refusal" .
 
-meta:city_township a owl:ObjectProperty,
+<http://kbase.us/city_township> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "city_township" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "City/Township" .
 
-meta:classification a owl:ObjectProperty,
+<http://kbase.us/classification> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "classification" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Classification" .
 
-meta:collection_date_precision a owl:ObjectProperty,
+<http://kbase.us/collection_date_precision> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "collection_date_precision" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Collection date precision" .
 
-meta:collection_method a owl:ObjectProperty,
+<http://kbase.us/collection_method> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "collection_method" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Collection method" .
 
-meta:collection_method_description a owl:ObjectProperty,
+<http://kbase.us/collection_method_description> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "collection_method_description" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Collection method description" .
 
-meta:collection_time_end a owl:ObjectProperty,
+<http://kbase.us/collection_time_end> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "collection_time_end" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Collection time (end)" .
 
-meta:collector_chief_scientist a owl:ObjectProperty,
+<http://kbase.us/collector_chief_scientist> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "collector_chief_scientist" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Collector/Chief Scientist name" .
 
-meta:collector_chief_scientist_address a owl:ObjectProperty,
+<http://kbase.us/collector_chief_scientist_address> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "collector_chief_scientist_address" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Collector/Chief Scientist address" .
 
-meta:condition a owl:ObjectProperty,
+<http://kbase.us/condition> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "condition" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Condition" .
 
-meta:conductivity_ms_cm a owl:ObjectProperty,
+<http://kbase.us/conductivity_ms_cm> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "conductivity_ms_cm" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:continent a owl:ObjectProperty,
+<http://kbase.us/continent> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "continent" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Continent" .
 
-meta:county a owl:ObjectProperty,
+<http://kbase.us/county> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "county" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "County" .
 
-meta:current_archive a owl:ObjectProperty,
+<http://kbase.us/current_archive> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "current_archive" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Current archive" .
 
-meta:dapi_cell_count_cells_g a owl:ObjectProperty,
+<http://kbase.us/dapi_cell_count_cells_g> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "dapi_cell_count_cells_g" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:depth_scale a owl:ObjectProperty,
+<http://kbase.us/depth_scale> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "depth_scale" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Depth scale" .
 
-meta:dna_picogreen_total_ng a owl:ObjectProperty,
+<http://kbase.us/dna_picogreen_total_ng> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "dna_picogreen_total_ng" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:drive_casing_end_depth_ft_bgs a owl:ObjectProperty,
+<http://kbase.us/drive_casing_end_depth_ft_bgs> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "drive_casing_end_depth_ft_bgs" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:drive_casing_id_in a owl:ObjectProperty,
+<http://kbase.us/drive_casing_id_in> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "drive_casing_id_in" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:drive_casing_od_in a owl:ObjectProperty,
+<http://kbase.us/drive_casing_od_in> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "drive_casing_od_in" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:drive_casing_start_depth_ft_bgs a owl:ObjectProperty,
+<http://kbase.us/drive_casing_start_depth_ft_bgs> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "drive_casing_start_depth_ft_bgs" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:drive_casing_type a owl:ObjectProperty,
+<http://kbase.us/drive_casing_type> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "drive_casing_type" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Drive Casing Type" .
 
-meta:env_package a owl:ObjectProperty,
+<http://kbase.us/env_package> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "env_package" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Env_package" .
 
-meta:environmental_package a owl:ObjectProperty,
+<http://kbase.us/environmental_package> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "environmental_package" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Environmental Package" .
 
-meta:experiment_name a owl:ObjectProperty,
+<http://kbase.us/experiment_name> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "experiment_name" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Experiment Name" .
 
-meta:feature a owl:ObjectProperty,
+<http://kbase.us/feature> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "feature" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Feature" .
 
-meta:field_name_informal_classification a owl:ObjectProperty,
+<http://kbase.us/field_name_informal_classification> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "field_name_informal_classification" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Field name (informal classification)" .
 
-meta:field_program_cruise a owl:ObjectProperty,
+<http://kbase.us/field_program_cruise> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "field_program_cruise" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Field program/cruise" .
 
-meta:fraction a owl:ObjectProperty,
+<http://kbase.us/fraction> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "fraction" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Fraction" .
 
-meta:fractures_cavities_waterbreaks a owl:ObjectProperty,
+<http://kbase.us/fractures_cavities_waterbreaks> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "fractures_cavities_waterbreaks" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Fractures/Cavities/WaterBreaks" .
 
-meta:functional_area a owl:ObjectProperty,
+<http://kbase.us/functional_area> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "functional_area" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Functional Area" .
 
-meta:geological_unit a owl:ObjectProperty,
+<http://kbase.us/geological_unit> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "geological_unit" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:geological_zone a owl:ObjectProperty,
+<http://kbase.us/geological_zone> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "geological_zone" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Geological Zone" .
 
-meta:ground_elevation_ft_amsl a owl:ObjectProperty,
+<http://kbase.us/ground_elevation_ft_amsl> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "ground_elevation_ft_amsl" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:installation_method a owl:ObjectProperty,
+<http://kbase.us/installation_method> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "installation_method" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Installation Method" .
 
-meta:launch_id a owl:ObjectProperty,
+<http://kbase.us/launch_id> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "launch_id" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Launch ID" .
 
-meta:launch_platform_name a owl:ObjectProperty,
+<http://kbase.us/launch_platform_name> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "launch_platform_name" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Launch platform name" .
 
-meta:leucine_activity_ngc_day_cell a owl:ObjectProperty,
+<http://kbase.us/leucine_activity_ngc_day_cell> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "leucine_activity_ngc_day_cell" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Leucine Activity (ngC/day cell)" ;
     skos:definition "units in ngC/day cell" .
 
-meta:locality a owl:ObjectProperty,
+<http://kbase.us/locality> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "locality" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Locality" .
 
-meta:locality_description a owl:ObjectProperty,
+<http://kbase.us/locality_description> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "locality_description" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Locality description" .
 
-meta:location_description a owl:ObjectProperty,
+<http://kbase.us/location_description> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "location_description" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Location description" .
 
-meta:lower_seal_end_depth_ft_bgs a owl:ObjectProperty,
+<http://kbase.us/lower_seal_end_depth_ft_bgs> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "lower_seal_end_depth_ft_bgs" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:lower_seal_start_depth_ft_bgs a owl:ObjectProperty,
+<http://kbase.us/lower_seal_start_depth_ft_bgs> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "lower_seal_start_depth_ft_bgs" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:lower_seal_type_ft_bgs a owl:ObjectProperty,
+<http://kbase.us/lower_seal_type_ft_bgs> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "lower_seal_type_ft_bgs" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:maturation_time a owl:ObjectProperty,
+<http://kbase.us/maturation_time> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "maturation_time" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Maturation Time" .
 
-meta:max_water_level_ft_amsl a owl:ObjectProperty,
+<http://kbase.us/max_water_level_ft_amsl> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "max_water_level_ft_amsl" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:method a owl:ObjectProperty,
+<http://kbase.us/method> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "method" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Method" .
 
-meta:min_water_level_ft_amsl a owl:ObjectProperty,
+<http://kbase.us/min_water_level_ft_amsl> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "min_water_level_ft_amsl" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:moisture a owl:ObjectProperty,
+<http://kbase.us/moisture> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "moisture" ;
-    rdfs:range meta:double ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Moisture" ;
     skos:definition "percent moisture" .
 
-meta:name_of_physiographic_feature a owl:ObjectProperty,
+<http://kbase.us/name_of_physiographic_feature> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "name_of_physiographic_feature" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Name of physiographic feature" .
 
-meta:navigation_type a owl:ObjectProperty,
+<http://kbase.us/navigation_type> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "navigation_type" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Navigation type" .
 
-meta:open a owl:ObjectProperty,
+<http://kbase.us/open> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "open" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Open" .
 
-meta:open_casing_depth_ft_bgs a owl:ObjectProperty,
+<http://kbase.us/open_casing_depth_ft_bgs> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "open_casing_depth_ft_bgs" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:open_casing_id_in a owl:ObjectProperty,
+<http://kbase.us/open_casing_id_in> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "open_casing_id_in" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:open_casing_od_in a owl:ObjectProperty,
+<http://kbase.us/open_casing_od_in> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "open_casing_od_in" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:open_casing_type a owl:ObjectProperty,
+<http://kbase.us/open_casing_type> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "open_casing_type" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Open Casing Type" .
 
-meta:open_hole_depth_ft_bgs a owl:ObjectProperty,
+<http://kbase.us/open_hole_depth_ft_bgs> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "open_hole_depth_ft_bgs" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:open_hole_diameter_in a owl:ObjectProperty,
+<http://kbase.us/open_hole_diameter_in> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "open_hole_diameter_in" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:open_interval_diameter_in a owl:ObjectProperty,
+<http://kbase.us/open_interval_diameter_in> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "open_interval_diameter_in" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:open_interval_end_depth_ft_bgs a owl:ObjectProperty,
+<http://kbase.us/open_interval_end_depth_ft_bgs> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "open_interval_end_depth_ft_bgs" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:open_interval_start_depth_ft_bgs a owl:ObjectProperty,
+<http://kbase.us/open_interval_start_depth_ft_bgs> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "open_interval_start_depth_ft_bgs" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:original_archive a owl:ObjectProperty,
+<http://kbase.us/original_archive> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "original_archive" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Original archive" .
 
-meta:original_archive_contact a owl:ObjectProperty,
+<http://kbase.us/original_archive_contact> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "original_archive_contact" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Original archive contact" .
 
-meta:origination_or_plug_abandon a owl:ObjectProperty,
+<http://kbase.us/origination_or_plug_abandon> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "origination_or_plug_abandon" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Origination or Plug/Abandon" .
 
-meta:other_name a owl:ObjectProperty,
+<http://kbase.us/other_name> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "other_name" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Other Name" .
 
-meta:other_names a owl:ObjectProperty,
+<http://kbase.us/other_names> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "other_names" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Other name(s)" .
 
-meta:packing_depth_end_ft_bgs a owl:ObjectProperty,
+<http://kbase.us/packing_depth_end_ft_bgs> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "packing_depth_end_ft_bgs" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:packing_depth_start_ft_bgs a owl:ObjectProperty,
+<http://kbase.us/packing_depth_start_ft_bgs> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "packing_depth_start_ft_bgs" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:packing_type a owl:ObjectProperty,
+<http://kbase.us/packing_type> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "packing_type" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Packing Type" .
 
-meta:ph a owl:ObjectProperty,
+<http://kbase.us/ph> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "ph" ;
-    rdfs:range meta:double ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Ph" ;
     skos:definition "pH of sample" .
 
-meta:platform_name a owl:ObjectProperty,
+<http://kbase.us/platform_name> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "platform_name" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Platform name" .
 
-meta:platform_type a owl:ObjectProperty,
+<http://kbase.us/platform_type> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "platform_type" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Platform type" .
 
-meta:pore_water_extraction_microliters a owl:ObjectProperty,
+<http://kbase.us/pore_water_extraction_microliters> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "pore_water_extraction_microliters" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:primary_physiographic_feature a owl:ObjectProperty,
+<http://kbase.us/primary_physiographic_feature> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "primary_physiographic_feature" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Primary physiographic feature" .
 
-meta:purpose a owl:ObjectProperty,
+<http://kbase.us/purpose> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "purpose" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Purpose" .
 
-meta:recovery_factor a owl:ObjectProperty,
+<http://kbase.us/recovery_factor> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "recovery_factor" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Recovery Factor" .
 
-meta:region a owl:ObjectProperty,
+<http://kbase.us/region> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "region" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Region" .
 
-meta:related_identifiers a owl:ObjectProperty,
+<http://kbase.us/related_identifiers> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "related_identifiers" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Related Identifiers" .
 
-meta:replicate a owl:ObjectProperty,
+<http://kbase.us/replicate> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "replicate" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Replicate" .
 
-meta:rock_formation a owl:ObjectProperty,
+<http://kbase.us/rock_formation> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "rock_formation" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Rock Formation" .
 
-meta:sample_description a owl:ObjectProperty,
+<http://kbase.us/sample_description> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "sample_description" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Sample Description" .
 
-meta:sample_name a owl:ObjectProperty,
+<http://kbase.us/sample_name> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "sample_name" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Sample Name" .
 
-meta:sampleid a owl:ObjectProperty,
+<http://kbase.us/sampleid> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "sampleid" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "SampleID" .
 
-meta:screen_type a owl:ObjectProperty,
+<http://kbase.us/screen_type> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "screen_type" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Screen Type" .
 
-meta:screened a owl:ObjectProperty,
+<http://kbase.us/screened> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "screened" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Screened" .
 
-meta:size a owl:ObjectProperty,
+<http://kbase.us/size> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "size" ;
-    rdfs:range meta:double ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Size" ;
     skos:definition "Size in meters cubed" .
 
-meta:size_unit a owl:ObjectProperty,
+<http://kbase.us/size_unit> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "size_unit" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:state_province a owl:ObjectProperty,
+<http://kbase.us/state_province> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "state_province" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "State/Province" .
 
-meta:sub-object_type a owl:ObjectProperty,
+<http://kbase.us/sub-object_type> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "sub-object_type" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Sub-object type" .
 
-meta:temperature_celsius a owl:ObjectProperty,
+<http://kbase.us/temperature_celsius> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "temperature_celsius" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:time_zone a owl:ObjectProperty,
+<http://kbase.us/time_zone> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "time_zone" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Time Zone" .
 
-meta:topoffreshbedrock_ft_bgs a owl:ObjectProperty,
+<http://kbase.us/topoffreshbedrock_ft_bgs> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "topoffreshbedrock_ft_bgs" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:topofweatheredbedrock_ft_bgs a owl:ObjectProperty,
+<http://kbase.us/topofweatheredbedrock_ft_bgs> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "topofweatheredbedrock_ft_bgs" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:total_carbon_mg_g_dry_weight a owl:ObjectProperty,
+<http://kbase.us/total_carbon_mg_g_dry_weight> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "total_carbon_mg_g_dry_weight" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:total_nitrogen_mg_g_dry_weight a owl:ObjectProperty,
+<http://kbase.us/total_nitrogen_mg_g_dry_weight> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "total_nitrogen_mg_g_dry_weight" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:treatment a owl:ObjectProperty,
+<http://kbase.us/treatment> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "treatment" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Treatment" .
 
-meta:type_of_well a owl:ObjectProperty,
+<http://kbase.us/type_of_well> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "type_of_well" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Type of Well" .
 
-meta:upper_seal_end_depth_ft_bgs a owl:ObjectProperty,
+<http://kbase.us/upper_seal_end_depth_ft_bgs> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "upper_seal_end_depth_ft_bgs" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:upper_seal_start_depth_ft_bgs a owl:ObjectProperty,
+<http://kbase.us/upper_seal_start_depth_ft_bgs> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "upper_seal_start_depth_ft_bgs" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:upper_seal_type a owl:ObjectProperty,
+<http://kbase.us/upper_seal_type> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "upper_seal_type" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Upper Seal Type" .
 
-meta:vertical_datum a owl:ObjectProperty,
+<http://kbase.us/vertical_datum> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "vertical_datum" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Vertical Datum" .
 
-meta:well_casing_id_in a owl:ObjectProperty,
+<http://kbase.us/well_casing_id_in> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "well_casing_id_in" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:well_casing_od_in a owl:ObjectProperty,
+<http://kbase.us/well_casing_od_in> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "well_casing_od_in" ;
-    rdfs:range meta:string ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
     skos:definition "Auto-populated" .
 
-meta:well_casing_type a owl:ObjectProperty,
+<http://kbase.us/well_casing_type> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "well_casing_type" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Well Casing Type" .
 
-meta:well_name a owl:ObjectProperty,
+<http://kbase.us/well_name> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "well_name" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Well Name" .
 
-meta:well_status a owl:ObjectProperty,
+<http://kbase.us/well_status> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "well_status" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Well Status" .
 
-meta:zone a owl:ObjectProperty,
+<http://kbase.us/zone> a owl:ObjectProperty,
         meta:SlotDefinition ;
     rdfs:label "zone" ;
-    rdfs:range meta:string .
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Zone" .
+
+<http://kbase.us/collection_time> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "collection_time" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Collection time" .
+
+<http://kbase.us/country> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "country" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Country" .
+
+<http://kbase.us/date> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "date" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Date" .
+
+<http://kbase.us/depth> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "depth" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Depth" ;
+    skos:definition "depth in centimeters below ground surface (cm BGS)" .
+
+<http://kbase.us/description> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "description" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Description" .
+
+<http://kbase.us/elevation> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "elevation" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Elevation" .
+
+<http://kbase.us/env_pakcage> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "env_pakcage" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:definition "Auto-populated" .
+
+<http://kbase.us/id> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "id" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Id" ;
+    skos:definition "Unique identifier for the Sample" .
+
+<http://kbase.us/latitude> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "latitude" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Latitude" ;
+    skos:definition "Latitude in degrees" .
+
+<http://kbase.us/longitude> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "longitude" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/Double> ;
+    skos:altLabel "Longitude" ;
+    skos:definition "Longitude in degrees" .
+
+<http://kbase.us/material> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "material" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Material" .
+
+<http://kbase.us/name> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "name" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Name" ;
+    skos:definition "name validator" .
+
+<http://kbase.us/time> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "time" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Time" .
+
+<http://kbase.us/timezone> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "timezone" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Timezone" .
+
+<http://kbase.us/well> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "well" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/type/String> ;
+    skos:altLabel "Well" .
 
 meta:ClassDefinition a owl:Class ;
     rdfs:label "class_definition" ;
     skos:definition "the definition of a class or interface" .
-
-meta:collection_time a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "collection_time" ;
-    rdfs:range meta:string .
-
-meta:country a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "country" ;
-    rdfs:range meta:string .
-
-meta:date a owl:Class,
-        owl:ObjectProperty,
-        meta:SlotDefinition,
-        meta:TypeDefinition ;
-    rdfs:label "date" ;
-    rdfs:range meta:string ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onDataRange xsd:date ;
-            owl:onProperty meta:topValue ;
-            owl:qualifiedCardinality 1 ] ;
-    skos:definition "a date (year, month and day) in an idealized calendar" ;
-    skos:editorialNote "URI is dateTime because OWL reasoners don't work with straight date or time" .
-
-meta:depth a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "depth" ;
-    rdfs:range meta:double ;
-    skos:definition "depth in centimeters below ground surface (cm BGS)" .
-
-meta:description a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "description" ;
-    rdfs:range meta:string .
-
-meta:elevation a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "elevation" ;
-    rdfs:range meta:string .
-
-meta:env_pakcage a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "env_pakcage" ;
-    rdfs:range meta:string ;
-    skos:definition "Auto-populated" .
-
-meta:id a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "id" ;
-    rdfs:range meta:string ;
-    skos:definition "Unique identifier for the Sample" .
-
-meta:latitude a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "latitude" ;
-    rdfs:range meta:double ;
-    skos:definition "Latitude in degrees" .
-
-meta:longitude a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "longitude" ;
-    rdfs:range meta:double ;
-    skos:definition "Longitude in degrees" .
-
-meta:material a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "material" ;
-    rdfs:range meta:string .
-
-meta:name a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "name" ;
-    rdfs:range meta:string ;
-    skos:definition "name validator" .
-
-meta:time a owl:Class,
-        owl:ObjectProperty,
-        meta:SlotDefinition,
-        meta:TypeDefinition ;
-    rdfs:label "time" ;
-    rdfs:range meta:string ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onDataRange xsd:dateTime ;
-            owl:onProperty meta:topValue ;
-            owl:qualifiedCardinality 1 ] ;
-    skos:definition "A time object represents a (local) time of day, independent of any particular day" ;
-    skos:editorialNote "URI is dateTime because OWL reasoners don't work with straight date or time" .
-
-meta:timezone a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "timezone" ;
-    rdfs:range meta:string .
-
-meta:well a owl:ObjectProperty,
-        meta:SlotDefinition ;
-    rdfs:label "well" ;
-    rdfs:range meta:string .
 
 meta:TypeDefinition a owl:Class ;
     rdfs:label "type_definition" ;
@@ -1815,7 +1976,7 @@ meta:TypeDefinition a owl:Class ;
 meta:topValue a owl:DatatypeProperty ;
     rdfs:label "value" .
 
-meta:double a owl:Class,
+<https://w3id.org/biolink/biolinkml/type/Double> a owl:Class,
         meta:TypeDefinition ;
     rdfs:label "double" ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -1828,7 +1989,7 @@ meta:SlotDefinition a owl:Class ;
     rdfs:label "slot_definition" ;
     skos:definition "the definition of a property or a slot" .
 
-meta:string a owl:Class,
+<https://w3id.org/biolink/biolinkml/type/String> a owl:Class,
         meta:TypeDefinition ;
     rdfs:label "string" ;
     rdfs:subClassOf [ a owl:Restriction ;

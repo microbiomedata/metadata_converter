@@ -2,181 +2,848 @@
 #mapping_tool: "https://github.com/cmungall/rdf_matcher"
 #mapping_date: "2020-06-17"
 #curie_map:
+#  ENVO: "http://purl.obolibrary.org/obo/ENVO_"
+#  OBI: "http://purl.obolibrary.org/obo/OBI_"
+#  PATO: "http://purl.obolibrary.org/obo/PATO_"
+#  UO: "http://purl.obolibrary.org/obo/UO_"
+#  dc: "http://purl.org/dc/elements/1.1/"
 #  kbase: "http://kbase.us/"
 #  mixs: "https://microbiomedata/schema/mixs#"
 #  neon: "https://data.neonscience.org/"
+#  oio: "http://www.geneontology.org/formats/oboInOwl#"
+#  owl: "http://www.w3.org/2002/07/owl#"
 subject_id	subject_label	predicate_id	object_id	object_label	match_type	subject_source	object_source	mapping_tool	confidence	subject_match_field	object_match_field	subject_category	object_category	match_string	match_category	comment
-kbase:collection_date	collection_date	owl:equivalentClass	mixs:collection_date	collection_date	Lexical|Stemming	kbase	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	collection_d	unique	.
-kbase:collection_date	collection_date	owl:equivalentClass	mixs:collection_date	collection_date	Lexical	kbase	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	collection_date	unique	.
-kbase:conductivity	conductivity	owl:equivalentClass	neon:conductance	conductance	Lexical|Stemming	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	conduct	unique	.
-kbase:date	date	owl:equivalentClass	neon:date	date	Lexical	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	date	unique	.
-kbase:date	date	owl:equivalentClass	https://w3id.org/biolink/biolinkml/type/Date	date	Lexical	kbase	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	type_definition	date	unique	.
-kbase:date	date	owl:equivalentClass	neon:date	date	Lexical|Stemming	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	date	unique	.
+kbase:aquifer	aquifer	owl:equivalentClass	ENVO:00012408	aquifer	Lexical|Stemming	kbase	ENVO	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	aquif	unique	.
+kbase:aquifer	aquifer	owl:equivalentClass	ENVO:00012408	aquifer	Lexical	kbase	ENVO	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	aquifer	unique	.
+kbase:aquifer	aquifer	owl:equivalentClass	ENVO:00012408	aquifer	Lexical|Stemming	kbase	ENVO	rdf_matcher	0.5	skos:altLabel	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	aquif	unique	.
+kbase:aquifer	aquifer	owl:equivalentClass	ENVO:00012408	aquifer	Lexical	kbase	ENVO	rdf_matcher	0.585786437626905	skos:altLabel	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	aquifer	unique	.
+kbase:collection_date	collection_date	owl:equivalentClass	mixs:collection_date	collection_date	Lexical|Stemming	kbase	mixs	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	collection_d	unique	.
+kbase:collection_date	collection_date	owl:equivalentClass	mixs:collection_date	collection_date	Lexical	kbase	mixs	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	collection_date	unique	.
+kbase:collection_date	collection_date	owl:equivalentClass	mixs:collection_date	collection_date	Lexical|Stemming	kbase	mixs	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	collection d	unique	.
+kbase:collection_date	collection_date	owl:equivalentClass	mixs:collection_date	collection_date	Lexical	kbase	mixs	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	collection date	unique	.
+kbase:conductivity	conductivity	owl:equivalentClass	neon:conductance	conductance	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	conduct	unique	.
+kbase:conductivity	conductivity	owl:equivalentClass	neon:conductance	conductance	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	conduct	unique	.
+kbase:conductivity	conductivity	owl:equivalentClass	mixs:conduc	conduc	Lexical|Stemming	kbase	mixs	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	conduct	unique	.
+kbase:conductivity	conductivity	owl:equivalentClass	mixs:conduc	conduc	Lexical	kbase	mixs	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	conductivity	unique	.
+kbase:conductivity	conductivity	owl:equivalentClass	neon:conductance	conductance	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	conduct	unique	.
+kbase:conductivity	conductivity	owl:equivalentClass	neon:conductance	conductance	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	conduct	unique	.
+kbase:conductivity	conductivity	owl:equivalentClass	mixs:conduc	conduc	Lexical|Stemming	kbase	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	conduct	unique	.
+kbase:conductivity	conductivity	owl:equivalentClass	mixs:conduc	conduc	Lexical	kbase	mixs	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	conductivity	unique	.
+kbase:country	country	owl:equivalentClass	ENVO:00000009	national geopolitical entity	Lexical|Stemming	kbase	ENVO	rdf_matcher	0.3333333333333333	rdfs:label	oio:hasRelatedSynonym	slot_definition	ENVO	countri	unique	.
+kbase:country	country	owl:equivalentClass	ENVO:00000009	national geopolitical entity	Lexical	kbase	ENVO	rdf_matcher	0.4142135623730951	rdfs:label	oio:hasRelatedSynonym	slot_definition	ENVO	country	unique	.
+kbase:country	country	owl:equivalentClass	ENVO:00000009	national geopolitical entity	Lexical|Stemming	kbase	ENVO	rdf_matcher	0.3333333333333333	skos:altLabel	oio:hasRelatedSynonym	slot_definition	ENVO	countri	unique	.
+kbase:country	country	owl:equivalentClass	ENVO:00000009	national geopolitical entity	Lexical	kbase	ENVO	rdf_matcher	0.4142135623730951	skos:altLabel	oio:hasRelatedSynonym	slot_definition	ENVO	country	unique	.
+kbase:date	date	owl:equivalentClass	neon:date	date	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	date	unique	.
+kbase:date	date	owl:equivalentClass	neon:date	date	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	date	unique	.
+kbase:date	date	owl:equivalentClass	https://w3id.org/biolink/biolinkml/type/Date	date	Lexical	kbase	https	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	slot_definition	type_definition	date	unique	.
+kbase:date	date	owl:equivalentClass	neon:date	date	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	date	unique	.
+kbase:date	date	owl:equivalentClass	neon:date	date	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	date	unique	.
 kbase:date	date	owl:equivalentClass	https://w3id.org/biolink/biolinkml/type/Date	date	Lexical|Stemming	kbase	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	type_definition	date	unique	.
-kbase:depth	depth	owl:equivalentClass	neon:depth	depth	Lexical	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
-kbase:depth	depth	owl:equivalentClass	mixs:depth	depth	Lexical	kbase	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
-kbase:depth	depth	owl:equivalentClass	neon:depth	depth	Lexical|Stemming	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
-kbase:depth	depth	owl:equivalentClass	mixs:depth	depth	Lexical|Stemming	kbase	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
-kbase:description	description	owl:equivalentClass	https://microbiomedata/meta/description	description	Lexical|Stemming	kbase	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	descript	unique	.
-kbase:description	description	owl:equivalentClass	https://microbiomedata/meta/description	description	Lexical	kbase	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	description	unique	.
-kbase:easting	easting	owl:equivalentClass	neon:easting	easting	Lexical|Stemming	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	east	unique	.
-kbase:easting	easting	owl:equivalentClass	neon:easting	easting	Lexical	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	easting	unique	.
-kbase:elevation	elevation	owl:equivalentClass	neon:elevation	elevation	Lexical|Stemming	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	elev	unique	.
-kbase:elevation	elevation	owl:equivalentClass	mixs:elev	elev	Lexical|Stemming	kbase	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	elev	one_to_many	.
-kbase:elevation	elevation	owl:equivalentClass	mixs:elevator	elevator	Lexical|Stemming	kbase	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	elev	one_to_many	.
-kbase:elevation	elevation	owl:equivalentClass	neon:elevation	elevation	Lexical	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	elevation	unique	.
-kbase:env_package	env_package	owl:equivalentClass	mixs:env_package	env_package	Lexical|Stemming	kbase	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	env_packag	unique	.
-kbase:env_package	env_package	owl:equivalentClass	mixs:env_package	env_package	Lexical	kbase	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	env_package	unique	.
-kbase:id	id	owl:equivalentClass	https://microbiomedata/meta/id	id	Lexical	kbase	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	id	unique	.
-kbase:id	id	owl:equivalentClass	https://microbiomedata/meta/id	id	Lexical|Stemming	kbase	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	id	unique	.
-kbase:latitude	latitude	owl:equivalentClass	neon:latitude	latitude	Lexical|Stemming	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	latitud	unique	.
-kbase:latitude	latitude	owl:equivalentClass	https://microbiomedata/meta/latitude	latitude	Lexical|Stemming	kbase	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	latitud	unique	.
-kbase:latitude	latitude	owl:equivalentClass	neon:latitude	latitude	Lexical	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	latitude	unique	.
-kbase:latitude	latitude	owl:equivalentClass	https://microbiomedata/meta/latitude	latitude	Lexical	kbase	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	latitude	unique	.
-kbase:longitude	longitude	owl:equivalentClass	neon:longitude	longitude	Lexical|Stemming	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	longitud	unique	.
-kbase:longitude	longitude	owl:equivalentClass	https://microbiomedata/meta/longitude	longitude	Lexical|Stemming	kbase	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	longitud	unique	.
-kbase:longitude	longitude	owl:equivalentClass	neon:longitude	longitude	Lexical	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	longitude	unique	.
-kbase:longitude	longitude	owl:equivalentClass	https://microbiomedata/meta/longitude	longitude	Lexical	kbase	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	longitude	unique	.
-kbase:method	method	owl:equivalentClass	neon:method	method	Lexical	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	method	unique	.
-kbase:method	method	owl:equivalentClass	neon:method	method	Lexical|Stemming	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	method	unique	.
-kbase:name	name	owl:equivalentClass	neon:name	name	Lexical	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
-kbase:name	name	owl:equivalentClass	https://microbiomedata/meta/name	name	Lexical	kbase	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
-kbase:name	name	owl:equivalentClass	neon:name	name	Lexical|Stemming	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
-kbase:name	name	owl:equivalentClass	https://microbiomedata/meta/name	name	Lexical|Stemming	kbase	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
-kbase:northing	northing	owl:equivalentClass	neon:northing	northing	Lexical|Stemming	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	north	unique	.
-kbase:northing	northing	owl:equivalentClass	neon:northing	northing	Lexical	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	northing	unique	.
-kbase:ph	ph	owl:equivalentClass	neon:pH	pH	Lexical	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
-kbase:ph	ph	owl:equivalentClass	mixs:ph	ph	Lexical	kbase	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
-kbase:ph	ph	owl:equivalentClass	neon:pH	pH	Lexical|Stemming	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
-kbase:ph	ph	owl:equivalentClass	mixs:ph	ph	Lexical|Stemming	kbase	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
-kbase:region	region	owl:equivalentClass	neon:region	region	Lexical	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	region	unique	.
-kbase:region	region	owl:equivalentClass	neon:region	region	Lexical|Stemming	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	region	unique	.
-kbase:replicate	replicate	owl:equivalentClass	neon:replicate	replicate	Lexical|Stemming	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	replic	unique	.
-kbase:replicate	replicate	owl:equivalentClass	neon:replicate	replicate	Lexical	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	replicate	unique	.
-kbase:sampleid	sampleid	owl:equivalentClass	neon:sampleID	sampleID	Lexical	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	sampleid	unique	.
-kbase:sampleid	sampleid	owl:equivalentClass	neon:sampleID	sampleID	Lexical|Stemming	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	sampleid	unique	.
-kbase:time	time	owl:equivalentClass	neon:time	time	Lexical	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	time	unique	.
-kbase:time	time	owl:equivalentClass	https://w3id.org/biolink/biolinkml/type/Time	time	Lexical	kbase	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	type_definition	time	unique	.
-kbase:time	time	owl:equivalentClass	neon:time	time	Lexical|Stemming	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	time	unique	.
+kbase:date	date	owl:equivalentClass	neon:date	date	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	date	unique	.
+kbase:date	date	owl:equivalentClass	neon:date	date	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	date	unique	.
+kbase:date	date	owl:equivalentClass	https://w3id.org/biolink/biolinkml/type/Date	date	Lexical	kbase	https	rdf_matcher	0.585786437626905	skos:altLabel	rdfs:label	slot_definition	type_definition	date	unique	.
+kbase:date	date	owl:equivalentClass	neon:date	date	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	date	unique	.
+kbase:date	date	owl:equivalentClass	neon:date	date	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	date	unique	.
+kbase:date	date	owl:equivalentClass	https://w3id.org/biolink/biolinkml/type/Date	date	Lexical|Stemming	kbase	https	rdf_matcher	0.5	skos:altLabel	rdfs:label	slot_definition	type_definition	date	unique	.
+kbase:depth	depth	owl:equivalentClass	neon:depth	depth	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
+kbase:depth	depth	owl:equivalentClass	neon:depth	depth	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	depth	unique	.
+kbase:depth	depth	owl:equivalentClass	mixs:depth	depth	Lexical	kbase	mixs	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
+kbase:depth	depth	owl:equivalentClass	neon:depth	depth	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
+kbase:depth	depth	owl:equivalentClass	neon:depth	depth	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	depth	unique	.
+kbase:depth	depth	owl:equivalentClass	mixs:depth	depth	Lexical|Stemming	kbase	mixs	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
+kbase:depth	depth	owl:equivalentClass	neon:depth	depth	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	depth	unique	.
+kbase:depth	depth	owl:equivalentClass	neon:depth	depth	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	depth	unique	.
+kbase:depth	depth	owl:equivalentClass	mixs:depth	depth	Lexical	kbase	mixs	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	depth	unique	.
+kbase:depth	depth	owl:equivalentClass	neon:depth	depth	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	depth	unique	.
+kbase:depth	depth	owl:equivalentClass	neon:depth	depth	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	depth	unique	.
+kbase:depth	depth	owl:equivalentClass	mixs:depth	depth	Lexical|Stemming	kbase	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	depth	unique	.
+kbase:description	description	owl:equivalentClass	https://microbiomedata/meta/description	description	Lexical|Stemming	kbase	https	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	descript	unique	.
+kbase:description	description	owl:equivalentClass	https://microbiomedata/meta/description	description	Lexical	kbase	https	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	description	unique	.
+kbase:description	description	owl:equivalentClass	https://microbiomedata/meta/description	description	Lexical|Stemming	kbase	https	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	descript	unique	.
+kbase:description	description	owl:equivalentClass	https://microbiomedata/meta/description	description	Lexical	kbase	https	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	description	unique	.
+kbase:easting	easting	owl:equivalentClass	neon:easting	easting	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	east	unique	.
+kbase:easting	easting	owl:equivalentClass	neon:easting	easting	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	east	unique	.
+kbase:easting	easting	owl:equivalentClass	neon:easting	easting	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	easting	unique	.
+kbase:easting	easting	owl:equivalentClass	neon:easting	easting	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	easting	unique	.
+kbase:easting	easting	owl:equivalentClass	neon:easting	easting	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	east	unique	.
+kbase:easting	easting	owl:equivalentClass	neon:easting	easting	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	east	unique	.
+kbase:easting	easting	owl:equivalentClass	neon:easting	easting	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	easting	unique	.
+kbase:easting	easting	owl:equivalentClass	neon:easting	easting	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	easting	unique	.
+kbase:elevation	elevation	owl:equivalentClass	ENVO:00000176	elevation	Lexical|Stemming	kbase	ENVO	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	elev	unique	.
+kbase:elevation	elevation	owl:equivalentClass	neon:elevation	elevation	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	elev	unique	.
+kbase:elevation	elevation	owl:equivalentClass	neon:elevation	elevation	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	elev	unique	.
+kbase:elevation	elevation	owl:equivalentClass	mixs:elev	elev	Lexical|Stemming	kbase	mixs	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	elev	one_to_many	.
+kbase:elevation	elevation	owl:equivalentClass	mixs:elev	elev	Lexical|Stemming	kbase	mixs	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	elev	one_to_many	.
+kbase:elevation	elevation	owl:equivalentClass	mixs:elevator	elevator	Lexical|Stemming	kbase	mixs	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	elev	one_to_many	.
+kbase:elevation	elevation	owl:equivalentClass	ENVO:00000176	elevation	Lexical	kbase	ENVO	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	elevation	unique	.
+kbase:elevation	elevation	owl:equivalentClass	neon:elevation	elevation	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	elevation	unique	.
+kbase:elevation	elevation	owl:equivalentClass	neon:elevation	elevation	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	elevation	unique	.
+kbase:elevation	elevation	owl:equivalentClass	mixs:elev	elev	Lexical	kbase	mixs	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	elevation	one_to_many	.
+kbase:elevation	elevation	owl:equivalentClass	ENVO:00000176	elevation	Lexical|Stemming	kbase	ENVO	rdf_matcher	0.5	skos:altLabel	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	elev	unique	.
+kbase:elevation	elevation	owl:equivalentClass	neon:elevation	elevation	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	elev	unique	.
+kbase:elevation	elevation	owl:equivalentClass	neon:elevation	elevation	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	elev	unique	.
+kbase:elevation	elevation	owl:equivalentClass	mixs:elev	elev	Lexical|Stemming	kbase	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	elev	one_to_many	.
+kbase:elevation	elevation	owl:equivalentClass	mixs:elev	elev	Lexical|Stemming	kbase	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	elev	one_to_many	.
+kbase:elevation	elevation	owl:equivalentClass	mixs:elevator	elevator	Lexical|Stemming	kbase	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	elev	one_to_many	.
+kbase:elevation	elevation	owl:equivalentClass	ENVO:00000176	elevation	Lexical	kbase	ENVO	rdf_matcher	0.585786437626905	skos:altLabel	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	elevation	unique	.
+kbase:elevation	elevation	owl:equivalentClass	neon:elevation	elevation	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	elevation	unique	.
+kbase:elevation	elevation	owl:equivalentClass	neon:elevation	elevation	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	elevation	unique	.
+kbase:elevation	elevation	owl:equivalentClass	mixs:elev	elev	Lexical	kbase	mixs	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	elevation	one_to_many	.
+kbase:env_package	env_package	owl:equivalentClass	mixs:env_package	env_package	Lexical|Stemming	kbase	mixs	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	env_packag	many_to_one	.
+kbase:env_package	env_package	owl:equivalentClass	mixs:env_package	env_package	Lexical	kbase	mixs	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	env_package	many_to_one	.
+kbase:env_package	env_package	owl:equivalentClass	mixs:env_package	env_package	Lexical|Stemming	kbase	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	env_packag	many_to_one	.
+kbase:env_package	env_package	owl:equivalentClass	mixs:env_package	env_package	Lexical	kbase	mixs	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	env_package	many_to_one	.
+kbase:environmental_package	environmental_package	owl:equivalentClass	mixs:env_package	env_package	Lexical|Stemming	kbase	mixs	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	environmental packag	many_to_one	.
+kbase:environmental_package	environmental_package	owl:equivalentClass	mixs:env_package	env_package	Lexical	kbase	mixs	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	environmental package	many_to_one	.
+kbase:fraction	fraction	owl:equivalentClass	UO:0000191	fraction	Lexical	kbase	UO	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	slot_definition	unit	fraction	unique	.
+kbase:fraction	fraction	owl:equivalentClass	UO:0000191	fraction	Lexical|Stemming	kbase	UO	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	unit	fraction	unique	.
+kbase:fraction	fraction	owl:equivalentClass	UO:0000191	fraction	Lexical	kbase	UO	rdf_matcher	0.585786437626905	skos:altLabel	rdfs:label	slot_definition	unit	fraction	unique	.
+kbase:fraction	fraction	owl:equivalentClass	UO:0000191	fraction	Lexical|Stemming	kbase	UO	rdf_matcher	0.5	skos:altLabel	rdfs:label	slot_definition	unit	fraction	unique	.
+kbase:id	id	owl:equivalentClass	https://microbiomedata/meta/id	id	Lexical	kbase	https	rdf_matcher	0.4142135623730951	rdfs:label	rdfs:label	slot_definition	slot_definition	id	unique	.
+kbase:id	id	owl:equivalentClass	https://microbiomedata/meta/id	id	Lexical|Stemming	kbase	https	rdf_matcher	0.3333333333333333	rdfs:label	rdfs:label	slot_definition	slot_definition	id	unique	.
+kbase:id	id	owl:equivalentClass	https://microbiomedata/meta/id	id	Lexical	kbase	https	rdf_matcher	0.4142135623730951	skos:altLabel	rdfs:label	slot_definition	slot_definition	id	unique	.
+kbase:id	id	owl:equivalentClass	https://microbiomedata/meta/id	id	Lexical|Stemming	kbase	https	rdf_matcher	0.3333333333333333	skos:altLabel	rdfs:label	slot_definition	slot_definition	id	unique	.
+kbase:latitude	latitude	owl:equivalentClass	neon:latitude	latitude	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	latitud	unique	.
+kbase:latitude	latitude	owl:equivalentClass	neon:latitude	latitude	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	latitud	unique	.
+kbase:latitude	latitude	owl:equivalentClass	https://microbiomedata/meta/latitude	latitude	Lexical|Stemming	kbase	https	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	latitud	unique	.
+kbase:latitude	latitude	owl:equivalentClass	neon:latitude	latitude	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	latitude	unique	.
+kbase:latitude	latitude	owl:equivalentClass	neon:latitude	latitude	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	latitude	unique	.
+kbase:latitude	latitude	owl:equivalentClass	https://microbiomedata/meta/latitude	latitude	Lexical	kbase	https	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	latitude	unique	.
+kbase:latitude	latitude	owl:equivalentClass	neon:latitude	latitude	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	latitud	unique	.
+kbase:latitude	latitude	owl:equivalentClass	neon:latitude	latitude	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	latitud	unique	.
+kbase:latitude	latitude	owl:equivalentClass	https://microbiomedata/meta/latitude	latitude	Lexical|Stemming	kbase	https	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	latitud	unique	.
+kbase:latitude	latitude	owl:equivalentClass	neon:latitude	latitude	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	latitude	unique	.
+kbase:latitude	latitude	owl:equivalentClass	neon:latitude	latitude	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	latitude	unique	.
+kbase:latitude	latitude	owl:equivalentClass	https://microbiomedata/meta/latitude	latitude	Lexical	kbase	https	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	latitude	unique	.
+kbase:longitude	longitude	owl:equivalentClass	neon:longitude	longitude	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	longitud	unique	.
+kbase:longitude	longitude	owl:equivalentClass	neon:longitude	longitude	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	longitud	unique	.
+kbase:longitude	longitude	owl:equivalentClass	https://microbiomedata/meta/longitude	longitude	Lexical|Stemming	kbase	https	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	longitud	unique	.
+kbase:longitude	longitude	owl:equivalentClass	neon:longitude	longitude	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	longitude	unique	.
+kbase:longitude	longitude	owl:equivalentClass	neon:longitude	longitude	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	longitude	unique	.
+kbase:longitude	longitude	owl:equivalentClass	https://microbiomedata/meta/longitude	longitude	Lexical	kbase	https	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	longitude	unique	.
+kbase:longitude	longitude	owl:equivalentClass	neon:longitude	longitude	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	longitud	unique	.
+kbase:longitude	longitude	owl:equivalentClass	neon:longitude	longitude	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	longitud	unique	.
+kbase:longitude	longitude	owl:equivalentClass	https://microbiomedata/meta/longitude	longitude	Lexical|Stemming	kbase	https	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	longitud	unique	.
+kbase:longitude	longitude	owl:equivalentClass	neon:longitude	longitude	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	longitude	unique	.
+kbase:longitude	longitude	owl:equivalentClass	neon:longitude	longitude	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	longitude	unique	.
+kbase:longitude	longitude	owl:equivalentClass	https://microbiomedata/meta/longitude	longitude	Lexical	kbase	https	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	longitude	unique	.
+kbase:method	method	owl:equivalentClass	neon:method	method	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	method	unique	.
+kbase:method	method	owl:equivalentClass	neon:method	method	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	method	unique	.
+kbase:method	method	owl:equivalentClass	neon:method	method	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	method	unique	.
+kbase:method	method	owl:equivalentClass	neon:method	method	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	method	unique	.
+kbase:method	method	owl:equivalentClass	neon:method	method	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	method	unique	.
+kbase:method	method	owl:equivalentClass	neon:method	method	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	method	unique	.
+kbase:method	method	owl:equivalentClass	neon:method	method	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	method	unique	.
+kbase:method	method	owl:equivalentClass	neon:method	method	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	method	unique	.
+kbase:name	name	owl:equivalentClass	neon:name	name	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
+kbase:name	name	owl:equivalentClass	neon:name	name	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	name	unique	.
+kbase:name	name	owl:equivalentClass	https://microbiomedata/meta/name	name	Lexical	kbase	https	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
+kbase:name	name	owl:equivalentClass	neon:name	name	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
+kbase:name	name	owl:equivalentClass	neon:name	name	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	name	unique	.
+kbase:name	name	owl:equivalentClass	https://microbiomedata/meta/name	name	Lexical|Stemming	kbase	https	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
+kbase:name	name	owl:equivalentClass	neon:name	name	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	name	unique	.
+kbase:name	name	owl:equivalentClass	neon:name	name	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	name	unique	.
+kbase:name	name	owl:equivalentClass	https://microbiomedata/meta/name	name	Lexical	kbase	https	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	name	unique	.
+kbase:name	name	owl:equivalentClass	neon:name	name	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	name	unique	.
+kbase:name	name	owl:equivalentClass	neon:name	name	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	name	unique	.
+kbase:name	name	owl:equivalentClass	https://microbiomedata/meta/name	name	Lexical|Stemming	kbase	https	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	name	unique	.
+kbase:northing	northing	owl:equivalentClass	neon:northing	northing	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	north	unique	.
+kbase:northing	northing	owl:equivalentClass	neon:northing	northing	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	north	unique	.
+kbase:northing	northing	owl:equivalentClass	neon:northing	northing	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	northing	unique	.
+kbase:northing	northing	owl:equivalentClass	neon:northing	northing	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	northing	unique	.
+kbase:northing	northing	owl:equivalentClass	neon:northing	northing	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	north	unique	.
+kbase:northing	northing	owl:equivalentClass	neon:northing	northing	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	north	unique	.
+kbase:northing	northing	owl:equivalentClass	neon:northing	northing	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	northing	unique	.
+kbase:northing	northing	owl:equivalentClass	neon:northing	northing	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	northing	unique	.
+kbase:open	open	owl:equivalentClass	ENVO:00000444	clearing	Lexical|Stemming	kbase	ENVO	rdf_matcher	0.3333333333333333	rdfs:label	oio:hasRelatedSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	open	unique	.
+kbase:open	open	owl:equivalentClass	ENVO:00000444	clearing	Lexical|Stemming	kbase	ENVO	rdf_matcher	0.3333333333333333	skos:altLabel	oio:hasRelatedSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	open	unique	.
+kbase:organic_carbon	organic_carbon	owl:equivalentClass	mixs:org_carb	org_carb	Lexical	kbase	mixs	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	organic carbon	unique	.
+kbase:organic_carbon	organic_carbon	owl:equivalentClass	mixs:org_carb	org_carb	Lexical|Stemming	kbase	mixs	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	organic carbon	unique	.
+kbase:ph	ph	owl:equivalentClass	UO:0000196	pH	Lexical	kbase	UO	rdf_matcher	0.2612038749637414	rdfs:label	rdfs:label	slot_definition	owl:Class	ph	unique	.
+kbase:ph	ph	owl:equivalentClass	neon:pH	pH	Lexical	kbase	neon	rdf_matcher	0.4142135623730951	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
+kbase:ph	ph	owl:equivalentClass	mixs:ph	ph	Lexical	kbase	mixs	rdf_matcher	0.4142135623730951	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
+kbase:ph	ph	owl:equivalentClass	mixs:ph	ph	Lexical	kbase	mixs	rdf_matcher	0.4142135623730951	rdfs:label	skos:altLabel	slot_definition	slot_definition	ph	unique	.
+kbase:ph	ph	owl:equivalentClass	UO:0000196	pH	Lexical|Stemming	kbase	UO	rdf_matcher	0.2	rdfs:label	rdfs:label	slot_definition	owl:Class	ph	unique	.
+kbase:ph	ph	owl:equivalentClass	neon:pH	pH	Lexical|Stemming	kbase	neon	rdf_matcher	0.3333333333333333	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
+kbase:ph	ph	owl:equivalentClass	mixs:ph	ph	Lexical|Stemming	kbase	mixs	rdf_matcher	0.3333333333333333	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
+kbase:ph	ph	owl:equivalentClass	mixs:ph	ph	Lexical|Stemming	kbase	mixs	rdf_matcher	0.3333333333333333	rdfs:label	skos:altLabel	slot_definition	slot_definition	ph	unique	.
+kbase:ph	ph	owl:equivalentClass	UO:0000196	pH	Lexical	kbase	UO	rdf_matcher	0.2612038749637414	skos:altLabel	rdfs:label	slot_definition	owl:Class	ph	unique	.
+kbase:ph	ph	owl:equivalentClass	neon:pH	pH	Lexical	kbase	neon	rdf_matcher	0.4142135623730951	skos:altLabel	rdfs:label	slot_definition	slot_definition	ph	unique	.
+kbase:ph	ph	owl:equivalentClass	mixs:ph	ph	Lexical	kbase	mixs	rdf_matcher	0.4142135623730951	skos:altLabel	rdfs:label	slot_definition	slot_definition	ph	unique	.
+kbase:ph	ph	owl:equivalentClass	mixs:ph	ph	Lexical	kbase	mixs	rdf_matcher	0.4142135623730951	skos:altLabel	skos:altLabel	slot_definition	slot_definition	ph	unique	.
+kbase:ph	ph	owl:equivalentClass	UO:0000196	pH	Lexical|Stemming	kbase	UO	rdf_matcher	0.2	skos:altLabel	rdfs:label	slot_definition	owl:Class	ph	unique	.
+kbase:ph	ph	owl:equivalentClass	neon:pH	pH	Lexical|Stemming	kbase	neon	rdf_matcher	0.3333333333333333	skos:altLabel	rdfs:label	slot_definition	slot_definition	ph	unique	.
+kbase:ph	ph	owl:equivalentClass	mixs:ph	ph	Lexical|Stemming	kbase	mixs	rdf_matcher	0.3333333333333333	skos:altLabel	rdfs:label	slot_definition	slot_definition	ph	unique	.
+kbase:ph	ph	owl:equivalentClass	mixs:ph	ph	Lexical|Stemming	kbase	mixs	rdf_matcher	0.3333333333333333	skos:altLabel	skos:altLabel	slot_definition	slot_definition	ph	unique	.
+kbase:redox_potential_?	redox_potential_?	owl:equivalentClass	mixs:redox_potential	redox_potential	Lexical|Stemming	kbase	mixs	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	redox potenti	unique	.
+kbase:redox_potential_?	redox_potential_?	owl:equivalentClass	mixs:redox_potential	redox_potential	Lexical	kbase	mixs	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	redox potential	unique	.
+kbase:region	region	owl:equivalentClass	neon:region	region	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	region	unique	.
+kbase:region	region	owl:equivalentClass	neon:region	region	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	region	unique	.
+kbase:region	region	owl:equivalentClass	neon:region	region	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	region	unique	.
+kbase:region	region	owl:equivalentClass	neon:region	region	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	region	unique	.
+kbase:region	region	owl:equivalentClass	neon:region	region	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	region	unique	.
+kbase:region	region	owl:equivalentClass	neon:region	region	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	region	unique	.
+kbase:region	region	owl:equivalentClass	neon:region	region	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	region	unique	.
+kbase:region	region	owl:equivalentClass	neon:region	region	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	region	unique	.
+kbase:replicate	replicate	owl:equivalentClass	neon:replicate	replicate	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	replic	unique	.
+kbase:replicate	replicate	owl:equivalentClass	neon:replicate	replicate	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	replic	unique	.
+kbase:replicate	replicate	owl:equivalentClass	neon:replicate	replicate	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	replicate	unique	.
+kbase:replicate	replicate	owl:equivalentClass	neon:replicate	replicate	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	replicate	unique	.
+kbase:replicate	replicate	owl:equivalentClass	neon:replicate	replicate	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	replic	unique	.
+kbase:replicate	replicate	owl:equivalentClass	neon:replicate	replicate	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	replic	unique	.
+kbase:replicate	replicate	owl:equivalentClass	neon:replicate	replicate	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	replicate	unique	.
+kbase:replicate	replicate	owl:equivalentClass	neon:replicate	replicate	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	replicate	unique	.
+kbase:sampleid	sampleid	owl:equivalentClass	neon:sampleID	sampleID	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	sampleid	unique	.
+kbase:sampleid	sampleid	owl:equivalentClass	neon:sampleID	sampleID	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	sampleid	unique	.
+kbase:sampleid	sampleid	owl:equivalentClass	neon:sampleID	sampleID	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	sampleid	unique	.
+kbase:sampleid	sampleid	owl:equivalentClass	neon:sampleID	sampleID	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	sampleid	unique	.
+kbase:temperature	temperature	owl:equivalentClass	mixs:temp	temp	Lexical|Stemming	kbase	mixs	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	temperatur	unique	.
+kbase:temperature	temperature	owl:equivalentClass	mixs:temp	temp	Lexical	kbase	mixs	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	temperature	unique	.
+kbase:temperature	temperature	owl:equivalentClass	mixs:temp	temp	Lexical|Stemming	kbase	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	temperatur	unique	.
+kbase:temperature	temperature	owl:equivalentClass	mixs:temp	temp	Lexical	kbase	mixs	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	temperature	unique	.
+kbase:time	time	owl:equivalentClass	neon:time	time	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	time	unique	.
+kbase:time	time	owl:equivalentClass	neon:time	time	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	time	unique	.
+kbase:time	time	owl:equivalentClass	https://w3id.org/biolink/biolinkml/type/Time	time	Lexical	kbase	https	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	slot_definition	type_definition	time	unique	.
+kbase:time	time	owl:equivalentClass	neon:time	time	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	time	unique	.
+kbase:time	time	owl:equivalentClass	neon:time	time	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	time	unique	.
 kbase:time	time	owl:equivalentClass	https://w3id.org/biolink/biolinkml/type/Time	time	Lexical|Stemming	kbase	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	type_definition	time	unique	.
-kbase:timezone	timezone	owl:equivalentClass	neon:timeZone	timeZone	Lexical|Stemming	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	timezon	unique	.
-kbase:timezone	timezone	owl:equivalentClass	neon:timeZone	timeZone	Lexical	kbase	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	timezone	unique	.
+kbase:time	time	owl:equivalentClass	neon:time	time	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	time	unique	.
+kbase:time	time	owl:equivalentClass	neon:time	time	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	time	unique	.
+kbase:time	time	owl:equivalentClass	https://w3id.org/biolink/biolinkml/type/Time	time	Lexical	kbase	https	rdf_matcher	0.585786437626905	skos:altLabel	rdfs:label	slot_definition	type_definition	time	unique	.
+kbase:time	time	owl:equivalentClass	neon:time	time	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	time	unique	.
+kbase:time	time	owl:equivalentClass	neon:time	time	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	time	unique	.
+kbase:time	time	owl:equivalentClass	https://w3id.org/biolink/biolinkml/type/Time	time	Lexical|Stemming	kbase	https	rdf_matcher	0.5	skos:altLabel	rdfs:label	slot_definition	type_definition	time	unique	.
+kbase:time_zone	time_zone	owl:equivalentClass	neon:timeZone	timeZone	Lexical|Stemming	kbase	neon	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	time zon	many_to_one	.
+kbase:time_zone	time_zone	owl:equivalentClass	neon:timeZone	timeZone	Lexical	kbase	neon	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	time zone	many_to_one	.
+kbase:timezone	timezone	owl:equivalentClass	neon:timeZone	timeZone	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	timezon	many_to_one	.
+kbase:timezone	timezone	owl:equivalentClass	neon:timeZone	timeZone	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	timezone	many_to_one	.
+kbase:timezone	timezone	owl:equivalentClass	neon:timeZone	timeZone	Lexical|Stemming	kbase	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	timezon	many_to_one	.
+kbase:timezone	timezone	owl:equivalentClass	neon:timeZone	timeZone	Lexical	kbase	neon	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	timezone	many_to_one	.
+kbase:total_carbon	total_carbon	owl:equivalentClass	mixs:tot_carb	tot_carb	Lexical	kbase	mixs	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	total carbon	unique	.
+kbase:total_carbon	total_carbon	owl:equivalentClass	mixs:tot_carb	tot_carb	Lexical|Stemming	kbase	mixs	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	total carbon	unique	.
+kbase:well	well	owl:equivalentClass	ENVO:00000026	well	Lexical	kbase	ENVO	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	slot_definition	ENVO	well	unique	.
+kbase:well	well	owl:equivalentClass	ENVO:00000026	well	Lexical|Stemming	kbase	ENVO	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	ENVO	well	unique	.
+kbase:well	well	owl:equivalentClass	ENVO:00000026	well	Lexical	kbase	ENVO	rdf_matcher	0.585786437626905	skos:altLabel	rdfs:label	slot_definition	ENVO	well	unique	.
+kbase:well	well	owl:equivalentClass	ENVO:00000026	well	Lexical|Stemming	kbase	ENVO	rdf_matcher	0.5	skos:altLabel	rdfs:label	slot_definition	ENVO	well	unique	.
+ENVO:00000009	national geopolitical entity	owl:equivalentClass	kbase:country	country	Lexical|Stemming	ENVO	kbase	rdf_matcher	0.3333333333333333	oio:hasRelatedSynonym	rdfs:label	ENVO	slot_definition	countri	unique	.
+ENVO:00000009	national geopolitical entity	owl:equivalentClass	kbase:country	country	Lexical|Stemming	ENVO	kbase	rdf_matcher	0.3333333333333333	oio:hasRelatedSynonym	skos:altLabel	ENVO	slot_definition	countri	unique	.
+ENVO:00000009	national geopolitical entity	owl:equivalentClass	kbase:country	country	Lexical	ENVO	kbase	rdf_matcher	0.4142135623730951	oio:hasRelatedSynonym	rdfs:label	ENVO	slot_definition	country	unique	.
+ENVO:00000009	national geopolitical entity	owl:equivalentClass	kbase:country	country	Lexical	ENVO	kbase	rdf_matcher	0.4142135623730951	oio:hasRelatedSynonym	skos:altLabel	ENVO	slot_definition	country	unique	.
+ENVO:00000025	reservoir	owl:equivalentClass	mixs:reservoir	reservoir	Lexical	ENVO	mixs	rdf_matcher	0.585786437626905	oio:hasExactSynonym	rdfs:label	ENVO	slot_definition	reservoir	unique	.
+ENVO:00000025	reservoir	owl:equivalentClass	mixs:reservoir	reservoir	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.5	oio:hasExactSynonym	rdfs:label	ENVO	slot_definition	reservoir	unique	.
+ENVO:00000025	reservoir	owl:equivalentClass	mixs:reservoir	reservoir	Lexical	ENVO	mixs	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	ENVO	slot_definition	reservoir	unique	.
+ENVO:00000025	reservoir	owl:equivalentClass	mixs:reservoir	reservoir	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	ENVO	slot_definition	reservoir	unique	.
+ENVO:00000026	well	owl:equivalentClass	kbase:well	well	Lexical	ENVO	kbase	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	ENVO	slot_definition	well	unique	.
+ENVO:00000026	well	owl:equivalentClass	kbase:well	well	Lexical	ENVO	kbase	rdf_matcher	0.585786437626905	rdfs:label	skos:altLabel	ENVO	slot_definition	well	unique	.
+ENVO:00000026	well	owl:equivalentClass	kbase:well	well	Lexical|Stemming	ENVO	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	ENVO	slot_definition	well	unique	.
+ENVO:00000026	well	owl:equivalentClass	kbase:well	well	Lexical|Stemming	ENVO	kbase	rdf_matcher	0.5	rdfs:label	skos:altLabel	ENVO	slot_definition	well	unique	.
+ENVO:00000029	watercourse	owl:equivalentClass	mixs:drawings	drawings	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.3333333333333333	oio:hasRelatedSynonym	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	draw	unique	.
+ENVO:00000029	watercourse	owl:equivalentClass	mixs:drawings	drawings	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.3333333333333333	oio:hasRelatedSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	draw	unique	.
+ENVO:00000098	island	owl:equivalentClass	https://microbiomedata/meta/attribute	attribute	Lexical|Stemming	ENVO	https	rdf_matcher	0.2	oio:hasRelatedSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	kei	many_to_one	.
+ENVO:00000098	island	owl:equivalentClass	https://microbiomedata/meta/attribute	attribute	Lexical	ENVO	https	rdf_matcher	0.2612038749637414	oio:hasRelatedSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	key	many_to_one	.
+ENVO:00000104	undersea feature	owl:equivalentClass	mixs:basin	basin	Lexical	ENVO	mixs	rdf_matcher	0.2612038749637414	oio:hasNarrowSynonym	rdfs:label	ENVO	slot_definition	basin	many_to_one	.
+ENVO:00000104	undersea feature	owl:equivalentClass	mixs:basin	basin	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.2	oio:hasNarrowSynonym	rdfs:label	ENVO	slot_definition	basin	many_to_one	.
+ENVO:00000114	agricultural field	owl:equivalentClass	https://microbiomedata/meta/attribute	attribute	Lexical	ENVO	https	rdf_matcher	0.585786437626905	oio:hasExactSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	field	many_to_one	.
+ENVO:00000114	agricultural field	owl:equivalentClass	mixs:field	field	Lexical	ENVO	mixs	rdf_matcher	0.585786437626905	oio:hasExactSynonym	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	field	many_to_one	.
+ENVO:00000114	agricultural field	owl:equivalentClass	https://microbiomedata/meta/attribute	attribute	Lexical|Stemming	ENVO	https	rdf_matcher	0.5	oio:hasExactSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	field	many_to_one	.
+ENVO:00000114	agricultural field	owl:equivalentClass	mixs:field	field	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.5	oio:hasExactSynonym	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	field	many_to_one	.
+ENVO:00000151	sabkha	owl:equivalentClass	mixs:basin	basin	Lexical	ENVO	mixs	rdf_matcher	0.2612038749637414	oio:hasBroadSynonym	rdfs:label	ENVO	slot_definition	basin	many_to_one	.
+ENVO:00000151	sabkha	owl:equivalentClass	mixs:basin	basin	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.2	oio:hasBroadSynonym	rdfs:label	ENVO	slot_definition	basin	many_to_one	.
+ENVO:00000165	asphalt lake	owl:equivalentClass	mixs:basin	basin	Lexical	ENVO	mixs	rdf_matcher	0.2612038749637414	oio:hasBroadSynonym	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	basin	many_to_one	.
+ENVO:00000165	asphalt lake	owl:equivalentClass	mixs:basin	basin	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.2	oio:hasBroadSynonym	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	basin	many_to_one	.
+ENVO:00000176	elevation	owl:equivalentClass	kbase:elevation	elevation	Lexical|Stemming	ENVO	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	elev	unique	.
+ENVO:00000176	elevation	owl:equivalentClass	kbase:elevation	elevation	Lexical|Stemming	ENVO	kbase	rdf_matcher	0.5	rdfs:label	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	elev	unique	.
+ENVO:00000176	elevation	owl:equivalentClass	neon:elevation	elevation	Lexical|Stemming	ENVO	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	elev	unique	.
+ENVO:00000176	elevation	owl:equivalentClass	neon:elevation	elevation	Lexical|Stemming	ENVO	neon	rdf_matcher	0.5	rdfs:label	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	elev	unique	.
+ENVO:00000176	elevation	owl:equivalentClass	mixs:elev	elev	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	elev	one_to_many	.
+ENVO:00000176	elevation	owl:equivalentClass	mixs:elev	elev	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.5	rdfs:label	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	elev	one_to_many	.
+ENVO:00000176	elevation	owl:equivalentClass	mixs:elevator	elevator	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	elev	one_to_many	.
+ENVO:00000176	elevation	owl:equivalentClass	kbase:elevation	elevation	Lexical	ENVO	kbase	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	elevation	unique	.
+ENVO:00000176	elevation	owl:equivalentClass	kbase:elevation	elevation	Lexical	ENVO	kbase	rdf_matcher	0.585786437626905	rdfs:label	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	elevation	unique	.
+ENVO:00000176	elevation	owl:equivalentClass	neon:elevation	elevation	Lexical	ENVO	neon	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	elevation	unique	.
+ENVO:00000176	elevation	owl:equivalentClass	neon:elevation	elevation	Lexical	ENVO	neon	rdf_matcher	0.585786437626905	rdfs:label	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	elevation	unique	.
+ENVO:00000176	elevation	owl:equivalentClass	mixs:elev	elev	Lexical	ENVO	mixs	rdf_matcher	0.585786437626905	rdfs:label	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	elevation	one_to_many	.
+ENVO:00000195	sinkhole	owl:equivalentClass	mixs:basin	basin	Lexical	ENVO	mixs	rdf_matcher	0.2612038749637414	oio:hasBroadSynonym	rdfs:label	ENVO	slot_definition	basin	many_to_one	.
+ENVO:00000195	sinkhole	owl:equivalentClass	mixs:basin	basin	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.2	oio:hasBroadSynonym	rdfs:label	ENVO	slot_definition	basin	many_to_one	.
+ENVO:00000291	drainage basin	owl:equivalentClass	mixs:basin	basin	Lexical	ENVO	mixs	rdf_matcher	0.585786437626905	oio:hasExactSynonym	rdfs:label	ENVO	slot_definition	basin	many_to_one	.
+ENVO:00000291	drainage basin	owl:equivalentClass	mixs:basin	basin	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.5	oio:hasExactSynonym	rdfs:label	ENVO	slot_definition	basin	many_to_one	.
+ENVO:00000311	kettle	owl:equivalentClass	mixs:basin	basin	Lexical	ENVO	mixs	rdf_matcher	0.2612038749637414	oio:hasBroadSynonym	rdfs:label	ENVO	slot_definition	basin	many_to_one	.
+ENVO:00000311	kettle	owl:equivalentClass	mixs:basin	basin	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.2	oio:hasBroadSynonym	rdfs:label	ENVO	slot_definition	basin	many_to_one	.
+ENVO:00000444	clearing	owl:equivalentClass	kbase:open	open	Lexical|Stemming	ENVO	kbase	rdf_matcher	0.3333333333333333	oio:hasRelatedSynonym	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	open	unique	.
+ENVO:00000444	clearing	owl:equivalentClass	kbase:open	open	Lexical|Stemming	ENVO	kbase	rdf_matcher	0.3333333333333333	oio:hasRelatedSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	open	unique	.
+ENVO:00002277	back-arc basin	owl:equivalentClass	mixs:basin	basin	Lexical	ENVO	mixs	rdf_matcher	0.2612038749637414	oio:hasBroadSynonym	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	basin	many_to_one	.
+ENVO:00002277	back-arc basin	owl:equivalentClass	mixs:basin	basin	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.2	oio:hasBroadSynonym	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	basin	many_to_one	.
+ENVO:00010506	emulsion	owl:equivalentClass	mixs:emulsions	emulsions	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	emuls	unique	.
+ENVO:00010506	emulsion	owl:equivalentClass	mixs:emulsions	emulsions	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.5	rdfs:label	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	emuls	unique	.
+ENVO:00012408	aquifer	owl:equivalentClass	kbase:aquifer	aquifer	Lexical|Stemming	ENVO	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	aquif	unique	.
+ENVO:00012408	aquifer	owl:equivalentClass	kbase:aquifer	aquifer	Lexical|Stemming	ENVO	kbase	rdf_matcher	0.5	rdfs:label	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	aquif	unique	.
+ENVO:00012408	aquifer	owl:equivalentClass	kbase:aquifer	aquifer	Lexical	ENVO	kbase	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	aquifer	unique	.
+ENVO:00012408	aquifer	owl:equivalentClass	kbase:aquifer	aquifer	Lexical	ENVO	kbase	rdf_matcher	0.585786437626905	rdfs:label	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	aquifer	unique	.
+ENVO:01000155	organic material	owl:equivalentClass	mixs:biomass	biomass	Lexical	ENVO	mixs	rdf_matcher	0.585786437626905	oio:hasExactSynonym	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	biomass	unique	.
+ENVO:01000155	organic material	owl:equivalentClass	mixs:biomass	biomass	Lexical	ENVO	mixs	rdf_matcher	0.585786437626905	oio:hasExactSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	biomass	unique	.
+ENVO:01000155	organic material	owl:equivalentClass	mixs:biomass	biomass	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.5	oio:hasExactSynonym	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	biomass	unique	.
+ENVO:01000155	organic material	owl:equivalentClass	mixs:biomass	biomass	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.5	oio:hasExactSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	biomass	unique	.
+ENVO:01000352	field	owl:equivalentClass	https://microbiomedata/meta/attribute	attribute	Lexical	ENVO	https	rdf_matcher	0.585786437626905	rdfs:label	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	field	many_to_one	.
+ENVO:01000352	field	owl:equivalentClass	mixs:field	field	Lexical	ENVO	mixs	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	field	many_to_one	.
+ENVO:01000352	field	owl:equivalentClass	https://microbiomedata/meta/attribute	attribute	Lexical|Stemming	ENVO	https	rdf_matcher	0.5	rdfs:label	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	field	many_to_one	.
+ENVO:01000352	field	owl:equivalentClass	mixs:field	field	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	field	many_to_one	.
+ENVO:01000710	flood	owl:equivalentClass	mixs:flooding	flooding	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	flood	many_to_one	.
+ENVO:01000739	habitat	owl:equivalentClass	neon:habitat	habitat	Lexical	ENVO	neon	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	habitat	unique	.
+ENVO:01000739	habitat	owl:equivalentClass	neon:habitat	habitat	Lexical	ENVO	neon	rdf_matcher	0.585786437626905	rdfs:label	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	habitat	unique	.
+ENVO:01000739	habitat	owl:equivalentClass	neon:habitat	habitat	Lexical|Stemming	ENVO	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	habitat	unique	.
+ENVO:01000739	habitat	owl:equivalentClass	neon:habitat	habitat	Lexical|Stemming	ENVO	neon	rdf_matcher	0.5	rdfs:label	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	habitat	unique	.
+ENVO:01000786	fire	owl:equivalentClass	mixs:fire	fire	Lexical	ENVO	mixs	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	fire	unique	.
+ENVO:01000786	fire	owl:equivalentClass	mixs:fire	fire	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	fire	unique	.
+ENVO:01001362	atmospheric wind speed	owl:equivalentClass	mixs:wind_speed	wind_speed	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.23534896306899963	oio:hasBroadSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	wind spe	unique	.
+ENVO:01001362	atmospheric wind speed	owl:equivalentClass	mixs:wind_speed	wind_speed	Lexical	ENVO	mixs	rdf_matcher	0.30326954502292763	oio:hasBroadSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	wind speed	unique	.
+ENVO:01001495	dioxygen dissolved in marine water	owl:equivalentClass	neon:dissolvedOxygen	dissolvedOxygen	Lexical	ENVO	neon	rdf_matcher	0.30326954502292763	oio:hasBroadSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	dissolved oxygen	unique	.
+ENVO:01001495	dioxygen dissolved in marine water	owl:equivalentClass	mixs:diss_oxygen	diss_oxygen	Lexical	ENVO	mixs	rdf_matcher	0.30326954502292763	oio:hasBroadSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	dissolved oxygen	unique	.
+ENVO:01001495	dioxygen dissolved in marine water	owl:equivalentClass	neon:dissolvedOxygen	dissolvedOxygen	Lexical|Stemming	ENVO	neon	rdf_matcher	0.23534896306899963	oio:hasBroadSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	dissolved oxygen	unique	.
+ENVO:01001495	dioxygen dissolved in marine water	owl:equivalentClass	mixs:diss_oxygen	diss_oxygen	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.23534896306899963	oio:hasBroadSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	dissolved oxygen	unique	.
+ENVO:02500002	flooding	owl:equivalentClass	mixs:flooding	flooding	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	flood	many_to_one	.
+ENVO:02500002	flooding	owl:equivalentClass	mixs:flooding	flooding	Lexical	ENVO	mixs	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	flooding	many_to_one	.
+ENVO:02500036	environmental pollution	owl:equivalentClass	mixs:pollutants	pollutants	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.5	oio:hasExactSynonym	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	pollut	unique	.
+ENVO:02500036	environmental pollution	owl:equivalentClass	mixs:pollutants	pollutants	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.5	oio:hasExactSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	pollut	unique	.
+ENVO:03000096	season	owl:equivalentClass	mixs:season	season	Lexical	ENVO	mixs	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	season	unique	.
+ENVO:03000096	season	owl:equivalentClass	mixs:season	season	Lexical	ENVO	mixs	rdf_matcher	0.585786437626905	rdfs:label	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	season	unique	.
+ENVO:03000096	season	owl:equivalentClass	mixs:season	season	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	season	unique	.
+ENVO:03000096	season	owl:equivalentClass	mixs:season	season	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.5	rdfs:label	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	season	unique	.
+ENVO:09200001	temperature of air	owl:equivalentClass	neon:airTemperature	airTemperature	Lexical|Stemming	ENVO	neon	rdf_matcher	0.5517995186601091	oio:hasExactSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	air temperatur	unique	.
+ENVO:09200001	temperature of air	owl:equivalentClass	mixs:air_temp	air_temp	Lexical|Stemming	ENVO	mixs	rdf_matcher	0.5517995186601091	oio:hasExactSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	air temperatur	unique	.
+ENVO:09200001	temperature of air	owl:equivalentClass	neon:airTemperature	airTemperature	Lexical	ENVO	neon	rdf_matcher	0.6351831056874558	oio:hasExactSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	air temperature	unique	.
+ENVO:09200001	temperature of air	owl:equivalentClass	mixs:air_temp	air_temp	Lexical	ENVO	mixs	rdf_matcher	0.6351831056874558	oio:hasExactSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	air temperature	unique	.
+ENVO:09200014	temperature of water	owl:equivalentClass	neon:waterTemperature	waterTemperature	Lexical|Stemming	ENVO	neon	rdf_matcher	0.5517995186601091	oio:hasExactSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	water temperatur	unique	.
+ENVO:09200014	temperature of water	owl:equivalentClass	neon:waterTemperature	waterTemperature	Lexical	ENVO	neon	rdf_matcher	0.6351831056874558	oio:hasExactSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	water temperature	unique	.
+ENVO:3100031	depth of water	owl:equivalentClass	neon:waterDepth	waterDepth	Lexical	ENVO	neon	rdf_matcher	0.6351831056874558	oio:hasExactSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	water depth	unique	.
+ENVO:3100031	depth of water	owl:equivalentClass	neon:waterDepth	waterDepth	Lexical|Stemming	ENVO	neon	rdf_matcher	0.5517995186601091	oio:hasExactSynonym	skos:altLabel	http://purl.obolibrary.org/obo/BFO_0000001	slot_definition	water depth	unique	.
+UO:0000000	unit	owl:equivalentClass	https://microbiomedata/meta/Unit	unit	Lexical	UO	https	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	unit	type_definition	unit	unique	.
+UO:0000000	unit	owl:equivalentClass	https://microbiomedata/meta/Unit	unit	Lexical|Stemming	UO	https	rdf_matcher	0.5	rdfs:label	rdfs:label	unit	type_definition	unit	unique	.
+UO:0000036	year	owl:equivalentClass	neon:year	year	Lexical	UO	neon	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	owl:Class	slot_definition	year	unique	.
+UO:0000036	year	owl:equivalentClass	neon:year	year	Lexical	UO	neon	rdf_matcher	0.585786437626905	rdfs:label	skos:altLabel	owl:Class	slot_definition	year	unique	.
+UO:0000036	year	owl:equivalentClass	neon:year	year	Lexical|Stemming	UO	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	owl:Class	slot_definition	year	unique	.
+UO:0000036	year	owl:equivalentClass	neon:year	year	Lexical|Stemming	UO	neon	rdf_matcher	0.5	rdfs:label	skos:altLabel	owl:Class	slot_definition	year	unique	.
+UO:0000075	normal	owl:equivalentClass	neon:normality	normality	Lexical|Stemming	UO	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	owl:Class	slot_definition	normal	unique	.
+UO:0000075	normal	owl:equivalentClass	neon:normality	normality	Lexical|Stemming	UO	neon	rdf_matcher	0.5	rdfs:label	skos:altLabel	owl:Class	slot_definition	normal	unique	.
+UO:0000191	fraction	owl:equivalentClass	kbase:fraction	fraction	Lexical	UO	kbase	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	unit	slot_definition	fraction	unique	.
+UO:0000191	fraction	owl:equivalentClass	kbase:fraction	fraction	Lexical	UO	kbase	rdf_matcher	0.585786437626905	rdfs:label	skos:altLabel	unit	slot_definition	fraction	unique	.
+UO:0000191	fraction	owl:equivalentClass	kbase:fraction	fraction	Lexical|Stemming	UO	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	unit	slot_definition	fraction	unique	.
+UO:0000191	fraction	owl:equivalentClass	kbase:fraction	fraction	Lexical|Stemming	UO	kbase	rdf_matcher	0.5	rdfs:label	skos:altLabel	unit	slot_definition	fraction	unique	.
+UO:0000196	pH	owl:equivalentClass	kbase:ph	ph	Lexical	UO	kbase	rdf_matcher	0.2612038749637414	rdfs:label	rdfs:label	owl:Class	slot_definition	ph	unique	.
+UO:0000196	pH	owl:equivalentClass	kbase:ph	ph	Lexical	UO	kbase	rdf_matcher	0.2612038749637414	rdfs:label	skos:altLabel	owl:Class	slot_definition	ph	unique	.
+UO:0000196	pH	owl:equivalentClass	neon:pH	pH	Lexical	UO	neon	rdf_matcher	0.2612038749637414	rdfs:label	rdfs:label	owl:Class	slot_definition	ph	unique	.
+UO:0000196	pH	owl:equivalentClass	mixs:ph	ph	Lexical	UO	mixs	rdf_matcher	0.2612038749637414	rdfs:label	rdfs:label	owl:Class	slot_definition	ph	unique	.
+UO:0000196	pH	owl:equivalentClass	mixs:ph	ph	Lexical	UO	mixs	rdf_matcher	0.2612038749637414	rdfs:label	skos:altLabel	owl:Class	slot_definition	ph	unique	.
+UO:0000196	pH	owl:equivalentClass	kbase:ph	ph	Lexical|Stemming	UO	kbase	rdf_matcher	0.2	rdfs:label	rdfs:label	owl:Class	slot_definition	ph	unique	.
+UO:0000196	pH	owl:equivalentClass	kbase:ph	ph	Lexical|Stemming	UO	kbase	rdf_matcher	0.2	rdfs:label	skos:altLabel	owl:Class	slot_definition	ph	unique	.
+UO:0000196	pH	owl:equivalentClass	neon:pH	pH	Lexical|Stemming	UO	neon	rdf_matcher	0.2	rdfs:label	rdfs:label	owl:Class	slot_definition	ph	unique	.
+UO:0000196	pH	owl:equivalentClass	mixs:ph	ph	Lexical|Stemming	UO	mixs	rdf_matcher	0.2	rdfs:label	rdfs:label	owl:Class	slot_definition	ph	unique	.
+UO:0000196	pH	owl:equivalentClass	mixs:ph	ph	Lexical|Stemming	UO	mixs	rdf_matcher	0.2	rdfs:label	skos:altLabel	owl:Class	slot_definition	ph	unique	.
 neon:Nitrate	nitrate	owl:equivalentClass	mixs:nitrate	nitrate	Lexical|Stemming	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	class_definition	slot_definition	nitrat	many_to_one	.
-neon:Nitrate	nitrate	owl:equivalentClass	mixs:nitrate	nitrate	Lexical	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	class_definition	slot_definition	nitrate	many_to_one	.
-neon:chlorophyll	chlorophyll	owl:equivalentClass	mixs:chlorophyll	chlorophyll	Lexical|Stemming	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	chlorophyl	unique	.
-neon:chlorophyll	chlorophyll	owl:equivalentClass	mixs:chlorophyll	chlorophyll	Lexical	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	chlorophyll	unique	.
-neon:conductance	conductance	owl:equivalentClass	kbase:conductivity	conductivity	Lexical|Stemming	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	conduct	unique	.
-neon:date	date	owl:equivalentClass	kbase:date	date	Lexical	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	date	unique	.
-neon:date	date	owl:equivalentClass	https://w3id.org/biolink/biolinkml/type/Date	date	Lexical	neon	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	type_definition	date	unique	.
-neon:date	date	owl:equivalentClass	kbase:date	date	Lexical|Stemming	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	date	unique	.
+neon:Nitrate	nitrate	owl:equivalentClass	mixs:nitrate	nitrate	Lexical|Stemming	neon	mixs	rdf_matcher	0.5	rdfs:label	skos:altLabel	class_definition	slot_definition	nitrat	many_to_one	.
+neon:Nitrate	nitrate	owl:equivalentClass	mixs:nitrate	nitrate	Lexical	neon	mixs	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	class_definition	slot_definition	nitrate	many_to_one	.
+neon:Nitrate	nitrate	owl:equivalentClass	mixs:nitrate	nitrate	Lexical	neon	mixs	rdf_matcher	0.585786437626905	rdfs:label	skos:altLabel	class_definition	slot_definition	nitrate	many_to_one	.
+neon:airTemperature	airTemperature	owl:equivalentClass	ENVO:09200001	temperature of air	Lexical|Stemming	neon	ENVO	rdf_matcher	0.5517995186601091	skos:altLabel	oio:hasExactSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	air temperatur	unique	.
+neon:airTemperature	airTemperature	owl:equivalentClass	mixs:air_temp	air_temp	Lexical|Stemming	neon	mixs	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	air temperatur	unique	.
+neon:airTemperature	airTemperature	owl:equivalentClass	ENVO:09200001	temperature of air	Lexical	neon	ENVO	rdf_matcher	0.6351831056874558	skos:altLabel	oio:hasExactSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	air temperature	unique	.
+neon:airTemperature	airTemperature	owl:equivalentClass	mixs:air_temp	air_temp	Lexical	neon	mixs	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	air temperature	unique	.
+neon:chlorophyll	chlorophyll	owl:equivalentClass	mixs:chlorophyll	chlorophyll	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	chlorophyl	unique	.
+neon:chlorophyll	chlorophyll	owl:equivalentClass	mixs:chlorophyll	chlorophyll	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	chlorophyl	unique	.
+neon:chlorophyll	chlorophyll	owl:equivalentClass	mixs:chlorophyll	chlorophyll	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	chlorophyll	unique	.
+neon:chlorophyll	chlorophyll	owl:equivalentClass	mixs:chlorophyll	chlorophyll	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	chlorophyll	unique	.
+neon:chlorophyll	chlorophyll	owl:equivalentClass	mixs:chlorophyll	chlorophyll	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	chlorophyl	unique	.
+neon:chlorophyll	chlorophyll	owl:equivalentClass	mixs:chlorophyll	chlorophyll	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	chlorophyl	unique	.
+neon:chlorophyll	chlorophyll	owl:equivalentClass	mixs:chlorophyll	chlorophyll	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	chlorophyll	unique	.
+neon:chlorophyll	chlorophyll	owl:equivalentClass	mixs:chlorophyll	chlorophyll	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	chlorophyll	unique	.
+neon:conductance	conductance	owl:equivalentClass	kbase:conductivity	conductivity	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	conduct	unique	.
+neon:conductance	conductance	owl:equivalentClass	kbase:conductivity	conductivity	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	conduct	unique	.
+neon:conductance	conductance	owl:equivalentClass	mixs:conduc	conduc	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	conduct	unique	.
+neon:conductance	conductance	owl:equivalentClass	kbase:conductivity	conductivity	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	conduct	unique	.
+neon:conductance	conductance	owl:equivalentClass	kbase:conductivity	conductivity	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	conduct	unique	.
+neon:conductance	conductance	owl:equivalentClass	mixs:conduc	conduc	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	conduct	unique	.
+neon:date	date	owl:equivalentClass	kbase:date	date	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	date	unique	.
+neon:date	date	owl:equivalentClass	kbase:date	date	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	date	unique	.
+neon:date	date	owl:equivalentClass	https://w3id.org/biolink/biolinkml/type/Date	date	Lexical	neon	https	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	slot_definition	type_definition	date	unique	.
+neon:date	date	owl:equivalentClass	kbase:date	date	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	date	unique	.
+neon:date	date	owl:equivalentClass	kbase:date	date	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	date	unique	.
 neon:date	date	owl:equivalentClass	https://w3id.org/biolink/biolinkml/type/Date	date	Lexical|Stemming	neon	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	type_definition	date	unique	.
-neon:depth	depth	owl:equivalentClass	kbase:depth	depth	Lexical	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
-neon:depth	depth	owl:equivalentClass	mixs:depth	depth	Lexical	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
-neon:depth	depth	owl:equivalentClass	kbase:depth	depth	Lexical|Stemming	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
-neon:depth	depth	owl:equivalentClass	mixs:depth	depth	Lexical|Stemming	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
-neon:easting	easting	owl:equivalentClass	kbase:easting	easting	Lexical|Stemming	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	east	unique	.
-neon:easting	easting	owl:equivalentClass	kbase:easting	easting	Lexical	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	easting	unique	.
-neon:elevation	elevation	owl:equivalentClass	kbase:elevation	elevation	Lexical|Stemming	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	elev	unique	.
-neon:elevation	elevation	owl:equivalentClass	mixs:elev	elev	Lexical|Stemming	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	elev	one_to_many	.
-neon:elevation	elevation	owl:equivalentClass	mixs:elevator	elevator	Lexical|Stemming	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	elev	one_to_many	.
-neon:elevation	elevation	owl:equivalentClass	kbase:elevation	elevation	Lexical	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	elevation	unique	.
-neon:horizon	horizon	owl:equivalentClass	mixs:horizon	horizon	Lexical	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	horizon	unique	.
-neon:horizon	horizon	owl:equivalentClass	mixs:horizon	horizon	Lexical|Stemming	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	horizon	unique	.
-neon:investigation_type	investigation_type	owl:equivalentClass	mixs:investigation_type	investigation_type	Lexical|Stemming	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	investigation_typ	unique	.
-neon:investigation_type	investigation_type	owl:equivalentClass	mixs:investigation_type	investigation_type	Lexical	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	investigation_type	unique	.
-neon:latitude	latitude	owl:equivalentClass	kbase:latitude	latitude	Lexical|Stemming	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	latitud	unique	.
-neon:latitude	latitude	owl:equivalentClass	https://microbiomedata/meta/latitude	latitude	Lexical|Stemming	neon	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	latitud	unique	.
-neon:latitude	latitude	owl:equivalentClass	kbase:latitude	latitude	Lexical	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	latitude	unique	.
-neon:latitude	latitude	owl:equivalentClass	https://microbiomedata/meta/latitude	latitude	Lexical	neon	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	latitude	unique	.
-neon:longitude	longitude	owl:equivalentClass	kbase:longitude	longitude	Lexical|Stemming	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	longitud	unique	.
-neon:longitude	longitude	owl:equivalentClass	https://microbiomedata/meta/longitude	longitude	Lexical|Stemming	neon	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	longitud	unique	.
-neon:longitude	longitude	owl:equivalentClass	kbase:longitude	longitude	Lexical	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	longitude	unique	.
-neon:longitude	longitude	owl:equivalentClass	https://microbiomedata/meta/longitude	longitude	Lexical	neon	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	longitude	unique	.
-neon:method	method	owl:equivalentClass	kbase:method	method	Lexical	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	method	unique	.
-neon:method	method	owl:equivalentClass	kbase:method	method	Lexical|Stemming	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	method	unique	.
-neon:name	name	owl:equivalentClass	kbase:name	name	Lexical	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
-neon:name	name	owl:equivalentClass	https://microbiomedata/meta/name	name	Lexical	neon	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
-neon:name	name	owl:equivalentClass	kbase:name	name	Lexical|Stemming	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
-neon:name	name	owl:equivalentClass	https://microbiomedata/meta/name	name	Lexical|Stemming	neon	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
-neon:nitrate	nitrate	owl:equivalentClass	mixs:nitrate	nitrate	Lexical|Stemming	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	nitrat	many_to_one	.
-neon:nitrate	nitrate	owl:equivalentClass	mixs:nitrate	nitrate	Lexical	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	nitrate	many_to_one	.
-neon:northing	northing	owl:equivalentClass	kbase:northing	northing	Lexical|Stemming	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	north	unique	.
-neon:northing	northing	owl:equivalentClass	kbase:northing	northing	Lexical	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	northing	unique	.
-neon:pH	pH	owl:equivalentClass	kbase:ph	ph	Lexical	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
-neon:pH	pH	owl:equivalentClass	mixs:ph	ph	Lexical	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
-neon:pH	pH	owl:equivalentClass	kbase:ph	ph	Lexical|Stemming	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
-neon:pH	pH	owl:equivalentClass	mixs:ph	ph	Lexical|Stemming	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
-neon:porosity	porosity	owl:equivalentClass	mixs:porosity	porosity	Lexical|Stemming	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	poros	unique	.
-neon:porosity	porosity	owl:equivalentClass	mixs:porosity	porosity	Lexical	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	porosity	unique	.
-neon:region	region	owl:equivalentClass	kbase:region	region	Lexical	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	region	unique	.
-neon:region	region	owl:equivalentClass	kbase:region	region	Lexical|Stemming	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	region	unique	.
-neon:replicate	replicate	owl:equivalentClass	kbase:replicate	replicate	Lexical|Stemming	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	replic	unique	.
-neon:replicate	replicate	owl:equivalentClass	kbase:replicate	replicate	Lexical	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	replicate	unique	.
-neon:sampleID	sampleID	owl:equivalentClass	kbase:sampleid	sampleid	Lexical	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	sampleid	unique	.
-neon:sampleID	sampleID	owl:equivalentClass	kbase:sampleid	sampleid	Lexical|Stemming	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	sampleid	unique	.
-neon:temp	temp	owl:equivalentClass	mixs:temp	temp	Lexical	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	temp	unique	.
-neon:temp	temp	owl:equivalentClass	mixs:temp	temp	Lexical|Stemming	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	temp	unique	.
-neon:time	time	owl:equivalentClass	kbase:time	time	Lexical	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	time	unique	.
-neon:time	time	owl:equivalentClass	https://w3id.org/biolink/biolinkml/type/Time	time	Lexical	neon	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	type_definition	time	unique	.
-neon:time	time	owl:equivalentClass	kbase:time	time	Lexical|Stemming	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	time	unique	.
+neon:date	date	owl:equivalentClass	kbase:date	date	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	date	unique	.
+neon:date	date	owl:equivalentClass	kbase:date	date	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	date	unique	.
+neon:date	date	owl:equivalentClass	https://w3id.org/biolink/biolinkml/type/Date	date	Lexical	neon	https	rdf_matcher	0.585786437626905	skos:altLabel	rdfs:label	slot_definition	type_definition	date	unique	.
+neon:date	date	owl:equivalentClass	kbase:date	date	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	date	unique	.
+neon:date	date	owl:equivalentClass	kbase:date	date	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	date	unique	.
+neon:date	date	owl:equivalentClass	https://w3id.org/biolink/biolinkml/type/Date	date	Lexical|Stemming	neon	https	rdf_matcher	0.5	skos:altLabel	rdfs:label	slot_definition	type_definition	date	unique	.
+neon:depth	depth	owl:equivalentClass	kbase:depth	depth	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
+neon:depth	depth	owl:equivalentClass	kbase:depth	depth	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	depth	unique	.
+neon:depth	depth	owl:equivalentClass	mixs:depth	depth	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
+neon:depth	depth	owl:equivalentClass	kbase:depth	depth	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
+neon:depth	depth	owl:equivalentClass	kbase:depth	depth	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	depth	unique	.
+neon:depth	depth	owl:equivalentClass	mixs:depth	depth	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
+neon:depth	depth	owl:equivalentClass	kbase:depth	depth	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	depth	unique	.
+neon:depth	depth	owl:equivalentClass	kbase:depth	depth	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	depth	unique	.
+neon:depth	depth	owl:equivalentClass	mixs:depth	depth	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	depth	unique	.
+neon:depth	depth	owl:equivalentClass	kbase:depth	depth	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	depth	unique	.
+neon:depth	depth	owl:equivalentClass	kbase:depth	depth	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	depth	unique	.
+neon:depth	depth	owl:equivalentClass	mixs:depth	depth	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	depth	unique	.
+neon:dewPoint	dewPoint	owl:equivalentClass	mixs:dew_point	dew_point	Lexical	neon	mixs	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	dew point	unique	.
+neon:dewPoint	dewPoint	owl:equivalentClass	mixs:dew_point	dew_point	Lexical|Stemming	neon	mixs	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	dew point	unique	.
+neon:dissolvedInorganicCarbon	dissolvedInorganicCarbon	owl:equivalentClass	mixs:diss_inorg_carb	diss_inorg_carb	Lexical	neon	mixs	rdf_matcher	0.810860176054461	skos:altLabel	skos:altLabel	slot_definition	slot_definition	dissolved inorganic carbon	unique	.
+neon:dissolvedInorganicCarbon	dissolvedInorganicCarbon	owl:equivalentClass	mixs:diss_inorg_carb	diss_inorg_carb	Lexical|Stemming	neon	mixs	rdf_matcher	0.7519492530313434	skos:altLabel	skos:altLabel	slot_definition	slot_definition	dissolved inorganic carbon	unique	.
+neon:dissolvedOrganicCarbon	dissolvedOrganicCarbon	owl:equivalentClass	mixs:diss_org_carb	diss_org_carb	Lexical	neon	mixs	rdf_matcher	0.810860176054461	skos:altLabel	skos:altLabel	slot_definition	slot_definition	dissolved organic carbon	unique	.
+neon:dissolvedOrganicCarbon	dissolvedOrganicCarbon	owl:equivalentClass	mixs:diss_org_carb	diss_org_carb	Lexical|Stemming	neon	mixs	rdf_matcher	0.7519492530313434	skos:altLabel	skos:altLabel	slot_definition	slot_definition	dissolved organic carbon	unique	.
+neon:dissolvedOxygen	dissolvedOxygen	owl:equivalentClass	ENVO:01001495	dioxygen dissolved in marine water	Lexical	neon	ENVO	rdf_matcher	0.30326954502292763	skos:altLabel	oio:hasBroadSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	dissolved oxygen	unique	.
+neon:dissolvedOxygen	dissolvedOxygen	owl:equivalentClass	mixs:diss_oxygen	diss_oxygen	Lexical	neon	mixs	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	dissolved oxygen	unique	.
+neon:dissolvedOxygen	dissolvedOxygen	owl:equivalentClass	ENVO:01001495	dioxygen dissolved in marine water	Lexical|Stemming	neon	ENVO	rdf_matcher	0.23534896306899963	skos:altLabel	oio:hasBroadSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	dissolved oxygen	unique	.
+neon:dissolvedOxygen	dissolvedOxygen	owl:equivalentClass	mixs:diss_oxygen	diss_oxygen	Lexical|Stemming	neon	mixs	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	dissolved oxygen	unique	.
+neon:easting	easting	owl:equivalentClass	kbase:easting	easting	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	east	unique	.
+neon:easting	easting	owl:equivalentClass	kbase:easting	easting	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	east	unique	.
+neon:easting	easting	owl:equivalentClass	kbase:easting	easting	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	easting	unique	.
+neon:easting	easting	owl:equivalentClass	kbase:easting	easting	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	easting	unique	.
+neon:easting	easting	owl:equivalentClass	kbase:easting	easting	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	east	unique	.
+neon:easting	easting	owl:equivalentClass	kbase:easting	easting	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	east	unique	.
+neon:easting	easting	owl:equivalentClass	kbase:easting	easting	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	easting	unique	.
+neon:easting	easting	owl:equivalentClass	kbase:easting	easting	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	easting	unique	.
+neon:elevation	elevation	owl:equivalentClass	kbase:elevation	elevation	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	elev	unique	.
+neon:elevation	elevation	owl:equivalentClass	kbase:elevation	elevation	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	elev	unique	.
+neon:elevation	elevation	owl:equivalentClass	ENVO:00000176	elevation	Lexical|Stemming	neon	ENVO	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	elev	unique	.
+neon:elevation	elevation	owl:equivalentClass	mixs:elev	elev	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	elev	one_to_many	.
+neon:elevation	elevation	owl:equivalentClass	mixs:elev	elev	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	elev	one_to_many	.
+neon:elevation	elevation	owl:equivalentClass	mixs:elevator	elevator	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	elev	one_to_many	.
+neon:elevation	elevation	owl:equivalentClass	kbase:elevation	elevation	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	elevation	unique	.
+neon:elevation	elevation	owl:equivalentClass	kbase:elevation	elevation	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	elevation	unique	.
+neon:elevation	elevation	owl:equivalentClass	ENVO:00000176	elevation	Lexical	neon	ENVO	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	elevation	unique	.
+neon:elevation	elevation	owl:equivalentClass	mixs:elev	elev	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	elevation	one_to_many	.
+neon:elevation	elevation	owl:equivalentClass	kbase:elevation	elevation	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	elev	unique	.
+neon:elevation	elevation	owl:equivalentClass	kbase:elevation	elevation	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	elev	unique	.
+neon:elevation	elevation	owl:equivalentClass	ENVO:00000176	elevation	Lexical|Stemming	neon	ENVO	rdf_matcher	0.5	skos:altLabel	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	elev	unique	.
+neon:elevation	elevation	owl:equivalentClass	mixs:elev	elev	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	elev	one_to_many	.
+neon:elevation	elevation	owl:equivalentClass	mixs:elev	elev	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	elev	one_to_many	.
+neon:elevation	elevation	owl:equivalentClass	mixs:elevator	elevator	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	elev	one_to_many	.
+neon:elevation	elevation	owl:equivalentClass	kbase:elevation	elevation	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	elevation	unique	.
+neon:elevation	elevation	owl:equivalentClass	kbase:elevation	elevation	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	elevation	unique	.
+neon:elevation	elevation	owl:equivalentClass	ENVO:00000176	elevation	Lexical	neon	ENVO	rdf_matcher	0.585786437626905	skos:altLabel	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	elevation	unique	.
+neon:elevation	elevation	owl:equivalentClass	mixs:elev	elev	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	elevation	one_to_many	.
+neon:habitat	habitat	owl:equivalentClass	ENVO:01000739	habitat	Lexical	neon	ENVO	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	habitat	unique	.
+neon:habitat	habitat	owl:equivalentClass	ENVO:01000739	habitat	Lexical|Stemming	neon	ENVO	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	habitat	unique	.
+neon:habitat	habitat	owl:equivalentClass	ENVO:01000739	habitat	Lexical	neon	ENVO	rdf_matcher	0.585786437626905	skos:altLabel	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	habitat	unique	.
+neon:habitat	habitat	owl:equivalentClass	ENVO:01000739	habitat	Lexical|Stemming	neon	ENVO	rdf_matcher	0.5	skos:altLabel	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	habitat	unique	.
+neon:horizon	horizon	owl:equivalentClass	mixs:horizon	horizon	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	horizon	unique	.
+neon:horizon	horizon	owl:equivalentClass	mixs:horizon	horizon	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	horizon	unique	.
+neon:horizon	horizon	owl:equivalentClass	mixs:horizon	horizon	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	horizon	unique	.
+neon:horizon	horizon	owl:equivalentClass	mixs:horizon	horizon	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	horizon	unique	.
+neon:horizon	horizon	owl:equivalentClass	mixs:horizon	horizon	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	horizon	unique	.
+neon:horizon	horizon	owl:equivalentClass	mixs:horizon	horizon	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	horizon	unique	.
+neon:horizon	horizon	owl:equivalentClass	mixs:horizon	horizon	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	horizon	unique	.
+neon:horizon	horizon	owl:equivalentClass	mixs:horizon	horizon	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	horizon	unique	.
+neon:investigation_type	investigation_type	owl:equivalentClass	mixs:investigation_type	investigation_type	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	investigation_typ	unique	.
+neon:investigation_type	investigation_type	owl:equivalentClass	mixs:investigation_type	investigation_type	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	investigation_type	unique	.
+neon:investigation_type	investigation_type	owl:equivalentClass	mixs:investigation_type	investigation_type	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	investigation_typ	unique	.
+neon:investigation_type	investigation_type	owl:equivalentClass	mixs:investigation_type	investigation_type	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	investigation_type	unique	.
+neon:latitude	latitude	owl:equivalentClass	kbase:latitude	latitude	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	latitud	unique	.
+neon:latitude	latitude	owl:equivalentClass	kbase:latitude	latitude	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	latitud	unique	.
+neon:latitude	latitude	owl:equivalentClass	https://microbiomedata/meta/latitude	latitude	Lexical|Stemming	neon	https	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	latitud	unique	.
+neon:latitude	latitude	owl:equivalentClass	kbase:latitude	latitude	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	latitude	unique	.
+neon:latitude	latitude	owl:equivalentClass	kbase:latitude	latitude	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	latitude	unique	.
+neon:latitude	latitude	owl:equivalentClass	https://microbiomedata/meta/latitude	latitude	Lexical	neon	https	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	latitude	unique	.
+neon:latitude	latitude	owl:equivalentClass	kbase:latitude	latitude	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	latitud	unique	.
+neon:latitude	latitude	owl:equivalentClass	kbase:latitude	latitude	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	latitud	unique	.
+neon:latitude	latitude	owl:equivalentClass	https://microbiomedata/meta/latitude	latitude	Lexical|Stemming	neon	https	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	latitud	unique	.
+neon:latitude	latitude	owl:equivalentClass	kbase:latitude	latitude	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	latitude	unique	.
+neon:latitude	latitude	owl:equivalentClass	kbase:latitude	latitude	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	latitude	unique	.
+neon:latitude	latitude	owl:equivalentClass	https://microbiomedata/meta/latitude	latitude	Lexical	neon	https	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	latitude	unique	.
+neon:longitude	longitude	owl:equivalentClass	kbase:longitude	longitude	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	longitud	unique	.
+neon:longitude	longitude	owl:equivalentClass	kbase:longitude	longitude	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	longitud	unique	.
+neon:longitude	longitude	owl:equivalentClass	https://microbiomedata/meta/longitude	longitude	Lexical|Stemming	neon	https	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	longitud	unique	.
+neon:longitude	longitude	owl:equivalentClass	kbase:longitude	longitude	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	longitude	unique	.
+neon:longitude	longitude	owl:equivalentClass	kbase:longitude	longitude	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	longitude	unique	.
+neon:longitude	longitude	owl:equivalentClass	https://microbiomedata/meta/longitude	longitude	Lexical	neon	https	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	longitude	unique	.
+neon:longitude	longitude	owl:equivalentClass	kbase:longitude	longitude	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	longitud	unique	.
+neon:longitude	longitude	owl:equivalentClass	kbase:longitude	longitude	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	longitud	unique	.
+neon:longitude	longitude	owl:equivalentClass	https://microbiomedata/meta/longitude	longitude	Lexical|Stemming	neon	https	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	longitud	unique	.
+neon:longitude	longitude	owl:equivalentClass	kbase:longitude	longitude	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	longitude	unique	.
+neon:longitude	longitude	owl:equivalentClass	kbase:longitude	longitude	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	longitude	unique	.
+neon:longitude	longitude	owl:equivalentClass	https://microbiomedata/meta/longitude	longitude	Lexical	neon	https	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	longitude	unique	.
+neon:method	method	owl:equivalentClass	kbase:method	method	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	method	unique	.
+neon:method	method	owl:equivalentClass	kbase:method	method	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	method	unique	.
+neon:method	method	owl:equivalentClass	kbase:method	method	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	method	unique	.
+neon:method	method	owl:equivalentClass	kbase:method	method	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	method	unique	.
+neon:method	method	owl:equivalentClass	kbase:method	method	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	method	unique	.
+neon:method	method	owl:equivalentClass	kbase:method	method	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	method	unique	.
+neon:method	method	owl:equivalentClass	kbase:method	method	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	method	unique	.
+neon:method	method	owl:equivalentClass	kbase:method	method	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	method	unique	.
+neon:name	name	owl:equivalentClass	kbase:name	name	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
+neon:name	name	owl:equivalentClass	kbase:name	name	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	name	unique	.
+neon:name	name	owl:equivalentClass	https://microbiomedata/meta/name	name	Lexical	neon	https	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
+neon:name	name	owl:equivalentClass	kbase:name	name	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
+neon:name	name	owl:equivalentClass	kbase:name	name	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	name	unique	.
+neon:name	name	owl:equivalentClass	https://microbiomedata/meta/name	name	Lexical|Stemming	neon	https	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
+neon:name	name	owl:equivalentClass	kbase:name	name	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	name	unique	.
+neon:name	name	owl:equivalentClass	kbase:name	name	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	name	unique	.
+neon:name	name	owl:equivalentClass	https://microbiomedata/meta/name	name	Lexical	neon	https	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	name	unique	.
+neon:name	name	owl:equivalentClass	kbase:name	name	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	name	unique	.
+neon:name	name	owl:equivalentClass	kbase:name	name	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	name	unique	.
+neon:name	name	owl:equivalentClass	https://microbiomedata/meta/name	name	Lexical|Stemming	neon	https	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	name	unique	.
+neon:nitrate	nitrate	owl:equivalentClass	mixs:nitrate	nitrate	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	nitrat	many_to_one	.
+neon:nitrate	nitrate	owl:equivalentClass	mixs:nitrate	nitrate	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	nitrat	many_to_one	.
+neon:nitrate	nitrate	owl:equivalentClass	mixs:nitrate	nitrate	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	nitrate	many_to_one	.
+neon:nitrate	nitrate	owl:equivalentClass	mixs:nitrate	nitrate	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	nitrate	many_to_one	.
+neon:nitrate	nitrate	owl:equivalentClass	mixs:nitrate	nitrate	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	nitrat	many_to_one	.
+neon:nitrate	nitrate	owl:equivalentClass	mixs:nitrate	nitrate	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	nitrat	many_to_one	.
+neon:nitrate	nitrate	owl:equivalentClass	mixs:nitrate	nitrate	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	nitrate	many_to_one	.
+neon:nitrate	nitrate	owl:equivalentClass	mixs:nitrate	nitrate	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	nitrate	many_to_one	.
+neon:normality	normality	owl:equivalentClass	UO:0000075	normal	Lexical|Stemming	neon	UO	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	owl:Class	normal	unique	.
+neon:normality	normality	owl:equivalentClass	UO:0000075	normal	Lexical|Stemming	neon	UO	rdf_matcher	0.5	skos:altLabel	rdfs:label	slot_definition	owl:Class	normal	unique	.
+neon:northing	northing	owl:equivalentClass	kbase:northing	northing	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	north	unique	.
+neon:northing	northing	owl:equivalentClass	kbase:northing	northing	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	north	unique	.
+neon:northing	northing	owl:equivalentClass	kbase:northing	northing	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	northing	unique	.
+neon:northing	northing	owl:equivalentClass	kbase:northing	northing	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	northing	unique	.
+neon:northing	northing	owl:equivalentClass	kbase:northing	northing	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	north	unique	.
+neon:northing	northing	owl:equivalentClass	kbase:northing	northing	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	north	unique	.
+neon:northing	northing	owl:equivalentClass	kbase:northing	northing	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	northing	unique	.
+neon:northing	northing	owl:equivalentClass	kbase:northing	northing	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	northing	unique	.
+neon:pH	pH	owl:equivalentClass	kbase:ph	ph	Lexical	neon	kbase	rdf_matcher	0.4142135623730951	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
+neon:pH	pH	owl:equivalentClass	kbase:ph	ph	Lexical	neon	kbase	rdf_matcher	0.4142135623730951	rdfs:label	skos:altLabel	slot_definition	slot_definition	ph	unique	.
+neon:pH	pH	owl:equivalentClass	UO:0000196	pH	Lexical	neon	UO	rdf_matcher	0.2612038749637414	rdfs:label	rdfs:label	slot_definition	owl:Class	ph	unique	.
+neon:pH	pH	owl:equivalentClass	mixs:ph	ph	Lexical	neon	mixs	rdf_matcher	0.4142135623730951	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
+neon:pH	pH	owl:equivalentClass	mixs:ph	ph	Lexical	neon	mixs	rdf_matcher	0.4142135623730951	rdfs:label	skos:altLabel	slot_definition	slot_definition	ph	unique	.
+neon:pH	pH	owl:equivalentClass	kbase:ph	ph	Lexical|Stemming	neon	kbase	rdf_matcher	0.3333333333333333	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
+neon:pH	pH	owl:equivalentClass	kbase:ph	ph	Lexical|Stemming	neon	kbase	rdf_matcher	0.3333333333333333	rdfs:label	skos:altLabel	slot_definition	slot_definition	ph	unique	.
+neon:pH	pH	owl:equivalentClass	UO:0000196	pH	Lexical|Stemming	neon	UO	rdf_matcher	0.2	rdfs:label	rdfs:label	slot_definition	owl:Class	ph	unique	.
+neon:pH	pH	owl:equivalentClass	mixs:ph	ph	Lexical|Stemming	neon	mixs	rdf_matcher	0.3333333333333333	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
+neon:pH	pH	owl:equivalentClass	mixs:ph	ph	Lexical|Stemming	neon	mixs	rdf_matcher	0.3333333333333333	rdfs:label	skos:altLabel	slot_definition	slot_definition	ph	unique	.
+neon:porosity	porosity	owl:equivalentClass	mixs:porosity	porosity	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	poros	unique	.
+neon:porosity	porosity	owl:equivalentClass	mixs:porosity	porosity	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	poros	unique	.
+neon:porosity	porosity	owl:equivalentClass	mixs:porosity	porosity	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	porosity	unique	.
+neon:porosity	porosity	owl:equivalentClass	mixs:porosity	porosity	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	porosity	unique	.
+neon:porosity	porosity	owl:equivalentClass	mixs:porosity	porosity	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	poros	unique	.
+neon:porosity	porosity	owl:equivalentClass	mixs:porosity	porosity	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	poros	unique	.
+neon:porosity	porosity	owl:equivalentClass	mixs:porosity	porosity	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	porosity	unique	.
+neon:porosity	porosity	owl:equivalentClass	mixs:porosity	porosity	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	porosity	unique	.
+neon:region	region	owl:equivalentClass	kbase:region	region	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	region	unique	.
+neon:region	region	owl:equivalentClass	kbase:region	region	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	region	unique	.
+neon:region	region	owl:equivalentClass	kbase:region	region	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	region	unique	.
+neon:region	region	owl:equivalentClass	kbase:region	region	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	region	unique	.
+neon:region	region	owl:equivalentClass	kbase:region	region	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	region	unique	.
+neon:region	region	owl:equivalentClass	kbase:region	region	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	region	unique	.
+neon:region	region	owl:equivalentClass	kbase:region	region	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	region	unique	.
+neon:region	region	owl:equivalentClass	kbase:region	region	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	region	unique	.
+neon:replicate	replicate	owl:equivalentClass	kbase:replicate	replicate	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	replic	unique	.
+neon:replicate	replicate	owl:equivalentClass	kbase:replicate	replicate	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	replic	unique	.
+neon:replicate	replicate	owl:equivalentClass	kbase:replicate	replicate	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	replicate	unique	.
+neon:replicate	replicate	owl:equivalentClass	kbase:replicate	replicate	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	replicate	unique	.
+neon:replicate	replicate	owl:equivalentClass	kbase:replicate	replicate	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	replic	unique	.
+neon:replicate	replicate	owl:equivalentClass	kbase:replicate	replicate	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	replic	unique	.
+neon:replicate	replicate	owl:equivalentClass	kbase:replicate	replicate	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	replicate	unique	.
+neon:replicate	replicate	owl:equivalentClass	kbase:replicate	replicate	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	replicate	unique	.
+neon:sampleID	sampleID	owl:equivalentClass	kbase:sampleid	sampleid	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	sampleid	unique	.
+neon:sampleID	sampleID	owl:equivalentClass	kbase:sampleid	sampleid	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	sampleid	unique	.
+neon:sampleID	sampleID	owl:equivalentClass	kbase:sampleid	sampleid	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	sampleid	unique	.
+neon:sampleID	sampleID	owl:equivalentClass	kbase:sampleid	sampleid	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	sampleid	unique	.
+neon:sampleType	sampleType	owl:equivalentClass	mixs:samp_type	samp_type	Lexical|Stemming	neon	mixs	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	sample typ	unique	.
+neon:sampleType	sampleType	owl:equivalentClass	mixs:samp_type	samp_type	Lexical	neon	mixs	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	sample type	unique	.
+neon:sequencingMethod	sequencingMethod	owl:equivalentClass	mixs:seq_meth	seq_meth	Lexical	neon	mixs	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	sequencing method	unique	.
+neon:sequencingMethod	sequencingMethod	owl:equivalentClass	mixs:seq_meth	seq_meth	Lexical|Stemming	neon	mixs	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	sequencing method	unique	.
+neon:slopeAspect	slopeAspect	owl:equivalentClass	mixs:slope_aspect	slope_aspect	Lexical	neon	mixs	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	slope aspect	unique	.
+neon:slopeAspect	slopeAspect	owl:equivalentClass	mixs:slope_aspect	slope_aspect	Lexical|Stemming	neon	mixs	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	slope aspect	unique	.
+neon:slopeGradient	slopeGradient	owl:equivalentClass	mixs:slope_gradient	slope_gradient	Lexical|Stemming	neon	mixs	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	slope gradi	unique	.
+neon:slopeGradient	slopeGradient	owl:equivalentClass	mixs:slope_gradient	slope_gradient	Lexical	neon	mixs	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	slope gradient	unique	.
+neon:targetGene	targetGene	owl:equivalentClass	mixs:target_gene	target_gene	Lexical|Stemming	neon	mixs	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	target gen	unique	.
+neon:targetGene	targetGene	owl:equivalentClass	mixs:target_gene	target_gene	Lexical	neon	mixs	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	target gene	unique	.
+neon:targetSubfragment	targetSubfragment	owl:equivalentClass	mixs:target_subfragment	target_subfragment	Lexical|Stemming	neon	mixs	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	target subfrag	unique	.
+neon:targetSubfragment	targetSubfragment	owl:equivalentClass	mixs:target_subfragment	target_subfragment	Lexical	neon	mixs	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	target subfragment	unique	.
+neon:temp	temp	owl:equivalentClass	mixs:temp	temp	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	temp	unique	.
+neon:temp	temp	owl:equivalentClass	mixs:temp	temp	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	temp	unique	.
+neon:temp	temp	owl:equivalentClass	mixs:temp	temp	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	temp	unique	.
+neon:temp	temp	owl:equivalentClass	mixs:temp	temp	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	temp	unique	.
+neon:time	time	owl:equivalentClass	kbase:time	time	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	time	unique	.
+neon:time	time	owl:equivalentClass	kbase:time	time	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	time	unique	.
+neon:time	time	owl:equivalentClass	https://w3id.org/biolink/biolinkml/type/Time	time	Lexical	neon	https	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	slot_definition	type_definition	time	unique	.
+neon:time	time	owl:equivalentClass	kbase:time	time	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	time	unique	.
+neon:time	time	owl:equivalentClass	kbase:time	time	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	time	unique	.
 neon:time	time	owl:equivalentClass	https://w3id.org/biolink/biolinkml/type/Time	time	Lexical|Stemming	neon	https	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	type_definition	time	unique	.
-neon:timeZone	timeZone	owl:equivalentClass	kbase:timezone	timezone	Lexical|Stemming	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	timezon	unique	.
-neon:timeZone	timeZone	owl:equivalentClass	kbase:timezone	timezone	Lexical	neon	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	timezone	unique	.
-neon:turbidity	turbidity	owl:equivalentClass	mixs:turbidity	turbidity	Lexical|Stemming	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	turbid	unique	.
-neon:turbidity	turbidity	owl:equivalentClass	mixs:turbidity	turbidity	Lexical	neon	mixs	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	turbidity	unique	.
-https://microbiomedata/meta/description	description	owl:equivalentClass	kbase:description	description	Lexical|Stemming	https	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	descript	unique	.
-https://microbiomedata/meta/description	description	owl:equivalentClass	kbase:description	description	Lexical	https	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	description	unique	.
-https://microbiomedata/meta/id	id	owl:equivalentClass	kbase:id	id	Lexical	https	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	id	unique	.
-https://microbiomedata/meta/id	id	owl:equivalentClass	kbase:id	id	Lexical|Stemming	https	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	id	unique	.
-https://microbiomedata/meta/latitude	latitude	owl:equivalentClass	kbase:latitude	latitude	Lexical|Stemming	https	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	latitud	unique	.
-https://microbiomedata/meta/latitude	latitude	owl:equivalentClass	neon:latitude	latitude	Lexical|Stemming	https	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	latitud	unique	.
-https://microbiomedata/meta/latitude	latitude	owl:equivalentClass	kbase:latitude	latitude	Lexical	https	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	latitude	unique	.
-https://microbiomedata/meta/latitude	latitude	owl:equivalentClass	neon:latitude	latitude	Lexical	https	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	latitude	unique	.
-https://microbiomedata/meta/longitude	longitude	owl:equivalentClass	kbase:longitude	longitude	Lexical|Stemming	https	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	longitud	unique	.
-https://microbiomedata/meta/longitude	longitude	owl:equivalentClass	neon:longitude	longitude	Lexical|Stemming	https	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	longitud	unique	.
-https://microbiomedata/meta/longitude	longitude	owl:equivalentClass	kbase:longitude	longitude	Lexical	https	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	longitude	unique	.
-https://microbiomedata/meta/longitude	longitude	owl:equivalentClass	neon:longitude	longitude	Lexical	https	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	longitude	unique	.
-https://microbiomedata/meta/name	name	owl:equivalentClass	kbase:name	name	Lexical	https	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
-https://microbiomedata/meta/name	name	owl:equivalentClass	neon:name	name	Lexical	https	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
-https://microbiomedata/meta/name	name	owl:equivalentClass	kbase:name	name	Lexical|Stemming	https	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
-https://microbiomedata/meta/name	name	owl:equivalentClass	neon:name	name	Lexical|Stemming	https	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
-mixs:chlorophyll	chlorophyll	owl:equivalentClass	neon:chlorophyll	chlorophyll	Lexical|Stemming	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	chlorophyl	unique	.
-mixs:chlorophyll	chlorophyll	owl:equivalentClass	neon:chlorophyll	chlorophyll	Lexical	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	chlorophyll	unique	.
-mixs:collection_date	collection_date	owl:equivalentClass	kbase:collection_date	collection_date	Lexical|Stemming	mixs	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	collection_d	unique	.
-mixs:collection_date	collection_date	owl:equivalentClass	kbase:collection_date	collection_date	Lexical	mixs	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	collection_date	unique	.
-mixs:depth	depth	owl:equivalentClass	kbase:depth	depth	Lexical	mixs	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
-mixs:depth	depth	owl:equivalentClass	neon:depth	depth	Lexical	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
-mixs:depth	depth	owl:equivalentClass	kbase:depth	depth	Lexical|Stemming	mixs	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
-mixs:depth	depth	owl:equivalentClass	neon:depth	depth	Lexical|Stemming	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
-mixs:elev	elev	owl:equivalentClass	kbase:elevation	elevation	Lexical|Stemming	mixs	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	elev	many_to_one	.
-mixs:elev	elev	owl:equivalentClass	neon:elevation	elevation	Lexical|Stemming	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	elev	many_to_one	.
-mixs:elevator	elevator	owl:equivalentClass	kbase:elevation	elevation	Lexical|Stemming	mixs	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	elev	many_to_one	.
-mixs:elevator	elevator	owl:equivalentClass	neon:elevation	elevation	Lexical|Stemming	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	elev	many_to_one	.
-mixs:env_package	env_package	owl:equivalentClass	kbase:env_package	env_package	Lexical|Stemming	mixs	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	env_packag	unique	.
-mixs:env_package	env_package	owl:equivalentClass	kbase:env_package	env_package	Lexical	mixs	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	env_package	unique	.
-mixs:horizon	horizon	owl:equivalentClass	neon:horizon	horizon	Lexical	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	horizon	unique	.
-mixs:horizon	horizon	owl:equivalentClass	neon:horizon	horizon	Lexical|Stemming	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	horizon	unique	.
-mixs:investigation_type	investigation_type	owl:equivalentClass	neon:investigation_type	investigation_type	Lexical|Stemming	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	investigation_typ	unique	.
-mixs:investigation_type	investigation_type	owl:equivalentClass	neon:investigation_type	investigation_type	Lexical	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	investigation_type	unique	.
+neon:time	time	owl:equivalentClass	kbase:time	time	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	time	unique	.
+neon:time	time	owl:equivalentClass	kbase:time	time	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	time	unique	.
+neon:time	time	owl:equivalentClass	https://w3id.org/biolink/biolinkml/type/Time	time	Lexical	neon	https	rdf_matcher	0.585786437626905	skos:altLabel	rdfs:label	slot_definition	type_definition	time	unique	.
+neon:time	time	owl:equivalentClass	kbase:time	time	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	time	unique	.
+neon:time	time	owl:equivalentClass	kbase:time	time	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	time	unique	.
+neon:time	time	owl:equivalentClass	https://w3id.org/biolink/biolinkml/type/Time	time	Lexical|Stemming	neon	https	rdf_matcher	0.5	skos:altLabel	rdfs:label	slot_definition	type_definition	time	unique	.
+neon:timeZone	timeZone	owl:equivalentClass	kbase:timezone	timezone	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	timezon	one_to_many	.
+neon:timeZone	timeZone	owl:equivalentClass	kbase:timezone	timezone	Lexical|Stemming	neon	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	timezon	one_to_many	.
+neon:timeZone	timeZone	owl:equivalentClass	kbase:timezone	timezone	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	timezone	one_to_many	.
+neon:timeZone	timeZone	owl:equivalentClass	kbase:timezone	timezone	Lexical	neon	kbase	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	timezone	one_to_many	.
+neon:timeZone	timeZone	owl:equivalentClass	kbase:time_zone	time_zone	Lexical|Stemming	neon	kbase	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	time zon	one_to_many	.
+neon:timeZone	timeZone	owl:equivalentClass	kbase:time_zone	time_zone	Lexical	neon	kbase	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	time zone	one_to_many	.
+neon:totalDissolvedNitrogen	totalDissolvedNitrogen	owl:equivalentClass	mixs:tot_diss_nitro	tot_diss_nitro	Lexical	neon	mixs	rdf_matcher	0.810860176054461	skos:altLabel	skos:altLabel	slot_definition	slot_definition	total dissolved nitrogen	unique	.
+neon:totalDissolvedNitrogen	totalDissolvedNitrogen	owl:equivalentClass	mixs:tot_diss_nitro	tot_diss_nitro	Lexical|Stemming	neon	mixs	rdf_matcher	0.7519492530313434	skos:altLabel	skos:altLabel	slot_definition	slot_definition	total dissolved nitrogen	unique	.
+neon:totalParticulateCarbon	totalParticulateCarbon	owl:equivalentClass	mixs:tot_part_carb	tot_part_carb	Lexical	neon	mixs	rdf_matcher	0.810860176054461	skos:altLabel	skos:altLabel	slot_definition	slot_definition	total particulate carbon	unique	.
+neon:totalParticulateCarbon	totalParticulateCarbon	owl:equivalentClass	mixs:tot_part_carb	tot_part_carb	Lexical|Stemming	neon	mixs	rdf_matcher	0.7519492530313434	skos:altLabel	skos:altLabel	slot_definition	slot_definition	total particulate carbon	unique	.
+neon:turbidity	turbidity	owl:equivalentClass	mixs:turbidity	turbidity	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	turbid	unique	.
+neon:turbidity	turbidity	owl:equivalentClass	mixs:turbidity	turbidity	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	turbid	unique	.
+neon:turbidity	turbidity	owl:equivalentClass	mixs:turbidity	turbidity	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	turbidity	unique	.
+neon:turbidity	turbidity	owl:equivalentClass	mixs:turbidity	turbidity	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	turbidity	unique	.
+neon:turbidity	turbidity	owl:equivalentClass	mixs:turbidity	turbidity	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	turbid	unique	.
+neon:turbidity	turbidity	owl:equivalentClass	mixs:turbidity	turbidity	Lexical|Stemming	neon	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	turbid	unique	.
+neon:turbidity	turbidity	owl:equivalentClass	mixs:turbidity	turbidity	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	turbidity	unique	.
+neon:turbidity	turbidity	owl:equivalentClass	mixs:turbidity	turbidity	Lexical	neon	mixs	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	turbidity	unique	.
+neon:waterDepth	waterDepth	owl:equivalentClass	ENVO:3100031	depth of water	Lexical	neon	ENVO	rdf_matcher	0.6351831056874558	skos:altLabel	oio:hasExactSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	water depth	unique	.
+neon:waterDepth	waterDepth	owl:equivalentClass	ENVO:3100031	depth of water	Lexical|Stemming	neon	ENVO	rdf_matcher	0.5517995186601091	skos:altLabel	oio:hasExactSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	water depth	unique	.
+neon:waterTemperature	waterTemperature	owl:equivalentClass	ENVO:09200014	temperature of water	Lexical|Stemming	neon	ENVO	rdf_matcher	0.5517995186601091	skos:altLabel	oio:hasExactSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	water temperatur	unique	.
+neon:waterTemperature	waterTemperature	owl:equivalentClass	ENVO:09200014	temperature of water	Lexical	neon	ENVO	rdf_matcher	0.6351831056874558	skos:altLabel	oio:hasExactSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	water temperature	unique	.
+neon:year	year	owl:equivalentClass	UO:0000036	year	Lexical	neon	UO	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	slot_definition	owl:Class	year	unique	.
+neon:year	year	owl:equivalentClass	UO:0000036	year	Lexical|Stemming	neon	UO	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	owl:Class	year	unique	.
+neon:year	year	owl:equivalentClass	UO:0000036	year	Lexical	neon	UO	rdf_matcher	0.585786437626905	skos:altLabel	rdfs:label	slot_definition	owl:Class	year	unique	.
+neon:year	year	owl:equivalentClass	UO:0000036	year	Lexical|Stemming	neon	UO	rdf_matcher	0.5	skos:altLabel	rdfs:label	slot_definition	owl:Class	year	unique	.
+https://microbiomedata/meta/Unit	unit	owl:equivalentClass	UO:0000000	unit	Lexical	https	UO	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	type_definition	unit	unit	unique	.
+https://microbiomedata/meta/Unit	unit	owl:equivalentClass	UO:0000000	unit	Lexical|Stemming	https	UO	rdf_matcher	0.5	rdfs:label	rdfs:label	type_definition	unit	unit	unique	.
+https://microbiomedata/meta/attribute	attribute	owl:equivalentClass	ENVO:00000114	agricultural field	Lexical	https	ENVO	rdf_matcher	0.585786437626905	skos:altLabel	oio:hasExactSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	field	one_to_many	.
+https://microbiomedata/meta/attribute	attribute	owl:equivalentClass	ENVO:01000352	field	Lexical	https	ENVO	rdf_matcher	0.585786437626905	skos:altLabel	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	field	one_to_many	.
+https://microbiomedata/meta/attribute	attribute	owl:equivalentClass	mixs:field	field	Lexical	https	mixs	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	field	unique	.
+https://microbiomedata/meta/attribute	attribute	owl:equivalentClass	ENVO:00000114	agricultural field	Lexical|Stemming	https	ENVO	rdf_matcher	0.5	skos:altLabel	oio:hasExactSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	field	one_to_many	.
+https://microbiomedata/meta/attribute	attribute	owl:equivalentClass	ENVO:01000352	field	Lexical|Stemming	https	ENVO	rdf_matcher	0.5	skos:altLabel	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	field	one_to_many	.
+https://microbiomedata/meta/attribute	attribute	owl:equivalentClass	mixs:field	field	Lexical|Stemming	https	mixs	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	field	unique	.
+https://microbiomedata/meta/attribute	attribute	owl:equivalentClass	ENVO:00000098	island	Lexical|Stemming	https	ENVO	rdf_matcher	0.2	skos:altLabel	oio:hasRelatedSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	kei	one_to_many	.
+https://microbiomedata/meta/attribute	attribute	owl:equivalentClass	ENVO:00000098	island	Lexical	https	ENVO	rdf_matcher	0.2612038749637414	skos:altLabel	oio:hasRelatedSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	key	one_to_many	.
+https://microbiomedata/meta/description	description	owl:equivalentClass	kbase:description	description	Lexical|Stemming	https	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	descript	unique	.
+https://microbiomedata/meta/description	description	owl:equivalentClass	kbase:description	description	Lexical|Stemming	https	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	descript	unique	.
+https://microbiomedata/meta/description	description	owl:equivalentClass	kbase:description	description	Lexical	https	kbase	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	description	unique	.
+https://microbiomedata/meta/description	description	owl:equivalentClass	kbase:description	description	Lexical	https	kbase	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	description	unique	.
+https://microbiomedata/meta/id	id	owl:equivalentClass	kbase:id	id	Lexical	https	kbase	rdf_matcher	0.4142135623730951	rdfs:label	rdfs:label	slot_definition	slot_definition	id	unique	.
+https://microbiomedata/meta/id	id	owl:equivalentClass	kbase:id	id	Lexical	https	kbase	rdf_matcher	0.4142135623730951	rdfs:label	skos:altLabel	slot_definition	slot_definition	id	unique	.
+https://microbiomedata/meta/id	id	owl:equivalentClass	kbase:id	id	Lexical|Stemming	https	kbase	rdf_matcher	0.3333333333333333	rdfs:label	rdfs:label	slot_definition	slot_definition	id	unique	.
+https://microbiomedata/meta/id	id	owl:equivalentClass	kbase:id	id	Lexical|Stemming	https	kbase	rdf_matcher	0.3333333333333333	rdfs:label	skos:altLabel	slot_definition	slot_definition	id	unique	.
+https://microbiomedata/meta/latitude	latitude	owl:equivalentClass	kbase:latitude	latitude	Lexical|Stemming	https	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	latitud	unique	.
+https://microbiomedata/meta/latitude	latitude	owl:equivalentClass	kbase:latitude	latitude	Lexical|Stemming	https	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	latitud	unique	.
+https://microbiomedata/meta/latitude	latitude	owl:equivalentClass	neon:latitude	latitude	Lexical|Stemming	https	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	latitud	unique	.
+https://microbiomedata/meta/latitude	latitude	owl:equivalentClass	neon:latitude	latitude	Lexical|Stemming	https	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	latitud	unique	.
+https://microbiomedata/meta/latitude	latitude	owl:equivalentClass	kbase:latitude	latitude	Lexical	https	kbase	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	latitude	unique	.
+https://microbiomedata/meta/latitude	latitude	owl:equivalentClass	kbase:latitude	latitude	Lexical	https	kbase	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	latitude	unique	.
+https://microbiomedata/meta/latitude	latitude	owl:equivalentClass	neon:latitude	latitude	Lexical	https	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	latitude	unique	.
+https://microbiomedata/meta/latitude	latitude	owl:equivalentClass	neon:latitude	latitude	Lexical	https	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	latitude	unique	.
+https://microbiomedata/meta/longitude	longitude	owl:equivalentClass	kbase:longitude	longitude	Lexical|Stemming	https	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	longitud	unique	.
+https://microbiomedata/meta/longitude	longitude	owl:equivalentClass	kbase:longitude	longitude	Lexical|Stemming	https	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	longitud	unique	.
+https://microbiomedata/meta/longitude	longitude	owl:equivalentClass	neon:longitude	longitude	Lexical|Stemming	https	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	longitud	unique	.
+https://microbiomedata/meta/longitude	longitude	owl:equivalentClass	neon:longitude	longitude	Lexical|Stemming	https	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	longitud	unique	.
+https://microbiomedata/meta/longitude	longitude	owl:equivalentClass	kbase:longitude	longitude	Lexical	https	kbase	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	longitude	unique	.
+https://microbiomedata/meta/longitude	longitude	owl:equivalentClass	kbase:longitude	longitude	Lexical	https	kbase	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	longitude	unique	.
+https://microbiomedata/meta/longitude	longitude	owl:equivalentClass	neon:longitude	longitude	Lexical	https	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	longitude	unique	.
+https://microbiomedata/meta/longitude	longitude	owl:equivalentClass	neon:longitude	longitude	Lexical	https	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	longitude	unique	.
+https://microbiomedata/meta/name	name	owl:equivalentClass	kbase:name	name	Lexical	https	kbase	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
+https://microbiomedata/meta/name	name	owl:equivalentClass	kbase:name	name	Lexical	https	kbase	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	name	unique	.
+https://microbiomedata/meta/name	name	owl:equivalentClass	neon:name	name	Lexical	https	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
+https://microbiomedata/meta/name	name	owl:equivalentClass	neon:name	name	Lexical	https	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	name	unique	.
+https://microbiomedata/meta/name	name	owl:equivalentClass	kbase:name	name	Lexical|Stemming	https	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
+https://microbiomedata/meta/name	name	owl:equivalentClass	kbase:name	name	Lexical|Stemming	https	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	name	unique	.
+https://microbiomedata/meta/name	name	owl:equivalentClass	neon:name	name	Lexical|Stemming	https	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	name	unique	.
+https://microbiomedata/meta/name	name	owl:equivalentClass	neon:name	name	Lexical|Stemming	https	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	name	unique	.
+mixs:air_temp	air_temp	owl:equivalentClass	ENVO:09200001	temperature of air	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.5517995186601091	skos:altLabel	oio:hasExactSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	air temperatur	unique	.
+mixs:air_temp	air_temp	owl:equivalentClass	neon:airTemperature	airTemperature	Lexical|Stemming	mixs	neon	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	air temperatur	unique	.
+mixs:air_temp	air_temp	owl:equivalentClass	ENVO:09200001	temperature of air	Lexical	mixs	ENVO	rdf_matcher	0.6351831056874558	skos:altLabel	oio:hasExactSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	air temperature	unique	.
+mixs:air_temp	air_temp	owl:equivalentClass	neon:airTemperature	airTemperature	Lexical	mixs	neon	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	air temperature	unique	.
+mixs:basin	basin	owl:equivalentClass	ENVO:00000104	undersea feature	Lexical	mixs	ENVO	rdf_matcher	0.2612038749637414	rdfs:label	oio:hasNarrowSynonym	slot_definition	ENVO	basin	one_to_many	.
+mixs:basin	basin	owl:equivalentClass	ENVO:00000151	sabkha	Lexical	mixs	ENVO	rdf_matcher	0.2612038749637414	rdfs:label	oio:hasBroadSynonym	slot_definition	ENVO	basin	one_to_many	.
+mixs:basin	basin	owl:equivalentClass	ENVO:00000165	asphalt lake	Lexical	mixs	ENVO	rdf_matcher	0.2612038749637414	rdfs:label	oio:hasBroadSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	basin	one_to_many	.
+mixs:basin	basin	owl:equivalentClass	ENVO:00000195	sinkhole	Lexical	mixs	ENVO	rdf_matcher	0.2612038749637414	rdfs:label	oio:hasBroadSynonym	slot_definition	ENVO	basin	one_to_many	.
+mixs:basin	basin	owl:equivalentClass	ENVO:00000291	drainage basin	Lexical	mixs	ENVO	rdf_matcher	0.585786437626905	rdfs:label	oio:hasExactSynonym	slot_definition	ENVO	basin	one_to_many	.
+mixs:basin	basin	owl:equivalentClass	ENVO:00000311	kettle	Lexical	mixs	ENVO	rdf_matcher	0.2612038749637414	rdfs:label	oio:hasBroadSynonym	slot_definition	ENVO	basin	one_to_many	.
+mixs:basin	basin	owl:equivalentClass	ENVO:00002277	back-arc basin	Lexical	mixs	ENVO	rdf_matcher	0.2612038749637414	rdfs:label	oio:hasBroadSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	basin	one_to_many	.
+mixs:basin	basin	owl:equivalentClass	ENVO:00000104	undersea feature	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.2	rdfs:label	oio:hasNarrowSynonym	slot_definition	ENVO	basin	one_to_many	.
+mixs:basin	basin	owl:equivalentClass	ENVO:00000151	sabkha	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.2	rdfs:label	oio:hasBroadSynonym	slot_definition	ENVO	basin	one_to_many	.
+mixs:basin	basin	owl:equivalentClass	ENVO:00000165	asphalt lake	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.2	rdfs:label	oio:hasBroadSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	basin	one_to_many	.
+mixs:basin	basin	owl:equivalentClass	ENVO:00000195	sinkhole	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.2	rdfs:label	oio:hasBroadSynonym	slot_definition	ENVO	basin	one_to_many	.
+mixs:basin	basin	owl:equivalentClass	ENVO:00000291	drainage basin	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.5	rdfs:label	oio:hasExactSynonym	slot_definition	ENVO	basin	one_to_many	.
+mixs:basin	basin	owl:equivalentClass	ENVO:00000311	kettle	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.2	rdfs:label	oio:hasBroadSynonym	slot_definition	ENVO	basin	one_to_many	.
+mixs:basin	basin	owl:equivalentClass	ENVO:00002277	back-arc basin	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.2	rdfs:label	oio:hasBroadSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	basin	one_to_many	.
+mixs:biomass	biomass	owl:equivalentClass	ENVO:01000155	organic material	Lexical	mixs	ENVO	rdf_matcher	0.585786437626905	rdfs:label	oio:hasExactSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	biomass	unique	.
+mixs:biomass	biomass	owl:equivalentClass	ENVO:01000155	organic material	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.5	rdfs:label	oio:hasExactSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	biomass	unique	.
+mixs:biomass	biomass	owl:equivalentClass	ENVO:01000155	organic material	Lexical	mixs	ENVO	rdf_matcher	0.585786437626905	skos:altLabel	oio:hasExactSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	biomass	unique	.
+mixs:biomass	biomass	owl:equivalentClass	ENVO:01000155	organic material	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.5	skos:altLabel	oio:hasExactSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	biomass	unique	.
+mixs:chlorophyll	chlorophyll	owl:equivalentClass	neon:chlorophyll	chlorophyll	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	chlorophyl	unique	.
+mixs:chlorophyll	chlorophyll	owl:equivalentClass	neon:chlorophyll	chlorophyll	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	chlorophyl	unique	.
+mixs:chlorophyll	chlorophyll	owl:equivalentClass	neon:chlorophyll	chlorophyll	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	chlorophyll	unique	.
+mixs:chlorophyll	chlorophyll	owl:equivalentClass	neon:chlorophyll	chlorophyll	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	chlorophyll	unique	.
+mixs:chlorophyll	chlorophyll	owl:equivalentClass	neon:chlorophyll	chlorophyll	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	chlorophyl	unique	.
+mixs:chlorophyll	chlorophyll	owl:equivalentClass	neon:chlorophyll	chlorophyll	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	chlorophyl	unique	.
+mixs:chlorophyll	chlorophyll	owl:equivalentClass	neon:chlorophyll	chlorophyll	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	chlorophyll	unique	.
+mixs:chlorophyll	chlorophyll	owl:equivalentClass	neon:chlorophyll	chlorophyll	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	chlorophyll	unique	.
+mixs:collection_date	collection_date	owl:equivalentClass	kbase:collection_date	collection_date	Lexical|Stemming	mixs	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	collection_d	unique	.
+mixs:collection_date	collection_date	owl:equivalentClass	kbase:collection_date	collection_date	Lexical	mixs	kbase	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	collection_date	unique	.
+mixs:collection_date	collection_date	owl:equivalentClass	kbase:collection_date	collection_date	Lexical|Stemming	mixs	kbase	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	collection d	unique	.
+mixs:collection_date	collection_date	owl:equivalentClass	kbase:collection_date	collection_date	Lexical	mixs	kbase	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	collection date	unique	.
+mixs:conduc	conduc	owl:equivalentClass	kbase:conductivity	conductivity	Lexical|Stemming	mixs	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	conduct	unique	.
+mixs:conduc	conduc	owl:equivalentClass	kbase:conductivity	conductivity	Lexical|Stemming	mixs	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	conduct	unique	.
+mixs:conduc	conduc	owl:equivalentClass	neon:conductance	conductance	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	conduct	unique	.
+mixs:conduc	conduc	owl:equivalentClass	neon:conductance	conductance	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	conduct	unique	.
+mixs:conduc	conduc	owl:equivalentClass	kbase:conductivity	conductivity	Lexical	mixs	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	conductivity	unique	.
+mixs:conduc	conduc	owl:equivalentClass	kbase:conductivity	conductivity	Lexical	mixs	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	conductivity	unique	.
+mixs:depth	depth	owl:equivalentClass	kbase:depth	depth	Lexical	mixs	kbase	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
+mixs:depth	depth	owl:equivalentClass	kbase:depth	depth	Lexical	mixs	kbase	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	depth	unique	.
+mixs:depth	depth	owl:equivalentClass	neon:depth	depth	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
+mixs:depth	depth	owl:equivalentClass	neon:depth	depth	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	depth	unique	.
+mixs:depth	depth	owl:equivalentClass	kbase:depth	depth	Lexical|Stemming	mixs	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
+mixs:depth	depth	owl:equivalentClass	kbase:depth	depth	Lexical|Stemming	mixs	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	depth	unique	.
+mixs:depth	depth	owl:equivalentClass	neon:depth	depth	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	depth	unique	.
+mixs:depth	depth	owl:equivalentClass	neon:depth	depth	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	depth	unique	.
+mixs:dew_point	dew_point	owl:equivalentClass	neon:dewPoint	dewPoint	Lexical	mixs	neon	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	dew point	unique	.
+mixs:dew_point	dew_point	owl:equivalentClass	neon:dewPoint	dewPoint	Lexical|Stemming	mixs	neon	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	dew point	unique	.
+mixs:diss_inorg_carb	diss_inorg_carb	owl:equivalentClass	neon:dissolvedInorganicCarbon	dissolvedInorganicCarbon	Lexical	mixs	neon	rdf_matcher	0.810860176054461	skos:altLabel	skos:altLabel	slot_definition	slot_definition	dissolved inorganic carbon	unique	.
+mixs:diss_inorg_carb	diss_inorg_carb	owl:equivalentClass	neon:dissolvedInorganicCarbon	dissolvedInorganicCarbon	Lexical|Stemming	mixs	neon	rdf_matcher	0.7519492530313434	skos:altLabel	skos:altLabel	slot_definition	slot_definition	dissolved inorganic carbon	unique	.
+mixs:diss_org_carb	diss_org_carb	owl:equivalentClass	neon:dissolvedOrganicCarbon	dissolvedOrganicCarbon	Lexical	mixs	neon	rdf_matcher	0.810860176054461	skos:altLabel	skos:altLabel	slot_definition	slot_definition	dissolved organic carbon	unique	.
+mixs:diss_org_carb	diss_org_carb	owl:equivalentClass	neon:dissolvedOrganicCarbon	dissolvedOrganicCarbon	Lexical|Stemming	mixs	neon	rdf_matcher	0.7519492530313434	skos:altLabel	skos:altLabel	slot_definition	slot_definition	dissolved organic carbon	unique	.
+mixs:diss_oxygen	diss_oxygen	owl:equivalentClass	ENVO:01001495	dioxygen dissolved in marine water	Lexical	mixs	ENVO	rdf_matcher	0.30326954502292763	skos:altLabel	oio:hasBroadSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	dissolved oxygen	unique	.
+mixs:diss_oxygen	diss_oxygen	owl:equivalentClass	neon:dissolvedOxygen	dissolvedOxygen	Lexical	mixs	neon	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	dissolved oxygen	unique	.
+mixs:diss_oxygen	diss_oxygen	owl:equivalentClass	ENVO:01001495	dioxygen dissolved in marine water	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.23534896306899963	skos:altLabel	oio:hasBroadSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	dissolved oxygen	unique	.
+mixs:diss_oxygen	diss_oxygen	owl:equivalentClass	neon:dissolvedOxygen	dissolvedOxygen	Lexical|Stemming	mixs	neon	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	dissolved oxygen	unique	.
+mixs:drawings	drawings	owl:equivalentClass	ENVO:00000029	watercourse	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.3333333333333333	rdfs:label	oio:hasRelatedSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	draw	unique	.
+mixs:drawings	drawings	owl:equivalentClass	ENVO:00000029	watercourse	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.3333333333333333	skos:altLabel	oio:hasRelatedSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	draw	unique	.
+mixs:elev	elev	owl:equivalentClass	kbase:elevation	elevation	Lexical|Stemming	mixs	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	elev	many_to_one	.
+mixs:elev	elev	owl:equivalentClass	kbase:elevation	elevation	Lexical|Stemming	mixs	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	elev	many_to_one	.
+mixs:elev	elev	owl:equivalentClass	ENVO:00000176	elevation	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	elev	many_to_one	.
+mixs:elev	elev	owl:equivalentClass	neon:elevation	elevation	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	elev	many_to_one	.
+mixs:elev	elev	owl:equivalentClass	neon:elevation	elevation	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	elev	many_to_one	.
+mixs:elev	elev	owl:equivalentClass	kbase:elevation	elevation	Lexical|Stemming	mixs	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	elev	many_to_one	.
+mixs:elev	elev	owl:equivalentClass	kbase:elevation	elevation	Lexical|Stemming	mixs	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	elev	many_to_one	.
+mixs:elev	elev	owl:equivalentClass	ENVO:00000176	elevation	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.5	skos:altLabel	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	elev	many_to_one	.
+mixs:elev	elev	owl:equivalentClass	neon:elevation	elevation	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	elev	many_to_one	.
+mixs:elev	elev	owl:equivalentClass	neon:elevation	elevation	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	elev	many_to_one	.
+mixs:elev	elev	owl:equivalentClass	kbase:elevation	elevation	Lexical	mixs	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	elevation	many_to_one	.
+mixs:elev	elev	owl:equivalentClass	kbase:elevation	elevation	Lexical	mixs	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	elevation	many_to_one	.
+mixs:elev	elev	owl:equivalentClass	ENVO:00000176	elevation	Lexical	mixs	ENVO	rdf_matcher	0.585786437626905	skos:altLabel	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	elevation	many_to_one	.
+mixs:elev	elev	owl:equivalentClass	neon:elevation	elevation	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	elevation	many_to_one	.
+mixs:elev	elev	owl:equivalentClass	neon:elevation	elevation	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	elevation	many_to_one	.
+mixs:elevator	elevator	owl:equivalentClass	kbase:elevation	elevation	Lexical|Stemming	mixs	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	elev	many_to_one	.
+mixs:elevator	elevator	owl:equivalentClass	kbase:elevation	elevation	Lexical|Stemming	mixs	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	elev	many_to_one	.
+mixs:elevator	elevator	owl:equivalentClass	ENVO:00000176	elevation	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	elev	many_to_one	.
+mixs:elevator	elevator	owl:equivalentClass	neon:elevation	elevation	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	elev	many_to_one	.
+mixs:elevator	elevator	owl:equivalentClass	neon:elevation	elevation	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	elev	many_to_one	.
+mixs:emulsions	emulsions	owl:equivalentClass	ENVO:00010506	emulsion	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	emuls	unique	.
+mixs:emulsions	emulsions	owl:equivalentClass	ENVO:00010506	emulsion	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.5	skos:altLabel	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	emuls	unique	.
+mixs:env_package	env_package	owl:equivalentClass	kbase:env_package	env_package	Lexical|Stemming	mixs	kbase	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	env_packag	one_to_many	.
+mixs:env_package	env_package	owl:equivalentClass	kbase:env_package	env_package	Lexical|Stemming	mixs	kbase	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	env_packag	one_to_many	.
+mixs:env_package	env_package	owl:equivalentClass	kbase:env_package	env_package	Lexical	mixs	kbase	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	env_package	one_to_many	.
+mixs:env_package	env_package	owl:equivalentClass	kbase:env_package	env_package	Lexical	mixs	kbase	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	env_package	one_to_many	.
+mixs:env_package	env_package	owl:equivalentClass	kbase:environmental_package	environmental_package	Lexical|Stemming	mixs	kbase	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	environmental packag	one_to_many	.
+mixs:env_package	env_package	owl:equivalentClass	kbase:environmental_package	environmental_package	Lexical	mixs	kbase	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	environmental package	one_to_many	.
+mixs:field	field	owl:equivalentClass	ENVO:00000114	agricultural field	Lexical	mixs	ENVO	rdf_matcher	0.585786437626905	rdfs:label	oio:hasExactSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	field	one_to_many	.
+mixs:field	field	owl:equivalentClass	ENVO:01000352	field	Lexical	mixs	ENVO	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	field	one_to_many	.
+mixs:field	field	owl:equivalentClass	https://microbiomedata/meta/attribute	attribute	Lexical	mixs	https	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	field	unique	.
+mixs:field	field	owl:equivalentClass	ENVO:00000114	agricultural field	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.5	rdfs:label	oio:hasExactSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	field	one_to_many	.
+mixs:field	field	owl:equivalentClass	ENVO:01000352	field	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	field	one_to_many	.
+mixs:field	field	owl:equivalentClass	https://microbiomedata/meta/attribute	attribute	Lexical|Stemming	mixs	https	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	field	unique	.
+mixs:fire	fire	owl:equivalentClass	ENVO:01000786	fire	Lexical	mixs	ENVO	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	fire	unique	.
+mixs:fire	fire	owl:equivalentClass	ENVO:01000786	fire	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	fire	unique	.
+mixs:flooding	flooding	owl:equivalentClass	ENVO:01000710	flood	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	flood	one_to_many	.
+mixs:flooding	flooding	owl:equivalentClass	ENVO:02500002	flooding	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	flood	one_to_many	.
+mixs:flooding	flooding	owl:equivalentClass	ENVO:02500002	flooding	Lexical	mixs	ENVO	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	flooding	one_to_many	.
+mixs:horizon	horizon	owl:equivalentClass	neon:horizon	horizon	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	horizon	unique	.
+mixs:horizon	horizon	owl:equivalentClass	neon:horizon	horizon	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	horizon	unique	.
+mixs:horizon	horizon	owl:equivalentClass	neon:horizon	horizon	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	horizon	unique	.
+mixs:horizon	horizon	owl:equivalentClass	neon:horizon	horizon	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	horizon	unique	.
+mixs:horizon	horizon	owl:equivalentClass	neon:horizon	horizon	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	horizon	unique	.
+mixs:horizon	horizon	owl:equivalentClass	neon:horizon	horizon	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	horizon	unique	.
+mixs:horizon	horizon	owl:equivalentClass	neon:horizon	horizon	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	horizon	unique	.
+mixs:horizon	horizon	owl:equivalentClass	neon:horizon	horizon	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	horizon	unique	.
+mixs:investigation_type	investigation_type	owl:equivalentClass	neon:investigation_type	investigation_type	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	investigation_typ	unique	.
+mixs:investigation_type	investigation_type	owl:equivalentClass	neon:investigation_type	investigation_type	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	investigation_typ	unique	.
+mixs:investigation_type	investigation_type	owl:equivalentClass	neon:investigation_type	investigation_type	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	investigation_type	unique	.
+mixs:investigation_type	investigation_type	owl:equivalentClass	neon:investigation_type	investigation_type	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	investigation_type	unique	.
 mixs:nitrate	nitrate	owl:equivalentClass	neon:Nitrate	nitrate	Lexical|Stemming	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	class_definition	nitrat	one_to_many	.
-mixs:nitrate	nitrate	owl:equivalentClass	neon:nitrate	nitrate	Lexical|Stemming	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	nitrat	one_to_many	.
-mixs:nitrate	nitrate	owl:equivalentClass	neon:Nitrate	nitrate	Lexical	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	class_definition	nitrate	one_to_many	.
-mixs:nitrate	nitrate	owl:equivalentClass	neon:nitrate	nitrate	Lexical	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	nitrate	one_to_many	.
-mixs:ph	ph	owl:equivalentClass	kbase:ph	ph	Lexical	mixs	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
-mixs:ph	ph	owl:equivalentClass	neon:pH	pH	Lexical	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
-mixs:ph	ph	owl:equivalentClass	kbase:ph	ph	Lexical|Stemming	mixs	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
-mixs:ph	ph	owl:equivalentClass	neon:pH	pH	Lexical|Stemming	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
-mixs:porosity	porosity	owl:equivalentClass	neon:porosity	porosity	Lexical|Stemming	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	poros	unique	.
-mixs:porosity	porosity	owl:equivalentClass	neon:porosity	porosity	Lexical	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	porosity	unique	.
-mixs:temp	temp	owl:equivalentClass	neon:temp	temp	Lexical	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	temp	unique	.
-mixs:temp	temp	owl:equivalentClass	neon:temp	temp	Lexical|Stemming	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	temp	unique	.
-mixs:turbidity	turbidity	owl:equivalentClass	neon:turbidity	turbidity	Lexical|Stemming	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	turbid	unique	.
-mixs:turbidity	turbidity	owl:equivalentClass	neon:turbidity	turbidity	Lexical	mixs	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	slot_definition	turbidity	unique	.
-https://w3id.org/biolink/biolinkml/type/Date	date	owl:equivalentClass	kbase:date	date	Lexical	https	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	type_definition	slot_definition	date	unique	.
-https://w3id.org/biolink/biolinkml/type/Date	date	owl:equivalentClass	neon:date	date	Lexical	https	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	type_definition	slot_definition	date	unique	.
+mixs:nitrate	nitrate	owl:equivalentClass	neon:nitrate	nitrate	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	nitrat	one_to_many	.
+mixs:nitrate	nitrate	owl:equivalentClass	neon:nitrate	nitrate	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	nitrat	one_to_many	.
+mixs:nitrate	nitrate	owl:equivalentClass	neon:Nitrate	nitrate	Lexical	mixs	neon	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	slot_definition	class_definition	nitrate	one_to_many	.
+mixs:nitrate	nitrate	owl:equivalentClass	neon:nitrate	nitrate	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	nitrate	one_to_many	.
+mixs:nitrate	nitrate	owl:equivalentClass	neon:nitrate	nitrate	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	nitrate	one_to_many	.
+mixs:nitrate	nitrate	owl:equivalentClass	neon:Nitrate	nitrate	Lexical|Stemming	mixs	neon	rdf_matcher	0.5	skos:altLabel	rdfs:label	slot_definition	class_definition	nitrat	one_to_many	.
+mixs:nitrate	nitrate	owl:equivalentClass	neon:nitrate	nitrate	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	nitrat	one_to_many	.
+mixs:nitrate	nitrate	owl:equivalentClass	neon:nitrate	nitrate	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	nitrat	one_to_many	.
+mixs:nitrate	nitrate	owl:equivalentClass	neon:Nitrate	nitrate	Lexical	mixs	neon	rdf_matcher	0.585786437626905	skos:altLabel	rdfs:label	slot_definition	class_definition	nitrate	one_to_many	.
+mixs:nitrate	nitrate	owl:equivalentClass	neon:nitrate	nitrate	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	nitrate	one_to_many	.
+mixs:nitrate	nitrate	owl:equivalentClass	neon:nitrate	nitrate	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	nitrate	one_to_many	.
+mixs:org_carb	org_carb	owl:equivalentClass	kbase:organic_carbon	organic_carbon	Lexical	mixs	kbase	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	organic carbon	unique	.
+mixs:org_carb	org_carb	owl:equivalentClass	kbase:organic_carbon	organic_carbon	Lexical|Stemming	mixs	kbase	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	organic carbon	unique	.
+mixs:ph	ph	owl:equivalentClass	kbase:ph	ph	Lexical	mixs	kbase	rdf_matcher	0.4142135623730951	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
+mixs:ph	ph	owl:equivalentClass	kbase:ph	ph	Lexical	mixs	kbase	rdf_matcher	0.4142135623730951	rdfs:label	skos:altLabel	slot_definition	slot_definition	ph	unique	.
+mixs:ph	ph	owl:equivalentClass	UO:0000196	pH	Lexical	mixs	UO	rdf_matcher	0.2612038749637414	rdfs:label	rdfs:label	slot_definition	owl:Class	ph	unique	.
+mixs:ph	ph	owl:equivalentClass	neon:pH	pH	Lexical	mixs	neon	rdf_matcher	0.4142135623730951	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
+mixs:ph	ph	owl:equivalentClass	kbase:ph	ph	Lexical|Stemming	mixs	kbase	rdf_matcher	0.3333333333333333	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
+mixs:ph	ph	owl:equivalentClass	kbase:ph	ph	Lexical|Stemming	mixs	kbase	rdf_matcher	0.3333333333333333	rdfs:label	skos:altLabel	slot_definition	slot_definition	ph	unique	.
+mixs:ph	ph	owl:equivalentClass	UO:0000196	pH	Lexical|Stemming	mixs	UO	rdf_matcher	0.2	rdfs:label	rdfs:label	slot_definition	owl:Class	ph	unique	.
+mixs:ph	ph	owl:equivalentClass	neon:pH	pH	Lexical|Stemming	mixs	neon	rdf_matcher	0.3333333333333333	rdfs:label	rdfs:label	slot_definition	slot_definition	ph	unique	.
+mixs:ph	ph	owl:equivalentClass	kbase:ph	ph	Lexical	mixs	kbase	rdf_matcher	0.4142135623730951	skos:altLabel	rdfs:label	slot_definition	slot_definition	ph	unique	.
+mixs:ph	ph	owl:equivalentClass	kbase:ph	ph	Lexical	mixs	kbase	rdf_matcher	0.4142135623730951	skos:altLabel	skos:altLabel	slot_definition	slot_definition	ph	unique	.
+mixs:ph	ph	owl:equivalentClass	UO:0000196	pH	Lexical	mixs	UO	rdf_matcher	0.2612038749637414	skos:altLabel	rdfs:label	slot_definition	owl:Class	ph	unique	.
+mixs:ph	ph	owl:equivalentClass	neon:pH	pH	Lexical	mixs	neon	rdf_matcher	0.4142135623730951	skos:altLabel	rdfs:label	slot_definition	slot_definition	ph	unique	.
+mixs:ph	ph	owl:equivalentClass	kbase:ph	ph	Lexical|Stemming	mixs	kbase	rdf_matcher	0.3333333333333333	skos:altLabel	rdfs:label	slot_definition	slot_definition	ph	unique	.
+mixs:ph	ph	owl:equivalentClass	kbase:ph	ph	Lexical|Stemming	mixs	kbase	rdf_matcher	0.3333333333333333	skos:altLabel	skos:altLabel	slot_definition	slot_definition	ph	unique	.
+mixs:ph	ph	owl:equivalentClass	UO:0000196	pH	Lexical|Stemming	mixs	UO	rdf_matcher	0.2	skos:altLabel	rdfs:label	slot_definition	owl:Class	ph	unique	.
+mixs:ph	ph	owl:equivalentClass	neon:pH	pH	Lexical|Stemming	mixs	neon	rdf_matcher	0.3333333333333333	skos:altLabel	rdfs:label	slot_definition	slot_definition	ph	unique	.
+mixs:pollutants	pollutants	owl:equivalentClass	ENVO:02500036	environmental pollution	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.5	rdfs:label	oio:hasExactSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	pollut	unique	.
+mixs:pollutants	pollutants	owl:equivalentClass	ENVO:02500036	environmental pollution	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.5	skos:altLabel	oio:hasExactSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	pollut	unique	.
+mixs:porosity	porosity	owl:equivalentClass	neon:porosity	porosity	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	poros	unique	.
+mixs:porosity	porosity	owl:equivalentClass	neon:porosity	porosity	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	poros	unique	.
+mixs:porosity	porosity	owl:equivalentClass	neon:porosity	porosity	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	porosity	unique	.
+mixs:porosity	porosity	owl:equivalentClass	neon:porosity	porosity	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	porosity	unique	.
+mixs:porosity	porosity	owl:equivalentClass	neon:porosity	porosity	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	poros	unique	.
+mixs:porosity	porosity	owl:equivalentClass	neon:porosity	porosity	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	poros	unique	.
+mixs:porosity	porosity	owl:equivalentClass	neon:porosity	porosity	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	porosity	unique	.
+mixs:porosity	porosity	owl:equivalentClass	neon:porosity	porosity	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	porosity	unique	.
+mixs:redox_potential	redox_potential	owl:equivalentClass	kbase:redox_potential_?	redox_potential_?	Lexical|Stemming	mixs	kbase	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	redox potenti	unique	.
+mixs:redox_potential	redox_potential	owl:equivalentClass	kbase:redox_potential_?	redox_potential_?	Lexical	mixs	kbase	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	redox potential	unique	.
+mixs:reservoir	reservoir	owl:equivalentClass	ENVO:00000025	reservoir	Lexical	mixs	ENVO	rdf_matcher	0.585786437626905	rdfs:label	oio:hasExactSynonym	slot_definition	ENVO	reservoir	unique	.
+mixs:reservoir	reservoir	owl:equivalentClass	ENVO:00000025	reservoir	Lexical	mixs	ENVO	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	slot_definition	ENVO	reservoir	unique	.
+mixs:reservoir	reservoir	owl:equivalentClass	ENVO:00000025	reservoir	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.5	rdfs:label	oio:hasExactSynonym	slot_definition	ENVO	reservoir	unique	.
+mixs:reservoir	reservoir	owl:equivalentClass	ENVO:00000025	reservoir	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	ENVO	reservoir	unique	.
+mixs:samp_type	samp_type	owl:equivalentClass	neon:sampleType	sampleType	Lexical|Stemming	mixs	neon	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	sample typ	unique	.
+mixs:samp_type	samp_type	owl:equivalentClass	neon:sampleType	sampleType	Lexical	mixs	neon	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	sample type	unique	.
+mixs:season	season	owl:equivalentClass	ENVO:03000096	season	Lexical	mixs	ENVO	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	season	unique	.
+mixs:season	season	owl:equivalentClass	ENVO:03000096	season	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.5	rdfs:label	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	season	unique	.
+mixs:season	season	owl:equivalentClass	ENVO:03000096	season	Lexical	mixs	ENVO	rdf_matcher	0.585786437626905	skos:altLabel	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	season	unique	.
+mixs:season	season	owl:equivalentClass	ENVO:03000096	season	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.5	skos:altLabel	rdfs:label	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	season	unique	.
+mixs:seq_meth	seq_meth	owl:equivalentClass	neon:sequencingMethod	sequencingMethod	Lexical	mixs	neon	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	sequencing method	unique	.
+mixs:seq_meth	seq_meth	owl:equivalentClass	neon:sequencingMethod	sequencingMethod	Lexical|Stemming	mixs	neon	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	sequencing method	unique	.
+mixs:slope_aspect	slope_aspect	owl:equivalentClass	neon:slopeAspect	slopeAspect	Lexical	mixs	neon	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	slope aspect	unique	.
+mixs:slope_aspect	slope_aspect	owl:equivalentClass	neon:slopeAspect	slopeAspect	Lexical|Stemming	mixs	neon	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	slope aspect	unique	.
+mixs:slope_gradient	slope_gradient	owl:equivalentClass	neon:slopeGradient	slopeGradient	Lexical|Stemming	mixs	neon	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	slope gradi	unique	.
+mixs:slope_gradient	slope_gradient	owl:equivalentClass	neon:slopeGradient	slopeGradient	Lexical	mixs	neon	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	slope gradient	unique	.
+mixs:target_gene	target_gene	owl:equivalentClass	neon:targetGene	targetGene	Lexical|Stemming	mixs	neon	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	target gen	unique	.
+mixs:target_gene	target_gene	owl:equivalentClass	neon:targetGene	targetGene	Lexical	mixs	neon	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	target gene	unique	.
+mixs:target_subfragment	target_subfragment	owl:equivalentClass	neon:targetSubfragment	targetSubfragment	Lexical|Stemming	mixs	neon	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	target subfrag	unique	.
+mixs:target_subfragment	target_subfragment	owl:equivalentClass	neon:targetSubfragment	targetSubfragment	Lexical	mixs	neon	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	target subfragment	unique	.
+mixs:temp	temp	owl:equivalentClass	neon:temp	temp	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	temp	unique	.
+mixs:temp	temp	owl:equivalentClass	neon:temp	temp	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	temp	unique	.
+mixs:temp	temp	owl:equivalentClass	neon:temp	temp	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	temp	unique	.
+mixs:temp	temp	owl:equivalentClass	neon:temp	temp	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	temp	unique	.
+mixs:temp	temp	owl:equivalentClass	kbase:temperature	temperature	Lexical|Stemming	mixs	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	temperatur	unique	.
+mixs:temp	temp	owl:equivalentClass	kbase:temperature	temperature	Lexical|Stemming	mixs	kbase	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	temperatur	unique	.
+mixs:temp	temp	owl:equivalentClass	kbase:temperature	temperature	Lexical	mixs	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	temperature	unique	.
+mixs:temp	temp	owl:equivalentClass	kbase:temperature	temperature	Lexical	mixs	kbase	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	temperature	unique	.
+mixs:tot_carb	tot_carb	owl:equivalentClass	kbase:total_carbon	total_carbon	Lexical	mixs	kbase	rdf_matcher	0.7768953867957378	skos:altLabel	skos:altLabel	slot_definition	slot_definition	total carbon	unique	.
+mixs:tot_carb	tot_carb	owl:equivalentClass	kbase:total_carbon	total_carbon	Lexical|Stemming	mixs	kbase	rdf_matcher	0.71117372060607	skos:altLabel	skos:altLabel	slot_definition	slot_definition	total carbon	unique	.
+mixs:tot_diss_nitro	tot_diss_nitro	owl:equivalentClass	neon:totalDissolvedNitrogen	totalDissolvedNitrogen	Lexical	mixs	neon	rdf_matcher	0.810860176054461	skos:altLabel	skos:altLabel	slot_definition	slot_definition	total dissolved nitrogen	unique	.
+mixs:tot_diss_nitro	tot_diss_nitro	owl:equivalentClass	neon:totalDissolvedNitrogen	totalDissolvedNitrogen	Lexical|Stemming	mixs	neon	rdf_matcher	0.7519492530313434	skos:altLabel	skos:altLabel	slot_definition	slot_definition	total dissolved nitrogen	unique	.
+mixs:tot_part_carb	tot_part_carb	owl:equivalentClass	neon:totalParticulateCarbon	totalParticulateCarbon	Lexical	mixs	neon	rdf_matcher	0.810860176054461	skos:altLabel	skos:altLabel	slot_definition	slot_definition	total particulate carbon	unique	.
+mixs:tot_part_carb	tot_part_carb	owl:equivalentClass	neon:totalParticulateCarbon	totalParticulateCarbon	Lexical|Stemming	mixs	neon	rdf_matcher	0.7519492530313434	skos:altLabel	skos:altLabel	slot_definition	slot_definition	total particulate carbon	unique	.
+mixs:turbidity	turbidity	owl:equivalentClass	neon:turbidity	turbidity	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	rdfs:label	rdfs:label	slot_definition	slot_definition	turbid	unique	.
+mixs:turbidity	turbidity	owl:equivalentClass	neon:turbidity	turbidity	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	rdfs:label	skos:altLabel	slot_definition	slot_definition	turbid	unique	.
+mixs:turbidity	turbidity	owl:equivalentClass	neon:turbidity	turbidity	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	rdfs:label	rdfs:label	slot_definition	slot_definition	turbidity	unique	.
+mixs:turbidity	turbidity	owl:equivalentClass	neon:turbidity	turbidity	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	rdfs:label	skos:altLabel	slot_definition	slot_definition	turbidity	unique	.
+mixs:turbidity	turbidity	owl:equivalentClass	neon:turbidity	turbidity	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	skos:altLabel	rdfs:label	slot_definition	slot_definition	turbid	unique	.
+mixs:turbidity	turbidity	owl:equivalentClass	neon:turbidity	turbidity	Lexical|Stemming	mixs	neon	rdf_matcher	0.6666666666666666	skos:altLabel	skos:altLabel	slot_definition	slot_definition	turbid	unique	.
+mixs:turbidity	turbidity	owl:equivalentClass	neon:turbidity	turbidity	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	skos:altLabel	rdfs:label	slot_definition	slot_definition	turbidity	unique	.
+mixs:turbidity	turbidity	owl:equivalentClass	neon:turbidity	turbidity	Lexical	mixs	neon	rdf_matcher	0.7387961250362586	skos:altLabel	skos:altLabel	slot_definition	slot_definition	turbidity	unique	.
+mixs:wind_speed	wind_speed	owl:equivalentClass	ENVO:01001362	atmospheric wind speed	Lexical|Stemming	mixs	ENVO	rdf_matcher	0.23534896306899963	skos:altLabel	oio:hasBroadSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	wind spe	unique	.
+mixs:wind_speed	wind_speed	owl:equivalentClass	ENVO:01001362	atmospheric wind speed	Lexical	mixs	ENVO	rdf_matcher	0.30326954502292763	skos:altLabel	oio:hasBroadSynonym	slot_definition	http://purl.obolibrary.org/obo/BFO_0000001	wind speed	unique	.
+https://w3id.org/biolink/biolinkml/type/Date	date	owl:equivalentClass	kbase:date	date	Lexical	https	kbase	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	type_definition	slot_definition	date	unique	.
+https://w3id.org/biolink/biolinkml/type/Date	date	owl:equivalentClass	kbase:date	date	Lexical	https	kbase	rdf_matcher	0.585786437626905	rdfs:label	skos:altLabel	type_definition	slot_definition	date	unique	.
+https://w3id.org/biolink/biolinkml/type/Date	date	owl:equivalentClass	neon:date	date	Lexical	https	neon	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	type_definition	slot_definition	date	unique	.
+https://w3id.org/biolink/biolinkml/type/Date	date	owl:equivalentClass	neon:date	date	Lexical	https	neon	rdf_matcher	0.585786437626905	rdfs:label	skos:altLabel	type_definition	slot_definition	date	unique	.
 https://w3id.org/biolink/biolinkml/type/Date	date	owl:equivalentClass	kbase:date	date	Lexical|Stemming	https	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	type_definition	slot_definition	date	unique	.
+https://w3id.org/biolink/biolinkml/type/Date	date	owl:equivalentClass	kbase:date	date	Lexical|Stemming	https	kbase	rdf_matcher	0.5	rdfs:label	skos:altLabel	type_definition	slot_definition	date	unique	.
 https://w3id.org/biolink/biolinkml/type/Date	date	owl:equivalentClass	neon:date	date	Lexical|Stemming	https	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	type_definition	slot_definition	date	unique	.
-https://w3id.org/biolink/biolinkml/type/Time	time	owl:equivalentClass	kbase:time	time	Lexical	https	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	type_definition	slot_definition	time	unique	.
-https://w3id.org/biolink/biolinkml/type/Time	time	owl:equivalentClass	neon:time	time	Lexical	https	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	type_definition	slot_definition	time	unique	.
+https://w3id.org/biolink/biolinkml/type/Date	date	owl:equivalentClass	neon:date	date	Lexical|Stemming	https	neon	rdf_matcher	0.5	rdfs:label	skos:altLabel	type_definition	slot_definition	date	unique	.
+https://w3id.org/biolink/biolinkml/type/Time	time	owl:equivalentClass	kbase:time	time	Lexical	https	kbase	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	type_definition	slot_definition	time	unique	.
+https://w3id.org/biolink/biolinkml/type/Time	time	owl:equivalentClass	kbase:time	time	Lexical	https	kbase	rdf_matcher	0.585786437626905	rdfs:label	skos:altLabel	type_definition	slot_definition	time	unique	.
+https://w3id.org/biolink/biolinkml/type/Time	time	owl:equivalentClass	neon:time	time	Lexical	https	neon	rdf_matcher	0.585786437626905	rdfs:label	rdfs:label	type_definition	slot_definition	time	unique	.
+https://w3id.org/biolink/biolinkml/type/Time	time	owl:equivalentClass	neon:time	time	Lexical	https	neon	rdf_matcher	0.585786437626905	rdfs:label	skos:altLabel	type_definition	slot_definition	time	unique	.
 https://w3id.org/biolink/biolinkml/type/Time	time	owl:equivalentClass	kbase:time	time	Lexical|Stemming	https	kbase	rdf_matcher	0.5	rdfs:label	rdfs:label	type_definition	slot_definition	time	unique	.
+https://w3id.org/biolink/biolinkml/type/Time	time	owl:equivalentClass	kbase:time	time	Lexical|Stemming	https	kbase	rdf_matcher	0.5	rdfs:label	skos:altLabel	type_definition	slot_definition	time	unique	.
 https://w3id.org/biolink/biolinkml/type/Time	time	owl:equivalentClass	neon:time	time	Lexical|Stemming	https	neon	rdf_matcher	0.5	rdfs:label	rdfs:label	type_definition	slot_definition	time	unique	.
+https://w3id.org/biolink/biolinkml/type/Time	time	owl:equivalentClass	neon:time	time	Lexical|Stemming	https	neon	rdf_matcher	0.5	rdfs:label	skos:altLabel	type_definition	slot_definition	time	unique	.

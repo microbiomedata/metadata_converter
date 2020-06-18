@@ -29,7 +29,7 @@ Currently the sources we have include:
 Mappings
 ========
 
-See `mappings folder <mappings/>` __
+See `mappings/ <mappings/>`__
 
 Building Targets
 ================
@@ -40,9 +40,4 @@ Help:
 
     make test
     make all
-
-Mappings
-========
-
-TODO
 

@@ -1,0 +1,14 @@
+@prefix sh:	<http://www.w3.org/ns/shacl#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+
+[
+
+  sh:declare
+    [ sh:prefix "mixs" ; sh:namespace "https://microbiomedata/schema/mixs#"],
+    [ sh:prefix "kbase" ; sh:namespace "http://kbase.us/"],
+    [ sh:prefix "neon" ; sh:namespace "https://data.neonscience.org/"],
+    [ sh:prefix "schema" ; sh:namespace "http://schema.org/"],
+    [ sh:prefix "wd" ; sh:namespace "http://www.wikidata.org/entity/"]
+].
+    
+

@@ -13,10 +13,12 @@ Currently the sources we have include:
 
  * neon
      * `code <src/metadata_converter/neon.py>`__
+     * `input <tests/neon/>`__ (CSV dump of schema)
      * `schema products <target/neon/>`__
      * `docs <docs/neon/>`__
  * kbase
      * `code <src/metadata_converter/kbase.py>`__
+     * `input <tests/kbase/>`__ (YAML)
      * `schema products <target/kbase/>`__
      * `docs <docs/kbase/>`__
  * mixs
@@ -24,6 +26,11 @@ Currently the sources we have include:
      * code is currently external
      * `schema products <target/mixs/>`__
      * `docs <docs/mixs/>`__
+ * gold
+     * `code <src/metadata_converter/ddl_tsv.py>`__
+     * `input <tests/gold/>`__ (SQL DDL dump)
+     * `schema products <target/gold/>`__
+     * `docs <docs/gold/>`__
 
 
 Mappings

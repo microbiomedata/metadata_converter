@@ -4,6 +4,7 @@
 [
 
   sh:declare
+    [ sh:prefix "gold.vocab" ; sh:namespace "https://microbiomedata/schema/ddl/"],
     [ sh:prefix "ENVO" ; sh:namespace "http://purl.obolibrary.org/obo/ENVO_"],
     [ sh:prefix "UO" ; sh:namespace "http://purl.obolibrary.org/obo/UO_"],
     [ sh:prefix "PATO" ; sh:namespace "http://purl.obolibrary.org/obo/PATO_"],

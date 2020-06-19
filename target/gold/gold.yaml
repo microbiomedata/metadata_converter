@@ -1,0 +1,3362 @@
+id: https://microbiomedata/schema/ddl
+description: Rendering of {id} schema
+imports:
+- biolinkml:types
+prefixes:
+  biolinkml: https://w3id.org/biolink/biolinkml/
+  ddl: https://microbiomedata/schema/ddl/
+default_prefix: ddl
+slots:
+  ITS_ANALYSIS_PROJECT_ID:
+    aliases:
+    - its analysis project
+    range: integer
+  ANALYSIS_PROJECT_NAME:
+    aliases:
+    - analysis project name
+    range: string
+  GOLD_ID:
+    aliases:
+    - gold
+    range: string
+  REFERENCE_AP_ID:
+    aliases:
+    - reference ap
+    range: integer
+  IMG_TAXON_ID:
+    aliases:
+    - img taxon
+    range: integer
+  ANALYSIS_PROJECT_TYPE:
+    aliases:
+    - analysis project type
+    range: string
+  STATUS_ID:
+    aliases:
+    - status
+    range: integer
+  COMMENTS:
+    aliases:
+    - comments
+    range: string
+  NCBI_TAX_ID:
+    aliases:
+    - ncbi tax
+    range: integer
+  IS_PUBLIC:
+    aliases:
+    - is public
+    range: string
+  ADDED_BY:
+    aliases:
+    - added by
+    range: double
+  ADD_DATE:
+    aliases:
+    - add date
+    range: time
+  PI_ID:
+    aliases:
+    - pi
+    range: integer
+  SUBMISSION_ID:
+    aliases:
+    - submission
+    range: integer
+  SCAFFOLD_COUNT:
+    aliases:
+    - scaffold count
+    range: double
+  CONTIG_COUNT:
+    aliases:
+    - contig count
+    range: double
+  GENE_COUNT:
+    aliases:
+    - gene count
+    range: double
+  BINNING_METHOD:
+    aliases:
+    - binning method
+    range: string
+  GENE_CALLING_METHOD:
+    aliases:
+    - gene calling method
+    range: string
+  ITS_ANALYSIS_PROJECT_NAME:
+    aliases:
+    - its analysis project name
+    range: string
+  ITS_PRODUCT_NAME:
+    aliases:
+    - its product name
+    range: string
+  COMPLETION_DATE:
+    aliases:
+    - completion date
+    range: time
+  EST_SIZE:
+    aliases:
+    - est size
+    range: double
+  GENBANK_LOW_QUALITY_ANNOTATION:
+    aliases:
+    - genbank low quality annotation
+    range: string
+  ECOSYSTEM:
+    aliases:
+    - ecosystem
+    range: string
+  ECOSYSTEM_CATEGORY:
+    aliases:
+    - ecosystem category
+    range: string
+  ECOSYSTEM_TYPE:
+    aliases:
+    - ecosystem type
+    range: string
+  ECOSYSTEM_SUBTYPE:
+    aliases:
+    - ecosystem subtype
+    range: string
+  SPECIFIC_ECOSYSTEM:
+    aliases:
+    - specific ecosystem
+    range: string
+  IMG_ANALYSIS_COMPLETE:
+    aliases:
+    - img analysis complete
+    range: string
+  IS_GENE_PRIMP:
+    aliases:
+    - is gene primp
+    range: string
+  IS_DECONTAMINATION:
+    aliases:
+    - is decontamination
+    range: string
+  IS_IMG_ANNOTATION:
+    aliases:
+    - is img annotation
+    range: string
+  ITS_ANNOTATION_AT_ID:
+    aliases:
+    - its annotation at
+    range: integer
+  IS_ASSEMBLED_DELETED:
+    aliases:
+    - is assembled deleted
+    range: string
+  STUDY_ID:
+    aliases:
+    - study
+    range: integer
+  SPECIMEN:
+    aliases:
+    - specimen
+    range: string
+  ITS_ASSEMBLY_AT_TYPE:
+    aliases:
+    - its assembly at type
+    range: string
+  DOMAIN:
+    aliases:
+    - domain
+    range: string
+  NCBI_PHYLUM:
+    aliases:
+    - ncbi phylum
+    range: string
+  NCBI_CLASS:
+    aliases:
+    - ncbi class
+    range: string
+  NCBI_ORDER:
+    aliases:
+    - ncbi order
+    range: string
+  NCBI_FAMILY:
+    aliases:
+    - ncbi family
+    range: string
+  NCBI_GENUS:
+    aliases:
+    - ncbi genus
+    range: string
+  NCBI_SPECIES:
+    aliases:
+    - ncbi species
+    range: string
+  APPENDED_AP_NAME:
+    aliases:
+    - appended ap name
+    range: string
+  MOD_BY:
+    aliases:
+    - mod by
+    range: double
+  MOD_DATE:
+    aliases:
+    - mod date
+    range: time
+  PI_NAME:
+    aliases:
+    - pi name
+    range: string
+  ANALYSIS_PROJECT_NAME_FULL:
+    aliases:
+    - analysis project name full
+    range: string
+  IS_PRIMARY:
+    aliases:
+    - is primary
+    range: string
+  GOLD_PHYLOGENY:
+    aliases:
+    - gold phylogeny
+    range: string
+  PHYLOGENY_SUGGESTION:
+    aliases:
+    - phylogeny suggestion
+    range: string
+  REPLACES_AP_ID:
+    aliases:
+    - replaces ap
+    range: integer
+  NCBI_BIOPROJECT_ID:
+    aliases:
+    - ncbi bioproject
+    range: integer
+  SCREENING_METHOD:
+    aliases:
+    - screening method
+    range: string
+  DECONTAMINATION_METHOD:
+    aliases:
+    - decontamination method
+    range: string
+  NCBI_BIOSAMPLE_ACCESSION:
+    aliases:
+    - ncbi biosample accession
+    range: string
+  NCBI_BIOPROJECT_ACCESSION:
+    aliases:
+    - ncbi bioproject accession
+    range: string
+  COMPLETION:
+    aliases:
+    - completion
+    range: string
+  NCBI_KINGDOM:
+    aliases:
+    - ncbi kingdom
+    range: string
+  REVIEW_STATUS:
+    aliases:
+    - review status
+    range: string
+  REJECTION_REASONS:
+    aliases:
+    - rejection reasons
+    range: string
+  ORGANISM_ID:
+    aliases:
+    - organism
+    range: integer
+  PIPELINE_ANNOTATION_METHOD:
+    aliases:
+    - pipeline annotation method
+    range: string
+  GENUS:
+    aliases:
+    - genus
+    range: string
+  SPECIES:
+    aliases:
+    - species
+    range: string
+  SUBSPECIES:
+    aliases:
+    - subspecies
+    range: string
+  CULTURE_COLLECTION:
+    aliases:
+    - culture collection
+    range: string
+  SEROVAR:
+    aliases:
+    - serovar
+    range: string
+  STRAIN:
+    aliases:
+    - strain
+    range: string
+  ECOSYSTEM_PATH_ID:
+    aliases:
+    - ecosystem path
+    range: integer
+  SEQUENCING_DEPTH:
+    aliases:
+    - sequencing depth
+    range: string
+  IMG_USE:
+    aliases:
+    - img use
+    range: string
+  ANNOTATOR_COMMENTS:
+    aliases:
+    - annotator comments
+    range: string
+  AP_FOR_NONOWNER:
+    aliases:
+    - ap for nonowner
+    range: string
+  NCBI_SUPERKINGDOM:
+    aliases:
+    - ncbi superkingdom
+    range: string
+  IS_TEST:
+    aliases:
+    - is test
+    range: string
+  ITS_NCBI_TAX_ID:
+    aliases:
+    - its ncbi tax
+    range: integer
+  ITS_VERSION_NUMBER:
+    aliases:
+    - its version number
+    range: double
+  IMG_RNASEQ_ID:
+    aliases:
+    - img rnaseq
+    range: integer
+  SUBMISSION_STATUS_ID:
+    aliases:
+    - submission status
+    range: integer
+  SUBMISSION_STATUS_NAME:
+    aliases:
+    - submission status name
+    range: string
+  SUBMISSION_COMMENTS:
+    aliases:
+    - submission comments
+    range: string
+  IMG_SUBMISSION_PRORITY:
+    aliases:
+    - img submission prority
+    range: string
+  CONTAMINATION_PERCENTAGE:
+    aliases:
+    - contamination percentage
+    range: double
+  COMPLETENESS_PERCENTAGE:
+    aliases:
+    - completeness percentage
+    range: double
+  SRA_RUN_ID:
+    aliases:
+    - sra run
+    range: string
+  BIOSAMPLE_NAME:
+    aliases:
+    - biosample name
+    range: string
+  DESCRIPTION:
+    aliases:
+    - description
+    range: string
+  SAMPLE_COLLECTION_SITE:
+    aliases:
+    - sample collection site
+    range: string
+  ISOLATION_PUBLICATION_ID:
+    aliases:
+    - isolation publication
+    range: integer
+  SAMPLE_ISOLATION_COMMENTS:
+    aliases:
+    - sample isolation comments
+    range: string
+  SAMPLING_STRATEGY:
+    aliases:
+    - sampling strategy
+    range: string
+  REPLICATE_NUMBER:
+    aliases:
+    - replicate number
+    range: double
+  SAMPLE_VOLUME:
+    aliases:
+    - sample volume
+    range: string
+  SAMPLE_BIOMASS:
+    aliases:
+    - sample biomass
+    range: string
+  SAMPLE_CONTACT_NAME:
+    aliases:
+    - sample contact name
+    range: string
+  SAMPLE_CONTACT_EMAIL:
+    aliases:
+    - sample contact email
+    range: string
+  GEOGRAPHIC_LOCATION:
+    aliases:
+    - geographic location
+    range: string
+  LAT_LONG_INFERRED:
+    aliases:
+    - lat long inferred
+    range: string
+  SALINITY:
+    aliases:
+    - salinity
+    range: string
+  PRESSURE:
+    aliases:
+    - pressure
+    range: string
+  PH:
+    aliases:
+    - ph
+    range: string
+  HABITAT:
+    aliases:
+    - habitat
+    range: string
+  HOST_NAME:
+    aliases:
+    - host name
+    range: string
+  HOST_TAXONOMY_ID:
+    aliases:
+    - host taxonomy
+    range: integer
+  HOST_GENDER:
+    aliases:
+    - host gender
+    range: string
+  HOST_RACE:
+    aliases:
+    - host race
+    range: string
+  HOST_AGE:
+    aliases:
+    - host age
+    range: string
+  HOST_HEALTH_CONDITION:
+    aliases:
+    - host health condition
+    range: string
+  PATIENT_VISIT_NUMBER:
+    aliases:
+    - patient visit number
+    range: double
+  HOST_MEDICATION:
+    aliases:
+    - host medication
+    range: string
+  MRN:
+    aliases:
+    - mrn
+    range: string
+  HOST_BODY_SITE:
+    aliases:
+    - host body site
+    range: string
+  HOST_BODY_SUBSITE:
+    aliases:
+    - host body subsite
+    range: string
+  HOST_BODY_PRODUCT:
+    aliases:
+    - host body product
+    range: string
+  HOST_SPECIFICITY:
+    aliases:
+    - host specificity
+    range: string
+  HOST_COMMENTS:
+    aliases:
+    - host comments
+    range: string
+  ACTIVE:
+    aliases:
+    - active
+    range: string
+  PROJECT_OID:
+    aliases:
+    - project oid
+    range: double
+  SAMPLE_OID:
+    aliases:
+    - sample oid
+    range: double
+  SUBMIT_BIOSAMPLE_NAME:
+    aliases:
+    - submit biosample name
+    range: string
+  NCBI_TAXONOMY_ID:
+    aliases:
+    - ncbi taxonomy
+    range: integer
+  COMMUNITY:
+    aliases:
+    - community
+    range: string
+  LOCATION:
+    aliases:
+    - location
+    range: string
+  IDENTIFIER:
+    aliases:
+    - identifier
+    range: string
+  ENV_PACKAGE:
+    aliases:
+    - env package
+    range: string
+  SAMPLE_COLLECTION_DAY:
+    aliases:
+    - sample collection day
+    range: double
+  SAMPLE_COLLECTION_MONTH:
+    aliases:
+    - sample collection month
+    range: double
+  SAMPLE_COLLECTION_YEAR:
+    aliases:
+    - sample collection year
+    range: double
+  SUBMITTER_ID:
+    aliases:
+    - submitter
+    range: integer
+  GROWTH_CONDITIONS:
+    aliases:
+    - growth conditions
+    range: string
+  JPA_ENTITY:
+    aliases:
+    - jpa entity
+    range: string
+  OTHER_HOSTS:
+    aliases:
+    - other hosts
+    range: string
+  KNOWN_NON_HOSTS:
+    aliases:
+    - known non hosts
+    range: string
+  ISOLATION_PUBMED_ID:
+    aliases:
+    - isolation pubmed
+    range: integer
+  HOST_BODY_SITE_ID:
+    aliases:
+    - host body site
+    range: integer
+  HOST_BODY_SUBSITE_ID:
+    aliases:
+    - host body subsite
+    range: integer
+  HOST_BODY_PRODUCT_ID:
+    aliases:
+    - host body product
+    range: integer
+  IS_DRAFT:
+    aliases:
+    - is draft
+    range: string
+  SAMPLE_ISOLATION_COUNTRY_ID:
+    aliases:
+    - sample isolation country
+    range: integer
+  OTHER_ECOSYSTEM:
+    aliases:
+    - other ecosystem
+    range: string
+  LONGHURST_CODE:
+    aliases:
+    - longhurst code
+    range: string
+  SAMPLE_COLLECTION_HOUR:
+    aliases:
+    - sample collection hour
+    range: double
+  SAMPLE_COLLECTION_MINUTE:
+    aliases:
+    - sample collection minute
+    range: double
+  CHLOROPHYLL_CONCENTRATION:
+    aliases:
+    - chlorophyll concentration
+    range: string
+  NITRATE_CONCENTRATION:
+    aliases:
+    - nitrate concentration
+    range: string
+  OXYGEN_CONCENTRATION:
+    aliases:
+    - oxygen concentration
+    range: string
+  SALINITY_CONCENTRATION:
+    aliases:
+    - salinity concentration
+    range: string
+  PUBLIC_SP_COUNT:
+    aliases:
+    - public sp count
+    range: double
+  ADMIN_SP_COUNT:
+    aliases:
+    - admin sp count
+    range: double
+  PUBLIC_AP_COUNT:
+    aliases:
+    - public ap count
+    range: double
+  ADMIN_AP_COUNT:
+    aliases:
+    - admin ap count
+    range: double
+  PUBLIC_DAP_COUNT:
+    aliases:
+    - public dap count
+    range: double
+  ADMIN_DAP_COUNT:
+    aliases:
+    - admin dap count
+    range: double
+  CRUISE_LINE_NAME:
+    aliases:
+    - cruise line name
+    range: string
+  PROPORT_OCEAN:
+    aliases:
+    - proport ocean
+    range: string
+  PROPORT_ISOLATION:
+    aliases:
+    - proport isolation
+    range: string
+  PROPORT_STATION:
+    aliases:
+    - proport station
+    range: string
+  PROPORT_WOA_TEMPERATURE:
+    aliases:
+    - proport woa temperature
+    range: double
+  PROPORT_WOA_SALINITY:
+    aliases:
+    - proport woa salinity
+    range: double
+  PROPORT_WOA_DISSOLVED_OXYGEN:
+    aliases:
+    - proport woa dissolved oxygen
+    range: double
+  PROPORT_WOA_SILICATE:
+    aliases:
+    - proport woa silicate
+    range: double
+  PROPORT_WOA_PHOSPHATE:
+    aliases:
+    - proport woa phosphate
+    range: double
+  PROPORT_WOA_NITRATE:
+    aliases:
+    - proport woa nitrate
+    range: double
+  NCBI_TAXONOMY_NAME:
+    aliases:
+    - ncbi taxonomy name
+    range: string
+  ITS_GROWTH_CONDITIONS:
+    aliases:
+    - its growth conditions
+    range: string
+  BIOGAS_FED_SUBSTRATES:
+    aliases:
+    - biogas fed substrates
+    - fed substrates
+    range: string
+  BIOGAS_RETENTION_TIME:
+    aliases:
+    - biogas retention time
+    - retention time
+    range: string
+  BIOGAS_TEMPERATURE:
+    aliases:
+    - biogas temperature
+    - temperature
+    range: string
+  BIOGAS_YIELD:
+    aliases:
+    - biogas yield
+    - yield
+    range: string
+  BIOGAS_VOLATILE_ORGANIC_ACIDS:
+    aliases:
+    - biogas volatile organic acids
+    - volatile organic acids
+    range: string
+  BIOGAS_TOTAL_INORGANIC_CARBON:
+    aliases:
+    - biogas total inorganic carbon
+    - total inorganic carbon
+    range: string
+  BIOGAS_VOA_TIC:
+    aliases:
+    - biogas voa tic
+    - voa tic
+    range: string
+  BIOGAS_AMMONIUM_NH4:
+    aliases:
+    - biogas ammonium nh4
+    - ammonium nh4
+    range: string
+  BIOGAS_BUTANOL:
+    aliases:
+    - biogas butanol
+    - butanol
+    range: string
+  BIOGAS_ETHANOL:
+    aliases:
+    - biogas ethanol
+    - ethanol
+    range: string
+  BIOGAS_PROPANOL:
+    aliases:
+    - biogas propanol
+    - propanol
+    range: string
+  BIOGAS_METHANOL:
+    aliases:
+    - biogas methanol
+    - methanol
+    range: string
+  BIOGAS_ACETIC_ACID:
+    aliases:
+    - biogas acetic acid
+    - acetic acid
+    range: string
+  BIOGAS_BUTYL_ACID:
+    aliases:
+    - biogas butyl acid
+    - butyl acid
+    range: string
+  BIOGAS_ISO_BUTYL_ACID:
+    aliases:
+    - biogas iso butyl acid
+    - iso butyl acid
+    range: string
+  BIOGAS_VALERIC_ACID:
+    aliases:
+    - biogas valeric acid
+    - valeric acid
+    range: string
+  BIOGAS_ISO_VALERIC_ACID:
+    aliases:
+    - biogas iso valeric acid
+    - iso valeric acid
+    range: string
+  BIOGAS_PROPIONIC_ACID:
+    aliases:
+    - biogas propionic acid
+    - propionic acid
+    range: string
+  BIOGAS_METHANE_PCT:
+    aliases:
+    - biogas methane pct
+    - methane pct
+    range: double
+  SAMPLE_CONDUCTIVITY:
+    aliases:
+    - sample conductivity
+    range: string
+  GROWTH_TEMPERATURE:
+    aliases:
+    - growth temperature
+    range: double
+  SUBSURFACE_DEPTH:
+    aliases:
+    - subsurface depth
+    range: double
+  LEGACY_DEPTH_DATA:
+    aliases:
+    - legacy depth data
+    range: string
+  LATITUDE_TEST:
+    aliases:
+    - latitude test
+    range: double
+  LONGITUDE_TEST:
+    aliases:
+    - longitude test
+    range: double
+  ELEVATION:
+    aliases:
+    - elevation
+    range: double
+  ELEVATION2:
+    aliases:
+    - elevation2
+    range: double
+  SOIL_CURR_LAND_USE:
+    aliases:
+    - soil curr land use
+    - curr land use
+    range: string
+  SOIL_CURR_VEGETATION:
+    aliases:
+    - soil curr vegetation
+    - curr vegetation
+    range: string
+  SOIL_CURR_VEGETATION_METHOD:
+    aliases:
+    - soil curr vegetation method
+    - curr vegetation method
+    range: string
+  SOIL_PREV_LAND_USE:
+    aliases:
+    - soil prev land use
+    - prev land use
+    range: string
+  SOIL_PREV_LAND_USE_METH:
+    aliases:
+    - soil prev land use meth
+    - prev land use meth
+    range: string
+  SOIL_CROP_ROTATION:
+    aliases:
+    - soil crop rotation
+    - crop rotation
+    range: string
+  SOIL_AGROCHEM_ADDITION:
+    aliases:
+    - soil agrochem addition
+    - agrochem addition
+    range: string
+  SOIL_TILLAGE:
+    aliases:
+    - soil tillage
+    - tillage
+    range: string
+  SOIL_FIRE:
+    aliases:
+    - soil fire
+    - fire
+    range: string
+  SOIL_FLOODING:
+    aliases:
+    - soil flooding
+    - flooding
+    range: string
+  SOIL_EXTREME_EVENT:
+    aliases:
+    - soil extreme event
+    - extreme event
+    range: string
+  SOIL_HORIZON:
+    aliases:
+    - soil horizon
+    - horizon
+    range: string
+  SOIL_HORIZON_METHOD:
+    aliases:
+    - soil horizon method
+    - horizon method
+    range: string
+  SOIL_SIEVING:
+    aliases:
+    - soil sieving
+    - sieving
+    range: string
+  SOIL_WATER_CONTENT:
+    aliases:
+    - soil water content
+    - water content
+    range: string
+  SOIL_WATER_CONTENT_SOIL_METH:
+    aliases:
+    - soil water content soil meth
+    - water content soil meth
+    range: string
+  SAMPLE_WEIGHT_DNA_EXT:
+    aliases:
+    - sample weight dna ext
+    range: string
+  SOIL_POOL_DNA_EXTRACTS:
+    aliases:
+    - soil pool dna extracts
+    - pool dna extracts
+    range: string
+  SOIL_STORAGE_CONDITION:
+    aliases:
+    - soil storage condition
+    - storage condition
+    range: string
+  SOIL_LINK_CLIMATE_INFO:
+    aliases:
+    - soil link climate info
+    - link climate info
+    range: string
+  SOIL_LINK_CLASS_INFO:
+    aliases:
+    - soil link class info
+    - link class info
+    range: string
+  SOIL_FAO_CLASS:
+    aliases:
+    - soil fao class
+    - fao class
+    range: string
+  SOIL_LOCAL_CLASS:
+    aliases:
+    - soil local class
+    - local class
+    range: string
+  SOIL_LOCAL_CLASS_METHOD:
+    aliases:
+    - soil local class method
+    - local class method
+    range: string
+  SOIL_TYPE:
+    aliases:
+    - soil type
+    - type
+    range: string
+  SOIL_TYPE_METHOD:
+    aliases:
+    - soil type method
+    - type method
+    range: string
+  SOIL_SLOPE_GRADIENT:
+    aliases:
+    - soil slope gradient
+    - slope gradient
+    range: double
+  SOIL_SLOPE_ASPECT:
+    aliases:
+    - soil slope aspect
+    - slope aspect
+    range: double
+  SOIL_PROFILE_POSITION:
+    aliases:
+    - soil profile position
+    - profile position
+    range: string
+  SOIL_DRAINAGE_CLASS:
+    aliases:
+    - soil drainage class
+    - drainage class
+    range: string
+  SOIL_TEXTURE:
+    aliases:
+    - soil texture
+    - texture
+    range: string
+  SOIL_TEXTURE_METHOD:
+    aliases:
+    - soil texture method
+    - texture method
+    range: string
+  SOIL_PH_METHOD:
+    aliases:
+    - soil ph method
+    - ph method
+    range: string
+  TOT_ORG_CARBON:
+    aliases:
+    - tot org carbon
+    range: double
+  SOIL_TOT_ORG_C_METHOD:
+    aliases:
+    - soil tot org c method
+    - tot org c method
+    range: string
+  TOT_NITROGEN:
+    aliases:
+    - tot nitrogen
+    range: string
+  SOIL_TOT_N_METHOD:
+    aliases:
+    - soil tot n method
+    - tot n method
+    range: string
+  SOIL_MICROBIAL_BIOMASS:
+    aliases:
+    - soil microbial biomass
+    - microbial biomass
+    range: string
+  SOIL_MICROBIAL_BIOMASS_METHOD:
+    aliases:
+    - soil microbial biomass method
+    - microbial biomass method
+    range: string
+  SOIL_LINK_ADDIT_ANALYS:
+    aliases:
+    - soil link addit analys
+    - link addit analys
+    range: string
+  SOIL_SALINITY_METHOD:
+    aliases:
+    - soil salinity method
+    - salinity method
+    range: string
+  SOIL_HEAVY_METALS:
+    aliases:
+    - soil heavy metals
+    - heavy metals
+    range: double
+  SOIL_HEAVY_METALS_METHOD:
+    aliases:
+    - soil heavy metals method
+    - heavy metals method
+    range: string
+  SOIL_ALUMINIUM_SAT:
+    aliases:
+    - soil aluminium sat
+    - aluminium sat
+    range: double
+  SOIL_ALUMINIUM_SAT_METHOD:
+    aliases:
+    - soil aluminium sat method
+    - aluminium sat method
+    range: string
+  SOIL_MISC_PARAM:
+    aliases:
+    - soil misc param
+    - misc param
+    range: string
+  WATER_ALKALINITY:
+    aliases:
+    - water alkalinity
+    - alkalinity
+    range: double
+  WATER_ALKYL_DIETHERS:
+    aliases:
+    - water alkyl diethers
+    - alkyl diethers
+    range: double
+  WATER_AMINOPEPT_ACT:
+    aliases:
+    - water aminopept act
+    - aminopept act
+    range: double
+  WATER_AMMONIUM:
+    aliases:
+    - water ammonium
+    - ammonium
+    range: double
+  WATER_ATMOSPHERIC_DATA:
+    aliases:
+    - water atmospheric data
+    - atmospheric data
+    range: string
+  WATER_BACTERIAL_PROD:
+    aliases:
+    - water bacterial prod
+    - bacterial prod
+    range: double
+  WATER_BACTERIAL_RESP:
+    aliases:
+    - water bacterial resp
+    - bacterial resp
+    range: double
+  WATER_BACTERIAL_CARBON_PROD:
+    aliases:
+    - water bacterial carbon prod
+    - bacterial carbon prod
+    range: double
+  WATER_BISHOMOHOPANOL:
+    aliases:
+    - water bishomohopanol
+    - bishomohopanol
+    range: string
+  WATER_BROMIDE:
+    aliases:
+    - water bromide
+    - bromide
+    range: double
+  WATER_CALCIUM:
+    aliases:
+    - water calcium
+    - calcium
+    range: string
+  WATER_CARBON_NITROG_RATIO:
+    aliases:
+    - water carbon nitrog ratio
+    - carbon nitrog ratio
+    range: string
+  WATER_CHEM_ADMINISTRATION:
+    aliases:
+    - water chem administration
+    - chem administration
+    range: string
+  WATER_CHLORIDE:
+    aliases:
+    - water chloride
+    - chloride
+    range: double
+  WATER_DENSITY:
+    aliases:
+    - water density
+    - density
+    range: double
+  WATER_DIETHER_LIPIDS:
+    aliases:
+    - water diether lipids
+    - diether lipids
+    range: double
+  WATER_DISS_CARBON_DIOXIDE:
+    aliases:
+    - water diss carbon dioxide
+    - diss carbon dioxide
+    range: double
+  WATER_DISS_HYDROGEN:
+    aliases:
+    - water diss hydrogen
+    - diss hydrogen
+    range: double
+  WATER_DISS_INORG_CARBON:
+    aliases:
+    - water diss inorg carbon
+    - diss inorg carbon
+    range: double
+  WATER_DISS_INORG_NITRO:
+    aliases:
+    - water diss inorg nitro
+    - diss inorg nitro
+    range: double
+  WATER_DISS_INORG_PHOSPHORUS:
+    aliases:
+    - water diss inorg phosphorus
+    - diss inorg phosphorus
+    range: double
+  WATER_DISS_ORG_CARBON:
+    aliases:
+    - water diss org carbon
+    - diss org carbon
+    range: double
+  WATER_DISS_ORG_NITROGEN:
+    aliases:
+    - water diss org nitrogen
+    - diss org nitrogen
+    range: double
+  WATER_DOWNWARD_PAR:
+    aliases:
+    - water downward par
+    - downward par
+    range: double
+  WATER_FLUORESCENCE:
+    aliases:
+    - water fluorescence
+    - fluorescence
+    range: double
+  WATER_GLUCOSIDASE_ACTIVITY:
+    aliases:
+    - water glucosidase activity
+    - glucosidase activity
+    range: double
+  WATER_LIGHT_INTENSITY:
+    aliases:
+    - water light intensity
+    - light intensity
+    range: double
+  WATER_MAGNESIUM:
+    aliases:
+    - water magnesium
+    - magnesium
+    range: string
+  WATER_MEAN_FRICT_VEL:
+    aliases:
+    - water mean frict vel
+    - mean frict vel
+    range: double
+  WATER_MEAN_PEAK_FRICT_VEL:
+    aliases:
+    - water mean peak frict vel
+    - mean peak frict vel
+    range: double
+  WATER_MISC_PARAMETER:
+    aliases:
+    - water misc parameter
+    - misc parameter
+    range: string
+  WATER_N_ALKANES:
+    aliases:
+    - water n alkanes
+    - n alkanes
+    range: double
+  WATER_NITRITE:
+    aliases:
+    - water nitrite
+    - nitrite
+    range: double
+  WATER_ORG_MATTER:
+    aliases:
+    - water org matter
+    - org matter
+    range: double
+  WATER_ORG_NITROGEN:
+    aliases:
+    - water org nitrogen
+    - org nitrogen
+    range: double
+  WATER_ORGANISM_COUNT:
+    aliases:
+    - water organism count
+    - organism count
+    range: double
+  WATER_OXY_STAT_SAMPLE:
+    aliases:
+    - water oxy stat sample
+    - oxy stat sample
+    range: string
+  WATER_PART_ORG_CARBON:
+    aliases:
+    - water part org carbon
+    - part org carbon
+    range: double
+  WATER_PART_ORG_NITROGEN:
+    aliases:
+    - water part org nitrogen
+    - part org nitrogen
+    range: double
+  WATER_PERTURBATION:
+    aliases:
+    - water perturbation
+    - perturbation
+    range: string
+  WATER_PETROLEUM_HYDROCARBON:
+    aliases:
+    - water petroleum hydrocarbon
+    - petroleum hydrocarbon
+    range: double
+  WATER_PHAEOPIGMENTS:
+    aliases:
+    - water phaeopigments
+    - phaeopigments
+    range: double
+  WATER_PHOSPLIPID_FATT_ACID:
+    aliases:
+    - water phosplipid fatt acid
+    - phosplipid fatt acid
+    range: string
+  WATER_PHOTON_FLUX:
+    aliases:
+    - water photon flux
+    - photon flux
+    range: double
+  WATER_POTASSIUM:
+    aliases:
+    - water potassium
+    - potassium
+    range: double
+  WATER_PRIMARY_PROD:
+    aliases:
+    - water primary prod
+    - primary prod
+    range: double
+  WATER_REDOX_POTENTIAL:
+    aliases:
+    - water redox potential
+    - redox potential
+    range: double
+  WATER_SAMP_STORE_DUR:
+    aliases:
+    - water samp store dur
+    - samp store dur
+    range: string
+  WATER_SAMP_STORE_LOC:
+    aliases:
+    - water samp store loc
+    - samp store loc
+    range: string
+  WATER_SAMP_STORE_TEMP:
+    aliases:
+    - water samp store temp
+    - samp store temp
+    range: double
+  WATER_SODIUM:
+    aliases:
+    - water sodium
+    - sodium
+    range: double
+  WATER_SOLUBLE_REACT_PHOSP:
+    aliases:
+    - water soluble react phosp
+    - soluble react phosp
+    range: double
+  WATER_SULFATE:
+    aliases:
+    - water sulfate
+    - sulfate
+    range: string
+  WATER_SULFIDE:
+    aliases:
+    - water sulfide
+    - sulfide
+    range: string
+  WATER_SUSPEND_PART_MATTER:
+    aliases:
+    - water suspend part matter
+    - suspend part matter
+    range: double
+  WATER_TIDAL_STAGE:
+    aliases:
+    - water tidal stage
+    - tidal stage
+    range: string
+  WATER_TOT_DEPTH_WATER_COL:
+    aliases:
+    - water tot depth water col
+    - tot depth water col
+    range: double
+  WATER_TOT_DISS_NITRO:
+    aliases:
+    - water tot diss nitro
+    - tot diss nitro
+    range: double
+  WATER_TOT_INORG_NITRO:
+    aliases:
+    - water tot inorg nitro
+    - tot inorg nitro
+    range: double
+  WATER_TOT_PART_CARBON:
+    aliases:
+    - water tot part carbon
+    - tot part carbon
+    range: string
+  WATER_TOT_PHOSPHORUS:
+    aliases:
+    - water tot phosphorus
+    - tot phosphorus
+    range: double
+  WATER_CURRENT:
+    aliases:
+    - water current
+    - current
+    range: string
+  LATITUDE:
+    aliases:
+    - latitude
+    range: double
+  LONGITUDE:
+    aliases:
+    - longitude
+    range: double
+  DEPTH:
+    aliases:
+    - depth
+    range: double
+  DEPTH2:
+    aliases:
+    - depth2
+    range: double
+  ALTITUDE:
+    aliases:
+    - altitude
+    range: double
+  ALTITUDE2:
+    aliases:
+    - altitude2
+    range: double
+  SOLUBLE_IRON_MICROMOL:
+    aliases:
+    - soluble iron micromol
+    range: double
+  BICARBONATE_MILLIMOL:
+    aliases:
+    - bicarbonate millimol
+    range: double
+  H2S_MILLIMOL:
+    aliases:
+    - h2s millimol
+    range: double
+  H2S_PRESENT:
+    aliases:
+    - h2s present
+    range: string
+  IRRADIANCE:
+    aliases:
+    - irradiance
+    range: string
+  OXYGEN_PRESENCE:
+    aliases:
+    - oxygen presence
+    range: string
+  METHANE_CONC_MILLIMOL:
+    aliases:
+    - methane conc millimol
+    range: double
+  GROWTH_TEMPERATURE2:
+    aliases:
+    - growth temperature2
+    range: double
+  SUBSURFACE_DEPTH2:
+    aliases:
+    - subsurface depth2
+    range: double
+  PH1:
+    aliases:
+    - ph1
+    range: double
+  PH2:
+    aliases:
+    - ph2
+    range: double
+  PH_OLD:
+    aliases:
+    - ph old
+    range: string
+  WATER_ALKALINITY_METHOD:
+    aliases:
+    - water alkalinity method
+    - alkalinity method
+    range: string
+  WATER_TURBIDITY:
+    aliases:
+    - water turbidity
+    - turbidity
+    range: string
+  WATER_SIZE_FRAC_LOW:
+    aliases:
+    - water size frac low
+    - size frac low
+    range: double
+  WATER_SIZE_FRAC_UP:
+    aliases:
+    - water size frac up
+    - size frac up
+    range: double
+  SOIL_MEAN_ANNUAL_TEMP:
+    aliases:
+    - soil mean annual temp
+    - mean annual temp
+    range: double
+  SOIL_MEAN_SEASONAL_TEMP:
+    aliases:
+    - soil mean seasonal temp
+    - mean seasonal temp
+    range: double
+  SOIL_MEAN_ANNUAL_PRECPT:
+    aliases:
+    - soil mean annual precpt
+    - mean annual precpt
+    range: double
+  SOIL_MEAN_SEASONAL_PRECPT:
+    aliases:
+    - soil mean seasonal precpt
+    - mean seasonal precpt
+    range: double
+  TEST_PACKAGE_ID:
+    aliases:
+    - test package
+    range: integer
+  SOIL_PACKAGE_ID:
+    aliases:
+    - soil package
+    - package
+    range: integer
+  WATER_PACKAGE_ID:
+    aliases:
+    - water package
+    - package
+    range: integer
+  GLOBAL_PACKAGE_ID:
+    aliases:
+    - global package
+    range: integer
+  ENVO_BIOME_ID:
+    aliases:
+    - envo biome
+    range: string
+  ENVO_FEATURE_ID:
+    aliases:
+    - envo feature
+    range: string
+  ENVO_MATERIAL_ID:
+    aliases:
+    - envo material
+    range: string
+  USERNAME:
+    aliases:
+    - username
+    range: string
+  PASSWORD:
+    aliases:
+    - password
+    range: string
+  NAME:
+    aliases:
+    - name
+    range: string
+  TITLE:
+    aliases:
+    - title
+    range: string
+  DEPARTMENT:
+    aliases:
+    - department
+    range: string
+  EMAIL:
+    aliases:
+    - email
+    range: string
+  PHONE:
+    aliases:
+    - phone
+    range: string
+  ORGANIZATION:
+    aliases:
+    - organization
+    range: string
+  ADDRESS:
+    aliases:
+    - address
+    range: string
+  CITY:
+    aliases:
+    - city
+    range: string
+  STATE:
+    aliases:
+    - state
+    range: string
+  COUNTRY:
+    aliases:
+    - country
+    range: string
+  X_SUPER_USER:
+    aliases:
+    - x super user
+    range: string
+  X_IMG_EDITOR:
+    aliases:
+    - x img editor
+    range: string
+  X_IMG_GROUP:
+    aliases:
+    - x img group
+    range: double
+  JGI_USER:
+    aliases:
+    - jgi user
+    range: string
+  X_IMG_EDITING_LEVEL:
+    aliases:
+    - x img editing level
+    range: string
+  CALIBAN_ID:
+    aliases:
+    - caliban
+    range: integer
+  CALIBAN_USER_NAME:
+    aliases:
+    - caliban user name
+    range: string
+  URL:
+    aliases:
+    - url
+    range: string
+  X_IMG_CONTACT_ID:
+    aliases:
+    - x img contact
+    range: integer
+  MASTER_CONTACT_ID:
+    aliases:
+    - master contact
+    range: integer
+  ORACLE_USER_NAME:
+    aliases:
+    - oracle user name
+    range: string
+  USER_ROLE:
+    aliases:
+    - user role
+    range: string
+  GEBA_ORGANISM_AVAIL_COUNT:
+    aliases:
+    - geba organism avail count
+    range: double
+  GEBA_REVIEWER:
+    aliases:
+    - geba reviewer
+    range: string
+  TERM:
+    aliases:
+    - term
+    range: string
+  SEQUENCE:
+    aliases:
+    - sequence
+    range: double
+  ENVO_LABEL:
+    aliases:
+    - envo label
+    range: string
+  LABORATORY:
+    aliases:
+    - laboratory
+    range: string
+  IS_CURATED:
+    aliases:
+    - is curated
+    range: string
+  BIOTIC_RELATIONSHIP_ID:
+    aliases:
+    - biotic relationship
+    range: integer
+  BODY_PRODUCT_ID:
+    aliases:
+    - body product
+    range: integer
+  CELL_ARRANGEMENT_ID:
+    aliases:
+    - cell arrangement
+    range: integer
+  DISEASE_ID:
+    aliases:
+    - disease
+    range: integer
+  ENERGY_SOURCE_ID:
+    aliases:
+    - energy source
+    range: integer
+  HABITAT_ID:
+    aliases:
+    - habitat
+    range: integer
+  METABOLISM_ID:
+    aliases:
+    - metabolism
+    range: integer
+  PHENOTYPE_ID:
+    aliases:
+    - phenotype
+    range: integer
+  EXEMPLAR_DOI:
+    aliases:
+    - exemplar doi
+    range: string
+  EXEMPLAR_NAME:
+    aliases:
+    - exemplar name
+    range: string
+  TAXON_DOI:
+    aliases:
+    - taxon doi
+    range: string
+  CULTURE_COLLECTION_ID:
+    aliases:
+    - culture collection
+    range: string
+  TYPE_STRAIN:
+    aliases:
+    - type strain
+    range: string
+  BIOSAFETY_LEVEL:
+    aliases:
+    - biosafety level
+    range: string
+  STRAIN_INFO_ID:
+    aliases:
+    - strain info
+    range: integer
+  GENBANK_16S_ID:
+    aliases:
+    - genbank 16s
+    range: string
+  OXYGEN_REQUIREMENT:
+    aliases:
+    - oxygen requirement
+    range: string
+  CELL_SHAPE:
+    aliases:
+    - cell shape
+    range: string
+  MOTILITY:
+    aliases:
+    - motility
+    range: string
+  SPORULATION:
+    aliases:
+    - sporulation
+    range: string
+  TEMPERATURE_RANGE:
+    aliases:
+    - temperature range
+    range: string
+  COLOR:
+    aliases:
+    - color
+    range: string
+  GRAM_STAIN:
+    aliases:
+    - gram stain
+    range: string
+  COMMON_NAME:
+    aliases:
+    - common name
+    range: string
+  SYMBIOTIC_RELATIONSHIP:
+    aliases:
+    - symbiotic relationship
+    range: string
+  SYMBIOTIC_PHYSICAL_INTERACTION:
+    aliases:
+    - symbiotic physical interaction
+    range: string
+  SYMBIONT_NAME:
+    aliases:
+    - symbiont name
+    range: string
+  SYMBIONT_TAXON_ID:
+    aliases:
+    - symbiont taxon
+    range: integer
+  CELL_LENGTH:
+    aliases:
+    - cell length
+    range: string
+  COMMERCIAL:
+    aliases:
+    - commercial
+    range: string
+  COMMERCIAL_COMMENTS:
+    aliases:
+    - commercial comments
+    range: string
+  OTHER_NAMES:
+    aliases:
+    - other names
+    range: string
+  SYNONYM_GROUP_ID:
+    aliases:
+    - synonym group
+    range: integer
+  VIRAL_GROUP:
+    aliases:
+    - viral group
+    range: string
+  VIRAL_SUBGROUP:
+    aliases:
+    - viral subgroup
+    range: string
+  CULTURE_TYPE:
+    aliases:
+    - culture type
+    range: string
+  UNCULTURED_TYPE:
+    aliases:
+    - uncultured type
+    range: string
+  ORGANISM_TYPE:
+    aliases:
+    - organism type
+    range: string
+  CULTURED:
+    aliases:
+    - cultured
+    range: string
+  CLADE:
+    aliases:
+    - clade
+    range: string
+  MASTER_GROUP_ID:
+    aliases:
+    - master group
+    range: integer
+  ECOTYPE:
+    aliases:
+    - ecotype
+    range: string
+  BIOSAMPLE_ID:
+    aliases:
+    - biosample
+    range: integer
+  CARBON_SOURCE:
+    aliases:
+    - carbon source
+    range: string
+  IMAGE_ID:
+    aliases:
+    - image
+    range: integer
+  NCBI_BIOSAMPLE_ID:
+    aliases:
+    - ncbi biosample
+    range: string
+  ORGANISM_NAME:
+    aliases:
+    - organism name
+    range: string
+  SUBMIT_ORGANISM_NAME:
+    aliases:
+    - submit organism name
+    range: string
+  GENUS_SYNONYMS:
+    aliases:
+    - genus synonyms
+    range: string
+  SPECIES_SYNONYMS:
+    aliases:
+    - species synonyms
+    range: string
+  CELL_DIAMETER:
+    aliases:
+    - cell diameter
+    range: string
+  IS_VIROCELL:
+    aliases:
+    - is virocell
+    range: string
+  STRAININFO_GROUP_ID:
+    aliases:
+    - straininfo group
+    range: integer
+  SOURCE:
+    aliases:
+    - source
+    range: string
+  GOLD_CLASS:
+    aliases:
+    - gold class
+    range: string
+  GOLD_ORDER:
+    aliases:
+    - gold order
+    range: string
+  GOLD_FAMILY:
+    aliases:
+    - gold family
+    range: string
+  TAXONOMY_STATUS:
+    aliases:
+    - taxonomy status
+    range: string
+  SOIL_SAMPLE_BIOMASS:
+    aliases:
+    - soil sample biomass
+    - sample biomass
+    range: double
+  SOIL_SAMPLE_VOLUME:
+    aliases:
+    - soil sample volume
+    - sample volume
+    range: double
+  IMG_BREADTH_CALC:
+    aliases:
+    - img breadth calc
+    range: double
+  SAMPLE_COLLECTION_TEMPERATURE:
+    aliases:
+    - sample collection temperature
+    range: double
+  SAMPLE_COLLECTION_TEMPERATURE2:
+    aliases:
+    - sample collection temperature2
+    range: double
+  SUBSURFACE_DEPTH1:
+    aliases:
+    - subsurface depth1
+    range: double
+  PROJECT_NAME:
+    aliases:
+    - project name
+    range: string
+  SPECIMEN_ID:
+    aliases:
+    - specimen
+    range: integer
+  NUCLEIC_ACID:
+    aliases:
+    - nucleic acid
+    range: string
+  SUBMITTER_PROJECT_NAME:
+    aliases:
+    - submitter project name
+    range: string
+  NCBI_PROJECT_NAME:
+    aliases:
+    - ncbi project name
+    range: string
+  PMO_PROJECT_ID:
+    aliases:
+    - pmo project
+    range: integer
+  ITS_SPID:
+    aliases:
+    - its spid
+    range: double
+  OLD_LEGACY_GOLD_ID:
+    aliases:
+    - old legacy gold
+    range: string
+  LEGACY_GOLD_ID:
+    aliases:
+    - legacy gold
+    range: string
+  SEQUENCING_STATUS_ID:
+    aliases:
+    - sequencing status
+    range: integer
+  SEQUENCING_QUALITY_ID:
+    aliases:
+    - sequencing quality
+    range: integer
+  FINISHING_GOAL_ID:
+    aliases:
+    - finishing goal
+    range: integer
+  SEQUENCING_COMMENTS:
+    aliases:
+    - sequencing comments
+    range: string
+  GC_PERCENT:
+    aliases:
+    - gc percent
+    range: double
+  CHROMOSOME_COUNT:
+    aliases:
+    - chromosome count
+    range: double
+  PLASMID_COUNT:
+    aliases:
+    - plasmid count
+    range: double
+  EST_COUNT:
+    aliases:
+    - est count
+    range: double
+  PROJECT_COMMENTS:
+    aliases:
+    - project comments
+    range: string
+  ITS_PROPOSAL_ID:
+    aliases:
+    - its proposal
+    range: integer
+  GPTS_PROPOSAL_ID:
+    aliases:
+    - gpts proposal
+    range: integer
+  NCBI_SRA_ID:
+    aliases:
+    - ncbi sra
+    range: string
+  LIBRARY_METHOD:
+    aliases:
+    - library method
+    range: string
+  READ_COUNT:
+    aliases:
+    - read count
+    range: string
+  VECTOR:
+    aliases:
+    - vector
+    range: string
+  READ_SIZE:
+    aliases:
+    - read size
+    range: string
+  NCBI_LOCUS_TAG:
+    aliases:
+    - ncbi locus tag
+    range: string
+  ASSEMBLY_ACCESSION:
+    aliases:
+    - assembly accession
+    range: string
+  NUCLEIC_ACID_ID:
+    aliases:
+    - nucleic acid
+    range: integer
+  PROJECT_STATUS:
+    aliases:
+    - project status
+    range: string
+  MASTER_STUDY_ID:
+    aliases:
+    - master study
+    range: integer
+  OTHER_PROJECT_NAMES:
+    aliases:
+    - other project names
+    range: string
+  ITS_PROJECT_NAME:
+    aliases:
+    - its project name
+    range: string
+  IS_SINGLE_CELL_MATERIAL:
+    aliases:
+    - is single cell material
+    range: string
+  ITS_SEQUENCING_PRODUCT_NAME:
+    aliases:
+    - its sequencing product name
+    range: string
+  PROJECT_MANAGER_ID:
+    aliases:
+    - project manager
+    range: integer
+  LOW_QUALITY_GENOME:
+    aliases:
+    - low quality genome
+    range: string
+  SEQUENCING_STRATEGY:
+    aliases:
+    - sequencing strategy
+    range: string
+  IS_JGI:
+    aliases:
+    - is jgi
+    range: string
+  SRA_SRS_ACCESSION:
+    aliases:
+    - sra srs accession
+    range: string
+  SRA_SRX_ACCESSION:
+    aliases:
+    - sra srx accession
+    range: string
+  FUNDING_PROGRAM:
+    aliases:
+    - funding program
+    range: string
+  FUNDING_YEAR:
+    aliases:
+    - funding year
+    range: double
+  ITS_SAMPLE_ID:
+    aliases:
+    - its sample
+    range: integer
+  ITS_SAMPLE_GROUP_NAME:
+    aliases:
+    - its sample group name
+    range: string
+  EXPERIMENTAL_CONDITIONS:
+    aliases:
+    - experimental conditions
+    range: string
+  SAMPLE_GROUP_NAME:
+    aliases:
+    - sample group name
+    range: string
+  ITS_SAMPLE_NAME:
+    aliases:
+    - its sample name
+    range: string
+  PROJECT_SUBTYPE:
+    aliases:
+    - project subtype
+    range: string
+  SEQUENCING_STRATEGY_FULL:
+    aliases:
+    - sequencing strategy full
+    range: string
+  IS_APPROVED:
+    aliases:
+    - is approved
+    range: string
+  IS_LOCKED:
+    aliases:
+    - is locked
+    range: string
+  GPTS_SAMPLE_ID:
+    aliases:
+    - gpts sample
+    range: integer
+  GPTS_DISAMBIGUATOR:
+    aliases:
+    - gpts disambiguator
+    range: string
+  ANALYSIS_PROJECT_ID:
+    aliases:
+    - analysis project
+    range: integer
+  INSTITUTION_ID:
+    aliases:
+    - institution
+    range: integer
+  PUBLICATION_ID:
+    aliases:
+    - publication
+    range: integer
+  RELEVANCE_ID:
+    aliases:
+    - relevance
+    range: integer
+  SEQUENCING_METHOD_ID:
+    aliases:
+    - sequencing method
+    range: integer
+  DOI:
+    aliases:
+    - doi
+    range: string
+  PUBMED_ID:
+    aliases:
+    - pubmed
+    range: integer
+  JOURNAL_ID:
+    aliases:
+    - journal
+    range: integer
+  PUBMODEL:
+    aliases:
+    - pubmodel
+    range: string
+  VOLUME:
+    aliases:
+    - volume
+    range: string
+  ISSUE:
+    aliases:
+    - issue
+    range: string
+  PAGE:
+    aliases:
+    - page
+    range: string
+  PUBLICATION_DATE:
+    aliases:
+    - publication date
+    range: string
+  ABSTRACT:
+    aliases:
+    - abstract
+    range: string
+  AFFILIATION:
+    aliases:
+    - affiliation
+    range: string
+  LAST_AUTHOR_ID:
+    aliases:
+    - last author
+    range: integer
+  FIRST_AUTHOR_ID:
+    aliases:
+    - first author
+    range: integer
+  STUDY_NAME:
+    aliases:
+    - study name
+    range: string
+  NCBI_PROJECT_ID:
+    aliases:
+    - ncbi project
+    range: integer
+  CONTACT_ID:
+    aliases:
+    - contact
+    range: integer
+  LAST_MOD_BY:
+    aliases:
+    - last mod by
+    range: double
+  BIOPROJECT_NAME:
+    aliases:
+    - bioproject name
+    range: string
+  GOLD_STUDY_NAME:
+    aliases:
+    - gold study name
+    range: string
+  METAGENOMIC:
+    aliases:
+    - metagenomic
+    range: string
+  STUDY_TYPE_ID:
+    aliases:
+    - study type
+    range: integer
+  OWNER_ID:
+    aliases:
+    - owner
+    range: integer
+  PUBLIC_BIOSAMPLE_COUNT:
+    aliases:
+    - public biosample count
+    range: double
+  ADMIN_BIOSAMPLE_COUNT:
+    aliases:
+    - admin biosample count
+    range: double
+  IS_GEBA:
+    aliases:
+    - is geba
+    range: string
+  IS_HMP:
+    aliases:
+    - is hmp
+    range: string
+classes:
+  ANALYSIS_PROJECT:
+    slots:
+    - ITS_ANALYSIS_PROJECT_ID
+    - ANALYSIS_PROJECT_NAME
+    - GOLD_ID
+    - REFERENCE_AP_ID
+    - IMG_TAXON_ID
+    - ANALYSIS_PROJECT_TYPE
+    - STATUS_ID
+    - COMMENTS
+    - NCBI_TAX_ID
+    - IS_PUBLIC
+    - ADDED_BY
+    - ADD_DATE
+    - PI_ID
+    - SUBMISSION_ID
+    - SCAFFOLD_COUNT
+    - CONTIG_COUNT
+    - GENE_COUNT
+    - BINNING_METHOD
+    - GENE_CALLING_METHOD
+    - ITS_ANALYSIS_PROJECT_NAME
+    - ITS_PRODUCT_NAME
+    - COMPLETION_DATE
+    - EST_SIZE
+    - GENBANK_LOW_QUALITY_ANNOTATION
+    - ECOSYSTEM
+    - ECOSYSTEM_CATEGORY
+    - ECOSYSTEM_TYPE
+    - ECOSYSTEM_SUBTYPE
+    - SPECIFIC_ECOSYSTEM
+    - IMG_ANALYSIS_COMPLETE
+    - IS_GENE_PRIMP
+    - IS_DECONTAMINATION
+    - IS_IMG_ANNOTATION
+    - ITS_ANNOTATION_AT_ID
+    - IS_ASSEMBLED_DELETED
+    - STUDY_ID
+    - SPECIMEN
+    - ITS_ASSEMBLY_AT_TYPE
+    - DOMAIN
+    - NCBI_PHYLUM
+    - NCBI_CLASS
+    - NCBI_ORDER
+    - NCBI_FAMILY
+    - NCBI_GENUS
+    - NCBI_SPECIES
+    - APPENDED_AP_NAME
+    - MOD_BY
+    - MOD_DATE
+    - PI_NAME
+    - ANALYSIS_PROJECT_NAME_FULL
+    - IS_PRIMARY
+    - GOLD_PHYLOGENY
+    - PHYLOGENY_SUGGESTION
+    - REPLACES_AP_ID
+    - NCBI_BIOPROJECT_ID
+    - SCREENING_METHOD
+    - DECONTAMINATION_METHOD
+    - NCBI_BIOSAMPLE_ACCESSION
+    - NCBI_BIOPROJECT_ACCESSION
+    - COMPLETION
+    - NCBI_KINGDOM
+    - REVIEW_STATUS
+    - REJECTION_REASONS
+    - ORGANISM_ID
+    - PIPELINE_ANNOTATION_METHOD
+    - GENUS
+    - SPECIES
+    - SUBSPECIES
+    - CULTURE_COLLECTION
+    - SEROVAR
+    - STRAIN
+    - ECOSYSTEM_PATH_ID
+    - SEQUENCING_DEPTH
+    - IMG_USE
+    - ANNOTATOR_COMMENTS
+    - AP_FOR_NONOWNER
+    - NCBI_SUPERKINGDOM
+    - IS_TEST
+    - ITS_NCBI_TAX_ID
+    - ITS_VERSION_NUMBER
+    - IMG_RNASEQ_ID
+    - SUBMISSION_STATUS_ID
+    - SUBMISSION_STATUS_NAME
+    - SUBMISSION_COMMENTS
+    - IMG_SUBMISSION_PRORITY
+    - CONTAMINATION_PERCENTAGE
+    - COMPLETENESS_PERCENTAGE
+  ANALYSIS_PROJECT_SRA_RUN_V2:
+    slots:
+    - SRA_RUN_ID
+  BIOSAMPLE:
+    slots:
+    - BIOSAMPLE_NAME
+    - ADD_DATE
+    - MOD_DATE
+    - MOD_BY
+    - DESCRIPTION
+    - ECOSYSTEM
+    - ECOSYSTEM_CATEGORY
+    - ECOSYSTEM_TYPE
+    - ECOSYSTEM_SUBTYPE
+    - SPECIFIC_ECOSYSTEM
+    - SAMPLE_COLLECTION_SITE
+    - ISOLATION_PUBLICATION_ID
+    - SAMPLE_ISOLATION_COMMENTS
+    - SAMPLING_STRATEGY
+    - REPLICATE_NUMBER
+    - SAMPLE_VOLUME
+    - SAMPLE_BIOMASS
+    - SAMPLE_CONTACT_NAME
+    - SAMPLE_CONTACT_EMAIL
+    - GEOGRAPHIC_LOCATION
+    - LAT_LONG_INFERRED
+    - SALINITY
+    - PRESSURE
+    - PH
+    - HABITAT
+    - HOST_NAME
+    - HOST_TAXONOMY_ID
+    - HOST_GENDER
+    - HOST_RACE
+    - HOST_AGE
+    - HOST_HEALTH_CONDITION
+    - PATIENT_VISIT_NUMBER
+    - HOST_MEDICATION
+    - MRN
+    - HOST_BODY_SITE
+    - HOST_BODY_SUBSITE
+    - HOST_BODY_PRODUCT
+    - HOST_SPECIFICITY
+    - HOST_COMMENTS
+    - ACTIVE
+    - PROJECT_OID
+    - SAMPLE_OID
+    - GOLD_ID
+    - IS_PUBLIC
+    - SPECIMEN
+    - SUBMIT_BIOSAMPLE_NAME
+    - NCBI_TAXONOMY_ID
+    - COMMUNITY
+    - LOCATION
+    - IDENTIFIER
+    - ENV_PACKAGE
+    - SAMPLE_COLLECTION_DAY
+    - SAMPLE_COLLECTION_MONTH
+    - SAMPLE_COLLECTION_YEAR
+    - SUBMITTER_ID
+    - GROWTH_CONDITIONS
+    - JPA_ENTITY
+    - OTHER_HOSTS
+    - KNOWN_NON_HOSTS
+    - ISOLATION_PUBMED_ID
+    - HOST_BODY_SITE_ID
+    - HOST_BODY_SUBSITE_ID
+    - HOST_BODY_PRODUCT_ID
+    - IS_DRAFT
+    - SAMPLE_ISOLATION_COUNTRY_ID
+    - OTHER_ECOSYSTEM
+    - LONGHURST_CODE
+    - SAMPLE_COLLECTION_HOUR
+    - SAMPLE_COLLECTION_MINUTE
+    - CHLOROPHYLL_CONCENTRATION
+    - NITRATE_CONCENTRATION
+    - OXYGEN_CONCENTRATION
+    - SALINITY_CONCENTRATION
+    - PUBLIC_SP_COUNT
+    - ADMIN_SP_COUNT
+    - PUBLIC_AP_COUNT
+    - ADMIN_AP_COUNT
+    - PUBLIC_DAP_COUNT
+    - ADMIN_DAP_COUNT
+    - CRUISE_LINE_NAME
+    - ECOSYSTEM_PATH_ID
+    - PROPORT_OCEAN
+    - PROPORT_ISOLATION
+    - PROPORT_STATION
+    - PROPORT_WOA_TEMPERATURE
+    - PROPORT_WOA_SALINITY
+    - PROPORT_WOA_DISSOLVED_OXYGEN
+    - PROPORT_WOA_SILICATE
+    - PROPORT_WOA_PHOSPHATE
+    - PROPORT_WOA_NITRATE
+    - NCBI_TAXONOMY_NAME
+    - ITS_GROWTH_CONDITIONS
+    - BIOGAS_FED_SUBSTRATES
+    - BIOGAS_RETENTION_TIME
+    - BIOGAS_TEMPERATURE
+    - BIOGAS_YIELD
+    - BIOGAS_VOLATILE_ORGANIC_ACIDS
+    - BIOGAS_TOTAL_INORGANIC_CARBON
+    - BIOGAS_VOA_TIC
+    - BIOGAS_AMMONIUM_NH4
+    - BIOGAS_BUTANOL
+    - BIOGAS_ETHANOL
+    - BIOGAS_PROPANOL
+    - BIOGAS_METHANOL
+    - BIOGAS_ACETIC_ACID
+    - BIOGAS_BUTYL_ACID
+    - BIOGAS_ISO_BUTYL_ACID
+    - BIOGAS_VALERIC_ACID
+    - BIOGAS_ISO_VALERIC_ACID
+    - BIOGAS_PROPIONIC_ACID
+    - BIOGAS_METHANE_PCT
+    - IS_TEST
+    - SAMPLE_CONDUCTIVITY
+    - GROWTH_TEMPERATURE
+    - SUBSURFACE_DEPTH
+    - LEGACY_DEPTH_DATA
+    - LATITUDE_TEST
+    - LONGITUDE_TEST
+    - ELEVATION
+    - ELEVATION2
+    - SOIL_CURR_LAND_USE
+    - SOIL_CURR_VEGETATION
+    - SOIL_CURR_VEGETATION_METHOD
+    - SOIL_PREV_LAND_USE
+    - SOIL_PREV_LAND_USE_METH
+    - SOIL_CROP_ROTATION
+    - SOIL_AGROCHEM_ADDITION
+    - SOIL_TILLAGE
+    - SOIL_FIRE
+    - SOIL_FLOODING
+    - SOIL_EXTREME_EVENT
+    - SOIL_HORIZON
+    - SOIL_HORIZON_METHOD
+    - SOIL_SIEVING
+    - SOIL_WATER_CONTENT
+    - SOIL_WATER_CONTENT_SOIL_METH
+    - SAMPLE_WEIGHT_DNA_EXT
+    - SOIL_POOL_DNA_EXTRACTS
+    - SOIL_STORAGE_CONDITION
+    - SOIL_LINK_CLIMATE_INFO
+    - SOIL_LINK_CLASS_INFO
+    - SOIL_FAO_CLASS
+    - SOIL_LOCAL_CLASS
+    - SOIL_LOCAL_CLASS_METHOD
+    - SOIL_TYPE
+    - SOIL_TYPE_METHOD
+    - SOIL_SLOPE_GRADIENT
+    - SOIL_SLOPE_ASPECT
+    - SOIL_PROFILE_POSITION
+    - SOIL_DRAINAGE_CLASS
+    - SOIL_TEXTURE
+    - SOIL_TEXTURE_METHOD
+    - SOIL_PH_METHOD
+    - TOT_ORG_CARBON
+    - SOIL_TOT_ORG_C_METHOD
+    - TOT_NITROGEN
+    - SOIL_TOT_N_METHOD
+    - SOIL_MICROBIAL_BIOMASS
+    - SOIL_MICROBIAL_BIOMASS_METHOD
+    - SOIL_LINK_ADDIT_ANALYS
+    - SOIL_SALINITY_METHOD
+    - SOIL_HEAVY_METALS
+    - SOIL_HEAVY_METALS_METHOD
+    - SOIL_ALUMINIUM_SAT
+    - SOIL_ALUMINIUM_SAT_METHOD
+    - SOIL_MISC_PARAM
+    - WATER_ALKALINITY
+    - WATER_ALKYL_DIETHERS
+    - WATER_AMINOPEPT_ACT
+    - WATER_AMMONIUM
+    - WATER_ATMOSPHERIC_DATA
+    - WATER_BACTERIAL_PROD
+    - WATER_BACTERIAL_RESP
+    - WATER_BACTERIAL_CARBON_PROD
+    - WATER_BISHOMOHOPANOL
+    - WATER_BROMIDE
+    - WATER_CALCIUM
+    - WATER_CARBON_NITROG_RATIO
+    - WATER_CHEM_ADMINISTRATION
+    - WATER_CHLORIDE
+    - WATER_DENSITY
+    - WATER_DIETHER_LIPIDS
+    - WATER_DISS_CARBON_DIOXIDE
+    - WATER_DISS_HYDROGEN
+    - WATER_DISS_INORG_CARBON
+    - WATER_DISS_INORG_NITRO
+    - WATER_DISS_INORG_PHOSPHORUS
+    - WATER_DISS_ORG_CARBON
+    - WATER_DISS_ORG_NITROGEN
+    - WATER_DOWNWARD_PAR
+    - WATER_FLUORESCENCE
+    - WATER_GLUCOSIDASE_ACTIVITY
+    - WATER_LIGHT_INTENSITY
+    - WATER_MAGNESIUM
+    - WATER_MEAN_FRICT_VEL
+    - WATER_MEAN_PEAK_FRICT_VEL
+    - WATER_MISC_PARAMETER
+    - WATER_N_ALKANES
+    - WATER_NITRITE
+    - WATER_ORG_MATTER
+    - WATER_ORG_NITROGEN
+    - WATER_ORGANISM_COUNT
+    - WATER_OXY_STAT_SAMPLE
+    - WATER_PART_ORG_CARBON
+    - WATER_PART_ORG_NITROGEN
+    - WATER_PERTURBATION
+    - WATER_PETROLEUM_HYDROCARBON
+    - WATER_PHAEOPIGMENTS
+    - WATER_PHOSPLIPID_FATT_ACID
+    - WATER_PHOTON_FLUX
+    - WATER_POTASSIUM
+    - WATER_PRIMARY_PROD
+    - WATER_REDOX_POTENTIAL
+    - WATER_SAMP_STORE_DUR
+    - WATER_SAMP_STORE_LOC
+    - WATER_SAMP_STORE_TEMP
+    - WATER_SODIUM
+    - WATER_SOLUBLE_REACT_PHOSP
+    - WATER_SULFATE
+    - WATER_SULFIDE
+    - WATER_SUSPEND_PART_MATTER
+    - WATER_TIDAL_STAGE
+    - WATER_TOT_DEPTH_WATER_COL
+    - WATER_TOT_DISS_NITRO
+    - WATER_TOT_INORG_NITRO
+    - WATER_TOT_PART_CARBON
+    - WATER_TOT_PHOSPHORUS
+    - WATER_CURRENT
+    - LATITUDE
+    - LONGITUDE
+    - DEPTH
+    - DEPTH2
+    - ALTITUDE
+    - ALTITUDE2
+    - SOLUBLE_IRON_MICROMOL
+    - BICARBONATE_MILLIMOL
+    - H2S_MILLIMOL
+    - H2S_PRESENT
+    - IRRADIANCE
+    - OXYGEN_PRESENCE
+    - METHANE_CONC_MILLIMOL
+    - GROWTH_TEMPERATURE2
+    - ANNOTATOR_COMMENTS
+    - SUBSURFACE_DEPTH2
+    - PH1
+    - PH2
+    - PH_OLD
+    - WATER_ALKALINITY_METHOD
+    - WATER_TURBIDITY
+    - WATER_SIZE_FRAC_LOW
+    - WATER_SIZE_FRAC_UP
+    - SOIL_MEAN_ANNUAL_TEMP
+    - SOIL_MEAN_SEASONAL_TEMP
+    - SOIL_MEAN_ANNUAL_PRECPT
+    - SOIL_MEAN_SEASONAL_PRECPT
+    - TEST_PACKAGE_ID
+    - SOIL_PACKAGE_ID
+    - WATER_PACKAGE_ID
+    - GLOBAL_PACKAGE_ID
+    - ENVO_BIOME_ID
+    - ENVO_FEATURE_ID
+    - ENVO_MATERIAL_ID
+  CONTACT:
+    slots:
+    - USERNAME
+    - PASSWORD
+    - NAME
+    - TITLE
+    - DEPARTMENT
+    - EMAIL
+    - PHONE
+    - ORGANIZATION
+    - ADDRESS
+    - CITY
+    - STATE
+    - COUNTRY
+    - COMMENTS
+    - ADD_DATE
+    - X_SUPER_USER
+    - X_IMG_EDITOR
+    - X_IMG_GROUP
+    - JGI_USER
+    - X_IMG_EDITING_LEVEL
+    - CALIBAN_ID
+    - CALIBAN_USER_NAME
+    - URL
+    - X_IMG_CONTACT_ID
+    - MASTER_CONTACT_ID
+    - ORACLE_USER_NAME
+    - USER_ROLE
+    - GEBA_ORGANISM_AVAIL_COUNT
+    - GEBA_REVIEWER
+  CVAP_COMPLETION:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVAP_REVIEW_STATUS:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVAP_STATUS:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVAP_TYPE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVAVAILABILITY:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVBIOME:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVBIOSAFETY:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVBIOTIC_RELATIONSHIP:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVBODY_PRODUCT:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVBODY_SITE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVBODY_SUBSITE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVCELL_ARRANGEMENT:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVCELL_SHAPE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVCOLOR:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVCOUNTRY:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVCULTURE_TYPE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVCURRENT_LAND_USE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVDATA_VALIDITY_TYPE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVDISEASE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVDOMAIN:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVDRAINAGE_CLASS:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVENERGY_SOURCE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVENVPACKAGE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVFASTADOWNLOADSTATUS:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVFINISHING_GOAL:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVGEBA_PRIORITY_STATUS:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVGEBA_REVIEW_STATUS:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVGEBA_SAMPLE_TYPE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVGEBA_TYPES:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVGRAM_STAIN:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVHABITAT:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVHORIZON:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVHOST_GENDER:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVIMGUSE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVIRRADIANCE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVLATLONG:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVMETABOLISM:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVMODEL:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVMONTH:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVMOTILITY:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVNUCLEIC_ACID:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVORGANISM_TYPE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVOXYGEN:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVOXYGEN_PRESENCE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVOXYGEN_STAT_SAMPLE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVPACKAGES:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVPHENOTYPE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVPHYLOGENY:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVPROFILE_POSITION:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVPROJECT_STATUS:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVPROJECT_SUBTYPE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVPROJECT_TYPE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVRELEVANCE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVROLES:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVSALINITY:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVSEQ_QUALITY:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVSEQ_STATUS:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVSOILFAOCLASS:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVSPECIMEN:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVSPORULATION:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVSTUDY_TYPE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVTEMP_RANGE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVTIDAL_STAGE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVTILLAGE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVUNCULTURED_TYPE:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVYES_NO:
+    slots:
+    - TERM
+    - SEQUENCE
+  CVYES_NO_ONLY:
+    slots:
+    - TERM
+    - SEQUENCE
+  ENVO_LABELS:
+    slots:
+    - ENVO_LABEL
+  INSTITUTION:
+    slots:
+    - NAME
+    - URL
+    - COUNTRY
+    - ORGANIZATION
+    - DEPARTMENT
+    - LABORATORY
+    - IS_CURATED
+  ORGANISM_BIOTIC_REL:
+    slots:
+    - BIOTIC_RELATIONSHIP_ID
+  ORGANISM_BODY_PRODUCT:
+    slots:
+    - BODY_PRODUCT_ID
+  ORGANISM_CELL_ARRANGEMENT:
+    slots:
+    - CELL_ARRANGEMENT_ID
+  ORGANISM_DISEASE:
+    slots:
+    - DISEASE_ID
+  ORGANISM_ENERGY_SOURCE:
+    slots:
+    - ENERGY_SOURCE_ID
+  ORGANISM_HABITAT:
+    slots:
+    - HABITAT_ID
+  ORGANISM_METABOLISM:
+    slots:
+    - METABOLISM_ID
+  ORGANISM_PHENOTYPE:
+    slots:
+    - PHENOTYPE_ID
+  ORGANISM_V2:
+    slots:
+    - EXEMPLAR_DOI
+    - EXEMPLAR_NAME
+    - TAXON_DOI
+    - CULTURE_COLLECTION_ID
+    - TYPE_STRAIN
+    - BIOSAFETY_LEVEL
+    - NCBI_TAXONOMY_ID
+    - NCBI_KINGDOM
+    - NCBI_PHYLUM
+    - NCBI_CLASS
+    - NCBI_ORDER
+    - NCBI_FAMILY
+    - NCBI_GENUS
+    - DOMAIN
+    - STRAIN_INFO_ID
+    - GENBANK_16S_ID
+    - OXYGEN_REQUIREMENT
+    - CELL_SHAPE
+    - MOTILITY
+    - SPORULATION
+    - TEMPERATURE_RANGE
+    - COLOR
+    - GRAM_STAIN
+    - ADD_DATE
+    - MOD_DATE
+    - MOD_BY
+    - COMMON_NAME
+    - SYMBIOTIC_RELATIONSHIP
+    - SYMBIOTIC_PHYSICAL_INTERACTION
+    - SYMBIONT_NAME
+    - SYMBIONT_TAXON_ID
+    - CELL_LENGTH
+    - IS_PUBLIC
+    - SUBSPECIES
+    - COMMERCIAL
+    - COMMERCIAL_COMMENTS
+    - OTHER_NAMES
+    - SYNONYM_GROUP_ID
+    - VIRAL_GROUP
+    - VIRAL_SUBGROUP
+    - IS_DRAFT
+    - SUBMITTER_ID
+    - GOLD_PHYLOGENY
+    - CULTURE_TYPE
+    - UNCULTURED_TYPE
+    - ORGANISM_TYPE
+    - CULTURED
+    - CLADE
+    - MASTER_GROUP_ID
+    - ECOTYPE
+    - BIOSAMPLE_ID
+    - CARBON_SOURCE
+    - IMAGE_ID
+    - NCBI_BIOSAMPLE_ID
+    - ECOSYSTEM
+    - ECOSYSTEM_CATEGORY
+    - ECOSYSTEM_TYPE
+    - ECOSYSTEM_SUBTYPE
+    - SPECIFIC_ECOSYSTEM
+    - OTHER_ECOSYSTEM
+    - ECOSYSTEM_PATH_ID
+    - SAMPLE_COLLECTION_SITE
+    - ISOLATION_PUBLICATION_ID
+    - SAMPLE_ISOLATION_COMMENTS
+    - SAMPLING_STRATEGY
+    - REPLICATE_NUMBER
+    - SAMPLE_VOLUME
+    - SAMPLE_BIOMASS
+    - SAMPLE_CONTACT_NAME
+    - SAMPLE_CONTACT_EMAIL
+    - GEOGRAPHIC_LOCATION
+    - LAT_LONG_INFERRED
+    - HOST_NAME
+    - HOST_TAXONOMY_ID
+    - HOST_GENDER
+    - HOST_RACE
+    - HOST_AGE
+    - HOST_HEALTH_CONDITION
+    - PATIENT_VISIT_NUMBER
+    - HOST_MEDICATION
+    - MRN
+    - HOST_BODY_SITE
+    - HOST_BODY_SUBSITE
+    - HOST_BODY_PRODUCT
+    - HOST_SPECIFICITY
+    - HOST_COMMENTS
+    - PROJECT_OID
+    - SAMPLE_OID
+    - SPECIMEN
+    - SUBMIT_BIOSAMPLE_NAME
+    - ENV_PACKAGE
+    - SAMPLE_COLLECTION_DAY
+    - SAMPLE_COLLECTION_MONTH
+    - SAMPLE_COLLECTION_YEAR
+    - SAMPLE_COLLECTION_HOUR
+    - SAMPLE_COLLECTION_MINUTE
+    - GROWTH_CONDITIONS
+    - OTHER_HOSTS
+    - KNOWN_NON_HOSTS
+    - ISOLATION_PUBMED_ID
+    - HOST_BODY_SITE_ID
+    - HOST_BODY_SUBSITE_ID
+    - HOST_BODY_PRODUCT_ID
+    - SAMPLE_ISOLATION_COUNTRY_ID
+    - LONGHURST_CODE
+    - CHLOROPHYLL_CONCENTRATION
+    - NITRATE_CONCENTRATION
+    - OXYGEN_CONCENTRATION
+    - SALINITY_CONCENTRATION
+    - CRUISE_LINE_NAME
+    - PROPORT_OCEAN
+    - PROPORT_ISOLATION
+    - PROPORT_STATION
+    - PROPORT_WOA_TEMPERATURE
+    - PROPORT_WOA_SALINITY
+    - PROPORT_WOA_DISSOLVED_OXYGEN
+    - PROPORT_WOA_SILICATE
+    - PROPORT_WOA_PHOSPHATE
+    - PROPORT_WOA_NITRATE
+    - ACTIVE
+    - ITS_GROWTH_CONDITIONS
+    - GOLD_ID
+    - ORGANISM_NAME
+    - SUBMIT_ORGANISM_NAME
+    - NCBI_TAXONOMY_NAME
+    - GENUS
+    - GENUS_SYNONYMS
+    - SPECIES
+    - SPECIES_SYNONYMS
+    - STRAIN
+    - SEROVAR
+    - COMMENTS
+    - NCBI_SPECIES
+    - SALINITY
+    - PRESSURE
+    - PH
+    - CELL_DIAMETER
+    - ANNOTATOR_COMMENTS
+    - IS_VIROCELL
+    - STRAININFO_GROUP_ID
+    - SOURCE
+    - GOLD_CLASS
+    - GOLD_ORDER
+    - GOLD_FAMILY
+    - NCBI_SUPERKINGDOM
+    - TAXONOMY_STATUS
+    - IS_TEST
+    - GROWTH_TEMPERATURE
+    - SUBSURFACE_DEPTH
+    - LEGACY_DEPTH_DATA
+    - LATITUDE_TEST
+    - LONGITUDE_TEST
+    - ELEVATION
+    - ELEVATION2
+    - SOIL_CURR_LAND_USE
+    - SOIL_CURR_VEGETATION
+    - SOIL_CURR_VEGETATION_METHOD
+    - SOIL_PREV_LAND_USE
+    - SOIL_PREV_LAND_USE_METH
+    - SOIL_CROP_ROTATION
+    - SOIL_AGROCHEM_ADDITION
+    - SOIL_TILLAGE
+    - SOIL_FIRE
+    - SOIL_FLOODING
+    - SOIL_EXTREME_EVENT
+    - SOIL_HORIZON
+    - SOIL_HORIZON_METHOD
+    - SOIL_SIEVING
+    - SOIL_WATER_CONTENT
+    - SOIL_WATER_CONTENT_SOIL_METH
+    - SAMPLE_WEIGHT_DNA_EXT
+    - SOIL_POOL_DNA_EXTRACTS
+    - SOIL_STORAGE_CONDITION
+    - SOIL_LINK_CLIMATE_INFO
+    - SOIL_LINK_CLASS_INFO
+    - SOIL_FAO_CLASS
+    - SOIL_LOCAL_CLASS
+    - SOIL_LOCAL_CLASS_METHOD
+    - SOIL_TYPE
+    - SOIL_TYPE_METHOD
+    - SOIL_SLOPE_GRADIENT
+    - SOIL_SLOPE_ASPECT
+    - SOIL_PROFILE_POSITION
+    - SOIL_DRAINAGE_CLASS
+    - SOIL_TEXTURE
+    - SOIL_TEXTURE_METHOD
+    - SOIL_PH_METHOD
+    - TOT_ORG_CARBON
+    - SOIL_TOT_ORG_C_METHOD
+    - TOT_NITROGEN
+    - SOIL_TOT_N_METHOD
+    - SOIL_MICROBIAL_BIOMASS
+    - SOIL_MICROBIAL_BIOMASS_METHOD
+    - SOIL_LINK_ADDIT_ANALYS
+    - SOIL_SALINITY_METHOD
+    - SOIL_HEAVY_METALS
+    - SOIL_HEAVY_METALS_METHOD
+    - SOIL_ALUMINIUM_SAT
+    - SOIL_ALUMINIUM_SAT_METHOD
+    - SOIL_MISC_PARAM
+    - WATER_ALKALINITY
+    - WATER_ALKYL_DIETHERS
+    - WATER_AMINOPEPT_ACT
+    - WATER_AMMONIUM
+    - WATER_ATMOSPHERIC_DATA
+    - WATER_BACTERIAL_PROD
+    - WATER_BACTERIAL_RESP
+    - WATER_BACTERIAL_CARBON_PROD
+    - WATER_BISHOMOHOPANOL
+    - WATER_BROMIDE
+    - WATER_CALCIUM
+    - WATER_CARBON_NITROG_RATIO
+    - WATER_CHEM_ADMINISTRATION
+    - WATER_CHLORIDE
+    - WATER_DENSITY
+    - WATER_DIETHER_LIPIDS
+    - WATER_DISS_CARBON_DIOXIDE
+    - WATER_DISS_HYDROGEN
+    - WATER_DISS_INORG_CARBON
+    - WATER_DISS_INORG_NITRO
+    - WATER_DISS_INORG_PHOSPHORUS
+    - WATER_DISS_ORG_CARBON
+    - WATER_DISS_ORG_NITROGEN
+    - WATER_DOWNWARD_PAR
+    - WATER_FLUORESCENCE
+    - WATER_GLUCOSIDASE_ACTIVITY
+    - WATER_LIGHT_INTENSITY
+    - WATER_MAGNESIUM
+    - WATER_MEAN_FRICT_VEL
+    - WATER_MEAN_PEAK_FRICT_VEL
+    - WATER_MISC_PARAMETER
+    - WATER_N_ALKANES
+    - WATER_NITRITE
+    - WATER_ORG_MATTER
+    - WATER_ORG_NITROGEN
+    - WATER_ORGANISM_COUNT
+    - WATER_OXY_STAT_SAMPLE
+    - WATER_PART_ORG_CARBON
+    - WATER_PART_ORG_NITROGEN
+    - WATER_PERTURBATION
+    - WATER_PETROLEUM_HYDROCARBON
+    - WATER_PHAEOPIGMENTS
+    - WATER_PHOSPLIPID_FATT_ACID
+    - WATER_PHOTON_FLUX
+    - WATER_POTASSIUM
+    - WATER_PRIMARY_PROD
+    - WATER_REDOX_POTENTIAL
+    - WATER_SAMP_STORE_DUR
+    - WATER_SAMP_STORE_LOC
+    - WATER_SAMP_STORE_TEMP
+    - WATER_SODIUM
+    - WATER_SOLUBLE_REACT_PHOSP
+    - WATER_SULFATE
+    - WATER_SULFIDE
+    - WATER_SUSPEND_PART_MATTER
+    - WATER_TIDAL_STAGE
+    - WATER_TOT_DEPTH_WATER_COL
+    - WATER_TOT_DISS_NITRO
+    - WATER_TOT_INORG_NITRO
+    - WATER_TOT_PART_CARBON
+    - WATER_TOT_PHOSPHORUS
+    - WATER_CURRENT
+    - ALTITUDE
+    - ALTITUDE2
+    - DEPTH
+    - DEPTH2
+    - LONGITUDE
+    - LATITUDE
+    - BICARBONATE_MILLIMOL
+    - SOLUBLE_IRON_MICROMOL
+    - H2S_MILLIMOL
+    - H2S_PRESENT
+    - IRRADIANCE
+    - METHANE_CONC_MILLIMOL
+    - SAMPLE_CONDUCTIVITY
+    - SOIL_SAMPLE_BIOMASS
+    - SOIL_SAMPLE_VOLUME
+    - IMG_BREADTH_CALC
+    - GROWTH_TEMPERATURE2
+    - SAMPLE_COLLECTION_TEMPERATURE
+    - SAMPLE_COLLECTION_TEMPERATURE2
+    - PUBLIC_SP_COUNT
+    - ADMIN_SP_COUNT
+    - PUBLIC_AP_COUNT
+    - ADMIN_AP_COUNT
+    - SUBSURFACE_DEPTH1
+    - SUBSURFACE_DEPTH2
+    - PH1
+    - PH2
+    - PH_OLD
+    - WATER_ALKALINITY_METHOD
+    - WATER_TURBIDITY
+    - WATER_SIZE_FRAC_LOW
+    - WATER_SIZE_FRAC_UP
+    - SOIL_MEAN_ANNUAL_TEMP
+    - SOIL_MEAN_SEASONAL_TEMP
+    - SOIL_MEAN_ANNUAL_PRECPT
+    - SOIL_MEAN_SEASONAL_PRECPT
+    - SOIL_PACKAGE_ID
+    - WATER_PACKAGE_ID
+    - ENVO_BIOME_ID
+    - ENVO_FEATURE_ID
+    - ENVO_MATERIAL_ID
+  PROJECT:
+    slots:
+    - PROJECT_NAME
+    - NCBI_BIOPROJECT_ID
+    - ADD_DATE
+    - MOD_DATE
+    - MOD_BY
+    - DESCRIPTION
+    - SPECIMEN_ID
+    - ORGANISM_TYPE
+    - NUCLEIC_ACID
+    - SUBMITTER_PROJECT_NAME
+    - NCBI_PROJECT_NAME
+    - ISOLATION_PUBLICATION_ID
+    - COMPLETION_DATE
+    - ACTIVE
+    - PMO_PROJECT_ID
+    - ITS_SPID
+    - PROJECT_OID
+    - SAMPLE_OID
+    - GOLD_ID
+    - OLD_LEGACY_GOLD_ID
+    - LEGACY_GOLD_ID
+    - IS_PUBLIC
+    - ORGANISM_ID
+    - SEQUENCING_STATUS_ID
+    - SEQUENCING_QUALITY_ID
+    - FINISHING_GOAL_ID
+    - SEQUENCING_COMMENTS
+    - GC_PERCENT
+    - CONTIG_COUNT
+    - EST_SIZE
+    - CHROMOSOME_COUNT
+    - PLASMID_COUNT
+    - SCAFFOLD_COUNT
+    - EST_COUNT
+    - SUBMITTER_ID
+    - NCBI_BIOPROJECT_ACCESSION
+    - PROJECT_COMMENTS
+    - ANNOTATOR_COMMENTS
+    - ITS_PROPOSAL_ID
+    - GPTS_PROPOSAL_ID
+    - NCBI_SRA_ID
+    - LIBRARY_METHOD
+    - READ_COUNT
+    - VECTOR
+    - READ_SIZE
+    - NCBI_LOCUS_TAG
+    - ASSEMBLY_ACCESSION
+    - IS_DRAFT
+    - NUCLEIC_ACID_ID
+    - PI_ID
+    - PROJECT_STATUS
+    - MASTER_STUDY_ID
+    - OTHER_PROJECT_NAMES
+    - ITS_PROJECT_NAME
+    - IS_SINGLE_CELL_MATERIAL
+    - ITS_SEQUENCING_PRODUCT_NAME
+    - PROJECT_MANAGER_ID
+    - NCBI_BIOSAMPLE_ACCESSION
+    - LOW_QUALITY_GENOME
+    - SEQUENCING_STRATEGY
+    - PUBLIC_AP_COUNT
+    - ADMIN_AP_COUNT
+    - PUBLIC_DAP_COUNT
+    - ADMIN_DAP_COUNT
+    - IS_JGI
+    - SRA_SRS_ACCESSION
+    - SRA_SRX_ACCESSION
+    - FUNDING_PROGRAM
+    - FUNDING_YEAR
+    - ITS_SAMPLE_ID
+    - ITS_SAMPLE_GROUP_NAME
+    - EXPERIMENTAL_CONDITIONS
+    - SAMPLE_GROUP_NAME
+    - ITS_SAMPLE_NAME
+    - PROJECT_SUBTYPE
+    - SEQUENCING_STRATEGY_FULL
+    - IS_TEST
+    - IS_APPROVED
+    - IS_LOCKED
+    - GPTS_SAMPLE_ID
+    - GPTS_DISAMBIGUATOR
+  PROJECT_ANALYSIS_PROJECT:
+    slots:
+    - ANALYSIS_PROJECT_ID
+  PROJECT_BIOSAMPLE:
+    slots:
+    - BIOSAMPLE_ID
+  PROJECT_COLLABORATOR:
+    slots:
+    - INSTITUTION_ID
+  PROJECT_FUNDING_AGENCY:
+    slots:
+    - INSTITUTION_ID
+  PROJECT_GENOME_PUBLICATION:
+    slots:
+    - PUBLICATION_ID
+  PROJECT_OTHER_PUBLICATION:
+    slots:
+    - PUBLICATION_ID
+  PROJECT_RELEVANCE:
+    slots:
+    - RELEVANCE_ID
+  PROJECT_SEQUENCING_CENTER:
+    slots:
+    - INSTITUTION_ID
+  PROJECT_SEQUENCING_METHOD:
+    slots:
+    - SEQUENCING_METHOD_ID
+  PUBLICATION:
+    slots:
+    - DOI
+    - PUBMED_ID
+    - JOURNAL_ID
+    - PUBMODEL
+    - VOLUME
+    - ISSUE
+    - PAGE
+    - PUBLICATION_DATE
+    - ABSTRACT
+    - AFFILIATION
+    - TITLE
+    - LAST_AUTHOR_ID
+    - FIRST_AUTHOR_ID
+  STUDY:
+    slots:
+    - STUDY_NAME
+    - ITS_PROPOSAL_ID
+    - NCBI_PROJECT_ID
+    - ADD_DATE
+    - MOD_DATE
+    - CONTACT_ID
+    - LAST_MOD_BY
+    - IS_PUBLIC
+    - GPTS_PROPOSAL_ID
+    - PROJECT_OID
+    - ACTIVE
+    - LEGACY_GOLD_ID
+    - BIOPROJECT_NAME
+    - GOLD_STUDY_NAME
+    - DESCRIPTION
+    - GOLD_ID
+    - METAGENOMIC
+    - STUDY_TYPE_ID
+    - ECOSYSTEM
+    - ECOSYSTEM_CATEGORY
+    - ECOSYSTEM_TYPE
+    - ECOSYSTEM_SUBTYPE
+    - SPECIFIC_ECOSYSTEM
+    - OWNER_ID
+    - IS_DRAFT
+    - PUBLIC_SP_COUNT
+    - ADMIN_SP_COUNT
+    - PUBLIC_AP_COUNT
+    - ADMIN_AP_COUNT
+    - PUBLIC_DAP_COUNT
+    - ADMIN_DAP_COUNT
+    - PUBLIC_BIOSAMPLE_COUNT
+    - ADMIN_BIOSAMPLE_COUNT
+    - IS_GEBA
+    - IS_HMP
+    - ECOSYSTEM_PATH_ID
+    - IS_TEST
+subsets: {}

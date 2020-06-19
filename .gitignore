@@ -4,3 +4,5 @@ venv/
 RDF-Cache/
 *.old
 downloads
+*.dsv
+target/*/*.ttl

@@ -11,26 +11,41 @@ such as json-schema.
 
 Currently the sources we have include:
 
- * neon
-     * `code <src/metadata_converter/neon.py>`__
-     * `input <tests/neon/>`__ (CSV dump of schema)
-     * `schema products <target/neon/>`__
-     * `docs <docs/neon/>`__
- * kbase
-     * `code <src/metadata_converter/kbase.py>`__
-     * `input <tests/kbase/>`__ (YAML)
-     * `schema products <target/kbase/>`__
-     * `docs <docs/kbase/>`__
- * mixs
-     * INCOMPLETE
-     * code is currently external
-     * `schema products <target/mixs/>`__
-     * `docs <docs/mixs/>`__
- * gold
-     * `code <src/metadata_converter/ddl_tsv.py>`__
-     * `input <tests/gold/>`__ (SQL DDL dump)
-     * `schema products <target/gold/>`__
-     * `docs <docs/gold/>`__
+* neon
+    * `code <src/metadata_converter/neon.py>`__
+    * `input <tests/neon/>`__ (CSV dump of schema)
+    * `schema products <target/neon/>`__
+        * `yaml <target/neon/neon.yaml>`__ (source biolinkml)
+        * `json-schema <target/neon/neon.schema.json>`__ (derived)
+    * `docs <docs/neon/>`__
+* kbase
+    * `code <src/metadata_converter/kbase.py>`__ (incomplete)
+    * `input <tests/kbase/>`__ (YAML)
+    * `schema products <target/kbase/>`__
+        * `yaml <target/kbase/kbase.yaml>`__ (source biolinkml)
+        * `json-schema <target/kbase/kbase.schema.json>`__ (derived)
+    * `docs <docs/kbase/>`__
+* mixs
+    * INCOMPLETE
+    * code is currently external
+    * `schema products <target/mixs/>`__
+        * `yaml <target/neon/mixs.yaml>`__ (source biolinkml)
+        * `json-schema <target/mixs/mixs.schema.json>`__ (derived)
+    * `docs <docs/mixs/>`__
+* gold
+    * `code <src/metadata_converter/ddl_tsv.py>`__
+    * `input <tests/gold/>`__ (SQL DDL dump)
+    * `schema products <target/gold/>`__
+        * `yaml <target/gold/gold.yaml>`__ (source biolinkml)
+        * `json-schema <target/gold/gold.schema.json>`__ (derived)
+    * `docs <docs/gold/>`__
+* DarwinCore
+    * `code <src/metadata_converter/darwincore.py>`__
+    * `input <tests/dwc/>`__ (DWC reference csv)
+    * `schema products <target/dwc/>`__
+        * `yaml <target/dwc/dwc.yaml>`__ (source biolinkml)
+        * `json-schema <target/dwc/dwc.schema.json>`__ (derived)
+    * `docs <docs/dwc/>`__
 
 
 Mappings

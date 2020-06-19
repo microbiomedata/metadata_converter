@@ -77,6 +77,8 @@ mappings/nomatches-gold-%.tsv: $(SRC_TTL)
 	rdfmatch -p gold.vocab  -w mappings/weights.pro -i mappings/prefixes.ttl -i target/gold/gold.ttl -i target/$*/$*.ttl nomatch > $@
 mappings/nomatches-biosample-gold-%.tsv: target/gold/biosample.ttl $(SRC_TTL)
 	rdfmatch -p gold.vocab --match_prefix $*  -w mappings/weights.pro -i mappings/prefixes.ttl -i $< -i target/$*/$*.ttl nomatch > $@
+mappings/nomatches-kbase-%.tsv: $(SRC_TTL)
+	rdfmatch -p kbase  -w mappings/weights.pro -i mappings/prefixes.ttl -i target/kbase/kbase.ttl -i target/$*/$*.ttl nomatch > $@
 
 mappings/%-summary.tsv: mappings/%.tsv
 	grep -v ^# $<  | mlr --tsv count-distinct -f subject_source,object_source then sort -nr count > $@

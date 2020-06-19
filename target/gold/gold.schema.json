@@ -1,0 +1,3769 @@
+{
+   "$id": "https://microbiomedata/schema/ddl",
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "definitions": {
+      "ANALYSISPROJECT": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "ADDED_BY": {
+               "type": "number"
+            },
+            "ADD_DATE": {
+               "type": "string"
+            },
+            "ANALYSIS_PROJECT_NAME": {
+               "type": "string"
+            },
+            "ANALYSIS_PROJECT_NAME_FULL": {
+               "type": "string"
+            },
+            "ANALYSIS_PROJECT_TYPE": {
+               "type": "string"
+            },
+            "ANNOTATOR_COMMENTS": {
+               "type": "string"
+            },
+            "APPENDED_AP_NAME": {
+               "type": "string"
+            },
+            "AP_FOR_NONOWNER": {
+               "type": "string"
+            },
+            "BINNING_METHOD": {
+               "type": "string"
+            },
+            "COMMENTS": {
+               "type": "string"
+            },
+            "COMPLETENESS_PERCENTAGE": {
+               "type": "number"
+            },
+            "COMPLETION": {
+               "type": "string"
+            },
+            "COMPLETION_DATE": {
+               "type": "string"
+            },
+            "CONTAMINATION_PERCENTAGE": {
+               "type": "number"
+            },
+            "CONTIG_COUNT": {
+               "type": "number"
+            },
+            "CULTURE_COLLECTION": {
+               "type": "string"
+            },
+            "DECONTAMINATION_METHOD": {
+               "type": "string"
+            },
+            "DOMAIN": {
+               "type": "string"
+            },
+            "ECOSYSTEM": {
+               "type": "string"
+            },
+            "ECOSYSTEM_CATEGORY": {
+               "type": "string"
+            },
+            "ECOSYSTEM_PATH_ID": {
+               "type": "integer"
+            },
+            "ECOSYSTEM_SUBTYPE": {
+               "type": "string"
+            },
+            "ECOSYSTEM_TYPE": {
+               "type": "string"
+            },
+            "EST_SIZE": {
+               "type": "number"
+            },
+            "GENBANK_LOW_QUALITY_ANNOTATION": {
+               "type": "string"
+            },
+            "GENE_CALLING_METHOD": {
+               "type": "string"
+            },
+            "GENE_COUNT": {
+               "type": "number"
+            },
+            "GENUS": {
+               "type": "string"
+            },
+            "GOLD_ID": {
+               "type": "string"
+            },
+            "GOLD_PHYLOGENY": {
+               "type": "string"
+            },
+            "IMG_ANALYSIS_COMPLETE": {
+               "type": "string"
+            },
+            "IMG_RNASEQ_ID": {
+               "type": "integer"
+            },
+            "IMG_SUBMISSION_PRORITY": {
+               "type": "string"
+            },
+            "IMG_TAXON_ID": {
+               "type": "integer"
+            },
+            "IMG_USE": {
+               "type": "string"
+            },
+            "IS_ASSEMBLED_DELETED": {
+               "type": "string"
+            },
+            "IS_DECONTAMINATION": {
+               "type": "string"
+            },
+            "IS_GENE_PRIMP": {
+               "type": "string"
+            },
+            "IS_IMG_ANNOTATION": {
+               "type": "string"
+            },
+            "IS_PRIMARY": {
+               "type": "string"
+            },
+            "IS_PUBLIC": {
+               "type": "string"
+            },
+            "IS_TEST": {
+               "type": "string"
+            },
+            "ITS_ANALYSIS_PROJECT_ID": {
+               "type": "integer"
+            },
+            "ITS_ANALYSIS_PROJECT_NAME": {
+               "type": "string"
+            },
+            "ITS_ANNOTATION_AT_ID": {
+               "type": "integer"
+            },
+            "ITS_ASSEMBLY_AT_TYPE": {
+               "type": "string"
+            },
+            "ITS_NCBI_TAX_ID": {
+               "type": "integer"
+            },
+            "ITS_PRODUCT_NAME": {
+               "type": "string"
+            },
+            "ITS_VERSION_NUMBER": {
+               "type": "number"
+            },
+            "MOD_BY": {
+               "type": "number"
+            },
+            "MOD_DATE": {
+               "type": "string"
+            },
+            "NCBI_BIOPROJECT_ACCESSION": {
+               "type": "string"
+            },
+            "NCBI_BIOPROJECT_ID": {
+               "type": "integer"
+            },
+            "NCBI_BIOSAMPLE_ACCESSION": {
+               "type": "string"
+            },
+            "NCBI_CLASS": {
+               "type": "string"
+            },
+            "NCBI_FAMILY": {
+               "type": "string"
+            },
+            "NCBI_GENUS": {
+               "type": "string"
+            },
+            "NCBI_KINGDOM": {
+               "type": "string"
+            },
+            "NCBI_ORDER": {
+               "type": "string"
+            },
+            "NCBI_PHYLUM": {
+               "type": "string"
+            },
+            "NCBI_SPECIES": {
+               "type": "string"
+            },
+            "NCBI_SUPERKINGDOM": {
+               "type": "string"
+            },
+            "NCBI_TAX_ID": {
+               "type": "integer"
+            },
+            "ORGANISM_ID": {
+               "type": "integer"
+            },
+            "PHYLOGENY_SUGGESTION": {
+               "type": "string"
+            },
+            "PIPELINE_ANNOTATION_METHOD": {
+               "type": "string"
+            },
+            "PI_ID": {
+               "type": "integer"
+            },
+            "PI_NAME": {
+               "type": "string"
+            },
+            "REFERENCE_AP_ID": {
+               "type": "integer"
+            },
+            "REJECTION_REASONS": {
+               "type": "string"
+            },
+            "REPLACES_AP_ID": {
+               "type": "integer"
+            },
+            "REVIEW_STATUS": {
+               "type": "string"
+            },
+            "SCAFFOLD_COUNT": {
+               "type": "number"
+            },
+            "SCREENING_METHOD": {
+               "type": "string"
+            },
+            "SEQUENCING_DEPTH": {
+               "type": "string"
+            },
+            "SEROVAR": {
+               "type": "string"
+            },
+            "SPECIES": {
+               "type": "string"
+            },
+            "SPECIFIC_ECOSYSTEM": {
+               "type": "string"
+            },
+            "SPECIMEN": {
+               "type": "string"
+            },
+            "STATUS_ID": {
+               "type": "integer"
+            },
+            "STRAIN": {
+               "type": "string"
+            },
+            "STUDY_ID": {
+               "type": "integer"
+            },
+            "SUBMISSION_COMMENTS": {
+               "type": "string"
+            },
+            "SUBMISSION_ID": {
+               "type": "integer"
+            },
+            "SUBMISSION_STATUS_ID": {
+               "type": "integer"
+            },
+            "SUBMISSION_STATUS_NAME": {
+               "type": "string"
+            },
+            "SUBSPECIES": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "ANALYSISPROJECT",
+         "type": "object"
+      },
+      "ANALYSISPROJECTSRARUNV2": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SRA_RUN_ID": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "ANALYSISPROJECTSRARUNV2",
+         "type": "object"
+      },
+      "BIOSAMPLE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "ACTIVE": {
+               "type": "string"
+            },
+            "ADD_DATE": {
+               "type": "string"
+            },
+            "ADMIN_AP_COUNT": {
+               "type": "number"
+            },
+            "ADMIN_DAP_COUNT": {
+               "type": "number"
+            },
+            "ADMIN_SP_COUNT": {
+               "type": "number"
+            },
+            "ALTITUDE": {
+               "type": "number"
+            },
+            "ALTITUDE2": {
+               "type": "number"
+            },
+            "ANNOTATOR_COMMENTS": {
+               "type": "string"
+            },
+            "BICARBONATE_MILLIMOL": {
+               "type": "number"
+            },
+            "BIOGAS_ACETIC_ACID": {
+               "type": "string"
+            },
+            "BIOGAS_AMMONIUM_NH4": {
+               "type": "string"
+            },
+            "BIOGAS_BUTANOL": {
+               "type": "string"
+            },
+            "BIOGAS_BUTYL_ACID": {
+               "type": "string"
+            },
+            "BIOGAS_ETHANOL": {
+               "type": "string"
+            },
+            "BIOGAS_FED_SUBSTRATES": {
+               "type": "string"
+            },
+            "BIOGAS_ISO_BUTYL_ACID": {
+               "type": "string"
+            },
+            "BIOGAS_ISO_VALERIC_ACID": {
+               "type": "string"
+            },
+            "BIOGAS_METHANE_PCT": {
+               "type": "number"
+            },
+            "BIOGAS_METHANOL": {
+               "type": "string"
+            },
+            "BIOGAS_PROPANOL": {
+               "type": "string"
+            },
+            "BIOGAS_PROPIONIC_ACID": {
+               "type": "string"
+            },
+            "BIOGAS_RETENTION_TIME": {
+               "type": "string"
+            },
+            "BIOGAS_TEMPERATURE": {
+               "type": "string"
+            },
+            "BIOGAS_TOTAL_INORGANIC_CARBON": {
+               "type": "string"
+            },
+            "BIOGAS_VALERIC_ACID": {
+               "type": "string"
+            },
+            "BIOGAS_VOA_TIC": {
+               "type": "string"
+            },
+            "BIOGAS_VOLATILE_ORGANIC_ACIDS": {
+               "type": "string"
+            },
+            "BIOGAS_YIELD": {
+               "type": "string"
+            },
+            "BIOSAMPLE_NAME": {
+               "type": "string"
+            },
+            "CHLOROPHYLL_CONCENTRATION": {
+               "type": "string"
+            },
+            "COMMUNITY": {
+               "type": "string"
+            },
+            "CRUISE_LINE_NAME": {
+               "type": "string"
+            },
+            "DEPTH": {
+               "type": "number"
+            },
+            "DEPTH2": {
+               "type": "number"
+            },
+            "DESCRIPTION": {
+               "type": "string"
+            },
+            "ECOSYSTEM": {
+               "type": "string"
+            },
+            "ECOSYSTEM_CATEGORY": {
+               "type": "string"
+            },
+            "ECOSYSTEM_PATH_ID": {
+               "type": "integer"
+            },
+            "ECOSYSTEM_SUBTYPE": {
+               "type": "string"
+            },
+            "ECOSYSTEM_TYPE": {
+               "type": "string"
+            },
+            "ELEVATION": {
+               "type": "number"
+            },
+            "ELEVATION2": {
+               "type": "number"
+            },
+            "ENVO_BIOME_ID": {
+               "type": "string"
+            },
+            "ENVO_FEATURE_ID": {
+               "type": "string"
+            },
+            "ENVO_MATERIAL_ID": {
+               "type": "string"
+            },
+            "ENV_PACKAGE": {
+               "type": "string"
+            },
+            "GEOGRAPHIC_LOCATION": {
+               "type": "string"
+            },
+            "GLOBAL_PACKAGE_ID": {
+               "type": "integer"
+            },
+            "GOLD_ID": {
+               "type": "string"
+            },
+            "GROWTH_CONDITIONS": {
+               "type": "string"
+            },
+            "GROWTH_TEMPERATURE": {
+               "type": "number"
+            },
+            "GROWTH_TEMPERATURE2": {
+               "type": "number"
+            },
+            "H2S_MILLIMOL": {
+               "type": "number"
+            },
+            "H2S_PRESENT": {
+               "type": "string"
+            },
+            "HABITAT": {
+               "type": "string"
+            },
+            "HOST_AGE": {
+               "type": "string"
+            },
+            "HOST_BODY_PRODUCT": {
+               "type": "string"
+            },
+            "HOST_BODY_PRODUCT_ID": {
+               "type": "integer"
+            },
+            "HOST_BODY_SITE": {
+               "type": "string"
+            },
+            "HOST_BODY_SITE_ID": {
+               "type": "integer"
+            },
+            "HOST_BODY_SUBSITE": {
+               "type": "string"
+            },
+            "HOST_BODY_SUBSITE_ID": {
+               "type": "integer"
+            },
+            "HOST_COMMENTS": {
+               "type": "string"
+            },
+            "HOST_GENDER": {
+               "type": "string"
+            },
+            "HOST_HEALTH_CONDITION": {
+               "type": "string"
+            },
+            "HOST_MEDICATION": {
+               "type": "string"
+            },
+            "HOST_NAME": {
+               "type": "string"
+            },
+            "HOST_RACE": {
+               "type": "string"
+            },
+            "HOST_SPECIFICITY": {
+               "type": "string"
+            },
+            "HOST_TAXONOMY_ID": {
+               "type": "integer"
+            },
+            "IDENTIFIER": {
+               "type": "string"
+            },
+            "IRRADIANCE": {
+               "type": "string"
+            },
+            "ISOLATION_PUBLICATION_ID": {
+               "type": "integer"
+            },
+            "ISOLATION_PUBMED_ID": {
+               "type": "integer"
+            },
+            "IS_DRAFT": {
+               "type": "string"
+            },
+            "IS_PUBLIC": {
+               "type": "string"
+            },
+            "IS_TEST": {
+               "type": "string"
+            },
+            "ITS_GROWTH_CONDITIONS": {
+               "type": "string"
+            },
+            "JPA_ENTITY": {
+               "type": "string"
+            },
+            "KNOWN_NON_HOSTS": {
+               "type": "string"
+            },
+            "LATITUDE": {
+               "type": "number"
+            },
+            "LATITUDE_TEST": {
+               "type": "number"
+            },
+            "LAT_LONG_INFERRED": {
+               "type": "string"
+            },
+            "LEGACY_DEPTH_DATA": {
+               "type": "string"
+            },
+            "LOCATION": {
+               "type": "string"
+            },
+            "LONGHURST_CODE": {
+               "type": "string"
+            },
+            "LONGITUDE": {
+               "type": "number"
+            },
+            "LONGITUDE_TEST": {
+               "type": "number"
+            },
+            "METHANE_CONC_MILLIMOL": {
+               "type": "number"
+            },
+            "MOD_BY": {
+               "type": "number"
+            },
+            "MOD_DATE": {
+               "type": "string"
+            },
+            "MRN": {
+               "type": "string"
+            },
+            "NCBI_TAXONOMY_ID": {
+               "type": "integer"
+            },
+            "NCBI_TAXONOMY_NAME": {
+               "type": "string"
+            },
+            "NITRATE_CONCENTRATION": {
+               "type": "string"
+            },
+            "OTHER_ECOSYSTEM": {
+               "type": "string"
+            },
+            "OTHER_HOSTS": {
+               "type": "string"
+            },
+            "OXYGEN_CONCENTRATION": {
+               "type": "string"
+            },
+            "OXYGEN_PRESENCE": {
+               "type": "string"
+            },
+            "PATIENT_VISIT_NUMBER": {
+               "type": "number"
+            },
+            "PH": {
+               "type": "string"
+            },
+            "PH1": {
+               "type": "number"
+            },
+            "PH2": {
+               "type": "number"
+            },
+            "PH_OLD": {
+               "type": "string"
+            },
+            "PRESSURE": {
+               "type": "string"
+            },
+            "PROJECT_OID": {
+               "type": "number"
+            },
+            "PROPORT_ISOLATION": {
+               "type": "string"
+            },
+            "PROPORT_OCEAN": {
+               "type": "string"
+            },
+            "PROPORT_STATION": {
+               "type": "string"
+            },
+            "PROPORT_WOA_DISSOLVED_OXYGEN": {
+               "type": "number"
+            },
+            "PROPORT_WOA_NITRATE": {
+               "type": "number"
+            },
+            "PROPORT_WOA_PHOSPHATE": {
+               "type": "number"
+            },
+            "PROPORT_WOA_SALINITY": {
+               "type": "number"
+            },
+            "PROPORT_WOA_SILICATE": {
+               "type": "number"
+            },
+            "PROPORT_WOA_TEMPERATURE": {
+               "type": "number"
+            },
+            "PUBLIC_AP_COUNT": {
+               "type": "number"
+            },
+            "PUBLIC_DAP_COUNT": {
+               "type": "number"
+            },
+            "PUBLIC_SP_COUNT": {
+               "type": "number"
+            },
+            "REPLICATE_NUMBER": {
+               "type": "number"
+            },
+            "SALINITY": {
+               "type": "string"
+            },
+            "SALINITY_CONCENTRATION": {
+               "type": "string"
+            },
+            "SAMPLE_BIOMASS": {
+               "type": "string"
+            },
+            "SAMPLE_COLLECTION_DAY": {
+               "type": "number"
+            },
+            "SAMPLE_COLLECTION_HOUR": {
+               "type": "number"
+            },
+            "SAMPLE_COLLECTION_MINUTE": {
+               "type": "number"
+            },
+            "SAMPLE_COLLECTION_MONTH": {
+               "type": "number"
+            },
+            "SAMPLE_COLLECTION_SITE": {
+               "type": "string"
+            },
+            "SAMPLE_COLLECTION_YEAR": {
+               "type": "number"
+            },
+            "SAMPLE_CONDUCTIVITY": {
+               "type": "string"
+            },
+            "SAMPLE_CONTACT_EMAIL": {
+               "type": "string"
+            },
+            "SAMPLE_CONTACT_NAME": {
+               "type": "string"
+            },
+            "SAMPLE_ISOLATION_COMMENTS": {
+               "type": "string"
+            },
+            "SAMPLE_ISOLATION_COUNTRY_ID": {
+               "type": "integer"
+            },
+            "SAMPLE_OID": {
+               "type": "number"
+            },
+            "SAMPLE_VOLUME": {
+               "type": "string"
+            },
+            "SAMPLE_WEIGHT_DNA_EXT": {
+               "type": "string"
+            },
+            "SAMPLING_STRATEGY": {
+               "type": "string"
+            },
+            "SOIL_AGROCHEM_ADDITION": {
+               "type": "string"
+            },
+            "SOIL_ALUMINIUM_SAT": {
+               "type": "number"
+            },
+            "SOIL_ALUMINIUM_SAT_METHOD": {
+               "type": "string"
+            },
+            "SOIL_CROP_ROTATION": {
+               "type": "string"
+            },
+            "SOIL_CURR_LAND_USE": {
+               "type": "string"
+            },
+            "SOIL_CURR_VEGETATION": {
+               "type": "string"
+            },
+            "SOIL_CURR_VEGETATION_METHOD": {
+               "type": "string"
+            },
+            "SOIL_DRAINAGE_CLASS": {
+               "type": "string"
+            },
+            "SOIL_EXTREME_EVENT": {
+               "type": "string"
+            },
+            "SOIL_FAO_CLASS": {
+               "type": "string"
+            },
+            "SOIL_FIRE": {
+               "type": "string"
+            },
+            "SOIL_FLOODING": {
+               "type": "string"
+            },
+            "SOIL_HEAVY_METALS": {
+               "type": "number"
+            },
+            "SOIL_HEAVY_METALS_METHOD": {
+               "type": "string"
+            },
+            "SOIL_HORIZON": {
+               "type": "string"
+            },
+            "SOIL_HORIZON_METHOD": {
+               "type": "string"
+            },
+            "SOIL_LINK_ADDIT_ANALYS": {
+               "type": "string"
+            },
+            "SOIL_LINK_CLASS_INFO": {
+               "type": "string"
+            },
+            "SOIL_LINK_CLIMATE_INFO": {
+               "type": "string"
+            },
+            "SOIL_LOCAL_CLASS": {
+               "type": "string"
+            },
+            "SOIL_LOCAL_CLASS_METHOD": {
+               "type": "string"
+            },
+            "SOIL_MEAN_ANNUAL_PRECPT": {
+               "type": "number"
+            },
+            "SOIL_MEAN_ANNUAL_TEMP": {
+               "type": "number"
+            },
+            "SOIL_MEAN_SEASONAL_PRECPT": {
+               "type": "number"
+            },
+            "SOIL_MEAN_SEASONAL_TEMP": {
+               "type": "number"
+            },
+            "SOIL_MICROBIAL_BIOMASS": {
+               "type": "string"
+            },
+            "SOIL_MICROBIAL_BIOMASS_METHOD": {
+               "type": "string"
+            },
+            "SOIL_MISC_PARAM": {
+               "type": "string"
+            },
+            "SOIL_PACKAGE_ID": {
+               "type": "integer"
+            },
+            "SOIL_PH_METHOD": {
+               "type": "string"
+            },
+            "SOIL_POOL_DNA_EXTRACTS": {
+               "type": "string"
+            },
+            "SOIL_PREV_LAND_USE": {
+               "type": "string"
+            },
+            "SOIL_PREV_LAND_USE_METH": {
+               "type": "string"
+            },
+            "SOIL_PROFILE_POSITION": {
+               "type": "string"
+            },
+            "SOIL_SALINITY_METHOD": {
+               "type": "string"
+            },
+            "SOIL_SIEVING": {
+               "type": "string"
+            },
+            "SOIL_SLOPE_ASPECT": {
+               "type": "number"
+            },
+            "SOIL_SLOPE_GRADIENT": {
+               "type": "number"
+            },
+            "SOIL_STORAGE_CONDITION": {
+               "type": "string"
+            },
+            "SOIL_TEXTURE": {
+               "type": "string"
+            },
+            "SOIL_TEXTURE_METHOD": {
+               "type": "string"
+            },
+            "SOIL_TILLAGE": {
+               "type": "string"
+            },
+            "SOIL_TOT_N_METHOD": {
+               "type": "string"
+            },
+            "SOIL_TOT_ORG_C_METHOD": {
+               "type": "string"
+            },
+            "SOIL_TYPE": {
+               "type": "string"
+            },
+            "SOIL_TYPE_METHOD": {
+               "type": "string"
+            },
+            "SOIL_WATER_CONTENT": {
+               "type": "string"
+            },
+            "SOIL_WATER_CONTENT_SOIL_METH": {
+               "type": "string"
+            },
+            "SOLUBLE_IRON_MICROMOL": {
+               "type": "number"
+            },
+            "SPECIFIC_ECOSYSTEM": {
+               "type": "string"
+            },
+            "SPECIMEN": {
+               "type": "string"
+            },
+            "SUBMITTER_ID": {
+               "type": "integer"
+            },
+            "SUBMIT_BIOSAMPLE_NAME": {
+               "type": "string"
+            },
+            "SUBSURFACE_DEPTH": {
+               "type": "number"
+            },
+            "SUBSURFACE_DEPTH2": {
+               "type": "number"
+            },
+            "TEST_PACKAGE_ID": {
+               "type": "integer"
+            },
+            "TOT_NITROGEN": {
+               "type": "string"
+            },
+            "TOT_ORG_CARBON": {
+               "type": "number"
+            },
+            "WATER_ALKALINITY": {
+               "type": "number"
+            },
+            "WATER_ALKALINITY_METHOD": {
+               "type": "string"
+            },
+            "WATER_ALKYL_DIETHERS": {
+               "type": "number"
+            },
+            "WATER_AMINOPEPT_ACT": {
+               "type": "number"
+            },
+            "WATER_AMMONIUM": {
+               "type": "number"
+            },
+            "WATER_ATMOSPHERIC_DATA": {
+               "type": "string"
+            },
+            "WATER_BACTERIAL_CARBON_PROD": {
+               "type": "number"
+            },
+            "WATER_BACTERIAL_PROD": {
+               "type": "number"
+            },
+            "WATER_BACTERIAL_RESP": {
+               "type": "number"
+            },
+            "WATER_BISHOMOHOPANOL": {
+               "type": "string"
+            },
+            "WATER_BROMIDE": {
+               "type": "number"
+            },
+            "WATER_CALCIUM": {
+               "type": "string"
+            },
+            "WATER_CARBON_NITROG_RATIO": {
+               "type": "string"
+            },
+            "WATER_CHEM_ADMINISTRATION": {
+               "type": "string"
+            },
+            "WATER_CHLORIDE": {
+               "type": "number"
+            },
+            "WATER_CURRENT": {
+               "type": "string"
+            },
+            "WATER_DENSITY": {
+               "type": "number"
+            },
+            "WATER_DIETHER_LIPIDS": {
+               "type": "number"
+            },
+            "WATER_DISS_CARBON_DIOXIDE": {
+               "type": "number"
+            },
+            "WATER_DISS_HYDROGEN": {
+               "type": "number"
+            },
+            "WATER_DISS_INORG_CARBON": {
+               "type": "number"
+            },
+            "WATER_DISS_INORG_NITRO": {
+               "type": "number"
+            },
+            "WATER_DISS_INORG_PHOSPHORUS": {
+               "type": "number"
+            },
+            "WATER_DISS_ORG_CARBON": {
+               "type": "number"
+            },
+            "WATER_DISS_ORG_NITROGEN": {
+               "type": "number"
+            },
+            "WATER_DOWNWARD_PAR": {
+               "type": "number"
+            },
+            "WATER_FLUORESCENCE": {
+               "type": "number"
+            },
+            "WATER_GLUCOSIDASE_ACTIVITY": {
+               "type": "number"
+            },
+            "WATER_LIGHT_INTENSITY": {
+               "type": "number"
+            },
+            "WATER_MAGNESIUM": {
+               "type": "string"
+            },
+            "WATER_MEAN_FRICT_VEL": {
+               "type": "number"
+            },
+            "WATER_MEAN_PEAK_FRICT_VEL": {
+               "type": "number"
+            },
+            "WATER_MISC_PARAMETER": {
+               "type": "string"
+            },
+            "WATER_NITRITE": {
+               "type": "number"
+            },
+            "WATER_N_ALKANES": {
+               "type": "number"
+            },
+            "WATER_ORGANISM_COUNT": {
+               "type": "number"
+            },
+            "WATER_ORG_MATTER": {
+               "type": "number"
+            },
+            "WATER_ORG_NITROGEN": {
+               "type": "number"
+            },
+            "WATER_OXY_STAT_SAMPLE": {
+               "type": "string"
+            },
+            "WATER_PACKAGE_ID": {
+               "type": "integer"
+            },
+            "WATER_PART_ORG_CARBON": {
+               "type": "number"
+            },
+            "WATER_PART_ORG_NITROGEN": {
+               "type": "number"
+            },
+            "WATER_PERTURBATION": {
+               "type": "string"
+            },
+            "WATER_PETROLEUM_HYDROCARBON": {
+               "type": "number"
+            },
+            "WATER_PHAEOPIGMENTS": {
+               "type": "number"
+            },
+            "WATER_PHOSPLIPID_FATT_ACID": {
+               "type": "string"
+            },
+            "WATER_PHOTON_FLUX": {
+               "type": "number"
+            },
+            "WATER_POTASSIUM": {
+               "type": "number"
+            },
+            "WATER_PRIMARY_PROD": {
+               "type": "number"
+            },
+            "WATER_REDOX_POTENTIAL": {
+               "type": "number"
+            },
+            "WATER_SAMP_STORE_DUR": {
+               "type": "string"
+            },
+            "WATER_SAMP_STORE_LOC": {
+               "type": "string"
+            },
+            "WATER_SAMP_STORE_TEMP": {
+               "type": "number"
+            },
+            "WATER_SIZE_FRAC_LOW": {
+               "type": "number"
+            },
+            "WATER_SIZE_FRAC_UP": {
+               "type": "number"
+            },
+            "WATER_SODIUM": {
+               "type": "number"
+            },
+            "WATER_SOLUBLE_REACT_PHOSP": {
+               "type": "number"
+            },
+            "WATER_SULFATE": {
+               "type": "string"
+            },
+            "WATER_SULFIDE": {
+               "type": "string"
+            },
+            "WATER_SUSPEND_PART_MATTER": {
+               "type": "number"
+            },
+            "WATER_TIDAL_STAGE": {
+               "type": "string"
+            },
+            "WATER_TOT_DEPTH_WATER_COL": {
+               "type": "number"
+            },
+            "WATER_TOT_DISS_NITRO": {
+               "type": "number"
+            },
+            "WATER_TOT_INORG_NITRO": {
+               "type": "number"
+            },
+            "WATER_TOT_PART_CARBON": {
+               "type": "string"
+            },
+            "WATER_TOT_PHOSPHORUS": {
+               "type": "number"
+            },
+            "WATER_TURBIDITY": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "BIOSAMPLE",
+         "type": "object"
+      },
+      "CONTACT": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "ADDRESS": {
+               "type": "string"
+            },
+            "ADD_DATE": {
+               "type": "string"
+            },
+            "CALIBAN_ID": {
+               "type": "integer"
+            },
+            "CALIBAN_USER_NAME": {
+               "type": "string"
+            },
+            "CITY": {
+               "type": "string"
+            },
+            "COMMENTS": {
+               "type": "string"
+            },
+            "COUNTRY": {
+               "type": "string"
+            },
+            "DEPARTMENT": {
+               "type": "string"
+            },
+            "EMAIL": {
+               "type": "string"
+            },
+            "GEBA_ORGANISM_AVAIL_COUNT": {
+               "type": "number"
+            },
+            "GEBA_REVIEWER": {
+               "type": "string"
+            },
+            "JGI_USER": {
+               "type": "string"
+            },
+            "MASTER_CONTACT_ID": {
+               "type": "integer"
+            },
+            "NAME": {
+               "type": "string"
+            },
+            "ORACLE_USER_NAME": {
+               "type": "string"
+            },
+            "ORGANIZATION": {
+               "type": "string"
+            },
+            "PASSWORD": {
+               "type": "string"
+            },
+            "PHONE": {
+               "type": "string"
+            },
+            "STATE": {
+               "type": "string"
+            },
+            "TITLE": {
+               "type": "string"
+            },
+            "URL": {
+               "type": "string"
+            },
+            "USERNAME": {
+               "type": "string"
+            },
+            "USER_ROLE": {
+               "type": "string"
+            },
+            "X_IMG_CONTACT_ID": {
+               "type": "integer"
+            },
+            "X_IMG_EDITING_LEVEL": {
+               "type": "string"
+            },
+            "X_IMG_EDITOR": {
+               "type": "string"
+            },
+            "X_IMG_GROUP": {
+               "type": "number"
+            },
+            "X_SUPER_USER": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CONTACT",
+         "type": "object"
+      },
+      "CVAPCOMPLETION": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVAPCOMPLETION",
+         "type": "object"
+      },
+      "CVAPREVIEWSTATUS": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVAPREVIEWSTATUS",
+         "type": "object"
+      },
+      "CVAPSTATUS": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVAPSTATUS",
+         "type": "object"
+      },
+      "CVAPTYPE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVAPTYPE",
+         "type": "object"
+      },
+      "CVAVAILABILITY": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVAVAILABILITY",
+         "type": "object"
+      },
+      "CVBIOME": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVBIOME",
+         "type": "object"
+      },
+      "CVBIOSAFETY": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVBIOSAFETY",
+         "type": "object"
+      },
+      "CVBIOTICRELATIONSHIP": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVBIOTICRELATIONSHIP",
+         "type": "object"
+      },
+      "CVBODYPRODUCT": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVBODYPRODUCT",
+         "type": "object"
+      },
+      "CVBODYSITE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVBODYSITE",
+         "type": "object"
+      },
+      "CVBODYSUBSITE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVBODYSUBSITE",
+         "type": "object"
+      },
+      "CVCELLARRANGEMENT": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVCELLARRANGEMENT",
+         "type": "object"
+      },
+      "CVCELLSHAPE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVCELLSHAPE",
+         "type": "object"
+      },
+      "CVCOLOR": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVCOLOR",
+         "type": "object"
+      },
+      "CVCOUNTRY": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVCOUNTRY",
+         "type": "object"
+      },
+      "CVCULTURETYPE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVCULTURETYPE",
+         "type": "object"
+      },
+      "CVCURRENTLANDUSE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVCURRENTLANDUSE",
+         "type": "object"
+      },
+      "CVDATAVALIDITYTYPE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVDATAVALIDITYTYPE",
+         "type": "object"
+      },
+      "CVDISEASE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVDISEASE",
+         "type": "object"
+      },
+      "CVDOMAIN": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVDOMAIN",
+         "type": "object"
+      },
+      "CVDRAINAGECLASS": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVDRAINAGECLASS",
+         "type": "object"
+      },
+      "CVENERGYSOURCE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVENERGYSOURCE",
+         "type": "object"
+      },
+      "CVENVPACKAGE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVENVPACKAGE",
+         "type": "object"
+      },
+      "CVFASTADOWNLOADSTATUS": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVFASTADOWNLOADSTATUS",
+         "type": "object"
+      },
+      "CVFINISHINGGOAL": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVFINISHINGGOAL",
+         "type": "object"
+      },
+      "CVGEBAPRIORITYSTATUS": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVGEBAPRIORITYSTATUS",
+         "type": "object"
+      },
+      "CVGEBAREVIEWSTATUS": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVGEBAREVIEWSTATUS",
+         "type": "object"
+      },
+      "CVGEBASAMPLETYPE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVGEBASAMPLETYPE",
+         "type": "object"
+      },
+      "CVGEBATYPES": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVGEBATYPES",
+         "type": "object"
+      },
+      "CVGRAMSTAIN": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVGRAMSTAIN",
+         "type": "object"
+      },
+      "CVHABITAT": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVHABITAT",
+         "type": "object"
+      },
+      "CVHORIZON": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVHORIZON",
+         "type": "object"
+      },
+      "CVHOSTGENDER": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVHOSTGENDER",
+         "type": "object"
+      },
+      "CVIMGUSE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVIMGUSE",
+         "type": "object"
+      },
+      "CVIRRADIANCE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVIRRADIANCE",
+         "type": "object"
+      },
+      "CVLATLONG": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVLATLONG",
+         "type": "object"
+      },
+      "CVMETABOLISM": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVMETABOLISM",
+         "type": "object"
+      },
+      "CVMODEL": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVMODEL",
+         "type": "object"
+      },
+      "CVMONTH": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVMONTH",
+         "type": "object"
+      },
+      "CVMOTILITY": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVMOTILITY",
+         "type": "object"
+      },
+      "CVNUCLEICACID": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVNUCLEICACID",
+         "type": "object"
+      },
+      "CVORGANISMTYPE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVORGANISMTYPE",
+         "type": "object"
+      },
+      "CVOXYGEN": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVOXYGEN",
+         "type": "object"
+      },
+      "CVOXYGENPRESENCE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVOXYGENPRESENCE",
+         "type": "object"
+      },
+      "CVOXYGENSTATSAMPLE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVOXYGENSTATSAMPLE",
+         "type": "object"
+      },
+      "CVPACKAGES": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVPACKAGES",
+         "type": "object"
+      },
+      "CVPHENOTYPE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVPHENOTYPE",
+         "type": "object"
+      },
+      "CVPHYLOGENY": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVPHYLOGENY",
+         "type": "object"
+      },
+      "CVPROFILEPOSITION": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVPROFILEPOSITION",
+         "type": "object"
+      },
+      "CVPROJECTSTATUS": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVPROJECTSTATUS",
+         "type": "object"
+      },
+      "CVPROJECTSUBTYPE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVPROJECTSUBTYPE",
+         "type": "object"
+      },
+      "CVPROJECTTYPE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVPROJECTTYPE",
+         "type": "object"
+      },
+      "CVRELEVANCE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVRELEVANCE",
+         "type": "object"
+      },
+      "CVROLES": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVROLES",
+         "type": "object"
+      },
+      "CVSALINITY": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVSALINITY",
+         "type": "object"
+      },
+      "CVSEQQUALITY": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVSEQQUALITY",
+         "type": "object"
+      },
+      "CVSEQSTATUS": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVSEQSTATUS",
+         "type": "object"
+      },
+      "CVSOILFAOCLASS": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVSOILFAOCLASS",
+         "type": "object"
+      },
+      "CVSPECIMEN": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVSPECIMEN",
+         "type": "object"
+      },
+      "CVSPORULATION": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVSPORULATION",
+         "type": "object"
+      },
+      "CVSTUDYTYPE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVSTUDYTYPE",
+         "type": "object"
+      },
+      "CVTEMPRANGE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVTEMPRANGE",
+         "type": "object"
+      },
+      "CVTIDALSTAGE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVTIDALSTAGE",
+         "type": "object"
+      },
+      "CVTILLAGE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVTILLAGE",
+         "type": "object"
+      },
+      "CVUNCULTUREDTYPE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVUNCULTUREDTYPE",
+         "type": "object"
+      },
+      "CVYESNO": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVYESNO",
+         "type": "object"
+      },
+      "CVYESNOONLY": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCE": {
+               "type": "number"
+            },
+            "TERM": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "CVYESNOONLY",
+         "type": "object"
+      },
+      "ENVOLABELS": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "ENVO_LABEL": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "ENVOLABELS",
+         "type": "object"
+      },
+      "INSTITUTION": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "COUNTRY": {
+               "type": "string"
+            },
+            "DEPARTMENT": {
+               "type": "string"
+            },
+            "IS_CURATED": {
+               "type": "string"
+            },
+            "LABORATORY": {
+               "type": "string"
+            },
+            "NAME": {
+               "type": "string"
+            },
+            "ORGANIZATION": {
+               "type": "string"
+            },
+            "URL": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "INSTITUTION",
+         "type": "object"
+      },
+      "ORGANISMBIOTICREL": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "BIOTIC_RELATIONSHIP_ID": {
+               "type": "integer"
+            }
+         },
+         "required": [],
+         "title": "ORGANISMBIOTICREL",
+         "type": "object"
+      },
+      "ORGANISMBODYPRODUCT": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "BODY_PRODUCT_ID": {
+               "type": "integer"
+            }
+         },
+         "required": [],
+         "title": "ORGANISMBODYPRODUCT",
+         "type": "object"
+      },
+      "ORGANISMCELLARRANGEMENT": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "CELL_ARRANGEMENT_ID": {
+               "type": "integer"
+            }
+         },
+         "required": [],
+         "title": "ORGANISMCELLARRANGEMENT",
+         "type": "object"
+      },
+      "ORGANISMDISEASE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "DISEASE_ID": {
+               "type": "integer"
+            }
+         },
+         "required": [],
+         "title": "ORGANISMDISEASE",
+         "type": "object"
+      },
+      "ORGANISMENERGYSOURCE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "ENERGY_SOURCE_ID": {
+               "type": "integer"
+            }
+         },
+         "required": [],
+         "title": "ORGANISMENERGYSOURCE",
+         "type": "object"
+      },
+      "ORGANISMHABITAT": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "HABITAT_ID": {
+               "type": "integer"
+            }
+         },
+         "required": [],
+         "title": "ORGANISMHABITAT",
+         "type": "object"
+      },
+      "ORGANISMMETABOLISM": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "METABOLISM_ID": {
+               "type": "integer"
+            }
+         },
+         "required": [],
+         "title": "ORGANISMMETABOLISM",
+         "type": "object"
+      },
+      "ORGANISMPHENOTYPE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "PHENOTYPE_ID": {
+               "type": "integer"
+            }
+         },
+         "required": [],
+         "title": "ORGANISMPHENOTYPE",
+         "type": "object"
+      },
+      "ORGANISMV2": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "ACTIVE": {
+               "type": "string"
+            },
+            "ADD_DATE": {
+               "type": "string"
+            },
+            "ADMIN_AP_COUNT": {
+               "type": "number"
+            },
+            "ADMIN_SP_COUNT": {
+               "type": "number"
+            },
+            "ALTITUDE": {
+               "type": "number"
+            },
+            "ALTITUDE2": {
+               "type": "number"
+            },
+            "ANNOTATOR_COMMENTS": {
+               "type": "string"
+            },
+            "BICARBONATE_MILLIMOL": {
+               "type": "number"
+            },
+            "BIOSAFETY_LEVEL": {
+               "type": "string"
+            },
+            "BIOSAMPLE_ID": {
+               "type": "integer"
+            },
+            "CARBON_SOURCE": {
+               "type": "string"
+            },
+            "CELL_DIAMETER": {
+               "type": "string"
+            },
+            "CELL_LENGTH": {
+               "type": "string"
+            },
+            "CELL_SHAPE": {
+               "type": "string"
+            },
+            "CHLOROPHYLL_CONCENTRATION": {
+               "type": "string"
+            },
+            "CLADE": {
+               "type": "string"
+            },
+            "COLOR": {
+               "type": "string"
+            },
+            "COMMENTS": {
+               "type": "string"
+            },
+            "COMMERCIAL": {
+               "type": "string"
+            },
+            "COMMERCIAL_COMMENTS": {
+               "type": "string"
+            },
+            "COMMON_NAME": {
+               "type": "string"
+            },
+            "CRUISE_LINE_NAME": {
+               "type": "string"
+            },
+            "CULTURED": {
+               "type": "string"
+            },
+            "CULTURE_COLLECTION_ID": {
+               "type": "string"
+            },
+            "CULTURE_TYPE": {
+               "type": "string"
+            },
+            "DEPTH": {
+               "type": "number"
+            },
+            "DEPTH2": {
+               "type": "number"
+            },
+            "DOMAIN": {
+               "type": "string"
+            },
+            "ECOSYSTEM": {
+               "type": "string"
+            },
+            "ECOSYSTEM_CATEGORY": {
+               "type": "string"
+            },
+            "ECOSYSTEM_PATH_ID": {
+               "type": "integer"
+            },
+            "ECOSYSTEM_SUBTYPE": {
+               "type": "string"
+            },
+            "ECOSYSTEM_TYPE": {
+               "type": "string"
+            },
+            "ECOTYPE": {
+               "type": "string"
+            },
+            "ELEVATION": {
+               "type": "number"
+            },
+            "ELEVATION2": {
+               "type": "number"
+            },
+            "ENVO_BIOME_ID": {
+               "type": "string"
+            },
+            "ENVO_FEATURE_ID": {
+               "type": "string"
+            },
+            "ENVO_MATERIAL_ID": {
+               "type": "string"
+            },
+            "ENV_PACKAGE": {
+               "type": "string"
+            },
+            "EXEMPLAR_DOI": {
+               "type": "string"
+            },
+            "EXEMPLAR_NAME": {
+               "type": "string"
+            },
+            "GENBANK_16S_ID": {
+               "type": "string"
+            },
+            "GENUS": {
+               "type": "string"
+            },
+            "GENUS_SYNONYMS": {
+               "type": "string"
+            },
+            "GEOGRAPHIC_LOCATION": {
+               "type": "string"
+            },
+            "GOLD_CLASS": {
+               "type": "string"
+            },
+            "GOLD_FAMILY": {
+               "type": "string"
+            },
+            "GOLD_ID": {
+               "type": "string"
+            },
+            "GOLD_ORDER": {
+               "type": "string"
+            },
+            "GOLD_PHYLOGENY": {
+               "type": "string"
+            },
+            "GRAM_STAIN": {
+               "type": "string"
+            },
+            "GROWTH_CONDITIONS": {
+               "type": "string"
+            },
+            "GROWTH_TEMPERATURE": {
+               "type": "number"
+            },
+            "GROWTH_TEMPERATURE2": {
+               "type": "number"
+            },
+            "H2S_MILLIMOL": {
+               "type": "number"
+            },
+            "H2S_PRESENT": {
+               "type": "string"
+            },
+            "HOST_AGE": {
+               "type": "string"
+            },
+            "HOST_BODY_PRODUCT": {
+               "type": "string"
+            },
+            "HOST_BODY_PRODUCT_ID": {
+               "type": "integer"
+            },
+            "HOST_BODY_SITE": {
+               "type": "string"
+            },
+            "HOST_BODY_SITE_ID": {
+               "type": "integer"
+            },
+            "HOST_BODY_SUBSITE": {
+               "type": "string"
+            },
+            "HOST_BODY_SUBSITE_ID": {
+               "type": "integer"
+            },
+            "HOST_COMMENTS": {
+               "type": "string"
+            },
+            "HOST_GENDER": {
+               "type": "string"
+            },
+            "HOST_HEALTH_CONDITION": {
+               "type": "string"
+            },
+            "HOST_MEDICATION": {
+               "type": "string"
+            },
+            "HOST_NAME": {
+               "type": "string"
+            },
+            "HOST_RACE": {
+               "type": "string"
+            },
+            "HOST_SPECIFICITY": {
+               "type": "string"
+            },
+            "HOST_TAXONOMY_ID": {
+               "type": "integer"
+            },
+            "IMAGE_ID": {
+               "type": "integer"
+            },
+            "IMG_BREADTH_CALC": {
+               "type": "number"
+            },
+            "IRRADIANCE": {
+               "type": "string"
+            },
+            "ISOLATION_PUBLICATION_ID": {
+               "type": "integer"
+            },
+            "ISOLATION_PUBMED_ID": {
+               "type": "integer"
+            },
+            "IS_DRAFT": {
+               "type": "string"
+            },
+            "IS_PUBLIC": {
+               "type": "string"
+            },
+            "IS_TEST": {
+               "type": "string"
+            },
+            "IS_VIROCELL": {
+               "type": "string"
+            },
+            "ITS_GROWTH_CONDITIONS": {
+               "type": "string"
+            },
+            "KNOWN_NON_HOSTS": {
+               "type": "string"
+            },
+            "LATITUDE": {
+               "type": "number"
+            },
+            "LATITUDE_TEST": {
+               "type": "number"
+            },
+            "LAT_LONG_INFERRED": {
+               "type": "string"
+            },
+            "LEGACY_DEPTH_DATA": {
+               "type": "string"
+            },
+            "LONGHURST_CODE": {
+               "type": "string"
+            },
+            "LONGITUDE": {
+               "type": "number"
+            },
+            "LONGITUDE_TEST": {
+               "type": "number"
+            },
+            "MASTER_GROUP_ID": {
+               "type": "integer"
+            },
+            "METHANE_CONC_MILLIMOL": {
+               "type": "number"
+            },
+            "MOD_BY": {
+               "type": "number"
+            },
+            "MOD_DATE": {
+               "type": "string"
+            },
+            "MOTILITY": {
+               "type": "string"
+            },
+            "MRN": {
+               "type": "string"
+            },
+            "NCBI_BIOSAMPLE_ID": {
+               "type": "string"
+            },
+            "NCBI_CLASS": {
+               "type": "string"
+            },
+            "NCBI_FAMILY": {
+               "type": "string"
+            },
+            "NCBI_GENUS": {
+               "type": "string"
+            },
+            "NCBI_KINGDOM": {
+               "type": "string"
+            },
+            "NCBI_ORDER": {
+               "type": "string"
+            },
+            "NCBI_PHYLUM": {
+               "type": "string"
+            },
+            "NCBI_SPECIES": {
+               "type": "string"
+            },
+            "NCBI_SUPERKINGDOM": {
+               "type": "string"
+            },
+            "NCBI_TAXONOMY_ID": {
+               "type": "integer"
+            },
+            "NCBI_TAXONOMY_NAME": {
+               "type": "string"
+            },
+            "NITRATE_CONCENTRATION": {
+               "type": "string"
+            },
+            "ORGANISM_NAME": {
+               "type": "string"
+            },
+            "ORGANISM_TYPE": {
+               "type": "string"
+            },
+            "OTHER_ECOSYSTEM": {
+               "type": "string"
+            },
+            "OTHER_HOSTS": {
+               "type": "string"
+            },
+            "OTHER_NAMES": {
+               "type": "string"
+            },
+            "OXYGEN_CONCENTRATION": {
+               "type": "string"
+            },
+            "OXYGEN_REQUIREMENT": {
+               "type": "string"
+            },
+            "PATIENT_VISIT_NUMBER": {
+               "type": "number"
+            },
+            "PH": {
+               "type": "string"
+            },
+            "PH1": {
+               "type": "number"
+            },
+            "PH2": {
+               "type": "number"
+            },
+            "PH_OLD": {
+               "type": "string"
+            },
+            "PRESSURE": {
+               "type": "string"
+            },
+            "PROJECT_OID": {
+               "type": "number"
+            },
+            "PROPORT_ISOLATION": {
+               "type": "string"
+            },
+            "PROPORT_OCEAN": {
+               "type": "string"
+            },
+            "PROPORT_STATION": {
+               "type": "string"
+            },
+            "PROPORT_WOA_DISSOLVED_OXYGEN": {
+               "type": "number"
+            },
+            "PROPORT_WOA_NITRATE": {
+               "type": "number"
+            },
+            "PROPORT_WOA_PHOSPHATE": {
+               "type": "number"
+            },
+            "PROPORT_WOA_SALINITY": {
+               "type": "number"
+            },
+            "PROPORT_WOA_SILICATE": {
+               "type": "number"
+            },
+            "PROPORT_WOA_TEMPERATURE": {
+               "type": "number"
+            },
+            "PUBLIC_AP_COUNT": {
+               "type": "number"
+            },
+            "PUBLIC_SP_COUNT": {
+               "type": "number"
+            },
+            "REPLICATE_NUMBER": {
+               "type": "number"
+            },
+            "SALINITY": {
+               "type": "string"
+            },
+            "SALINITY_CONCENTRATION": {
+               "type": "string"
+            },
+            "SAMPLE_BIOMASS": {
+               "type": "string"
+            },
+            "SAMPLE_COLLECTION_DAY": {
+               "type": "number"
+            },
+            "SAMPLE_COLLECTION_HOUR": {
+               "type": "number"
+            },
+            "SAMPLE_COLLECTION_MINUTE": {
+               "type": "number"
+            },
+            "SAMPLE_COLLECTION_MONTH": {
+               "type": "number"
+            },
+            "SAMPLE_COLLECTION_SITE": {
+               "type": "string"
+            },
+            "SAMPLE_COLLECTION_TEMPERATURE": {
+               "type": "number"
+            },
+            "SAMPLE_COLLECTION_TEMPERATURE2": {
+               "type": "number"
+            },
+            "SAMPLE_COLLECTION_YEAR": {
+               "type": "number"
+            },
+            "SAMPLE_CONDUCTIVITY": {
+               "type": "string"
+            },
+            "SAMPLE_CONTACT_EMAIL": {
+               "type": "string"
+            },
+            "SAMPLE_CONTACT_NAME": {
+               "type": "string"
+            },
+            "SAMPLE_ISOLATION_COMMENTS": {
+               "type": "string"
+            },
+            "SAMPLE_ISOLATION_COUNTRY_ID": {
+               "type": "integer"
+            },
+            "SAMPLE_OID": {
+               "type": "number"
+            },
+            "SAMPLE_VOLUME": {
+               "type": "string"
+            },
+            "SAMPLE_WEIGHT_DNA_EXT": {
+               "type": "string"
+            },
+            "SAMPLING_STRATEGY": {
+               "type": "string"
+            },
+            "SEROVAR": {
+               "type": "string"
+            },
+            "SOIL_AGROCHEM_ADDITION": {
+               "type": "string"
+            },
+            "SOIL_ALUMINIUM_SAT": {
+               "type": "number"
+            },
+            "SOIL_ALUMINIUM_SAT_METHOD": {
+               "type": "string"
+            },
+            "SOIL_CROP_ROTATION": {
+               "type": "string"
+            },
+            "SOIL_CURR_LAND_USE": {
+               "type": "string"
+            },
+            "SOIL_CURR_VEGETATION": {
+               "type": "string"
+            },
+            "SOIL_CURR_VEGETATION_METHOD": {
+               "type": "string"
+            },
+            "SOIL_DRAINAGE_CLASS": {
+               "type": "string"
+            },
+            "SOIL_EXTREME_EVENT": {
+               "type": "string"
+            },
+            "SOIL_FAO_CLASS": {
+               "type": "string"
+            },
+            "SOIL_FIRE": {
+               "type": "string"
+            },
+            "SOIL_FLOODING": {
+               "type": "string"
+            },
+            "SOIL_HEAVY_METALS": {
+               "type": "number"
+            },
+            "SOIL_HEAVY_METALS_METHOD": {
+               "type": "string"
+            },
+            "SOIL_HORIZON": {
+               "type": "string"
+            },
+            "SOIL_HORIZON_METHOD": {
+               "type": "string"
+            },
+            "SOIL_LINK_ADDIT_ANALYS": {
+               "type": "string"
+            },
+            "SOIL_LINK_CLASS_INFO": {
+               "type": "string"
+            },
+            "SOIL_LINK_CLIMATE_INFO": {
+               "type": "string"
+            },
+            "SOIL_LOCAL_CLASS": {
+               "type": "string"
+            },
+            "SOIL_LOCAL_CLASS_METHOD": {
+               "type": "string"
+            },
+            "SOIL_MEAN_ANNUAL_PRECPT": {
+               "type": "number"
+            },
+            "SOIL_MEAN_ANNUAL_TEMP": {
+               "type": "number"
+            },
+            "SOIL_MEAN_SEASONAL_PRECPT": {
+               "type": "number"
+            },
+            "SOIL_MEAN_SEASONAL_TEMP": {
+               "type": "number"
+            },
+            "SOIL_MICROBIAL_BIOMASS": {
+               "type": "string"
+            },
+            "SOIL_MICROBIAL_BIOMASS_METHOD": {
+               "type": "string"
+            },
+            "SOIL_MISC_PARAM": {
+               "type": "string"
+            },
+            "SOIL_PACKAGE_ID": {
+               "type": "integer"
+            },
+            "SOIL_PH_METHOD": {
+               "type": "string"
+            },
+            "SOIL_POOL_DNA_EXTRACTS": {
+               "type": "string"
+            },
+            "SOIL_PREV_LAND_USE": {
+               "type": "string"
+            },
+            "SOIL_PREV_LAND_USE_METH": {
+               "type": "string"
+            },
+            "SOIL_PROFILE_POSITION": {
+               "type": "string"
+            },
+            "SOIL_SALINITY_METHOD": {
+               "type": "string"
+            },
+            "SOIL_SAMPLE_BIOMASS": {
+               "type": "number"
+            },
+            "SOIL_SAMPLE_VOLUME": {
+               "type": "number"
+            },
+            "SOIL_SIEVING": {
+               "type": "string"
+            },
+            "SOIL_SLOPE_ASPECT": {
+               "type": "number"
+            },
+            "SOIL_SLOPE_GRADIENT": {
+               "type": "number"
+            },
+            "SOIL_STORAGE_CONDITION": {
+               "type": "string"
+            },
+            "SOIL_TEXTURE": {
+               "type": "string"
+            },
+            "SOIL_TEXTURE_METHOD": {
+               "type": "string"
+            },
+            "SOIL_TILLAGE": {
+               "type": "string"
+            },
+            "SOIL_TOT_N_METHOD": {
+               "type": "string"
+            },
+            "SOIL_TOT_ORG_C_METHOD": {
+               "type": "string"
+            },
+            "SOIL_TYPE": {
+               "type": "string"
+            },
+            "SOIL_TYPE_METHOD": {
+               "type": "string"
+            },
+            "SOIL_WATER_CONTENT": {
+               "type": "string"
+            },
+            "SOIL_WATER_CONTENT_SOIL_METH": {
+               "type": "string"
+            },
+            "SOLUBLE_IRON_MICROMOL": {
+               "type": "number"
+            },
+            "SOURCE": {
+               "type": "string"
+            },
+            "SPECIES": {
+               "type": "string"
+            },
+            "SPECIES_SYNONYMS": {
+               "type": "string"
+            },
+            "SPECIFIC_ECOSYSTEM": {
+               "type": "string"
+            },
+            "SPECIMEN": {
+               "type": "string"
+            },
+            "SPORULATION": {
+               "type": "string"
+            },
+            "STRAIN": {
+               "type": "string"
+            },
+            "STRAININFO_GROUP_ID": {
+               "type": "integer"
+            },
+            "STRAIN_INFO_ID": {
+               "type": "integer"
+            },
+            "SUBMITTER_ID": {
+               "type": "integer"
+            },
+            "SUBMIT_BIOSAMPLE_NAME": {
+               "type": "string"
+            },
+            "SUBMIT_ORGANISM_NAME": {
+               "type": "string"
+            },
+            "SUBSPECIES": {
+               "type": "string"
+            },
+            "SUBSURFACE_DEPTH": {
+               "type": "number"
+            },
+            "SUBSURFACE_DEPTH1": {
+               "type": "number"
+            },
+            "SUBSURFACE_DEPTH2": {
+               "type": "number"
+            },
+            "SYMBIONT_NAME": {
+               "type": "string"
+            },
+            "SYMBIONT_TAXON_ID": {
+               "type": "integer"
+            },
+            "SYMBIOTIC_PHYSICAL_INTERACTION": {
+               "type": "string"
+            },
+            "SYMBIOTIC_RELATIONSHIP": {
+               "type": "string"
+            },
+            "SYNONYM_GROUP_ID": {
+               "type": "integer"
+            },
+            "TAXONOMY_STATUS": {
+               "type": "string"
+            },
+            "TAXON_DOI": {
+               "type": "string"
+            },
+            "TEMPERATURE_RANGE": {
+               "type": "string"
+            },
+            "TOT_NITROGEN": {
+               "type": "string"
+            },
+            "TOT_ORG_CARBON": {
+               "type": "number"
+            },
+            "TYPE_STRAIN": {
+               "type": "string"
+            },
+            "UNCULTURED_TYPE": {
+               "type": "string"
+            },
+            "VIRAL_GROUP": {
+               "type": "string"
+            },
+            "VIRAL_SUBGROUP": {
+               "type": "string"
+            },
+            "WATER_ALKALINITY": {
+               "type": "number"
+            },
+            "WATER_ALKALINITY_METHOD": {
+               "type": "string"
+            },
+            "WATER_ALKYL_DIETHERS": {
+               "type": "number"
+            },
+            "WATER_AMINOPEPT_ACT": {
+               "type": "number"
+            },
+            "WATER_AMMONIUM": {
+               "type": "number"
+            },
+            "WATER_ATMOSPHERIC_DATA": {
+               "type": "string"
+            },
+            "WATER_BACTERIAL_CARBON_PROD": {
+               "type": "number"
+            },
+            "WATER_BACTERIAL_PROD": {
+               "type": "number"
+            },
+            "WATER_BACTERIAL_RESP": {
+               "type": "number"
+            },
+            "WATER_BISHOMOHOPANOL": {
+               "type": "string"
+            },
+            "WATER_BROMIDE": {
+               "type": "number"
+            },
+            "WATER_CALCIUM": {
+               "type": "string"
+            },
+            "WATER_CARBON_NITROG_RATIO": {
+               "type": "string"
+            },
+            "WATER_CHEM_ADMINISTRATION": {
+               "type": "string"
+            },
+            "WATER_CHLORIDE": {
+               "type": "number"
+            },
+            "WATER_CURRENT": {
+               "type": "string"
+            },
+            "WATER_DENSITY": {
+               "type": "number"
+            },
+            "WATER_DIETHER_LIPIDS": {
+               "type": "number"
+            },
+            "WATER_DISS_CARBON_DIOXIDE": {
+               "type": "number"
+            },
+            "WATER_DISS_HYDROGEN": {
+               "type": "number"
+            },
+            "WATER_DISS_INORG_CARBON": {
+               "type": "number"
+            },
+            "WATER_DISS_INORG_NITRO": {
+               "type": "number"
+            },
+            "WATER_DISS_INORG_PHOSPHORUS": {
+               "type": "number"
+            },
+            "WATER_DISS_ORG_CARBON": {
+               "type": "number"
+            },
+            "WATER_DISS_ORG_NITROGEN": {
+               "type": "number"
+            },
+            "WATER_DOWNWARD_PAR": {
+               "type": "number"
+            },
+            "WATER_FLUORESCENCE": {
+               "type": "number"
+            },
+            "WATER_GLUCOSIDASE_ACTIVITY": {
+               "type": "number"
+            },
+            "WATER_LIGHT_INTENSITY": {
+               "type": "number"
+            },
+            "WATER_MAGNESIUM": {
+               "type": "string"
+            },
+            "WATER_MEAN_FRICT_VEL": {
+               "type": "number"
+            },
+            "WATER_MEAN_PEAK_FRICT_VEL": {
+               "type": "number"
+            },
+            "WATER_MISC_PARAMETER": {
+               "type": "string"
+            },
+            "WATER_NITRITE": {
+               "type": "number"
+            },
+            "WATER_N_ALKANES": {
+               "type": "number"
+            },
+            "WATER_ORGANISM_COUNT": {
+               "type": "number"
+            },
+            "WATER_ORG_MATTER": {
+               "type": "number"
+            },
+            "WATER_ORG_NITROGEN": {
+               "type": "number"
+            },
+            "WATER_OXY_STAT_SAMPLE": {
+               "type": "string"
+            },
+            "WATER_PACKAGE_ID": {
+               "type": "integer"
+            },
+            "WATER_PART_ORG_CARBON": {
+               "type": "number"
+            },
+            "WATER_PART_ORG_NITROGEN": {
+               "type": "number"
+            },
+            "WATER_PERTURBATION": {
+               "type": "string"
+            },
+            "WATER_PETROLEUM_HYDROCARBON": {
+               "type": "number"
+            },
+            "WATER_PHAEOPIGMENTS": {
+               "type": "number"
+            },
+            "WATER_PHOSPLIPID_FATT_ACID": {
+               "type": "string"
+            },
+            "WATER_PHOTON_FLUX": {
+               "type": "number"
+            },
+            "WATER_POTASSIUM": {
+               "type": "number"
+            },
+            "WATER_PRIMARY_PROD": {
+               "type": "number"
+            },
+            "WATER_REDOX_POTENTIAL": {
+               "type": "number"
+            },
+            "WATER_SAMP_STORE_DUR": {
+               "type": "string"
+            },
+            "WATER_SAMP_STORE_LOC": {
+               "type": "string"
+            },
+            "WATER_SAMP_STORE_TEMP": {
+               "type": "number"
+            },
+            "WATER_SIZE_FRAC_LOW": {
+               "type": "number"
+            },
+            "WATER_SIZE_FRAC_UP": {
+               "type": "number"
+            },
+            "WATER_SODIUM": {
+               "type": "number"
+            },
+            "WATER_SOLUBLE_REACT_PHOSP": {
+               "type": "number"
+            },
+            "WATER_SULFATE": {
+               "type": "string"
+            },
+            "WATER_SULFIDE": {
+               "type": "string"
+            },
+            "WATER_SUSPEND_PART_MATTER": {
+               "type": "number"
+            },
+            "WATER_TIDAL_STAGE": {
+               "type": "string"
+            },
+            "WATER_TOT_DEPTH_WATER_COL": {
+               "type": "number"
+            },
+            "WATER_TOT_DISS_NITRO": {
+               "type": "number"
+            },
+            "WATER_TOT_INORG_NITRO": {
+               "type": "number"
+            },
+            "WATER_TOT_PART_CARBON": {
+               "type": "string"
+            },
+            "WATER_TOT_PHOSPHORUS": {
+               "type": "number"
+            },
+            "WATER_TURBIDITY": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "ORGANISMV2",
+         "type": "object"
+      },
+      "PROJECT": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "ACTIVE": {
+               "type": "string"
+            },
+            "ADD_DATE": {
+               "type": "string"
+            },
+            "ADMIN_AP_COUNT": {
+               "type": "number"
+            },
+            "ADMIN_DAP_COUNT": {
+               "type": "number"
+            },
+            "ANNOTATOR_COMMENTS": {
+               "type": "string"
+            },
+            "ASSEMBLY_ACCESSION": {
+               "type": "string"
+            },
+            "CHROMOSOME_COUNT": {
+               "type": "number"
+            },
+            "COMPLETION_DATE": {
+               "type": "string"
+            },
+            "CONTIG_COUNT": {
+               "type": "number"
+            },
+            "DESCRIPTION": {
+               "type": "string"
+            },
+            "EST_COUNT": {
+               "type": "number"
+            },
+            "EST_SIZE": {
+               "type": "number"
+            },
+            "EXPERIMENTAL_CONDITIONS": {
+               "type": "string"
+            },
+            "FINISHING_GOAL_ID": {
+               "type": "integer"
+            },
+            "FUNDING_PROGRAM": {
+               "type": "string"
+            },
+            "FUNDING_YEAR": {
+               "type": "number"
+            },
+            "GC_PERCENT": {
+               "type": "number"
+            },
+            "GOLD_ID": {
+               "type": "string"
+            },
+            "GPTS_DISAMBIGUATOR": {
+               "type": "string"
+            },
+            "GPTS_PROPOSAL_ID": {
+               "type": "integer"
+            },
+            "GPTS_SAMPLE_ID": {
+               "type": "integer"
+            },
+            "ISOLATION_PUBLICATION_ID": {
+               "type": "integer"
+            },
+            "IS_APPROVED": {
+               "type": "string"
+            },
+            "IS_DRAFT": {
+               "type": "string"
+            },
+            "IS_JGI": {
+               "type": "string"
+            },
+            "IS_LOCKED": {
+               "type": "string"
+            },
+            "IS_PUBLIC": {
+               "type": "string"
+            },
+            "IS_SINGLE_CELL_MATERIAL": {
+               "type": "string"
+            },
+            "IS_TEST": {
+               "type": "string"
+            },
+            "ITS_PROJECT_NAME": {
+               "type": "string"
+            },
+            "ITS_PROPOSAL_ID": {
+               "type": "integer"
+            },
+            "ITS_SAMPLE_GROUP_NAME": {
+               "type": "string"
+            },
+            "ITS_SAMPLE_ID": {
+               "type": "integer"
+            },
+            "ITS_SAMPLE_NAME": {
+               "type": "string"
+            },
+            "ITS_SEQUENCING_PRODUCT_NAME": {
+               "type": "string"
+            },
+            "ITS_SPID": {
+               "type": "number"
+            },
+            "LEGACY_GOLD_ID": {
+               "type": "string"
+            },
+            "LIBRARY_METHOD": {
+               "type": "string"
+            },
+            "LOW_QUALITY_GENOME": {
+               "type": "string"
+            },
+            "MASTER_STUDY_ID": {
+               "type": "integer"
+            },
+            "MOD_BY": {
+               "type": "number"
+            },
+            "MOD_DATE": {
+               "type": "string"
+            },
+            "NCBI_BIOPROJECT_ACCESSION": {
+               "type": "string"
+            },
+            "NCBI_BIOPROJECT_ID": {
+               "type": "integer"
+            },
+            "NCBI_BIOSAMPLE_ACCESSION": {
+               "type": "string"
+            },
+            "NCBI_LOCUS_TAG": {
+               "type": "string"
+            },
+            "NCBI_PROJECT_NAME": {
+               "type": "string"
+            },
+            "NCBI_SRA_ID": {
+               "type": "string"
+            },
+            "NUCLEIC_ACID": {
+               "type": "string"
+            },
+            "NUCLEIC_ACID_ID": {
+               "type": "integer"
+            },
+            "OLD_LEGACY_GOLD_ID": {
+               "type": "string"
+            },
+            "ORGANISM_ID": {
+               "type": "integer"
+            },
+            "ORGANISM_TYPE": {
+               "type": "string"
+            },
+            "OTHER_PROJECT_NAMES": {
+               "type": "string"
+            },
+            "PI_ID": {
+               "type": "integer"
+            },
+            "PLASMID_COUNT": {
+               "type": "number"
+            },
+            "PMO_PROJECT_ID": {
+               "type": "integer"
+            },
+            "PROJECT_COMMENTS": {
+               "type": "string"
+            },
+            "PROJECT_MANAGER_ID": {
+               "type": "integer"
+            },
+            "PROJECT_NAME": {
+               "type": "string"
+            },
+            "PROJECT_OID": {
+               "type": "number"
+            },
+            "PROJECT_STATUS": {
+               "type": "string"
+            },
+            "PROJECT_SUBTYPE": {
+               "type": "string"
+            },
+            "PUBLIC_AP_COUNT": {
+               "type": "number"
+            },
+            "PUBLIC_DAP_COUNT": {
+               "type": "number"
+            },
+            "READ_COUNT": {
+               "type": "string"
+            },
+            "READ_SIZE": {
+               "type": "string"
+            },
+            "SAMPLE_GROUP_NAME": {
+               "type": "string"
+            },
+            "SAMPLE_OID": {
+               "type": "number"
+            },
+            "SCAFFOLD_COUNT": {
+               "type": "number"
+            },
+            "SEQUENCING_COMMENTS": {
+               "type": "string"
+            },
+            "SEQUENCING_QUALITY_ID": {
+               "type": "integer"
+            },
+            "SEQUENCING_STATUS_ID": {
+               "type": "integer"
+            },
+            "SEQUENCING_STRATEGY": {
+               "type": "string"
+            },
+            "SEQUENCING_STRATEGY_FULL": {
+               "type": "string"
+            },
+            "SPECIMEN_ID": {
+               "type": "integer"
+            },
+            "SRA_SRS_ACCESSION": {
+               "type": "string"
+            },
+            "SRA_SRX_ACCESSION": {
+               "type": "string"
+            },
+            "SUBMITTER_ID": {
+               "type": "integer"
+            },
+            "SUBMITTER_PROJECT_NAME": {
+               "type": "string"
+            },
+            "VECTOR": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "PROJECT",
+         "type": "object"
+      },
+      "PROJECTANALYSISPROJECT": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "ANALYSIS_PROJECT_ID": {
+               "type": "integer"
+            }
+         },
+         "required": [],
+         "title": "PROJECTANALYSISPROJECT",
+         "type": "object"
+      },
+      "PROJECTBIOSAMPLE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "BIOSAMPLE_ID": {
+               "type": "integer"
+            }
+         },
+         "required": [],
+         "title": "PROJECTBIOSAMPLE",
+         "type": "object"
+      },
+      "PROJECTCOLLABORATOR": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "INSTITUTION_ID": {
+               "type": "integer"
+            }
+         },
+         "required": [],
+         "title": "PROJECTCOLLABORATOR",
+         "type": "object"
+      },
+      "PROJECTFUNDINGAGENCY": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "INSTITUTION_ID": {
+               "type": "integer"
+            }
+         },
+         "required": [],
+         "title": "PROJECTFUNDINGAGENCY",
+         "type": "object"
+      },
+      "PROJECTGENOMEPUBLICATION": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "PUBLICATION_ID": {
+               "type": "integer"
+            }
+         },
+         "required": [],
+         "title": "PROJECTGENOMEPUBLICATION",
+         "type": "object"
+      },
+      "PROJECTOTHERPUBLICATION": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "PUBLICATION_ID": {
+               "type": "integer"
+            }
+         },
+         "required": [],
+         "title": "PROJECTOTHERPUBLICATION",
+         "type": "object"
+      },
+      "PROJECTRELEVANCE": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "RELEVANCE_ID": {
+               "type": "integer"
+            }
+         },
+         "required": [],
+         "title": "PROJECTRELEVANCE",
+         "type": "object"
+      },
+      "PROJECTSEQUENCINGCENTER": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "INSTITUTION_ID": {
+               "type": "integer"
+            }
+         },
+         "required": [],
+         "title": "PROJECTSEQUENCINGCENTER",
+         "type": "object"
+      },
+      "PROJECTSEQUENCINGMETHOD": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "SEQUENCING_METHOD_ID": {
+               "type": "integer"
+            }
+         },
+         "required": [],
+         "title": "PROJECTSEQUENCINGMETHOD",
+         "type": "object"
+      },
+      "PUBLICATION": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "ABSTRACT": {
+               "type": "string"
+            },
+            "AFFILIATION": {
+               "type": "string"
+            },
+            "DOI": {
+               "type": "string"
+            },
+            "FIRST_AUTHOR_ID": {
+               "type": "integer"
+            },
+            "ISSUE": {
+               "type": "string"
+            },
+            "JOURNAL_ID": {
+               "type": "integer"
+            },
+            "LAST_AUTHOR_ID": {
+               "type": "integer"
+            },
+            "PAGE": {
+               "type": "string"
+            },
+            "PUBLICATION_DATE": {
+               "type": "string"
+            },
+            "PUBMED_ID": {
+               "type": "integer"
+            },
+            "PUBMODEL": {
+               "type": "string"
+            },
+            "TITLE": {
+               "type": "string"
+            },
+            "VOLUME": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "PUBLICATION",
+         "type": "object"
+      },
+      "STUDY": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "ACTIVE": {
+               "type": "string"
+            },
+            "ADD_DATE": {
+               "type": "string"
+            },
+            "ADMIN_AP_COUNT": {
+               "type": "number"
+            },
+            "ADMIN_BIOSAMPLE_COUNT": {
+               "type": "number"
+            },
+            "ADMIN_DAP_COUNT": {
+               "type": "number"
+            },
+            "ADMIN_SP_COUNT": {
+               "type": "number"
+            },
+            "BIOPROJECT_NAME": {
+               "type": "string"
+            },
+            "CONTACT_ID": {
+               "type": "integer"
+            },
+            "DESCRIPTION": {
+               "type": "string"
+            },
+            "ECOSYSTEM": {
+               "type": "string"
+            },
+            "ECOSYSTEM_CATEGORY": {
+               "type": "string"
+            },
+            "ECOSYSTEM_PATH_ID": {
+               "type": "integer"
+            },
+            "ECOSYSTEM_SUBTYPE": {
+               "type": "string"
+            },
+            "ECOSYSTEM_TYPE": {
+               "type": "string"
+            },
+            "GOLD_ID": {
+               "type": "string"
+            },
+            "GOLD_STUDY_NAME": {
+               "type": "string"
+            },
+            "GPTS_PROPOSAL_ID": {
+               "type": "integer"
+            },
+            "IS_DRAFT": {
+               "type": "string"
+            },
+            "IS_GEBA": {
+               "type": "string"
+            },
+            "IS_HMP": {
+               "type": "string"
+            },
+            "IS_PUBLIC": {
+               "type": "string"
+            },
+            "IS_TEST": {
+               "type": "string"
+            },
+            "ITS_PROPOSAL_ID": {
+               "type": "integer"
+            },
+            "LAST_MOD_BY": {
+               "type": "number"
+            },
+            "LEGACY_GOLD_ID": {
+               "type": "string"
+            },
+            "METAGENOMIC": {
+               "type": "string"
+            },
+            "MOD_DATE": {
+               "type": "string"
+            },
+            "NCBI_PROJECT_ID": {
+               "type": "integer"
+            },
+            "OWNER_ID": {
+               "type": "integer"
+            },
+            "PROJECT_OID": {
+               "type": "number"
+            },
+            "PUBLIC_AP_COUNT": {
+               "type": "number"
+            },
+            "PUBLIC_BIOSAMPLE_COUNT": {
+               "type": "number"
+            },
+            "PUBLIC_DAP_COUNT": {
+               "type": "number"
+            },
+            "PUBLIC_SP_COUNT": {
+               "type": "number"
+            },
+            "SPECIFIC_ECOSYSTEM": {
+               "type": "string"
+            },
+            "STUDY_NAME": {
+               "type": "string"
+            },
+            "STUDY_TYPE_ID": {
+               "type": "integer"
+            }
+         },
+         "required": [],
+         "title": "STUDY",
+         "type": "object"
+      }
+   },
+   "properties": {},
+   "title": "ddl",
+   "type": "object"
+}
+

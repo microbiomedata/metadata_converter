@@ -1,0 +1,186 @@
+BASE <https://microbiomedata/schema/mixs/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX nmdc: <https://microbiomedata/meta/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX metatype: <https://w3id.org/biolink/biolinkml/type/>
+PREFIX rdf1: <http://example.org/UNKNOWN/rdf/>
+
+
+nmdc:DecimalDegree xsd:decimal
+
+nmdc:LanguageCode xsd:language
+
+nmdc:Unit xsd:string
+
+metatype:String xsd:string
+
+metatype:Integer xsd:integer
+
+metatype:Boolean xsd:boolean
+
+metatype:Float xsd:float
+
+metatype:Double xsd:double
+
+metatype:Time xsd:dateTime
+
+metatype:Date xsd:date
+
+metatype:Datetime xsd:dateTime
+
+metatype:Uriorcurie IRI
+
+metatype:Uri IRI
+
+metatype:Ncname xsd:string
+
+metatype:Objectidentifier IRI
+
+metatype:Nodeidentifier NONLITERAL
+
+nmdc:Activity CLOSED {
+    (  $nmdc:Activity_tes (  nmdc:started_at_time @metatype:String ? ;
+          nmdc:ended_at_time @metatype:String ? ;
+          nmdc:was_informed_by @nmdc:Activity ? ;
+          nmdc:was_associated_with @nmdc:Agent ? ;
+          nmdc:used @metatype:String ?
+       ) ;
+       rdf:type [ nmdc:Activity ]
+    )
+}
+
+nmdc:Agent CLOSED {
+    (  $nmdc:Agent_tes (  nmdc:acted_on_behalf_of @nmdc:Agent ? ;
+          nmdc:was_informed_by @nmdc:Activity ?
+       ) ;
+       rdf:type [ nmdc:Agent ] ?
+    )
+}
+
+nmdc:AttributeValue  (
+    CLOSED {
+       (  $nmdc:AttributeValue_tes (  nmdc:has_raw_value @metatype:String ? ;
+             nmdc:was_generated_by @nmdc:Activity ?
+          ) ;
+          rdf:type [ nmdc:AttributeValue ] ?
+       )
+    } OR @nmdc:BooleanValue OR @nmdc:ControlledTermValue OR @nmdc:GeolocationValue OR @nmdc:IntegerValue OR @nmdc:PersonValue OR
+    @nmdc:QuantityValue OR @nmdc:TextValue OR @nmdc:TimestampValue OR @nmdc:UrlValue
+)
+
+nmdc:BooleanValue CLOSED {
+    (  $nmdc:BooleanValue_tes (  &nmdc:AttributeValue_tes ;
+          rdf:type [ nmdc:AttributeValue ] ? ;
+          nmdc:has_boolean_value @metatype:Boolean ?
+       ) ;
+       rdf:type [ nmdc:BooleanValue ] ?
+    )
+}
+
+nmdc:ControlledTermValue CLOSED {
+    (  $nmdc:ControlledTermValue_tes (  &nmdc:AttributeValue_tes ;
+          rdf:type [ nmdc:AttributeValue ] ? ;
+          rdf1:type @nmdc:OntologyClass ?
+       ) ;
+       rdf:type [ nmdc:ControlledTermValue ] ?
+    )
+}
+
+nmdc:EnvironmentalMaterialTerm CLOSED {
+    (  $nmdc:EnvironmentalMaterialTerm_tes (  &nmdc:OntologyClass_tes ;
+          rdf:type [ nmdc:OntologyClass ] ?
+       ) ;
+       rdf:type [ nmdc:EnvironmentalMaterialTerm ]
+    )
+}
+
+nmdc:GeolocationValue CLOSED {
+    (  $nmdc:GeolocationValue_tes (  &nmdc:AttributeValue_tes ;
+          rdf:type [ nmdc:AttributeValue ] ? ;
+          <has_raw_value> @metatype:String ? ;
+          <http://www.w3.org/2003/01/geo/wgs84_poslat> @nmdc:DecimalDegree ? ;
+          <http://www.w3.org/2003/01/geo/wgs84_poslong> @nmdc:DecimalDegree ?
+       ) ;
+       rdf:type [ nmdc:GeolocationValue ] ?
+    )
+}
+
+nmdc:IntegerValue CLOSED {
+    (  $nmdc:IntegerValue_tes (  &nmdc:AttributeValue_tes ;
+          rdf:type [ nmdc:AttributeValue ] ? ;
+          nmdc:has_numeric_value @metatype:Float ?
+       ) ;
+       rdf:type [ nmdc:IntegerValue ] ?
+    )
+}
+
+nmdc:NamedThing  (
+    {
+       (  $nmdc:NamedThing_tes (  nmdc:name @metatype:String ? ;
+             dcterms:description @metatype:String ? ;
+             nmdc:alternate_identifiers @metatype:String *
+          ) ;
+          rdf:type [ nmdc:NamedThing ]
+       )
+    } OR @nmdc:OntologyClass
+)
+
+nmdc:OntologyClass  (
+    CLOSED {
+       (  $nmdc:OntologyClass_tes (  &nmdc:NamedThing_tes ;
+             rdf:type [ nmdc:NamedThing ] ?
+          ) ;
+          rdf:type [ nmdc:OntologyClass ]
+       )
+    } OR @nmdc:EnvironmentalMaterialTerm
+)
+
+nmdc:PersonValue CLOSED {
+    (  $nmdc:PersonValue_tes (  &nmdc:AttributeValue_tes ;
+          rdf:type [ nmdc:AttributeValue ] ? ;
+          <has_raw_value> @metatype:String ? ;
+          nmdc:orcid @metatype:String ?
+       ) ;
+       rdf:type [ nmdc:PersonValue ] ?
+    )
+}
+
+nmdc:QuantityValue CLOSED {
+    (  $nmdc:QuantityValue_tes (  &nmdc:AttributeValue_tes ;
+          rdf:type [ nmdc:AttributeValue ] ? ;
+          <has_raw_value> @metatype:String ? ;
+          <has_unit> @nmdc:Unit ? ;
+          <has_numeric_value> @metatype:Double ?
+       ) ;
+       rdf:type [ nmdc:QuantityValue ] ?
+    )
+}
+
+nmdc:TextValue CLOSED {
+    (  $nmdc:TextValue_tes (  &nmdc:AttributeValue_tes ;
+          rdf:type [ nmdc:AttributeValue ] ? ;
+          nmdc:language @nmdc:LanguageCode ?
+       ) ;
+       rdf:type [ nmdc:TextValue ] ?
+    )
+}
+
+nmdc:TimestampValue CLOSED {
+    (  $nmdc:TimestampValue_tes (  &nmdc:AttributeValue_tes ;
+          rdf:type [ nmdc:AttributeValue ] ?
+       ) ;
+       rdf:type [ nmdc:TimestampValue ] ?
+    )
+}
+
+nmdc:UrlValue CLOSED {
+    (  $nmdc:UrlValue_tes (  &nmdc:AttributeValue_tes ;
+          rdf:type [ nmdc:AttributeValue ] ?
+       ) ;
+       rdf:type [ nmdc:UrlValue ] ?
+    )
+}
+
+
+

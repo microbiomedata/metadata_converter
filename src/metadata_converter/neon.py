@@ -28,6 +28,14 @@ def convert_range(s: str) -> str:
         return 'integer'
     return 'string'
 
+def normalize_xref(x: str) -> str:
+    toks = x.split(":")
+    if len(toks) == 2:
+        [prefix,local_id] = toks
+        if prefix.startswith('DWC'):
+            prefix = 'dwc'
+        return f'{prefix}:{local_id}'
+
 @dataclass
 class NeonConverter:
     """
@@ -64,7 +72,9 @@ class NeonConverter:
             ],
             'prefixes': {
                 'biolinkml': 'https://w3id.org/biolink/biolinkml/',
-                'neon': 'https://data.neonscience.org/'
+                'neon': 'https://data.neonscience.org/',
+                'dwc': 'http://rs.tdwg.org/dwc/terms/',
+                'mixs': 'https://microbiomedata/schema/mixs#'
             },
             'default_prefix': 'neon',
             'slots': slots,
@@ -81,7 +91,7 @@ class NeonConverter:
                 xrefs = xrefstr.split(" ")
             else:
                 xrefs = []
-            xrefs = [x for x in xrefs if xref_pattern.match(x)]
+            xrefs = [normalize_xref(x) for x in xrefs if xref_pattern.match(x)]
             slot = {'slot_uri': f'neon:{k}',
                     'description': v['termDesc'],
                     'range': convert_range(v['dataType']),

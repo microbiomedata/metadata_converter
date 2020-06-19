@@ -6,3 +6,12 @@ RDF-Cache/
 downloads
 *.dsv
 target/*/*.ttl
+docs/*/types/
+target/*/*-docs/
+tests/gold/biosample.yaml
+tests/gold/gold.yaml
+tests/kbase/kbase.yaml
+tests/neon/neon.yaml
+tests/dwc/dwc.yaml
+*#
+

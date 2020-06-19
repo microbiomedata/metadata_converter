@@ -1,0 +1,488 @@
+BASE <http://rs.tdwg.org/dwc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX metatype: <https://w3id.org/biolink/biolinkml/type/>
+
+
+metatype:String xsd:string
+
+metatype:Integer xsd:integer
+
+metatype:Boolean xsd:boolean
+
+metatype:Float xsd:float
+
+metatype:Double xsd:double
+
+metatype:Time xsd:dateTime
+
+metatype:Date xsd:date
+
+metatype:Datetime xsd:dateTime
+
+metatype:Uriorcurie IRI
+
+metatype:Uri IRI
+
+metatype:Ncname xsd:string
+
+metatype:Objectidentifier IRI
+
+metatype:Nodeidentifier NONLITERAL
+
+<Dataset> CLOSED {
+    (  $<Dataset_tes> rdf:type . * ;
+       rdf:type [ <Dataset> ] ?
+    )
+}
+
+<Event> CLOSED {
+    (  $<Event_tes> (  <eventID> @metatype:String ? ;
+          <parentEventID> @metatype:String ? ;
+          <fieldNumber> @metatype:String ? ;
+          <eventDate> @metatype:String ? ;
+          <eventTime> @metatype:String ? ;
+          <startDayOfYear> @metatype:String ? ;
+          <endDayOfYear> @metatype:String ? ;
+          <year> @metatype:String ? ;
+          <month> @metatype:String ? ;
+          <day> @metatype:String ? ;
+          <verbatimEventDate> @metatype:String ? ;
+          <habitat> @metatype:String ? ;
+          <samplingProtocol> @metatype:String ? ;
+          <sampleSizeValue> @metatype:String ? ;
+          <sampleSizeUnit> @metatype:String ? ;
+          <samplingEffort> @metatype:String ? ;
+          <fieldNotes> @metatype:String ? ;
+          <eventRemarks> @metatype:String ? ;
+          <Day> @metatype:String ? ;
+          <End_Day_Of_Year> @metatype:String ? ;
+          <Event_Date> @metatype:String ? ;
+          <Event_ID> @metatype:String ? ;
+          <Event_Remarks> @metatype:String ? ;
+          <Event_Time> @metatype:String ? ;
+          <Field_Notes> @metatype:String ? ;
+          <Field_Number> @metatype:String ? ;
+          <Habitat> @metatype:String ? ;
+          <Month> @metatype:String ? ;
+          <Parent_Event_ID> @metatype:String ? ;
+          <Sample_Size_Unit> @metatype:String ? ;
+          <Sample_Size_Value> @metatype:String ? ;
+          <Sampling_Effort> @metatype:String ? ;
+          <Sampling_Protocol> @metatype:String ? ;
+          <Start_Day_Of_Year> @metatype:String ? ;
+          <Verbatim_EventDate> @metatype:String ? ;
+          <Year> @metatype:String ?
+       ) ;
+       rdf:type [ <Event> ] ?
+    )
+}
+
+<EventAttribute> CLOSED {
+    (  $<EventAttribute_tes> rdf:type . * ;
+       rdf:type [ <EventAttribute> ] ?
+    )
+}
+
+<EventMeasurement> CLOSED {
+    (  $<EventMeasurement_tes> rdf:type . * ;
+       rdf:type [ <EventMeasurement> ] ?
+    )
+}
+
+<FossilSpecimen> CLOSED {
+    (  $<FossilSpecimen_tes> rdf:type . * ;
+       rdf:type [ <FossilSpecimen> ] ?
+    )
+}
+
+<FossilSpecimen> CLOSED {
+    (  $<FossilSpecimen_tes> rdf:type . * ;
+       rdf:type [ <FossilSpecimen> ] ?
+    )
+}
+
+<GeologicalContext> CLOSED {
+    (  $<GeologicalContext_tes> rdf:type . * ;
+       rdf:type [ <GeologicalContext> ] ?
+    )
+}
+
+<GeologicalContext> CLOSED {
+    (  $<GeologicalContext_tes> (  <geologicalContextID> @metatype:String ? ;
+          <earliestEonOrLowestEonothem> @metatype:String ? ;
+          <latestEonOrHighestEonothem> @metatype:String ? ;
+          <earliestEraOrLowestErathem> @metatype:String ? ;
+          <latestEraOrHighestErathem> @metatype:String ? ;
+          <earliestPeriodOrLowestSystem> @metatype:String ? ;
+          <latestPeriodOrHighestSystem> @metatype:String ? ;
+          <earliestEpochOrLowestSeries> @metatype:String ? ;
+          <latestEpochOrHighestSeries> @metatype:String ? ;
+          <earliestAgeOrLowestStage> @metatype:String ? ;
+          <latestAgeOrHighestStage> @metatype:String ? ;
+          <lowestBiostratigraphicZone> @metatype:String ? ;
+          <highestBiostratigraphicZone> @metatype:String ? ;
+          <lithostratigraphicTerms> @metatype:String ? ;
+          <group> @metatype:String ? ;
+          <formation> @metatype:String ? ;
+          <member> @metatype:String ? ;
+          <bed> @metatype:String ? ;
+          <Bed> @metatype:String ? ;
+          <Earliest_Age_Or_Lowest_Stage> @metatype:String ? ;
+          <Earliest_Eon_Or_Lowest_Eonothem> @metatype:String ? ;
+          <Earliest_Epoch_Or_Lowest_Series> @metatype:String ? ;
+          <Earliest_Era_Or_Lowest_Erathem> @metatype:String ? ;
+          <Earliest_Period_Or_Lowest_System> @metatype:String ? ;
+          <Formation> @metatype:String ? ;
+          <Geological_Context_ID> @metatype:String ? ;
+          <Group> @metatype:String ? ;
+          <Highest_Biostratigraphic_Zone> @metatype:String ? ;
+          <Latest_AgeOr_Highest_Stage> @metatype:String ? ;
+          <Latest_Eon_Or_Highest_Eonothem> @metatype:String ? ;
+          <Latest_Epoch_Or_Highest_Series> @metatype:String ? ;
+          <Latest_Era_Or_Highest_Erathem> @metatype:String ? ;
+          <Latest_Period_Or_Highest_System> @metatype:String ? ;
+          <Lithostratigraphic_Terms> @metatype:String ? ;
+          <Lowest_Biostratigraphic_Zone> @metatype:String ? ;
+          <Member> @metatype:String ?
+       ) ;
+       rdf:type [ <GeologicalContext> ] ?
+    )
+}
+
+<HumanObservation> CLOSED {
+    (  $<HumanObservation_tes> rdf:type . * ;
+       rdf:type [ <HumanObservation> ] ?
+    )
+}
+
+<HumanObservation> CLOSED {
+    (  $<HumanObservation_tes> rdf:type . * ;
+       rdf:type [ <HumanObservation> ] ?
+    )
+}
+
+<Identification> CLOSED {
+    (  $<Identification_tes> (  <identificationID> @metatype:String ? ;
+          <identificationQualifier> @metatype:String ? ;
+          <typeStatus> @metatype:String ? ;
+          <identifiedBy> @metatype:String ? ;
+          <dateIdentified> @metatype:String ? ;
+          <identificationReferences> @metatype:String ? ;
+          <identificationVerificationStatus> @metatype:String ? ;
+          <identificationRemarks> @metatype:String ? ;
+          <Date_Identified> @metatype:String ? ;
+          <Identification_ID> @metatype:String ? ;
+          <Identification_Qualifier> @metatype:String ? ;
+          <Identification_References> @metatype:String ? ;
+          <Identification_Remarks> @metatype:String ? ;
+          <Identification_Verification_Status> @metatype:String ? ;
+          <Identified_By> @metatype:String ? ;
+          <Type_Status> @metatype:String ?
+       ) ;
+       rdf:type [ <Identification> ] ?
+    )
+}
+
+<LivingSpecimen> CLOSED {
+    (  $<LivingSpecimen_tes> rdf:type . * ;
+       rdf:type [ <LivingSpecimen> ] ?
+    )
+}
+
+<LivingSpecimen> CLOSED {
+    (  $<LivingSpecimen_tes> rdf:type . * ;
+       rdf:type [ <LivingSpecimen> ] ?
+    )
+}
+
+<Location> CLOSED {
+    (  $<Location_tes> rdf:type . * ;
+       rdf:type [ <Location> ] ?
+    )
+}
+
+<MachineObservation> CLOSED {
+    (  $<MachineObservation_tes> rdf:type . * ;
+       rdf:type [ <MachineObservation> ] ?
+    )
+}
+
+<MachineObservation> CLOSED {
+    (  $<MachineObservation_tes> rdf:type . * ;
+       rdf:type [ <MachineObservation> ] ?
+    )
+}
+
+<MaterialSample> CLOSED {
+    (  $<MaterialSample_tes> rdf:type . * ;
+       rdf:type [ <MaterialSample> ] ?
+    )
+}
+
+<MaterialSample> CLOSED {
+    (  $<MaterialSample_tes> (  <materialSampleID> @metatype:String ? ;
+          <Material_Sample_ID> @metatype:String ?
+       ) ;
+       rdf:type [ <MaterialSample> ] ?
+    )
+}
+
+<MeasurementOrFact> CLOSED {
+    (  $<MeasurementOrFact_tes> rdf:type . * ;
+       rdf:type [ <MeasurementOrFact> ] ?
+    )
+}
+
+<MeasurementOrFact> CLOSED {
+    (  $<MeasurementOrFact_tes> rdf:type . * ;
+       rdf:type [ <MeasurementOrFact> ] ?
+    )
+}
+
+<MeasurementOrFact> CLOSED {
+    (  $<MeasurementOrFact_tes> (  <measurementID> @metatype:String ? ;
+          <measurementType> @metatype:String ? ;
+          <measurementValue> @metatype:String ? ;
+          <measurementAccuracy> @metatype:String ? ;
+          <measurementUnit> @metatype:String ? ;
+          <measurementDeterminedBy> @metatype:String ? ;
+          <measurementDeterminedDate> @metatype:String ? ;
+          <measurementMethod> @metatype:String ? ;
+          <measurementRemarks> @metatype:String ? ;
+          <Measurement_Accuracy> @metatype:String ? ;
+          <Measurement_Determined_By> @metatype:String ? ;
+          <Measurement_Determined_Date> @metatype:String ? ;
+          <Measurement_ID> @metatype:String ? ;
+          <Measurement_Method> @metatype:String ? ;
+          <Measurement_Remarks> @metatype:String ? ;
+          <Measurement_Type> @metatype:String ? ;
+          <Measurement_Unit> @metatype:String ? ;
+          <Measurement_Value> @metatype:String ?
+       ) ;
+       rdf:type [ <MeasurementOrFact> ] ?
+    )
+}
+
+<NomenclaturalChecklist> CLOSED {
+    (  $<NomenclaturalChecklist_tes> rdf:type . * ;
+       rdf:type [ <NomenclaturalChecklist> ] ?
+    )
+}
+
+<Occurrence> CLOSED {
+    (  $<Occurrence_tes> (  <occurrenceID> @metatype:String ? ;
+          <catalogNumber> @metatype:String ? ;
+          <recordNumber> @metatype:String ? ;
+          <recordedBy> @metatype:String ? ;
+          <individualCount> @metatype:String ? ;
+          <organismQuantity> @metatype:String ? ;
+          <organismQuantityType> @metatype:String ? ;
+          <sex> @metatype:String ? ;
+          <lifeStage> @metatype:String ? ;
+          <reproductiveCondition> @metatype:String ? ;
+          <behavior> @metatype:String ? ;
+          <establishmentMeans> @metatype:String ? ;
+          <occurrenceStatus> @metatype:String ? ;
+          <preparations> @metatype:String ? ;
+          <disposition> @metatype:String ? ;
+          <associatedMedia> @metatype:String ? ;
+          <associatedReferences> @metatype:String ? ;
+          <associatedSequences> @metatype:String ? ;
+          <associatedTaxa> @metatype:String ? ;
+          <otherCatalogNumbers> @metatype:String ? ;
+          <occurrenceRemarks> @metatype:String ? ;
+          <Associated_Media> @metatype:String ? ;
+          <Associated_References> @metatype:String ? ;
+          <Associated_Sequences> @metatype:String ? ;
+          <Associated_Taxa> @metatype:String ? ;
+          <Behavior> @metatype:String ? ;
+          <Catalog_Number> @metatype:String ? ;
+          <Disposition> @metatype:String ? ;
+          <Establishment_Means> @metatype:String ? ;
+          <Individual_Count> @metatype:String ? ;
+          <Life_Stage> @metatype:String ? ;
+          <Occurrence_ID> @metatype:String ? ;
+          <Occurrence_Remarks> @metatype:String ? ;
+          <Occurrence_Status> @metatype:String ? ;
+          <Organism_Quantity> @metatype:String ? ;
+          <Organism_Quantity_Type> @metatype:String ? ;
+          <Other_Catalog_Numbers> @metatype:String ? ;
+          <Preparations> @metatype:String ? ;
+          <Recorded_By> @metatype:String ? ;
+          <Record_Number> @metatype:String ? ;
+          <Reproductive_Condition> @metatype:String ? ;
+          <Sex> @metatype:String ?
+       ) ;
+       rdf:type [ <Occurrence> ] ?
+    )
+}
+
+<OccurrenceMeasurement> CLOSED {
+    (  $<OccurrenceMeasurement_tes> rdf:type . * ;
+       rdf:type [ <OccurrenceMeasurement> ] ?
+    )
+}
+
+<Organism> CLOSED {
+    (  $<Organism_tes> (  <organismID> @metatype:String ? ;
+          <organismName> @metatype:String ? ;
+          <organismScope> @metatype:String ? ;
+          <associatedOccurrences> @metatype:String ? ;
+          <associatedOrganisms> @metatype:String ? ;
+          <previousIdentifications> @metatype:String ? ;
+          <organismRemarks> @metatype:String ? ;
+          <Associated_Occurrences> @metatype:String ? ;
+          <Associated_Organisms> @metatype:String ? ;
+          <Organism_ID> @metatype:String ? ;
+          <Organism_Name> @metatype:String ? ;
+          <Organism_Remarks> @metatype:String ? ;
+          <Organism_Scope> @metatype:String ? ;
+          <Previous_Identifications> @metatype:String ?
+       ) ;
+       rdf:type [ <Organism> ] ?
+    )
+}
+
+<PreservedSpecimen> CLOSED {
+    (  $<PreservedSpecimen_tes> rdf:type . * ;
+       rdf:type [ <PreservedSpecimen> ] ?
+    )
+}
+
+<PreservedSpecimen> CLOSED {
+    (  $<PreservedSpecimen_tes> rdf:type . * ;
+       rdf:type [ <PreservedSpecimen> ] ?
+    )
+}
+
+<ResourceRelationship> CLOSED {
+    (  $<ResourceRelationship_tes> rdf:type . * ;
+       rdf:type [ <ResourceRelationship> ] ?
+    )
+}
+
+<ResourceRelationship> CLOSED {
+    (  $<ResourceRelationship_tes> (  <resourceRelationshipID> @metatype:String ? ;
+          <resourceID> @metatype:String ? ;
+          <relatedResourceID> @metatype:String ? ;
+          <relationshipOfResource> @metatype:String ? ;
+          <relationshipAccordingTo> @metatype:String ? ;
+          <relationshipEstablishedDate> @metatype:String ? ;
+          <relationshipRemarks> @metatype:String ? ;
+          <Related_Resource_ID> @metatype:String ? ;
+          <Relationship_According_To> @metatype:String ? ;
+          <Relationship_Established_Date> @metatype:String ? ;
+          <Relationship_Of_Resource> @metatype:String ? ;
+          <Relationship_Remarks> @metatype:String ? ;
+          <Resource_ID> @metatype:String ? ;
+          <Resource_Relationship_ID> @metatype:String ?
+       ) ;
+       rdf:type [ <ResourceRelationship> ] ?
+    )
+}
+
+<Sample> CLOSED {
+    (  $<Sample_tes> rdf:type . * ;
+       rdf:type [ <Sample> ] ?
+    )
+}
+
+<SampleAttribute> CLOSED {
+    (  $<SampleAttribute_tes> rdf:type . * ;
+       rdf:type [ <SampleAttribute> ] ?
+    )
+}
+
+<SamplingEvent> CLOSED {
+    (  $<SamplingEvent_tes> rdf:type . * ;
+       rdf:type [ <SamplingEvent> ] ?
+    )
+}
+
+<SamplingLocation> CLOSED {
+    (  $<SamplingLocation_tes> rdf:type . * ;
+       rdf:type [ <SamplingLocation> ] ?
+    )
+}
+
+<Taxon> CLOSED {
+    (  $<Taxon_tes> (  <taxonID> @metatype:String ? ;
+          <scientificNameID> @metatype:String ? ;
+          <acceptedNameUsageID> @metatype:String ? ;
+          <parentNameUsageID> @metatype:String ? ;
+          <originalNameUsageID> @metatype:String ? ;
+          <nameAccordingToID> @metatype:String ? ;
+          <namePublishedInID> @metatype:String ? ;
+          <taxonConceptID> @metatype:String ? ;
+          <scientificName> @metatype:String ? ;
+          <acceptedNameUsage> @metatype:String ? ;
+          <parentNameUsage> @metatype:String ? ;
+          <originalNameUsage> @metatype:String ? ;
+          <nameAccordingTo> @metatype:String ? ;
+          <namePublishedIn> @metatype:String ? ;
+          <namePublishedInYear> @metatype:String ? ;
+          <higherClassification> @metatype:String ? ;
+          <kingdom> @metatype:String ? ;
+          <phylum> @metatype:String ? ;
+          <class> @metatype:String ? ;
+          <order> @metatype:String ? ;
+          <family> @metatype:String ? ;
+          <genus> @metatype:String ? ;
+          <subgenus> @metatype:String ? ;
+          <specificEpithet> @metatype:String ? ;
+          <infraspecificEpithet> @metatype:String ? ;
+          <taxonRank> @metatype:String ? ;
+          <verbatimTaxonRank> @metatype:String ? ;
+          <scientificNameAuthorship> @metatype:String ? ;
+          <vernacularName> @metatype:String ? ;
+          <nomenclaturalCode> @metatype:String ? ;
+          <taxonomicStatus> @metatype:String ? ;
+          <nomenclaturalStatus> @metatype:String ? ;
+          <taxonRemarks> @metatype:String ? ;
+          <Accepted_Name_Usage> @metatype:String ? ;
+          <Accepted_Name_Usage_ID> @metatype:String ? ;
+          <Class> @metatype:String ? ;
+          <Family> @metatype:String ? ;
+          <Genus> @metatype:String ? ;
+          <Higher_Classification> @metatype:String ? ;
+          <Infraspecific_Epithet> @metatype:String ? ;
+          <Kingdom> @metatype:String ? ;
+          <Name_According_To> @metatype:String ? ;
+          <Name_According_To_ID> @metatype:String ? ;
+          <Name_Published_In> @metatype:String ? ;
+          <Name_Published_In_ID> @metatype:String ? ;
+          <Name_Published_In_Year> @metatype:String ? ;
+          <Nomenclatural_Code> @metatype:String ? ;
+          <Nomenclatural_Status> @metatype:String ? ;
+          <Order> @metatype:String ? ;
+          <Original_Name_Usage> @metatype:String ? ;
+          <Original_Name_Usage_ID> @metatype:String ? ;
+          <Parent_Name_Usage> @metatype:String ? ;
+          <Parent_Name_Usage_ID> @metatype:String ? ;
+          <Phylum> @metatype:String ? ;
+          <Scientific_Name> @metatype:String ? ;
+          <Scientific_Name_Authorship> @metatype:String ? ;
+          <Scientific_Name_ID> @metatype:String ? ;
+          <Specific_Epithet> @metatype:String ? ;
+          <Subgenus> @metatype:String ? ;
+          <Taxon_Concept_ID> @metatype:String ? ;
+          <Taxon_ID> @metatype:String ? ;
+          <Taxonomic_Status> @metatype:String ? ;
+          <Taxon_Rank> @metatype:String ? ;
+          <Taxon_Remarks> @metatype:String ? ;
+          <Verbatim_Taxon_Rank> @metatype:String ? ;
+          <Vernacular_Name> @metatype:String ?
+       ) ;
+       rdf:type [ <Taxon> ] ?
+    )
+}
+
+<UseWithIRI> CLOSED {
+    (  $<UseWithIRI_tes> rdf:type . * ;
+       rdf:type [ <UseWithIRI> ] ?
+    )
+}
+
+
+

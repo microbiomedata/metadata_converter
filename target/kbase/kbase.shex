@@ -1,0 +1,191 @@
+BASE <http://kbase.us/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX metatype: <https://w3id.org/biolink/biolinkml/type/>
+
+
+metatype:String xsd:string
+
+metatype:Integer xsd:integer
+
+metatype:Boolean xsd:boolean
+
+metatype:Float xsd:float
+
+metatype:Double xsd:double
+
+metatype:Time xsd:dateTime
+
+metatype:Date xsd:date
+
+metatype:Datetime xsd:dateTime
+
+metatype:Uriorcurie IRI
+
+metatype:Uri IRI
+
+metatype:Ncname xsd:string
+
+metatype:Objectidentifier IRI
+
+metatype:Nodeidentifier NONLITERAL
+
+<ENIGMA> CLOSED {
+    (  $<ENIGMA_tes> (  <sampleid> @metatype:String ? ;
+          <experiment_name> @metatype:String ? ;
+          <area_name> @metatype:String ? ;
+          <well_name> @metatype:String ? ;
+          <environmental_package> @metatype:String ? ;
+          <material> @metatype:String ? ;
+          <description> @metatype:String ? ;
+          <date> @metatype:String ? ;
+          <collection_time> @metatype:String ? ;
+          <time_zone> @metatype:String ? ;
+          <geological_zone> @metatype:String ? ;
+          <recovery_factor> @metatype:String ? ;
+          <method> @metatype:String ? ;
+          <fraction> @metatype:String ? ;
+          <replicate> @metatype:String ? ;
+          <maturation_time> @metatype:String ? ;
+          <treatment> @metatype:String ? ;
+          <temperature_celsius> @metatype:String ? ;
+          <moisture> @metatype:Double ? ;
+          <pore_water_extraction_microliters> @metatype:String ? ;
+          <conductivity_ms_cm> @metatype:String ? ;
+          <ph> @metatype:Double ? ;
+          <dapi_cell_count_cells_g> @metatype:String ? ;
+          <dna_picogreen_total_ng> @metatype:String ? ;
+          <total_carbon_mg_g_dry_weight> @metatype:String ? ;
+          <biomass_carbon_mg_g> @metatype:String ? ;
+          <total_nitrogen_mg_g_dry_weight> @metatype:String ? ;
+          <leucine_activity_ngc_day_cell> @metatype:String ? ;
+          <functional_area> @metatype:String ? ;
+          <type_of_well> @metatype:String ? ;
+          <ground_elevation_ft_amsl> @metatype:String ? ;
+          <installation_method> @metatype:String ? ;
+          <boring_ft_bgs> @metatype:String ? ;
+          <boring_refusal> @metatype:String ? ;
+          <boring_diameter_in> @metatype:String ? ;
+          <screen_type> @metatype:String ? ;
+          <well_casing_type> @metatype:String ? ;
+          <well_casing_od_in> @metatype:String ? ;
+          <well_casing_id_in> @metatype:String ? ;
+          <drive_casing_type> @metatype:String ? ;
+          <drive_casing_id_in> @metatype:String ? ;
+          <drive_casing_od_in> @metatype:String ? ;
+          <drive_casing_start_depth_ft_bgs> @metatype:String ? ;
+          <drive_casing_end_depth_ft_bgs> @metatype:String ? ;
+          <packing_type> @metatype:String ? ;
+          <packing_depth_start_ft_bgs> @metatype:String ? ;
+          <packing_depth_end_ft_bgs> @metatype:String ? ;
+          <topofweatheredbedrock_ft_bgs> @metatype:String ? ;
+          <topoffreshbedrock_ft_bgs> @metatype:String ? ;
+          <aquifer> @metatype:String ? ;
+          <fractures_cavities_waterbreaks> @metatype:String ? ;
+          <other_name> @metatype:String ? ;
+          <screened> @metatype:String ? ;
+          <open> @metatype:String ? ;
+          <well_status> @metatype:String ? ;
+          <condition> @metatype:String ? ;
+          <origination_or_plug_abandon> @metatype:String ? ;
+          <min_water_level_ft_amsl> @metatype:String ? ;
+          <average_water_level_ft_amsl> @metatype:String ? ;
+          <max_water_level_ft_amsl> @metatype:String ? ;
+          <upper_seal_type> @metatype:String ? ;
+          <upper_seal_start_depth_ft_bgs> @metatype:String ? ;
+          <upper_seal_end_depth_ft_bgs> @metatype:String ? ;
+          <lower_seal_type_ft_bgs> @metatype:String ? ;
+          <lower_seal_start_depth_ft_bgs> @metatype:String ? ;
+          <lower_seal_end_depth_ft_bgs> @metatype:String ? ;
+          <open_casing_type> @metatype:String ? ;
+          <open_casing_od_in> @metatype:String ? ;
+          <open_casing_id_in> @metatype:String ? ;
+          <open_casing_depth_ft_bgs> @metatype:String ? ;
+          <open_hole_diameter_in> @metatype:String ? ;
+          <open_hole_depth_ft_bgs> @metatype:String ? ;
+          <open_interval_start_depth_ft_bgs> @metatype:String ? ;
+          <open_interval_end_depth_ft_bgs> @metatype:String ? ;
+          <open_interval_diameter_in> @metatype:String ? ;
+          <rock_formation> @metatype:String ? ;
+          <depth> @metatype:Double ? ;
+          <elevation> @metatype:String ? ;
+          <time> @metatype:String ? ;
+          <timezone> @metatype:String ? ;
+          <env_package> @metatype:String ? ;
+          <continent> @metatype:String ? ;
+          <country> @metatype:String ? ;
+          <region> @metatype:String ? ;
+          <biome> @metatype:String ? ;
+          <feature> @metatype:String ? ;
+          <id> @metatype:String ? ;
+          <name> @metatype:String ? ;
+          <well> @metatype:String ? ;
+          <env_pakcage> @metatype:String ? ;
+          <latitude> @metatype:Double ? ;
+          <longitude> @metatype:Double ?
+       ) ;
+       rdf:type [ <ENIGMA> ] ?
+    )
+}
+
+<SESAR> CLOSED {
+    (  $<SESAR_tes> (  <sample_name> @metatype:String ? ;
+          <material> @metatype:String ? ;
+          <field_name_informal_classification> @metatype:String ? ;
+          <location_description> @metatype:String ? ;
+          <locality_description> @metatype:String ? ;
+          <collection_method> @metatype:String ? ;
+          <purpose> @metatype:String ? ;
+          <navigation_type> @metatype:String ? ;
+          <primary_physiographic_feature> @metatype:String ? ;
+          <name_of_physiographic_feature> @metatype:String ? ;
+          <field_program_cruise> @metatype:String ? ;
+          <collector_chief_scientist> @metatype:String ? ;
+          <collection_date_precision> @metatype:String ? ;
+          <current_archive> @metatype:String ? ;
+          <related_identifiers> @metatype:String ? ;
+          <platform_type> @metatype:String ? ;
+          <zone> @metatype:String ? ;
+          <state_province> @metatype:String ? ;
+          <original_archive_contact> @metatype:String ? ;
+          <classification> @metatype:String ? ;
+          <vertical_datum> @metatype:String ? ;
+          <original_archive> @metatype:String ? ;
+          <platform_name> @metatype:String ? ;
+          <collection_time_end> @metatype:String ? ;
+          <county> @metatype:String ? ;
+          <size_unit> @metatype:String ? ;
+          <age_unit> @metatype:String ? ;
+          <locality> @metatype:String ? ;
+          <sample_description> @metatype:String ? ;
+          <collection_method_description> @metatype:String ? ;
+          <other_names> @metatype:String ? ;
+          <geological_unit> @metatype:String ? ;
+          <collector_chief_scientist_address> @metatype:String ? ;
+          <collection_time> @metatype:String ? ;
+          <size> @metatype:Double ? ;
+          <launch_platform_name> @metatype:String ? ;
+          <depth_scale> @metatype:String ? ;
+          <country> @metatype:String ? ;
+          <city_township> @metatype:String ? ;
+          <sub-object_type> @metatype:String ? ;
+          <launch_id> @metatype:String ? ;
+          <id> @metatype:String ? ;
+          <name> @metatype:String ? ;
+          <well> @metatype:String ? ;
+          <depth> @metatype:Double ? ;
+          <elevation> @metatype:String ? ;
+          <date> @metatype:String ? ;
+          <time> @metatype:String ? ;
+          <timezone> @metatype:String ? ;
+          <env_pakcage> @metatype:String ? ;
+          <description> @metatype:String ? ;
+          <latitude> @metatype:Double ? ;
+          <longitude> @metatype:Double ?
+       ) ;
+       rdf:type [ <SESAR> ] ?
+    )
+}
+
+
+

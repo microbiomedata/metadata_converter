@@ -1,0 +1,385 @@
+type Dataset
+  {
+  }
+
+type Event
+  {
+    eventID: String
+    parentEventID: String
+    fieldNumber: String
+    eventDate: String
+    eventTime: String
+    startDayOfYear: String
+    endDayOfYear: String
+    year: String
+    month: String
+    day: String
+    verbatimEventDate: String
+    habitat: String
+    samplingProtocol: String
+    sampleSizeValue: String
+    sampleSizeUnit: String
+    samplingEffort: String
+    fieldNotes: String
+    eventRemarks: String
+    day: String
+    endDayOfYear: String
+    eventDate: String
+    eventID: String
+    eventRemarks: String
+    eventTime: String
+    fieldNotes: String
+    fieldNumber: String
+    habitat: String
+    month: String
+    parentEventID: String
+    sampleSizeUnit: String
+    sampleSizeValue: String
+    samplingEffort: String
+    samplingProtocol: String
+    startDayOfYear: String
+    verbatimEventDate: String
+    year: String
+  }
+
+type EventAttribute
+  {
+  }
+
+type EventMeasurement
+  {
+  }
+
+type FossilSpecimen
+  {
+  }
+
+type FossilSpecimen
+  {
+  }
+
+type GeologicalContext
+  {
+  }
+
+type GeologicalContext
+  {
+    geologicalContextID: String
+    earliestEonOrLowestEonothem: String
+    latestEonOrHighestEonothem: String
+    earliestEraOrLowestErathem: String
+    latestEraOrHighestErathem: String
+    earliestPeriodOrLowestSystem: String
+    latestPeriodOrHighestSystem: String
+    earliestEpochOrLowestSeries: String
+    latestEpochOrHighestSeries: String
+    earliestAgeOrLowestStage: String
+    latestAgeOrHighestStage: String
+    lowestBiostratigraphicZone: String
+    highestBiostratigraphicZone: String
+    lithostratigraphicTerms: String
+    group: String
+    formation: String
+    member: String
+    bed: String
+    bed: String
+    earliestAgeOrLowestStage: String
+    earliestEonOrLowestEonothem: String
+    earliestEpochOrLowestSeries: String
+    earliestEraOrLowestErathem: String
+    earliestPeriodOrLowestSystem: String
+    formation: String
+    geologicalContextID: String
+    group: String
+    highestBiostratigraphicZone: String
+    latestAgeOrHighestStage: String
+    latestEonOrHighestEonothem: String
+    latestEpochOrHighestSeries: String
+    latestEraOrHighestErathem: String
+    latestPeriodOrHighestSystem: String
+    lithostratigraphicTerms: String
+    lowestBiostratigraphicZone: String
+    member: String
+  }
+
+type HumanObservation
+  {
+  }
+
+type HumanObservation
+  {
+  }
+
+type Identification
+  {
+    identificationID: String
+    identificationQualifier: String
+    typeStatus: String
+    identifiedBy: String
+    dateIdentified: String
+    identificationReferences: String
+    identificationVerificationStatus: String
+    identificationRemarks: String
+    dateIdentified: String
+    identificationID: String
+    identificationQualifier: String
+    identificationReferences: String
+    identificationRemarks: String
+    identificationVerificationStatus: String
+    identifiedBy: String
+    typeStatus: String
+  }
+
+type LivingSpecimen
+  {
+  }
+
+type LivingSpecimen
+  {
+  }
+
+type Location
+  {
+  }
+
+type MachineObservation
+  {
+  }
+
+type MachineObservation
+  {
+  }
+
+type MaterialSample
+  {
+  }
+
+type MaterialSample
+  {
+    materialSampleID: String
+    materialSampleID: String
+  }
+
+type MeasurementOrFact
+  {
+  }
+
+type MeasurementOrFact
+  {
+  }
+
+type MeasurementOrFact
+  {
+    measurementID: String
+    measurementType: String
+    measurementValue: String
+    measurementAccuracy: String
+    measurementUnit: String
+    measurementDeterminedBy: String
+    measurementDeterminedDate: String
+    measurementMethod: String
+    measurementRemarks: String
+    measurementAccuracy: String
+    measurementDeterminedBy: String
+    measurementDeterminedDate: String
+    measurementID: String
+    measurementMethod: String
+    measurementRemarks: String
+    measurementType: String
+    measurementUnit: String
+    measurementValue: String
+  }
+
+type NomenclaturalChecklist
+  {
+  }
+
+type Occurrence
+  {
+    occurrenceID: String
+    catalogNumber: String
+    recordNumber: String
+    recordedBy: String
+    individualCount: String
+    organismQuantity: String
+    organismQuantityType: String
+    sex: String
+    lifeStage: String
+    reproductiveCondition: String
+    behavior: String
+    establishmentMeans: String
+    occurrenceStatus: String
+    preparations: String
+    disposition: String
+    associatedMedia: String
+    associatedReferences: String
+    associatedSequences: String
+    associatedTaxa: String
+    otherCatalogNumbers: String
+    occurrenceRemarks: String
+    associatedMedia: String
+    associatedReferences: String
+    associatedSequences: String
+    associatedTaxa: String
+    behavior: String
+    catalogNumber: String
+    disposition: String
+    establishmentMeans: String
+    individualCount: String
+    lifeStage: String
+    occurrenceID: String
+    occurrenceRemarks: String
+    occurrenceStatus: String
+    organismQuantity: String
+    organismQuantityType: String
+    otherCatalogNumbers: String
+    preparations: String
+    recordedBy: String
+    recordNumber: String
+    reproductiveCondition: String
+    sex: String
+  }
+
+type OccurrenceMeasurement
+  {
+  }
+
+type Organism
+  {
+    organismID: String
+    organismName: String
+    organismScope: String
+    associatedOccurrences: String
+    associatedOrganisms: String
+    previousIdentifications: String
+    organismRemarks: String
+    associatedOccurrences: String
+    associatedOrganisms: String
+    organismID: String
+    organismName: String
+    organismRemarks: String
+    organismScope: String
+    previousIdentifications: String
+  }
+
+type PreservedSpecimen
+  {
+  }
+
+type PreservedSpecimen
+  {
+  }
+
+type ResourceRelationship
+  {
+  }
+
+type ResourceRelationship
+  {
+    resourceRelationshipID: String
+    resourceID: String
+    relatedResourceID: String
+    relationshipOfResource: String
+    relationshipAccordingTo: String
+    relationshipEstablishedDate: String
+    relationshipRemarks: String
+    relatedResourceID: String
+    relationshipAccordingTo: String
+    relationshipEstablishedDate: String
+    relationshipOfResource: String
+    relationshipRemarks: String
+    resourceID: String
+    resourceRelationshipID: String
+  }
+
+type Sample
+  {
+  }
+
+type SampleAttribute
+  {
+  }
+
+type SamplingEvent
+  {
+  }
+
+type SamplingLocation
+  {
+  }
+
+type Taxon
+  {
+    taxonID: String
+    scientificNameID: String
+    acceptedNameUsageID: String
+    parentNameUsageID: String
+    originalNameUsageID: String
+    nameAccordingToID: String
+    namePublishedInID: String
+    taxonConceptID: String
+    scientificName: String
+    acceptedNameUsage: String
+    parentNameUsage: String
+    originalNameUsage: String
+    nameAccordingTo: String
+    namePublishedIn: String
+    namePublishedInYear: String
+    higherClassification: String
+    kingdom: String
+    phylum: String
+    class: String
+    order: String
+    family: String
+    genus: String
+    subgenus: String
+    specificEpithet: String
+    infraspecificEpithet: String
+    taxonRank: String
+    verbatimTaxonRank: String
+    scientificNameAuthorship: String
+    vernacularName: String
+    nomenclaturalCode: String
+    taxonomicStatus: String
+    nomenclaturalStatus: String
+    taxonRemarks: String
+    acceptedNameUsage: String
+    acceptedNameUsageID: String
+    class: String
+    family: String
+    genus: String
+    higherClassification: String
+    infraspecificEpithet: String
+    kingdom: String
+    nameAccordingTo: String
+    nameAccordingToID: String
+    namePublishedIn: String
+    namePublishedInID: String
+    namePublishedInYear: String
+    nomenclaturalCode: String
+    nomenclaturalStatus: String
+    order: String
+    originalNameUsage: String
+    originalNameUsageID: String
+    parentNameUsage: String
+    parentNameUsageID: String
+    phylum: String
+    scientificName: String
+    scientificNameAuthorship: String
+    scientificNameID: String
+    specificEpithet: String
+    subgenus: String
+    taxonConceptID: String
+    taxonID: String
+    taxonomicStatus: String
+    taxonRank: String
+    taxonRemarks: String
+    verbatimTaxonRank: String
+    vernacularName: String
+  }
+
+type UseWithIRI
+  {
+  }
+
+

@@ -10,6 +10,7 @@
     [ sh:prefix "PATO" ; sh:namespace "http://purl.obolibrary.org/obo/PATO_"],
     [ sh:prefix "OBI" ; sh:namespace "http://purl.obolibrary.org/obo/OBI_"],
     [ sh:prefix "mixs" ; sh:namespace "https://microbiomedata/schema/mixs#"],
+    [ sh:prefix "dwc" ; sh:namespace "http://rs.tdwg.org/dwc/terms/"],
     [ sh:prefix "kbase" ; sh:namespace "http://kbase.us/"],
     [ sh:prefix "neon" ; sh:namespace "https://data.neonscience.org/"],
     [ sh:prefix "schema" ; sh:namespace "http://schema.org/"],

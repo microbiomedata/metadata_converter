@@ -1,0 +1,1550 @@
+BASE <https://microbiomedata/schema/ddl/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX metatype: <https://w3id.org/biolink/biolinkml/type/>
+
+
+metatype:String xsd:string
+
+metatype:Integer xsd:integer
+
+metatype:Boolean xsd:boolean
+
+metatype:Float xsd:float
+
+metatype:Double xsd:double
+
+metatype:Time xsd:dateTime
+
+metatype:Date xsd:date
+
+metatype:Datetime xsd:dateTime
+
+metatype:Uriorcurie IRI
+
+metatype:Uri IRI
+
+metatype:Ncname xsd:string
+
+metatype:Objectidentifier IRI
+
+metatype:Nodeidentifier NONLITERAL
+
+<ANALYSISPROJECT> CLOSED {
+    (  $<ANALYSISPROJECT_tes> (  <ITS_ANALYSIS_PROJECT_ID> @metatype:Integer ? ;
+          <ANALYSIS_PROJECT_NAME> @metatype:String ? ;
+          <GOLD_ID> @metatype:String ? ;
+          <REFERENCE_AP_ID> @metatype:Integer ? ;
+          <IMG_TAXON_ID> @metatype:Integer ? ;
+          <ANALYSIS_PROJECT_TYPE> @metatype:String ? ;
+          <STATUS_ID> @metatype:Integer ? ;
+          <COMMENTS> @metatype:String ? ;
+          <NCBI_TAX_ID> @metatype:Integer ? ;
+          <IS_PUBLIC> @metatype:String ? ;
+          <ADDED_BY> @metatype:Double ? ;
+          <ADD_DATE> @metatype:Time ? ;
+          <PI_ID> @metatype:Integer ? ;
+          <SUBMISSION_ID> @metatype:Integer ? ;
+          <SCAFFOLD_COUNT> @metatype:Double ? ;
+          <CONTIG_COUNT> @metatype:Double ? ;
+          <GENE_COUNT> @metatype:Double ? ;
+          <BINNING_METHOD> @metatype:String ? ;
+          <GENE_CALLING_METHOD> @metatype:String ? ;
+          <ITS_ANALYSIS_PROJECT_NAME> @metatype:String ? ;
+          <ITS_PRODUCT_NAME> @metatype:String ? ;
+          <COMPLETION_DATE> @metatype:Time ? ;
+          <EST_SIZE> @metatype:Double ? ;
+          <GENBANK_LOW_QUALITY_ANNOTATION> @metatype:String ? ;
+          <ECOSYSTEM> @metatype:String ? ;
+          <ECOSYSTEM_CATEGORY> @metatype:String ? ;
+          <ECOSYSTEM_TYPE> @metatype:String ? ;
+          <ECOSYSTEM_SUBTYPE> @metatype:String ? ;
+          <SPECIFIC_ECOSYSTEM> @metatype:String ? ;
+          <IMG_ANALYSIS_COMPLETE> @metatype:String ? ;
+          <IS_GENE_PRIMP> @metatype:String ? ;
+          <IS_DECONTAMINATION> @metatype:String ? ;
+          <IS_IMG_ANNOTATION> @metatype:String ? ;
+          <ITS_ANNOTATION_AT_ID> @metatype:Integer ? ;
+          <IS_ASSEMBLED_DELETED> @metatype:String ? ;
+          <STUDY_ID> @metatype:Integer ? ;
+          <SPECIMEN> @metatype:String ? ;
+          <ITS_ASSEMBLY_AT_TYPE> @metatype:String ? ;
+          <DOMAIN> @metatype:String ? ;
+          <NCBI_PHYLUM> @metatype:String ? ;
+          <NCBI_CLASS> @metatype:String ? ;
+          <NCBI_ORDER> @metatype:String ? ;
+          <NCBI_FAMILY> @metatype:String ? ;
+          <NCBI_GENUS> @metatype:String ? ;
+          <NCBI_SPECIES> @metatype:String ? ;
+          <APPENDED_AP_NAME> @metatype:String ? ;
+          <MOD_BY> @metatype:Double ? ;
+          <MOD_DATE> @metatype:Time ? ;
+          <PI_NAME> @metatype:String ? ;
+          <ANALYSIS_PROJECT_NAME_FULL> @metatype:String ? ;
+          <IS_PRIMARY> @metatype:String ? ;
+          <GOLD_PHYLOGENY> @metatype:String ? ;
+          <PHYLOGENY_SUGGESTION> @metatype:String ? ;
+          <REPLACES_AP_ID> @metatype:Integer ? ;
+          <NCBI_BIOPROJECT_ID> @metatype:Integer ? ;
+          <SCREENING_METHOD> @metatype:String ? ;
+          <DECONTAMINATION_METHOD> @metatype:String ? ;
+          <NCBI_BIOSAMPLE_ACCESSION> @metatype:String ? ;
+          <NCBI_BIOPROJECT_ACCESSION> @metatype:String ? ;
+          <COMPLETION> @metatype:String ? ;
+          <NCBI_KINGDOM> @metatype:String ? ;
+          <REVIEW_STATUS> @metatype:String ? ;
+          <REJECTION_REASONS> @metatype:String ? ;
+          <ORGANISM_ID> @metatype:Integer ? ;
+          <PIPELINE_ANNOTATION_METHOD> @metatype:String ? ;
+          <GENUS> @metatype:String ? ;
+          <SPECIES> @metatype:String ? ;
+          <SUBSPECIES> @metatype:String ? ;
+          <CULTURE_COLLECTION> @metatype:String ? ;
+          <SEROVAR> @metatype:String ? ;
+          <STRAIN> @metatype:String ? ;
+          <ECOSYSTEM_PATH_ID> @metatype:Integer ? ;
+          <SEQUENCING_DEPTH> @metatype:String ? ;
+          <IMG_USE> @metatype:String ? ;
+          <ANNOTATOR_COMMENTS> @metatype:String ? ;
+          <AP_FOR_NONOWNER> @metatype:String ? ;
+          <NCBI_SUPERKINGDOM> @metatype:String ? ;
+          <IS_TEST> @metatype:String ? ;
+          <ITS_NCBI_TAX_ID> @metatype:Integer ? ;
+          <ITS_VERSION_NUMBER> @metatype:Double ? ;
+          <IMG_RNASEQ_ID> @metatype:Integer ? ;
+          <SUBMISSION_STATUS_ID> @metatype:Integer ? ;
+          <SUBMISSION_STATUS_NAME> @metatype:String ? ;
+          <SUBMISSION_COMMENTS> @metatype:String ? ;
+          <IMG_SUBMISSION_PRORITY> @metatype:String ? ;
+          <CONTAMINATION_PERCENTAGE> @metatype:Double ? ;
+          <COMPLETENESS_PERCENTAGE> @metatype:Double ?
+       ) ;
+       rdf:type [ <ANALYSISPROJECT> ] ?
+    )
+}
+
+<ANALYSISPROJECTSRARUNV2> CLOSED {
+    (  $<ANALYSISPROJECTSRARUNV2_tes> <SRA_RUN_ID> @metatype:String ? ;
+       rdf:type [ <ANALYSISPROJECTSRARUNV2> ] ?
+    )
+}
+
+<BIOSAMPLE> CLOSED {
+    (  $<BIOSAMPLE_tes> (  <BIOSAMPLE_NAME> @metatype:String ? ;
+          <ADD_DATE> @metatype:Time ? ;
+          <MOD_DATE> @metatype:Time ? ;
+          <MOD_BY> @metatype:Double ? ;
+          <DESCRIPTION> @metatype:String ? ;
+          <ECOSYSTEM> @metatype:String ? ;
+          <ECOSYSTEM_CATEGORY> @metatype:String ? ;
+          <ECOSYSTEM_TYPE> @metatype:String ? ;
+          <ECOSYSTEM_SUBTYPE> @metatype:String ? ;
+          <SPECIFIC_ECOSYSTEM> @metatype:String ? ;
+          <SAMPLE_COLLECTION_SITE> @metatype:String ? ;
+          <ISOLATION_PUBLICATION_ID> @metatype:Integer ? ;
+          <SAMPLE_ISOLATION_COMMENTS> @metatype:String ? ;
+          <SAMPLING_STRATEGY> @metatype:String ? ;
+          <REPLICATE_NUMBER> @metatype:Double ? ;
+          <SAMPLE_VOLUME> @metatype:String ? ;
+          <SAMPLE_BIOMASS> @metatype:String ? ;
+          <SAMPLE_CONTACT_NAME> @metatype:String ? ;
+          <SAMPLE_CONTACT_EMAIL> @metatype:String ? ;
+          <GEOGRAPHIC_LOCATION> @metatype:String ? ;
+          <LAT_LONG_INFERRED> @metatype:String ? ;
+          <SALINITY> @metatype:String ? ;
+          <PRESSURE> @metatype:String ? ;
+          <PH> @metatype:String ? ;
+          <HABITAT> @metatype:String ? ;
+          <HOST_NAME> @metatype:String ? ;
+          <HOST_TAXONOMY_ID> @metatype:Integer ? ;
+          <HOST_GENDER> @metatype:String ? ;
+          <HOST_RACE> @metatype:String ? ;
+          <HOST_AGE> @metatype:String ? ;
+          <HOST_HEALTH_CONDITION> @metatype:String ? ;
+          <PATIENT_VISIT_NUMBER> @metatype:Double ? ;
+          <HOST_MEDICATION> @metatype:String ? ;
+          <MRN> @metatype:String ? ;
+          <HOST_BODY_SITE> @metatype:String ? ;
+          <HOST_BODY_SUBSITE> @metatype:String ? ;
+          <HOST_BODY_PRODUCT> @metatype:String ? ;
+          <HOST_SPECIFICITY> @metatype:String ? ;
+          <HOST_COMMENTS> @metatype:String ? ;
+          <ACTIVE> @metatype:String ? ;
+          <PROJECT_OID> @metatype:Double ? ;
+          <SAMPLE_OID> @metatype:Double ? ;
+          <GOLD_ID> @metatype:String ? ;
+          <IS_PUBLIC> @metatype:String ? ;
+          <SPECIMEN> @metatype:String ? ;
+          <SUBMIT_BIOSAMPLE_NAME> @metatype:String ? ;
+          <NCBI_TAXONOMY_ID> @metatype:Integer ? ;
+          <COMMUNITY> @metatype:String ? ;
+          <LOCATION> @metatype:String ? ;
+          <IDENTIFIER> @metatype:String ? ;
+          <ENV_PACKAGE> @metatype:String ? ;
+          <SAMPLE_COLLECTION_DAY> @metatype:Double ? ;
+          <SAMPLE_COLLECTION_MONTH> @metatype:Double ? ;
+          <SAMPLE_COLLECTION_YEAR> @metatype:Double ? ;
+          <SUBMITTER_ID> @metatype:Integer ? ;
+          <GROWTH_CONDITIONS> @metatype:String ? ;
+          <JPA_ENTITY> @metatype:String ? ;
+          <OTHER_HOSTS> @metatype:String ? ;
+          <KNOWN_NON_HOSTS> @metatype:String ? ;
+          <ISOLATION_PUBMED_ID> @metatype:Integer ? ;
+          <HOST_BODY_SITE_ID> @metatype:Integer ? ;
+          <HOST_BODY_SUBSITE_ID> @metatype:Integer ? ;
+          <HOST_BODY_PRODUCT_ID> @metatype:Integer ? ;
+          <IS_DRAFT> @metatype:String ? ;
+          <SAMPLE_ISOLATION_COUNTRY_ID> @metatype:Integer ? ;
+          <OTHER_ECOSYSTEM> @metatype:String ? ;
+          <LONGHURST_CODE> @metatype:String ? ;
+          <SAMPLE_COLLECTION_HOUR> @metatype:Double ? ;
+          <SAMPLE_COLLECTION_MINUTE> @metatype:Double ? ;
+          <CHLOROPHYLL_CONCENTRATION> @metatype:String ? ;
+          <NITRATE_CONCENTRATION> @metatype:String ? ;
+          <OXYGEN_CONCENTRATION> @metatype:String ? ;
+          <SALINITY_CONCENTRATION> @metatype:String ? ;
+          <PUBLIC_SP_COUNT> @metatype:Double ? ;
+          <ADMIN_SP_COUNT> @metatype:Double ? ;
+          <PUBLIC_AP_COUNT> @metatype:Double ? ;
+          <ADMIN_AP_COUNT> @metatype:Double ? ;
+          <PUBLIC_DAP_COUNT> @metatype:Double ? ;
+          <ADMIN_DAP_COUNT> @metatype:Double ? ;
+          <CRUISE_LINE_NAME> @metatype:String ? ;
+          <ECOSYSTEM_PATH_ID> @metatype:Integer ? ;
+          <PROPORT_OCEAN> @metatype:String ? ;
+          <PROPORT_ISOLATION> @metatype:String ? ;
+          <PROPORT_STATION> @metatype:String ? ;
+          <PROPORT_WOA_TEMPERATURE> @metatype:Double ? ;
+          <PROPORT_WOA_SALINITY> @metatype:Double ? ;
+          <PROPORT_WOA_DISSOLVED_OXYGEN> @metatype:Double ? ;
+          <PROPORT_WOA_SILICATE> @metatype:Double ? ;
+          <PROPORT_WOA_PHOSPHATE> @metatype:Double ? ;
+          <PROPORT_WOA_NITRATE> @metatype:Double ? ;
+          <NCBI_TAXONOMY_NAME> @metatype:String ? ;
+          <ITS_GROWTH_CONDITIONS> @metatype:String ? ;
+          <BIOGAS_FED_SUBSTRATES> @metatype:String ? ;
+          <BIOGAS_RETENTION_TIME> @metatype:String ? ;
+          <BIOGAS_TEMPERATURE> @metatype:String ? ;
+          <BIOGAS_YIELD> @metatype:String ? ;
+          <BIOGAS_VOLATILE_ORGANIC_ACIDS> @metatype:String ? ;
+          <BIOGAS_TOTAL_INORGANIC_CARBON> @metatype:String ? ;
+          <BIOGAS_VOA_TIC> @metatype:String ? ;
+          <BIOGAS_AMMONIUM_NH4> @metatype:String ? ;
+          <BIOGAS_BUTANOL> @metatype:String ? ;
+          <BIOGAS_ETHANOL> @metatype:String ? ;
+          <BIOGAS_PROPANOL> @metatype:String ? ;
+          <BIOGAS_METHANOL> @metatype:String ? ;
+          <BIOGAS_ACETIC_ACID> @metatype:String ? ;
+          <BIOGAS_BUTYL_ACID> @metatype:String ? ;
+          <BIOGAS_ISO_BUTYL_ACID> @metatype:String ? ;
+          <BIOGAS_VALERIC_ACID> @metatype:String ? ;
+          <BIOGAS_ISO_VALERIC_ACID> @metatype:String ? ;
+          <BIOGAS_PROPIONIC_ACID> @metatype:String ? ;
+          <BIOGAS_METHANE_PCT> @metatype:Double ? ;
+          <IS_TEST> @metatype:String ? ;
+          <SAMPLE_CONDUCTIVITY> @metatype:String ? ;
+          <GROWTH_TEMPERATURE> @metatype:Double ? ;
+          <SUBSURFACE_DEPTH> @metatype:Double ? ;
+          <LEGACY_DEPTH_DATA> @metatype:String ? ;
+          <LATITUDE_TEST> @metatype:Double ? ;
+          <LONGITUDE_TEST> @metatype:Double ? ;
+          <ELEVATION> @metatype:Double ? ;
+          <ELEVATION2> @metatype:Double ? ;
+          <SOIL_CURR_LAND_USE> @metatype:String ? ;
+          <SOIL_CURR_VEGETATION> @metatype:String ? ;
+          <SOIL_CURR_VEGETATION_METHOD> @metatype:String ? ;
+          <SOIL_PREV_LAND_USE> @metatype:String ? ;
+          <SOIL_PREV_LAND_USE_METH> @metatype:String ? ;
+          <SOIL_CROP_ROTATION> @metatype:String ? ;
+          <SOIL_AGROCHEM_ADDITION> @metatype:String ? ;
+          <SOIL_TILLAGE> @metatype:String ? ;
+          <SOIL_FIRE> @metatype:String ? ;
+          <SOIL_FLOODING> @metatype:String ? ;
+          <SOIL_EXTREME_EVENT> @metatype:String ? ;
+          <SOIL_HORIZON> @metatype:String ? ;
+          <SOIL_HORIZON_METHOD> @metatype:String ? ;
+          <SOIL_SIEVING> @metatype:String ? ;
+          <SOIL_WATER_CONTENT> @metatype:String ? ;
+          <SOIL_WATER_CONTENT_SOIL_METH> @metatype:String ? ;
+          <SAMPLE_WEIGHT_DNA_EXT> @metatype:String ? ;
+          <SOIL_POOL_DNA_EXTRACTS> @metatype:String ? ;
+          <SOIL_STORAGE_CONDITION> @metatype:String ? ;
+          <SOIL_LINK_CLIMATE_INFO> @metatype:String ? ;
+          <SOIL_LINK_CLASS_INFO> @metatype:String ? ;
+          <SOIL_FAO_CLASS> @metatype:String ? ;
+          <SOIL_LOCAL_CLASS> @metatype:String ? ;
+          <SOIL_LOCAL_CLASS_METHOD> @metatype:String ? ;
+          <SOIL_TYPE> @metatype:String ? ;
+          <SOIL_TYPE_METHOD> @metatype:String ? ;
+          <SOIL_SLOPE_GRADIENT> @metatype:Double ? ;
+          <SOIL_SLOPE_ASPECT> @metatype:Double ? ;
+          <SOIL_PROFILE_POSITION> @metatype:String ? ;
+          <SOIL_DRAINAGE_CLASS> @metatype:String ? ;
+          <SOIL_TEXTURE> @metatype:String ? ;
+          <SOIL_TEXTURE_METHOD> @metatype:String ? ;
+          <SOIL_PH_METHOD> @metatype:String ? ;
+          <TOT_ORG_CARBON> @metatype:Double ? ;
+          <SOIL_TOT_ORG_C_METHOD> @metatype:String ? ;
+          <TOT_NITROGEN> @metatype:String ? ;
+          <SOIL_TOT_N_METHOD> @metatype:String ? ;
+          <SOIL_MICROBIAL_BIOMASS> @metatype:String ? ;
+          <SOIL_MICROBIAL_BIOMASS_METHOD> @metatype:String ? ;
+          <SOIL_LINK_ADDIT_ANALYS> @metatype:String ? ;
+          <SOIL_SALINITY_METHOD> @metatype:String ? ;
+          <SOIL_HEAVY_METALS> @metatype:Double ? ;
+          <SOIL_HEAVY_METALS_METHOD> @metatype:String ? ;
+          <SOIL_ALUMINIUM_SAT> @metatype:Double ? ;
+          <SOIL_ALUMINIUM_SAT_METHOD> @metatype:String ? ;
+          <SOIL_MISC_PARAM> @metatype:String ? ;
+          <WATER_ALKALINITY> @metatype:Double ? ;
+          <WATER_ALKYL_DIETHERS> @metatype:Double ? ;
+          <WATER_AMINOPEPT_ACT> @metatype:Double ? ;
+          <WATER_AMMONIUM> @metatype:Double ? ;
+          <WATER_ATMOSPHERIC_DATA> @metatype:String ? ;
+          <WATER_BACTERIAL_PROD> @metatype:Double ? ;
+          <WATER_BACTERIAL_RESP> @metatype:Double ? ;
+          <WATER_BACTERIAL_CARBON_PROD> @metatype:Double ? ;
+          <WATER_BISHOMOHOPANOL> @metatype:String ? ;
+          <WATER_BROMIDE> @metatype:Double ? ;
+          <WATER_CALCIUM> @metatype:String ? ;
+          <WATER_CARBON_NITROG_RATIO> @metatype:String ? ;
+          <WATER_CHEM_ADMINISTRATION> @metatype:String ? ;
+          <WATER_CHLORIDE> @metatype:Double ? ;
+          <WATER_DENSITY> @metatype:Double ? ;
+          <WATER_DIETHER_LIPIDS> @metatype:Double ? ;
+          <WATER_DISS_CARBON_DIOXIDE> @metatype:Double ? ;
+          <WATER_DISS_HYDROGEN> @metatype:Double ? ;
+          <WATER_DISS_INORG_CARBON> @metatype:Double ? ;
+          <WATER_DISS_INORG_NITRO> @metatype:Double ? ;
+          <WATER_DISS_INORG_PHOSPHORUS> @metatype:Double ? ;
+          <WATER_DISS_ORG_CARBON> @metatype:Double ? ;
+          <WATER_DISS_ORG_NITROGEN> @metatype:Double ? ;
+          <WATER_DOWNWARD_PAR> @metatype:Double ? ;
+          <WATER_FLUORESCENCE> @metatype:Double ? ;
+          <WATER_GLUCOSIDASE_ACTIVITY> @metatype:Double ? ;
+          <WATER_LIGHT_INTENSITY> @metatype:Double ? ;
+          <WATER_MAGNESIUM> @metatype:String ? ;
+          <WATER_MEAN_FRICT_VEL> @metatype:Double ? ;
+          <WATER_MEAN_PEAK_FRICT_VEL> @metatype:Double ? ;
+          <WATER_MISC_PARAMETER> @metatype:String ? ;
+          <WATER_N_ALKANES> @metatype:Double ? ;
+          <WATER_NITRITE> @metatype:Double ? ;
+          <WATER_ORG_MATTER> @metatype:Double ? ;
+          <WATER_ORG_NITROGEN> @metatype:Double ? ;
+          <WATER_ORGANISM_COUNT> @metatype:Double ? ;
+          <WATER_OXY_STAT_SAMPLE> @metatype:String ? ;
+          <WATER_PART_ORG_CARBON> @metatype:Double ? ;
+          <WATER_PART_ORG_NITROGEN> @metatype:Double ? ;
+          <WATER_PERTURBATION> @metatype:String ? ;
+          <WATER_PETROLEUM_HYDROCARBON> @metatype:Double ? ;
+          <WATER_PHAEOPIGMENTS> @metatype:Double ? ;
+          <WATER_PHOSPLIPID_FATT_ACID> @metatype:String ? ;
+          <WATER_PHOTON_FLUX> @metatype:Double ? ;
+          <WATER_POTASSIUM> @metatype:Double ? ;
+          <WATER_PRIMARY_PROD> @metatype:Double ? ;
+          <WATER_REDOX_POTENTIAL> @metatype:Double ? ;
+          <WATER_SAMP_STORE_DUR> @metatype:String ? ;
+          <WATER_SAMP_STORE_LOC> @metatype:String ? ;
+          <WATER_SAMP_STORE_TEMP> @metatype:Double ? ;
+          <WATER_SODIUM> @metatype:Double ? ;
+          <WATER_SOLUBLE_REACT_PHOSP> @metatype:Double ? ;
+          <WATER_SULFATE> @metatype:String ? ;
+          <WATER_SULFIDE> @metatype:String ? ;
+          <WATER_SUSPEND_PART_MATTER> @metatype:Double ? ;
+          <WATER_TIDAL_STAGE> @metatype:String ? ;
+          <WATER_TOT_DEPTH_WATER_COL> @metatype:Double ? ;
+          <WATER_TOT_DISS_NITRO> @metatype:Double ? ;
+          <WATER_TOT_INORG_NITRO> @metatype:Double ? ;
+          <WATER_TOT_PART_CARBON> @metatype:String ? ;
+          <WATER_TOT_PHOSPHORUS> @metatype:Double ? ;
+          <WATER_CURRENT> @metatype:String ? ;
+          <LATITUDE> @metatype:Double ? ;
+          <LONGITUDE> @metatype:Double ? ;
+          <DEPTH> @metatype:Double ? ;
+          <DEPTH2> @metatype:Double ? ;
+          <ALTITUDE> @metatype:Double ? ;
+          <ALTITUDE2> @metatype:Double ? ;
+          <SOLUBLE_IRON_MICROMOL> @metatype:Double ? ;
+          <BICARBONATE_MILLIMOL> @metatype:Double ? ;
+          <H2S_MILLIMOL> @metatype:Double ? ;
+          <H2S_PRESENT> @metatype:String ? ;
+          <IRRADIANCE> @metatype:String ? ;
+          <OXYGEN_PRESENCE> @metatype:String ? ;
+          <METHANE_CONC_MILLIMOL> @metatype:Double ? ;
+          <GROWTH_TEMPERATURE2> @metatype:Double ? ;
+          <ANNOTATOR_COMMENTS> @metatype:String ? ;
+          <SUBSURFACE_DEPTH2> @metatype:Double ? ;
+          <PH1> @metatype:Double ? ;
+          <PH2> @metatype:Double ? ;
+          <PH_OLD> @metatype:String ? ;
+          <WATER_ALKALINITY_METHOD> @metatype:String ? ;
+          <WATER_TURBIDITY> @metatype:String ? ;
+          <WATER_SIZE_FRAC_LOW> @metatype:Double ? ;
+          <WATER_SIZE_FRAC_UP> @metatype:Double ? ;
+          <SOIL_MEAN_ANNUAL_TEMP> @metatype:Double ? ;
+          <SOIL_MEAN_SEASONAL_TEMP> @metatype:Double ? ;
+          <SOIL_MEAN_ANNUAL_PRECPT> @metatype:Double ? ;
+          <SOIL_MEAN_SEASONAL_PRECPT> @metatype:Double ? ;
+          <TEST_PACKAGE_ID> @metatype:Integer ? ;
+          <SOIL_PACKAGE_ID> @metatype:Integer ? ;
+          <WATER_PACKAGE_ID> @metatype:Integer ? ;
+          <GLOBAL_PACKAGE_ID> @metatype:Integer ? ;
+          <ENVO_BIOME_ID> @metatype:String ? ;
+          <ENVO_FEATURE_ID> @metatype:String ? ;
+          <ENVO_MATERIAL_ID> @metatype:String ?
+       ) ;
+       rdf:type [ <BIOSAMPLE> ] ?
+    )
+}
+
+<CONTACT> CLOSED {
+    (  $<CONTACT_tes> (  <USERNAME> @metatype:String ? ;
+          <PASSWORD> @metatype:String ? ;
+          <NAME> @metatype:String ? ;
+          <TITLE> @metatype:String ? ;
+          <DEPARTMENT> @metatype:String ? ;
+          <EMAIL> @metatype:String ? ;
+          <PHONE> @metatype:String ? ;
+          <ORGANIZATION> @metatype:String ? ;
+          <ADDRESS> @metatype:String ? ;
+          <CITY> @metatype:String ? ;
+          <STATE> @metatype:String ? ;
+          <COUNTRY> @metatype:String ? ;
+          <COMMENTS> @metatype:String ? ;
+          <ADD_DATE> @metatype:Time ? ;
+          <X_SUPER_USER> @metatype:String ? ;
+          <X_IMG_EDITOR> @metatype:String ? ;
+          <X_IMG_GROUP> @metatype:Double ? ;
+          <JGI_USER> @metatype:String ? ;
+          <X_IMG_EDITING_LEVEL> @metatype:String ? ;
+          <CALIBAN_ID> @metatype:Integer ? ;
+          <CALIBAN_USER_NAME> @metatype:String ? ;
+          <URL> @metatype:String ? ;
+          <X_IMG_CONTACT_ID> @metatype:Integer ? ;
+          <MASTER_CONTACT_ID> @metatype:Integer ? ;
+          <ORACLE_USER_NAME> @metatype:String ? ;
+          <USER_ROLE> @metatype:String ? ;
+          <GEBA_ORGANISM_AVAIL_COUNT> @metatype:Double ? ;
+          <GEBA_REVIEWER> @metatype:String ?
+       ) ;
+       rdf:type [ <CONTACT> ] ?
+    )
+}
+
+<CVAPCOMPLETION> CLOSED {
+    (  $<CVAPCOMPLETION_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVAPCOMPLETION> ] ?
+    )
+}
+
+<CVAPREVIEWSTATUS> CLOSED {
+    (  $<CVAPREVIEWSTATUS_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVAPREVIEWSTATUS> ] ?
+    )
+}
+
+<CVAPSTATUS> CLOSED {
+    (  $<CVAPSTATUS_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVAPSTATUS> ] ?
+    )
+}
+
+<CVAPTYPE> CLOSED {
+    (  $<CVAPTYPE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVAPTYPE> ] ?
+    )
+}
+
+<CVAVAILABILITY> CLOSED {
+    (  $<CVAVAILABILITY_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVAVAILABILITY> ] ?
+    )
+}
+
+<CVBIOME> CLOSED {
+    (  $<CVBIOME_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVBIOME> ] ?
+    )
+}
+
+<CVBIOSAFETY> CLOSED {
+    (  $<CVBIOSAFETY_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVBIOSAFETY> ] ?
+    )
+}
+
+<CVBIOTICRELATIONSHIP> CLOSED {
+    (  $<CVBIOTICRELATIONSHIP_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVBIOTICRELATIONSHIP> ] ?
+    )
+}
+
+<CVBODYPRODUCT> CLOSED {
+    (  $<CVBODYPRODUCT_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVBODYPRODUCT> ] ?
+    )
+}
+
+<CVBODYSITE> CLOSED {
+    (  $<CVBODYSITE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVBODYSITE> ] ?
+    )
+}
+
+<CVBODYSUBSITE> CLOSED {
+    (  $<CVBODYSUBSITE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVBODYSUBSITE> ] ?
+    )
+}
+
+<CVCELLARRANGEMENT> CLOSED {
+    (  $<CVCELLARRANGEMENT_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVCELLARRANGEMENT> ] ?
+    )
+}
+
+<CVCELLSHAPE> CLOSED {
+    (  $<CVCELLSHAPE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVCELLSHAPE> ] ?
+    )
+}
+
+<CVCOLOR> CLOSED {
+    (  $<CVCOLOR_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVCOLOR> ] ?
+    )
+}
+
+<CVCOUNTRY> CLOSED {
+    (  $<CVCOUNTRY_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVCOUNTRY> ] ?
+    )
+}
+
+<CVCULTURETYPE> CLOSED {
+    (  $<CVCULTURETYPE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVCULTURETYPE> ] ?
+    )
+}
+
+<CVCURRENTLANDUSE> CLOSED {
+    (  $<CVCURRENTLANDUSE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVCURRENTLANDUSE> ] ?
+    )
+}
+
+<CVDATAVALIDITYTYPE> CLOSED {
+    (  $<CVDATAVALIDITYTYPE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVDATAVALIDITYTYPE> ] ?
+    )
+}
+
+<CVDISEASE> CLOSED {
+    (  $<CVDISEASE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVDISEASE> ] ?
+    )
+}
+
+<CVDOMAIN> CLOSED {
+    (  $<CVDOMAIN_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVDOMAIN> ] ?
+    )
+}
+
+<CVDRAINAGECLASS> CLOSED {
+    (  $<CVDRAINAGECLASS_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVDRAINAGECLASS> ] ?
+    )
+}
+
+<CVENERGYSOURCE> CLOSED {
+    (  $<CVENERGYSOURCE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVENERGYSOURCE> ] ?
+    )
+}
+
+<CVENVPACKAGE> CLOSED {
+    (  $<CVENVPACKAGE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVENVPACKAGE> ] ?
+    )
+}
+
+<CVFASTADOWNLOADSTATUS> CLOSED {
+    (  $<CVFASTADOWNLOADSTATUS_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVFASTADOWNLOADSTATUS> ] ?
+    )
+}
+
+<CVFINISHINGGOAL> CLOSED {
+    (  $<CVFINISHINGGOAL_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVFINISHINGGOAL> ] ?
+    )
+}
+
+<CVGEBAPRIORITYSTATUS> CLOSED {
+    (  $<CVGEBAPRIORITYSTATUS_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVGEBAPRIORITYSTATUS> ] ?
+    )
+}
+
+<CVGEBAREVIEWSTATUS> CLOSED {
+    (  $<CVGEBAREVIEWSTATUS_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVGEBAREVIEWSTATUS> ] ?
+    )
+}
+
+<CVGEBASAMPLETYPE> CLOSED {
+    (  $<CVGEBASAMPLETYPE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVGEBASAMPLETYPE> ] ?
+    )
+}
+
+<CVGEBATYPES> CLOSED {
+    (  $<CVGEBATYPES_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVGEBATYPES> ] ?
+    )
+}
+
+<CVGRAMSTAIN> CLOSED {
+    (  $<CVGRAMSTAIN_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVGRAMSTAIN> ] ?
+    )
+}
+
+<CVHABITAT> CLOSED {
+    (  $<CVHABITAT_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVHABITAT> ] ?
+    )
+}
+
+<CVHORIZON> CLOSED {
+    (  $<CVHORIZON_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVHORIZON> ] ?
+    )
+}
+
+<CVHOSTGENDER> CLOSED {
+    (  $<CVHOSTGENDER_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVHOSTGENDER> ] ?
+    )
+}
+
+<CVIMGUSE> CLOSED {
+    (  $<CVIMGUSE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVIMGUSE> ] ?
+    )
+}
+
+<CVIRRADIANCE> CLOSED {
+    (  $<CVIRRADIANCE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVIRRADIANCE> ] ?
+    )
+}
+
+<CVLATLONG> CLOSED {
+    (  $<CVLATLONG_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVLATLONG> ] ?
+    )
+}
+
+<CVMETABOLISM> CLOSED {
+    (  $<CVMETABOLISM_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVMETABOLISM> ] ?
+    )
+}
+
+<CVMODEL> CLOSED {
+    (  $<CVMODEL_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVMODEL> ] ?
+    )
+}
+
+<CVMONTH> CLOSED {
+    (  $<CVMONTH_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVMONTH> ] ?
+    )
+}
+
+<CVMOTILITY> CLOSED {
+    (  $<CVMOTILITY_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVMOTILITY> ] ?
+    )
+}
+
+<CVNUCLEICACID> CLOSED {
+    (  $<CVNUCLEICACID_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVNUCLEICACID> ] ?
+    )
+}
+
+<CVORGANISMTYPE> CLOSED {
+    (  $<CVORGANISMTYPE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVORGANISMTYPE> ] ?
+    )
+}
+
+<CVOXYGEN> CLOSED {
+    (  $<CVOXYGEN_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVOXYGEN> ] ?
+    )
+}
+
+<CVOXYGENPRESENCE> CLOSED {
+    (  $<CVOXYGENPRESENCE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVOXYGENPRESENCE> ] ?
+    )
+}
+
+<CVOXYGENSTATSAMPLE> CLOSED {
+    (  $<CVOXYGENSTATSAMPLE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVOXYGENSTATSAMPLE> ] ?
+    )
+}
+
+<CVPACKAGES> CLOSED {
+    (  $<CVPACKAGES_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVPACKAGES> ] ?
+    )
+}
+
+<CVPHENOTYPE> CLOSED {
+    (  $<CVPHENOTYPE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVPHENOTYPE> ] ?
+    )
+}
+
+<CVPHYLOGENY> CLOSED {
+    (  $<CVPHYLOGENY_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVPHYLOGENY> ] ?
+    )
+}
+
+<CVPROFILEPOSITION> CLOSED {
+    (  $<CVPROFILEPOSITION_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVPROFILEPOSITION> ] ?
+    )
+}
+
+<CVPROJECTSTATUS> CLOSED {
+    (  $<CVPROJECTSTATUS_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVPROJECTSTATUS> ] ?
+    )
+}
+
+<CVPROJECTSUBTYPE> CLOSED {
+    (  $<CVPROJECTSUBTYPE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVPROJECTSUBTYPE> ] ?
+    )
+}
+
+<CVPROJECTTYPE> CLOSED {
+    (  $<CVPROJECTTYPE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVPROJECTTYPE> ] ?
+    )
+}
+
+<CVRELEVANCE> CLOSED {
+    (  $<CVRELEVANCE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVRELEVANCE> ] ?
+    )
+}
+
+<CVROLES> CLOSED {
+    (  $<CVROLES_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVROLES> ] ?
+    )
+}
+
+<CVSALINITY> CLOSED {
+    (  $<CVSALINITY_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVSALINITY> ] ?
+    )
+}
+
+<CVSEQQUALITY> CLOSED {
+    (  $<CVSEQQUALITY_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVSEQQUALITY> ] ?
+    )
+}
+
+<CVSEQSTATUS> CLOSED {
+    (  $<CVSEQSTATUS_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVSEQSTATUS> ] ?
+    )
+}
+
+<CVSOILFAOCLASS> CLOSED {
+    (  $<CVSOILFAOCLASS_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVSOILFAOCLASS> ] ?
+    )
+}
+
+<CVSPECIMEN> CLOSED {
+    (  $<CVSPECIMEN_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVSPECIMEN> ] ?
+    )
+}
+
+<CVSPORULATION> CLOSED {
+    (  $<CVSPORULATION_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVSPORULATION> ] ?
+    )
+}
+
+<CVSTUDYTYPE> CLOSED {
+    (  $<CVSTUDYTYPE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVSTUDYTYPE> ] ?
+    )
+}
+
+<CVTEMPRANGE> CLOSED {
+    (  $<CVTEMPRANGE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVTEMPRANGE> ] ?
+    )
+}
+
+<CVTIDALSTAGE> CLOSED {
+    (  $<CVTIDALSTAGE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVTIDALSTAGE> ] ?
+    )
+}
+
+<CVTILLAGE> CLOSED {
+    (  $<CVTILLAGE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVTILLAGE> ] ?
+    )
+}
+
+<CVUNCULTUREDTYPE> CLOSED {
+    (  $<CVUNCULTUREDTYPE_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVUNCULTUREDTYPE> ] ?
+    )
+}
+
+<CVYESNO> CLOSED {
+    (  $<CVYESNO_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVYESNO> ] ?
+    )
+}
+
+<CVYESNOONLY> CLOSED {
+    (  $<CVYESNOONLY_tes> (  <TERM> @metatype:String ? ;
+          <SEQUENCE> @metatype:Double ?
+       ) ;
+       rdf:type [ <CVYESNOONLY> ] ?
+    )
+}
+
+<ENVOLABELS> CLOSED {
+    (  $<ENVOLABELS_tes> <ENVO_LABEL> @metatype:String ? ;
+       rdf:type [ <ENVOLABELS> ] ?
+    )
+}
+
+<INSTITUTION> CLOSED {
+    (  $<INSTITUTION_tes> (  <NAME> @metatype:String ? ;
+          <URL> @metatype:String ? ;
+          <COUNTRY> @metatype:String ? ;
+          <ORGANIZATION> @metatype:String ? ;
+          <DEPARTMENT> @metatype:String ? ;
+          <LABORATORY> @metatype:String ? ;
+          <IS_CURATED> @metatype:String ?
+       ) ;
+       rdf:type [ <INSTITUTION> ] ?
+    )
+}
+
+<ORGANISMBIOTICREL> CLOSED {
+    (  $<ORGANISMBIOTICREL_tes> <BIOTIC_RELATIONSHIP_ID> @metatype:Integer ? ;
+       rdf:type [ <ORGANISMBIOTICREL> ] ?
+    )
+}
+
+<ORGANISMBODYPRODUCT> CLOSED {
+    (  $<ORGANISMBODYPRODUCT_tes> <BODY_PRODUCT_ID> @metatype:Integer ? ;
+       rdf:type [ <ORGANISMBODYPRODUCT> ] ?
+    )
+}
+
+<ORGANISMCELLARRANGEMENT> CLOSED {
+    (  $<ORGANISMCELLARRANGEMENT_tes> <CELL_ARRANGEMENT_ID> @metatype:Integer ? ;
+       rdf:type [ <ORGANISMCELLARRANGEMENT> ] ?
+    )
+}
+
+<ORGANISMDISEASE> CLOSED {
+    (  $<ORGANISMDISEASE_tes> <DISEASE_ID> @metatype:Integer ? ;
+       rdf:type [ <ORGANISMDISEASE> ] ?
+    )
+}
+
+<ORGANISMENERGYSOURCE> CLOSED {
+    (  $<ORGANISMENERGYSOURCE_tes> <ENERGY_SOURCE_ID> @metatype:Integer ? ;
+       rdf:type [ <ORGANISMENERGYSOURCE> ] ?
+    )
+}
+
+<ORGANISMHABITAT> CLOSED {
+    (  $<ORGANISMHABITAT_tes> <HABITAT_ID> @metatype:Integer ? ;
+       rdf:type [ <ORGANISMHABITAT> ] ?
+    )
+}
+
+<ORGANISMMETABOLISM> CLOSED {
+    (  $<ORGANISMMETABOLISM_tes> <METABOLISM_ID> @metatype:Integer ? ;
+       rdf:type [ <ORGANISMMETABOLISM> ] ?
+    )
+}
+
+<ORGANISMPHENOTYPE> CLOSED {
+    (  $<ORGANISMPHENOTYPE_tes> <PHENOTYPE_ID> @metatype:Integer ? ;
+       rdf:type [ <ORGANISMPHENOTYPE> ] ?
+    )
+}
+
+<ORGANISMV2> CLOSED {
+    (  $<ORGANISMV2_tes> (  <EXEMPLAR_DOI> @metatype:String ? ;
+          <EXEMPLAR_NAME> @metatype:String ? ;
+          <TAXON_DOI> @metatype:String ? ;
+          <CULTURE_COLLECTION_ID> @metatype:String ? ;
+          <TYPE_STRAIN> @metatype:String ? ;
+          <BIOSAFETY_LEVEL> @metatype:String ? ;
+          <NCBI_TAXONOMY_ID> @metatype:Integer ? ;
+          <NCBI_KINGDOM> @metatype:String ? ;
+          <NCBI_PHYLUM> @metatype:String ? ;
+          <NCBI_CLASS> @metatype:String ? ;
+          <NCBI_ORDER> @metatype:String ? ;
+          <NCBI_FAMILY> @metatype:String ? ;
+          <NCBI_GENUS> @metatype:String ? ;
+          <DOMAIN> @metatype:String ? ;
+          <STRAIN_INFO_ID> @metatype:Integer ? ;
+          <GENBANK_16S_ID> @metatype:String ? ;
+          <OXYGEN_REQUIREMENT> @metatype:String ? ;
+          <CELL_SHAPE> @metatype:String ? ;
+          <MOTILITY> @metatype:String ? ;
+          <SPORULATION> @metatype:String ? ;
+          <TEMPERATURE_RANGE> @metatype:String ? ;
+          <COLOR> @metatype:String ? ;
+          <GRAM_STAIN> @metatype:String ? ;
+          <ADD_DATE> @metatype:Time ? ;
+          <MOD_DATE> @metatype:Time ? ;
+          <MOD_BY> @metatype:Double ? ;
+          <COMMON_NAME> @metatype:String ? ;
+          <SYMBIOTIC_RELATIONSHIP> @metatype:String ? ;
+          <SYMBIOTIC_PHYSICAL_INTERACTION> @metatype:String ? ;
+          <SYMBIONT_NAME> @metatype:String ? ;
+          <SYMBIONT_TAXON_ID> @metatype:Integer ? ;
+          <CELL_LENGTH> @metatype:String ? ;
+          <IS_PUBLIC> @metatype:String ? ;
+          <SUBSPECIES> @metatype:String ? ;
+          <COMMERCIAL> @metatype:String ? ;
+          <COMMERCIAL_COMMENTS> @metatype:String ? ;
+          <OTHER_NAMES> @metatype:String ? ;
+          <SYNONYM_GROUP_ID> @metatype:Integer ? ;
+          <VIRAL_GROUP> @metatype:String ? ;
+          <VIRAL_SUBGROUP> @metatype:String ? ;
+          <IS_DRAFT> @metatype:String ? ;
+          <SUBMITTER_ID> @metatype:Integer ? ;
+          <GOLD_PHYLOGENY> @metatype:String ? ;
+          <CULTURE_TYPE> @metatype:String ? ;
+          <UNCULTURED_TYPE> @metatype:String ? ;
+          <ORGANISM_TYPE> @metatype:String ? ;
+          <CULTURED> @metatype:String ? ;
+          <CLADE> @metatype:String ? ;
+          <MASTER_GROUP_ID> @metatype:Integer ? ;
+          <ECOTYPE> @metatype:String ? ;
+          <BIOSAMPLE_ID> @metatype:Integer ? ;
+          <CARBON_SOURCE> @metatype:String ? ;
+          <IMAGE_ID> @metatype:Integer ? ;
+          <NCBI_BIOSAMPLE_ID> @metatype:String ? ;
+          <ECOSYSTEM> @metatype:String ? ;
+          <ECOSYSTEM_CATEGORY> @metatype:String ? ;
+          <ECOSYSTEM_TYPE> @metatype:String ? ;
+          <ECOSYSTEM_SUBTYPE> @metatype:String ? ;
+          <SPECIFIC_ECOSYSTEM> @metatype:String ? ;
+          <OTHER_ECOSYSTEM> @metatype:String ? ;
+          <ECOSYSTEM_PATH_ID> @metatype:Integer ? ;
+          <SAMPLE_COLLECTION_SITE> @metatype:String ? ;
+          <ISOLATION_PUBLICATION_ID> @metatype:Integer ? ;
+          <SAMPLE_ISOLATION_COMMENTS> @metatype:String ? ;
+          <SAMPLING_STRATEGY> @metatype:String ? ;
+          <REPLICATE_NUMBER> @metatype:Double ? ;
+          <SAMPLE_VOLUME> @metatype:String ? ;
+          <SAMPLE_BIOMASS> @metatype:String ? ;
+          <SAMPLE_CONTACT_NAME> @metatype:String ? ;
+          <SAMPLE_CONTACT_EMAIL> @metatype:String ? ;
+          <GEOGRAPHIC_LOCATION> @metatype:String ? ;
+          <LAT_LONG_INFERRED> @metatype:String ? ;
+          <HOST_NAME> @metatype:String ? ;
+          <HOST_TAXONOMY_ID> @metatype:Integer ? ;
+          <HOST_GENDER> @metatype:String ? ;
+          <HOST_RACE> @metatype:String ? ;
+          <HOST_AGE> @metatype:String ? ;
+          <HOST_HEALTH_CONDITION> @metatype:String ? ;
+          <PATIENT_VISIT_NUMBER> @metatype:Double ? ;
+          <HOST_MEDICATION> @metatype:String ? ;
+          <MRN> @metatype:String ? ;
+          <HOST_BODY_SITE> @metatype:String ? ;
+          <HOST_BODY_SUBSITE> @metatype:String ? ;
+          <HOST_BODY_PRODUCT> @metatype:String ? ;
+          <HOST_SPECIFICITY> @metatype:String ? ;
+          <HOST_COMMENTS> @metatype:String ? ;
+          <PROJECT_OID> @metatype:Double ? ;
+          <SAMPLE_OID> @metatype:Double ? ;
+          <SPECIMEN> @metatype:String ? ;
+          <SUBMIT_BIOSAMPLE_NAME> @metatype:String ? ;
+          <ENV_PACKAGE> @metatype:String ? ;
+          <SAMPLE_COLLECTION_DAY> @metatype:Double ? ;
+          <SAMPLE_COLLECTION_MONTH> @metatype:Double ? ;
+          <SAMPLE_COLLECTION_YEAR> @metatype:Double ? ;
+          <SAMPLE_COLLECTION_HOUR> @metatype:Double ? ;
+          <SAMPLE_COLLECTION_MINUTE> @metatype:Double ? ;
+          <GROWTH_CONDITIONS> @metatype:String ? ;
+          <OTHER_HOSTS> @metatype:String ? ;
+          <KNOWN_NON_HOSTS> @metatype:String ? ;
+          <ISOLATION_PUBMED_ID> @metatype:Integer ? ;
+          <HOST_BODY_SITE_ID> @metatype:Integer ? ;
+          <HOST_BODY_SUBSITE_ID> @metatype:Integer ? ;
+          <HOST_BODY_PRODUCT_ID> @metatype:Integer ? ;
+          <SAMPLE_ISOLATION_COUNTRY_ID> @metatype:Integer ? ;
+          <LONGHURST_CODE> @metatype:String ? ;
+          <CHLOROPHYLL_CONCENTRATION> @metatype:String ? ;
+          <NITRATE_CONCENTRATION> @metatype:String ? ;
+          <OXYGEN_CONCENTRATION> @metatype:String ? ;
+          <SALINITY_CONCENTRATION> @metatype:String ? ;
+          <CRUISE_LINE_NAME> @metatype:String ? ;
+          <PROPORT_OCEAN> @metatype:String ? ;
+          <PROPORT_ISOLATION> @metatype:String ? ;
+          <PROPORT_STATION> @metatype:String ? ;
+          <PROPORT_WOA_TEMPERATURE> @metatype:Double ? ;
+          <PROPORT_WOA_SALINITY> @metatype:Double ? ;
+          <PROPORT_WOA_DISSOLVED_OXYGEN> @metatype:Double ? ;
+          <PROPORT_WOA_SILICATE> @metatype:Double ? ;
+          <PROPORT_WOA_PHOSPHATE> @metatype:Double ? ;
+          <PROPORT_WOA_NITRATE> @metatype:Double ? ;
+          <ACTIVE> @metatype:String ? ;
+          <ITS_GROWTH_CONDITIONS> @metatype:String ? ;
+          <GOLD_ID> @metatype:String ? ;
+          <ORGANISM_NAME> @metatype:String ? ;
+          <SUBMIT_ORGANISM_NAME> @metatype:String ? ;
+          <NCBI_TAXONOMY_NAME> @metatype:String ? ;
+          <GENUS> @metatype:String ? ;
+          <GENUS_SYNONYMS> @metatype:String ? ;
+          <SPECIES> @metatype:String ? ;
+          <SPECIES_SYNONYMS> @metatype:String ? ;
+          <STRAIN> @metatype:String ? ;
+          <SEROVAR> @metatype:String ? ;
+          <COMMENTS> @metatype:String ? ;
+          <NCBI_SPECIES> @metatype:String ? ;
+          <SALINITY> @metatype:String ? ;
+          <PRESSURE> @metatype:String ? ;
+          <PH> @metatype:String ? ;
+          <CELL_DIAMETER> @metatype:String ? ;
+          <ANNOTATOR_COMMENTS> @metatype:String ? ;
+          <IS_VIROCELL> @metatype:String ? ;
+          <STRAININFO_GROUP_ID> @metatype:Integer ? ;
+          <SOURCE> @metatype:String ? ;
+          <GOLD_CLASS> @metatype:String ? ;
+          <GOLD_ORDER> @metatype:String ? ;
+          <GOLD_FAMILY> @metatype:String ? ;
+          <NCBI_SUPERKINGDOM> @metatype:String ? ;
+          <TAXONOMY_STATUS> @metatype:String ? ;
+          <IS_TEST> @metatype:String ? ;
+          <GROWTH_TEMPERATURE> @metatype:Double ? ;
+          <SUBSURFACE_DEPTH> @metatype:Double ? ;
+          <LEGACY_DEPTH_DATA> @metatype:String ? ;
+          <LATITUDE_TEST> @metatype:Double ? ;
+          <LONGITUDE_TEST> @metatype:Double ? ;
+          <ELEVATION> @metatype:Double ? ;
+          <ELEVATION2> @metatype:Double ? ;
+          <SOIL_CURR_LAND_USE> @metatype:String ? ;
+          <SOIL_CURR_VEGETATION> @metatype:String ? ;
+          <SOIL_CURR_VEGETATION_METHOD> @metatype:String ? ;
+          <SOIL_PREV_LAND_USE> @metatype:String ? ;
+          <SOIL_PREV_LAND_USE_METH> @metatype:String ? ;
+          <SOIL_CROP_ROTATION> @metatype:String ? ;
+          <SOIL_AGROCHEM_ADDITION> @metatype:String ? ;
+          <SOIL_TILLAGE> @metatype:String ? ;
+          <SOIL_FIRE> @metatype:String ? ;
+          <SOIL_FLOODING> @metatype:String ? ;
+          <SOIL_EXTREME_EVENT> @metatype:String ? ;
+          <SOIL_HORIZON> @metatype:String ? ;
+          <SOIL_HORIZON_METHOD> @metatype:String ? ;
+          <SOIL_SIEVING> @metatype:String ? ;
+          <SOIL_WATER_CONTENT> @metatype:String ? ;
+          <SOIL_WATER_CONTENT_SOIL_METH> @metatype:String ? ;
+          <SAMPLE_WEIGHT_DNA_EXT> @metatype:String ? ;
+          <SOIL_POOL_DNA_EXTRACTS> @metatype:String ? ;
+          <SOIL_STORAGE_CONDITION> @metatype:String ? ;
+          <SOIL_LINK_CLIMATE_INFO> @metatype:String ? ;
+          <SOIL_LINK_CLASS_INFO> @metatype:String ? ;
+          <SOIL_FAO_CLASS> @metatype:String ? ;
+          <SOIL_LOCAL_CLASS> @metatype:String ? ;
+          <SOIL_LOCAL_CLASS_METHOD> @metatype:String ? ;
+          <SOIL_TYPE> @metatype:String ? ;
+          <SOIL_TYPE_METHOD> @metatype:String ? ;
+          <SOIL_SLOPE_GRADIENT> @metatype:Double ? ;
+          <SOIL_SLOPE_ASPECT> @metatype:Double ? ;
+          <SOIL_PROFILE_POSITION> @metatype:String ? ;
+          <SOIL_DRAINAGE_CLASS> @metatype:String ? ;
+          <SOIL_TEXTURE> @metatype:String ? ;
+          <SOIL_TEXTURE_METHOD> @metatype:String ? ;
+          <SOIL_PH_METHOD> @metatype:String ? ;
+          <TOT_ORG_CARBON> @metatype:Double ? ;
+          <SOIL_TOT_ORG_C_METHOD> @metatype:String ? ;
+          <TOT_NITROGEN> @metatype:String ? ;
+          <SOIL_TOT_N_METHOD> @metatype:String ? ;
+          <SOIL_MICROBIAL_BIOMASS> @metatype:String ? ;
+          <SOIL_MICROBIAL_BIOMASS_METHOD> @metatype:String ? ;
+          <SOIL_LINK_ADDIT_ANALYS> @metatype:String ? ;
+          <SOIL_SALINITY_METHOD> @metatype:String ? ;
+          <SOIL_HEAVY_METALS> @metatype:Double ? ;
+          <SOIL_HEAVY_METALS_METHOD> @metatype:String ? ;
+          <SOIL_ALUMINIUM_SAT> @metatype:Double ? ;
+          <SOIL_ALUMINIUM_SAT_METHOD> @metatype:String ? ;
+          <SOIL_MISC_PARAM> @metatype:String ? ;
+          <WATER_ALKALINITY> @metatype:Double ? ;
+          <WATER_ALKYL_DIETHERS> @metatype:Double ? ;
+          <WATER_AMINOPEPT_ACT> @metatype:Double ? ;
+          <WATER_AMMONIUM> @metatype:Double ? ;
+          <WATER_ATMOSPHERIC_DATA> @metatype:String ? ;
+          <WATER_BACTERIAL_PROD> @metatype:Double ? ;
+          <WATER_BACTERIAL_RESP> @metatype:Double ? ;
+          <WATER_BACTERIAL_CARBON_PROD> @metatype:Double ? ;
+          <WATER_BISHOMOHOPANOL> @metatype:String ? ;
+          <WATER_BROMIDE> @metatype:Double ? ;
+          <WATER_CALCIUM> @metatype:String ? ;
+          <WATER_CARBON_NITROG_RATIO> @metatype:String ? ;
+          <WATER_CHEM_ADMINISTRATION> @metatype:String ? ;
+          <WATER_CHLORIDE> @metatype:Double ? ;
+          <WATER_DENSITY> @metatype:Double ? ;
+          <WATER_DIETHER_LIPIDS> @metatype:Double ? ;
+          <WATER_DISS_CARBON_DIOXIDE> @metatype:Double ? ;
+          <WATER_DISS_HYDROGEN> @metatype:Double ? ;
+          <WATER_DISS_INORG_CARBON> @metatype:Double ? ;
+          <WATER_DISS_INORG_NITRO> @metatype:Double ? ;
+          <WATER_DISS_INORG_PHOSPHORUS> @metatype:Double ? ;
+          <WATER_DISS_ORG_CARBON> @metatype:Double ? ;
+          <WATER_DISS_ORG_NITROGEN> @metatype:Double ? ;
+          <WATER_DOWNWARD_PAR> @metatype:Double ? ;
+          <WATER_FLUORESCENCE> @metatype:Double ? ;
+          <WATER_GLUCOSIDASE_ACTIVITY> @metatype:Double ? ;
+          <WATER_LIGHT_INTENSITY> @metatype:Double ? ;
+          <WATER_MAGNESIUM> @metatype:String ? ;
+          <WATER_MEAN_FRICT_VEL> @metatype:Double ? ;
+          <WATER_MEAN_PEAK_FRICT_VEL> @metatype:Double ? ;
+          <WATER_MISC_PARAMETER> @metatype:String ? ;
+          <WATER_N_ALKANES> @metatype:Double ? ;
+          <WATER_NITRITE> @metatype:Double ? ;
+          <WATER_ORG_MATTER> @metatype:Double ? ;
+          <WATER_ORG_NITROGEN> @metatype:Double ? ;
+          <WATER_ORGANISM_COUNT> @metatype:Double ? ;
+          <WATER_OXY_STAT_SAMPLE> @metatype:String ? ;
+          <WATER_PART_ORG_CARBON> @metatype:Double ? ;
+          <WATER_PART_ORG_NITROGEN> @metatype:Double ? ;
+          <WATER_PERTURBATION> @metatype:String ? ;
+          <WATER_PETROLEUM_HYDROCARBON> @metatype:Double ? ;
+          <WATER_PHAEOPIGMENTS> @metatype:Double ? ;
+          <WATER_PHOSPLIPID_FATT_ACID> @metatype:String ? ;
+          <WATER_PHOTON_FLUX> @metatype:Double ? ;
+          <WATER_POTASSIUM> @metatype:Double ? ;
+          <WATER_PRIMARY_PROD> @metatype:Double ? ;
+          <WATER_REDOX_POTENTIAL> @metatype:Double ? ;
+          <WATER_SAMP_STORE_DUR> @metatype:String ? ;
+          <WATER_SAMP_STORE_LOC> @metatype:String ? ;
+          <WATER_SAMP_STORE_TEMP> @metatype:Double ? ;
+          <WATER_SODIUM> @metatype:Double ? ;
+          <WATER_SOLUBLE_REACT_PHOSP> @metatype:Double ? ;
+          <WATER_SULFATE> @metatype:String ? ;
+          <WATER_SULFIDE> @metatype:String ? ;
+          <WATER_SUSPEND_PART_MATTER> @metatype:Double ? ;
+          <WATER_TIDAL_STAGE> @metatype:String ? ;
+          <WATER_TOT_DEPTH_WATER_COL> @metatype:Double ? ;
+          <WATER_TOT_DISS_NITRO> @metatype:Double ? ;
+          <WATER_TOT_INORG_NITRO> @metatype:Double ? ;
+          <WATER_TOT_PART_CARBON> @metatype:String ? ;
+          <WATER_TOT_PHOSPHORUS> @metatype:Double ? ;
+          <WATER_CURRENT> @metatype:String ? ;
+          <ALTITUDE> @metatype:Double ? ;
+          <ALTITUDE2> @metatype:Double ? ;
+          <DEPTH> @metatype:Double ? ;
+          <DEPTH2> @metatype:Double ? ;
+          <LONGITUDE> @metatype:Double ? ;
+          <LATITUDE> @metatype:Double ? ;
+          <BICARBONATE_MILLIMOL> @metatype:Double ? ;
+          <SOLUBLE_IRON_MICROMOL> @metatype:Double ? ;
+          <H2S_MILLIMOL> @metatype:Double ? ;
+          <H2S_PRESENT> @metatype:String ? ;
+          <IRRADIANCE> @metatype:String ? ;
+          <METHANE_CONC_MILLIMOL> @metatype:Double ? ;
+          <SAMPLE_CONDUCTIVITY> @metatype:String ? ;
+          <SOIL_SAMPLE_BIOMASS> @metatype:Double ? ;
+          <SOIL_SAMPLE_VOLUME> @metatype:Double ? ;
+          <IMG_BREADTH_CALC> @metatype:Double ? ;
+          <GROWTH_TEMPERATURE2> @metatype:Double ? ;
+          <SAMPLE_COLLECTION_TEMPERATURE> @metatype:Double ? ;
+          <SAMPLE_COLLECTION_TEMPERATURE2> @metatype:Double ? ;
+          <PUBLIC_SP_COUNT> @metatype:Double ? ;
+          <ADMIN_SP_COUNT> @metatype:Double ? ;
+          <PUBLIC_AP_COUNT> @metatype:Double ? ;
+          <ADMIN_AP_COUNT> @metatype:Double ? ;
+          <SUBSURFACE_DEPTH1> @metatype:Double ? ;
+          <SUBSURFACE_DEPTH2> @metatype:Double ? ;
+          <PH1> @metatype:Double ? ;
+          <PH2> @metatype:Double ? ;
+          <PH_OLD> @metatype:String ? ;
+          <WATER_ALKALINITY_METHOD> @metatype:String ? ;
+          <WATER_TURBIDITY> @metatype:String ? ;
+          <WATER_SIZE_FRAC_LOW> @metatype:Double ? ;
+          <WATER_SIZE_FRAC_UP> @metatype:Double ? ;
+          <SOIL_MEAN_ANNUAL_TEMP> @metatype:Double ? ;
+          <SOIL_MEAN_SEASONAL_TEMP> @metatype:Double ? ;
+          <SOIL_MEAN_ANNUAL_PRECPT> @metatype:Double ? ;
+          <SOIL_MEAN_SEASONAL_PRECPT> @metatype:Double ? ;
+          <SOIL_PACKAGE_ID> @metatype:Integer ? ;
+          <WATER_PACKAGE_ID> @metatype:Integer ? ;
+          <ENVO_BIOME_ID> @metatype:String ? ;
+          <ENVO_FEATURE_ID> @metatype:String ? ;
+          <ENVO_MATERIAL_ID> @metatype:String ?
+       ) ;
+       rdf:type [ <ORGANISMV2> ] ?
+    )
+}
+
+<PROJECT> CLOSED {
+    (  $<PROJECT_tes> (  <PROJECT_NAME> @metatype:String ? ;
+          <NCBI_BIOPROJECT_ID> @metatype:Integer ? ;
+          <ADD_DATE> @metatype:Time ? ;
+          <MOD_DATE> @metatype:Time ? ;
+          <MOD_BY> @metatype:Double ? ;
+          <DESCRIPTION> @metatype:String ? ;
+          <SPECIMEN_ID> @metatype:Integer ? ;
+          <ORGANISM_TYPE> @metatype:String ? ;
+          <NUCLEIC_ACID> @metatype:String ? ;
+          <SUBMITTER_PROJECT_NAME> @metatype:String ? ;
+          <NCBI_PROJECT_NAME> @metatype:String ? ;
+          <ISOLATION_PUBLICATION_ID> @metatype:Integer ? ;
+          <COMPLETION_DATE> @metatype:Time ? ;
+          <ACTIVE> @metatype:String ? ;
+          <PMO_PROJECT_ID> @metatype:Integer ? ;
+          <ITS_SPID> @metatype:Double ? ;
+          <PROJECT_OID> @metatype:Double ? ;
+          <SAMPLE_OID> @metatype:Double ? ;
+          <GOLD_ID> @metatype:String ? ;
+          <OLD_LEGACY_GOLD_ID> @metatype:String ? ;
+          <LEGACY_GOLD_ID> @metatype:String ? ;
+          <IS_PUBLIC> @metatype:String ? ;
+          <ORGANISM_ID> @metatype:Integer ? ;
+          <SEQUENCING_STATUS_ID> @metatype:Integer ? ;
+          <SEQUENCING_QUALITY_ID> @metatype:Integer ? ;
+          <FINISHING_GOAL_ID> @metatype:Integer ? ;
+          <SEQUENCING_COMMENTS> @metatype:String ? ;
+          <GC_PERCENT> @metatype:Double ? ;
+          <CONTIG_COUNT> @metatype:Double ? ;
+          <EST_SIZE> @metatype:Double ? ;
+          <CHROMOSOME_COUNT> @metatype:Double ? ;
+          <PLASMID_COUNT> @metatype:Double ? ;
+          <SCAFFOLD_COUNT> @metatype:Double ? ;
+          <EST_COUNT> @metatype:Double ? ;
+          <SUBMITTER_ID> @metatype:Integer ? ;
+          <NCBI_BIOPROJECT_ACCESSION> @metatype:String ? ;
+          <PROJECT_COMMENTS> @metatype:String ? ;
+          <ANNOTATOR_COMMENTS> @metatype:String ? ;
+          <ITS_PROPOSAL_ID> @metatype:Integer ? ;
+          <GPTS_PROPOSAL_ID> @metatype:Integer ? ;
+          <NCBI_SRA_ID> @metatype:String ? ;
+          <LIBRARY_METHOD> @metatype:String ? ;
+          <READ_COUNT> @metatype:String ? ;
+          <VECTOR> @metatype:String ? ;
+          <READ_SIZE> @metatype:String ? ;
+          <NCBI_LOCUS_TAG> @metatype:String ? ;
+          <ASSEMBLY_ACCESSION> @metatype:String ? ;
+          <IS_DRAFT> @metatype:String ? ;
+          <NUCLEIC_ACID_ID> @metatype:Integer ? ;
+          <PI_ID> @metatype:Integer ? ;
+          <PROJECT_STATUS> @metatype:String ? ;
+          <MASTER_STUDY_ID> @metatype:Integer ? ;
+          <OTHER_PROJECT_NAMES> @metatype:String ? ;
+          <ITS_PROJECT_NAME> @metatype:String ? ;
+          <IS_SINGLE_CELL_MATERIAL> @metatype:String ? ;
+          <ITS_SEQUENCING_PRODUCT_NAME> @metatype:String ? ;
+          <PROJECT_MANAGER_ID> @metatype:Integer ? ;
+          <NCBI_BIOSAMPLE_ACCESSION> @metatype:String ? ;
+          <LOW_QUALITY_GENOME> @metatype:String ? ;
+          <SEQUENCING_STRATEGY> @metatype:String ? ;
+          <PUBLIC_AP_COUNT> @metatype:Double ? ;
+          <ADMIN_AP_COUNT> @metatype:Double ? ;
+          <PUBLIC_DAP_COUNT> @metatype:Double ? ;
+          <ADMIN_DAP_COUNT> @metatype:Double ? ;
+          <IS_JGI> @metatype:String ? ;
+          <SRA_SRS_ACCESSION> @metatype:String ? ;
+          <SRA_SRX_ACCESSION> @metatype:String ? ;
+          <FUNDING_PROGRAM> @metatype:String ? ;
+          <FUNDING_YEAR> @metatype:Double ? ;
+          <ITS_SAMPLE_ID> @metatype:Integer ? ;
+          <ITS_SAMPLE_GROUP_NAME> @metatype:String ? ;
+          <EXPERIMENTAL_CONDITIONS> @metatype:String ? ;
+          <SAMPLE_GROUP_NAME> @metatype:String ? ;
+          <ITS_SAMPLE_NAME> @metatype:String ? ;
+          <PROJECT_SUBTYPE> @metatype:String ? ;
+          <SEQUENCING_STRATEGY_FULL> @metatype:String ? ;
+          <IS_TEST> @metatype:String ? ;
+          <IS_APPROVED> @metatype:String ? ;
+          <IS_LOCKED> @metatype:String ? ;
+          <GPTS_SAMPLE_ID> @metatype:Integer ? ;
+          <GPTS_DISAMBIGUATOR> @metatype:String ?
+       ) ;
+       rdf:type [ <PROJECT> ] ?
+    )
+}
+
+<PROJECTANALYSISPROJECT> CLOSED {
+    (  $<PROJECTANALYSISPROJECT_tes> <ANALYSIS_PROJECT_ID> @metatype:Integer ? ;
+       rdf:type [ <PROJECTANALYSISPROJECT> ] ?
+    )
+}
+
+<PROJECTBIOSAMPLE> CLOSED {
+    (  $<PROJECTBIOSAMPLE_tes> <BIOSAMPLE_ID> @metatype:Integer ? ;
+       rdf:type [ <PROJECTBIOSAMPLE> ] ?
+    )
+}
+
+<PROJECTCOLLABORATOR> CLOSED {
+    (  $<PROJECTCOLLABORATOR_tes> <INSTITUTION_ID> @metatype:Integer ? ;
+       rdf:type [ <PROJECTCOLLABORATOR> ] ?
+    )
+}
+
+<PROJECTFUNDINGAGENCY> CLOSED {
+    (  $<PROJECTFUNDINGAGENCY_tes> <INSTITUTION_ID> @metatype:Integer ? ;
+       rdf:type [ <PROJECTFUNDINGAGENCY> ] ?
+    )
+}
+
+<PROJECTGENOMEPUBLICATION> CLOSED {
+    (  $<PROJECTGENOMEPUBLICATION_tes> <PUBLICATION_ID> @metatype:Integer ? ;
+       rdf:type [ <PROJECTGENOMEPUBLICATION> ] ?
+    )
+}
+
+<PROJECTOTHERPUBLICATION> CLOSED {
+    (  $<PROJECTOTHERPUBLICATION_tes> <PUBLICATION_ID> @metatype:Integer ? ;
+       rdf:type [ <PROJECTOTHERPUBLICATION> ] ?
+    )
+}
+
+<PROJECTRELEVANCE> CLOSED {
+    (  $<PROJECTRELEVANCE_tes> <RELEVANCE_ID> @metatype:Integer ? ;
+       rdf:type [ <PROJECTRELEVANCE> ] ?
+    )
+}
+
+<PROJECTSEQUENCINGCENTER> CLOSED {
+    (  $<PROJECTSEQUENCINGCENTER_tes> <INSTITUTION_ID> @metatype:Integer ? ;
+       rdf:type [ <PROJECTSEQUENCINGCENTER> ] ?
+    )
+}
+
+<PROJECTSEQUENCINGMETHOD> CLOSED {
+    (  $<PROJECTSEQUENCINGMETHOD_tes> <SEQUENCING_METHOD_ID> @metatype:Integer ? ;
+       rdf:type [ <PROJECTSEQUENCINGMETHOD> ] ?
+    )
+}
+
+<PUBLICATION> CLOSED {
+    (  $<PUBLICATION_tes> (  <DOI> @metatype:String ? ;
+          <PUBMED_ID> @metatype:Integer ? ;
+          <JOURNAL_ID> @metatype:Integer ? ;
+          <PUBMODEL> @metatype:String ? ;
+          <VOLUME> @metatype:String ? ;
+          <ISSUE> @metatype:String ? ;
+          <PAGE> @metatype:String ? ;
+          <PUBLICATION_DATE> @metatype:String ? ;
+          <ABSTRACT> @metatype:String ? ;
+          <AFFILIATION> @metatype:String ? ;
+          <TITLE> @metatype:String ? ;
+          <LAST_AUTHOR_ID> @metatype:Integer ? ;
+          <FIRST_AUTHOR_ID> @metatype:Integer ?
+       ) ;
+       rdf:type [ <PUBLICATION> ] ?
+    )
+}
+
+<STUDY> CLOSED {
+    (  $<STUDY_tes> (  <STUDY_NAME> @metatype:String ? ;
+          <ITS_PROPOSAL_ID> @metatype:Integer ? ;
+          <NCBI_PROJECT_ID> @metatype:Integer ? ;
+          <ADD_DATE> @metatype:Time ? ;
+          <MOD_DATE> @metatype:Time ? ;
+          <CONTACT_ID> @metatype:Integer ? ;
+          <LAST_MOD_BY> @metatype:Double ? ;
+          <IS_PUBLIC> @metatype:String ? ;
+          <GPTS_PROPOSAL_ID> @metatype:Integer ? ;
+          <PROJECT_OID> @metatype:Double ? ;
+          <ACTIVE> @metatype:String ? ;
+          <LEGACY_GOLD_ID> @metatype:String ? ;
+          <BIOPROJECT_NAME> @metatype:String ? ;
+          <GOLD_STUDY_NAME> @metatype:String ? ;
+          <DESCRIPTION> @metatype:String ? ;
+          <GOLD_ID> @metatype:String ? ;
+          <METAGENOMIC> @metatype:String ? ;
+          <STUDY_TYPE_ID> @metatype:Integer ? ;
+          <ECOSYSTEM> @metatype:String ? ;
+          <ECOSYSTEM_CATEGORY> @metatype:String ? ;
+          <ECOSYSTEM_TYPE> @metatype:String ? ;
+          <ECOSYSTEM_SUBTYPE> @metatype:String ? ;
+          <SPECIFIC_ECOSYSTEM> @metatype:String ? ;
+          <OWNER_ID> @metatype:Integer ? ;
+          <IS_DRAFT> @metatype:String ? ;
+          <PUBLIC_SP_COUNT> @metatype:Double ? ;
+          <ADMIN_SP_COUNT> @metatype:Double ? ;
+          <PUBLIC_AP_COUNT> @metatype:Double ? ;
+          <ADMIN_AP_COUNT> @metatype:Double ? ;
+          <PUBLIC_DAP_COUNT> @metatype:Double ? ;
+          <ADMIN_DAP_COUNT> @metatype:Double ? ;
+          <PUBLIC_BIOSAMPLE_COUNT> @metatype:Double ? ;
+          <ADMIN_BIOSAMPLE_COUNT> @metatype:Double ? ;
+          <IS_GEBA> @metatype:String ? ;
+          <IS_HMP> @metatype:String ? ;
+          <ECOSYSTEM_PATH_ID> @metatype:Integer ? ;
+          <IS_TEST> @metatype:String ?
+       ) ;
+       rdf:type [ <STUDY> ] ?
+    )
+}
+
+
+

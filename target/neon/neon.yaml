@@ -5,6 +5,8 @@ imports:
 prefixes:
   biolinkml: https://w3id.org/biolink/biolinkml/
   neon: https://data.neonscience.org/
+  dwc: http://rs.tdwg.org/dwc/terms/
+  mixs: https://microbiomedata/schema/mixs#
 default_prefix: neon
 slots:
   uid:
@@ -21,7 +23,7 @@ slots:
     aliases:
     - domain i d
     mappings:
-    - DWC_v2009-04-24:locationID
+    - dwc:locationID
   siteID:
     slot_uri: neon:siteID
     description: NEON site code
@@ -29,7 +31,7 @@ slots:
     aliases:
     - site i d
     mappings:
-    - DWC_v2009-04-24:locationID
+    - dwc:locationID
   plotID:
     slot_uri: neon:plotID
     description: Plot identifier (NEON site code_XXX)
@@ -45,7 +47,7 @@ slots:
     aliases:
     - date
     mappings:
-    - DWC_v2009-04-24:eventDate
+    - dwc:eventDate
   samplingProtocol:
     slot_uri: neon:samplingProtocol
     description: The NEON document number where detailed information regarding the
@@ -54,7 +56,7 @@ slots:
     aliases:
     - sampling protocol
     mappings:
-    - DWC_v2009-04-24:samplingProtocol
+    - dwc:samplingProtocol
   identificationReferences:
     slot_uri: neon:identificationReferences
     description: A list of sources (concatenated and semicolon separated) used to
@@ -297,7 +299,7 @@ slots:
     aliases:
     - recorded by
     mappings:
-    - DWC_v2014-10-23:recordedBy
+    - dwc:recordedBy
   eventID:
     slot_uri: neon:eventID
     description: An identifier for the set of information associated with the event,
@@ -306,7 +308,7 @@ slots:
     aliases:
     - event i d
     mappings:
-    - DWC_v2009-04-24:eventID
+    - dwc:eventID
   night:
     slot_uri: neon:night
     description: Number of the night of trapping or collection event within the multi-night
@@ -380,7 +382,7 @@ slots:
     aliases:
     - decimal latitude
     mappings:
-    - DWC_v2009-04-24:decimalLatitude
+    - dwc:decimalLatitude
   decimalLongitude:
     slot_uri: neon:decimalLongitude
     description: The geographic longitude (in decimal degrees, WGS84) of the geographic
@@ -389,7 +391,7 @@ slots:
     aliases:
     - decimal longitude
     mappings:
-    - DWC_v2009-04-24:decimalLongitude
+    - dwc:decimalLongitude
   geodeticDatum:
     slot_uri: neon:geodeticDatum
     description: Model used to measure horizontal position on the earth
@@ -397,7 +399,7 @@ slots:
     aliases:
     - geodetic datum
     mappings:
-    - DWC_v2007-04-17:geodeticDatum
+    - dwc:geodeticDatum
   coordinateUncertainty:
     slot_uri: neon:coordinateUncertainty
     description: The horizontal distance (in meters) from the given decimalLatitude
@@ -407,7 +409,7 @@ slots:
     aliases:
     - coordinate uncertainty
     mappings:
-    - DWC_v2009-04-24:coordinateUncertaintyInMeters
+    - dwc:coordinateUncertaintyInMeters
   elevation:
     slot_uri: neon:elevation
     description: Elevation (in meters) above sea level
@@ -415,7 +417,7 @@ slots:
     aliases:
     - elevation
     mappings:
-    - DWC_v2009-04-24:verbatimElevation
+    - dwc:verbatimElevation
   elevationUncertainty:
     slot_uri: neon:elevationUncertainty
     description: Uncertainty in elevation values (in meters)
@@ -432,7 +434,7 @@ slots:
     - scientific name
     mappings:
     - http://rs.tdwg.org/dwc/terms/scientificName;
-    - DWC_v2009-04-24:scientificName
+    - dwc:scientificName
   taxonRank:
     slot_uri: neon:taxonRank
     description: The lowest level taxonomic rank that can be determined for the individual
@@ -522,7 +524,7 @@ slots:
     aliases:
     - sample i d
     mappings:
-    - DWC_v2013-05-25:materialSampleID
+    - dwc:materialSampleID
   setDate:
     slot_uri: neon:setDate
     description: Date that trap was set
@@ -537,7 +539,7 @@ slots:
     aliases:
     - collect date
     mappings:
-    - DWC_v2009-04-24:eventDate
+    - dwc:eventDate
   cupStatus:
     slot_uri: neon:cupStatus
     description: Indicator of whether the cup of the trap was disturbed or missing
@@ -8435,7 +8437,7 @@ slots:
     aliases:
     - start date
     mappings:
-    - DWC_v2009-04-24:eventDate
+    - dwc:eventDate
   endDate:
     slot_uri: neon:endDate
     description: The end date-time or interval during which an event occurred
@@ -10185,7 +10187,7 @@ slots:
     aliases:
     - collected by
     mappings:
-    - DWC_v2014-10-23:recordedBy
+    - dwc:recordedBy
   streamStage:
     slot_uri: neon:streamStage
     description: Reading of water height on staff gauge
@@ -13349,7 +13351,7 @@ slots:
     aliases:
     - method
     mappings:
-    - DWC_v2009-04-24:samplingProtocol
+    - dwc:samplingProtocol
   methodModification:
     slot_uri: neon:methodModification
     description: Any remarks on modifications to published methods
@@ -13776,7 +13778,7 @@ slots:
     aliases:
     - testing vial i d
     mappings:
-    - DWC_v2013-05-25:materialSampleID
+    - dwc:materialSampleID
   poolSize:
     slot_uri: neon:poolSize
     description: Number of individuals in the pathogen testing pool
@@ -13812,7 +13814,7 @@ slots:
     aliases:
     - deprecated vial i d
     mappings:
-    - DWC_v2009-04-24:eventID
+    - dwc:eventID
   testedDate:
     slot_uri: neon:testedDate
     description: Date test was conducted
@@ -24566,7 +24568,7 @@ slots:
     aliases:
     - riparian dominant vegetation
     mappings:
-    - DWC_v2009-08-24:taxonID
+    - dwc:taxonID
   riparianSubclass:
     slot_uri: neon:riparianSubclass
     description: Abbreviation for vegetation subclass
@@ -24745,7 +24747,7 @@ slots:
     aliases:
     - sampling impractical
     mappings:
-    - DWC_v2009-04-24:samplingProtocol
+    - dwc:samplingProtocol
   incubationMethod:
     slot_uri: neon:incubationMethod
     description: Method used for soil incubation
@@ -25273,7 +25275,7 @@ slots:
     aliases:
     - named location
     mappings:
-    - DWC_v2009-04-24:locationID
+    - dwc:locationID
   soilCO2FinalQF:
     slot_uri: neon:soilCO2FinalQF
     description: Quality flag indicating whether a soil CO2 data product has passed
@@ -28173,7 +28175,7 @@ slots:
     aliases:
     - morphospecies created date
     mappings:
-    - DWC_v2009-04-24:eventDate
+    - dwc:eventDate
   morphospeciesResolved:
     slot_uri: neon:morphospeciesResolved
     description: Indicator of whether the morphospecies has been identified
@@ -28794,7 +28796,7 @@ slots:
     aliases:
     - identifier
     mappings:
-    - DWC_v2014-10-23:identifiedBy
+    - dwc:identifiedBy
   identifierEmail:
     slot_uri: neon:identifierEmail
     description: E-mail address of the primary identifier
@@ -28802,7 +28804,7 @@ slots:
     aliases:
     - identifier email
     mappings:
-    - DWC_v2014-10-23:identifiedBy
+    - dwc:identifiedBy
   identifierInstitution:
     slot_uri: neon:identifierInstitution
     description: The full name of the institutional or organizational affiliation
@@ -28989,7 +28991,7 @@ slots:
     aliases:
     - sample geodetic datum
     mappings:
-    - DWC_v2007-04-17:geodeticDatum
+    - dwc:geodeticDatum
   archiveVialID:
     slot_uri: neon:archiveVialID
     description: Identifier for the vial containing specimens for archive
@@ -35226,7 +35228,7 @@ slots:
     aliases:
     - collection event i d
     mappings:
-    - DWC_v2009-04-24:eventID
+    - dwc:eventID
   collectionNotes:
     slot_uri: neon:collectionNotes
     description: Comments or notes about the collection event
@@ -35234,7 +35236,7 @@ slots:
     aliases:
     - collection notes
     mappings:
-    - DWC_v2009-04-24:identificationRemarks
+    - dwc:identificationRemarks
   collectors:
     slot_uri: neon:collectors
     description: The full or abbreviated names of the individuals or team responsible
@@ -35243,7 +35245,7 @@ slots:
     aliases:
     - collectors
     mappings:
-    - DWC_v2014-10-23:recordedBy
+    - dwc:recordedBy
   coordinateAccuracy:
     slot_uri: neon:coordinateAccuracy
     description: A decimal representation of the precision of the coordinates given
@@ -35252,7 +35254,7 @@ slots:
     aliases:
     - coordinate accuracy
     mappings:
-    - DWC_v2009-04-24:coordinateUncertaintyInMeters
+    - dwc:coordinateUncertaintyInMeters
   countryOcean:
     slot_uri: neon:countryOcean
     description: The full, unabbreviated name of the country, major political unit,
@@ -35314,7 +35316,7 @@ slots:
     aliases:
     - gps source
     mappings:
-    - DWC_v2007-04-17:geodeticDatum
+    - dwc:geodeticDatum
   habitat:
     slot_uri: neon:habitat
     description: A category or description of the habitat in which the event occurred
@@ -35345,7 +35347,7 @@ slots:
     aliases:
     - latitude
     mappings:
-    - DWC_v2009-04-24:decimalLatitude
+    - dwc:decimalLatitude
   longitude:
     slot_uri: neon:longitude
     description: The geographic longitude (in decimal degrees) of the geographic center
@@ -35354,7 +35356,7 @@ slots:
     aliases:
     - longitude
     mappings:
-    - DWC_v2009-04-24:decimalLongitude
+    - dwc:decimalLongitude
   museumID:
     slot_uri: neon:museumID
     description: Identifier for specimen assigned by formal collection upon accessioning,
@@ -35364,7 +35366,7 @@ slots:
     aliases:
     - museum i d
     mappings:
-    - DWC_v2013-05-25:materialSampleID
+    - dwc:materialSampleID
   notes:
     slot_uri: neon:notes
     description: General notes regarding the specimen
@@ -35372,7 +35374,7 @@ slots:
     aliases:
     - notes
     mappings:
-    - DWC_v2009-04-24:identificationRemarks
+    - dwc:identificationRemarks
   region:
     slot_uri: neon:region
     description: The full, unabbreviated name of the county, shire, municipality,
@@ -35396,7 +35398,7 @@ slots:
     aliases:
     - site code
     mappings:
-    - DWC_v2009-04-24:locationID
+    - dwc:locationID
   species:
     slot_uri: neon:species
     description: The specific epithet (second part of the species name) of the scientific
@@ -35405,7 +35407,7 @@ slots:
     aliases:
     - species
     mappings:
-    - DWC_v2009-04-24:specificEpithet
+    - dwc:specificEpithet
   stateProvince:
     slot_uri: neon:stateProvince
     description: State or province where data was collected
@@ -35420,7 +35422,7 @@ slots:
     aliases:
     - taxonomy notes
     mappings:
-    - DWC_v2009-04-24:identificationRemarks
+    - dwc:identificationRemarks
   tissueDescriptor:
     slot_uri: neon:tissueDescriptor
     description: A brief description of the type of tissue or material analyzed

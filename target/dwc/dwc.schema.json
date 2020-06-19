@@ -1,0 +1,1195 @@
+{
+   "$id": "http://rs.tdwg.org/dwc/terms",
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "definitions": {
+      "Dataset": {
+         "additionalProperties": false,
+         "description": "The category of information pertaining to a logical set of records.",
+         "properties": {},
+         "required": [],
+         "title": "Dataset",
+         "type": "object"
+      },
+      "Event": {
+         "additionalProperties": false,
+         "description": "An action that occurs at some location during some time.",
+         "properties": {
+            "Day": {
+               "description": "The integer day of the month on which the Event occurred.",
+               "type": "string"
+            },
+            "End_Day_Of_Year": {
+               "description": "The latest ordinal day of the year on which the Event occurred (1 for January 1, 365 for December 31, except in a leap year, in which case it is 366).",
+               "type": "string"
+            },
+            "Event_Date": {
+               "description": "The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Not suitable for a time in a geological context. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).",
+               "type": "string"
+            },
+            "Event_ID": {
+               "description": "An identifier for the set of information associated with an Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.",
+               "type": "string"
+            },
+            "Event_Remarks": {
+               "description": "Comments or notes about the Event.",
+               "type": "string"
+            },
+            "Event_Time": {
+               "description": "The time or interval during which an Event occurred. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).",
+               "type": "string"
+            },
+            "Field_Notes": {
+               "description": "One of a) an indicator of the existence of, b) a reference to (publication, URI), or c) the text of notes taken in the field about the Event.",
+               "type": "string"
+            },
+            "Field_Number": {
+               "description": "An identifier given to the event in the field. Often serves as a link between field notes and the Event.",
+               "type": "string"
+            },
+            "Habitat": {
+               "description": "A category or description of the habitat in which the Event occurred.",
+               "type": "string"
+            },
+            "Month": {
+               "description": "The ordinal month in which the Event occurred.",
+               "type": "string"
+            },
+            "Parent_Event_ID": {
+               "description": "An identifier for the broader Event that groups this and potentially other Events.",
+               "type": "string"
+            },
+            "Sample_Size_Unit": {
+               "description": "The unit of measurement of the size (time duration, length, area, or volume) of a sample in a sampling event.",
+               "type": "string"
+            },
+            "Sample_Size_Value": {
+               "description": "A numeric value for a measurement of the size (time duration, length, area, or volume) of a sample in a sampling event.",
+               "type": "string"
+            },
+            "Sampling_Effort": {
+               "description": "The amount of effort expended during an Event.",
+               "type": "string"
+            },
+            "Sampling_Protocol": {
+               "description": "The name of, reference to, or description of the method or protocol used during an Event.",
+               "type": "string"
+            },
+            "Start_Day_Of_Year": {
+               "description": "The earliest ordinal day of the year on which the Event occurred (1 for January 1, 365 for December 31, except in a leap year, in which case it is 366).",
+               "type": "string"
+            },
+            "Verbatim_EventDate": {
+               "description": "The verbatim original representation of the date and time information for an Event.",
+               "type": "string"
+            },
+            "Year": {
+               "description": "The four-digit year in which the Event occurred, according to the Common Era Calendar.",
+               "type": "string"
+            },
+            "day": {
+               "description": "The integer day of the month on which the Event occurred.",
+               "type": "string"
+            },
+            "endDayOfYear": {
+               "description": "The latest ordinal day of the year on which the Event occurred (1 for January 1, 365 for December 31, except in a leap year, in which case it is 366).",
+               "type": "string"
+            },
+            "eventDate": {
+               "description": "The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Not suitable for a time in a geological context.",
+               "type": "string"
+            },
+            "eventID": {
+               "description": "An identifier for the set of information associated with an Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.",
+               "type": "string"
+            },
+            "eventRemarks": {
+               "description": "Comments or notes about the Event.",
+               "type": "string"
+            },
+            "eventTime": {
+               "description": "The time or interval during which an Event occurred.",
+               "type": "string"
+            },
+            "fieldNotes": {
+               "description": "One of a) an indicator of the existence of, b) a reference to (publication, URI), or c) the text of notes taken in the field about the Event.",
+               "type": "string"
+            },
+            "fieldNumber": {
+               "description": "An identifier given to the event in the field. Often serves as a link between field notes and the Event.",
+               "type": "string"
+            },
+            "habitat": {
+               "description": "A category or description of the habitat in which the Event occurred.",
+               "type": "string"
+            },
+            "month": {
+               "description": "The ordinal month in which the Event occurred.",
+               "type": "string"
+            },
+            "parentEventID": {
+               "description": "An identifier for the broader Event that groups this and potentially other Events.",
+               "type": "string"
+            },
+            "sampleSizeUnit": {
+               "description": "The unit of measurement of the size (time duration, length, area, or volume) of a sample in a sampling event.",
+               "type": "string"
+            },
+            "sampleSizeValue": {
+               "description": "A numeric value for a measurement of the size (time duration, length, area, or volume) of a sample in a sampling event.",
+               "type": "string"
+            },
+            "samplingEffort": {
+               "description": "The amount of effort expended during an Event.",
+               "type": "string"
+            },
+            "samplingProtocol": {
+               "description": "The name of, reference to, or description of the method or protocol used during an Event.",
+               "type": "string"
+            },
+            "startDayOfYear": {
+               "description": "The earliest ordinal day of the year on which the Event occurred (1 for January 1, 365 for December 31, except in a leap year, in which case it is 366).",
+               "type": "string"
+            },
+            "verbatimEventDate": {
+               "description": "The verbatim original representation of the date and time information for an Event.",
+               "type": "string"
+            },
+            "year": {
+               "description": "The four-digit year in which the Event occurred, according to the Common Era Calendar.",
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "Event",
+         "type": "object"
+      },
+      "EventAttribute": {
+         "additionalProperties": false,
+         "description": "Container class for information about attributes related to a given sampling event.",
+         "properties": {},
+         "required": [],
+         "title": "EventAttribute",
+         "type": "object"
+      },
+      "EventMeasurement": {
+         "additionalProperties": false,
+         "description": "The category of information pertaining to measurements associated with an event.",
+         "properties": {},
+         "required": [],
+         "title": "EventMeasurement",
+         "type": "object"
+      },
+      "FossilSpecimen": {
+         "additionalProperties": false,
+         "description": "A preserved specimen that is a fossil.",
+         "properties": {},
+         "required": [],
+         "title": "FossilSpecimen",
+         "type": "object"
+      },
+      "GeologicalContext": {
+         "additionalProperties": false,
+         "description": "Geological information, such as stratigraphy, that qualifies a region or place.",
+         "properties": {
+            "Bed": {
+               "description": "The full name of the lithostratigraphic bed from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "Earliest_Age_Or_Lowest_Stage": {
+               "description": "The full name of the earliest possible geochronologic age or lowest chronostratigraphic stage attributable to the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "Earliest_Eon_Or_Lowest_Eonothem": {
+               "description": "The full name of the earliest possible geochronologic eon or lowest chrono-stratigraphic eonothem or the informal name (\"Precambrian\") attributable to the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "Earliest_Epoch_Or_Lowest_Series": {
+               "description": "The full name of the earliest possible geochronologic epoch or lowest chronostratigraphic series attributable to the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "Earliest_Era_Or_Lowest_Erathem": {
+               "description": "The full name of the earliest possible geochronologic era or lowest chronostratigraphic erathem attributable to the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "Earliest_Period_Or_Lowest_System": {
+               "description": "The full name of the earliest possible geochronologic period or lowest chronostratigraphic system attributable to the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "Formation": {
+               "description": "The full name of the lithostratigraphic formation from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "Geological_Context_ID": {
+               "description": "An identifier for the set of information associated with a GeologicalContext (the location within a geological context, such as stratigraphy). May be a global unique identifier or an identifier specific to the data set.",
+               "type": "string"
+            },
+            "Group": {
+               "description": "The full name of the lithostratigraphic group from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "Highest_Biostratigraphic_Zone": {
+               "description": "The full name of the highest possible geological biostratigraphic zone of the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "Latest_AgeOr_Highest_Stage": {
+               "description": "The full name of the latest possible geochronologic age or highest chronostratigraphic stage attributable to the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "Latest_Eon_Or_Highest_Eonothem": {
+               "description": "The full name of the latest possible geochronologic eon or highest chrono-stratigraphic eonothem or the informal name (\"Precambrian\") attributable to the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "Latest_Epoch_Or_Highest_Series": {
+               "description": "The full name of the latest possible geochronologic epoch or highest chronostratigraphic series attributable to the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "Latest_Era_Or_Highest_Erathem": {
+               "description": "The full name of the latest possible geochronologic era or highest chronostratigraphic erathem attributable to the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "Latest_Period_Or_Highest_System": {
+               "description": "The full name of the latest possible geochronologic period or highest chronostratigraphic system attributable to the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "Lithostratigraphic_Terms": {
+               "description": "The combination of all litho-stratigraphic names for the rock from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "Lowest_Biostratigraphic_Zone": {
+               "description": "The full name of the lowest possible geological biostratigraphic zone of the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "Member": {
+               "description": "The full name of the lithostratigraphic member from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "bed": {
+               "description": "The full name of the lithostratigraphic bed from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "earliestAgeOrLowestStage": {
+               "description": "The full name of the earliest possible geochronologic age or lowest chronostratigraphic stage attributable to the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "earliestEonOrLowestEonothem": {
+               "description": "The full name of the earliest possible geochronologic eon or lowest chrono-stratigraphic eonothem or the informal name (\"Precambrian\") attributable to the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "earliestEpochOrLowestSeries": {
+               "description": "The full name of the earliest possible geochronologic epoch or lowest chronostratigraphic series attributable to the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "earliestEraOrLowestErathem": {
+               "description": "The full name of the earliest possible geochronologic era or lowest chronostratigraphic erathem attributable to the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "earliestPeriodOrLowestSystem": {
+               "description": "The full name of the earliest possible geochronologic period or lowest chronostratigraphic system attributable to the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "formation": {
+               "description": "The full name of the lithostratigraphic formation from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "geologicalContextID": {
+               "description": "An identifier for the set of information associated with a GeologicalContext (the location within a geological context, such as stratigraphy). May be a global unique identifier or an identifier specific to the data set.",
+               "type": "string"
+            },
+            "group": {
+               "description": "The full name of the lithostratigraphic group from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "highestBiostratigraphicZone": {
+               "description": "The full name of the highest possible geological biostratigraphic zone of the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "latestAgeOrHighestStage": {
+               "description": "The full name of the latest possible geochronologic age or highest chronostratigraphic stage attributable to the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "latestEonOrHighestEonothem": {
+               "description": "The full name of the latest possible geochronologic eon or highest chrono-stratigraphic eonothem or the informal name (\"Precambrian\") attributable to the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "latestEpochOrHighestSeries": {
+               "description": "The full name of the latest possible geochronologic epoch or highest chronostratigraphic series attributable to the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "latestEraOrHighestErathem": {
+               "description": "The full name of the latest possible geochronologic era or highest chronostratigraphic erathem attributable to the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "latestPeriodOrHighestSystem": {
+               "description": "The full name of the latest possible geochronologic period or highest chronostratigraphic system attributable to the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "lithostratigraphicTerms": {
+               "description": "The combination of all litho-stratigraphic names for the rock from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "lowestBiostratigraphicZone": {
+               "description": "The full name of the lowest possible geological biostratigraphic zone of the stratigraphic horizon from which the cataloged item was collected.",
+               "type": "string"
+            },
+            "member": {
+               "description": "The full name of the lithostratigraphic member from which the cataloged item was collected.",
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "GeologicalContext",
+         "type": "object"
+      },
+      "HumanObservation": {
+         "additionalProperties": false,
+         "description": "An output of a human observation process.",
+         "properties": {},
+         "required": [],
+         "title": "HumanObservation",
+         "type": "object"
+      },
+      "Identification": {
+         "additionalProperties": false,
+         "description": "A taxonomic determination (e.g., the assignment to a taxon).",
+         "properties": {
+            "Date_Identified": {
+               "description": "The date on which the subject was identified as representing the Taxon. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).",
+               "type": "string"
+            },
+            "Identification_ID": {
+               "description": "An identifier for the Identification (the body of information associated with the assignment of a scientific name). May be a global unique identifier or an identifier specific to the data set.",
+               "type": "string"
+            },
+            "Identification_Qualifier": {
+               "description": "A brief phrase or a standard term (\"cf.\", \"aff.\") to express the determiner's doubts about the Identification.",
+               "type": "string"
+            },
+            "Identification_References": {
+               "description": "A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the Identification.",
+               "type": "string"
+            },
+            "Identification_Remarks": {
+               "description": "Comments or notes about the Identification.",
+               "type": "string"
+            },
+            "Identification_Verification_Status": {
+               "description": "A categorical indicator of the extent to which the taxonomic identification has been verified to be correct. Recommended best practice is to use a controlled vocabulary such as that used in HISPID/ABCD.",
+               "type": "string"
+            },
+            "Identified_By": {
+               "description": "A list (concatenated and separated) of names of people, groups, or organizations who assigned the Taxon to the subject.",
+               "type": "string"
+            },
+            "Type_Status": {
+               "description": "A list (concatenated and separated) of nomenclatural types (type status, typified scientific name, publication) applied to the subject.",
+               "type": "string"
+            },
+            "dateIdentified": {
+               "description": "The date on which the subject was identified as representing the Taxon.",
+               "type": "string"
+            },
+            "identificationID": {
+               "description": "An identifier for the Identification (the body of information associated with the assignment of a scientific name). May be a global unique identifier or an identifier specific to the data set.",
+               "type": "string"
+            },
+            "identificationQualifier": {
+               "description": "A brief phrase or a standard term (\"cf.\", \"aff.\") to express the determiner's doubts about the Identification.",
+               "type": "string"
+            },
+            "identificationReferences": {
+               "description": "A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the Identification.",
+               "type": "string"
+            },
+            "identificationRemarks": {
+               "description": "Comments or notes about the Identification.",
+               "type": "string"
+            },
+            "identificationVerificationStatus": {
+               "description": "A categorical indicator of the extent to which the taxonomic identification has been verified to be correct.",
+               "type": "string"
+            },
+            "identifiedBy": {
+               "description": "A list (concatenated and separated) of names of people, groups, or organizations who assigned the Taxon to the subject.",
+               "type": "string"
+            },
+            "typeStatus": {
+               "description": "A list (concatenated and separated) of nomenclatural types (type status, typified scientific name, publication) applied to the subject.",
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "Identification",
+         "type": "object"
+      },
+      "LivingSpecimen": {
+         "additionalProperties": false,
+         "description": "A specimen that is alive.",
+         "properties": {},
+         "required": [],
+         "title": "LivingSpecimen",
+         "type": "object"
+      },
+      "Location": {
+         "additionalProperties": false,
+         "description": "A resource describing an instance of the Location class.",
+         "properties": {},
+         "required": [],
+         "title": "Location",
+         "type": "object"
+      },
+      "MachineObservation": {
+         "additionalProperties": false,
+         "description": "An output of a machine observation process.",
+         "properties": {},
+         "required": [],
+         "title": "MachineObservation",
+         "type": "object"
+      },
+      "MaterialSample": {
+         "additionalProperties": false,
+         "description": "A physical result of a sampling (or subsampling) event. In biological collections, the material sample is typically collected, and either preserved or destructively processed.",
+         "properties": {
+            "Material_Sample_ID": {
+               "description": "An identifier for the MaterialSample (as opposed to a particular digital record of the material sample). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the materialSampleID globally unique.",
+               "type": "string"
+            },
+            "materialSampleID": {
+               "description": "An identifier for the MaterialSample (as opposed to a particular digital record of the material sample). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the materialSampleID globally unique.",
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "MaterialSample",
+         "type": "object"
+      },
+      "MeasurementOrFact": {
+         "additionalProperties": false,
+         "description": "A measurement of or fact about an rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource).",
+         "properties": {
+            "Measurement_Accuracy": {
+               "description": "The description of the potential error associated with the measurementValue.",
+               "type": "string"
+            },
+            "Measurement_Determined_By": {
+               "description": "A list (concatenated and separated) of names of people, groups, or organizations who determined the value of the MeasurementOrFact.",
+               "type": "string"
+            },
+            "Measurement_Determined_Date": {
+               "description": "The date on which the MeasurementOrFact was made. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).",
+               "type": "string"
+            },
+            "Measurement_ID": {
+               "description": "An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.",
+               "type": "string"
+            },
+            "Measurement_Method": {
+               "description": "A description of or reference to (publication, URI) the method or protocol used to determine the measurement, fact, characteristic, or assertion.",
+               "type": "string"
+            },
+            "Measurement_Remarks": {
+               "description": "Comments or notes accompanying the MeasurementOrFact.",
+               "type": "string"
+            },
+            "Measurement_Type": {
+               "description": "The nature of the measurement, fact, characteristic, or assertion. Recommended best practice is to use a controlled vocabulary.",
+               "type": "string"
+            },
+            "Measurement_Unit": {
+               "description": "The units associated with the measurementValue. Recommended best practice is to use the International System of Units (SI).",
+               "type": "string"
+            },
+            "Measurement_Value": {
+               "description": "The value of the measurement, fact, characteristic, or assertion.",
+               "type": "string"
+            },
+            "measurementAccuracy": {
+               "description": "The description of the potential error associated with the measurementValue.",
+               "type": "string"
+            },
+            "measurementDeterminedBy": {
+               "description": "A list (concatenated and separated) of names of people, groups, or organizations who determined the value of the MeasurementOrFact.",
+               "type": "string"
+            },
+            "measurementDeterminedDate": {
+               "description": "The date on which the MeasurementOrFact was made.",
+               "type": "string"
+            },
+            "measurementID": {
+               "description": "An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.",
+               "type": "string"
+            },
+            "measurementMethod": {
+               "description": "A description of or reference to (publication, URI) the method or protocol used to determine the measurement, fact, characteristic, or assertion.",
+               "type": "string"
+            },
+            "measurementRemarks": {
+               "description": "Comments or notes accompanying the MeasurementOrFact.",
+               "type": "string"
+            },
+            "measurementType": {
+               "description": "The nature of the measurement, fact, characteristic, or assertion.",
+               "type": "string"
+            },
+            "measurementUnit": {
+               "description": "The units associated with the measurementValue.",
+               "type": "string"
+            },
+            "measurementValue": {
+               "description": "The value of the measurement, fact, characteristic, or assertion.",
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "MeasurementOrFact",
+         "type": "object"
+      },
+      "NomenclaturalChecklist": {
+         "additionalProperties": false,
+         "description": "A resource describing a nomenclatural checklist.",
+         "properties": {},
+         "required": [],
+         "title": "NomenclaturalChecklist",
+         "type": "object"
+      },
+      "Occurrence": {
+         "additionalProperties": false,
+         "description": "A resource describing an instance of the Occurrence class.",
+         "properties": {
+            "Associated_Media": {
+               "description": "A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of media associated with the Occurrence.",
+               "type": "string"
+            },
+            "Associated_References": {
+               "description": "A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with the Occurrence.",
+               "type": "string"
+            },
+            "Associated_Sequences": {
+               "description": "A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the Occurrence.",
+               "type": "string"
+            },
+            "Associated_Taxa": {
+               "description": "A list (concatenated and separated) of identifiers or names of taxa and their associations with the Occurrence.",
+               "type": "string"
+            },
+            "Behavior": {
+               "description": "A description of the behavior shown by the subject at the time the Occurrence was recorded. Recommended best practice is to use a controlled vocabulary.",
+               "type": "string"
+            },
+            "Catalog_Number": {
+               "description": "An identifier (preferably unique) for the record within the data set or collection.",
+               "type": "string"
+            },
+            "Disposition": {
+               "description": "The current disposition of the cataloged item. Examples: \"in collection\", \"missing\", \"voucher elsewhere\", \"duplicates elsewhere\".",
+               "type": "string"
+            },
+            "Establishment_Means": {
+               "description": "The process by which the biological individual(s) represented in the Occurrence became established at the location. Recommended best practice is to use a controlled vocabulary.",
+               "type": "string"
+            },
+            "Individual_Count": {
+               "description": "The number of individuals represented present at the time of the Occurrence.",
+               "type": "string"
+            },
+            "Life_Stage": {
+               "description": "The age class or life stage of the biological individual(s) at the time the Occurrence was recorded. Recommended best practice is to use a controlled vocabulary.",
+               "type": "string"
+            },
+            "Occurrence_ID": {
+               "description": "An identifier for the Occurrence (as opposed to a particular digital record of the occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the occurrenceID globally unique.",
+               "type": "string"
+            },
+            "Occurrence_Remarks": {
+               "description": "Comments or notes about the Occurrence.",
+               "type": "string"
+            },
+            "Occurrence_Status": {
+               "description": "A statement about the presence or absence of a Taxon at a Location. Recommended best practice is to use a controlled vocabulary.",
+               "type": "string"
+            },
+            "Organism_Quantity": {
+               "description": "A number or enumeration value for the quantity of organisms.",
+               "type": "string"
+            },
+            "Organism_Quantity_Type": {
+               "description": "The type of quantification system used for the quantity of organisms.",
+               "type": "string"
+            },
+            "Other_Catalog_Numbers": {
+               "description": "A list (concatenated and separated) of previous or alternate fully qualified catalog numbers or other human-used identifiers for the same Occurrence, whether in the current or any other data set or collection.",
+               "type": "string"
+            },
+            "Preparations": {
+               "description": "A concatenated list of preparations and preservation methods (skin, skull, skeleton, whole animal (ETOH), slide, etc.) for the cataloged item.",
+               "type": "string"
+            },
+            "Record_Number": {
+               "description": "An identifier given to the Occurrence at the time it was recorded. Often serves as a link between field notes and an Occurrence record, such as a specimen collector's number.",
+               "type": "string"
+            },
+            "Recorded_By": {
+               "description": "A list (concatenated and separated) of names of people, groups, or organizations responsible for recording the original Occurrence. The primary collector or observer, especially one who applies a personal identifier (recordNumber), should be listed first.",
+               "type": "string"
+            },
+            "Reproductive_Condition": {
+               "description": "The reproductive condition of the biological individual(s) represented in the Occurrence. Recommended best practice is to use a controlled vocabulary.",
+               "type": "string"
+            },
+            "Sex": {
+               "description": "The sex of the biological individual represented by the cataloged object or observation. Examples: \"male\", \"female\", \"hermaphrodite\", \"gynandromorph\", \"monoecious\", \"dioecious\", \"not recorded\", \"indeterminate\", \"transitional\".",
+               "type": "string"
+            },
+            "associatedMedia": {
+               "description": "A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of media associated with the Occurrence.",
+               "type": "string"
+            },
+            "associatedReferences": {
+               "description": "A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with the Occurrence.",
+               "type": "string"
+            },
+            "associatedSequences": {
+               "description": "A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the Occurrence.",
+               "type": "string"
+            },
+            "associatedTaxa": {
+               "description": "A list (concatenated and separated) of identifiers or names of taxa and their associations with the Occurrence.",
+               "type": "string"
+            },
+            "behavior": {
+               "description": "The behavior shown by the subject at the time the Occurrence was recorded.",
+               "type": "string"
+            },
+            "catalogNumber": {
+               "description": "An identifier (preferably unique) for the record within the data set or collection.",
+               "type": "string"
+            },
+            "disposition": {
+               "description": "The current state of a specimen with respect to the collection identified in collectionCode or collectionID.",
+               "type": "string"
+            },
+            "establishmentMeans": {
+               "description": "The process by which the biological individual(s) represented in the Occurrence became established at the location.",
+               "type": "string"
+            },
+            "individualCount": {
+               "description": "The number of individuals represented present at the time of the Occurrence.",
+               "type": "string"
+            },
+            "lifeStage": {
+               "description": "The age class or life stage of the biological individual(s) at the time the Occurrence was recorded.",
+               "type": "string"
+            },
+            "occurrenceID": {
+               "description": "An identifier for the Occurrence (as opposed to a particular digital record of the occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the occurrenceID globally unique.",
+               "type": "string"
+            },
+            "occurrenceRemarks": {
+               "description": "Comments or notes about the Occurrence.",
+               "type": "string"
+            },
+            "occurrenceStatus": {
+               "description": "A statement about the presence or absence of a Taxon at a Location.",
+               "type": "string"
+            },
+            "organismQuantity": {
+               "description": "A number or enumeration value for the quantity of organisms.",
+               "type": "string"
+            },
+            "organismQuantityType": {
+               "description": "The type of quantification system used for the quantity of organisms.",
+               "type": "string"
+            },
+            "otherCatalogNumbers": {
+               "description": "A list (concatenated and separated) of previous or alternate fully qualified catalog numbers or other human-used identifiers for the same Occurrence, whether in the current or any other data set or collection.",
+               "type": "string"
+            },
+            "preparations": {
+               "description": "A list (concatenated and separated) of preparations and preservation methods for a specimen.",
+               "type": "string"
+            },
+            "recordNumber": {
+               "description": "An identifier given to the Occurrence at the time it was recorded. Often serves as a link between field notes and an Occurrence record, such as a specimen collector's number.",
+               "type": "string"
+            },
+            "recordedBy": {
+               "description": "A list (concatenated and separated) of names of people, groups, or organizations responsible for recording the original Occurrence. The primary collector or observer, especially one who applies a personal identifier (recordNumber), should be listed first.",
+               "type": "string"
+            },
+            "reproductiveCondition": {
+               "description": "The reproductive condition of the biological individual(s) represented in the Occurrence.",
+               "type": "string"
+            },
+            "sex": {
+               "description": "The sex of the biological individual(s) represented in the Occurrence.",
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "Occurrence",
+         "type": "object"
+      },
+      "OccurrenceMeasurement": {
+         "additionalProperties": false,
+         "description": "The category of information pertaining to measurements accociated with an occurrence.",
+         "properties": {},
+         "required": [],
+         "title": "OccurrenceMeasurement",
+         "type": "object"
+      },
+      "Organism": {
+         "additionalProperties": false,
+         "description": "A particular organism or defined group of organisms considered to be taxonomically homogeneous.",
+         "properties": {
+            "Associated_Occurrences": {
+               "description": "A list (concatenated and separated) of identifiers of other Occurrence records and their associations to this Occurrence.",
+               "type": "string"
+            },
+            "Associated_Organisms": {
+               "description": "A list (concatenated and separated) of identifiers of other Organisms and their associations to this Organism.",
+               "type": "string"
+            },
+            "Organism_ID": {
+               "description": "An identifier for the Organism instance (as opposed to a particular digital record of the Organism). May be a globally unique identifier or an identifier specific to the data set.",
+               "type": "string"
+            },
+            "Organism_Name": {
+               "description": "A textual name or label assigned to an Organism instance.",
+               "type": "string"
+            },
+            "Organism_Remarks": {
+               "description": "Comments or notes about the Organism instance.",
+               "type": "string"
+            },
+            "Organism_Scope": {
+               "description": "A description of the kind of Organism instance. Can be used to indicate whether the Organism instance represents a discrete organism or if it represents a particular type of aggregation. Recommended best practice is to use a controlled vocabulary.",
+               "type": "string"
+            },
+            "Previous_Identifications": {
+               "description": "A list (concatenated and separated) of previous assignments of names to the Organism.",
+               "type": "string"
+            },
+            "associatedOccurrences": {
+               "description": "A list (concatenated and separated) of identifiers of other Occurrence records and their associations to this Occurrence.",
+               "type": "string"
+            },
+            "associatedOrganisms": {
+               "description": "A list (concatenated and separated) of identifiers of other Organisms and their associations to this Organism.",
+               "type": "string"
+            },
+            "organismID": {
+               "description": "An identifier for the Organism instance (as opposed to a particular digital record of the Organism). May be a globally unique identifier or an identifier specific to the data set.",
+               "type": "string"
+            },
+            "organismName": {
+               "description": "A textual name or label assigned to an Organism instance.",
+               "type": "string"
+            },
+            "organismRemarks": {
+               "description": "Comments or notes about the Organism instance.",
+               "type": "string"
+            },
+            "organismScope": {
+               "description": "A description of the kind of Organism instance. Can be used to indicate whether the Organism instance represents a discrete organism or if it represents a particular type of aggregation.",
+               "type": "string"
+            },
+            "previousIdentifications": {
+               "description": "A list (concatenated and separated) of previous assignments of names to the Organism.",
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "Organism",
+         "type": "object"
+      },
+      "PreservedSpecimen": {
+         "additionalProperties": false,
+         "description": "A specimen that has been preserved.",
+         "properties": {},
+         "required": [],
+         "title": "PreservedSpecimen",
+         "type": "object"
+      },
+      "ResourceRelationship": {
+         "additionalProperties": false,
+         "description": "A relationship of one rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource) to another.",
+         "properties": {
+            "Related_Resource_ID": {
+               "description": "An identifier for a related resource (the object, rather than the subject of the relationship).",
+               "type": "string"
+            },
+            "Relationship_According_To": {
+               "description": "The source (person, organization, publication, reference) establishing the relationship between the two resources.",
+               "type": "string"
+            },
+            "Relationship_Established_Date": {
+               "description": "The date-time on which the relationship between the two resources was established. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).",
+               "type": "string"
+            },
+            "Relationship_Of_Resource": {
+               "description": "The relationship of the resource identified by relatedResourceID to the subject (optionally identified by the resourceID). Recommended best practice is to use a controlled vocabulary.",
+               "type": "string"
+            },
+            "Relationship_Remarks": {
+               "description": "Comments or notes about the relationship between the two resources.",
+               "type": "string"
+            },
+            "Resource_ID": {
+               "description": "An identifier for the resource that is the subject of the relationship.",
+               "type": "string"
+            },
+            "Resource_Relationship_ID": {
+               "description": "An identifier for an instance of relationship between one resource (the subject) and another (relatedResource, the object).",
+               "type": "string"
+            },
+            "relatedResourceID": {
+               "description": "An identifier for a related resource (the object, rather than the subject of the relationship).",
+               "type": "string"
+            },
+            "relationshipAccordingTo": {
+               "description": "The source (person, organization, publication, reference) establishing the relationship between the two resources.",
+               "type": "string"
+            },
+            "relationshipEstablishedDate": {
+               "description": "The date-time on which the relationship between the two resources was established.",
+               "type": "string"
+            },
+            "relationshipOfResource": {
+               "description": "The relationship of the resource identified by relatedResourceID to the subject (optionally identified by the resourceID).",
+               "type": "string"
+            },
+            "relationshipRemarks": {
+               "description": "Comments or notes about the relationship between the two resources.",
+               "type": "string"
+            },
+            "resourceID": {
+               "description": "An identifier for the resource that is the subject of the relationship.",
+               "type": "string"
+            },
+            "resourceRelationshipID": {
+               "description": "An identifier for an instance of relationship between one resource (the subject) and another (relatedResource, the object).",
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "ResourceRelationship",
+         "type": "object"
+      },
+      "Sample": {
+         "additionalProperties": false,
+         "description": "Container class for information about the results of a sampling event (specimen, observation, etc.)",
+         "properties": {},
+         "required": [],
+         "title": "Sample",
+         "type": "object"
+      },
+      "SampleAttribute": {
+         "additionalProperties": false,
+         "description": "Container class for information about attributes related to a given sample.",
+         "properties": {},
+         "required": [],
+         "title": "SampleAttribute",
+         "type": "object"
+      },
+      "SamplingEvent": {
+         "additionalProperties": false,
+         "description": "Container class for information about the conditions and methods of acquisition of samples.",
+         "properties": {},
+         "required": [],
+         "title": "SamplingEvent",
+         "type": "object"
+      },
+      "SamplingLocation": {
+         "additionalProperties": false,
+         "description": "Container class for information about the location where a sampling event occurred.",
+         "properties": {},
+         "required": [],
+         "title": "SamplingLocation",
+         "type": "object"
+      },
+      "Taxon": {
+         "additionalProperties": false,
+         "description": "A resource describing an instance of the Taxon class.",
+         "properties": {
+            "Accepted_Name_Usage": {
+               "description": "The full name, with authorship and date information if known, of the currently valid (zoological) or accepted (botanical) taxon.",
+               "type": "string"
+            },
+            "Accepted_Name_Usage_ID": {
+               "description": "An identifier for the name usage (documented meaning of the name according to a source) of the currently valid (zoological) or accepted (botanical) taxon.",
+               "type": "string"
+            },
+            "Class": {
+               "description": "The name of the class in which the organism is classified.",
+               "type": "string"
+            },
+            "Family": {
+               "description": "The name of the family in which the organism is classified.",
+               "type": "string"
+            },
+            "Genus": {
+               "description": "The name of the genus in which the organism is classified.",
+               "type": "string"
+            },
+            "Higher_Classification": {
+               "description": "A list (concatenated and separated) of taxa names terminating at the rank immediately superior to the taxon referenced in the taxon record.",
+               "type": "string"
+            },
+            "Infraspecific_Epithet": {
+               "description": "The name of the lowest or terminal infraspecific epithet of the scientificName, excluding any rank designation.",
+               "type": "string"
+            },
+            "Kingdom": {
+               "description": "The name of the kingdom in which the organism is classified.",
+               "type": "string"
+            },
+            "Name_According_To": {
+               "description": "The reference to the source in which the specific taxon concept circumscription is defined or implied - traditionally signified by the Latin \"sensu\" or \"sec.\" (from secundum, meaning \"according to\"). For taxa that result from identifications, a reference to the keys, monographs, experts and other sources should be given.",
+               "type": "string"
+            },
+            "Name_According_To_ID": {
+               "description": "An identifier for the source in which the specific taxon concept circumscription is defined or implied. See nameAccordingTo.",
+               "type": "string"
+            },
+            "Name_Published_In": {
+               "description": "A reference for the publication in which the scientificName was originally established under the rules of the associated nomenclaturalCode.",
+               "type": "string"
+            },
+            "Name_Published_In_ID": {
+               "description": "An identifier for the publication in which the scientificName was originally established under the rules of the associated nomenclaturalCode.",
+               "type": "string"
+            },
+            "Name_Published_In_Year": {
+               "description": "The four-digit year in which the scientificName was published.",
+               "type": "string"
+            },
+            "Nomenclatural_Code": {
+               "description": "The nomenclatural code (or codes in the case of an ambiregnal name) under which the scientificName is constructed. Recommended best practice is to use a controlled vocabulary.",
+               "type": "string"
+            },
+            "Nomenclatural_Status": {
+               "description": "The status related to the original publication of the name and its conformance to the relevant rules of nomenclature. It is based essentially on an algorithm according to the business rules of the code. It requires no taxonomic opinion.",
+               "type": "string"
+            },
+            "Order": {
+               "description": "The name of the order in which the organism is classified.",
+               "type": "string"
+            },
+            "Original_Name_Usage": {
+               "description": "The taxon name, with authorship and date information if known, as it originally appeared when first established under the rules of the associated nomenclaturalCode. The basionym (botany) or basonym (bacteriology) of the scientificName or the senior/earlier homonym for replaced names.",
+               "type": "string"
+            },
+            "Original_Name_Usage_ID": {
+               "description": "An identifier for the name usage (documented meaning of the name according to a source) in which the terminal element of the scientificName was originally established under the rules of the associated nomenclaturalCode.",
+               "type": "string"
+            },
+            "Parent_Name_Usage": {
+               "description": "The full name, with authorship and date information if known, of the direct, most proximate higher-rank parent taxon (in a classification) of the most specific element of the scientificName.",
+               "type": "string"
+            },
+            "Parent_Name_Usage_ID": {
+               "description": "An identifier for the name usage (documented meaning of the name according to a source) of the direct, most proximate higher-rank parent taxon (in a classification) of the most specific element of the scientificName.",
+               "type": "string"
+            },
+            "Phylum": {
+               "description": "The name of the phylum (or division) in which the organism is classified.",
+               "type": "string"
+            },
+            "Scientific_Name": {
+               "description": "The full scientific name, with authorship and date information if known. When forming part of an Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in the IdentificationQualifier term.",
+               "type": "string"
+            },
+            "Scientific_Name_Authorship": {
+               "description": "The authorship information for the scientificName formatted according to the conventions of the applicable nomenclaturalCode.",
+               "type": "string"
+            },
+            "Scientific_Name_ID": {
+               "description": "An identifier for the nomenclatural (not taxonomic) details of a scientific name.",
+               "type": "string"
+            },
+            "Specific_Epithet": {
+               "description": "The name of the first or species epithet of the scientificName.",
+               "type": "string"
+            },
+            "Subgenus": {
+               "description": "The full scientific name of the subgenus in which the taxon is classified. Values should include the genus to avoid homonym confusion.",
+               "type": "string"
+            },
+            "Taxon_Concept_ID": {
+               "description": "An identifier for the taxonomic concept to which the record refers - not for the nomenclatural details of a taxon.",
+               "type": "string"
+            },
+            "Taxon_ID": {
+               "description": "An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.",
+               "type": "string"
+            },
+            "Taxon_Rank": {
+               "description": "The taxonomic rank of the most specific name in the scientificName. Recommended best practice is to use a controlled vocabulary.",
+               "type": "string"
+            },
+            "Taxon_Remarks": {
+               "description": "Comments or notes about the taxon or name.",
+               "type": "string"
+            },
+            "Taxonomic_Status": {
+               "description": "The status of the use of the scientificName as a label for a taxon. Requires taxonomic opinion to define the scope of a taxon. Rules of priority then are used to define the taxonomic status of the nomenclature contained in that scope, combined with the experts opinion. It must be linked to a specific taxonomic reference that defines the concept. Recommended best practice is to use a controlled vocabulary.",
+               "type": "string"
+            },
+            "Verbatim_Taxon_Rank": {
+               "description": "The taxonomic rank of the most specific name in the scientificName as it appears in the original record.",
+               "type": "string"
+            },
+            "Vernacular_Name": {
+               "description": "A common or vernacular name.",
+               "type": "string"
+            },
+            "acceptedNameUsage": {
+               "description": "The full name, with authorship and date information if known, of the currently valid (zoological) or accepted (botanical) taxon.",
+               "type": "string"
+            },
+            "acceptedNameUsageID": {
+               "description": "An identifier for the name usage (documented meaning of the name according to a source) of the currently valid (zoological) or accepted (botanical) taxon.",
+               "type": "string"
+            },
+            "class": {
+               "description": "The full scientific name of the class in which the taxon is classified.",
+               "type": "string"
+            },
+            "family": {
+               "description": "The full scientific name of the family in which the taxon is classified.",
+               "type": "string"
+            },
+            "genus": {
+               "description": "The full scientific name of the genus in which the taxon is classified.",
+               "type": "string"
+            },
+            "higherClassification": {
+               "description": "A list (concatenated and separated) of taxa names terminating at the rank immediately superior to the taxon referenced in the taxon record.",
+               "type": "string"
+            },
+            "infraspecificEpithet": {
+               "description": "The name of the lowest or terminal infraspecific epithet of the scientificName, excluding any rank designation.",
+               "type": "string"
+            },
+            "kingdom": {
+               "description": "The full scientific name of the kingdom in which the taxon is classified.",
+               "type": "string"
+            },
+            "nameAccordingTo": {
+               "description": "The reference to the source in which the specific taxon concept circumscription is defined or implied - traditionally signified by the Latin \"sensu\" or \"sec.\" (from secundum, meaning \"according to\"). For taxa that result from identifications, a reference to the keys, monographs, experts and other sources should be given.",
+               "type": "string"
+            },
+            "nameAccordingToID": {
+               "description": "An identifier for the source in which the specific taxon concept circumscription is defined or implied. See nameAccordingTo.",
+               "type": "string"
+            },
+            "namePublishedIn": {
+               "description": "A reference for the publication in which the scientificName was originally established under the rules of the associated nomenclaturalCode.",
+               "type": "string"
+            },
+            "namePublishedInID": {
+               "description": "An identifier for the publication in which the scientificName was originally established under the rules of the associated nomenclaturalCode.",
+               "type": "string"
+            },
+            "namePublishedInYear": {
+               "description": "The four-digit year in which the scientificName was published.",
+               "type": "string"
+            },
+            "nomenclaturalCode": {
+               "description": "The nomenclatural code (or codes in the case of an ambiregnal name) under which the scientificName is constructed.",
+               "type": "string"
+            },
+            "nomenclaturalStatus": {
+               "description": "The status related to the original publication of the name and its conformance to the relevant rules of nomenclature. It is based essentially on an algorithm according to the business rules of the code. It requires no taxonomic opinion.",
+               "type": "string"
+            },
+            "order": {
+               "description": "The full scientific name of the order in which the taxon is classified.",
+               "type": "string"
+            },
+            "originalNameUsage": {
+               "description": "The taxon name, with authorship and date information if known, as it originally appeared when first established under the rules of the associated nomenclaturalCode. The basionym (botany) or basonym (bacteriology) of the scientificName or the senior/earlier homonym for replaced names.",
+               "type": "string"
+            },
+            "originalNameUsageID": {
+               "description": "An identifier for the name usage (documented meaning of the name according to a source) in which the terminal element of the scientificName was originally established under the rules of the associated nomenclaturalCode.",
+               "type": "string"
+            },
+            "parentNameUsage": {
+               "description": "The full name, with authorship and date information if known, of the direct, most proximate higher-rank parent taxon (in a classification) of the most specific element of the scientificName.",
+               "type": "string"
+            },
+            "parentNameUsageID": {
+               "description": "An identifier for the name usage (documented meaning of the name according to a source) of the direct, most proximate higher-rank parent taxon (in a classification) of the most specific element of the scientificName.",
+               "type": "string"
+            },
+            "phylum": {
+               "description": "The full scientific name of the phylum or division in which the taxon is classified.",
+               "type": "string"
+            },
+            "scientificName": {
+               "description": "The full scientific name, with authorship and date information if known. When forming part of an Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in the IdentificationQualifier term.",
+               "type": "string"
+            },
+            "scientificNameAuthorship": {
+               "description": "The authorship information for the scientificName formatted according to the conventions of the applicable nomenclaturalCode.",
+               "type": "string"
+            },
+            "scientificNameID": {
+               "description": "An identifier for the nomenclatural (not taxonomic) details of a scientific name.",
+               "type": "string"
+            },
+            "specificEpithet": {
+               "description": "The name of the first or species epithet of the scientificName.",
+               "type": "string"
+            },
+            "subgenus": {
+               "description": "The full scientific name of the subgenus in which the taxon is classified. Values should include the genus to avoid homonym confusion.",
+               "type": "string"
+            },
+            "taxonConceptID": {
+               "description": "An identifier for the taxonomic concept to which the record refers - not for the nomenclatural details of a taxon.",
+               "type": "string"
+            },
+            "taxonID": {
+               "description": "An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.",
+               "type": "string"
+            },
+            "taxonRank": {
+               "description": "The taxonomic rank of the most specific name in the scientificName.",
+               "type": "string"
+            },
+            "taxonRemarks": {
+               "description": "Comments or notes about the taxon or name.",
+               "type": "string"
+            },
+            "taxonomicStatus": {
+               "description": "The status of the use of the scientificName as a label for a taxon. Requires taxonomic opinion to define the scope of a taxon. Rules of priority then are used to define the taxonomic status of the nomenclature contained in that scope, combined with the experts opinion. It must be linked to a specific taxonomic reference that defines the concept.",
+               "type": "string"
+            },
+            "verbatimTaxonRank": {
+               "description": "The taxonomic rank of the most specific name in the scientificName as it appears in the original record.",
+               "type": "string"
+            },
+            "vernacularName": {
+               "description": "A common or vernacular name.",
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "Taxon",
+         "type": "object"
+      },
+      "UseWithIRI": {
+         "additionalProperties": false,
+         "description": "The category of terms that are recommended to have an IRI as a value.",
+         "properties": {},
+         "required": [],
+         "title": "UseWithIRI",
+         "type": "object"
+      }
+   },
+   "properties": {},
+   "title": "terms",
+   "type": "object"
+}
+

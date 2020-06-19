@@ -8,6 +8,12 @@ weight(-3, [predicate_id='owl:equivalentClass', any_match_field='oio:hasNarrowSy
 weight(-3, [predicate_id='owl:equivalentClass', any_match_field='oio:hasBroadSynonym']).
 weight(-1, [predicate_id='owl:equivalentClass', any_match_field='oio:hasRelatedSynonym']).
 
+% pre-supplied mapping
+weight(3, [predicate_id='owl:equivalentClass', subject_match_field='skos:exactMatch', object_match_field='schema:url']).
+
+% shared exact match
+weight(1, [predicate_id='owl:equivalentClass', subject_match_field='skos:exactMatch', object_match_field='skos:exactMatch']).
+
 % lexical is lower, stemmming even lower
 weight(-1.0, [predicate_id='owl:equivalentClass', match_type=['Lexical','Stemming']]).
 weight(-0.5, [predicate_id='owl:equivalentClass', match_type=['Lexical']]).

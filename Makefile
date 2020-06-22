@@ -14,7 +14,6 @@ test:
 # these are then moved to test
 downloads/kbase/%:
 	curl -L -s https://raw.githubusercontent.com/kbaseIncubator/sample_service_validator_config/master/$* > $@
-
 downloads/dwc.csv:
 	curl -L -s https://raw.githubusercontent.com/tdwg/dwc/master/vocabulary/term_versions.csv > $@
 
@@ -69,7 +68,7 @@ deploy-docs:
 
 ## Matches
 
-ONTS = envo uo
+ONTS = envo uo bco obi datacite pato
 SRC_TTL = $(foreach s,$(SOURCES),target/$s/$s.ttl) $(foreach s,$(ONTS),ontologies/$s.ttl)
 mappings/matches.tsv: $(SRC_TTL)
 	rdfmatch -w mappings/weights.pro -i mappings/prefixes.ttl $(patsubst %, -i %, $(SRC_TTL)) match > $@
@@ -86,3 +85,5 @@ mappings/%-summary.tsv: mappings/%.tsv
 OBO=http://purl.obolibrary.org/obo
 ontologies/%.ttl:
 	robot convert -I $(OBO)/$*.owl -o $@
+ontologies/datacite.ttl:
+	robot merge -I http://purl.org/spar/datacite.ttl  -o  $@

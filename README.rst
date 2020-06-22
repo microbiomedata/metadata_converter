@@ -53,6 +53,9 @@ Mappings
 
 See `mappings/ <mappings/>`__
 
+We convert all the above yamls to OWL and perform mappings, als throwing select
+ontologies and ontology-like artefacts into the mix, both OBO (ENVO, BCO, OBI, UO, PATO) and non-OBO (DataCite, Dublincore)
+
 Building Targets
 ================
 

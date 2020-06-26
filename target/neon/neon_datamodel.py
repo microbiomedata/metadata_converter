@@ -1,5 +1,5 @@
 # Auto generated from neon.yaml by pythongen.py version: 0.4.0
-# Generation date: 2020-06-18 20:47
+# Generation date: 2020-06-26 16:37
 # Schema: neon
 #
 # id: https://microbiomedata/schema/neon

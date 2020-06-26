@@ -1,5 +1,5 @@
 # Auto generated from kbase.yaml by pythongen.py version: 0.4.0
-# Generation date: 2020-06-17 10:45
+# Generation date: 2020-06-26 16:36
 # Schema: kbase
 #
 # id: https://microbiomedata/schema/kbase
@@ -22,7 +22,7 @@ from rdflib import Namespace, URIRef
 from biolinkml.utils.curienamespace import CurieNamespace
 from includes.types import Double, String
 
-metamodel_version = "1.4.3"
+metamodel_version = "1.4.4"
 
 # Overwrite dataclasses _init_fn to add **kwargs in __init__
 dataclasses._init_fn = dataclasses_init_fn_with_kwargs

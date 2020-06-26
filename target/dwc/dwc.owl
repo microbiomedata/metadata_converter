@@ -9,10 +9,10 @@
     rdfs:label "terms" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     skos:definition "DarwinCore biolinkml rendering" ;
-    meta:generation_date "2020-06-18 20:38" ;
+    meta:generation_date "2020-06-26 16:36" ;
     meta:metamodel_version "1.4.4" ;
     meta:source_file "dwc.yaml" ;
-    meta:source_file_date "Thu Jun 18 20:38:18 2020" ;
+    meta:source_file_date "Fri Jun 26 16:36:16 2020" ;
     meta:source_file_size 192315 .
 
 <http://rs.tdwg.org/dwc/terms/Accepted_Scientific_Name> a owl:ObjectProperty,
@@ -469,43 +469,7 @@
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/verbatimEventDate> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Verbatim_EventDate> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Event_Time> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Event_Remarks> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/eventTime> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Sampling_Protocol> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Parent_Event_ID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/year> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/habitat> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/eventID> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Sample_Size_Unit> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -513,95 +477,7 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/sampleSizeUnit> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/eventRemarks> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/samplingProtocol> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
             owl:onProperty <http://rs.tdwg.org/dwc/terms/startDayOfYear> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/day> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/month> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Field_Number> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/eventDate> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/End_Day_Of_Year> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Sample_Size_Value> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/parentEventID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Day> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Field_Notes> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/endDayOfYear> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Sampling_Effort> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Start_Day_Of_Year> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/samplingEffort> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Event_Date> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Month> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Habitat> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Year> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Sample_Size_Unit> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/fieldNotes> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -609,7 +485,131 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/fieldNumber> ] ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Day> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/year> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/eventRemarks> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/fieldNumber> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/End_Day_Of_Year> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Sampling_Protocol> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Event_Date> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Start_Day_Of_Year> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Sample_Size_Value> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Field_Number> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/verbatimEventDate> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Field_Notes> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/month> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Verbatim_EventDate> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/fieldNotes> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/parentEventID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Event_Time> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/eventID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/habitat> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Parent_Event_ID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Event_Remarks> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/endDayOfYear> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Habitat> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/sampleSizeUnit> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Year> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/samplingEffort> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/eventDate> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Month> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/day> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/samplingProtocol> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Sampling_Effort> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/eventTime> ] ;
     skos:altLabel "Event" ;
     skos:definition "An action that occurs at some location during some time." ;
     skos:exactMatch <http://rs.tdwg.org/dwc/terms/version/Event-2009-04-29> .
@@ -859,23 +859,7 @@
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Bed> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Lowest_Biostratigraphic_Zone> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/geologicalContextID> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Latest_Period_Or_Highest_System> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -883,47 +867,19 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Earliest_Period_Or_Lowest_System> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/bed> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Earliest_Age_Or_Lowest_Stage> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/formation> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Highest_Biostratigraphic_Zone> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/member> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
             owl:onProperty <http://rs.tdwg.org/dwc/terms/Member> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Latest_Epoch_Or_Highest_Series> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Earliest_Era_Or_Lowest_Erathem> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Group> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Formation> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -931,7 +887,11 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Latest_Period_Or_Highest_System> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -939,7 +899,55 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Latest_AgeOr_Highest_Stage> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Geological_Context_ID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/geologicalContextID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
             owl:onProperty <http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/formation> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Lowest_Biostratigraphic_Zone> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Earliest_Period_Or_Lowest_System> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/member> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Highest_Biostratigraphic_Zone> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -951,43 +959,7 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Latest_AgeOr_Highest_Stage> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Formation> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Geological_Context_ID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Latest_Eon_Or_Highest_Eonothem> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
             owl:onProperty <http://rs.tdwg.org/dwc/terms/group> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Group> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -995,11 +967,39 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Earliest_Era_Or_Lowest_Erathem> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/bed> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem> ] ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Latest_Epoch_Or_Highest_Series> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Earliest_Age_Or_Lowest_Stage> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Latest_Eon_Or_Highest_Eonothem> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Bed> ] ;
     skos:altLabel "Geological Context",
         "GeologicalContext" ;
     skos:definition "Geological information, such as stratigraphy, that qualifies a region or place." ;
@@ -1195,7 +1195,27 @@
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/identificationVerificationStatus> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Type_Status> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/identificationID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/identificationRemarks> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/identificationReferences> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/dateIdentified> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Date_Identified> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -1211,11 +1231,15 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Type_Status> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Identified_By> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Date_Identified> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/typeStatus> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/identificationVerificationStatus> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -1223,7 +1247,7 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/identificationID> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Identification_Qualifier> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -1231,31 +1255,7 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Identification_Remarks> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Identification_Qualifier> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Identified_By> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/identificationRemarks> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/dateIdentified> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/identificationReferences> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/typeStatus> ] ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Identification_Remarks> ] ;
     skos:altLabel "Identification" ;
     skos:definition "A taxonomic determination (e.g., the assignment to a taxon)." ;
     skos:exactMatch <http://rs.tdwg.org/dwc/terms/version/Identification-2008-11-19> .
@@ -1641,15 +1641,7 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Measurement_ID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/measurementValue> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/measurementMethod> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Measurement_Value> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -1657,35 +1649,7 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/measurementRemarks> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Measurement_Method> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Measurement_Determined_By> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/measurementType> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/measurementAccuracy> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
             owl:onProperty <http://rs.tdwg.org/dwc/terms/measurementUnit> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/measurementID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Measurement_Unit> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -1693,7 +1657,11 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Measurement_Value> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/measurementID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/measurementRemarks> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -1701,11 +1669,43 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/measurementValue> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
             owl:onProperty <http://rs.tdwg.org/dwc/terms/measurementDeterminedDate> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Measurement_Remarks> ] ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/measurementMethod> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/measurementAccuracy> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/measurementType> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Measurement_Remarks> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Measurement_Determined_By> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Measurement_ID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Measurement_Unit> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Measurement_Method> ] ;
     skos:altLabel "Measurement Or Fact",
         "Measurement or Fact",
         "MeasurementOrFact" ;
@@ -1825,39 +1825,7 @@
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/associatedSequences> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/organismQuantityType> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/establishmentMeans> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Associated_References> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/recordedBy> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/behavior> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Reproductive_Condition> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Disposition> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Organism_Quantity> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/preparations> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -1865,79 +1833,7 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/organismQuantity> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/occurrenceID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Preparations> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/otherCatalogNumbers> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Establishment_Means> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Associated_Media> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Record_Number> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/associatedTaxa> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/lifeStage> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
             owl:onProperty <http://rs.tdwg.org/dwc/terms/reproductiveCondition> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Sex> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/catalogNumber> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/sex> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Behavior> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Occurrence_Status> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/occurrenceRemarks> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/disposition> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Recorded_By> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Individual_Count> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -1945,39 +1841,15 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/recordNumber> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/disposition> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Associated_Taxa> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/sex> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Occurrence_ID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/individualCount> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Catalog_Number> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/associatedReferences> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Associated_Sequences> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/occurrenceStatus> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/preparations> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Associated_Media> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -1985,7 +1857,135 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/occurrenceStatus> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/recordNumber> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/lifeStage> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
             owl:onProperty <http://rs.tdwg.org/dwc/terms/Other_Catalog_Numbers> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Reproductive_Condition> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Associated_Taxa> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Sex> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/associatedTaxa> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/associatedReferences> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Occurrence_Status> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/behavior> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/otherCatalogNumbers> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/catalogNumber> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/individualCount> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/recordedBy> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Behavior> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Recorded_By> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/occurrenceRemarks> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Catalog_Number> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Organism_Quantity> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Establishment_Means> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/associatedSequences> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Occurrence_ID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/organismQuantity> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Preparations> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/occurrenceID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/establishmentMeans> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Record_Number> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Associated_Sequences> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Individual_Count> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Disposition> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Associated_References> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/organismQuantityType> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -2085,39 +2085,7 @@
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Organism_Scope> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/organismScope> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/organismRemarks> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
             owl:onProperty <http://rs.tdwg.org/dwc/terms/organismID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Associated_Organisms> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Organism_Remarks> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Previous_Identifications> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/associatedOrganisms> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Organism_Name> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -2125,11 +2093,23 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/organismRemarks> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/associatedOrganisms> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Previous_Identifications> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
             owl:onProperty <http://rs.tdwg.org/dwc/terms/previousIdentifications> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Associated_Occurrences> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Organism_Remarks> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -2137,7 +2117,27 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/organismName> ] ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Associated_Organisms> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/organismScope> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/organismName> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Associated_Occurrences> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Organism_Name> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Organism_Scope> ] ;
     skos:altLabel "Organism" ;
     skos:definition "A particular organism or defined group of organisms considered to be taxonomically homogeneous." .
 
@@ -2261,11 +2261,39 @@
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/resourceRelationshipID> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/relationshipOfResource> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Relationship_Established_Date> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Relationship_Remarks> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Resource_Relationship_ID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Related_Resource_ID> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
             owl:onProperty <http://rs.tdwg.org/dwc/terms/resourceID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Relationship_According_To> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/relatedResourceID> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -2277,43 +2305,15 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Resource_Relationship_ID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
             owl:onProperty <http://rs.tdwg.org/dwc/terms/relationshipRemarks> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/relatedResourceID> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/resourceRelationshipID> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/relationshipAccordingTo> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Relationship_According_To> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/relationshipOfResource> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Related_Resource_ID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Relationship_Established_Date> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Relationship_Remarks> ] ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/relationshipAccordingTo> ] ;
     skos:altLabel "Resource Relationship",
         "ResourceRelationship" ;
     skos:definition "A relationship of one rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource) to another." ;
@@ -2523,235 +2523,7 @@
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/parentNameUsageID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/namePublishedInYear> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/higherClassification> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Verbatim_Taxon_Rank> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/nomenclaturalStatus> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/scientificNameAuthorship> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/verbatimTaxonRank> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Infraspecific_Epithet> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/taxonRemarks> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/class> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Genus> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/scientificName> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Kingdom> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Order> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/order> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Taxon_Rank> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/taxonomicStatus> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/nameAccordingTo> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/parentNameUsage> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Taxon_Concept_ID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Parent_Name_Usage> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/namePublishedInID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/namePublishedIn> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/subgenus> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/acceptedNameUsage> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/vernacularName> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Phylum> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Taxon_ID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/originalNameUsage> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Original_Name_Usage> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/scientificNameID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Name_According_To_ID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Accepted_Name_Usage> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/phylum> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/acceptedNameUsageID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Name_Published_In_ID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/nomenclaturalCode> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Name_According_To> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Name_Published_In_Year> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/kingdom> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/originalNameUsageID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Subgenus> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/genus> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Scientific_Name_ID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/taxonID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Taxonomic_Status> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Taxon_Remarks> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Scientific_Name_Authorship> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/taxonRank> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
             owl:onProperty <http://rs.tdwg.org/dwc/terms/Vernacular_Name> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Specific_Epithet> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/family> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Family> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Scientific_Name> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Accepted_Name_Usage_ID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Higher_Classification> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/nameAccordingToID> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Original_Name_Usage_ID> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -2759,23 +2531,31 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Class> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/class> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Nomenclatural_Status> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Specific_Epithet> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Nomenclatural_Code> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/phylum> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/Name_Published_In> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/nameAccordingToID> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/specificEpithet> ],
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/higherClassification> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Subgenus> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Order> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -2783,7 +2563,227 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://rs.tdwg.org/dwc/terms/infraspecificEpithet> ] ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Phylum> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Original_Name_Usage> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/nameAccordingTo> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/verbatimTaxonRank> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/originalNameUsage> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Accepted_Name_Usage_ID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/acceptedNameUsageID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/scientificName> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Infraspecific_Epithet> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Taxon_Remarks> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Scientific_Name> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/genus> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/nomenclaturalStatus> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/scientificNameID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Verbatim_Taxon_Rank> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/taxonID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Name_Published_In_Year> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/vernacularName> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Parent_Name_Usage> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Nomenclatural_Status> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/namePublishedInYear> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Scientific_Name_ID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Higher_Classification> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/taxonRank> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/subgenus> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Taxon_Rank> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Name_According_To> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Name_Published_In> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Taxonomic_Status> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Class> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/specificEpithet> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/order> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/kingdom> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Original_Name_Usage_ID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Name_Published_In_ID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Family> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Kingdom> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Scientific_Name_Authorship> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Nomenclatural_Code> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Accepted_Name_Usage> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Taxon_ID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/originalNameUsageID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/acceptedNameUsage> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Genus> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/taxonRemarks> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/infraspecificEpithet> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/nomenclaturalCode> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/namePublishedIn> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Name_According_To_ID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/Taxon_Concept_ID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/parentNameUsage> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/scientificNameAuthorship> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/taxonomicStatus> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/family> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/parentNameUsageID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://rs.tdwg.org/dwc/terms/namePublishedInID> ] ;
     skos:altLabel "Taxon" ;
     skos:definition "A resource describing an instance of the Taxon class." .
 

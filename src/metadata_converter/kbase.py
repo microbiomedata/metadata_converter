@@ -77,6 +77,12 @@ class KBaseConverter:
                     cb = validator['callable_builder']
                     if cb == 'number':
                         range = 'double'
+                    if 'parameters' in validator:
+                        p = validator['parameters']
+                        if 'gte' in p:
+                            slot['minimum_value'] = p['gte']
+                        if 'lte' in p:
+                            slot['maximum_value'] = p['lte']
             else:
                 logging.error(f"no validator for {k}")
             slot['range'] = range

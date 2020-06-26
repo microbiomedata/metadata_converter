@@ -11,39 +11,59 @@
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/well_status> ],
+            owl:onProperty <http://kbase.us/biomass_carbon_mg_g> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/lower_seal_start_depth_ft_bgs> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/packing_type> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/drive_casing_type> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/rock_formation> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/recovery_factor> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/origination_or_plug_abandon> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/open_casing_depth_ft_bgs> ],
+            owl:onProperty <http://kbase.us/id> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
-            owl:onProperty <http://kbase.us/depth> ],
+            owl:onProperty <http://kbase.us/ph> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/total_carbon_mg_g_dry_weight> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/geological_zone> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/drive_casing_end_depth_ft_bgs> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/temperature_celsius> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/well_name> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/lower_seal_type_ft_bgs> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/env_pakcage> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/max_water_level_ft_amsl> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/env_package> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/open_interval_start_depth_ft_bgs> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/boring_diameter_in> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -51,47 +71,59 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/biome> ],
+            owl:onProperty <http://kbase.us/pore_water_extraction_microliters> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
+            owl:onProperty <http://kbase.us/depth> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/conductivity_ms_cm> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/average_water_level_ft_amsl> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/country> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/open_hole_depth_ft_bgs> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/dapi_cell_count_cells_g> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/sampleid> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/upper_seal_end_depth_ft_bgs> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/total_nitrogen_mg_g_dry_weight> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/boring_refusal> ],
+            owl:onProperty <http://kbase.us/name> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
             owl:onProperty <http://kbase.us/open_interval_end_depth_ft_bgs> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/type_of_well> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/timezone> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/rock_formation> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/drive_casing_type> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/well_casing_id_in> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/open_casing_type> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/drive_casing_od_in> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/well_casing_od_in> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/fractures_cavities_waterbreaks> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/drive_casing_id_in> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -103,271 +135,7 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/total_carbon_mg_g_dry_weight> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/open_hole_diameter_in> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/condition> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/boring_diameter_in> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/open> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/name> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/topofweatheredbedrock_ft_bgs> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/min_water_level_ft_amsl> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
-            owl:onProperty <http://kbase.us/ph> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/treatment> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/leucine_activity_ngc_day_cell> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/description> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/timezone> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/feature> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/well_casing_od_in> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/installation_method> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/well_casing_id_in> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/drive_casing_start_depth_ft_bgs> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/well> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/temperature_celsius> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/type_of_well> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/ground_elevation_ft_amsl> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/open_casing_type> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/pore_water_extraction_microliters> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/packing_depth_end_ft_bgs> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/fraction> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
-            owl:onProperty <http://kbase.us/latitude> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/dna_picogreen_total_ng> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/fractures_cavities_waterbreaks> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/lower_seal_type_ft_bgs> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/well_casing_type> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/experiment_name> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/area_name> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/collection_time> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/drive_casing_end_depth_ft_bgs> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/region> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/open_interval_diameter_in> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/screened> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/env_pakcage> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/open_casing_od_in> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/id> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
-            owl:onProperty <http://kbase.us/moisture> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/aquifer> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/elevation> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/screen_type> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/replicate> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/other_name> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/maturation_time> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/lower_seal_end_depth_ft_bgs> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/geological_zone> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/biomass_carbon_mg_g> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/drive_casing_od_in> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/well_name> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/upper_seal_type> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/boring_ft_bgs> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/environmental_package> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/env_package> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/packing_depth_start_ft_bgs> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/time> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/max_water_level_ft_amsl> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/open_interval_start_depth_ft_bgs> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/drive_casing_id_in> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/method> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/topoffreshbedrock_ft_bgs> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/continent> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/time_zone> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/open_casing_id_in> ],
+            owl:onProperty <http://kbase.us/origination_or_plug_abandon> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -375,7 +143,239 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/material> ] ;
+            owl:onProperty <http://kbase.us/time> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/continent> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/lower_seal_end_depth_ft_bgs> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/packing_type> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/ground_elevation_ft_amsl> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/area_name> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/open_casing_od_in> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/screen_type> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/packing_depth_end_ft_bgs> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/time_zone> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/topoffreshbedrock_ft_bgs> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
+            owl:onProperty <http://kbase.us/latitude> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/leucine_activity_ngc_day_cell> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/environmental_package> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/replicate> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/treatment> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/total_nitrogen_mg_g_dry_weight> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/drive_casing_start_depth_ft_bgs> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/open_hole_diameter_in> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
+            owl:onProperty <http://kbase.us/moisture> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/sampleid> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/screened> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/boring_refusal> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/open_casing_depth_ft_bgs> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/installation_method> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/open_casing_id_in> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/topofweatheredbedrock_ft_bgs> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/lower_seal_start_depth_ft_bgs> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/upper_seal_type> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/maturation_time> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/min_water_level_ft_amsl> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/dapi_cell_count_cells_g> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/dna_picogreen_total_ng> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/collection_time> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/method> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/well_status> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/material> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/open> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/biome> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/open_hole_depth_ft_bgs> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/well> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/average_water_level_ft_amsl> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/region> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/elevation> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/packing_depth_start_ft_bgs> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/open_interval_diameter_in> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/aquifer> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/well_casing_type> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/description> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/fraction> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/experiment_name> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/feature> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/recovery_factor> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/conductivity_ms_cm> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/country> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/boring_ft_bgs> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/other_name> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/condition> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/upper_seal_end_depth_ft_bgs> ] ;
     skos:definition "TODO" .
 
 <http://kbase.us/SESAR> a owl:Class,
@@ -384,23 +384,7 @@
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/sample_description> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/original_archive> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
-            owl:onProperty <http://kbase.us/depth> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/original_archive_contact> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/sub-object_type> ],
+            owl:onProperty <http://kbase.us/name> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -408,135 +392,15 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/timezone> ],
+            owl:onProperty <http://kbase.us/locality> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/platform_type> ],
+            owl:onProperty <http://kbase.us/sub-object_type> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/collector_chief_scientist_address> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/current_archive> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/size_unit> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/collection_method_description> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/name_of_physiographic_feature> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/navigation_type> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/country> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/collector_chief_scientist> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/purpose> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/zone> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/depth_scale> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/name> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/vertical_datum> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/locality_description> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/id> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/collection_date_precision> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/well> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/time> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/launch_id> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/sample_name> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/collection_method> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/city_township> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/location_description> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/date> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/collection_time_end> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
-            owl:onProperty <http://kbase.us/longitude> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
-            owl:onProperty <http://kbase.us/size> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/other_names> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/age_unit> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/platform_name> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/county> ],
+            owl:onProperty <http://kbase.us/geological_unit> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -544,35 +408,51 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/primary_physiographic_feature> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/field_program_cruise> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/locality> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
             owl:onProperty <http://kbase.us/elevation> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/material> ],
+            owl:onProperty <http://kbase.us/original_archive> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/related_identifiers> ],
+            owl:onProperty <http://kbase.us/platform_type> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
+            owl:onProperty <http://kbase.us/size> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/description> ],
+            owl:onProperty <http://kbase.us/collection_time_end> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/field_name_informal_classification> ],
+            owl:onProperty <http://kbase.us/well> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/navigation_type> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/name_of_physiographic_feature> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
+            owl:onProperty <http://kbase.us/longitude> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/collection_method_description> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/collector_chief_scientist_address> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/sample_description> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
@@ -580,19 +460,139 @@
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/collection_time> ],
+            owl:onProperty <http://kbase.us/timezone> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/date> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/launch_id> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/material> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/field_name_informal_classification> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
             owl:onProperty <http://kbase.us/state_province> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
+            owl:onProperty <http://kbase.us/depth> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
-            owl:onProperty <http://kbase.us/geological_unit> ],
+            owl:onProperty <http://kbase.us/id> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/purpose> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/collection_time> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/collector_chief_scientist> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/collection_method> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/original_archive_contact> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/age_unit> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/country> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/related_identifiers> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/sample_name> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/platform_name> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/vertical_datum> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/current_archive> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/zone> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/primary_physiographic_feature> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass <https://w3id.org/biolink/biolinkml/type/Double> ;
-            owl:onProperty <http://kbase.us/latitude> ] ;
+            owl:onProperty <http://kbase.us/latitude> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/size_unit> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/other_names> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/city_township> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/field_program_cruise> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/collection_date_precision> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/locality_description> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/county> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/location_description> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/description> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/depth_scale> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/type/String> ;
+            owl:onProperty <http://kbase.us/time> ] ;
     skos:definition "TODO" .
 
 <http://kbase.us/age_max> a owl:ObjectProperty,
@@ -1064,11 +1064,11 @@
     rdfs:label "kbase" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     skos:definition "NMDC rendering of KBase metadata schema" ;
-    meta:generation_date "2020-06-17 23:06" ;
+    meta:generation_date "2020-06-26 16:36" ;
     meta:metamodel_version "1.4.4" ;
     meta:source_file "kbase.yaml" ;
-    meta:source_file_date "Wed Jun 17 10:45:05 2020" ;
-    meta:source_file_size 21048 .
+    meta:source_file_date "Fri Jun 26 16:36:00 2020" ;
+    meta:source_file_size 21653 .
 
 meta:SubsetDefinition a owl:Class ;
     rdfs:label "subset_definition" ;

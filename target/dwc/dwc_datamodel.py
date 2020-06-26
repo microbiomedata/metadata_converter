@@ -1,5 +1,5 @@
 # Auto generated from dwc.yaml by pythongen.py version: 0.4.0
-# Generation date: 2020-06-18 20:46
+# Generation date: 2020-06-26 16:36
 # Schema: terms
 #
 # id: http://rs.tdwg.org/dwc/terms

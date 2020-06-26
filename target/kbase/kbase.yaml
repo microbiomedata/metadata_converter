@@ -11,16 +11,19 @@ slots:
     aliases:
     - Age (max)
     description: maximum age in years
+    minimum_value: 0
     range: double
   age_min:
     aliases:
     - Age (min)
     description: minimum age in years
+    minimum_value: 0
     range: double
   aodc:
     aliases:
     - AODC
     description: units in cells per gram
+    minimum_value: 0.0
     range: double
   aquifer:
     aliases:
@@ -39,6 +42,7 @@ slots:
     aliases:
     - Biomass Carbon
     description: units in milligrams per gram
+    minimum_value: 0.0
     range: double
   biome:
     aliases:
@@ -48,6 +52,7 @@ slots:
     aliases:
     - BONCAT Activity
     description: units in cells per gram
+    minimum_value: 0.0
     range: double
   boring:
     aliases:
@@ -58,6 +63,7 @@ slots:
     aliases:
     - Boring Diameter
     description: boring diameter in inches
+    minimum_value: 0.0
     range: double
   boring_refusal:
     aliases:
@@ -186,11 +192,13 @@ slots:
     aliases:
     - Drive Casing ID
     description: drive casing inner diameter in inches
+    minimum_value: 0.0
     range: double
   drive_casing_od:
     aliases:
     - Drive Casing OD
     description: drive casing outer diameter in inches
+    minimum_value: 0.0
     range: double
   drive_casing_start_depth:
     aliases:
@@ -265,6 +273,7 @@ slots:
     aliases:
     - Geological Age
     description: Geological Age in years * 1000000
+    minimum_value: 0
     range: double
   geological_zone:
     aliases:
@@ -292,6 +301,8 @@ slots:
     aliases:
     - Latitude
     description: Latitude in degrees
+    minimum_value: -90.0
+    maximum_value: 90.0
     range: double
   launch_id:
     aliases:
@@ -322,6 +333,8 @@ slots:
     aliases:
     - Longitude
     description: Longitude in degrees
+    minimum_value: -180.0
+    maximum_value: 180.0
     range: double
   lower_seal_end_depth:
     aliases:
@@ -363,6 +376,8 @@ slots:
     aliases:
     - Moisture
     description: percent moisture
+    minimum_value: 0.0
+    maximum_value: 100.0
     range: double
   name:
     aliases:
@@ -395,11 +410,13 @@ slots:
     aliases:
     - Open Casing ID
     description: open casing inner diameter in inches (in)
+    minimum_value: 0.0
     range: double
   open_casing_od:
     aliases:
     - Open Casing OD
     description: open casing outer diameter in inches (in)
+    minimum_value: 0.0
     range: double
   open_casing_type:
     aliases:
@@ -414,11 +431,13 @@ slots:
     aliases:
     - Open Hole Diameter
     description: Open hole diameter in inches
+    minimum_value: 0.0
     range: double
   open_interval_diameter:
     aliases:
     - Open Interval Diameter
     description: Open interval diameter in inches
+    minimum_value: 0.0
     range: double
   open_interval_end_depth:
     aliases:
@@ -434,6 +453,7 @@ slots:
     aliases:
     - Organic Carbon
     description: Organic carbon in milligrams per gram dry weight
+    minimum_value: 0.0
     range: double
   original_archive:
     aliases:
@@ -482,6 +502,8 @@ slots:
     aliases:
     - Ph
     description: pH of sample
+    minimum_value: -10.0
+    maximum_value: 20.0
     range: double
   platform_name:
     aliases:
@@ -634,11 +656,13 @@ slots:
     aliases:
     - Total Carbon
     description: Total carbon in milligrams per gram dry weight
+    minimum_value: 0.0
     range: double
   total_nitrogen:
     aliases:
     - Total Nitrogen
     description: Total nitrogen in milligrams per gram dry weight
+    minimum_value: 0.0
     range: double
   treatment:
     aliases:
@@ -679,11 +703,13 @@ slots:
     aliases:
     - Well Casing ID
     description: Well casing inner diameter. units in inches
+    minimum_value: 0.0
     range: double
   well_casing_od:
     aliases:
     - Well Casing OD
     description: Well casing outer diameter. units in inches
+    minimum_value: 0.0
     range: double
   well_casing_type:
     aliases:

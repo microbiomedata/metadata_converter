@@ -27,4 +27,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | sample geodetic datum |
 | **Mappings:** | | neon:sampleGeodeticDatum |
+|  | | dwc:geodeticDatum |
 

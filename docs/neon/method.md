@@ -67,4 +67,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | method |
 | **Mappings:** | | neon:method |
+|  | | dwc:samplingProtocol |
 

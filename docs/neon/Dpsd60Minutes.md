@@ -7,7 +7,7 @@
 URI: [neon:Dpsd60Minutes](https://data.neonscience.org/Dpsd60Minutes)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[Dpsd60Minutes&#124;startDateTime:time%20%3F;endDateTime:time%20%3F;PM15Median:double%20%3F;PM15Minimum:double%20%3F;PM15Maximum:double%20%3F;PM15NumPts:double%20%3F;PM15MAD:double%20%3F;PM15rangeFailQM:double%20%3F;PM15rangePassQM:double%20%3F;PM15rangeNAQM:double%20%3F;PM15persistenceFailQM:double%20%3F;PM15persistencePassQM:double%20%3F;PM15persistenceNAQM:double%20%3F;PM15stepFailQM:double%20%3F;PM15stepPassQM:double%20%3F;PM15stepNAQM:double%20%3F;PM15nullFailQM:double%20%3F;PM15nullPassQM:double%20%3F;PM15nullNAQM:double%20%3F;PM15gapFailQM:double%20%3F;PM15gapPassQM:double%20%3F;PM15gapNAQM:double%20%3F;PM15spikeFailQM:double%20%3F;PM15spikePassQM:double%20%3F;PM15spikeNAQM:double%20%3F;PM15consistencyFailQM:double%20%3F;PM15consistencyPassQM:double%20%3F;PM15consistencyNAQM:double%20%3F;PM15alphaQM:double%20%3F;PM15betaQM:double%20%3F;PM15finalQF:string%20%3F;PM10Median:double%20%3F;PM10Minimum:double%20%3F;PM10Maximum:double%20%3F;PM10NumPts:double%20%3F;PM10MAD:double%20%3F;PM10rangeFailQM:double%20%3F;PM10rangePassQM:double%20%3F;PM10rangeNAQM:double%20%3F;PM10persistenceFailQM:double%20%3F;PM10persistencePassQM:double%20%3F;PM10persistenceNAQM:double%20%3F;PM10stepFailQM:double%20%3F;PM10stepPassQM:double%20%3F;PM10stepNAQM:double%20%3F;PM10nullFailQM:double%20%3F;PM10nullPassQM:double%20%3F;PM10nullNAQM:double%20%3F;PM10gapFailQM:double%20%3F;PM10gapPassQM:double%20%3F;PM10gapNAQM:double%20%3F;PM10spikeFailQM:double%20%3F;PM10spikePassQM:double%20%3F;PM10spikeNAQM:double%20%3F;PM10consistencyFailQM:double%20%3F;PM10consistencyPassQM:double%20%3F;PM10consistencyNAQM:double%20%3F;PM10alphaQM:double%20%3F;PM10betaQM:double%20%3F;PM10finalQF:string%20%3F;PM4Median:double%20%3F;PM4Minimum:double%20%3F;PM4Maximum:double%20%3F;PM4NumPts:double%20%3F;PM4MAD:double%20%3F;PM4rangeFailQM:double%20%3F;PM4rangePassQM:double%20%3F;PM4rangeNAQM:double%20%3F;PM4persistenceFailQM:double%20%3F;PM4persistencePassQM:double%20%3F;PM4persistenceNAQM:double%20%3F;PM4stepFailQM:double%20%3F;PM4stepPassQM:double%20%3F;PM4stepNAQM:double%20%3F;PM4nullFailQM:double%20%3F;PM4nullPassQM:double%20%3F;PM4nullNAQM:double%20%3F;PM4gapFailQM:double%20%3F;PM4gapPassQM:double%20%3F;PM4gapNAQM:double%20%3F;PM4spikeFailQM:double%20%3F;PM4spikePassQM:double%20%3F;PM4spikeNAQM:double%20%3F;PM4consistencyFailQM:double%20%3F;PM4consistencyPassQM:double%20%3F;PM4consistencyNAQM:double%20%3F;PM4alphaQM:double%20%3F;PM4betaQM:double%20%3F;PM4finalQF:string%20%3F;PM2.5Median:double%20%3F;PM2.5Minimum:double%20%3F;PM2.5Maximum:double%20%3F;PM2.5NumPts:double%20%3F;PM2.5MAD:double%20%3F;PM2.5rangeFailQM:double%20%3F;PM2.5rangePassQM:double%20%3F;PM2.5rangeNAQM:double%20%3F;PM2.5persistenceFailQM:double%20%3F;PM2.5persistencePassQM:double%20%3F;PM2.5persistenceNAQM:double%20%3F;PM2.5stepFailQM:double%20%3F;PM2.5stepPassQM:double%20%3F;PM2.5stepNAQM:double%20%3F;PM2.5nullFailQM:double%20%3F;PM2.5nullPassQM:double%20%3F;PM2.5nullNAQM:double%20%3F;PM2.5gapFailQM:double%20%3F;PM2.5gapPassQM:double%20%3F;PM2.5gapNAQM:double%20%3F;PM2.5spikeFailQM:double%20%3F;PM2.5spikePassQM:double%20%3F;PM2.5spikeNAQM:double%20%3F;PM2.5consistencyFailQM:double%20%3F;PM2.5consistencyPassQM:double%20%3F;PM2.5consistencyNAQM:double%20%3F;PM2.5alphaQM:double%20%3F;PM2.5betaQM:double%20%3F;PM2.5finalQF:string%20%3F;PM1Median:double%20%3F;PM1Minimum:double%20%3F;PM1Maximum:double%20%3F;PM1NumPts:double%20%3F;PM1MAD:double%20%3F;PM1rangeFailQM:double%20%3F;PM1rangePassQM:double%20%3F;PM1rangeNAQM:double%20%3F;PM1persistenceFailQM:double%20%3F;PM1persistencePassQM:double%20%3F;PM1persistenceNAQM:double%20%3F;PM1stepFailQM:double%20%3F;PM1stepPassQM:double%20%3F;PM1stepNAQM:double%20%3F;PM1nullFailQM:double%20%3F;PM1nullPassQM:double%20%3F;PM1nullNAQM:double%20%3F;PM1gapFailQM:double%20%3F;PM1gapPassQM:double%20%3F;PM1gapNAQM:double%20%3F;PM1spikeFailQM:double%20%3F;PM1spikePassQM:double%20%3F;PM1spikeNAQM:double%20%3F;PM1consistencyFailQM:double%20%3F;PM1consistencyPassQM:double%20%3F;PM1consistencyNAQM:double%20%3F;PM1alphaQM:double%20%3F;PM1betaQM:double%20%3F;PM1finalQF:string%20%3F;PM15sub50RHMedian:double%20%3F;PM15sub50RHMinimum:double%20%3F;PM15sub50RHMaximum:double%20%3F;PM15sub50RHNumPts:double%20%3F;PM15sub50RHMAD:double%20%3F;PM15sub50RHrangeFailQM:double%20%3F;PM15sub50RHrangePassQM:double%20%3F;PM15sub50RHrangeNAQM:double%20%3F;PM15sub50RHpersistenceFailQM:double%20%3F;PM15sub50RHpersistencePassQM:double%20%3F;PM15sub50RHpersistenceNAQM:double%20%3F;PM15sub50RHstepFailQM:double%20%3F;PM15sub50RHstepPassQM:double%20%3F;PM15sub50RHstepNAQM:double%20%3F;PM15sub50RHnullFailQM:double%20%3F;PM15sub50RHnullPassQM:double%20%3F;PM15sub50RHnullNAQM:double%20%3F;PM15sub50RHgapFailQM:double%20%3F;PM15sub50RHgapPassQM:double%20%3F;PM15sub50RHgapNAQM:double%20%3F;PM15sub50RHspikeFailQM:double%20%3F;PM15sub50RHspikePassQM:double%20%3F;PM15sub50RHspikeNAQM:double%20%3F;PM15sub50RHconsistencyFailQM:double%20%3F;PM15sub50RHconsistencyPassQM:double%20%3F;PM15sub50RHconsistencyNAQM:double%20%3F;PM15sub50RHalphaQM:double%20%3F;PM15sub50RHbetaQM:double%20%3F;PM15sub50RHfinalQF:string%20%3F;PM10sub50RHMedian:double%20%3F;PM10sub50RHMinimum:double%20%3F;PM10sub50RHMaximum:double%20%3F;PM10sub50RHNumPts:double%20%3F;PM10sub50RHMAD:double%20%3F;PM10sub50RHrangeFailQM:double%20%3F;PM10sub50RHrangePassQM:double%20%3F;PM10sub50RHrangeNAQM:double%20%3F;PM10sub50RHpersistenceFailQM:double%20%3F;PM10sub50RHpersistencePassQM:double%20%3F;PM10sub50RHpersistenceNAQM:double%20%3F;PM10sub50RHstepFailQM:double%20%3F;PM10sub50RHstepPassQM:double%20%3F;PM10sub50RHstepNAQM:double%20%3F;PM10sub50RHnullFailQM:double%20%3F;PM10sub50RHnullPassQM:double%20%3F;PM10sub50RHnullNAQM:double%20%3F;PM10sub50RHgapFailQM:double%20%3F;PM10sub50RHgapPassQM:double%20%3F;PM10sub50RHgapNAQM:double%20%3F;PM10sub50RHspikeFailQM:double%20%3F;PM10sub50RHspikePassQM:double%20%3F;PM10sub50RHspikeNAQM:double%20%3F;PM10sub50RHconsistencyFailQM:double%20%3F;PM10sub50RHconsistencyPassQM:double%20%3F;PM10sub50RHconsistencyNAQM:double%20%3F;PM10sub50RHalphaQM:double%20%3F;PM10sub50RHbetaQM:double%20%3F;PM10sub50RHfinalQF:string%20%3F;PM4sub50RHMedian:double%20%3F;PM4sub50RHMinimum:double%20%3F;PM4sub50RHMaximum:double%20%3F;PM4sub50RHNumPts:double%20%3F;PM4sub50RHMAD:double%20%3F;PM4sub50RHrangeFailQM:double%20%3F;PM4sub50RHrangePassQM:double%20%3F;PM4sub50RHrangeNAQM:double%20%3F;PM4sub50RHpersistenceFailQM:double%20%3F;PM4sub50RHpersistencePassQM:double%20%3F;PM4sub50RHpersistenceNAQM:double%20%3F;PM4sub50RHstepFailQM:double%20%3F;PM4sub50RHstepPassQM:double%20%3F;PM4sub50RHstepNAQM:double%20%3F;PM4sub50RHnullFailQM:double%20%3F;PM4sub50RHnullPassQM:double%20%3F;PM4sub50RHnullNAQM:double%20%3F;PM4sub50RHgapFailQM:double%20%3F;PM4sub50RHgapPassQM:double%20%3F;PM4sub50RHgapNAQM:double%20%3F;PM4sub50RHspikeFailQM:double%20%3F;PM4sub50RHspikePassQM:double%20%3F;PM4sub50RHspikeNAQM:double%20%3F;PM4sub50RHconsistencyFailQM:double%20%3F;PM4sub50RHconsistencyPassQM:double%20%3F;PM4sub50RHconsistencyNAQM:double%20%3F;PM4sub50RHalphaQM:double%20%3F;PM4sub50RHbetaQM:double%20%3F;PM4sub50RHfinalQF:string%20%3F;PM2.5sub50RHMedian:double%20%3F;PM2.5sub50RHMinimum:double%20%3F;PM2.5sub50RHMaximum:double%20%3F;PM2.5sub50RHNumPts:double%20%3F;PM2.5sub50RHMAD:double%20%3F;PM2.5sub50RHrangeFailQM:double%20%3F;PM2.5sub50RHrangePassQM:double%20%3F;PM2.5sub50RHrangeNAQM:double%20%3F;PM2.5sub50RHpersistenceFailQM:double%20%3F;PM2.5sub50RHpersistencePassQM:double%20%3F;PM2.5sub50RHpersistenceNAQM:double%20%3F;PM2.5sub50RHstepFailQM:double%20%3F;PM2.5sub50RHstepPassQM:double%20%3F;PM2.5sub50RHstepNAQM:double%20%3F;PM2.5sub50RHnullFailQM:double%20%3F;PM2.5sub50RHnullPassQM:double%20%3F;PM2.5sub50RHnullNAQM:double%20%3F;PM2.5sub50RHgapFailQM:double%20%3F;PM2.5sub50RHgapPassQM:double%20%3F;PM2.5sub50RHgapNAQM:double%20%3F;PM2.5sub50RHspikeFailQM:double%20%3F;PM2.5sub50RHspikePassQM:double%20%3F;PM2.5sub50RHspikeNAQM:double%20%3F;PM2.5sub50RHconsistencyFailQM:double%20%3F;PM2.5sub50RHconsistencyPassQM:double%20%3F;PM2.5sub50RHconsistencyNAQM:double%20%3F;PM2.5sub50RHalphaQM:double%20%3F;PM2.5sub50RHbetaQM:double%20%3F;PM2.5sub50RHfinalQF:string%20%3F;PM1sub50RHMedian:double%20%3F;PM1sub50RHMinimum:double%20%3F;PM1sub50RHMaximum:double%20%3F;PM1sub50RHNumPts:double%20%3F;PM1sub50RHMAD:double%20%3F;PM1sub50RHrangeFailQM:double%20%3F;PM1sub50RHrangePassQM:double%20%3F;PM1sub50RHrangeNAQM:double%20%3F;PM1sub50RHpersistenceFailQM:double%20%3F;PM1sub50RHpersistencePassQM:double%20%3F;PM1sub50RHpersistenceNAQM:double%20%3F;PM1sub50RHstepFailQM:double%20%3F;PM1sub50RHstepPassQM:double%20%3F;PM1sub50RHstepNAQM:double%20%3F;PM1sub50RHnullFailQM:double%20%3F;PM1sub50RHnullPassQM:double%20%3F;PM1sub50RHnullNAQM:double%20%3F;PM1sub50RHgapFailQM:double%20%3F;PM1sub50RHgapPassQM:double%20%3F;PM1sub50RHgapNAQM:double%20%3F;PM1sub50RHspikeFailQM:double%20%3F;PM1sub50RHspikePassQM:double%20%3F;PM1sub50RHspikeNAQM:double%20%3F;PM1sub50RHconsistencyFailQM:double%20%3F;PM1sub50RHconsistencyPassQM:double%20%3F;PM1sub50RHconsistencyNAQM:double%20%3F;PM1sub50RHalphaQM:double%20%3F;PM1sub50RHbetaQM:double%20%3F;PM1sub50RHfinalQF:string%20%3F;sensorFlowRateFailQM:double%20%3F;sensorFlowRatePassQM:double%20%3F;sensorFlowRateNAQM:double%20%3F;assemblyFlowRateFailQM:double%20%3F;assemblyFlowRatePassQM:double%20%3F;assemblyFlowRateNAQM:double%20%3F;measurementValidityFailQM:double%20%3F;measurementValidityPassQM:double%20%3F;measurementValidityNAQM:double%20%3F;validCalFailQM:double%20%3F;validCalNAQM:double%20%3F;validCalPassQM:double%20%3F;PM15finalQFSciRvw:string%20%3F;PM10finalQFSciRvw:string%20%3F;PM10sub50RHfinalQFSciRvw:string%20%3F;PM15sub50RHfinalQFSciRvw:string%20%3F;PM1finalQFSciRvw:string%20%3F;PM1sub50RHfinalQFSciRvw:string%20%3F;PM2.5finalQFSciRvw:string%20%3F;PM2.5sub50RHfinalQFSciRvw:string%20%3F;PM4finalQFSciRvw:string%20%3F;PM4sub50RHfinalQFSciRvw:string%20%3F])
 
 ## Attributes
 
@@ -923,6 +923,9 @@ URI: [neon:Dpsd60Minutes](https://data.neonscience.org/Dpsd60Minutes)
  * [assemblyFlowRatePassQM](assemblyFlowRatePassQM.md)  <sub>OPT</sub>
     * Description: Quality metric that summarizes the passed outcomes of the assembly flow rate test over the averaging period, as a percent
     * range: [Double](types/Double.md)
+ * [endDateTime](endDateTime.md)  <sub>OPT</sub>
+    * Description: Date and time at which a sampling is completed
+    * range: [Time](types/Time.md)
  * [measurementValidityFailQM](measurementValidityFailQM.md)  <sub>OPT</sub>
     * Description: Quality metric that summarizes the failed outcomes of the measurement validity test over the averaging period, as a percent
     * range: [Double](types/Double.md)
@@ -941,6 +944,9 @@ URI: [neon:Dpsd60Minutes](https://data.neonscience.org/Dpsd60Minutes)
  * [sensorFlowRatePassQM](sensorFlowRatePassQM.md)  <sub>OPT</sub>
     * Description: Quality metric that summarizes the passed outcomes of the sensor flow rate test over the averaging period, as a percent
     * range: [Double](types/Double.md)
+ * [startDateTime](startDateTime.md)  <sub>OPT</sub>
+    * Description: Date and time at which a sampling is initiated
+    * range: [Time](types/Time.md)
  * [validCalFailQM](validCalFailQM.md)  <sub>OPT</sub>
     * Description: Quality metric that summarizes the failed outcomes of the valid calibration check over the averaging period, as a percent
     * range: [Double](types/Double.md)
@@ -950,102 +956,6 @@ URI: [neon:Dpsd60Minutes](https://data.neonscience.org/Dpsd60Minutes)
  * [validCalPassQM](validCalPassQM.md)  <sub>OPT</sub>
     * Description: Quality metric that summarizes the passed outcomes of the valid calibration check over the averaging period, as a percent
     * range: [Double](types/Double.md)
-
-### Inherited from SCGW_5_minute:
-
- * [endDateTime](endDateTime.md)  <sub>OPT</sub>
-    * Description: Date and time at which a sampling is completed
-    * range: [Time](types/Time.md)
- * [groundwaterSpecCond](groundwaterSpecCond.md)  <sub>OPT</sub>
-    * Description: Specific conductivity in groundwater in microsiemens per centimeter
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [groundwaterSpecCondExpUncert](groundwaterSpecCondExpUncert.md)  <sub>OPT</sub>
-    * Description: Expanded uncertainty for Specific Conductivity in groundwater in degrees celsius
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [groundwaterSpecCondRangeQF](groundwaterSpecCondRangeQF.md)  <sub>OPT</sub>
-    * Description: Specific Conductivity in groundwater quality flag for the range test, detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [groundwaterSpecCondPersistQF](groundwaterSpecCondPersistQF.md)  <sub>OPT</sub>
-    * Description: Specific Conductivity in groundwater quality flag for the persistence test, detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [groundwaterSpecCondStepQF](groundwaterSpecCondStepQF.md)  <sub>OPT</sub>
-    * Description: Specific Conductivity in groundwater quality flag for the step test, detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [groundwaterSpecCondNullQF](groundwaterSpecCondNullQF.md)  <sub>OPT</sub>
-    * Description: Specific Conductivity in groundwater quality flag for the null test, detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [groundwaterSpecCondGapQF](groundwaterSpecCondGapQF.md)  <sub>OPT</sub>
-    * Description: Specific Conductivity in groundwater quality flag for the gap test, detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [groundwaterSpecCondConsistQF](groundwaterSpecCondConsistQF.md)  <sub>OPT</sub>
-    * Description: Specific Conductivity in groundwater quality flag for the consistency test, detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [groundwaterSpecCondSpikeQF](groundwaterSpecCondSpikeQF.md)  <sub>OPT</sub>
-    * Description: Specific Conductivity in groundwater quality flag for the spike test, detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [validCalQF](validCalQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the valid calibration check detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [sciRvwQF](sciRvwQF.md)  <sub>OPT</sub>
-    * Description: Stand-alone quality flag (does not interact with final quality flag) indicating whether a data product has failed a science review of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass/not-reviewed)
-    * range: [String](types/String.md)
-    * inherited from: None
-
-### Inherited from TSD_1_min:
-
- * [startDateTime](startDateTime.md)  <sub>OPT</sub>
-    * Description: Date and time at which a sampling is initiated
-    * range: [Time](types/Time.md)
- * [thermistorDepth](thermistorDepth.md)  <sub>OPT</sub>
-    * Description: Depth of the temperature sensor (thermistor) from water surface in lakes and rivers
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [tsdWaterTemp](tsdWaterTemp.md)  <sub>OPT</sub>
-    * Description: Temperature of surface water at specific depths in lakes and rivers
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [tsdWaterTempConsistQF](tsdWaterTempConsistQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the consistency test of tsdWaterTemp. Detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [tsdWaterTempExpUncert](tsdWaterTempExpUncert.md)  <sub>OPT</sub>
-    * Description: Expanded uncertainty for tsdWaterTemp
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [tsdWaterTempGapQF](tsdWaterTempGapQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the gap test of tsdWaterTemp. Detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [tsdWaterTempNullQF](tsdWaterTempNullQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the null test of tsdWaterTemp. Detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [tsdWaterTempRangeQF](tsdWaterTempRangeQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the range test of tsdWaterTemp. Detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [tsdWaterTempSpikeQF](tsdWaterTempSpikeQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the spike test of tsdWaterTemp. Detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [tsdWaterTempStepQF](tsdWaterTempStepQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the step test of tsdWaterTemp. Detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [tsdWaterTempValidCalQF](tsdWaterTempValidCalQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the valid calibration check of tsdWaterTemp. Detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
 
 ## Other properties
 

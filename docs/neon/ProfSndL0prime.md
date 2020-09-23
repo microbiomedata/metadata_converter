@@ -7,7 +7,7 @@
 URI: [neon:ProfSndL0prime](https://data.neonscience.org/ProfSndL0prime)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[ProfSndL0prime&#124;valvStat1:integer%20%3F;valvCmd1:integer%20%3F;valvCmd2:integer%20%3F;valvCmd3:integer%20%3F;valvCmd4:integer%20%3F;valvCmd5:integer%20%3F;valvCmd6:integer%20%3F;valvCmd7:integer%20%3F;valvCmd8:integer%20%3F;typeGas:string%20%3F;typeGasCrdH2O:integer%20%3F;lvlIrga:integer%20%3F;lvlCrdCO2:integer%20%3F;lvlCrdH2O:integer%20%3F;injNum:string%20%3F;typeH2o:string%20%3F])
 
 ## Attributes
 
@@ -35,27 +35,6 @@ URI: [neon:ProfSndL0prime](https://data.neonscience.org/ProfSndL0prime)
  * [typeH2o](typeH2o.md)  <sub>OPT</sub>
     * Description: typeH2o
     * range: [String](types/String.md)
- * [valvStat1](valvStat1.md)  <sub>OPT</sub>
-    * Description: Solenoid valve 1 status (0 = close, 1 = open)
-    * range: [Integer](types/Integer.md)
-
-### Inherited from profSnd:
-
- * [valvCmd5](valvCmd5.md)  <sub>OPT</sub>
-    * Description: Solenoid valve 5 command (0 = close, 1 = open)
-    * range: [Integer](types/Integer.md)
- * [valvCmd6](valvCmd6.md)  <sub>OPT</sub>
-    * Description: Solenoid valve 6 command (0 = close, 1 = open)
-    * range: [Integer](types/Integer.md)
- * [valvCmd7](valvCmd7.md)  <sub>OPT</sub>
-    * Description: Solenoid valve 7 command (0 = close, 1 = open)
-    * range: [Integer](types/Integer.md)
- * [valvCmd8](valvCmd8.md)  <sub>OPT</sub>
-    * Description: Solenoid valve 8 command (0 = close, 1 = open)
-    * range: [Integer](types/Integer.md)
-
-### Inherited from profSndAux_L0prime:
-
  * [valvCmd1](valvCmd1.md)  <sub>OPT</sub>
     * Description: Solenoid valve 1 command (0 = close, 1 = open)
     * range: [Integer](types/Integer.md)
@@ -68,22 +47,21 @@ URI: [neon:ProfSndL0prime](https://data.neonscience.org/ProfSndL0prime)
  * [valvCmd4](valvCmd4.md)  <sub>OPT</sub>
     * Description: Solenoid valve 4 command (0 = close, 1 = open)
     * range: [Integer](types/Integer.md)
- * [measTypeCrdH2O](measTypeCrdH2O.md)  <sub>OPT</sub>
-    * Description: Measurement type for PICARRO L2130-I cavity ring down isotopic analyzer (i.e., sampling or validation)
+ * [valvCmd5](valvCmd5.md)  <sub>OPT</sub>
+    * Description: Solenoid valve 5 command (0 = close, 1 = open)
     * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [measTypeCrdCO2](measTypeCrdCO2.md)  <sub>OPT</sub>
-    * Description: Measurement type for PICARRO G2131-I cavity ring down isotopic analyzer (i.e., sampling or validation)
+ * [valvCmd6](valvCmd6.md)  <sub>OPT</sub>
+    * Description: Solenoid valve 6 command (0 = close, 1 = open)
     * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [qfValvIrga](qfValvIrga.md)  <sub>OPT</sub>
-    * Description: Flag indicates whether the system fails because IRGA vent valve is open (1=fail, 0=pass, -1=NA (i.e, could not be run)
+ * [valvCmd7](valvCmd7.md)  <sub>OPT</sub>
+    * Description: Solenoid valve 7 command (0 = close, 1 = open)
     * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [measTypeIrga](measTypeIrga.md)  <sub>OPT</sub>
-    * Description: Measurement type for LI-COR LI840A IRGA (i.e., sampling or validation or calibration)
+ * [valvCmd8](valvCmd8.md)  <sub>OPT</sub>
+    * Description: Solenoid valve 8 command (0 = close, 1 = open)
     * range: [Integer](types/Integer.md)
-    * inherited from: None
+ * [valvStat1](valvStat1.md)  <sub>OPT</sub>
+    * Description: Solenoid valve 1 status (0 = close, 1 = open)
+    * range: [Integer](types/Integer.md)
 
 ## Other properties
 

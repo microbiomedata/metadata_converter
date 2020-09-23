@@ -7,7 +7,7 @@
 URI: [neon:WssYearly](https://data.neonscience.org/WssYearly)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[WssYearly&#124;year:time%20%3F;corPresQF:string%20%3F;dewTempQF:string%20%3F;precipQF:string%20%3F;RHQF:string%20%3F;shortRadQF:string%20%3F;staPresQF:string%20%3F;tempTripleQF:string%20%3F;windSpeedQF:string%20%3F;wssCorPres:double%20%3F;wssDewTempMaximum:double%20%3F;wssDewTempMean:double%20%3F;wssDewTempMinimum:double%20%3F;wssDewTempStdErMean:double%20%3F;wssDewTempVariance:double%20%3F;wssPrecipTotal:double%20%3F;wssRHMaximum:double%20%3F;wssRHMean:double%20%3F;wssRHMinimum:double%20%3F;wssRHStdErMean:double%20%3F;wssRHVariance:double%20%3F;wssShortRadMaximum:double%20%3F;wssShortRadMean:double%20%3F;wssShortRadMinimum:double%20%3F;wssShortRadStdErMean:double%20%3F;wssShortRadVariance:double%20%3F;wssStaPresMaximum:double%20%3F;wssStaPresMean:double%20%3F;wssStaPresMinimum:double%20%3F;wssStaPresStdErMean:double%20%3F;wssStaPresVariance:double%20%3F;wssTempTripleMaximum:double%20%3F;wssTempTripleMean:double%20%3F;wssTempTripleMinimum:double%20%3F;wssTempTripleStdErMean:double%20%3F;wssTempTripleVariance:double%20%3F;wssWindSpeedMaximum:double%20%3F;wssWindSpeedMean:double%20%3F;wssWindSpeedMinimum:double%20%3F;wssWindSpeedStdErMean:double%20%3F;wssWindSpeedVariance:double%20%3F;wssDewTempNumPts:double%20%3F;wssRHNumPts:double%20%3F;wssShortRadNumPts:double%20%3F;wssStaPresNumPts:double%20%3F;wssTempTripleNumPts:double%20%3F;wssWindSpeedNumPts:double%20%3F])
 
 ## Attributes
 

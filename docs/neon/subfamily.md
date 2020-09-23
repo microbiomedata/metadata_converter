@@ -57,4 +57,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | subfamily |
 | **Mappings:** | | neon:subfamily |
+|  | | http://rs.gbif.org/vocabulary/gbif/rank/subfamily |
 

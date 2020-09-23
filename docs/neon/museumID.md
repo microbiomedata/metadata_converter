@@ -30,4 +30,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | museum i d |
 | **Mappings:** | | neon:museumID |
+|  | | dwc:materialSampleID |
 

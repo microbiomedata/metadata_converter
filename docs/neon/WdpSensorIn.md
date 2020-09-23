@@ -7,7 +7,7 @@
 URI: [neon:WdpSensorIn](https://data.neonscience.org/WdpSensorIn)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[WdpSensorIn&#124;chamberTemperature:double%20%3F;powerStatus:double%20%3F;lidStatusWetDep:double%20%3F])
 
 ## Attributes
 

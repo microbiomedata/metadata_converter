@@ -7,12 +7,12 @@
 URI: [neon:PAR](https://data.neonscience.org/PAR)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[PAR&#124;inPAR:double%20%3F;outPAR:double%20%3F])
 
 ## Attributes
 
 
-### Inherited from UPAR:
+### Own
 
  * [inPAR](inPAR.md)  <sub>OPT</sub>
     * Description: Incoming photosynthetically active radiation (PAR) (irradiance 400-700 nm)

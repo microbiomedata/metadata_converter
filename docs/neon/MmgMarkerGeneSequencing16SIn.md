@@ -7,144 +7,39 @@
 URI: [neon:MmgMarkerGeneSequencing16SIn](https://data.neonscience.org/MmgMarkerGeneSequencing16SIn)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[MmgMarkerGeneSequencing16SIn&#124;uid:string%20%3F;remarks:string%20%3F;setDate:time%20%3F;collectDate:time%20%3F;subsampleID:string%20%3F;processedDate:time%20%3F;laboratoryName:string%20%3F;internalLabID:string%20%3F;testProtocolVersion:string%20%3F;locationID:string%20%3F;dataQF:string%20%3F;dnaSampleID:string%20%3F;dnaSampleFate:string%20%3F;dnaSampleCode:string%20%3F;processedBy:string%20%3F;targetGene:string%20%3F;linkerPrimerSequence:string%20%3F;reverseLinkerPrimerSequence:string%20%3F;sequencingMethod:string%20%3F;sequencingConcentration:double%20%3F;sequencerRunID:string%20%3F;sampleTotalReadNumber:string%20%3F;sampleFilteredReadNumber:string%20%3F;maxFilteredReadLength:string%20%3F;minFilteredReadLength:string%20%3F;averageFilteredReadQuality:double%20%3F;ambiguousBasesNumber:string%20%3F;barcodeSequence:string%20%3F;qaqcStatus:string%20%3F;subsampleCode:string%20%3F;subsampleFate:string%20%3F;instrument_model:string%20%3F;ncbiProjectID:string%20%3F;rawDataFileName:string%20%3F;rawDataFilePath:string%20%3F;sequencingFacilityID:string%20%3F;illuminaAdapterKit:string%20%3F;illuminaIndex1:string%20%3F;illuminaIndex2:string%20%3F;library_layout:string%20%3F;library_selection:string%20%3F;library_source:string%20%3F;library_strategy:string%20%3F;analysisCodeFileName:string%20%3F;processedSeqFileName:string%20%3F;processedSeqFileNameCode:string%20%3F;processedSeqFileNameFate:string%20%3F;processedSeqFileNameID:string%20%3F])
 
 ## Attributes
 
 
-### Inherited from csd_pressureGaugeRelationship_pub:
+### Own
 
- * [siteID](siteID.md)  <sub>OPT</sub>
-    * Description: NEON site code
+ * [ambiguousBasesNumber](ambiguousBasesNumber.md)  <sub>OPT</sub>
+    * Description: Number of sequence reads in a quality filtered sample with more than 1 ambiguous base
     * range: [String](types/String.md)
-    * inherited from: None
- * [dataQF](dataQF.md)  <sub>OPT</sub>
-    * Description: Data quality flag
-    * range: [String](types/String.md)
- * [namedLocation](namedLocation.md)  <sub>OPT</sub>
-    * Description: Name of the measurement location in the NEON database
-    * range: [String](types/String.md)
-    * inherited from: None
- * [assetID](assetID.md)  <sub>OPT</sub>
-    * Description: MxAssetID from the calibration file
-    * range: [String](types/String.md)
-    * inherited from: None
- * [calCertificateFile](calCertificateFile.md)  <sub>OPT</sub>
-    * Description: Calibration certificate file
-    * range: [String](types/String.md)
-    * inherited from: None
- * [calculatedStage](calculatedStage.md)  <sub>OPT</sub>
-    * Description: Stage calculated from the sum of the water column height and sensorStaffGaugeOffset
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [calcWaterColumnHeight](calcWaterColumnHeight.md)  <sub>OPT</sub>
-    * Description: Calculated water column height based off of the calibratedPressMean
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [calibratedPressMean](calibratedPressMean.md)  <sub>OPT</sub>
-    * Description: Mean calibrated surface water pressure
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [calibratedPressObsCount](calibratedPressObsCount.md)  <sub>OPT</sub>
-    * Description: Number of observations included in the calibratedPressMean
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [calibratedPressStdDev](calibratedPressStdDev.md)  <sub>OPT</sub>
-    * Description: Stanrdard deviation of calibrated surface water pressure
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [gaugeHeight](gaugeHeight.md)  <sub>OPT</sub>
-    * Description: Height of water at staff gauge
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [sensorStaffGaugeOffset](sensorStaffGaugeOffset.md)  <sub>OPT</sub>
-    * Description: Offset between the pressure sensor and the staff gauge; i.e. the staff gauge reading when the water level is just at a reading of 0 pressure
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [calibrationID](calibrationID.md)  <sub>OPT</sub>
-    * Description: Calibration ID that corresponds to the ID assigned by CI to a set of calibration factors for a measurement stream
-    * range: [String](types/String.md)
-    * inherited from: None
- * [gaugeCollectDate](gaugeCollectDate.md)  <sub>OPT</sub>
-    * Description: Date of the gauge height reading collection event
-    * range: [String](types/String.md)
-    * inherited from: None
- * [stationHorizontalID](stationHorizontalID.md)  <sub>OPT</sub>
-    * Description: Horizontal code for station
-    * range: [String](types/String.md)
-    * inherited from: None
-
-### Inherited from inv_dnaStandardTaxon_pub:
-
- * [locationID](locationID.md)  <sub>OPT</sub>
-    * Description: Identifier for location where sample was collected
-    * range: [String](types/String.md)
- * [createdBy](createdBy.md)  <sub>OPT</sub>
-    * Description: An identifier for the technician who created the record
-    * range: [String](types/String.md)
-    * inherited from: None
- * [dnaStandardSampleCode](dnaStandardSampleCode.md)  <sub>OPT</sub>
-    * Description: Barcode of DNA standard sample
-    * range: [String](types/String.md)
-    * inherited from: None
- * [dnaStandardSampleID](dnaStandardSampleID.md)  <sub>OPT</sub>
-    * Description: Identifier for the DNA standard sample
-    * range: [String](types/String.md)
-    * inherited from: None
-
-### Inherited from inv_markerGeneSequencingStandard_pub:
-
- * [testProtocolVersion](testProtocolVersion.md)  <sub>OPT</sub>
-    * Description: The protocol version used to test the sample
-    * range: [String](types/String.md)
- * [processedBy](processedBy.md)  <sub>OPT</sub>
-    * Description: An identifier for the technician who processed the sample(s)
-    * range: [String](types/String.md)
- * [linkerPrimerSequence](linkerPrimerSequence.md)  <sub>OPT</sub>
-    * Description: DNA sequence of linker primer used in a multiplexed DNA sequencing run
-    * range: [String](types/String.md)
- * [reverseLinkerPrimerSequence](reverseLinkerPrimerSequence.md)  <sub>OPT</sub>
-    * Description: DNA sequence of linker primer used on reverse stand in a multiplexed DNA sequencing run
-    * range: [String](types/String.md)
- * [sequencingMethod](sequencingMethod.md)  <sub>OPT</sub>
-    * Description: Method used for DNA sequencing
-    * range: [String](types/String.md)
- * [sequencingConcentration](sequencingConcentration.md)  <sub>OPT</sub>
-    * Description: Concentration of nucleic acid used for sequencing
-    * range: [Double](types/Double.md)
- * [sampleTotalReadNumber](sampleTotalReadNumber.md)  <sub>OPT</sub>
-    * Description: Total number of sequence reads in a sample
-    * range: [String](types/String.md)
- * [sampleFilteredReadNumber](sampleFilteredReadNumber.md)  <sub>OPT</sub>
-    * Description: Number of sequence reads that pass quality filtering
-    * range: [String](types/String.md)
- * [maxFilteredReadLength](maxFilteredReadLength.md)  <sub>OPT</sub>
-    * Description: Maximum sequence read length for a sample
-    * range: [String](types/String.md)
- * [minFilteredReadLength](minFilteredReadLength.md)  <sub>OPT</sub>
-    * Description: Minimum sequence read length for a sample
+ * [analysisCodeFileName](analysisCodeFileName.md)  <sub>OPT</sub>
+    * Description: File name of code used for data analysis
     * range: [String](types/String.md)
  * [averageFilteredReadQuality](averageFilteredReadQuality.md)  <sub>OPT</sub>
     * Description: Average quality of sequence reads in a sample after quality filtering
     * range: [Double](types/Double.md)
- * [ambiguousBasesNumber](ambiguousBasesNumber.md)  <sub>OPT</sub>
-    * Description: Number of sequence reads in a quality filtered sample with more than 1 ambiguous base
-    * range: [String](types/String.md)
  * [barcodeSequence](barcodeSequence.md)  <sub>OPT</sub>
     * Description: DNA sequence of barcode primer used in a multiplexed DNA sequencing run
     * range: [String](types/String.md)
- * [qaqcStatus](qaqcStatus.md)  <sub>OPT</sub>
-    * Description: Status of internal QAQC
+ * [collectDate](collectDate.md)  <sub>OPT</sub>
+    * Description: Date of the collection event
+    * range: [Time](types/Time.md)
+ * [dataQF](dataQF.md)  <sub>OPT</sub>
+    * Description: Data quality flag
     * range: [String](types/String.md)
- * [replicate](replicate.md)  <sub>OPT</sub>
-    * Description: Sample replicate
+ * [dnaSampleCode](dnaSampleCode.md)  <sub>OPT</sub>
+    * Description: Barcode of a DNA sample
     * range: [String](types/String.md)
-    * inherited from: None
- * [instrument_model](instrument_model.md)  <sub>OPT</sub>
-    * Description: The model identifier of the sequencing instrument
+ * [dnaSampleFate](dnaSampleFate.md)  <sub>OPT</sub>
+    * Description: Fate of a DNA sample
     * range: [String](types/String.md)
- * [ncbiProjectID](ncbiProjectID.md)  <sub>OPT</sub>
-    * Description: Identifier for the NCBI project associated with the sample
+ * [dnaSampleID](dnaSampleID.md)  <sub>OPT</sub>
+    * Description: Identifier for DNA sample
     * range: [String](types/String.md)
  * [illuminaAdapterKit](illuminaAdapterKit.md)  <sub>OPT</sub>
     * Description: Identifier for the adapter sequences kit manufactured for use with Illumina sequencing technology
@@ -154,6 +49,15 @@ URI: [neon:MmgMarkerGeneSequencing16SIn](https://data.neonscience.org/MmgMarkerG
     * range: [String](types/String.md)
  * [illuminaIndex2](illuminaIndex2.md)  <sub>OPT</sub>
     * Description: Oligonucleotide sequence of the 3-prime index used to identify a unique sample in an Illumina-based sequencing run
+    * range: [String](types/String.md)
+ * [instrument_model](instrument_model.md)  <sub>OPT</sub>
+    * Description: The model identifier of the sequencing instrument
+    * range: [String](types/String.md)
+ * [internalLabID](internalLabID.md)  <sub>OPT</sub>
+    * Description: Internal identifier used by the external facility
+    * range: [String](types/String.md)
+ * [laboratoryName](laboratoryName.md)  <sub>OPT</sub>
+    * Description: Name of the laboratory or facility that is processing the sample
     * range: [String](types/String.md)
  * [library_layout](library_layout.md)  <sub>OPT</sub>
     * Description: Layout for a library
@@ -167,73 +71,30 @@ URI: [neon:MmgMarkerGeneSequencing16SIn](https://data.neonscience.org/MmgMarkerG
  * [library_strategy](library_strategy.md)  <sub>OPT</sub>
     * Description: Strategy used for nucleic acid sequencing for a sample library
     * range: [String](types/String.md)
- * [analysisCodeFileName](analysisCodeFileName.md)  <sub>OPT</sub>
-    * Description: File name of code used for data analysis
+ * [linkerPrimerSequence](linkerPrimerSequence.md)  <sub>OPT</sub>
+    * Description: DNA sequence of linker primer used in a multiplexed DNA sequencing run
     * range: [String](types/String.md)
- * [primerSetID](primerSetID.md)  <sub>OPT</sub>
-    * Description: Identifier for the primer set used
+ * [locationID](locationID.md)  <sub>OPT</sub>
+    * Description: Identifier for location where sample was collected
     * range: [String](types/String.md)
-    * inherited from: None
+ * [maxFilteredReadLength](maxFilteredReadLength.md)  <sub>OPT</sub>
+    * Description: Maximum sequence read length for a sample
+    * range: [String](types/String.md)
+ * [minFilteredReadLength](minFilteredReadLength.md)  <sub>OPT</sub>
+    * Description: Minimum sequence read length for a sample
+    * range: [String](types/String.md)
+ * [ncbiProjectID](ncbiProjectID.md)  <sub>OPT</sub>
+    * Description: Identifier for the NCBI project associated with the sample
+    * range: [String](types/String.md)
+ * [processedBy](processedBy.md)  <sub>OPT</sub>
+    * Description: An identifier for the technician who processed the sample(s)
+    * range: [String](types/String.md)
+ * [processedDate](processedDate.md)  <sub>OPT</sub>
+    * Description: Date or date and time of processing event
+    * range: [Time](types/Time.md)
  * [processedSeqFileName](processedSeqFileName.md)  <sub>OPT</sub>
     * Description: File name of quality filtered sequence data
     * range: [String](types/String.md)
-
-### Inherited from inv_pcrAmplificationStandard_pub:
-
- * [forwardPrimer](forwardPrimer.md)  <sub>OPT</sub>
-    * Description: DNA sequence of forward primer
-    * range: [String](types/String.md)
-    * inherited from: None
- * [reversePrimer](reversePrimer.md)  <sub>OPT</sub>
-    * Description: DNA sequence of reverse primer
-    * range: [String](types/String.md)
-    * inherited from: None
- * [targetGene](targetGene.md)  <sub>OPT</sub>
-    * Description: Targeted gene or locus name
-    * range: [String](types/String.md)
- * [ampliconConcentration](ampliconConcentration.md)  <sub>OPT</sub>
-    * Description: Concentration of amplicon DNA used for sequencing reaction
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [ampliconPooledStatus](ampliconPooledStatus.md)  <sub>OPT</sub>
-    * Description: Indicates whether multiple PCR reactions were pooled
-    * range: [String](types/String.md)
-    * inherited from: None
- * [targetSubfragment](targetSubfragment.md)  <sub>OPT</sub>
-    * Description: Name of subfragment of a gene or locus
-    * range: [String](types/String.md)
-    * inherited from: None
-
-### Inherited from mic_dnaExtraction_in:
-
- * [subsampleID](subsampleID.md)  <sub>OPT</sub>
-    * Description: Unique identifier associated with each subsample per sampleID
-    * range: [String](types/String.md)
- * [sampleClass](sampleClass.md)  <sub>OPT</sub>
-    * Description: Class of a sample
-    * range: [String](types/String.md)
-    * inherited from: None
- * [geneticSampleFate](geneticSampleFate.md)  <sub>OPT</sub>
-    * Description: Fate of a genetic sample
-    * range: [String](types/String.md)
-    * inherited from: None
- * [samplePercent](samplePercent.md)  <sub>OPT</sub>
-    * Description: Percent of sample processed
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [subsampleCode](subsampleCode.md)  <sub>OPT</sub>
-    * Description: Barcode of a subsample
-    * range: [String](types/String.md)
- * [subsampleFate](subsampleFate.md)  <sub>OPT</sub>
-    * Description: Fate of a subsample
-    * range: [String](types/String.md)
- * [sequenceAnalysisType](sequenceAnalysisType.md)  <sub>OPT</sub>
-    * Description: The general type of sequencing to be conducted on a sample
-    * range: [String](types/String.md)
-    * inherited from: None
-
-### Inherited from mmg_markerGeneSequencing_ITS_in:
-
  * [processedSeqFileNameCode](processedSeqFileNameCode.md)  <sub>OPT</sub>
     * Description: Barcode of the identifier for processed sequence file name
     * range: [String](types/String.md)
@@ -243,52 +104,8 @@ URI: [neon:MmgMarkerGeneSequencing16SIn](https://data.neonscience.org/MmgMarkerG
  * [processedSeqFileNameID](processedSeqFileNameID.md)  <sub>OPT</sub>
     * Description: Identifier for processed sequence file name
     * range: [String](types/String.md)
-
-### Inherited from mms_rawDataFiles_in:
-
- * [dnaSampleFate](dnaSampleFate.md)  <sub>OPT</sub>
-    * Description: Fate of a DNA sample
-    * range: [String](types/String.md)
- * [parentFolderName](parentFolderName.md)  <sub>OPT</sub>
-    * Description: Name of parent folder in which the file was uploaded
-    * range: [String](types/String.md)
-    * inherited from: None
-
-### Inherited from zoo_dnaRawDataFiles_pub:
-
- * [uid](uid.md)  <sub>OPT</sub>
-    * Description: Unique ID within NEON database; an identifier for the record
-    * range: [String](types/String.md)
- * [domainID](domainID.md)  <sub>OPT</sub>
-    * Description: Unique identifier of the NEON domain
-    * range: [String](types/String.md)
-    * inherited from: None
- * [remarks](remarks.md)  <sub>OPT</sub>
-    * Description: Technician notes; free text comments accompanying the record
-    * range: [String](types/String.md)
- * [setDate](setDate.md)  <sub>OPT</sub>
-    * Description: Date that trap was set
-    * range: [Time](types/Time.md)
- * [collectDate](collectDate.md)  <sub>OPT</sub>
-    * Description: Date of the collection event
-    * range: [Time](types/Time.md)
- * [processedDate](processedDate.md)  <sub>OPT</sub>
-    * Description: Date or date and time of processing event
-    * range: [Time](types/Time.md)
- * [laboratoryName](laboratoryName.md)  <sub>OPT</sub>
-    * Description: Name of the laboratory or facility that is processing the sample
-    * range: [String](types/String.md)
- * [internalLabID](internalLabID.md)  <sub>OPT</sub>
-    * Description: Internal identifier used by the external facility
-    * range: [String](types/String.md)
- * [dnaSampleID](dnaSampleID.md)  <sub>OPT</sub>
-    * Description: Identifier for DNA sample
-    * range: [String](types/String.md)
- * [dnaSampleCode](dnaSampleCode.md)  <sub>OPT</sub>
-    * Description: Barcode of a DNA sample
-    * range: [String](types/String.md)
- * [sequencerRunID](sequencerRunID.md)  <sub>OPT</sub>
-    * Description: Identifier for the sequencing run
+ * [qaqcStatus](qaqcStatus.md)  <sub>OPT</sub>
+    * Description: Status of internal QAQC
     * range: [String](types/String.md)
  * [rawDataFileName](rawDataFileName.md)  <sub>OPT</sub>
     * Description: Name of file or folder containing raw data, including file extension
@@ -296,13 +113,51 @@ URI: [neon:MmgMarkerGeneSequencing16SIn](https://data.neonscience.org/MmgMarkerG
  * [rawDataFilePath](rawDataFilePath.md)  <sub>OPT</sub>
     * Description: The system path identifying the raw data file location
     * range: [String](types/String.md)
+ * [remarks](remarks.md)  <sub>OPT</sub>
+    * Description: Technician notes; free text comments accompanying the record
+    * range: [String](types/String.md)
+ * [reverseLinkerPrimerSequence](reverseLinkerPrimerSequence.md)  <sub>OPT</sub>
+    * Description: DNA sequence of linker primer used on reverse stand in a multiplexed DNA sequencing run
+    * range: [String](types/String.md)
+ * [sampleFilteredReadNumber](sampleFilteredReadNumber.md)  <sub>OPT</sub>
+    * Description: Number of sequence reads that pass quality filtering
+    * range: [String](types/String.md)
+ * [sampleTotalReadNumber](sampleTotalReadNumber.md)  <sub>OPT</sub>
+    * Description: Total number of sequence reads in a sample
+    * range: [String](types/String.md)
+ * [sequencerRunID](sequencerRunID.md)  <sub>OPT</sub>
+    * Description: Identifier for the sequencing run
+    * range: [String](types/String.md)
+ * [sequencingConcentration](sequencingConcentration.md)  <sub>OPT</sub>
+    * Description: Concentration of nucleic acid used for sequencing
+    * range: [Double](types/Double.md)
  * [sequencingFacilityID](sequencingFacilityID.md)  <sub>OPT</sub>
     * Description: Name of the laboratory or facility that is sequencing samples
     * range: [String](types/String.md)
- * [rawDataFileDescription](rawDataFileDescription.md)  <sub>OPT</sub>
-    * Description: Description of the contents and type of file
+ * [sequencingMethod](sequencingMethod.md)  <sub>OPT</sub>
+    * Description: Method used for DNA sequencing
     * range: [String](types/String.md)
-    * inherited from: None
+ * [setDate](setDate.md)  <sub>OPT</sub>
+    * Description: Date that trap was set
+    * range: [Time](types/Time.md)
+ * [subsampleCode](subsampleCode.md)  <sub>OPT</sub>
+    * Description: Barcode of a subsample
+    * range: [String](types/String.md)
+ * [subsampleFate](subsampleFate.md)  <sub>OPT</sub>
+    * Description: Fate of a subsample
+    * range: [String](types/String.md)
+ * [subsampleID](subsampleID.md)  <sub>OPT</sub>
+    * Description: Unique identifier associated with each subsample per sampleID
+    * range: [String](types/String.md)
+ * [targetGene](targetGene.md)  <sub>OPT</sub>
+    * Description: Targeted gene or locus name
+    * range: [String](types/String.md)
+ * [testProtocolVersion](testProtocolVersion.md)  <sub>OPT</sub>
+    * Description: The protocol version used to test the sample
+    * range: [String](types/String.md)
+ * [uid](uid.md)  <sub>OPT</sub>
+    * Description: Unique ID within NEON database; an identifier for the record
+    * range: [String](types/String.md)
 
 ## Other properties
 

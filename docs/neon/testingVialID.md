@@ -30,4 +30,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | testing vial i d |
 | **Mappings:** | | neon:testingVialID |
+|  | | dwc:materialSampleID |
 

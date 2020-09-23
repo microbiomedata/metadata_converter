@@ -30,4 +30,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | gps source |
 | **Mappings:** | | neon:gpsSource |
+|  | | dwc:geodeticDatum |
 

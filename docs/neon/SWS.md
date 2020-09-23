@@ -7,7 +7,7 @@
 URI: [neon:SWS](https://data.neonscience.org/SWS)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[SWS&#124;rawVSWC0:double%20%3F;rawVSIC0:double%20%3F;rawVSWC1:double%20%3F;rawVSIC1:double%20%3F;rawVSWC2:double%20%3F;rawVSIC2:double%20%3F;rawVSWC3:double%20%3F;rawVSIC3:double%20%3F;rawVSWC4:double%20%3F;rawVSIC4:double%20%3F;rawVSWC5:double%20%3F;rawVSIC5:double%20%3F;rawVSWC6:double%20%3F;rawVSIC6:double%20%3F;rawVSWC7:double%20%3F;rawVSIC7:double%20%3F])
 
 ## Attributes
 

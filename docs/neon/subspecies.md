@@ -36,4 +36,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | subspecies |
 | **Mappings:** | | neon:subspecies |
+|  | | http://rs.gbif.org/vocabulary/gbif/rank/subspecies |
 

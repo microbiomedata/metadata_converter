@@ -31,4 +31,5 @@ None ->  <sub>OPT</sub> [Time](types/Time.md)
 | --- | --- | --- |
 | **Aliases:** | | morphospecies created date |
 | **Mappings:** | | neon:morphospeciesCreatedDate |
+|  | | dwc:eventDate |
 

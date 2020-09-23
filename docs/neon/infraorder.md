@@ -35,4 +35,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | infraorder |
 | **Mappings:** | | neon:infraorder |
+|  | | http://rs.gbif.org/vocabulary/gbif/rank/infraorder |
 

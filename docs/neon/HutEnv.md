@@ -7,15 +7,15 @@
 URI: [neon:HutEnv](https://data.neonscience.org/HutEnv)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[HutEnv&#124;tempHut:double%20%3F;RHHut:double%20%3F;baroPresHut:double%20%3F;H2OMixRatioHut:double%20%3F])
 
 ## Attributes
 
 
-### Inherited from hutEnv_L0prime:
+### Own
 
- * [tempHut](tempHut.md)  <sub>OPT</sub>
-    * Description: Temperature in the instrument hut
+ * [H2OMixRatioHut](H2OMixRatioHut.md)  <sub>OPT</sub>
+    * Description: Mixing ratio of water vapor (H2O) in the instrument hut
     * range: [Double](types/Double.md)
  * [RHHut](RHHut.md)  <sub>OPT</sub>
     * Description: Humidity in the instrument hut
@@ -23,17 +23,9 @@ URI: [neon:HutEnv](https://data.neonscience.org/HutEnv)
  * [baroPresHut](baroPresHut.md)  <sub>OPT</sub>
     * Description: Barometric pressure in the instrument hut
     * range: [Double](types/Double.md)
- * [H2OMixRatioHut](H2OMixRatioHut.md)  <sub>OPT</sub>
-    * Description: Mixing ratio of water vapor (H2O) in the instrument hut
+ * [tempHut](tempHut.md)  <sub>OPT</sub>
+    * Description: Temperature in the instrument hut
     * range: [Double](types/Double.md)
- * [qfTemp](qfTemp.md)  <sub>OPT</sub>
-    * Description: qfTemp
-    * range: [String](types/String.md)
-    * inherited from: None
- * [qfRh](qfRh.md)  <sub>OPT</sub>
-    * Description: Flag indicates whether the temperature is outside the acceptable rangle (1=fail, 0=pass, -1=NA (i.e, could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
 
 ## Other properties
 

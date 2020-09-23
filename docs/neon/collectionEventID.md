@@ -30,4 +30,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | collection event i d |
 | **Mappings:** | | neon:collectionEventID |
+|  | | dwc:eventID |
 

@@ -7,7 +7,7 @@
 URI: [neon:H2oIsoCVAL](https://data.neonscience.org/H2oIsoCVAL)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[H2oIsoCVAL&#124;d2HWaterLow:double%20%3F;d18OWaterLow:double%20%3F;d2HWaterMed:double%20%3F;d18OWaterMed:double%20%3F;d2HWaterHigh:double%20%3F;d18OWaterHigh:double%20%3F;d18OWaterHighArchive:double%20%3F;d18OWaterLowArchive:double%20%3F;d18OWaterMedArchive:double%20%3F;d2HWaterHighArchive:double%20%3F;d2HWaterLowArchive:double%20%3F;d2HWaterMedArchive:double%20%3F])
 
 ## Attributes
 

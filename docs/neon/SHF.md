@@ -7,7 +7,7 @@
 URI: [neon:SHF](https://data.neonscience.org/SHF)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[SHF&#124;SHFVoltage:double%20%3F;SHFCalHeaterFlag:double%20%3F;curVoltage:double%20%3F])
 
 ## Attributes
 

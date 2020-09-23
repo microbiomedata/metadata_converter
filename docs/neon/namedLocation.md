@@ -290,4 +290,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | named location |
 | **Mappings:** | | neon:namedLocation |
+|  | | dwc:locationID |
 

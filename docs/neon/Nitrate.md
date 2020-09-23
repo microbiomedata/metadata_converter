@@ -7,7 +7,7 @@
 URI: [neon:Nitrate](https://data.neonscience.org/Nitrate)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[Nitrate&#124;rawNitrateSingleCompressedStream:string%20%3F])
 
 ## Attributes
 

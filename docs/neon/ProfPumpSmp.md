@@ -7,12 +7,12 @@
 URI: [neon:ProfPumpSmp](https://data.neonscience.org/ProfPumpSmp)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[ProfPumpSmp&#124;pumpVoltage:double%20%3F])
 
 ## Attributes
 
 
-### Inherited from profPumpSmp_L0prime:
+### Own
 
  * [pumpVoltage](pumpVoltage.md)  <sub>OPT</sub>
     * Description: Voltage provided to pump

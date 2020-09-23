@@ -7,13 +7,16 @@
 URI: [neon:SLRNR30min](https://data.neonscience.org/SLRNR30min)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[SLRNR30min&#124;heaterFailQM:double%20%3F;heaterPassQM:double%20%3F;heaterNAQM:double%20%3F;inSWMean:double%20%3F;inSWMinimum:double%20%3F;inSWMaximum:double%20%3F;inSWVariance:double%20%3F;inSWNumPts:double%20%3F;inSWExpUncert:double%20%3F;inSWStdErMean:double%20%3F;inSWRangeFailQM:double%20%3F;inSWRangePassQM:double%20%3F;inSWRangeNAQM:double%20%3F;inSWPersistenceFailQM:double%20%3F;inSWPersistencePassQM:double%20%3F;inSWPersistenceNAQM:double%20%3F;inSWStepFailQM:double%20%3F;inSWStepPassQM:double%20%3F;inSWStepNAQM:double%20%3F;inSWNullFailQM:double%20%3F;inSWNullPassQM:double%20%3F;inSWNullNAQM:double%20%3F;inSWGapFailQM:double%20%3F;inSWGapPassQM:double%20%3F;inSWGapNAQM:double%20%3F;inSWSpikeFailQM:double%20%3F;inSWSpikePassQM:double%20%3F;inSWSpikeNAQM:double%20%3F;inSWConsistencyFailQM:double%20%3F;inSWConsistencyPassQM:double%20%3F;inSWConsistencyNAQM:double%20%3F;inSWAlphaQM:double%20%3F;inSWBetaQM:double%20%3F;inSWFinalQF:string%20%3F;outSWMean:double%20%3F;outSWMinimum:double%20%3F;outSWMaximum:double%20%3F;outSWVariance:double%20%3F;outSWNumPts:double%20%3F;outSWExpUncert:double%20%3F;outSWStdErMean:double%20%3F;outSWRangeFailQM:double%20%3F;outSWRangePassQM:double%20%3F;outSWRangeNAQM:double%20%3F;outSWPersistenceFailQM:double%20%3F;outSWPersistencePassQM:double%20%3F;outSWPersistenceNAQM:double%20%3F;outSWStepFailQM:double%20%3F;outSWStepPassQM:double%20%3F;outSWStepNAQM:double%20%3F;outSWNullFailQM:double%20%3F;outSWNullPassQM:double%20%3F;outSWNullNAQM:double%20%3F;outSWGapFailQM:double%20%3F;outSWGapPassQM:double%20%3F;outSWGapNAQM:double%20%3F;outSWSpikeFailQM:double%20%3F;outSWSpikePassQM:double%20%3F;outSWSpikeNAQM:double%20%3F;outSWConsistencyFailQM:double%20%3F;outSWConsistencyPassQM:double%20%3F;outSWConsistencyNAQM:double%20%3F;outSWAlphaQM:double%20%3F;outSWBetaQM:double%20%3F;outSWFinalQF:string%20%3F;inLWMean:double%20%3F;inLWMinimum:double%20%3F;inLWMaximum:double%20%3F;inLWVariance:double%20%3F;inLWNumPts:double%20%3F;inLWExpUncert:double%20%3F;inLWStdErMean:double%20%3F;inLWRangeFailQM:double%20%3F;inLWRangePassQM:double%20%3F;inLWRangeNAQM:double%20%3F;inLWPersistenceFailQM:double%20%3F;inLWPersistencePassQM:double%20%3F;inLWPersistenceNAQM:double%20%3F;inLWStepFailQM:double%20%3F;inLWStepPassQM:double%20%3F;inLWStepNAQM:double%20%3F;inLWNullFailQM:double%20%3F;inLWNullPassQM:double%20%3F;inLWNullNAQM:double%20%3F;inLWGapFailQM:double%20%3F;inLWGapPassQM:double%20%3F;inLWGapNAQM:double%20%3F;inLWSpikeFailQM:double%20%3F;inLWSpikePassQM:double%20%3F;inLWSpikeNAQM:double%20%3F;inLWConsistencyFailQM:double%20%3F;inLWConsistencyPassQM:double%20%3F;inLWConsistencyNAQM:double%20%3F;inLWAlphaQM:double%20%3F;inLWBetaQM:double%20%3F;inLWFinalQF:string%20%3F;outLWMean:double%20%3F;outLWMinimum:double%20%3F;outLWMaximum:double%20%3F;outLWVariance:double%20%3F;outLWNumPts:double%20%3F;outLWExpUncert:double%20%3F;outLWStdErMean:double%20%3F;outLWRangeFailQM:double%20%3F;outLWRangePassQM:double%20%3F;outLWRangeNAQM:double%20%3F;outLWPersistenceFailQM:double%20%3F;outLWPersistencePassQM:double%20%3F;outLWPersistenceNAQM:double%20%3F;outLWStepFailQM:double%20%3F;outLWStepPassQM:double%20%3F;outLWStepNAQM:double%20%3F;outLWNullFailQM:double%20%3F;outLWNullPassQM:double%20%3F;outLWNullNAQM:double%20%3F;outLWGapFailQM:double%20%3F;outLWGapPassQM:double%20%3F;outLWGapNAQM:double%20%3F;outLWSpikeFailQM:double%20%3F;outLWSpikePassQM:double%20%3F;outLWSpikeNAQM:double%20%3F;outLWConsistencyFailQM:double%20%3F;outLWConsistencyPassQM:double%20%3F;outLWConsistencyNAQM:double%20%3F;outLWAlphaQM:double%20%3F;outLWBetaQM:double%20%3F;outLWFinalQF:string%20%3F;startDateTime:time%20%3F;endDateTime:time%20%3F;inLWFinalQFSciRvw:string%20%3F;inSWFinalQFSciRvw:string%20%3F;outLWFinalQFSciRvw:string%20%3F;outSWFinalQFSciRvw:string%20%3F;inLWValidCalFailQM:double%20%3F;inLWValidCalNAQM:double%20%3F;inLWValidCalPassQM:double%20%3F;inSWValidCalFailQM:double%20%3F;inSWValidCalNAQM:double%20%3F;inSWValidCalPassQM:double%20%3F;outLWValidCalFailQM:double%20%3F;outLWValidCalNAQM:double%20%3F;outLWValidCalPassQM:double%20%3F;outSWValidCalFailQM:double%20%3F;outSWValidCalNAQM:double%20%3F;outSWValidCalPassQM:double%20%3F])
 
 ## Attributes
 
 
 ### Own
 
+ * [endDateTime](endDateTime.md)  <sub>OPT</sub>
+    * Description: Date and time at which a sampling is completed
+    * range: [Time](types/Time.md)
  * [heaterFailQM](heaterFailQM.md)  <sub>OPT</sub>
     * Description: Quality metric that summarizes when the heater was on over the averaging period, as a percent
     * range: [Double](types/Double.md)
@@ -443,102 +446,9 @@ URI: [neon:SLRNR30min](https://data.neonscience.org/SLRNR30min)
  * [outSWVariance](outSWVariance.md)  <sub>OPT</sub>
     * Description: Variance in outgoing shortwave radiation
     * range: [Double](types/Double.md)
-
-### Inherited from SCGW_5_minute:
-
- * [endDateTime](endDateTime.md)  <sub>OPT</sub>
-    * Description: Date and time at which a sampling is completed
-    * range: [Time](types/Time.md)
- * [groundwaterSpecCond](groundwaterSpecCond.md)  <sub>OPT</sub>
-    * Description: Specific conductivity in groundwater in microsiemens per centimeter
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [groundwaterSpecCondExpUncert](groundwaterSpecCondExpUncert.md)  <sub>OPT</sub>
-    * Description: Expanded uncertainty for Specific Conductivity in groundwater in degrees celsius
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [groundwaterSpecCondRangeQF](groundwaterSpecCondRangeQF.md)  <sub>OPT</sub>
-    * Description: Specific Conductivity in groundwater quality flag for the range test, detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [groundwaterSpecCondPersistQF](groundwaterSpecCondPersistQF.md)  <sub>OPT</sub>
-    * Description: Specific Conductivity in groundwater quality flag for the persistence test, detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [groundwaterSpecCondStepQF](groundwaterSpecCondStepQF.md)  <sub>OPT</sub>
-    * Description: Specific Conductivity in groundwater quality flag for the step test, detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [groundwaterSpecCondNullQF](groundwaterSpecCondNullQF.md)  <sub>OPT</sub>
-    * Description: Specific Conductivity in groundwater quality flag for the null test, detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [groundwaterSpecCondGapQF](groundwaterSpecCondGapQF.md)  <sub>OPT</sub>
-    * Description: Specific Conductivity in groundwater quality flag for the gap test, detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [groundwaterSpecCondConsistQF](groundwaterSpecCondConsistQF.md)  <sub>OPT</sub>
-    * Description: Specific Conductivity in groundwater quality flag for the consistency test, detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [groundwaterSpecCondSpikeQF](groundwaterSpecCondSpikeQF.md)  <sub>OPT</sub>
-    * Description: Specific Conductivity in groundwater quality flag for the spike test, detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [validCalQF](validCalQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the valid calibration check detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [sciRvwQF](sciRvwQF.md)  <sub>OPT</sub>
-    * Description: Stand-alone quality flag (does not interact with final quality flag) indicating whether a data product has failed a science review of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass/not-reviewed)
-    * range: [String](types/String.md)
-    * inherited from: None
-
-### Inherited from TSD_1_min:
-
  * [startDateTime](startDateTime.md)  <sub>OPT</sub>
     * Description: Date and time at which a sampling is initiated
     * range: [Time](types/Time.md)
- * [thermistorDepth](thermistorDepth.md)  <sub>OPT</sub>
-    * Description: Depth of the temperature sensor (thermistor) from water surface in lakes and rivers
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [tsdWaterTemp](tsdWaterTemp.md)  <sub>OPT</sub>
-    * Description: Temperature of surface water at specific depths in lakes and rivers
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [tsdWaterTempConsistQF](tsdWaterTempConsistQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the consistency test of tsdWaterTemp. Detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [tsdWaterTempExpUncert](tsdWaterTempExpUncert.md)  <sub>OPT</sub>
-    * Description: Expanded uncertainty for tsdWaterTemp
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [tsdWaterTempGapQF](tsdWaterTempGapQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the gap test of tsdWaterTemp. Detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [tsdWaterTempNullQF](tsdWaterTempNullQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the null test of tsdWaterTemp. Detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [tsdWaterTempRangeQF](tsdWaterTempRangeQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the range test of tsdWaterTemp. Detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [tsdWaterTempSpikeQF](tsdWaterTempSpikeQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the spike test of tsdWaterTemp. Detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [tsdWaterTempStepQF](tsdWaterTempStepQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the step test of tsdWaterTemp. Detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [tsdWaterTempValidCalQF](tsdWaterTempValidCalQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the valid calibration check of tsdWaterTemp. Detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
 
 ## Other properties
 

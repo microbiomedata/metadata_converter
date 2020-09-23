@@ -59,4 +59,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | genus |
 | **Mappings:** | | neon:genus |
+|  | | http://rs.tdwg.org/dwc/terms/genus |
 

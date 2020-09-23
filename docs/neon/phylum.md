@@ -48,4 +48,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | phylum |
 | **Mappings:** | | neon:phylum |
+|  | | http://rs.tdwg.org/dwc/terms/phylum |
 

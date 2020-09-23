@@ -7,7 +7,7 @@
 URI: [neon:BarPresBuoy](https://data.neonscience.org/BarPresBuoy)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[BarPresBuoy&#124;sensorTemp:double%20%3F;rawBarometricPressure:double%20%3F;sensorStatus:integer%20%3F])
 
 ## Attributes
 
@@ -20,28 +20,9 @@ URI: [neon:BarPresBuoy](https://data.neonscience.org/BarPresBuoy)
  * [sensorStatus](sensorStatus.md)  <sub>OPT</sub>
     * Description: Sensor status
     * range: [Integer](types/Integer.md)
-
-### Inherited from RH_L0prime:
-
  * [sensorTemp](sensorTemp.md)  <sub>OPT</sub>
     * Description: Temperature of sensor
     * range: [Double](types/Double.md)
- * [RH](RH.md)  <sub>OPT</sub>
-    * Description: Relative humidity
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [dewPoint](dewPoint.md)  <sub>OPT</sub>
-    * Description: Dew point temperature
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [RHStatus](RHStatus.md)  <sub>OPT</sub>
-    * Description: Status of the relative humidity sensor
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [qfHeat](qfHeat.md)  <sub>OPT</sub>
-    * Description: Heater quality flag (L0 prime processing ATBD)
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
 
 ## Other properties
 

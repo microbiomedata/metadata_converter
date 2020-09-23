@@ -86,4 +86,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | geodetic datum |
 | **Mappings:** | | neon:geodeticDatum |
+|  | | dwc:geodeticDatum |
 

@@ -32,4 +32,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | variety |
 | **Mappings:** | | neon:variety |
+|  | | http://rs.gbif.org/vocabulary/gbif/rank/variety |
 

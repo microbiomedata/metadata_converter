@@ -7,7 +7,7 @@
 URI: [neon:ProfMfmL0prime](https://data.neonscience.org/ProfMfmL0prime)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[ProfMfmL0prime&#124;presAtm:double%20%3F;temp:double%20%3F;frt:double%20%3F;frt0:double%20%3F])
 
 ## Attributes
 

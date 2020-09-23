@@ -46,4 +46,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | subtribe |
 | **Mappings:** | | neon:subtribe |
+|  | | http://rs.gbif.org/vocabulary/gbif/rank/subtribe |
 

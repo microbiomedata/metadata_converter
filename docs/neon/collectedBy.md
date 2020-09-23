@@ -74,4 +74,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | collected by |
 | **Mappings:** | | neon:collectedBy |
+|  | | dwc:recordedBy |
 

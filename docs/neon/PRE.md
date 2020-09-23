@@ -7,7 +7,7 @@
 URI: [neon:PRE](https://data.neonscience.org/PRE)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[PRE&#124;secPrecipBucketTips:integer%20%3F;TFPrecipBucketTips:integer%20%3F;strainGauge1Stability:integer%20%3F;strainGauge1Temp:double%20%3F;strainGauge1FreqRaw:double%20%3F;strainGauge1Weight:double%20%3F;totalGaugeWeight:double%20%3F;totalPrecipDepth:double%20%3F;inletTemp:double%20%3F;internalTemp:double%20%3F;precipAccumulationRate:double%20%3F;strainGauge1FreqComp:double%20%3F;orificeHeaterFlag:integer%20%3F;strainGauge2Stability:integer%20%3F;strainGauge3Stability:integer%20%3F;strainGauge2Temp:double%20%3F;strainGauge3Temp:double%20%3F;strainGauge2FreqRaw:double%20%3F;strainGauge3FreqRaw:double%20%3F;strainGauge2Weight:double%20%3F;strainGauge3Weight:double%20%3F;strainGauge2FreqComp:double%20%3F;strainGauge3FreqComp:double%20%3F;heaterMonitor:double%20%3F])
 
 ## Attributes
 

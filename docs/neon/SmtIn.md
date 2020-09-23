@@ -7,7 +7,7 @@
 URI: [neon:SmtIn](https://data.neonscience.org/SmtIn)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[SmtIn&#124;rawSoilTemp:double%20%3F;rawSoilMoisture:double%20%3F;rawSoilBulkRelPerm:double%20%3F;rawSoilElectricCond:double%20%3F;rawSoilPoreWaterEC:double%20%3F])
 
 ## Attributes
 

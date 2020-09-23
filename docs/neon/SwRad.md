@@ -7,7 +7,7 @@
 URI: [neon:SwRad](https://data.neonscience.org/SwRad)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[SwRad&#124;rawShortwaveRadiationGlobal:double%20%3F;rawShortwaveRadiationDiffuse:double%20%3F;sunPresence:integer%20%3F])
 
 ## Attributes
 

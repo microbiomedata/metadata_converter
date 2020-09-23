@@ -273,4 +273,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | domain i d |
 | **Mappings:** | | neon:domainID |
+|  | | dwc:locationID |
 

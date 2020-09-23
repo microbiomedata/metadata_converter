@@ -7,7 +7,7 @@
 URI: [neon:AquGaugePhotos](https://data.neonscience.org/AquGaugePhotos)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[AquGaugePhotos&#124;rawIRImage:string%20%3F;rawRGBImage:string%20%3F;IRmetadata:string%20%3F;RGBmetadata:string%20%3F])
 
 ## Attributes
 

@@ -295,4 +295,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | site i d |
 | **Mappings:** | | neon:siteID |
+|  | | dwc:locationID |
 

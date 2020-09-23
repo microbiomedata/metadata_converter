@@ -45,4 +45,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | subkingdom |
 | **Mappings:** | | neon:subkingdom |
+|  | | http://rs.gbif.org/vocabulary/gbif/rank/subkingdom |
 

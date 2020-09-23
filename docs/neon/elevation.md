@@ -85,4 +85,5 @@ None ->  <sub>OPT</sub> [Double](types/Double.md)
 | --- | --- | --- |
 | **Aliases:** | | elevation |
 | **Mappings:** | | neon:elevation |
+|  | | dwc:verbatimElevation |
 

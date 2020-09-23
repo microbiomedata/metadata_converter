@@ -7,7 +7,7 @@
 URI: [neon:ProfPresValiRegTankL0prime](https://data.neonscience.org/ProfPresValiRegTankL0prime)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[ProfPresValiRegTankL0prime&#124;presGage:double%20%3F])
 
 ## Attributes
 

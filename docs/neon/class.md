@@ -59,4 +59,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | class |
 | **Mappings:** | | neon:class |
+|  | | http://rs.tdwg.org/dwc/terms/class |
 

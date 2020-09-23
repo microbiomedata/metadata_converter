@@ -7,7 +7,7 @@
 URI: [neon:ProfPumpSmpL0prime](https://data.neonscience.org/ProfPumpSmpL0prime)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[ProfPumpSmpL0prime&#124;pumpVoltage:double%20%3F])
 
 ## Attributes
 

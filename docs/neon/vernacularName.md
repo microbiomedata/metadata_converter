@@ -27,4 +27,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | vernacular name |
 | **Mappings:** | | neon:vernacularName |
+|  | | http://rs.tdwg.org/dwc/terms/vernacularName |
 

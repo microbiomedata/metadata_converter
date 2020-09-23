@@ -7,7 +7,7 @@
 URI: [neon:TSW](https://data.neonscience.org/TSW)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[TSW&#124;PRTResistance:double%20%3F])
 
 ## Attributes
 

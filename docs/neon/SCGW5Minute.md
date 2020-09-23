@@ -7,7 +7,7 @@
 URI: [neon:SCGW5Minute](https://data.neonscience.org/SCGW5Minute)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[SCGW5Minute&#124;endDateTime:time%20%3F;groundwaterSpecCond:double%20%3F;groundwaterSpecCondExpUncert:double%20%3F;groundwaterSpecCondRangeQF:integer%20%3F;groundwaterSpecCondPersistQF:integer%20%3F;groundwaterSpecCondStepQF:integer%20%3F;groundwaterSpecCondNullQF:integer%20%3F;groundwaterSpecCondGapQF:integer%20%3F;groundwaterSpecCondConsistQF:integer%20%3F;groundwaterSpecCondSpikeQF:integer%20%3F;validCalQF:integer%20%3F;sciRvwQF:string%20%3F])
 
 ## Attributes
 

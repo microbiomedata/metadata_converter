@@ -30,4 +30,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | collectors |
 | **Mappings:** | | neon:collectors |
+|  | | dwc:recordedBy |
 

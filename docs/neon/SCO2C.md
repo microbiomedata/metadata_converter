@@ -7,7 +7,7 @@
 URI: [neon:SCO2C](https://data.neonscience.org/SCO2C)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[SCO2C&#124;rawCO2:double%20%3F;headspaceTemp:double%20%3F;errorStatus:double%20%3F])
 
 ## Attributes
 

@@ -92,4 +92,6 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | scientific name |
 | **Mappings:** | | neon:scientificName |
+|  | | http://rs.tdwg.org/dwc/terms/scientificName; |
+|  | | dwc:scientificName |
 

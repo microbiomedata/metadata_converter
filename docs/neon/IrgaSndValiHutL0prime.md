@@ -7,12 +7,12 @@
 URI: [neon:IrgaSndValiHutL0prime](https://data.neonscience.org/IrgaSndValiHutL0prime)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[IrgaSndValiHutL0prime&#124;qfGas1:integer%20%3F;qfGas2:integer%20%3F;qfGas3:integer%20%3F;qfGas4:integer%20%3F;qfGas5:integer%20%3F])
 
 ## Attributes
 
 
-### Inherited from irgaSndValiNema_L1prime:
+### Own
 
  * [qfGas1](qfGas1.md)  <sub>OPT</sub>
     * Description: Qualifying flag (qf) indicating validation gas (Gas) number 1 solenoid status (1; 0 = close [default], 1 = open)

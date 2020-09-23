@@ -7,13 +7,16 @@
 URI: [neon:SRPP](https://data.neonscience.org/SRPP)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[SRPP&#124;pyranometerOutput:double%20%3F;PRTResistance:double%20%3F;fanSpeed:double%20%3F;heater1Flag:integer%20%3F;heater2Flag:integer%20%3F])
 
 ## Attributes
 
 
 ### Own
 
+ * [PRTResistance](PRTResistance.md)  <sub>OPT</sub>
+    * Description: Resistance of Platinum Resistance Thermometer (PRT) at temperature T
+    * range: [Double](types/Double.md)
  * [fanSpeed](fanSpeed.md)  <sub>OPT</sub>
     * Description: Fan speed
     * range: [Double](types/Double.md)
@@ -25,12 +28,6 @@ URI: [neon:SRPP](https://data.neonscience.org/SRPP)
     * range: [Integer](types/Integer.md)
  * [pyranometerOutput](pyranometerOutput.md)  <sub>OPT</sub>
     * Description: Primary Shortwave Radiation Incident Pyranometer
-    * range: [Double](types/Double.md)
-
-### Inherited from TSW:
-
- * [PRTResistance](PRTResistance.md)  <sub>OPT</sub>
-    * Description: Resistance of Platinum Resistance Thermometer (PRT) at temperature T
     * range: [Double](types/Double.md)
 
 ## Other properties

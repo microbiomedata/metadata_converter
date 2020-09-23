@@ -157,4 +157,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | recorded by |
 | **Mappings:** | | neon:recordedBy |
+|  | | dwc:recordedBy |
 

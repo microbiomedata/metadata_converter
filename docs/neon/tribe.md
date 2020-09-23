@@ -56,4 +56,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | tribe |
 | **Mappings:** | | neon:tribe |
+|  | | http://rs.gbif.org/vocabulary/gbif/rank/tribe |
 

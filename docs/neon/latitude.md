@@ -30,4 +30,5 @@ None ->  <sub>OPT</sub> [Double](types/Double.md)
 | --- | --- | --- |
 | **Aliases:** | | latitude |
 | **Mappings:** | | neon:latitude |
+|  | | dwc:decimalLatitude |
 

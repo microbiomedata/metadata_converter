@@ -7,7 +7,7 @@
 URI: [neon:ST](https://data.neonscience.org/ST)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[ST&#124;soilPRTResistance:double%20%3F])
 
 ## Attributes
 

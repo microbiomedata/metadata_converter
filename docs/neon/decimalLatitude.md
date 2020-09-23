@@ -84,4 +84,5 @@ None ->  <sub>OPT</sub> [Double](types/Double.md)
 | --- | --- | --- |
 | **Aliases:** | | decimal latitude |
 | **Mappings:** | | neon:decimalLatitude |
+|  | | dwc:decimalLatitude |
 

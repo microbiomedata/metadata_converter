@@ -7,7 +7,7 @@
 URI: [neon:WindSpeedDirBuoy](https://data.neonscience.org/WindSpeedDirBuoy)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[WindSpeedDirBuoy&#124;windSpeedMean:double%20%3F;windDirMean:double%20%3F;vectorAverageHeading:double%20%3F])
 
 ## Attributes
 

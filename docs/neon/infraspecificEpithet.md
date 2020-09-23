@@ -46,4 +46,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | infraspecific epithet |
 | **Mappings:** | | neon:infraspecificEpithet |
+|  | | http://rs.tdwg.org/dwc/terms/infraspecificEpithet |
 

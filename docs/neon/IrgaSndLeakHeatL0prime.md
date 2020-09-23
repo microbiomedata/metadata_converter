@@ -7,7 +7,7 @@
 URI: [neon:IrgaSndLeakHeatL0prime](https://data.neonscience.org/IrgaSndLeakHeatL0prime)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[IrgaSndLeakHeatL0prime&#124;qfTrapIn:integer%20%3F;qfTrapOut:integer%20%3F;qfLeak:integer%20%3F;qfHeatSoni:integer%20%3F;qfHeatTube:integer%20%3F;qfHeatCap:integer%20%3F;qfHeatVali:integer%20%3F])
 
 ## Attributes
 

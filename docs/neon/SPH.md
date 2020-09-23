@@ -7,7 +7,7 @@
 URI: [neon:SPH](https://data.neonscience.org/SPH)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[SPH&#124;spectralPhotometerK7:string%20%3F])
 
 ## Attributes
 

@@ -56,4 +56,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | taxon rank |
 | **Mappings:** | | neon:taxonRank |
+|  | | http://rs.tdwg.org/dwc/terms/taxonRank |
 

@@ -7,7 +7,7 @@
 URI: [neon:PARQL](https://data.neonscience.org/PARQL)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[PARQL&#124;linePAR:double%20%3F])
 
 ## Attributes
 

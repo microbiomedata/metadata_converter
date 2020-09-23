@@ -29,4 +29,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | subform |
 | **Mappings:** | | neon:subform |
+|  | | http://rs.gbif.org/vocabulary/gbif/rank/subform |
 

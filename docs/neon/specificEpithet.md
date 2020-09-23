@@ -55,4 +55,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | specific epithet |
 | **Mappings:** | | neon:specificEpithet |
+|  | | http://rs.tdwg.org/dwc/terms/specificEpithet |
 

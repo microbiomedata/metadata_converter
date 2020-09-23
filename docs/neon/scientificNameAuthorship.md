@@ -49,4 +49,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | scientific name authorship |
 | **Mappings:** | | neon:scientificNameAuthorship |
+|  | | http://rs.tdwg.org/dwc/terms/scientificNameAuthorship |
 

@@ -34,4 +34,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | superphylum |
 | **Mappings:** | | neon:superphylum |
+|  | | http://rs.gbif.org/vocabulary/gbif/rank/superphylum |
 

@@ -325,4 +325,5 @@ None ->  <sub>OPT</sub> [Time](types/Time.md)
 | --- | --- | --- |
 | **Aliases:** | | start date |
 | **Mappings:** | | neon:startDate |
+|  | | dwc:eventDate |
 

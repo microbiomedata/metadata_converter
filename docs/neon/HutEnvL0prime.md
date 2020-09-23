@@ -7,7 +7,7 @@
 URI: [neon:HutEnvL0prime](https://data.neonscience.org/HutEnvL0prime)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[HutEnvL0prime&#124;tempHut:double%20%3F;RHHut:double%20%3F;baroPresHut:double%20%3F;H2OMixRatioHut:double%20%3F;qfTemp:string%20%3F;qfRh:integer%20%3F])
 
 ## Attributes
 

@@ -30,4 +30,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | investigation_type |
 | **Mappings:** | | neon:investigation_type |
+|  | | mixs:investigation_type |
 

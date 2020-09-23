@@ -30,4 +30,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | species |
 | **Mappings:** | | neon:species |
+|  | | dwc:specificEpithet |
 

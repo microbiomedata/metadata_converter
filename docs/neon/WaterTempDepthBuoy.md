@@ -7,7 +7,7 @@
 URI: [neon:WaterTempDepthBuoy](https://data.neonscience.org/WaterTempDepthBuoy)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[WaterTempDepthBuoy&#124;depth0WaterTemp:double%20%3F;depth1WaterTemp:double%20%3F;depth2WaterTemp:double%20%3F;depth3WaterTemp:double%20%3F;depth4WaterTemp:double%20%3F;depth5WaterTemp:double%20%3F;depth6WaterTemp:double%20%3F;depth7WaterTemp:double%20%3F;depth8WaterTemp:double%20%3F;depth9WaterTemp:double%20%3F;depth10WaterTemp:double%20%3F])
 
 ## Attributes
 

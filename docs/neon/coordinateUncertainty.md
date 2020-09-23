@@ -84,4 +84,5 @@ None ->  <sub>OPT</sub> [Double](types/Double.md)
 | --- | --- | --- |
 | **Aliases:** | | coordinate uncertainty |
 | **Mappings:** | | neon:coordinateUncertainty |
+|  | | dwc:coordinateUncertaintyInMeters |
 

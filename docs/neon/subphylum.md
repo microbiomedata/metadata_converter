@@ -35,4 +35,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | subphylum |
 | **Mappings:** | | neon:subphylum |
+|  | | http://rs.gbif.org/vocabulary/gbif/rank/subphylum |
 

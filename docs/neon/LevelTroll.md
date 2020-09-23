@@ -7,7 +7,7 @@
 URI: [neon:LevelTroll](https://data.neonscience.org/LevelTroll)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[LevelTroll&#124;batteryVoltage:double%20%3F;tempDataQualityID:double%20%3F;pressureDataQualityID:double%20%3F;surfaceWaterTemperature:double%20%3F;surfaceWaterPressure:double%20%3F])
 
 ## Attributes
 

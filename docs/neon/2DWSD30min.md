@@ -7,13 +7,19 @@
 URI: [neon:2DWSD30min](https://data.neonscience.org/2DWSD30min)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[2DWSD30min&#124;windSpeedMean:double%20%3F;windSpeedMinimum:double%20%3F;windSpeedMaximum:double%20%3F;windSpeedVariance:double%20%3F;windSpeedNumPts:double%20%3F;windSpeedExpUncert:double%20%3F;windSpeedStdErMean:double%20%3F;windSpeedRangeFailQM:double%20%3F;windSpeedRangePassQM:double%20%3F;windSpeedRangeNAQM:double%20%3F;windSpeedPersistenceFailQM:double%20%3F;windSpeedPersistencePassQM:double%20%3F;windSpeedPersistenceNAQM:double%20%3F;windSpeedStepFailQM:double%20%3F;windSpeedStepPassQM:double%20%3F;windSpeedStepNAQM:double%20%3F;windSpeedNullFailQM:double%20%3F;windSpeedNullPassQM:double%20%3F;windSpeedNullNAQM:double%20%3F;windSpeedGapFailQM:double%20%3F;windSpeedGapPassQM:double%20%3F;windSpeedGapNAQM:double%20%3F;windSpeedSpikeFailQM:double%20%3F;windSpeedSpikePassQM:double%20%3F;windSpeedSpikeNAQM:double%20%3F;windSpeedConsistencyFailQM:double%20%3F;windSpeedConsistencyPassQM:double%20%3F;windSpeedConsistencyNAQM:double%20%3F;windSpeedAlphaQM:double%20%3F;windSpeedBetaQM:double%20%3F;windSpeedFinalQF:string%20%3F;windDirMean:double%20%3F;windDirVariance:double%20%3F;windDirNumPts:double%20%3F;windDirExpUncert:double%20%3F;windDirStdErMean:double%20%3F;windDirRangeFailQM:double%20%3F;windDirRangePassQM:double%20%3F;windDirRangeNAQM:double%20%3F;windDirPersistenceFailQM:double%20%3F;windDirPersistencePassQM:double%20%3F;windDirPersistenceNAQM:double%20%3F;windDirStepFailQM:double%20%3F;windDirStepPassQM:double%20%3F;windDirStepNAQM:double%20%3F;windDirNullFailQM:double%20%3F;windDirNullPassQM:double%20%3F;windDirNullNAQM:double%20%3F;windDirGapFailQM:double%20%3F;windDirGapPassQM:double%20%3F;windDirGapNAQM:double%20%3F;windDirSpikeFailQM:double%20%3F;windDirSpikePassQM:double%20%3F;windDirSpikeNAQM:double%20%3F;windDirConsistencyFailQM:double%20%3F;windDirConsistencyPassQM:double%20%3F;windDirConsistencyNAQM:double%20%3F;windDirAlphaQM:double%20%3F;windDirBetaQM:double%20%3F;windDirFinalQF:string%20%3F;windDirDistortedFlowFailQM:double%20%3F;windDirDistortedFlowPassQM:double%20%3F;windDirDistortedFlowNAQM:double%20%3F;windSpeedSensorErrorFailQM:double%20%3F;windSpeedSensorErrorPassQM:double%20%3F;windSpeedSensorErrorNAQM:double%20%3F;windSpeedCalmWindQF:integer%20%3F;windDirSensorErrorFailQM:double%20%3F;windDirSensorErrorPassQM:double%20%3F;windDirSensorErrorNAQM:double%20%3F;windDirCalmWindQF:integer%20%3F;startDateTime:time%20%3F;endDateTime:time%20%3F;windDirValidCalFailQM:double%20%3F;windDirValidCalNAQM:double%20%3F;windDirValidCalPassQM:double%20%3F;windSpeedValidCalFailQM:double%20%3F;windSpeedValidCalNAQM:double%20%3F;windSpeedValidCalPassQM:double%20%3F;windDirFinalQFSciRvw:string%20%3F;windSpeedFinalQFSciRvw:string%20%3F])
 
 ## Attributes
 
 
 ### Own
 
+ * [endDateTime](endDateTime.md)  <sub>OPT</sub>
+    * Description: Date and time at which a sampling is completed
+    * range: [Time](types/Time.md)
+ * [startDateTime](startDateTime.md)  <sub>OPT</sub>
+    * Description: Date and time at which a sampling is initiated
+    * range: [Time](types/Time.md)
  * [windDirAlphaQM](windDirAlphaQM.md)  <sub>OPT</sub>
     * Description: Wind direction quality metric detailing the outcomes of the alpha quality flag over the averaging period, as a percent and detailed in NEON.DOC.001113
     * range: [Double](types/Double.md)
@@ -58,6 +64,9 @@ URI: [neon:2DWSD30min](https://data.neonscience.org/2DWSD30min)
     * range: [Double](types/Double.md)
  * [windDirGapPassQM](windDirGapPassQM.md)  <sub>OPT</sub>
     * Description: Wind direction quality metric that summarizes the passed outcomes of the gap test over the averaging period, as a percent
+    * range: [Double](types/Double.md)
+ * [windDirMean](windDirMean.md)  <sub>OPT</sub>
+    * Description: Arithmetic mean of wind direction
     * range: [Double](types/Double.md)
  * [windDirNullFailQM](windDirNullFailQM.md)  <sub>OPT</sub>
     * Description: Wind direction quality metric that summarizes the failed outcomes of the null test over the averaging period, as a percent
@@ -170,6 +179,9 @@ URI: [neon:2DWSD30min](https://data.neonscience.org/2DWSD30min)
  * [windSpeedMaximum](windSpeedMaximum.md)  <sub>OPT</sub>
     * Description: Maximum wind speed
     * range: [Double](types/Double.md)
+ * [windSpeedMean](windSpeedMean.md)  <sub>OPT</sub>
+    * Description: Arithmetic mean of wind speed
+    * range: [Double](types/Double.md)
  * [windSpeedMinimum](windSpeedMinimum.md)  <sub>OPT</sub>
     * Description: Minimum wind speed
     * range: [Double](types/Double.md)
@@ -245,115 +257,6 @@ URI: [neon:2DWSD30min](https://data.neonscience.org/2DWSD30min)
  * [windSpeedVariance](windSpeedVariance.md)  <sub>OPT</sub>
     * Description: Variance in wind speed
     * range: [Double](types/Double.md)
-
-### Inherited from SCGW_5_minute:
-
- * [endDateTime](endDateTime.md)  <sub>OPT</sub>
-    * Description: Date and time at which a sampling is completed
-    * range: [Time](types/Time.md)
- * [groundwaterSpecCond](groundwaterSpecCond.md)  <sub>OPT</sub>
-    * Description: Specific conductivity in groundwater in microsiemens per centimeter
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [groundwaterSpecCondExpUncert](groundwaterSpecCondExpUncert.md)  <sub>OPT</sub>
-    * Description: Expanded uncertainty for Specific Conductivity in groundwater in degrees celsius
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [groundwaterSpecCondRangeQF](groundwaterSpecCondRangeQF.md)  <sub>OPT</sub>
-    * Description: Specific Conductivity in groundwater quality flag for the range test, detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [groundwaterSpecCondPersistQF](groundwaterSpecCondPersistQF.md)  <sub>OPT</sub>
-    * Description: Specific Conductivity in groundwater quality flag for the persistence test, detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [groundwaterSpecCondStepQF](groundwaterSpecCondStepQF.md)  <sub>OPT</sub>
-    * Description: Specific Conductivity in groundwater quality flag for the step test, detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [groundwaterSpecCondNullQF](groundwaterSpecCondNullQF.md)  <sub>OPT</sub>
-    * Description: Specific Conductivity in groundwater quality flag for the null test, detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [groundwaterSpecCondGapQF](groundwaterSpecCondGapQF.md)  <sub>OPT</sub>
-    * Description: Specific Conductivity in groundwater quality flag for the gap test, detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [groundwaterSpecCondConsistQF](groundwaterSpecCondConsistQF.md)  <sub>OPT</sub>
-    * Description: Specific Conductivity in groundwater quality flag for the consistency test, detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [groundwaterSpecCondSpikeQF](groundwaterSpecCondSpikeQF.md)  <sub>OPT</sub>
-    * Description: Specific Conductivity in groundwater quality flag for the spike test, detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [validCalQF](validCalQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the valid calibration check detailed in NEON.DOC.011081 (1=fail, 0=pass, -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [sciRvwQF](sciRvwQF.md)  <sub>OPT</sub>
-    * Description: Stand-alone quality flag (does not interact with final quality flag) indicating whether a data product has failed a science review of its quality, detailed in NEON.DOC.001113 (1=fail, 0=pass/not-reviewed)
-    * range: [String](types/String.md)
-    * inherited from: None
-
-### Inherited from TSD_1_min:
-
- * [startDateTime](startDateTime.md)  <sub>OPT</sub>
-    * Description: Date and time at which a sampling is initiated
-    * range: [Time](types/Time.md)
- * [thermistorDepth](thermistorDepth.md)  <sub>OPT</sub>
-    * Description: Depth of the temperature sensor (thermistor) from water surface in lakes and rivers
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [tsdWaterTemp](tsdWaterTemp.md)  <sub>OPT</sub>
-    * Description: Temperature of surface water at specific depths in lakes and rivers
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [tsdWaterTempConsistQF](tsdWaterTempConsistQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the consistency test of tsdWaterTemp. Detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [tsdWaterTempExpUncert](tsdWaterTempExpUncert.md)  <sub>OPT</sub>
-    * Description: Expanded uncertainty for tsdWaterTemp
-    * range: [Double](types/Double.md)
-    * inherited from: None
- * [tsdWaterTempGapQF](tsdWaterTempGapQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the gap test of tsdWaterTemp. Detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [tsdWaterTempNullQF](tsdWaterTempNullQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the null test of tsdWaterTemp. Detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [tsdWaterTempRangeQF](tsdWaterTempRangeQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the range test of tsdWaterTemp. Detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [tsdWaterTempSpikeQF](tsdWaterTempSpikeQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the spike test of tsdWaterTemp. Detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [tsdWaterTempStepQF](tsdWaterTempStepQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the step test of tsdWaterTemp. Detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
- * [tsdWaterTempValidCalQF](tsdWaterTempValidCalQF.md)  <sub>OPT</sub>
-    * Description: Quality flag for the valid calibration check of tsdWaterTemp. Detailed in NEON.DOC.011081 (1=fail 0=pass -1=NA (i.e., could not be run))
-    * range: [Integer](types/Integer.md)
-    * inherited from: None
-
-### Inherited from windSpeedDirBuoy:
-
- * [windSpeedMean](windSpeedMean.md)  <sub>OPT</sub>
-    * Description: Arithmetic mean of wind speed
-    * range: [Double](types/Double.md)
- * [windDirMean](windDirMean.md)  <sub>OPT</sub>
-    * Description: Arithmetic mean of wind direction
-    * range: [Double](types/Double.md)
- * [vectorAverageHeading](vectorAverageHeading.md)  <sub>OPT</sub>
-    * Description: Vector average of buoy heading
-    * range: [Double](types/Double.md)
-    * inherited from: None
 
 ## Other properties
 

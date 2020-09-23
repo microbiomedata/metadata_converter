@@ -7,7 +7,7 @@
 URI: [neon:ProfSndAuxL0prime](https://data.neonscience.org/ProfSndAuxL0prime)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[ProfSndAuxL0prime&#124;valvCmd1:integer%20%3F;valvCmd2:integer%20%3F;valvCmd3:integer%20%3F;valvCmd4:integer%20%3F;measTypeCrdH2O:integer%20%3F;measTypeCrdCO2:integer%20%3F;qfValvIrga:integer%20%3F;measTypeIrga:integer%20%3F])
 
 ## Attributes
 

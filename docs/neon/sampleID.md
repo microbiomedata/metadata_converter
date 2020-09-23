@@ -178,4 +178,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | sample i d |
 | **Mappings:** | | neon:sampleID |
+|  | | dwc:materialSampleID |
 

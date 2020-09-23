@@ -46,4 +46,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | subclass |
 | **Mappings:** | | neon:subclass |
+|  | | http://rs.gbif.org/vocabulary/gbif/rank/subclass |
 

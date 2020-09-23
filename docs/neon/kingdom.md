@@ -53,4 +53,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | kingdom |
 | **Mappings:** | | neon:kingdom |
+|  | | http://rs.tdwg.org/dwc/terms/kingdom |
 

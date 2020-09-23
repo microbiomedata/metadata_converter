@@ -7,7 +7,7 @@
 URI: [neon:ProfGasCylL2prime](https://data.neonscience.org/ProfGasCylL2prime)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[ProfGasCylL2prime&#124;fdMoleCO2:double%20%3F;fdMole12CO2:double%20%3F;fdMole13CO2:double%20%3F;d13CO2:double%20%3F])
 
 ## Attributes
 

@@ -7,7 +7,7 @@
 URI: [neon:H2OIso](https://data.neonscience.org/H2OIso)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[H2OIso&#124;instStat:integer%20%3F;presCavi:double%20%3F;tempCavi:double%20%3F;tempDas:double%20%3F;tempEtal:double%20%3F;tempWarmBox:double%20%3F;posiMPV:double%20%3F;valvOutl:double%20%3F;fwMoleCH4:double%20%3F;valvMask:double%20%3F;ppmvFwMoleH2O:double%20%3F;N2Flag:double%20%3F;baseShift:double%20%3F;slopShift:double%20%3F;resiRMS:double%20%3F;d18OWater:double%20%3F;d2HWater:double%20%3F])
 
 ## Attributes
 

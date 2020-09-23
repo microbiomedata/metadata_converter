@@ -7,7 +7,7 @@
 URI: [neon:UPAR](https://data.neonscience.org/UPAR)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[UPAR&#124;inPAR:double%20%3F;outPAR:double%20%3F])
 
 ## Attributes
 

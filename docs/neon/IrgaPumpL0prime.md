@@ -7,12 +7,12 @@
 URI: [neon:IrgaPumpL0prime](https://data.neonscience.org/IrgaPumpL0prime)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[IrgaPumpL0prime&#124;pumpVoltage:double%20%3F])
 
 ## Attributes
 
 
-### Inherited from profPumpSmp_L0prime:
+### Own
 
  * [pumpVoltage](pumpVoltage.md)  <sub>OPT</sub>
     * Description: Voltage provided to pump

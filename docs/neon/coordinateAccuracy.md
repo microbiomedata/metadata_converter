@@ -30,4 +30,5 @@ None ->  <sub>OPT</sub> [Double](types/Double.md)
 | --- | --- | --- |
 | **Aliases:** | | coordinate accuracy |
 | **Mappings:** | | neon:coordinateAccuracy |
+|  | | dwc:coordinateUncertaintyInMeters |
 

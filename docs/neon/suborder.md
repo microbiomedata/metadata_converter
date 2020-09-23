@@ -46,4 +46,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | suborder |
 | **Mappings:** | | neon:suborder |
+|  | | http://rs.gbif.org/vocabulary/gbif/rank/suborder |
 

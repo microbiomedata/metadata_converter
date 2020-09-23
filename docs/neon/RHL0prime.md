@@ -7,7 +7,7 @@
 URI: [neon:RHL0prime](https://data.neonscience.org/RHL0prime)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[RHL0prime&#124;sensorTemp:double%20%3F;RH:double%20%3F;dewPoint:double%20%3F;RHStatus:double%20%3F;qfHeat:integer%20%3F])
 
 ## Attributes
 

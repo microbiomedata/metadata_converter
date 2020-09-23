@@ -35,4 +35,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | superfamily |
 | **Mappings:** | | neon:superfamily |
+|  | | http://rs.gbif.org/vocabulary/gbif/rank/superfamily |
 

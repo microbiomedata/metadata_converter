@@ -37,4 +37,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | section |
 | **Mappings:** | | neon:section |
+|  | | http://rs.gbif.org/vocabulary/gbif/rank/section |
 

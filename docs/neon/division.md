@@ -37,4 +37,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | division |
 | **Mappings:** | | neon:division |
+|  | | http://rs.gbif.org/vocabulary/gbif/rank/phylum |
 

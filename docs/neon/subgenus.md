@@ -52,4 +52,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | subgenus |
 | **Mappings:** | | neon:subgenus |
+|  | | http://rs.tdwg.org/dwc/terms/subgenus |
 

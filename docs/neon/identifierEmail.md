@@ -34,4 +34,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | identifier email |
 | **Mappings:** | | neon:identifierEmail |
+|  | | dwc:identifiedBy |
 

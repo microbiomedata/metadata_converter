@@ -7,7 +7,7 @@
 URI: [neon:IrgaSndValiNemaL1prime](https://data.neonscience.org/IrgaSndValiNemaL1prime)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/)
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[IrgaSndValiNemaL1prime&#124;qfGas1:integer%20%3F;qfGas2:integer%20%3F;qfGas3:integer%20%3F;qfGas4:integer%20%3F;qfGas5:integer%20%3F])
 
 ## Attributes
 

@@ -28,4 +28,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | riparian dominant vegetation |
 | **Mappings:** | | neon:riparianDominantVegetation |
+|  | | dwc:taxonID |
 

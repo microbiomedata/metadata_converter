@@ -29,4 +29,5 @@ None ->  <sub>OPT</sub> [String](types/String.md)
 | --- | --- | --- |
 | **Aliases:** | | subvariety |
 | **Mappings:** | | neon:subvariety |
+|  | | http://rs.gbif.org/vocabulary/gbif/rank/subvariety |
 

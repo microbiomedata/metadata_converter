@@ -2,3763 +2,3763 @@
    "$id": "https://microbiomedata/schema/ddl",
    "$schema": "http://json-schema.org/draft-07/schema#",
    "definitions": {
-      "ANALYSISPROJECT": {
+      "AnalysisProject": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "ADDED_BY": {
-               "type": "number"
-            },
-            "ADD_DATE": {
+            "add_date": {
                "type": "string"
             },
-            "ANALYSIS_PROJECT_NAME": {
+            "added_by": {
+               "type": "number"
+            },
+            "analysis_project_name": {
                "type": "string"
             },
-            "ANALYSIS_PROJECT_NAME_FULL": {
+            "analysis_project_name_full": {
                "type": "string"
             },
-            "ANALYSIS_PROJECT_TYPE": {
+            "analysis_project_type": {
                "type": "string"
             },
-            "ANNOTATOR_COMMENTS": {
+            "annotator_comments": {
                "type": "string"
             },
-            "APPENDED_AP_NAME": {
+            "ap_for_nonowner": {
                "type": "string"
             },
-            "AP_FOR_NONOWNER": {
+            "appended_ap_name": {
                "type": "string"
             },
-            "BINNING_METHOD": {
+            "binning_method": {
                "type": "string"
             },
-            "COMMENTS": {
+            "comments": {
                "type": "string"
             },
-            "COMPLETENESS_PERCENTAGE": {
+            "completeness_percentage": {
                "type": "number"
             },
-            "COMPLETION": {
+            "completion": {
                "type": "string"
             },
-            "COMPLETION_DATE": {
+            "completion_date": {
                "type": "string"
             },
-            "CONTAMINATION_PERCENTAGE": {
+            "contamination_percentage": {
                "type": "number"
             },
-            "CONTIG_COUNT": {
+            "contig_count": {
                "type": "number"
             },
-            "CULTURE_COLLECTION": {
+            "culture_collection": {
                "type": "string"
             },
-            "DECONTAMINATION_METHOD": {
+            "decontamination_method": {
                "type": "string"
             },
-            "DOMAIN": {
+            "domain": {
                "type": "string"
             },
-            "ECOSYSTEM": {
+            "ecosystem": {
                "type": "string"
             },
-            "ECOSYSTEM_CATEGORY": {
+            "ecosystem_category": {
                "type": "string"
             },
-            "ECOSYSTEM_PATH_ID": {
+            "ecosystem_path_id": {
                "type": "integer"
             },
-            "ECOSYSTEM_SUBTYPE": {
+            "ecosystem_subtype": {
                "type": "string"
             },
-            "ECOSYSTEM_TYPE": {
+            "ecosystem_type": {
                "type": "string"
             },
-            "EST_SIZE": {
+            "est_size": {
                "type": "number"
             },
-            "GENBANK_LOW_QUALITY_ANNOTATION": {
+            "genbank_low_quality_annotation": {
                "type": "string"
             },
-            "GENE_CALLING_METHOD": {
+            "gene_calling_method": {
                "type": "string"
             },
-            "GENE_COUNT": {
+            "gene_count": {
                "type": "number"
             },
-            "GENUS": {
+            "genus": {
                "type": "string"
             },
-            "GOLD_ID": {
+            "gold_id": {
                "type": "string"
             },
-            "GOLD_PHYLOGENY": {
+            "gold_phylogeny": {
                "type": "string"
             },
-            "IMG_ANALYSIS_COMPLETE": {
+            "img_analysis_complete": {
                "type": "string"
             },
-            "IMG_RNASEQ_ID": {
+            "img_rnaseq_id": {
                "type": "integer"
             },
-            "IMG_SUBMISSION_PRORITY": {
+            "img_submission_prority": {
                "type": "string"
             },
-            "IMG_TAXON_ID": {
+            "img_taxon_id": {
                "type": "integer"
             },
-            "IMG_USE": {
+            "img_use": {
                "type": "string"
             },
-            "IS_ASSEMBLED_DELETED": {
+            "is_assembled_deleted": {
                "type": "string"
             },
-            "IS_DECONTAMINATION": {
+            "is_decontamination": {
                "type": "string"
             },
-            "IS_GENE_PRIMP": {
+            "is_gene_primp": {
                "type": "string"
             },
-            "IS_IMG_ANNOTATION": {
+            "is_img_annotation": {
                "type": "string"
             },
-            "IS_PRIMARY": {
+            "is_primary": {
                "type": "string"
             },
-            "IS_PUBLIC": {
+            "is_public": {
                "type": "string"
             },
-            "IS_TEST": {
+            "is_test": {
                "type": "string"
             },
-            "ITS_ANALYSIS_PROJECT_ID": {
+            "its_analysis_project_id": {
                "type": "integer"
             },
-            "ITS_ANALYSIS_PROJECT_NAME": {
+            "its_analysis_project_name": {
                "type": "string"
             },
-            "ITS_ANNOTATION_AT_ID": {
+            "its_annotation_at_id": {
                "type": "integer"
             },
-            "ITS_ASSEMBLY_AT_TYPE": {
+            "its_assembly_at_type": {
                "type": "string"
             },
-            "ITS_NCBI_TAX_ID": {
+            "its_ncbi_tax_id": {
                "type": "integer"
             },
-            "ITS_PRODUCT_NAME": {
+            "its_product_name": {
                "type": "string"
             },
-            "ITS_VERSION_NUMBER": {
+            "its_version_number": {
                "type": "number"
             },
-            "MOD_BY": {
+            "mod_by": {
                "type": "number"
             },
-            "MOD_DATE": {
+            "mod_date": {
                "type": "string"
             },
-            "NCBI_BIOPROJECT_ACCESSION": {
+            "ncbi_bioproject_accession": {
                "type": "string"
             },
-            "NCBI_BIOPROJECT_ID": {
+            "ncbi_bioproject_id": {
                "type": "integer"
             },
-            "NCBI_BIOSAMPLE_ACCESSION": {
+            "ncbi_biosample_accession": {
                "type": "string"
             },
-            "NCBI_CLASS": {
+            "ncbi_class": {
                "type": "string"
             },
-            "NCBI_FAMILY": {
+            "ncbi_family": {
                "type": "string"
             },
-            "NCBI_GENUS": {
+            "ncbi_genus": {
                "type": "string"
             },
-            "NCBI_KINGDOM": {
+            "ncbi_kingdom": {
                "type": "string"
             },
-            "NCBI_ORDER": {
+            "ncbi_order": {
                "type": "string"
             },
-            "NCBI_PHYLUM": {
+            "ncbi_phylum": {
                "type": "string"
             },
-            "NCBI_SPECIES": {
+            "ncbi_species": {
                "type": "string"
             },
-            "NCBI_SUPERKINGDOM": {
+            "ncbi_superkingdom": {
                "type": "string"
             },
-            "NCBI_TAX_ID": {
+            "ncbi_tax_id": {
                "type": "integer"
             },
-            "ORGANISM_ID": {
+            "organism_id": {
                "type": "integer"
-            },
-            "PHYLOGENY_SUGGESTION": {
-               "type": "string"
             },
-            "PIPELINE_ANNOTATION_METHOD": {
+            "phylogeny_suggestion": {
                "type": "string"
             },
-            "PI_ID": {
+            "pi_id": {
                "type": "integer"
+            },
+            "pi_name": {
+               "type": "string"
             },
-            "PI_NAME": {
+            "pipeline_annotation_method": {
                "type": "string"
             },
-            "REFERENCE_AP_ID": {
+            "reference_ap_id": {
                "type": "integer"
             },
-            "REJECTION_REASONS": {
+            "rejection_reasons": {
                "type": "string"
             },
-            "REPLACES_AP_ID": {
+            "replaces_ap_id": {
                "type": "integer"
             },
-            "REVIEW_STATUS": {
+            "review_status": {
                "type": "string"
             },
-            "SCAFFOLD_COUNT": {
+            "scaffold_count": {
                "type": "number"
             },
-            "SCREENING_METHOD": {
+            "screening_method": {
                "type": "string"
             },
-            "SEQUENCING_DEPTH": {
+            "sequencing_depth": {
                "type": "string"
             },
-            "SEROVAR": {
+            "serovar": {
                "type": "string"
             },
-            "SPECIES": {
+            "species": {
                "type": "string"
             },
-            "SPECIFIC_ECOSYSTEM": {
+            "specific_ecosystem": {
                "type": "string"
             },
-            "SPECIMEN": {
+            "specimen": {
                "type": "string"
             },
-            "STATUS_ID": {
+            "status_id": {
                "type": "integer"
             },
-            "STRAIN": {
+            "strain": {
                "type": "string"
             },
-            "STUDY_ID": {
+            "study_id": {
                "type": "integer"
             },
-            "SUBMISSION_COMMENTS": {
+            "submission_comments": {
                "type": "string"
             },
-            "SUBMISSION_ID": {
+            "submission_id": {
                "type": "integer"
             },
-            "SUBMISSION_STATUS_ID": {
+            "submission_status_id": {
                "type": "integer"
             },
-            "SUBMISSION_STATUS_NAME": {
+            "submission_status_name": {
                "type": "string"
             },
-            "SUBSPECIES": {
+            "subspecies": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "ANALYSISPROJECT",
+         "title": "AnalysisProject",
          "type": "object"
       },
-      "ANALYSISPROJECTSRARUNV2": {
+      "AnalysisProjectSraRunV2": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SRA_RUN_ID": {
+            "sra_run_id": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "ANALYSISPROJECTSRARUNV2",
+         "title": "AnalysisProjectSraRunV2",
          "type": "object"
       },
-      "BIOSAMPLE": {
+      "Biosample": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "ACTIVE": {
+            "active": {
                "type": "string"
             },
-            "ADD_DATE": {
+            "add_date": {
                "type": "string"
             },
-            "ADMIN_AP_COUNT": {
+            "admin_ap_count": {
                "type": "number"
             },
-            "ADMIN_DAP_COUNT": {
+            "admin_dap_count": {
                "type": "number"
             },
-            "ADMIN_SP_COUNT": {
+            "admin_sp_count": {
                "type": "number"
             },
-            "ALTITUDE": {
+            "altitude": {
                "type": "number"
             },
-            "ALTITUDE2": {
+            "altitude2": {
                "type": "number"
             },
-            "ANNOTATOR_COMMENTS": {
+            "annotator_comments": {
                "type": "string"
             },
-            "BICARBONATE_MILLIMOL": {
+            "bicarbonate_millimol": {
                "type": "number"
             },
-            "BIOGAS_ACETIC_ACID": {
+            "biogas_acetic_acid": {
                "type": "string"
             },
-            "BIOGAS_AMMONIUM_NH4": {
+            "biogas_ammonium_nh4": {
                "type": "string"
             },
-            "BIOGAS_BUTANOL": {
+            "biogas_butanol": {
                "type": "string"
             },
-            "BIOGAS_BUTYL_ACID": {
+            "biogas_butyl_acid": {
                "type": "string"
             },
-            "BIOGAS_ETHANOL": {
+            "biogas_ethanol": {
                "type": "string"
             },
-            "BIOGAS_FED_SUBSTRATES": {
+            "biogas_fed_substrates": {
                "type": "string"
             },
-            "BIOGAS_ISO_BUTYL_ACID": {
+            "biogas_iso_butyl_acid": {
                "type": "string"
             },
-            "BIOGAS_ISO_VALERIC_ACID": {
+            "biogas_iso_valeric_acid": {
                "type": "string"
             },
-            "BIOGAS_METHANE_PCT": {
+            "biogas_methane_pct": {
                "type": "number"
             },
-            "BIOGAS_METHANOL": {
+            "biogas_methanol": {
                "type": "string"
             },
-            "BIOGAS_PROPANOL": {
+            "biogas_propanol": {
                "type": "string"
             },
-            "BIOGAS_PROPIONIC_ACID": {
+            "biogas_propionic_acid": {
                "type": "string"
             },
-            "BIOGAS_RETENTION_TIME": {
+            "biogas_retention_time": {
                "type": "string"
             },
-            "BIOGAS_TEMPERATURE": {
+            "biogas_temperature": {
                "type": "string"
             },
-            "BIOGAS_TOTAL_INORGANIC_CARBON": {
+            "biogas_total_inorganic_carbon": {
                "type": "string"
             },
-            "BIOGAS_VALERIC_ACID": {
+            "biogas_valeric_acid": {
                "type": "string"
             },
-            "BIOGAS_VOA_TIC": {
+            "biogas_voa_tic": {
                "type": "string"
             },
-            "BIOGAS_VOLATILE_ORGANIC_ACIDS": {
+            "biogas_volatile_organic_acids": {
                "type": "string"
             },
-            "BIOGAS_YIELD": {
+            "biogas_yield": {
                "type": "string"
             },
-            "BIOSAMPLE_NAME": {
+            "biosample_name": {
                "type": "string"
             },
-            "CHLOROPHYLL_CONCENTRATION": {
+            "chlorophyll_concentration": {
                "type": "string"
             },
-            "COMMUNITY": {
+            "community": {
                "type": "string"
             },
-            "CRUISE_LINE_NAME": {
+            "cruise_line_name": {
                "type": "string"
             },
-            "DEPTH": {
+            "depth": {
                "type": "number"
             },
-            "DEPTH2": {
+            "depth2": {
                "type": "number"
             },
-            "DESCRIPTION": {
+            "description": {
                "type": "string"
             },
-            "ECOSYSTEM": {
+            "ecosystem": {
                "type": "string"
             },
-            "ECOSYSTEM_CATEGORY": {
+            "ecosystem_category": {
                "type": "string"
             },
-            "ECOSYSTEM_PATH_ID": {
+            "ecosystem_path_id": {
                "type": "integer"
             },
-            "ECOSYSTEM_SUBTYPE": {
+            "ecosystem_subtype": {
                "type": "string"
             },
-            "ECOSYSTEM_TYPE": {
+            "ecosystem_type": {
                "type": "string"
             },
-            "ELEVATION": {
+            "elevation": {
                "type": "number"
             },
-            "ELEVATION2": {
+            "elevation2": {
                "type": "number"
             },
-            "ENVO_BIOME_ID": {
+            "env_package": {
                "type": "string"
             },
-            "ENVO_FEATURE_ID": {
+            "envo_biome_id": {
                "type": "string"
             },
-            "ENVO_MATERIAL_ID": {
+            "envo_feature_id": {
                "type": "string"
             },
-            "ENV_PACKAGE": {
+            "envo_material_id": {
                "type": "string"
             },
-            "GEOGRAPHIC_LOCATION": {
+            "geographic_location": {
                "type": "string"
             },
-            "GLOBAL_PACKAGE_ID": {
+            "global_package_id": {
                "type": "integer"
             },
-            "GOLD_ID": {
+            "gold_id": {
                "type": "string"
             },
-            "GROWTH_CONDITIONS": {
+            "growth_conditions": {
                "type": "string"
             },
-            "GROWTH_TEMPERATURE": {
+            "growth_temperature": {
                "type": "number"
             },
-            "GROWTH_TEMPERATURE2": {
+            "growth_temperature2": {
                "type": "number"
             },
-            "H2S_MILLIMOL": {
+            "h2s_millimol": {
                "type": "number"
             },
-            "H2S_PRESENT": {
+            "h2s_present": {
                "type": "string"
             },
-            "HABITAT": {
+            "habitat": {
                "type": "string"
             },
-            "HOST_AGE": {
+            "host_age": {
                "type": "string"
             },
-            "HOST_BODY_PRODUCT": {
+            "host_body_product": {
                "type": "string"
             },
-            "HOST_BODY_PRODUCT_ID": {
+            "host_body_product_id": {
                "type": "integer"
             },
-            "HOST_BODY_SITE": {
+            "host_body_site": {
                "type": "string"
             },
-            "HOST_BODY_SITE_ID": {
+            "host_body_site_id": {
                "type": "integer"
             },
-            "HOST_BODY_SUBSITE": {
+            "host_body_subsite": {
                "type": "string"
             },
-            "HOST_BODY_SUBSITE_ID": {
+            "host_body_subsite_id": {
                "type": "integer"
             },
-            "HOST_COMMENTS": {
+            "host_comments": {
                "type": "string"
             },
-            "HOST_GENDER": {
+            "host_gender": {
                "type": "string"
             },
-            "HOST_HEALTH_CONDITION": {
+            "host_health_condition": {
                "type": "string"
             },
-            "HOST_MEDICATION": {
+            "host_medication": {
                "type": "string"
             },
-            "HOST_NAME": {
+            "host_name": {
                "type": "string"
             },
-            "HOST_RACE": {
+            "host_race": {
                "type": "string"
             },
-            "HOST_SPECIFICITY": {
+            "host_specificity": {
                "type": "string"
             },
-            "HOST_TAXONOMY_ID": {
+            "host_taxonomy_id": {
                "type": "integer"
             },
-            "IDENTIFIER": {
+            "identifier": {
                "type": "string"
             },
-            "IRRADIANCE": {
+            "irradiance": {
                "type": "string"
-            },
-            "ISOLATION_PUBLICATION_ID": {
-               "type": "integer"
             },
-            "ISOLATION_PUBMED_ID": {
-               "type": "integer"
+            "is_draft": {
+               "type": "string"
             },
-            "IS_DRAFT": {
+            "is_public": {
                "type": "string"
             },
-            "IS_PUBLIC": {
+            "is_test": {
                "type": "string"
+            },
+            "isolation_publication_id": {
+               "type": "integer"
+            },
+            "isolation_pubmed_id": {
+               "type": "integer"
             },
-            "IS_TEST": {
+            "its_growth_conditions": {
                "type": "string"
             },
-            "ITS_GROWTH_CONDITIONS": {
+            "jpa_entity": {
                "type": "string"
             },
-            "JPA_ENTITY": {
+            "known_non_hosts": {
                "type": "string"
             },
-            "KNOWN_NON_HOSTS": {
+            "lat_long_inferred": {
                "type": "string"
             },
-            "LATITUDE": {
+            "latitude": {
                "type": "number"
             },
-            "LATITUDE_TEST": {
+            "latitude_test": {
                "type": "number"
-            },
-            "LAT_LONG_INFERRED": {
-               "type": "string"
             },
-            "LEGACY_DEPTH_DATA": {
+            "legacy_depth_data": {
                "type": "string"
             },
-            "LOCATION": {
+            "location": {
                "type": "string"
             },
-            "LONGHURST_CODE": {
+            "longhurst_code": {
                "type": "string"
             },
-            "LONGITUDE": {
+            "longitude": {
                "type": "number"
             },
-            "LONGITUDE_TEST": {
+            "longitude_test": {
                "type": "number"
             },
-            "METHANE_CONC_MILLIMOL": {
+            "methane_conc_millimol": {
                "type": "number"
             },
-            "MOD_BY": {
+            "mod_by": {
                "type": "number"
             },
-            "MOD_DATE": {
+            "mod_date": {
                "type": "string"
             },
-            "MRN": {
+            "mrn": {
                "type": "string"
             },
-            "NCBI_TAXONOMY_ID": {
+            "ncbi_taxonomy_id": {
                "type": "integer"
             },
-            "NCBI_TAXONOMY_NAME": {
+            "ncbi_taxonomy_name": {
                "type": "string"
             },
-            "NITRATE_CONCENTRATION": {
+            "nitrate_concentration": {
                "type": "string"
             },
-            "OTHER_ECOSYSTEM": {
+            "other_ecosystem": {
                "type": "string"
             },
-            "OTHER_HOSTS": {
+            "other_hosts": {
                "type": "string"
             },
-            "OXYGEN_CONCENTRATION": {
+            "oxygen_concentration": {
                "type": "string"
             },
-            "OXYGEN_PRESENCE": {
+            "oxygen_presence": {
                "type": "string"
             },
-            "PATIENT_VISIT_NUMBER": {
+            "patient_visit_number": {
                "type": "number"
             },
-            "PH": {
+            "ph": {
                "type": "string"
             },
-            "PH1": {
+            "ph1": {
                "type": "number"
             },
-            "PH2": {
+            "ph2": {
                "type": "number"
             },
-            "PH_OLD": {
+            "ph_old": {
                "type": "string"
             },
-            "PRESSURE": {
+            "pressure": {
                "type": "string"
             },
-            "PROJECT_OID": {
+            "project_oid": {
                "type": "number"
             },
-            "PROPORT_ISOLATION": {
+            "proport_isolation": {
                "type": "string"
             },
-            "PROPORT_OCEAN": {
+            "proport_ocean": {
                "type": "string"
             },
-            "PROPORT_STATION": {
+            "proport_station": {
                "type": "string"
             },
-            "PROPORT_WOA_DISSOLVED_OXYGEN": {
+            "proport_woa_dissolved_oxygen": {
                "type": "number"
             },
-            "PROPORT_WOA_NITRATE": {
+            "proport_woa_nitrate": {
                "type": "number"
             },
-            "PROPORT_WOA_PHOSPHATE": {
+            "proport_woa_phosphate": {
                "type": "number"
             },
-            "PROPORT_WOA_SALINITY": {
+            "proport_woa_salinity": {
                "type": "number"
             },
-            "PROPORT_WOA_SILICATE": {
+            "proport_woa_silicate": {
                "type": "number"
             },
-            "PROPORT_WOA_TEMPERATURE": {
+            "proport_woa_temperature": {
                "type": "number"
             },
-            "PUBLIC_AP_COUNT": {
+            "public_ap_count": {
                "type": "number"
             },
-            "PUBLIC_DAP_COUNT": {
+            "public_dap_count": {
                "type": "number"
             },
-            "PUBLIC_SP_COUNT": {
+            "public_sp_count": {
                "type": "number"
             },
-            "REPLICATE_NUMBER": {
+            "replicate_number": {
                "type": "number"
             },
-            "SALINITY": {
+            "salinity": {
                "type": "string"
             },
-            "SALINITY_CONCENTRATION": {
+            "salinity_concentration": {
                "type": "string"
             },
-            "SAMPLE_BIOMASS": {
+            "sample_biomass": {
                "type": "string"
             },
-            "SAMPLE_COLLECTION_DAY": {
+            "sample_collection_day": {
                "type": "number"
             },
-            "SAMPLE_COLLECTION_HOUR": {
+            "sample_collection_hour": {
                "type": "number"
             },
-            "SAMPLE_COLLECTION_MINUTE": {
+            "sample_collection_minute": {
                "type": "number"
             },
-            "SAMPLE_COLLECTION_MONTH": {
+            "sample_collection_month": {
                "type": "number"
             },
-            "SAMPLE_COLLECTION_SITE": {
+            "sample_collection_site": {
                "type": "string"
             },
-            "SAMPLE_COLLECTION_YEAR": {
+            "sample_collection_year": {
                "type": "number"
             },
-            "SAMPLE_CONDUCTIVITY": {
+            "sample_conductivity": {
                "type": "string"
             },
-            "SAMPLE_CONTACT_EMAIL": {
+            "sample_contact_email": {
                "type": "string"
             },
-            "SAMPLE_CONTACT_NAME": {
+            "sample_contact_name": {
                "type": "string"
             },
-            "SAMPLE_ISOLATION_COMMENTS": {
+            "sample_isolation_comments": {
                "type": "string"
             },
-            "SAMPLE_ISOLATION_COUNTRY_ID": {
+            "sample_isolation_country_id": {
                "type": "integer"
             },
-            "SAMPLE_OID": {
+            "sample_oid": {
                "type": "number"
             },
-            "SAMPLE_VOLUME": {
+            "sample_volume": {
                "type": "string"
             },
-            "SAMPLE_WEIGHT_DNA_EXT": {
+            "sample_weight_dna_ext": {
                "type": "string"
             },
-            "SAMPLING_STRATEGY": {
+            "sampling_strategy": {
                "type": "string"
             },
-            "SOIL_AGROCHEM_ADDITION": {
+            "soil_agrochem_addition": {
                "type": "string"
             },
-            "SOIL_ALUMINIUM_SAT": {
+            "soil_aluminium_sat": {
                "type": "number"
             },
-            "SOIL_ALUMINIUM_SAT_METHOD": {
+            "soil_aluminium_sat_method": {
                "type": "string"
             },
-            "SOIL_CROP_ROTATION": {
+            "soil_crop_rotation": {
                "type": "string"
             },
-            "SOIL_CURR_LAND_USE": {
+            "soil_curr_land_use": {
                "type": "string"
             },
-            "SOIL_CURR_VEGETATION": {
+            "soil_curr_vegetation": {
                "type": "string"
             },
-            "SOIL_CURR_VEGETATION_METHOD": {
+            "soil_curr_vegetation_method": {
                "type": "string"
             },
-            "SOIL_DRAINAGE_CLASS": {
+            "soil_drainage_class": {
                "type": "string"
             },
-            "SOIL_EXTREME_EVENT": {
+            "soil_extreme_event": {
                "type": "string"
             },
-            "SOIL_FAO_CLASS": {
+            "soil_fao_class": {
                "type": "string"
             },
-            "SOIL_FIRE": {
+            "soil_fire": {
                "type": "string"
             },
-            "SOIL_FLOODING": {
+            "soil_flooding": {
                "type": "string"
             },
-            "SOIL_HEAVY_METALS": {
+            "soil_heavy_metals": {
                "type": "number"
             },
-            "SOIL_HEAVY_METALS_METHOD": {
+            "soil_heavy_metals_method": {
                "type": "string"
             },
-            "SOIL_HORIZON": {
+            "soil_horizon": {
                "type": "string"
             },
-            "SOIL_HORIZON_METHOD": {
+            "soil_horizon_method": {
                "type": "string"
             },
-            "SOIL_LINK_ADDIT_ANALYS": {
+            "soil_link_addit_analys": {
                "type": "string"
             },
-            "SOIL_LINK_CLASS_INFO": {
+            "soil_link_class_info": {
                "type": "string"
             },
-            "SOIL_LINK_CLIMATE_INFO": {
+            "soil_link_climate_info": {
                "type": "string"
             },
-            "SOIL_LOCAL_CLASS": {
+            "soil_local_class": {
                "type": "string"
             },
-            "SOIL_LOCAL_CLASS_METHOD": {
+            "soil_local_class_method": {
                "type": "string"
             },
-            "SOIL_MEAN_ANNUAL_PRECPT": {
+            "soil_mean_annual_precpt": {
                "type": "number"
             },
-            "SOIL_MEAN_ANNUAL_TEMP": {
+            "soil_mean_annual_temp": {
                "type": "number"
             },
-            "SOIL_MEAN_SEASONAL_PRECPT": {
+            "soil_mean_seasonal_precpt": {
                "type": "number"
             },
-            "SOIL_MEAN_SEASONAL_TEMP": {
+            "soil_mean_seasonal_temp": {
                "type": "number"
             },
-            "SOIL_MICROBIAL_BIOMASS": {
+            "soil_microbial_biomass": {
                "type": "string"
             },
-            "SOIL_MICROBIAL_BIOMASS_METHOD": {
+            "soil_microbial_biomass_method": {
                "type": "string"
             },
-            "SOIL_MISC_PARAM": {
+            "soil_misc_param": {
                "type": "string"
             },
-            "SOIL_PACKAGE_ID": {
+            "soil_package_id": {
                "type": "integer"
             },
-            "SOIL_PH_METHOD": {
+            "soil_ph_method": {
                "type": "string"
             },
-            "SOIL_POOL_DNA_EXTRACTS": {
+            "soil_pool_dna_extracts": {
                "type": "string"
             },
-            "SOIL_PREV_LAND_USE": {
+            "soil_prev_land_use": {
                "type": "string"
             },
-            "SOIL_PREV_LAND_USE_METH": {
+            "soil_prev_land_use_meth": {
                "type": "string"
             },
-            "SOIL_PROFILE_POSITION": {
+            "soil_profile_position": {
                "type": "string"
             },
-            "SOIL_SALINITY_METHOD": {
+            "soil_salinity_method": {
                "type": "string"
             },
-            "SOIL_SIEVING": {
+            "soil_sieving": {
                "type": "string"
             },
-            "SOIL_SLOPE_ASPECT": {
+            "soil_slope_aspect": {
                "type": "number"
             },
-            "SOIL_SLOPE_GRADIENT": {
+            "soil_slope_gradient": {
                "type": "number"
             },
-            "SOIL_STORAGE_CONDITION": {
+            "soil_storage_condition": {
                "type": "string"
             },
-            "SOIL_TEXTURE": {
+            "soil_texture": {
                "type": "string"
             },
-            "SOIL_TEXTURE_METHOD": {
+            "soil_texture_method": {
                "type": "string"
             },
-            "SOIL_TILLAGE": {
+            "soil_tillage": {
                "type": "string"
             },
-            "SOIL_TOT_N_METHOD": {
+            "soil_tot_n_method": {
                "type": "string"
             },
-            "SOIL_TOT_ORG_C_METHOD": {
+            "soil_tot_org_c_method": {
                "type": "string"
             },
-            "SOIL_TYPE": {
+            "soil_type": {
                "type": "string"
             },
-            "SOIL_TYPE_METHOD": {
+            "soil_type_method": {
                "type": "string"
             },
-            "SOIL_WATER_CONTENT": {
+            "soil_water_content": {
                "type": "string"
             },
-            "SOIL_WATER_CONTENT_SOIL_METH": {
+            "soil_water_content_soil_meth": {
                "type": "string"
             },
-            "SOLUBLE_IRON_MICROMOL": {
+            "soluble_iron_micromol": {
                "type": "number"
             },
-            "SPECIFIC_ECOSYSTEM": {
+            "specific_ecosystem": {
                "type": "string"
             },
-            "SPECIMEN": {
+            "specimen": {
                "type": "string"
-            },
-            "SUBMITTER_ID": {
-               "type": "integer"
             },
-            "SUBMIT_BIOSAMPLE_NAME": {
+            "submit_biosample_name": {
                "type": "string"
             },
-            "SUBSURFACE_DEPTH": {
+            "submitter_id": {
+               "type": "integer"
+            },
+            "subsurface_depth": {
                "type": "number"
             },
-            "SUBSURFACE_DEPTH2": {
+            "subsurface_depth2": {
                "type": "number"
             },
-            "TEST_PACKAGE_ID": {
+            "test_package_id": {
                "type": "integer"
             },
-            "TOT_NITROGEN": {
+            "tot_nitrogen": {
                "type": "string"
             },
-            "TOT_ORG_CARBON": {
+            "tot_org_carbon": {
                "type": "number"
             },
-            "WATER_ALKALINITY": {
+            "water_alkalinity": {
                "type": "number"
             },
-            "WATER_ALKALINITY_METHOD": {
+            "water_alkalinity_method": {
                "type": "string"
             },
-            "WATER_ALKYL_DIETHERS": {
+            "water_alkyl_diethers": {
                "type": "number"
             },
-            "WATER_AMINOPEPT_ACT": {
+            "water_aminopept_act": {
                "type": "number"
             },
-            "WATER_AMMONIUM": {
+            "water_ammonium": {
                "type": "number"
             },
-            "WATER_ATMOSPHERIC_DATA": {
+            "water_atmospheric_data": {
                "type": "string"
             },
-            "WATER_BACTERIAL_CARBON_PROD": {
+            "water_bacterial_carbon_prod": {
                "type": "number"
             },
-            "WATER_BACTERIAL_PROD": {
+            "water_bacterial_prod": {
                "type": "number"
             },
-            "WATER_BACTERIAL_RESP": {
+            "water_bacterial_resp": {
                "type": "number"
             },
-            "WATER_BISHOMOHOPANOL": {
+            "water_bishomohopanol": {
                "type": "string"
             },
-            "WATER_BROMIDE": {
+            "water_bromide": {
                "type": "number"
             },
-            "WATER_CALCIUM": {
+            "water_calcium": {
                "type": "string"
             },
-            "WATER_CARBON_NITROG_RATIO": {
+            "water_carbon_nitrog_ratio": {
                "type": "string"
             },
-            "WATER_CHEM_ADMINISTRATION": {
+            "water_chem_administration": {
                "type": "string"
             },
-            "WATER_CHLORIDE": {
+            "water_chloride": {
                "type": "number"
             },
-            "WATER_CURRENT": {
+            "water_current": {
                "type": "string"
             },
-            "WATER_DENSITY": {
+            "water_density": {
                "type": "number"
             },
-            "WATER_DIETHER_LIPIDS": {
+            "water_diether_lipids": {
                "type": "number"
             },
-            "WATER_DISS_CARBON_DIOXIDE": {
+            "water_diss_carbon_dioxide": {
                "type": "number"
             },
-            "WATER_DISS_HYDROGEN": {
+            "water_diss_hydrogen": {
                "type": "number"
             },
-            "WATER_DISS_INORG_CARBON": {
+            "water_diss_inorg_carbon": {
                "type": "number"
             },
-            "WATER_DISS_INORG_NITRO": {
+            "water_diss_inorg_nitro": {
                "type": "number"
             },
-            "WATER_DISS_INORG_PHOSPHORUS": {
+            "water_diss_inorg_phosphorus": {
                "type": "number"
             },
-            "WATER_DISS_ORG_CARBON": {
+            "water_diss_org_carbon": {
                "type": "number"
             },
-            "WATER_DISS_ORG_NITROGEN": {
+            "water_diss_org_nitrogen": {
                "type": "number"
             },
-            "WATER_DOWNWARD_PAR": {
+            "water_downward_par": {
                "type": "number"
             },
-            "WATER_FLUORESCENCE": {
+            "water_fluorescence": {
                "type": "number"
             },
-            "WATER_GLUCOSIDASE_ACTIVITY": {
+            "water_glucosidase_activity": {
                "type": "number"
             },
-            "WATER_LIGHT_INTENSITY": {
+            "water_light_intensity": {
                "type": "number"
             },
-            "WATER_MAGNESIUM": {
+            "water_magnesium": {
                "type": "string"
             },
-            "WATER_MEAN_FRICT_VEL": {
+            "water_mean_frict_vel": {
                "type": "number"
             },
-            "WATER_MEAN_PEAK_FRICT_VEL": {
+            "water_mean_peak_frict_vel": {
                "type": "number"
             },
-            "WATER_MISC_PARAMETER": {
+            "water_misc_parameter": {
                "type": "string"
             },
-            "WATER_NITRITE": {
+            "water_n_alkanes": {
                "type": "number"
             },
-            "WATER_N_ALKANES": {
+            "water_nitrite": {
                "type": "number"
             },
-            "WATER_ORGANISM_COUNT": {
+            "water_org_matter": {
                "type": "number"
             },
-            "WATER_ORG_MATTER": {
+            "water_org_nitrogen": {
                "type": "number"
             },
-            "WATER_ORG_NITROGEN": {
+            "water_organism_count": {
                "type": "number"
             },
-            "WATER_OXY_STAT_SAMPLE": {
+            "water_oxy_stat_sample": {
                "type": "string"
             },
-            "WATER_PACKAGE_ID": {
+            "water_package_id": {
                "type": "integer"
             },
-            "WATER_PART_ORG_CARBON": {
+            "water_part_org_carbon": {
                "type": "number"
             },
-            "WATER_PART_ORG_NITROGEN": {
+            "water_part_org_nitrogen": {
                "type": "number"
             },
-            "WATER_PERTURBATION": {
+            "water_perturbation": {
                "type": "string"
             },
-            "WATER_PETROLEUM_HYDROCARBON": {
+            "water_petroleum_hydrocarbon": {
                "type": "number"
             },
-            "WATER_PHAEOPIGMENTS": {
+            "water_phaeopigments": {
                "type": "number"
             },
-            "WATER_PHOSPLIPID_FATT_ACID": {
+            "water_phosplipid_fatt_acid": {
                "type": "string"
             },
-            "WATER_PHOTON_FLUX": {
+            "water_photon_flux": {
                "type": "number"
             },
-            "WATER_POTASSIUM": {
+            "water_potassium": {
                "type": "number"
             },
-            "WATER_PRIMARY_PROD": {
+            "water_primary_prod": {
                "type": "number"
             },
-            "WATER_REDOX_POTENTIAL": {
+            "water_redox_potential": {
                "type": "number"
             },
-            "WATER_SAMP_STORE_DUR": {
+            "water_samp_store_dur": {
                "type": "string"
             },
-            "WATER_SAMP_STORE_LOC": {
+            "water_samp_store_loc": {
                "type": "string"
             },
-            "WATER_SAMP_STORE_TEMP": {
+            "water_samp_store_temp": {
                "type": "number"
             },
-            "WATER_SIZE_FRAC_LOW": {
+            "water_size_frac_low": {
                "type": "number"
             },
-            "WATER_SIZE_FRAC_UP": {
+            "water_size_frac_up": {
                "type": "number"
             },
-            "WATER_SODIUM": {
+            "water_sodium": {
                "type": "number"
             },
-            "WATER_SOLUBLE_REACT_PHOSP": {
+            "water_soluble_react_phosp": {
                "type": "number"
             },
-            "WATER_SULFATE": {
+            "water_sulfate": {
                "type": "string"
             },
-            "WATER_SULFIDE": {
+            "water_sulfide": {
                "type": "string"
             },
-            "WATER_SUSPEND_PART_MATTER": {
+            "water_suspend_part_matter": {
                "type": "number"
             },
-            "WATER_TIDAL_STAGE": {
+            "water_tidal_stage": {
                "type": "string"
             },
-            "WATER_TOT_DEPTH_WATER_COL": {
+            "water_tot_depth_water_col": {
                "type": "number"
             },
-            "WATER_TOT_DISS_NITRO": {
+            "water_tot_diss_nitro": {
                "type": "number"
             },
-            "WATER_TOT_INORG_NITRO": {
+            "water_tot_inorg_nitro": {
                "type": "number"
             },
-            "WATER_TOT_PART_CARBON": {
+            "water_tot_part_carbon": {
                "type": "string"
             },
-            "WATER_TOT_PHOSPHORUS": {
+            "water_tot_phosphorus": {
                "type": "number"
             },
-            "WATER_TURBIDITY": {
+            "water_turbidity": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "BIOSAMPLE",
+         "title": "Biosample",
          "type": "object"
       },
-      "CONTACT": {
+      "Contact": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "ADDRESS": {
+            "add_date": {
                "type": "string"
             },
-            "ADD_DATE": {
+            "address": {
                "type": "string"
             },
-            "CALIBAN_ID": {
+            "caliban_id": {
                "type": "integer"
             },
-            "CALIBAN_USER_NAME": {
+            "caliban_user_name": {
                "type": "string"
             },
-            "CITY": {
+            "city": {
                "type": "string"
             },
-            "COMMENTS": {
+            "comments": {
                "type": "string"
             },
-            "COUNTRY": {
+            "country": {
                "type": "string"
             },
-            "DEPARTMENT": {
+            "department": {
                "type": "string"
             },
-            "EMAIL": {
+            "email": {
                "type": "string"
             },
-            "GEBA_ORGANISM_AVAIL_COUNT": {
+            "geba_organism_avail_count": {
                "type": "number"
             },
-            "GEBA_REVIEWER": {
+            "geba_reviewer": {
                "type": "string"
             },
-            "JGI_USER": {
+            "jgi_user": {
                "type": "string"
             },
-            "MASTER_CONTACT_ID": {
+            "master_contact_id": {
                "type": "integer"
             },
-            "NAME": {
+            "name": {
                "type": "string"
             },
-            "ORACLE_USER_NAME": {
+            "oracle_user_name": {
                "type": "string"
             },
-            "ORGANIZATION": {
+            "organization": {
                "type": "string"
             },
-            "PASSWORD": {
+            "password": {
                "type": "string"
             },
-            "PHONE": {
+            "phone": {
                "type": "string"
             },
-            "STATE": {
+            "state": {
                "type": "string"
             },
-            "TITLE": {
+            "title": {
                "type": "string"
             },
-            "URL": {
+            "url": {
                "type": "string"
             },
-            "USERNAME": {
+            "user_role": {
                "type": "string"
             },
-            "USER_ROLE": {
+            "username": {
                "type": "string"
             },
-            "X_IMG_CONTACT_ID": {
+            "x_img_contact_id": {
                "type": "integer"
             },
-            "X_IMG_EDITING_LEVEL": {
+            "x_img_editing_level": {
                "type": "string"
             },
-            "X_IMG_EDITOR": {
+            "x_img_editor": {
                "type": "string"
             },
-            "X_IMG_GROUP": {
+            "x_img_group": {
                "type": "number"
             },
-            "X_SUPER_USER": {
+            "x_super_user": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CONTACT",
+         "title": "Contact",
          "type": "object"
       },
-      "CVAPCOMPLETION": {
+      "CvapCompletion": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVAPCOMPLETION",
+         "title": "CvapCompletion",
          "type": "object"
       },
-      "CVAPREVIEWSTATUS": {
+      "CvapReviewStatus": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVAPREVIEWSTATUS",
+         "title": "CvapReviewStatus",
          "type": "object"
       },
-      "CVAPSTATUS": {
+      "CvapStatus": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVAPSTATUS",
+         "title": "CvapStatus",
          "type": "object"
       },
-      "CVAPTYPE": {
+      "CvapType": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVAPTYPE",
+         "title": "CvapType",
          "type": "object"
       },
-      "CVAVAILABILITY": {
+      "Cvavailability": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVAVAILABILITY",
+         "title": "Cvavailability",
          "type": "object"
       },
-      "CVBIOME": {
+      "Cvbiome": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVBIOME",
+         "title": "Cvbiome",
          "type": "object"
       },
-      "CVBIOSAFETY": {
+      "Cvbiosafety": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVBIOSAFETY",
+         "title": "Cvbiosafety",
          "type": "object"
       },
-      "CVBIOTICRELATIONSHIP": {
+      "CvbioticRelationship": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVBIOTICRELATIONSHIP",
+         "title": "CvbioticRelationship",
          "type": "object"
       },
-      "CVBODYPRODUCT": {
+      "CvbodyProduct": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVBODYPRODUCT",
+         "title": "CvbodyProduct",
          "type": "object"
       },
-      "CVBODYSITE": {
+      "CvbodySite": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVBODYSITE",
+         "title": "CvbodySite",
          "type": "object"
       },
-      "CVBODYSUBSITE": {
+      "CvbodySubsite": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVBODYSUBSITE",
+         "title": "CvbodySubsite",
          "type": "object"
       },
-      "CVCELLARRANGEMENT": {
+      "CvcellArrangement": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVCELLARRANGEMENT",
+         "title": "CvcellArrangement",
          "type": "object"
       },
-      "CVCELLSHAPE": {
+      "CvcellShape": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVCELLSHAPE",
+         "title": "CvcellShape",
          "type": "object"
       },
-      "CVCOLOR": {
+      "Cvcolor": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVCOLOR",
+         "title": "Cvcolor",
          "type": "object"
       },
-      "CVCOUNTRY": {
+      "Cvcountry": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVCOUNTRY",
+         "title": "Cvcountry",
          "type": "object"
       },
-      "CVCULTURETYPE": {
+      "CvcultureType": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVCULTURETYPE",
+         "title": "CvcultureType",
          "type": "object"
       },
-      "CVCURRENTLANDUSE": {
+      "CvcurrentLandUse": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVCURRENTLANDUSE",
+         "title": "CvcurrentLandUse",
          "type": "object"
       },
-      "CVDATAVALIDITYTYPE": {
+      "CvdataValidityType": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVDATAVALIDITYTYPE",
+         "title": "CvdataValidityType",
          "type": "object"
       },
-      "CVDISEASE": {
+      "Cvdisease": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVDISEASE",
+         "title": "Cvdisease",
          "type": "object"
       },
-      "CVDOMAIN": {
+      "Cvdomain": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVDOMAIN",
+         "title": "Cvdomain",
          "type": "object"
       },
-      "CVDRAINAGECLASS": {
+      "CvdrainageClass": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVDRAINAGECLASS",
+         "title": "CvdrainageClass",
          "type": "object"
       },
-      "CVENERGYSOURCE": {
+      "CvenergySource": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVENERGYSOURCE",
+         "title": "CvenergySource",
          "type": "object"
       },
-      "CVENVPACKAGE": {
+      "Cvenvpackage": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVENVPACKAGE",
+         "title": "Cvenvpackage",
          "type": "object"
       },
-      "CVFASTADOWNLOADSTATUS": {
+      "Cvfastadownloadstatus": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVFASTADOWNLOADSTATUS",
+         "title": "Cvfastadownloadstatus",
          "type": "object"
       },
-      "CVFINISHINGGOAL": {
+      "CvfinishingGoal": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVFINISHINGGOAL",
+         "title": "CvfinishingGoal",
          "type": "object"
       },
-      "CVGEBAPRIORITYSTATUS": {
+      "CvgebaPriorityStatus": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVGEBAPRIORITYSTATUS",
+         "title": "CvgebaPriorityStatus",
          "type": "object"
       },
-      "CVGEBAREVIEWSTATUS": {
+      "CvgebaReviewStatus": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVGEBAREVIEWSTATUS",
+         "title": "CvgebaReviewStatus",
          "type": "object"
       },
-      "CVGEBASAMPLETYPE": {
+      "CvgebaSampleType": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVGEBASAMPLETYPE",
+         "title": "CvgebaSampleType",
          "type": "object"
       },
-      "CVGEBATYPES": {
+      "CvgebaTypes": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVGEBATYPES",
+         "title": "CvgebaTypes",
          "type": "object"
       },
-      "CVGRAMSTAIN": {
+      "CvgramStain": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVGRAMSTAIN",
+         "title": "CvgramStain",
          "type": "object"
       },
-      "CVHABITAT": {
+      "Cvhabitat": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVHABITAT",
+         "title": "Cvhabitat",
          "type": "object"
       },
-      "CVHORIZON": {
+      "Cvhorizon": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVHORIZON",
+         "title": "Cvhorizon",
          "type": "object"
       },
-      "CVHOSTGENDER": {
+      "CvhostGender": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVHOSTGENDER",
+         "title": "CvhostGender",
          "type": "object"
       },
-      "CVIMGUSE": {
+      "Cvimguse": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVIMGUSE",
+         "title": "Cvimguse",
          "type": "object"
       },
-      "CVIRRADIANCE": {
+      "Cvirradiance": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVIRRADIANCE",
+         "title": "Cvirradiance",
          "type": "object"
       },
-      "CVLATLONG": {
+      "Cvlatlong": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVLATLONG",
+         "title": "Cvlatlong",
          "type": "object"
       },
-      "CVMETABOLISM": {
+      "Cvmetabolism": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVMETABOLISM",
+         "title": "Cvmetabolism",
          "type": "object"
       },
-      "CVMODEL": {
+      "Cvmodel": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVMODEL",
+         "title": "Cvmodel",
          "type": "object"
       },
-      "CVMONTH": {
+      "Cvmonth": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVMONTH",
+         "title": "Cvmonth",
          "type": "object"
       },
-      "CVMOTILITY": {
+      "Cvmotility": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVMOTILITY",
+         "title": "Cvmotility",
          "type": "object"
       },
-      "CVNUCLEICACID": {
+      "CvnucleicAcid": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVNUCLEICACID",
+         "title": "CvnucleicAcid",
          "type": "object"
       },
-      "CVORGANISMTYPE": {
+      "CvorganismType": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVORGANISMTYPE",
+         "title": "CvorganismType",
          "type": "object"
       },
-      "CVOXYGEN": {
+      "Cvoxygen": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVOXYGEN",
+         "title": "Cvoxygen",
          "type": "object"
       },
-      "CVOXYGENPRESENCE": {
+      "CvoxygenPresence": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVOXYGENPRESENCE",
+         "title": "CvoxygenPresence",
          "type": "object"
       },
-      "CVOXYGENSTATSAMPLE": {
+      "CvoxygenStatSample": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVOXYGENSTATSAMPLE",
+         "title": "CvoxygenStatSample",
          "type": "object"
       },
-      "CVPACKAGES": {
+      "Cvpackages": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVPACKAGES",
+         "title": "Cvpackages",
          "type": "object"
       },
-      "CVPHENOTYPE": {
+      "Cvphenotype": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVPHENOTYPE",
+         "title": "Cvphenotype",
          "type": "object"
       },
-      "CVPHYLOGENY": {
+      "Cvphylogeny": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVPHYLOGENY",
+         "title": "Cvphylogeny",
          "type": "object"
       },
-      "CVPROFILEPOSITION": {
+      "CvprofilePosition": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVPROFILEPOSITION",
+         "title": "CvprofilePosition",
          "type": "object"
       },
-      "CVPROJECTSTATUS": {
+      "CvprojectStatus": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVPROJECTSTATUS",
+         "title": "CvprojectStatus",
          "type": "object"
       },
-      "CVPROJECTSUBTYPE": {
+      "CvprojectSubtype": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVPROJECTSUBTYPE",
+         "title": "CvprojectSubtype",
          "type": "object"
       },
-      "CVPROJECTTYPE": {
+      "CvprojectType": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVPROJECTTYPE",
+         "title": "CvprojectType",
          "type": "object"
       },
-      "CVRELEVANCE": {
+      "Cvrelevance": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVRELEVANCE",
+         "title": "Cvrelevance",
          "type": "object"
       },
-      "CVROLES": {
+      "Cvroles": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVROLES",
+         "title": "Cvroles",
          "type": "object"
       },
-      "CVSALINITY": {
+      "Cvsalinity": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVSALINITY",
+         "title": "Cvsalinity",
          "type": "object"
       },
-      "CVSEQQUALITY": {
+      "CvseqQuality": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVSEQQUALITY",
+         "title": "CvseqQuality",
          "type": "object"
       },
-      "CVSEQSTATUS": {
+      "CvseqStatus": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVSEQSTATUS",
+         "title": "CvseqStatus",
          "type": "object"
       },
-      "CVSOILFAOCLASS": {
+      "Cvsoilfaoclass": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVSOILFAOCLASS",
+         "title": "Cvsoilfaoclass",
          "type": "object"
       },
-      "CVSPECIMEN": {
+      "Cvspecimen": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVSPECIMEN",
+         "title": "Cvspecimen",
          "type": "object"
       },
-      "CVSPORULATION": {
+      "Cvsporulation": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVSPORULATION",
+         "title": "Cvsporulation",
          "type": "object"
       },
-      "CVSTUDYTYPE": {
+      "CvstudyType": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVSTUDYTYPE",
+         "title": "CvstudyType",
          "type": "object"
       },
-      "CVTEMPRANGE": {
+      "CvtempRange": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVTEMPRANGE",
+         "title": "CvtempRange",
          "type": "object"
       },
-      "CVTIDALSTAGE": {
+      "CvtidalStage": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVTIDALSTAGE",
+         "title": "CvtidalStage",
          "type": "object"
       },
-      "CVTILLAGE": {
+      "Cvtillage": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVTILLAGE",
+         "title": "Cvtillage",
          "type": "object"
       },
-      "CVUNCULTUREDTYPE": {
+      "CvunculturedType": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVUNCULTUREDTYPE",
+         "title": "CvunculturedType",
          "type": "object"
       },
-      "CVYESNO": {
+      "CvyesNo": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVYESNO",
+         "title": "CvyesNo",
          "type": "object"
       },
-      "CVYESNOONLY": {
+      "CvyesNoOnly": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCE": {
+            "sequence": {
                "type": "number"
             },
-            "TERM": {
+            "term": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "CVYESNOONLY",
+         "title": "CvyesNoOnly",
          "type": "object"
       },
-      "ENVOLABELS": {
+      "EnvoLabels": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "ENVO_LABEL": {
+            "envo_label": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "ENVOLABELS",
+         "title": "EnvoLabels",
          "type": "object"
       },
-      "INSTITUTION": {
+      "Institution": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "COUNTRY": {
+            "country": {
                "type": "string"
             },
-            "DEPARTMENT": {
+            "department": {
                "type": "string"
             },
-            "IS_CURATED": {
+            "is_curated": {
                "type": "string"
             },
-            "LABORATORY": {
+            "laboratory": {
                "type": "string"
             },
-            "NAME": {
+            "name": {
                "type": "string"
             },
-            "ORGANIZATION": {
+            "organization": {
                "type": "string"
             },
-            "URL": {
+            "url": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "INSTITUTION",
+         "title": "Institution",
          "type": "object"
       },
-      "ORGANISMBIOTICREL": {
+      "OrganismBioticRel": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "BIOTIC_RELATIONSHIP_ID": {
+            "biotic_relationship_id": {
                "type": "integer"
             }
          },
          "required": [],
-         "title": "ORGANISMBIOTICREL",
+         "title": "OrganismBioticRel",
          "type": "object"
       },
-      "ORGANISMBODYPRODUCT": {
+      "OrganismBodyProduct": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "BODY_PRODUCT_ID": {
+            "body_product_id": {
                "type": "integer"
             }
          },
          "required": [],
-         "title": "ORGANISMBODYPRODUCT",
+         "title": "OrganismBodyProduct",
          "type": "object"
       },
-      "ORGANISMCELLARRANGEMENT": {
+      "OrganismCellArrangement": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "CELL_ARRANGEMENT_ID": {
+            "cell_arrangement_id": {
                "type": "integer"
             }
          },
          "required": [],
-         "title": "ORGANISMCELLARRANGEMENT",
+         "title": "OrganismCellArrangement",
          "type": "object"
       },
-      "ORGANISMDISEASE": {
+      "OrganismDisease": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "DISEASE_ID": {
+            "disease_id": {
                "type": "integer"
             }
          },
          "required": [],
-         "title": "ORGANISMDISEASE",
+         "title": "OrganismDisease",
          "type": "object"
       },
-      "ORGANISMENERGYSOURCE": {
+      "OrganismEnergySource": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "ENERGY_SOURCE_ID": {
+            "energy_source_id": {
                "type": "integer"
             }
          },
          "required": [],
-         "title": "ORGANISMENERGYSOURCE",
+         "title": "OrganismEnergySource",
          "type": "object"
       },
-      "ORGANISMHABITAT": {
+      "OrganismHabitat": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "HABITAT_ID": {
+            "habitat_id": {
                "type": "integer"
             }
          },
          "required": [],
-         "title": "ORGANISMHABITAT",
+         "title": "OrganismHabitat",
          "type": "object"
       },
-      "ORGANISMMETABOLISM": {
+      "OrganismMetabolism": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "METABOLISM_ID": {
+            "metabolism_id": {
                "type": "integer"
             }
          },
          "required": [],
-         "title": "ORGANISMMETABOLISM",
+         "title": "OrganismMetabolism",
          "type": "object"
       },
-      "ORGANISMPHENOTYPE": {
+      "OrganismPhenotype": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "PHENOTYPE_ID": {
+            "phenotype_id": {
                "type": "integer"
             }
          },
          "required": [],
-         "title": "ORGANISMPHENOTYPE",
+         "title": "OrganismPhenotype",
          "type": "object"
       },
-      "ORGANISMV2": {
+      "OrganismV2": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "ACTIVE": {
+            "active": {
                "type": "string"
             },
-            "ADD_DATE": {
+            "add_date": {
                "type": "string"
             },
-            "ADMIN_AP_COUNT": {
+            "admin_ap_count": {
                "type": "number"
             },
-            "ADMIN_SP_COUNT": {
+            "admin_sp_count": {
                "type": "number"
             },
-            "ALTITUDE": {
+            "altitude": {
                "type": "number"
             },
-            "ALTITUDE2": {
+            "altitude2": {
                "type": "number"
             },
-            "ANNOTATOR_COMMENTS": {
+            "annotator_comments": {
                "type": "string"
             },
-            "BICARBONATE_MILLIMOL": {
+            "bicarbonate_millimol": {
                "type": "number"
             },
-            "BIOSAFETY_LEVEL": {
+            "biosafety_level": {
                "type": "string"
             },
-            "BIOSAMPLE_ID": {
+            "biosample_id": {
                "type": "integer"
             },
-            "CARBON_SOURCE": {
+            "carbon_source": {
                "type": "string"
             },
-            "CELL_DIAMETER": {
+            "cell_diameter": {
                "type": "string"
             },
-            "CELL_LENGTH": {
+            "cell_length": {
                "type": "string"
             },
-            "CELL_SHAPE": {
+            "cell_shape": {
                "type": "string"
             },
-            "CHLOROPHYLL_CONCENTRATION": {
+            "chlorophyll_concentration": {
                "type": "string"
             },
-            "CLADE": {
+            "clade": {
                "type": "string"
             },
-            "COLOR": {
+            "color": {
                "type": "string"
             },
-            "COMMENTS": {
+            "comments": {
                "type": "string"
             },
-            "COMMERCIAL": {
+            "commercial": {
                "type": "string"
             },
-            "COMMERCIAL_COMMENTS": {
+            "commercial_comments": {
                "type": "string"
             },
-            "COMMON_NAME": {
+            "common_name": {
                "type": "string"
             },
-            "CRUISE_LINE_NAME": {
+            "cruise_line_name": {
                "type": "string"
             },
-            "CULTURED": {
+            "culture_collection_id": {
                "type": "string"
             },
-            "CULTURE_COLLECTION_ID": {
+            "culture_type": {
                "type": "string"
             },
-            "CULTURE_TYPE": {
+            "cultured": {
                "type": "string"
             },
-            "DEPTH": {
+            "depth": {
                "type": "number"
             },
-            "DEPTH2": {
+            "depth2": {
                "type": "number"
             },
-            "DOMAIN": {
+            "domain": {
                "type": "string"
             },
-            "ECOSYSTEM": {
+            "ecosystem": {
                "type": "string"
             },
-            "ECOSYSTEM_CATEGORY": {
+            "ecosystem_category": {
                "type": "string"
             },
-            "ECOSYSTEM_PATH_ID": {
+            "ecosystem_path_id": {
                "type": "integer"
             },
-            "ECOSYSTEM_SUBTYPE": {
+            "ecosystem_subtype": {
                "type": "string"
             },
-            "ECOSYSTEM_TYPE": {
+            "ecosystem_type": {
                "type": "string"
             },
-            "ECOTYPE": {
+            "ecotype": {
                "type": "string"
             },
-            "ELEVATION": {
+            "elevation": {
                "type": "number"
             },
-            "ELEVATION2": {
+            "elevation2": {
                "type": "number"
             },
-            "ENVO_BIOME_ID": {
+            "env_package": {
                "type": "string"
             },
-            "ENVO_FEATURE_ID": {
+            "envo_biome_id": {
                "type": "string"
             },
-            "ENVO_MATERIAL_ID": {
+            "envo_feature_id": {
                "type": "string"
             },
-            "ENV_PACKAGE": {
+            "envo_material_id": {
                "type": "string"
             },
-            "EXEMPLAR_DOI": {
+            "exemplar_doi": {
                "type": "string"
             },
-            "EXEMPLAR_NAME": {
+            "exemplar_name": {
                "type": "string"
             },
-            "GENBANK_16S_ID": {
+            "genbank_16s_id": {
                "type": "string"
             },
-            "GENUS": {
+            "genus": {
                "type": "string"
             },
-            "GENUS_SYNONYMS": {
+            "genus_synonyms": {
                "type": "string"
             },
-            "GEOGRAPHIC_LOCATION": {
+            "geographic_location": {
                "type": "string"
             },
-            "GOLD_CLASS": {
+            "gold_class": {
                "type": "string"
             },
-            "GOLD_FAMILY": {
+            "gold_family": {
                "type": "string"
             },
-            "GOLD_ID": {
+            "gold_id": {
                "type": "string"
             },
-            "GOLD_ORDER": {
+            "gold_order": {
                "type": "string"
             },
-            "GOLD_PHYLOGENY": {
+            "gold_phylogeny": {
                "type": "string"
             },
-            "GRAM_STAIN": {
+            "gram_stain": {
                "type": "string"
             },
-            "GROWTH_CONDITIONS": {
+            "growth_conditions": {
                "type": "string"
             },
-            "GROWTH_TEMPERATURE": {
+            "growth_temperature": {
                "type": "number"
             },
-            "GROWTH_TEMPERATURE2": {
+            "growth_temperature2": {
                "type": "number"
             },
-            "H2S_MILLIMOL": {
+            "h2s_millimol": {
                "type": "number"
             },
-            "H2S_PRESENT": {
+            "h2s_present": {
                "type": "string"
             },
-            "HOST_AGE": {
+            "host_age": {
                "type": "string"
             },
-            "HOST_BODY_PRODUCT": {
+            "host_body_product": {
                "type": "string"
             },
-            "HOST_BODY_PRODUCT_ID": {
+            "host_body_product_id": {
                "type": "integer"
             },
-            "HOST_BODY_SITE": {
+            "host_body_site": {
                "type": "string"
             },
-            "HOST_BODY_SITE_ID": {
+            "host_body_site_id": {
                "type": "integer"
             },
-            "HOST_BODY_SUBSITE": {
+            "host_body_subsite": {
                "type": "string"
             },
-            "HOST_BODY_SUBSITE_ID": {
+            "host_body_subsite_id": {
                "type": "integer"
             },
-            "HOST_COMMENTS": {
+            "host_comments": {
                "type": "string"
             },
-            "HOST_GENDER": {
+            "host_gender": {
                "type": "string"
             },
-            "HOST_HEALTH_CONDITION": {
+            "host_health_condition": {
                "type": "string"
             },
-            "HOST_MEDICATION": {
+            "host_medication": {
                "type": "string"
             },
-            "HOST_NAME": {
+            "host_name": {
                "type": "string"
             },
-            "HOST_RACE": {
+            "host_race": {
                "type": "string"
             },
-            "HOST_SPECIFICITY": {
+            "host_specificity": {
                "type": "string"
             },
-            "HOST_TAXONOMY_ID": {
+            "host_taxonomy_id": {
                "type": "integer"
             },
-            "IMAGE_ID": {
+            "image_id": {
                "type": "integer"
             },
-            "IMG_BREADTH_CALC": {
+            "img_breadth_calc": {
                "type": "number"
             },
-            "IRRADIANCE": {
+            "irradiance": {
                "type": "string"
             },
-            "ISOLATION_PUBLICATION_ID": {
-               "type": "integer"
-            },
-            "ISOLATION_PUBMED_ID": {
-               "type": "integer"
+            "is_draft": {
+               "type": "string"
             },
-            "IS_DRAFT": {
+            "is_public": {
                "type": "string"
             },
-            "IS_PUBLIC": {
+            "is_test": {
                "type": "string"
             },
-            "IS_TEST": {
+            "is_virocell": {
                "type": "string"
+            },
+            "isolation_publication_id": {
+               "type": "integer"
+            },
+            "isolation_pubmed_id": {
+               "type": "integer"
             },
-            "IS_VIROCELL": {
+            "its_growth_conditions": {
                "type": "string"
             },
-            "ITS_GROWTH_CONDITIONS": {
+            "known_non_hosts": {
                "type": "string"
             },
-            "KNOWN_NON_HOSTS": {
+            "lat_long_inferred": {
                "type": "string"
             },
-            "LATITUDE": {
+            "latitude": {
                "type": "number"
             },
-            "LATITUDE_TEST": {
+            "latitude_test": {
                "type": "number"
             },
-            "LAT_LONG_INFERRED": {
+            "legacy_depth_data": {
                "type": "string"
             },
-            "LEGACY_DEPTH_DATA": {
+            "longhurst_code": {
                "type": "string"
             },
-            "LONGHURST_CODE": {
-               "type": "string"
-            },
-            "LONGITUDE": {
+            "longitude": {
                "type": "number"
             },
-            "LONGITUDE_TEST": {
+            "longitude_test": {
                "type": "number"
             },
-            "MASTER_GROUP_ID": {
+            "master_group_id": {
                "type": "integer"
             },
-            "METHANE_CONC_MILLIMOL": {
+            "methane_conc_millimol": {
                "type": "number"
             },
-            "MOD_BY": {
+            "mod_by": {
                "type": "number"
             },
-            "MOD_DATE": {
+            "mod_date": {
                "type": "string"
             },
-            "MOTILITY": {
+            "motility": {
                "type": "string"
             },
-            "MRN": {
+            "mrn": {
                "type": "string"
             },
-            "NCBI_BIOSAMPLE_ID": {
+            "ncbi_biosample_id": {
                "type": "string"
             },
-            "NCBI_CLASS": {
+            "ncbi_class": {
                "type": "string"
             },
-            "NCBI_FAMILY": {
+            "ncbi_family": {
                "type": "string"
             },
-            "NCBI_GENUS": {
+            "ncbi_genus": {
                "type": "string"
             },
-            "NCBI_KINGDOM": {
+            "ncbi_kingdom": {
                "type": "string"
             },
-            "NCBI_ORDER": {
+            "ncbi_order": {
                "type": "string"
             },
-            "NCBI_PHYLUM": {
+            "ncbi_phylum": {
                "type": "string"
             },
-            "NCBI_SPECIES": {
+            "ncbi_species": {
                "type": "string"
             },
-            "NCBI_SUPERKINGDOM": {
+            "ncbi_superkingdom": {
                "type": "string"
             },
-            "NCBI_TAXONOMY_ID": {
+            "ncbi_taxonomy_id": {
                "type": "integer"
             },
-            "NCBI_TAXONOMY_NAME": {
+            "ncbi_taxonomy_name": {
                "type": "string"
             },
-            "NITRATE_CONCENTRATION": {
+            "nitrate_concentration": {
                "type": "string"
             },
-            "ORGANISM_NAME": {
+            "organism_name": {
                "type": "string"
             },
-            "ORGANISM_TYPE": {
+            "organism_type": {
                "type": "string"
             },
-            "OTHER_ECOSYSTEM": {
+            "other_ecosystem": {
                "type": "string"
             },
-            "OTHER_HOSTS": {
+            "other_hosts": {
                "type": "string"
             },
-            "OTHER_NAMES": {
+            "other_names": {
                "type": "string"
             },
-            "OXYGEN_CONCENTRATION": {
+            "oxygen_concentration": {
                "type": "string"
             },
-            "OXYGEN_REQUIREMENT": {
+            "oxygen_requirement": {
                "type": "string"
             },
-            "PATIENT_VISIT_NUMBER": {
+            "patient_visit_number": {
                "type": "number"
             },
-            "PH": {
+            "ph": {
                "type": "string"
             },
-            "PH1": {
+            "ph1": {
                "type": "number"
             },
-            "PH2": {
+            "ph2": {
                "type": "number"
             },
-            "PH_OLD": {
+            "ph_old": {
                "type": "string"
             },
-            "PRESSURE": {
+            "pressure": {
                "type": "string"
             },
-            "PROJECT_OID": {
+            "project_oid": {
                "type": "number"
             },
-            "PROPORT_ISOLATION": {
+            "proport_isolation": {
                "type": "string"
             },
-            "PROPORT_OCEAN": {
+            "proport_ocean": {
                "type": "string"
             },
-            "PROPORT_STATION": {
+            "proport_station": {
                "type": "string"
             },
-            "PROPORT_WOA_DISSOLVED_OXYGEN": {
+            "proport_woa_dissolved_oxygen": {
                "type": "number"
             },
-            "PROPORT_WOA_NITRATE": {
+            "proport_woa_nitrate": {
                "type": "number"
             },
-            "PROPORT_WOA_PHOSPHATE": {
+            "proport_woa_phosphate": {
                "type": "number"
             },
-            "PROPORT_WOA_SALINITY": {
+            "proport_woa_salinity": {
                "type": "number"
             },
-            "PROPORT_WOA_SILICATE": {
+            "proport_woa_silicate": {
                "type": "number"
             },
-            "PROPORT_WOA_TEMPERATURE": {
+            "proport_woa_temperature": {
                "type": "number"
             },
-            "PUBLIC_AP_COUNT": {
+            "public_ap_count": {
                "type": "number"
             },
-            "PUBLIC_SP_COUNT": {
+            "public_sp_count": {
                "type": "number"
             },
-            "REPLICATE_NUMBER": {
+            "replicate_number": {
                "type": "number"
             },
-            "SALINITY": {
+            "salinity": {
                "type": "string"
             },
-            "SALINITY_CONCENTRATION": {
+            "salinity_concentration": {
                "type": "string"
             },
-            "SAMPLE_BIOMASS": {
+            "sample_biomass": {
                "type": "string"
             },
-            "SAMPLE_COLLECTION_DAY": {
+            "sample_collection_day": {
                "type": "number"
             },
-            "SAMPLE_COLLECTION_HOUR": {
+            "sample_collection_hour": {
                "type": "number"
             },
-            "SAMPLE_COLLECTION_MINUTE": {
+            "sample_collection_minute": {
                "type": "number"
             },
-            "SAMPLE_COLLECTION_MONTH": {
+            "sample_collection_month": {
                "type": "number"
             },
-            "SAMPLE_COLLECTION_SITE": {
+            "sample_collection_site": {
                "type": "string"
             },
-            "SAMPLE_COLLECTION_TEMPERATURE": {
+            "sample_collection_temperature": {
                "type": "number"
             },
-            "SAMPLE_COLLECTION_TEMPERATURE2": {
+            "sample_collection_temperature2": {
                "type": "number"
             },
-            "SAMPLE_COLLECTION_YEAR": {
+            "sample_collection_year": {
                "type": "number"
             },
-            "SAMPLE_CONDUCTIVITY": {
+            "sample_conductivity": {
                "type": "string"
             },
-            "SAMPLE_CONTACT_EMAIL": {
+            "sample_contact_email": {
                "type": "string"
             },
-            "SAMPLE_CONTACT_NAME": {
+            "sample_contact_name": {
                "type": "string"
             },
-            "SAMPLE_ISOLATION_COMMENTS": {
+            "sample_isolation_comments": {
                "type": "string"
             },
-            "SAMPLE_ISOLATION_COUNTRY_ID": {
+            "sample_isolation_country_id": {
                "type": "integer"
             },
-            "SAMPLE_OID": {
+            "sample_oid": {
                "type": "number"
             },
-            "SAMPLE_VOLUME": {
+            "sample_volume": {
                "type": "string"
             },
-            "SAMPLE_WEIGHT_DNA_EXT": {
+            "sample_weight_dna_ext": {
                "type": "string"
             },
-            "SAMPLING_STRATEGY": {
+            "sampling_strategy": {
                "type": "string"
             },
-            "SEROVAR": {
+            "serovar": {
                "type": "string"
             },
-            "SOIL_AGROCHEM_ADDITION": {
+            "soil_agrochem_addition": {
                "type": "string"
             },
-            "SOIL_ALUMINIUM_SAT": {
+            "soil_aluminium_sat": {
                "type": "number"
             },
-            "SOIL_ALUMINIUM_SAT_METHOD": {
+            "soil_aluminium_sat_method": {
                "type": "string"
             },
-            "SOIL_CROP_ROTATION": {
+            "soil_crop_rotation": {
                "type": "string"
             },
-            "SOIL_CURR_LAND_USE": {
+            "soil_curr_land_use": {
                "type": "string"
             },
-            "SOIL_CURR_VEGETATION": {
+            "soil_curr_vegetation": {
                "type": "string"
             },
-            "SOIL_CURR_VEGETATION_METHOD": {
+            "soil_curr_vegetation_method": {
                "type": "string"
             },
-            "SOIL_DRAINAGE_CLASS": {
+            "soil_drainage_class": {
                "type": "string"
             },
-            "SOIL_EXTREME_EVENT": {
+            "soil_extreme_event": {
                "type": "string"
             },
-            "SOIL_FAO_CLASS": {
+            "soil_fao_class": {
                "type": "string"
             },
-            "SOIL_FIRE": {
+            "soil_fire": {
                "type": "string"
             },
-            "SOIL_FLOODING": {
+            "soil_flooding": {
                "type": "string"
             },
-            "SOIL_HEAVY_METALS": {
+            "soil_heavy_metals": {
                "type": "number"
             },
-            "SOIL_HEAVY_METALS_METHOD": {
+            "soil_heavy_metals_method": {
                "type": "string"
             },
-            "SOIL_HORIZON": {
+            "soil_horizon": {
                "type": "string"
             },
-            "SOIL_HORIZON_METHOD": {
+            "soil_horizon_method": {
                "type": "string"
             },
-            "SOIL_LINK_ADDIT_ANALYS": {
+            "soil_link_addit_analys": {
                "type": "string"
             },
-            "SOIL_LINK_CLASS_INFO": {
+            "soil_link_class_info": {
                "type": "string"
             },
-            "SOIL_LINK_CLIMATE_INFO": {
+            "soil_link_climate_info": {
                "type": "string"
             },
-            "SOIL_LOCAL_CLASS": {
+            "soil_local_class": {
                "type": "string"
             },
-            "SOIL_LOCAL_CLASS_METHOD": {
+            "soil_local_class_method": {
                "type": "string"
             },
-            "SOIL_MEAN_ANNUAL_PRECPT": {
+            "soil_mean_annual_precpt": {
                "type": "number"
             },
-            "SOIL_MEAN_ANNUAL_TEMP": {
+            "soil_mean_annual_temp": {
                "type": "number"
             },
-            "SOIL_MEAN_SEASONAL_PRECPT": {
+            "soil_mean_seasonal_precpt": {
                "type": "number"
             },
-            "SOIL_MEAN_SEASONAL_TEMP": {
+            "soil_mean_seasonal_temp": {
                "type": "number"
             },
-            "SOIL_MICROBIAL_BIOMASS": {
+            "soil_microbial_biomass": {
                "type": "string"
             },
-            "SOIL_MICROBIAL_BIOMASS_METHOD": {
+            "soil_microbial_biomass_method": {
                "type": "string"
             },
-            "SOIL_MISC_PARAM": {
+            "soil_misc_param": {
                "type": "string"
             },
-            "SOIL_PACKAGE_ID": {
+            "soil_package_id": {
                "type": "integer"
             },
-            "SOIL_PH_METHOD": {
+            "soil_ph_method": {
                "type": "string"
             },
-            "SOIL_POOL_DNA_EXTRACTS": {
+            "soil_pool_dna_extracts": {
                "type": "string"
             },
-            "SOIL_PREV_LAND_USE": {
+            "soil_prev_land_use": {
                "type": "string"
             },
-            "SOIL_PREV_LAND_USE_METH": {
+            "soil_prev_land_use_meth": {
                "type": "string"
             },
-            "SOIL_PROFILE_POSITION": {
+            "soil_profile_position": {
                "type": "string"
             },
-            "SOIL_SALINITY_METHOD": {
+            "soil_salinity_method": {
                "type": "string"
             },
-            "SOIL_SAMPLE_BIOMASS": {
+            "soil_sample_biomass": {
                "type": "number"
             },
-            "SOIL_SAMPLE_VOLUME": {
+            "soil_sample_volume": {
                "type": "number"
             },
-            "SOIL_SIEVING": {
+            "soil_sieving": {
                "type": "string"
             },
-            "SOIL_SLOPE_ASPECT": {
+            "soil_slope_aspect": {
                "type": "number"
             },
-            "SOIL_SLOPE_GRADIENT": {
+            "soil_slope_gradient": {
                "type": "number"
             },
-            "SOIL_STORAGE_CONDITION": {
+            "soil_storage_condition": {
                "type": "string"
             },
-            "SOIL_TEXTURE": {
+            "soil_texture": {
                "type": "string"
             },
-            "SOIL_TEXTURE_METHOD": {
+            "soil_texture_method": {
                "type": "string"
             },
-            "SOIL_TILLAGE": {
+            "soil_tillage": {
                "type": "string"
             },
-            "SOIL_TOT_N_METHOD": {
+            "soil_tot_n_method": {
                "type": "string"
             },
-            "SOIL_TOT_ORG_C_METHOD": {
+            "soil_tot_org_c_method": {
                "type": "string"
             },
-            "SOIL_TYPE": {
+            "soil_type": {
                "type": "string"
             },
-            "SOIL_TYPE_METHOD": {
+            "soil_type_method": {
                "type": "string"
             },
-            "SOIL_WATER_CONTENT": {
+            "soil_water_content": {
                "type": "string"
             },
-            "SOIL_WATER_CONTENT_SOIL_METH": {
+            "soil_water_content_soil_meth": {
                "type": "string"
             },
-            "SOLUBLE_IRON_MICROMOL": {
+            "soluble_iron_micromol": {
                "type": "number"
             },
-            "SOURCE": {
+            "source": {
                "type": "string"
             },
-            "SPECIES": {
+            "species": {
                "type": "string"
             },
-            "SPECIES_SYNONYMS": {
+            "species_synonyms": {
                "type": "string"
             },
-            "SPECIFIC_ECOSYSTEM": {
+            "specific_ecosystem": {
                "type": "string"
             },
-            "SPECIMEN": {
+            "specimen": {
                "type": "string"
             },
-            "SPORULATION": {
+            "sporulation": {
                "type": "string"
             },
-            "STRAIN": {
+            "strain": {
                "type": "string"
             },
-            "STRAININFO_GROUP_ID": {
+            "strain_info_id": {
                "type": "integer"
             },
-            "STRAIN_INFO_ID": {
+            "straininfo_group_id": {
                "type": "integer"
             },
-            "SUBMITTER_ID": {
-               "type": "integer"
-            },
-            "SUBMIT_BIOSAMPLE_NAME": {
+            "submit_biosample_name": {
                "type": "string"
             },
-            "SUBMIT_ORGANISM_NAME": {
+            "submit_organism_name": {
                "type": "string"
+            },
+            "submitter_id": {
+               "type": "integer"
             },
-            "SUBSPECIES": {
+            "subspecies": {
                "type": "string"
             },
-            "SUBSURFACE_DEPTH": {
+            "subsurface_depth": {
                "type": "number"
             },
-            "SUBSURFACE_DEPTH1": {
+            "subsurface_depth1": {
                "type": "number"
             },
-            "SUBSURFACE_DEPTH2": {
+            "subsurface_depth2": {
                "type": "number"
             },
-            "SYMBIONT_NAME": {
+            "symbiont_name": {
                "type": "string"
             },
-            "SYMBIONT_TAXON_ID": {
+            "symbiont_taxon_id": {
                "type": "integer"
             },
-            "SYMBIOTIC_PHYSICAL_INTERACTION": {
+            "symbiotic_physical_interaction": {
                "type": "string"
             },
-            "SYMBIOTIC_RELATIONSHIP": {
+            "symbiotic_relationship": {
                "type": "string"
             },
-            "SYNONYM_GROUP_ID": {
+            "synonym_group_id": {
                "type": "integer"
             },
-            "TAXONOMY_STATUS": {
+            "taxon_doi": {
                "type": "string"
             },
-            "TAXON_DOI": {
+            "taxonomy_status": {
                "type": "string"
             },
-            "TEMPERATURE_RANGE": {
+            "temperature_range": {
                "type": "string"
             },
-            "TOT_NITROGEN": {
+            "tot_nitrogen": {
                "type": "string"
             },
-            "TOT_ORG_CARBON": {
+            "tot_org_carbon": {
                "type": "number"
             },
-            "TYPE_STRAIN": {
+            "type_strain": {
                "type": "string"
             },
-            "UNCULTURED_TYPE": {
+            "uncultured_type": {
                "type": "string"
             },
-            "VIRAL_GROUP": {
+            "viral_group": {
                "type": "string"
             },
-            "VIRAL_SUBGROUP": {
+            "viral_subgroup": {
                "type": "string"
             },
-            "WATER_ALKALINITY": {
+            "water_alkalinity": {
                "type": "number"
             },
-            "WATER_ALKALINITY_METHOD": {
+            "water_alkalinity_method": {
                "type": "string"
             },
-            "WATER_ALKYL_DIETHERS": {
+            "water_alkyl_diethers": {
                "type": "number"
             },
-            "WATER_AMINOPEPT_ACT": {
+            "water_aminopept_act": {
                "type": "number"
             },
-            "WATER_AMMONIUM": {
+            "water_ammonium": {
                "type": "number"
             },
-            "WATER_ATMOSPHERIC_DATA": {
+            "water_atmospheric_data": {
                "type": "string"
             },
-            "WATER_BACTERIAL_CARBON_PROD": {
+            "water_bacterial_carbon_prod": {
                "type": "number"
             },
-            "WATER_BACTERIAL_PROD": {
+            "water_bacterial_prod": {
                "type": "number"
             },
-            "WATER_BACTERIAL_RESP": {
+            "water_bacterial_resp": {
                "type": "number"
             },
-            "WATER_BISHOMOHOPANOL": {
+            "water_bishomohopanol": {
                "type": "string"
             },
-            "WATER_BROMIDE": {
+            "water_bromide": {
                "type": "number"
             },
-            "WATER_CALCIUM": {
+            "water_calcium": {
                "type": "string"
             },
-            "WATER_CARBON_NITROG_RATIO": {
+            "water_carbon_nitrog_ratio": {
                "type": "string"
             },
-            "WATER_CHEM_ADMINISTRATION": {
+            "water_chem_administration": {
                "type": "string"
             },
-            "WATER_CHLORIDE": {
+            "water_chloride": {
                "type": "number"
             },
-            "WATER_CURRENT": {
+            "water_current": {
                "type": "string"
             },
-            "WATER_DENSITY": {
+            "water_density": {
                "type": "number"
             },
-            "WATER_DIETHER_LIPIDS": {
+            "water_diether_lipids": {
                "type": "number"
             },
-            "WATER_DISS_CARBON_DIOXIDE": {
+            "water_diss_carbon_dioxide": {
                "type": "number"
             },
-            "WATER_DISS_HYDROGEN": {
+            "water_diss_hydrogen": {
                "type": "number"
             },
-            "WATER_DISS_INORG_CARBON": {
+            "water_diss_inorg_carbon": {
                "type": "number"
             },
-            "WATER_DISS_INORG_NITRO": {
+            "water_diss_inorg_nitro": {
                "type": "number"
             },
-            "WATER_DISS_INORG_PHOSPHORUS": {
+            "water_diss_inorg_phosphorus": {
                "type": "number"
             },
-            "WATER_DISS_ORG_CARBON": {
+            "water_diss_org_carbon": {
                "type": "number"
             },
-            "WATER_DISS_ORG_NITROGEN": {
+            "water_diss_org_nitrogen": {
                "type": "number"
             },
-            "WATER_DOWNWARD_PAR": {
+            "water_downward_par": {
                "type": "number"
             },
-            "WATER_FLUORESCENCE": {
+            "water_fluorescence": {
                "type": "number"
             },
-            "WATER_GLUCOSIDASE_ACTIVITY": {
+            "water_glucosidase_activity": {
                "type": "number"
             },
-            "WATER_LIGHT_INTENSITY": {
+            "water_light_intensity": {
                "type": "number"
             },
-            "WATER_MAGNESIUM": {
+            "water_magnesium": {
                "type": "string"
             },
-            "WATER_MEAN_FRICT_VEL": {
+            "water_mean_frict_vel": {
                "type": "number"
             },
-            "WATER_MEAN_PEAK_FRICT_VEL": {
+            "water_mean_peak_frict_vel": {
                "type": "number"
             },
-            "WATER_MISC_PARAMETER": {
+            "water_misc_parameter": {
                "type": "string"
             },
-            "WATER_NITRITE": {
+            "water_n_alkanes": {
                "type": "number"
             },
-            "WATER_N_ALKANES": {
+            "water_nitrite": {
                "type": "number"
             },
-            "WATER_ORGANISM_COUNT": {
+            "water_org_matter": {
                "type": "number"
             },
-            "WATER_ORG_MATTER": {
+            "water_org_nitrogen": {
                "type": "number"
             },
-            "WATER_ORG_NITROGEN": {
+            "water_organism_count": {
                "type": "number"
             },
-            "WATER_OXY_STAT_SAMPLE": {
+            "water_oxy_stat_sample": {
                "type": "string"
             },
-            "WATER_PACKAGE_ID": {
+            "water_package_id": {
                "type": "integer"
             },
-            "WATER_PART_ORG_CARBON": {
+            "water_part_org_carbon": {
                "type": "number"
             },
-            "WATER_PART_ORG_NITROGEN": {
+            "water_part_org_nitrogen": {
                "type": "number"
             },
-            "WATER_PERTURBATION": {
+            "water_perturbation": {
                "type": "string"
             },
-            "WATER_PETROLEUM_HYDROCARBON": {
+            "water_petroleum_hydrocarbon": {
                "type": "number"
             },
-            "WATER_PHAEOPIGMENTS": {
+            "water_phaeopigments": {
                "type": "number"
             },
-            "WATER_PHOSPLIPID_FATT_ACID": {
+            "water_phosplipid_fatt_acid": {
                "type": "string"
             },
-            "WATER_PHOTON_FLUX": {
+            "water_photon_flux": {
                "type": "number"
             },
-            "WATER_POTASSIUM": {
+            "water_potassium": {
                "type": "number"
             },
-            "WATER_PRIMARY_PROD": {
+            "water_primary_prod": {
                "type": "number"
             },
-            "WATER_REDOX_POTENTIAL": {
+            "water_redox_potential": {
                "type": "number"
             },
-            "WATER_SAMP_STORE_DUR": {
+            "water_samp_store_dur": {
                "type": "string"
             },
-            "WATER_SAMP_STORE_LOC": {
+            "water_samp_store_loc": {
                "type": "string"
             },
-            "WATER_SAMP_STORE_TEMP": {
+            "water_samp_store_temp": {
                "type": "number"
             },
-            "WATER_SIZE_FRAC_LOW": {
+            "water_size_frac_low": {
                "type": "number"
             },
-            "WATER_SIZE_FRAC_UP": {
+            "water_size_frac_up": {
                "type": "number"
             },
-            "WATER_SODIUM": {
+            "water_sodium": {
                "type": "number"
             },
-            "WATER_SOLUBLE_REACT_PHOSP": {
+            "water_soluble_react_phosp": {
                "type": "number"
             },
-            "WATER_SULFATE": {
+            "water_sulfate": {
                "type": "string"
             },
-            "WATER_SULFIDE": {
+            "water_sulfide": {
                "type": "string"
             },
-            "WATER_SUSPEND_PART_MATTER": {
+            "water_suspend_part_matter": {
                "type": "number"
             },
-            "WATER_TIDAL_STAGE": {
+            "water_tidal_stage": {
                "type": "string"
             },
-            "WATER_TOT_DEPTH_WATER_COL": {
+            "water_tot_depth_water_col": {
                "type": "number"
             },
-            "WATER_TOT_DISS_NITRO": {
+            "water_tot_diss_nitro": {
                "type": "number"
             },
-            "WATER_TOT_INORG_NITRO": {
+            "water_tot_inorg_nitro": {
                "type": "number"
             },
-            "WATER_TOT_PART_CARBON": {
+            "water_tot_part_carbon": {
                "type": "string"
             },
-            "WATER_TOT_PHOSPHORUS": {
+            "water_tot_phosphorus": {
                "type": "number"
             },
-            "WATER_TURBIDITY": {
+            "water_turbidity": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "ORGANISMV2",
+         "title": "OrganismV2",
          "type": "object"
       },
-      "PROJECT": {
+      "Project": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "ACTIVE": {
+            "active": {
                "type": "string"
             },
-            "ADD_DATE": {
+            "add_date": {
                "type": "string"
             },
-            "ADMIN_AP_COUNT": {
+            "admin_ap_count": {
                "type": "number"
             },
-            "ADMIN_DAP_COUNT": {
+            "admin_dap_count": {
                "type": "number"
             },
-            "ANNOTATOR_COMMENTS": {
+            "annotator_comments": {
                "type": "string"
             },
-            "ASSEMBLY_ACCESSION": {
+            "assembly_accession": {
                "type": "string"
             },
-            "CHROMOSOME_COUNT": {
+            "chromosome_count": {
                "type": "number"
             },
-            "COMPLETION_DATE": {
+            "completion_date": {
                "type": "string"
             },
-            "CONTIG_COUNT": {
+            "contig_count": {
                "type": "number"
             },
-            "DESCRIPTION": {
+            "description": {
                "type": "string"
             },
-            "EST_COUNT": {
+            "est_count": {
                "type": "number"
             },
-            "EST_SIZE": {
+            "est_size": {
                "type": "number"
             },
-            "EXPERIMENTAL_CONDITIONS": {
+            "experimental_conditions": {
                "type": "string"
             },
-            "FINISHING_GOAL_ID": {
+            "finishing_goal_id": {
                "type": "integer"
             },
-            "FUNDING_PROGRAM": {
+            "funding_program": {
                "type": "string"
             },
-            "FUNDING_YEAR": {
+            "funding_year": {
                "type": "number"
             },
-            "GC_PERCENT": {
+            "gc_percent": {
                "type": "number"
             },
-            "GOLD_ID": {
+            "gold_id": {
                "type": "string"
             },
-            "GPTS_DISAMBIGUATOR": {
+            "gpts_disambiguator": {
                "type": "string"
-            },
-            "GPTS_PROPOSAL_ID": {
-               "type": "integer"
             },
-            "GPTS_SAMPLE_ID": {
+            "gpts_proposal_id": {
                "type": "integer"
             },
-            "ISOLATION_PUBLICATION_ID": {
+            "gpts_sample_id": {
                "type": "integer"
             },
-            "IS_APPROVED": {
+            "is_approved": {
                "type": "string"
             },
-            "IS_DRAFT": {
+            "is_draft": {
                "type": "string"
             },
-            "IS_JGI": {
+            "is_jgi": {
                "type": "string"
             },
-            "IS_LOCKED": {
+            "is_locked": {
                "type": "string"
             },
-            "IS_PUBLIC": {
+            "is_public": {
                "type": "string"
             },
-            "IS_SINGLE_CELL_MATERIAL": {
+            "is_single_cell_material": {
                "type": "string"
             },
-            "IS_TEST": {
+            "is_test": {
                "type": "string"
+            },
+            "isolation_publication_id": {
+               "type": "integer"
             },
-            "ITS_PROJECT_NAME": {
+            "its_project_name": {
                "type": "string"
             },
-            "ITS_PROPOSAL_ID": {
+            "its_proposal_id": {
                "type": "integer"
             },
-            "ITS_SAMPLE_GROUP_NAME": {
+            "its_sample_group_name": {
                "type": "string"
             },
-            "ITS_SAMPLE_ID": {
+            "its_sample_id": {
                "type": "integer"
             },
-            "ITS_SAMPLE_NAME": {
+            "its_sample_name": {
                "type": "string"
             },
-            "ITS_SEQUENCING_PRODUCT_NAME": {
+            "its_sequencing_product_name": {
                "type": "string"
             },
-            "ITS_SPID": {
+            "its_spid": {
                "type": "number"
             },
-            "LEGACY_GOLD_ID": {
+            "legacy_gold_id": {
                "type": "string"
             },
-            "LIBRARY_METHOD": {
+            "library_method": {
                "type": "string"
             },
-            "LOW_QUALITY_GENOME": {
+            "low_quality_genome": {
                "type": "string"
             },
-            "MASTER_STUDY_ID": {
+            "master_study_id": {
                "type": "integer"
             },
-            "MOD_BY": {
+            "mod_by": {
                "type": "number"
             },
-            "MOD_DATE": {
+            "mod_date": {
                "type": "string"
             },
-            "NCBI_BIOPROJECT_ACCESSION": {
+            "ncbi_bioproject_accession": {
                "type": "string"
             },
-            "NCBI_BIOPROJECT_ID": {
+            "ncbi_bioproject_id": {
                "type": "integer"
             },
-            "NCBI_BIOSAMPLE_ACCESSION": {
+            "ncbi_biosample_accession": {
                "type": "string"
             },
-            "NCBI_LOCUS_TAG": {
+            "ncbi_locus_tag": {
                "type": "string"
             },
-            "NCBI_PROJECT_NAME": {
+            "ncbi_project_name": {
                "type": "string"
             },
-            "NCBI_SRA_ID": {
+            "ncbi_sra_id": {
                "type": "string"
             },
-            "NUCLEIC_ACID": {
+            "nucleic_acid": {
                "type": "string"
             },
-            "NUCLEIC_ACID_ID": {
+            "nucleic_acid_id": {
                "type": "integer"
             },
-            "OLD_LEGACY_GOLD_ID": {
+            "old_legacy_gold_id": {
                "type": "string"
             },
-            "ORGANISM_ID": {
+            "organism_id": {
                "type": "integer"
             },
-            "ORGANISM_TYPE": {
+            "organism_type": {
                "type": "string"
             },
-            "OTHER_PROJECT_NAMES": {
+            "other_project_names": {
                "type": "string"
             },
-            "PI_ID": {
+            "pi_id": {
                "type": "integer"
             },
-            "PLASMID_COUNT": {
+            "plasmid_count": {
                "type": "number"
             },
-            "PMO_PROJECT_ID": {
+            "pmo_project_id": {
                "type": "integer"
             },
-            "PROJECT_COMMENTS": {
+            "project_comments": {
                "type": "string"
             },
-            "PROJECT_MANAGER_ID": {
+            "project_manager_id": {
                "type": "integer"
             },
-            "PROJECT_NAME": {
+            "project_name": {
                "type": "string"
             },
-            "PROJECT_OID": {
+            "project_oid": {
                "type": "number"
             },
-            "PROJECT_STATUS": {
+            "project_status": {
                "type": "string"
             },
-            "PROJECT_SUBTYPE": {
+            "project_subtype": {
                "type": "string"
             },
-            "PUBLIC_AP_COUNT": {
+            "public_ap_count": {
                "type": "number"
             },
-            "PUBLIC_DAP_COUNT": {
+            "public_dap_count": {
                "type": "number"
             },
-            "READ_COUNT": {
+            "read_count": {
                "type": "string"
             },
-            "READ_SIZE": {
+            "read_size": {
                "type": "string"
             },
-            "SAMPLE_GROUP_NAME": {
+            "sample_group_name": {
                "type": "string"
             },
-            "SAMPLE_OID": {
+            "sample_oid": {
                "type": "number"
             },
-            "SCAFFOLD_COUNT": {
+            "scaffold_count": {
                "type": "number"
             },
-            "SEQUENCING_COMMENTS": {
+            "sequencing_comments": {
                "type": "string"
             },
-            "SEQUENCING_QUALITY_ID": {
+            "sequencing_quality_id": {
                "type": "integer"
             },
-            "SEQUENCING_STATUS_ID": {
+            "sequencing_status_id": {
                "type": "integer"
             },
-            "SEQUENCING_STRATEGY": {
+            "sequencing_strategy": {
                "type": "string"
             },
-            "SEQUENCING_STRATEGY_FULL": {
+            "sequencing_strategy_full": {
                "type": "string"
             },
-            "SPECIMEN_ID": {
+            "specimen_id": {
                "type": "integer"
             },
-            "SRA_SRS_ACCESSION": {
+            "sra_srs_accession": {
                "type": "string"
             },
-            "SRA_SRX_ACCESSION": {
+            "sra_srx_accession": {
                "type": "string"
             },
-            "SUBMITTER_ID": {
+            "submitter_id": {
                "type": "integer"
             },
-            "SUBMITTER_PROJECT_NAME": {
+            "submitter_project_name": {
                "type": "string"
             },
-            "VECTOR": {
+            "vector": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "PROJECT",
+         "title": "Project",
          "type": "object"
       },
-      "PROJECTANALYSISPROJECT": {
+      "ProjectAnalysisProject": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "ANALYSIS_PROJECT_ID": {
+            "analysis_project_id": {
                "type": "integer"
             }
          },
          "required": [],
-         "title": "PROJECTANALYSISPROJECT",
+         "title": "ProjectAnalysisProject",
          "type": "object"
       },
-      "PROJECTBIOSAMPLE": {
+      "ProjectBiosample": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "BIOSAMPLE_ID": {
+            "biosample_id": {
                "type": "integer"
             }
          },
          "required": [],
-         "title": "PROJECTBIOSAMPLE",
+         "title": "ProjectBiosample",
          "type": "object"
       },
-      "PROJECTCOLLABORATOR": {
+      "ProjectCollaborator": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "INSTITUTION_ID": {
+            "institution_id": {
                "type": "integer"
             }
          },
          "required": [],
-         "title": "PROJECTCOLLABORATOR",
+         "title": "ProjectCollaborator",
          "type": "object"
       },
-      "PROJECTFUNDINGAGENCY": {
+      "ProjectFundingAgency": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "INSTITUTION_ID": {
+            "institution_id": {
                "type": "integer"
             }
          },
          "required": [],
-         "title": "PROJECTFUNDINGAGENCY",
+         "title": "ProjectFundingAgency",
          "type": "object"
       },
-      "PROJECTGENOMEPUBLICATION": {
+      "ProjectGenomePublication": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "PUBLICATION_ID": {
+            "publication_id": {
                "type": "integer"
             }
          },
          "required": [],
-         "title": "PROJECTGENOMEPUBLICATION",
+         "title": "ProjectGenomePublication",
          "type": "object"
       },
-      "PROJECTOTHERPUBLICATION": {
+      "ProjectOtherPublication": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "PUBLICATION_ID": {
+            "publication_id": {
                "type": "integer"
             }
          },
          "required": [],
-         "title": "PROJECTOTHERPUBLICATION",
+         "title": "ProjectOtherPublication",
          "type": "object"
       },
-      "PROJECTRELEVANCE": {
+      "ProjectRelevance": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "RELEVANCE_ID": {
+            "relevance_id": {
                "type": "integer"
             }
          },
          "required": [],
-         "title": "PROJECTRELEVANCE",
+         "title": "ProjectRelevance",
          "type": "object"
       },
-      "PROJECTSEQUENCINGCENTER": {
+      "ProjectSequencingCenter": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "INSTITUTION_ID": {
+            "institution_id": {
                "type": "integer"
             }
          },
          "required": [],
-         "title": "PROJECTSEQUENCINGCENTER",
+         "title": "ProjectSequencingCenter",
          "type": "object"
       },
-      "PROJECTSEQUENCINGMETHOD": {
+      "ProjectSequencingMethod": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "SEQUENCING_METHOD_ID": {
+            "sequencing_method_id": {
                "type": "integer"
             }
          },
          "required": [],
-         "title": "PROJECTSEQUENCINGMETHOD",
+         "title": "ProjectSequencingMethod",
          "type": "object"
       },
-      "PUBLICATION": {
+      "Publication": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "ABSTRACT": {
+            "abstract": {
                "type": "string"
             },
-            "AFFILIATION": {
+            "affiliation": {
                "type": "string"
             },
-            "DOI": {
+            "doi": {
                "type": "string"
             },
-            "FIRST_AUTHOR_ID": {
+            "first_author_id": {
                "type": "integer"
             },
-            "ISSUE": {
+            "issue": {
                "type": "string"
             },
-            "JOURNAL_ID": {
+            "journal_id": {
                "type": "integer"
             },
-            "LAST_AUTHOR_ID": {
+            "last_author_id": {
                "type": "integer"
             },
-            "PAGE": {
+            "page": {
                "type": "string"
             },
-            "PUBLICATION_DATE": {
+            "publication_date": {
                "type": "string"
             },
-            "PUBMED_ID": {
+            "pubmed_id": {
                "type": "integer"
             },
-            "PUBMODEL": {
+            "pubmodel": {
                "type": "string"
             },
-            "TITLE": {
+            "title": {
                "type": "string"
             },
-            "VOLUME": {
+            "volume": {
                "type": "string"
             }
          },
          "required": [],
-         "title": "PUBLICATION",
+         "title": "Publication",
          "type": "object"
       },
-      "STUDY": {
+      "Study": {
          "additionalProperties": false,
          "description": "",
          "properties": {
-            "ACTIVE": {
+            "active": {
                "type": "string"
             },
-            "ADD_DATE": {
+            "add_date": {
                "type": "string"
             },
-            "ADMIN_AP_COUNT": {
+            "admin_ap_count": {
                "type": "number"
             },
-            "ADMIN_BIOSAMPLE_COUNT": {
+            "admin_biosample_count": {
                "type": "number"
             },
-            "ADMIN_DAP_COUNT": {
+            "admin_dap_count": {
                "type": "number"
             },
-            "ADMIN_SP_COUNT": {
+            "admin_sp_count": {
                "type": "number"
             },
-            "BIOPROJECT_NAME": {
+            "bioproject_name": {
                "type": "string"
             },
-            "CONTACT_ID": {
+            "contact_id": {
                "type": "integer"
             },
-            "DESCRIPTION": {
+            "description": {
                "type": "string"
             },
-            "ECOSYSTEM": {
+            "ecosystem": {
                "type": "string"
             },
-            "ECOSYSTEM_CATEGORY": {
+            "ecosystem_category": {
                "type": "string"
             },
-            "ECOSYSTEM_PATH_ID": {
+            "ecosystem_path_id": {
                "type": "integer"
             },
-            "ECOSYSTEM_SUBTYPE": {
+            "ecosystem_subtype": {
                "type": "string"
             },
-            "ECOSYSTEM_TYPE": {
+            "ecosystem_type": {
                "type": "string"
             },
-            "GOLD_ID": {
+            "gold_id": {
                "type": "string"
             },
-            "GOLD_STUDY_NAME": {
+            "gold_study_name": {
                "type": "string"
             },
-            "GPTS_PROPOSAL_ID": {
+            "gpts_proposal_id": {
                "type": "integer"
             },
-            "IS_DRAFT": {
+            "is_draft": {
                "type": "string"
             },
-            "IS_GEBA": {
+            "is_geba": {
                "type": "string"
             },
-            "IS_HMP": {
+            "is_hmp": {
                "type": "string"
             },
-            "IS_PUBLIC": {
+            "is_public": {
                "type": "string"
             },
-            "IS_TEST": {
+            "is_test": {
                "type": "string"
             },
-            "ITS_PROPOSAL_ID": {
+            "its_proposal_id": {
                "type": "integer"
             },
-            "LAST_MOD_BY": {
+            "last_mod_by": {
                "type": "number"
             },
-            "LEGACY_GOLD_ID": {
+            "legacy_gold_id": {
                "type": "string"
             },
-            "METAGENOMIC": {
+            "metagenomic": {
                "type": "string"
             },
-            "MOD_DATE": {
+            "mod_date": {
                "type": "string"
             },
-            "NCBI_PROJECT_ID": {
+            "ncbi_project_id": {
                "type": "integer"
             },
-            "OWNER_ID": {
+            "owner_id": {
                "type": "integer"
             },
-            "PROJECT_OID": {
+            "project_oid": {
                "type": "number"
             },
-            "PUBLIC_AP_COUNT": {
+            "public_ap_count": {
                "type": "number"
             },
-            "PUBLIC_BIOSAMPLE_COUNT": {
+            "public_biosample_count": {
                "type": "number"
             },
-            "PUBLIC_DAP_COUNT": {
+            "public_dap_count": {
                "type": "number"
             },
-            "PUBLIC_SP_COUNT": {
+            "public_sp_count": {
                "type": "number"
             },
-            "SPECIFIC_ECOSYSTEM": {
+            "specific_ecosystem": {
                "type": "string"
             },
-            "STUDY_NAME": {
+            "study_name": {
                "type": "string"
             },
-            "STUDY_TYPE_ID": {
+            "study_type_id": {
                "type": "integer"
             }
          },
          "required": [],
-         "title": "STUDY",
+         "title": "Study",
          "type": "object"
       }
    },

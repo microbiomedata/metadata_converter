@@ -1,0 +1,436 @@
+{
+   "$id": "https://microbiomedata/schema/emp",
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "definitions": {
+      "Sample": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "BarcodeSequence": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "Description": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "LinkerPrimerSequence": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "SampleID": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "adiv_chao1": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "adiv_faith_pd": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "adiv_observed_otus": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "adiv_shannon": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "altitude_m": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "ammonium_umol_per_l": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "collection_timestamp": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "country": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "depth_m": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "doi": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "ebi_accession": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "elevation_m": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "emp_release1": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "empo_0": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "empo_1": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "empo_2": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "empo_3": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "env_biome": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "env_feature": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "env_material": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "envo_biome_0": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "envo_biome_1": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "envo_biome_2": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "envo_biome_3": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "envo_biome_4": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "envo_biome_5": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "extraction_center": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "host_class": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "host_common_name": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "host_common_name_provided": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "host_family": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "host_genus": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "host_kingdom": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "host_order": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "host_phylum": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "host_scientific_name": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "host_species": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "host_subject_id": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "host_superkingdom": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "host_taxid": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "illumina_technology": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "latitude_deg": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "longitude_deg": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "nitrate_umol_per_l": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "observations_closed_ref_greengenes": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "observations_closed_ref_silva": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "observations_deblur_100bp": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "observations_deblur_150bp": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "observations_deblur_90bp": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "observations_open_ref_greengenes": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "oxygen_mg_per_l": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "pcr_primers": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "ph": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "phosphate_umol_per_l": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "principal_investigator": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "qc_filtered": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "read_length_bp": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "run_center": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "run_date": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "salinity_psu": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "sample_scientific_name": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "sample_taxid": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "sequences_split_libraries": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "study_id": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "subset_10k": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "subset_2k": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "subset_5k": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "sulfate_umol_per_l": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "target_gene": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "target_subfragment": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "temperature_deg_c": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "title": {
+               "description": "TODO",
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "Sample",
+         "type": "object"
+      },
+      "Study": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "alias": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "coauthors": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "comment_from_gail": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "dense_sampling": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "doi": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "ebi_accession": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "email": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "extraction_center": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "institution": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "ix": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "metadata_minimal": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "modified_protocol": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "num_samples": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "pcr_primers": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "pmid_other": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "primer_reference": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "primer_version": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "principal_investigator": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "publication_notes": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "read_length_bp": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "release1_study": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "release2_study": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "study_id": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "study_ok": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "title": {
+               "description": "TODO",
+               "type": "string"
+            },
+            "units_status": {
+               "description": "TODO",
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "Study",
+         "type": "object"
+      }
+   },
+   "properties": {},
+   "title": "emp",
+   "type": "object"
+}
+

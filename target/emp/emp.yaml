@@ -1,0 +1,497 @@
+id: https://microbiomedata/schema/emp
+description: NMDC rendering of EMP metadata schema
+imports:
+- biolinkml:types
+prefixes:
+  biolinkml: https://w3id.org/biolink/biolinkml/
+  emp: https://microbiomedata/schema/emp/
+default_prefix: emp
+
+classes:
+  study:
+    slots:
+     - ix
+     - study_id
+     - title
+     - num_samples
+     - extraction_center
+     - modified_protocol
+     - principal_investigator
+     - email
+     - institution
+     - coauthors
+     - doi
+     - pmid_other
+     - ebi_accession
+     - publication_notes
+     - alias
+     - primer_version
+     - primer_reference
+     - pcr_primers
+     - read_length_bp
+     - study_ok
+     - release1_study
+     - release2_study
+     - metadata_minimal
+     - dense_sampling
+     - units_status
+     - comment_from_gail
+      
+  sample:
+    slots:
+     - SampleID
+     - BarcodeSequence
+     - LinkerPrimerSequence
+     - Description
+     - host_subject_id
+     - study_id
+     - title
+     - principal_investigator
+     - doi
+     - ebi_accession
+     - target_gene
+     - target_subfragment
+     - pcr_primers
+     - illumina_technology
+     - extraction_center
+     - run_center
+     - run_date
+     - read_length_bp
+     - sequences_split_libraries
+     - observations_closed_ref_greengenes
+     - observations_closed_ref_silva
+     - observations_open_ref_greengenes
+     - observations_deblur_90bp
+     - observations_deblur_100bp
+     - observations_deblur_150bp
+     - emp_release1
+     - qc_filtered
+     - subset_10k
+     - subset_5k
+     - subset_2k
+     - sample_taxid
+     - sample_scientific_name
+     - host_taxid
+     - host_common_name_provided
+     - host_common_name
+     - host_scientific_name
+     - host_superkingdom
+     - host_kingdom
+     - host_phylum
+     - host_class
+     - host_order
+     - host_family
+     - host_genus
+     - host_species
+     - collection_timestamp
+     - country
+     - latitude_deg
+     - longitude_deg
+     - depth_m
+     - altitude_m
+     - elevation_m
+     - env_biome
+     - env_feature
+     - env_material
+     - envo_biome_0
+     - envo_biome_1
+     - envo_biome_2
+     - envo_biome_3
+     - envo_biome_4
+     - envo_biome_5
+     - empo_0
+     - empo_1
+     - empo_2
+     - empo_3
+     - adiv_observed_otus
+     - adiv_chao1
+     - adiv_shannon
+     - adiv_faith_pd
+     - temperature_deg_c
+     - ph
+     - salinity_psu
+     - oxygen_mg_per_l
+     - phosphate_umol_per_l
+     - ammonium_umol_per_l
+     - nitrate_umol_per_l
+     - sulfate_umol_per_l           
+
+slots:
+  SampleID:
+    range: string
+    description: "TODO"
+
+  BarcodeSequence:
+    range: string
+    description: "TODO"
+
+  LinkerPrimerSequence:
+    range: string
+    description: "TODO"
+
+  Description:
+    range: string
+    description: "TODO"
+
+  host_subject_id:
+    range: string
+    description: "TODO"
+
+  study_id:
+    range: string
+    description: "TODO"
+
+  title:
+    range: string
+    description: "TODO"
+
+  principal_investigator:
+    range: string
+    description: "TODO"
+
+  doi:
+    range: string
+    description: "TODO"
+
+  ebi_accession:
+    range: string
+    description: "TODO"
+
+  target_gene:
+    range: string
+    description: "TODO"
+
+  target_subfragment:
+    range: string
+    description: "TODO"
+
+  pcr_primers:
+    range: string
+    description: "TODO"
+
+  illumina_technology:
+    range: string
+    description: "TODO"
+
+  extraction_center:
+    range: string
+    description: "TODO"
+
+  run_center:
+    range: string
+    description: "TODO"
+
+  run_date:
+    range: string
+    description: "TODO"
+
+  read_length_bp:
+    range: string
+    description: "TODO"
+
+  sequences_split_libraries:
+    range: string
+    description: "TODO"
+
+  observations_closed_ref_greengenes:
+    range: string
+    description: "TODO"
+
+  observations_closed_ref_silva:
+    range: string
+    description: "TODO"
+
+  observations_open_ref_greengenes:
+    range: string
+    description: "TODO"
+
+  observations_deblur_90bp:
+    range: string
+    description: "TODO"
+
+  observations_deblur_100bp:
+    range: string
+    description: "TODO"
+
+  observations_deblur_150bp:
+    range: string
+    description: "TODO"
+
+  emp_release1:
+    range: string
+    description: "TODO"
+
+  qc_filtered:
+    range: string
+    description: "TODO"
+
+  subset_10k:
+    range: string
+    description: "TODO"
+
+  subset_5k:
+    range: string
+    description: "TODO"
+
+  subset_2k:
+    range: string
+    description: "TODO"
+
+  sample_taxid:
+    range: string
+    description: "TODO"
+
+  sample_scientific_name:
+    range: string
+    description: "TODO"
+
+  host_taxid:
+    range: string
+    description: "TODO"
+
+  host_common_name_provided:
+    range: string
+    description: "TODO"
+
+  host_common_name:
+    range: string
+    description: "TODO"
+
+  host_scientific_name:
+    range: string
+    description: "TODO"
+
+  host_superkingdom:
+    range: string
+    description: "TODO"
+
+  host_kingdom:
+    range: string
+    description: "TODO"
+
+  host_phylum:
+    range: string
+    description: "TODO"
+
+  host_class:
+    range: string
+    description: "TODO"
+
+  host_order:
+    range: string
+    description: "TODO"
+
+  host_family:
+    range: string
+    description: "TODO"
+
+  host_genus:
+    range: string
+    description: "TODO"
+
+  host_species:
+    range: string
+    description: "TODO"
+
+  collection_timestamp:
+    range: string
+    description: "TODO"
+
+  country:
+    range: string
+    description: "TODO"
+
+  latitude_deg:
+    range: string
+    description: "TODO"
+
+  longitude_deg:
+    range: string
+    description: "TODO"
+
+  depth_m:
+    range: string
+    description: "TODO"
+
+  altitude_m:
+    range: string
+    description: "TODO"
+
+  elevation_m:
+    range: string
+    description: "TODO"
+
+  env_biome:
+    range: string
+    description: "TODO"
+
+  env_feature:
+    range: string
+    description: "TODO"
+
+  env_material:
+    range: string
+    description: "TODO"
+
+  envo_biome_0:
+    range: string
+    description: "TODO"
+
+  envo_biome_1:
+    range: string
+    description: "TODO"
+
+  envo_biome_2:
+    range: string
+    description: "TODO"
+
+  envo_biome_3:
+    range: string
+    description: "TODO"
+
+  envo_biome_4:
+    range: string
+    description: "TODO"
+
+  envo_biome_5:
+    range: string
+    description: "TODO"
+
+  empo_0:
+    range: string
+    description: "TODO"
+
+  empo_1:
+    range: string
+    description: "TODO"
+
+  empo_2:
+    range: string
+    description: "TODO"
+
+  empo_3:
+    range: string
+    description: "TODO"
+
+  adiv_observed_otus:
+    range: string
+    description: "TODO"
+
+  adiv_chao1:
+    range: string
+    description: "TODO"
+
+  adiv_shannon:
+    range: string
+    description: "TODO"
+
+  adiv_faith_pd:
+    range: string
+    description: "TODO"
+
+  temperature_deg_c:
+    range: string
+    description: "TODO"
+
+  ph:
+    range: string
+    description: "TODO"
+
+  salinity_psu:
+    range: string
+    description: "TODO"
+
+  oxygen_mg_per_l:
+    range: string
+    description: "TODO"
+
+  phosphate_umol_per_l:
+    range: string
+    description: "TODO"
+
+  ammonium_umol_per_l:
+    range: string
+    description: "TODO"
+
+  nitrate_umol_per_l:
+    range: string
+    description: "TODO"
+
+  sulfate_umol_per_l:
+    range: string
+    description: "TODO"
+
+## study slots
+
+  ix:
+    range: string
+    description: "TODO"
+
+  num_samples:
+    range: string
+    description: "TODO"
+
+  modified_protocol:
+    range: string
+    description: "TODO"
+
+  email:
+    range: string
+    description: "TODO"
+
+  institution:
+    range: string
+    description: "TODO"
+
+  coauthors:
+    range: string
+    description: "TODO"
+
+  pmid_other:
+    range: string
+    description: "TODO"
+
+  publication_notes:
+    range: string
+    description: "TODO"
+
+  alias:
+    range: string
+    description: "TODO"
+
+  primer_version:
+    range: string
+    description: "TODO"
+
+  primer_reference:
+    range: string
+    description: "TODO"
+
+  study_ok:
+    range: string
+    description: "TODO"
+
+  release1_study:
+    range: string
+    description: "TODO"
+
+  release2_study:
+    range: string
+    description: "TODO"
+
+  metadata_minimal:
+    range: string
+    description: "TODO"
+
+  dense_sampling:
+    range: string
+    description: "TODO"
+
+  units_status:
+    range: string
+    description: "TODO"
+
+  comment_from_gail:
+    range: string
+    description: "TODO"
+

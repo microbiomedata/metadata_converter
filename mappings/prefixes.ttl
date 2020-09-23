@@ -13,6 +13,8 @@
     [ sh:prefix "PATO" ; sh:namespace "http://purl.obolibrary.org/obo/PATO_"],
     [ sh:prefix "OBI" ; sh:namespace "http://purl.obolibrary.org/obo/OBI_"],
     [ sh:prefix "BCO" ; sh:namespace "http://purl.obolibrary.org/obo/BCO_"],
+    [ sh:prefix "AGRO" ; sh:namespace "http://purl.obolibrary.org/obo/AGRO_"],
+    [ sh:prefix "CHEBI" ; sh:namespace "http://purl.obolibrary.org/obo/CHEBI_"],
     [ sh:prefix "mixs" ; sh:namespace "https://microbiomedata/schema/mixs#"],
     [ sh:prefix "dwc" ; sh:namespace "http://rs.tdwg.org/dwc/terms/"],
     [ sh:prefix "kbase" ; sh:namespace "http://kbase.us/"],

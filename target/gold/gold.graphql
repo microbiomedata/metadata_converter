@@ -1,1348 +1,1348 @@
-type ANALYSISPROJECT
-  {
-    iTSANALYSISPROJECTID: Integer
-    aNALYSISPROJECTNAME: String
-    gOLDID: String
-    rEFERENCEAPID: Integer
-    iMGTAXONID: Integer
-    aNALYSISPROJECTTYPE: String
-    sTATUSID: Integer
-    cOMMENTS: String
-    nCBITAXID: Integer
-    iSPUBLIC: String
-    aDDEDBY: Double
-    aDDDATE: Time
-    pIID: Integer
-    sUBMISSIONID: Integer
-    sCAFFOLDCOUNT: Double
-    cONTIGCOUNT: Double
-    gENECOUNT: Double
-    bINNINGMETHOD: String
-    gENECALLINGMETHOD: String
-    iTSANALYSISPROJECTNAME: String
-    iTSPRODUCTNAME: String
-    cOMPLETIONDATE: Time
-    eSTSIZE: Double
-    gENBANKLOWQUALITYANNOTATION: String
-    eCOSYSTEM: String
-    eCOSYSTEMCATEGORY: String
-    eCOSYSTEMTYPE: String
-    eCOSYSTEMSUBTYPE: String
-    sPECIFICECOSYSTEM: String
-    iMGANALYSISCOMPLETE: String
-    iSGENEPRIMP: String
-    iSDECONTAMINATION: String
-    iSIMGANNOTATION: String
-    iTSANNOTATIONATID: Integer
-    iSASSEMBLEDDELETED: String
-    sTUDYID: Integer
-    sPECIMEN: String
-    iTSASSEMBLYATTYPE: String
-    dOMAIN: String
-    nCBIPHYLUM: String
-    nCBICLASS: String
-    nCBIORDER: String
-    nCBIFAMILY: String
-    nCBIGENUS: String
-    nCBISPECIES: String
-    aPPENDEDAPNAME: String
-    mODBY: Double
-    mODDATE: Time
-    pINAME: String
-    aNALYSISPROJECTNAMEFULL: String
-    iSPRIMARY: String
-    gOLDPHYLOGENY: String
-    pHYLOGENYSUGGESTION: String
-    rEPLACESAPID: Integer
-    nCBIBIOPROJECTID: Integer
-    sCREENINGMETHOD: String
-    dECONTAMINATIONMETHOD: String
-    nCBIBIOSAMPLEACCESSION: String
-    nCBIBIOPROJECTACCESSION: String
-    cOMPLETION: String
-    nCBIKINGDOM: String
-    rEVIEWSTATUS: String
-    rEJECTIONREASONS: String
-    oRGANISMID: Integer
-    pIPELINEANNOTATIONMETHOD: String
-    gENUS: String
-    sPECIES: String
-    sUBSPECIES: String
-    cULTURECOLLECTION: String
-    sEROVAR: String
-    sTRAIN: String
-    eCOSYSTEMPATHID: Integer
-    sEQUENCINGDEPTH: String
-    iMGUSE: String
-    aNNOTATORCOMMENTS: String
-    aPFORNONOWNER: String
-    nCBISUPERKINGDOM: String
-    iSTEST: String
-    iTSNCBITAXID: Integer
-    iTSVERSIONNUMBER: Double
-    iMGRNASEQID: Integer
-    sUBMISSIONSTATUSID: Integer
-    sUBMISSIONSTATUSNAME: String
-    sUBMISSIONCOMMENTS: String
-    iMGSUBMISSIONPRORITY: String
-    cONTAMINATIONPERCENTAGE: Double
-    cOMPLETENESSPERCENTAGE: Double
-  }
-
-type ANALYSISPROJECTSRARUNV2
-  {
-    sRARUNID: String
-  }
-
-type BIOSAMPLE
-  {
-    bIOSAMPLENAME: String
-    aDDDATE: Time
-    mODDATE: Time
-    mODBY: Double
-    dESCRIPTION: String
-    eCOSYSTEM: String
-    eCOSYSTEMCATEGORY: String
-    eCOSYSTEMTYPE: String
-    eCOSYSTEMSUBTYPE: String
-    sPECIFICECOSYSTEM: String
-    sAMPLECOLLECTIONSITE: String
-    iSOLATIONPUBLICATIONID: Integer
-    sAMPLEISOLATIONCOMMENTS: String
-    sAMPLINGSTRATEGY: String
-    rEPLICATENUMBER: Double
-    sAMPLEVOLUME: String
-    sAMPLEBIOMASS: String
-    sAMPLECONTACTNAME: String
-    sAMPLECONTACTEMAIL: String
-    gEOGRAPHICLOCATION: String
-    lATLONGINFERRED: String
-    sALINITY: String
-    pRESSURE: String
-    pH: String
-    hABITAT: String
-    hOSTNAME: String
-    hOSTTAXONOMYID: Integer
-    hOSTGENDER: String
-    hOSTRACE: String
-    hOSTAGE: String
-    hOSTHEALTHCONDITION: String
-    pATIENTVISITNUMBER: Double
-    hOSTMEDICATION: String
-    mRN: String
-    hOSTBODYSITE: String
-    hOSTBODYSUBSITE: String
-    hOSTBODYPRODUCT: String
-    hOSTSPECIFICITY: String
-    hOSTCOMMENTS: String
-    aCTIVE: String
-    pROJECTOID: Double
-    sAMPLEOID: Double
-    gOLDID: String
-    iSPUBLIC: String
-    sPECIMEN: String
-    sUBMITBIOSAMPLENAME: String
-    nCBITAXONOMYID: Integer
-    cOMMUNITY: String
-    lOCATION: String
-    iDENTIFIER: String
-    eNVPACKAGE: String
-    sAMPLECOLLECTIONDAY: Double
-    sAMPLECOLLECTIONMONTH: Double
-    sAMPLECOLLECTIONYEAR: Double
-    sUBMITTERID: Integer
-    gROWTHCONDITIONS: String
-    jPAENTITY: String
-    oTHERHOSTS: String
-    kNOWNNONHOSTS: String
-    iSOLATIONPUBMEDID: Integer
-    hOSTBODYSITEID: Integer
-    hOSTBODYSUBSITEID: Integer
-    hOSTBODYPRODUCTID: Integer
-    iSDRAFT: String
-    sAMPLEISOLATIONCOUNTRYID: Integer
-    oTHERECOSYSTEM: String
-    lONGHURSTCODE: String
-    sAMPLECOLLECTIONHOUR: Double
-    sAMPLECOLLECTIONMINUTE: Double
-    cHLOROPHYLLCONCENTRATION: String
-    nITRATECONCENTRATION: String
-    oXYGENCONCENTRATION: String
-    sALINITYCONCENTRATION: String
-    pUBLICSPCOUNT: Double
-    aDMINSPCOUNT: Double
-    pUBLICAPCOUNT: Double
-    aDMINAPCOUNT: Double
-    pUBLICDAPCOUNT: Double
-    aDMINDAPCOUNT: Double
-    cRUISELINENAME: String
-    eCOSYSTEMPATHID: Integer
-    pROPORTOCEAN: String
-    pROPORTISOLATION: String
-    pROPORTSTATION: String
-    pROPORTWOATEMPERATURE: Double
-    pROPORTWOASALINITY: Double
-    pROPORTWOADISSOLVEDOXYGEN: Double
-    pROPORTWOASILICATE: Double
-    pROPORTWOAPHOSPHATE: Double
-    pROPORTWOANITRATE: Double
-    nCBITAXONOMYNAME: String
-    iTSGROWTHCONDITIONS: String
-    bIOGASFEDSUBSTRATES: String
-    bIOGASRETENTIONTIME: String
-    bIOGASTEMPERATURE: String
-    bIOGASYIELD: String
-    bIOGASVOLATILEORGANICACIDS: String
-    bIOGASTOTALINORGANICCARBON: String
-    bIOGASVOATIC: String
-    bIOGASAMMONIUMNH4: String
-    bIOGASBUTANOL: String
-    bIOGASETHANOL: String
-    bIOGASPROPANOL: String
-    bIOGASMETHANOL: String
-    bIOGASACETICACID: String
-    bIOGASBUTYLACID: String
-    bIOGASISOBUTYLACID: String
-    bIOGASVALERICACID: String
-    bIOGASISOVALERICACID: String
-    bIOGASPROPIONICACID: String
-    bIOGASMETHANEPCT: Double
-    iSTEST: String
-    sAMPLECONDUCTIVITY: String
-    gROWTHTEMPERATURE: Double
-    sUBSURFACEDEPTH: Double
-    lEGACYDEPTHDATA: String
-    lATITUDETEST: Double
-    lONGITUDETEST: Double
-    eLEVATION: Double
-    eLEVATION2: Double
-    sOILCURRLANDUSE: String
-    sOILCURRVEGETATION: String
-    sOILCURRVEGETATIONMETHOD: String
-    sOILPREVLANDUSE: String
-    sOILPREVLANDUSEMETH: String
-    sOILCROPROTATION: String
-    sOILAGROCHEMADDITION: String
-    sOILTILLAGE: String
-    sOILFIRE: String
-    sOILFLOODING: String
-    sOILEXTREMEEVENT: String
-    sOILHORIZON: String
-    sOILHORIZONMETHOD: String
-    sOILSIEVING: String
-    sOILWATERCONTENT: String
-    sOILWATERCONTENTSOILMETH: String
-    sAMPLEWEIGHTDNAEXT: String
-    sOILPOOLDNAEXTRACTS: String
-    sOILSTORAGECONDITION: String
-    sOILLINKCLIMATEINFO: String
-    sOILLINKCLASSINFO: String
-    sOILFAOCLASS: String
-    sOILLOCALCLASS: String
-    sOILLOCALCLASSMETHOD: String
-    sOILTYPE: String
-    sOILTYPEMETHOD: String
-    sOILSLOPEGRADIENT: Double
-    sOILSLOPEASPECT: Double
-    sOILPROFILEPOSITION: String
-    sOILDRAINAGECLASS: String
-    sOILTEXTURE: String
-    sOILTEXTUREMETHOD: String
-    sOILPHMETHOD: String
-    tOTORGCARBON: Double
-    sOILTOTORGCMETHOD: String
-    tOTNITROGEN: String
-    sOILTOTNMETHOD: String
-    sOILMICROBIALBIOMASS: String
-    sOILMICROBIALBIOMASSMETHOD: String
-    sOILLINKADDITANALYS: String
-    sOILSALINITYMETHOD: String
-    sOILHEAVYMETALS: Double
-    sOILHEAVYMETALSMETHOD: String
-    sOILALUMINIUMSAT: Double
-    sOILALUMINIUMSATMETHOD: String
-    sOILMISCPARAM: String
-    wATERALKALINITY: Double
-    wATERALKYLDIETHERS: Double
-    wATERAMINOPEPTACT: Double
-    wATERAMMONIUM: Double
-    wATERATMOSPHERICDATA: String
-    wATERBACTERIALPROD: Double
-    wATERBACTERIALRESP: Double
-    wATERBACTERIALCARBONPROD: Double
-    wATERBISHOMOHOPANOL: String
-    wATERBROMIDE: Double
-    wATERCALCIUM: String
-    wATERCARBONNITROGRATIO: String
-    wATERCHEMADMINISTRATION: String
-    wATERCHLORIDE: Double
-    wATERDENSITY: Double
-    wATERDIETHERLIPIDS: Double
-    wATERDISSCARBONDIOXIDE: Double
-    wATERDISSHYDROGEN: Double
-    wATERDISSINORGCARBON: Double
-    wATERDISSINORGNITRO: Double
-    wATERDISSINORGPHOSPHORUS: Double
-    wATERDISSORGCARBON: Double
-    wATERDISSORGNITROGEN: Double
-    wATERDOWNWARDPAR: Double
-    wATERFLUORESCENCE: Double
-    wATERGLUCOSIDASEACTIVITY: Double
-    wATERLIGHTINTENSITY: Double
-    wATERMAGNESIUM: String
-    wATERMEANFRICTVEL: Double
-    wATERMEANPEAKFRICTVEL: Double
-    wATERMISCPARAMETER: String
-    wATERNALKANES: Double
-    wATERNITRITE: Double
-    wATERORGMATTER: Double
-    wATERORGNITROGEN: Double
-    wATERORGANISMCOUNT: Double
-    wATEROXYSTATSAMPLE: String
-    wATERPARTORGCARBON: Double
-    wATERPARTORGNITROGEN: Double
-    wATERPERTURBATION: String
-    wATERPETROLEUMHYDROCARBON: Double
-    wATERPHAEOPIGMENTS: Double
-    wATERPHOSPLIPIDFATTACID: String
-    wATERPHOTONFLUX: Double
-    wATERPOTASSIUM: Double
-    wATERPRIMARYPROD: Double
-    wATERREDOXPOTENTIAL: Double
-    wATERSAMPSTOREDUR: String
-    wATERSAMPSTORELOC: String
-    wATERSAMPSTORETEMP: Double
-    wATERSODIUM: Double
-    wATERSOLUBLEREACTPHOSP: Double
-    wATERSULFATE: String
-    wATERSULFIDE: String
-    wATERSUSPENDPARTMATTER: Double
-    wATERTIDALSTAGE: String
-    wATERTOTDEPTHWATERCOL: Double
-    wATERTOTDISSNITRO: Double
-    wATERTOTINORGNITRO: Double
-    wATERTOTPARTCARBON: String
-    wATERTOTPHOSPHORUS: Double
-    wATERCURRENT: String
-    lATITUDE: Double
-    lONGITUDE: Double
-    dEPTH: Double
-    dEPTH2: Double
-    aLTITUDE: Double
-    aLTITUDE2: Double
-    sOLUBLEIRONMICROMOL: Double
-    bICARBONATEMILLIMOL: Double
-    h2SMILLIMOL: Double
-    h2SPRESENT: String
-    iRRADIANCE: String
-    oXYGENPRESENCE: String
-    mETHANECONCMILLIMOL: Double
-    gROWTHTEMPERATURE2: Double
-    aNNOTATORCOMMENTS: String
-    sUBSURFACEDEPTH2: Double
-    pH1: Double
-    pH2: Double
-    pHOLD: String
-    wATERALKALINITYMETHOD: String
-    wATERTURBIDITY: String
-    wATERSIZEFRACLOW: Double
-    wATERSIZEFRACUP: Double
-    sOILMEANANNUALTEMP: Double
-    sOILMEANSEASONALTEMP: Double
-    sOILMEANANNUALPRECPT: Double
-    sOILMEANSEASONALPRECPT: Double
-    tESTPACKAGEID: Integer
-    sOILPACKAGEID: Integer
-    wATERPACKAGEID: Integer
-    gLOBALPACKAGEID: Integer
-    eNVOBIOMEID: String
-    eNVOFEATUREID: String
-    eNVOMATERIALID: String
-  }
-
-type CONTACT
-  {
-    uSERNAME: String
-    pASSWORD: String
-    nAME: String
-    tITLE: String
-    dEPARTMENT: String
-    eMAIL: String
-    pHONE: String
-    oRGANIZATION: String
-    aDDRESS: String
-    cITY: String
-    sTATE: String
-    cOUNTRY: String
-    cOMMENTS: String
-    aDDDATE: Time
-    xSUPERUSER: String
-    xIMGEDITOR: String
-    xIMGGROUP: Double
-    jGIUSER: String
-    xIMGEDITINGLEVEL: String
-    cALIBANID: Integer
-    cALIBANUSERNAME: String
-    uRL: String
-    xIMGCONTACTID: Integer
-    mASTERCONTACTID: Integer
-    oRACLEUSERNAME: String
-    uSERROLE: String
-    gEBAORGANISMAVAILCOUNT: Double
-    gEBAREVIEWER: String
-  }
-
-type CVAPCOMPLETION
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVAPREVIEWSTATUS
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVAPSTATUS
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVAPTYPE
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVAVAILABILITY
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVBIOME
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVBIOSAFETY
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVBIOTICRELATIONSHIP
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVBODYPRODUCT
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVBODYSITE
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVBODYSUBSITE
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVCELLARRANGEMENT
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVCELLSHAPE
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVCOLOR
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVCOUNTRY
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVCULTURETYPE
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVCURRENTLANDUSE
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVDATAVALIDITYTYPE
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVDISEASE
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVDOMAIN
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVDRAINAGECLASS
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVENERGYSOURCE
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVENVPACKAGE
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVFASTADOWNLOADSTATUS
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVFINISHINGGOAL
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVGEBAPRIORITYSTATUS
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVGEBAREVIEWSTATUS
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVGEBASAMPLETYPE
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVGEBATYPES
-  {
-    tERM: String
-    sEQUENCE: Double
-  }
-
-type CVGRAMSTAIN
-  {
-    tERM: String
-    sEQUENCE: Double
+type AnalysisProject
+  {
+    itsAnalysisProjectId: Integer
+    analysisProjectName: String
+    goldId: String
+    referenceApId: Integer
+    imgTaxonId: Integer
+    analysisProjectType: String
+    statusId: Integer
+    comments: String
+    ncbiTaxId: Integer
+    isPublic: String
+    addedBy: Double
+    addDate: Time
+    piId: Integer
+    submissionId: Integer
+    scaffoldCount: Double
+    contigCount: Double
+    geneCount: Double
+    binningMethod: String
+    geneCallingMethod: String
+    itsAnalysisProjectName: String
+    itsProductName: String
+    completionDate: Time
+    estSize: Double
+    genbankLowQualityAnnotation: String
+    ecosystem: String
+    ecosystemCategory: String
+    ecosystemType: String
+    ecosystemSubtype: String
+    specificEcosystem: String
+    imgAnalysisComplete: String
+    isGenePrimp: String
+    isDecontamination: String
+    isImgAnnotation: String
+    itsAnnotationAtId: Integer
+    isAssembledDeleted: String
+    studyId: Integer
+    specimen: String
+    itsAssemblyAtType: String
+    domain: String
+    ncbiPhylum: String
+    ncbiClass: String
+    ncbiOrder: String
+    ncbiFamily: String
+    ncbiGenus: String
+    ncbiSpecies: String
+    appendedApName: String
+    modBy: Double
+    modDate: Time
+    piName: String
+    analysisProjectNameFull: String
+    isPrimary: String
+    goldPhylogeny: String
+    phylogenySuggestion: String
+    replacesApId: Integer
+    ncbiBioprojectId: Integer
+    screeningMethod: String
+    decontaminationMethod: String
+    ncbiBiosampleAccession: String
+    ncbiBioprojectAccession: String
+    completion: String
+    ncbiKingdom: String
+    reviewStatus: String
+    rejectionReasons: String
+    organismId: Integer
+    pipelineAnnotationMethod: String
+    genus: String
+    species: String
+    subspecies: String
+    cultureCollection: String
+    serovar: String
+    strain: String
+    ecosystemPathId: Integer
+    sequencingDepth: String
+    imgUse: String
+    annotatorComments: String
+    apForNonowner: String
+    ncbiSuperkingdom: String
+    isTest: String
+    itsNcbiTaxId: Integer
+    itsVersionNumber: Double
+    imgRnaseqId: Integer
+    submissionStatusId: Integer
+    submissionStatusName: String
+    submissionComments: String
+    imgSubmissionPrority: String
+    contaminationPercentage: Double
+    completenessPercentage: Double
+  }
+
+type AnalysisProjectSraRunV2
+  {
+    sraRunId: String
+  }
+
+type Biosample
+  {
+    biosampleName: String
+    addDate: Time
+    modDate: Time
+    modBy: Double
+    description: String
+    ecosystem: String
+    ecosystemCategory: String
+    ecosystemType: String
+    ecosystemSubtype: String
+    specificEcosystem: String
+    sampleCollectionSite: String
+    isolationPublicationId: Integer
+    sampleIsolationComments: String
+    samplingStrategy: String
+    replicateNumber: Double
+    sampleVolume: String
+    sampleBiomass: String
+    sampleContactName: String
+    sampleContactEmail: String
+    geographicLocation: String
+    latLongInferred: String
+    salinity: String
+    pressure: String
+    ph: String
+    habitat: String
+    hostName: String
+    hostTaxonomyId: Integer
+    hostGender: String
+    hostRace: String
+    hostAge: String
+    hostHealthCondition: String
+    patientVisitNumber: Double
+    hostMedication: String
+    mrn: String
+    hostBodySite: String
+    hostBodySubsite: String
+    hostBodyProduct: String
+    hostSpecificity: String
+    hostComments: String
+    active: String
+    projectOid: Double
+    sampleOid: Double
+    goldId: String
+    isPublic: String
+    specimen: String
+    submitBiosampleName: String
+    ncbiTaxonomyId: Integer
+    community: String
+    location: String
+    identifier: String
+    envPackage: String
+    sampleCollectionDay: Double
+    sampleCollectionMonth: Double
+    sampleCollectionYear: Double
+    submitterId: Integer
+    growthConditions: String
+    jpaEntity: String
+    otherHosts: String
+    knownNonHosts: String
+    isolationPubmedId: Integer
+    hostBodySiteId: Integer
+    hostBodySubsiteId: Integer
+    hostBodyProductId: Integer
+    isDraft: String
+    sampleIsolationCountryId: Integer
+    otherEcosystem: String
+    longhurstCode: String
+    sampleCollectionHour: Double
+    sampleCollectionMinute: Double
+    chlorophyllConcentration: String
+    nitrateConcentration: String
+    oxygenConcentration: String
+    salinityConcentration: String
+    publicSpCount: Double
+    adminSpCount: Double
+    publicApCount: Double
+    adminApCount: Double
+    publicDapCount: Double
+    adminDapCount: Double
+    cruiseLineName: String
+    ecosystemPathId: Integer
+    proportOcean: String
+    proportIsolation: String
+    proportStation: String
+    proportWoaTemperature: Double
+    proportWoaSalinity: Double
+    proportWoaDissolvedOxygen: Double
+    proportWoaSilicate: Double
+    proportWoaPhosphate: Double
+    proportWoaNitrate: Double
+    ncbiTaxonomyName: String
+    itsGrowthConditions: String
+    biogasFedSubstrates: String
+    biogasRetentionTime: String
+    biogasTemperature: String
+    biogasYield: String
+    biogasVolatileOrganicAcids: String
+    biogasTotalInorganicCarbon: String
+    biogasVoaTic: String
+    biogasAmmoniumNh4: String
+    biogasButanol: String
+    biogasEthanol: String
+    biogasPropanol: String
+    biogasMethanol: String
+    biogasAceticAcid: String
+    biogasButylAcid: String
+    biogasIsoButylAcid: String
+    biogasValericAcid: String
+    biogasIsoValericAcid: String
+    biogasPropionicAcid: String
+    biogasMethanePct: Double
+    isTest: String
+    sampleConductivity: String
+    growthTemperature: Double
+    subsurfaceDepth: Double
+    legacyDepthData: String
+    latitudeTest: Double
+    longitudeTest: Double
+    elevation: Double
+    elevation2: Double
+    soilCurrLandUse: String
+    soilCurrVegetation: String
+    soilCurrVegetationMethod: String
+    soilPrevLandUse: String
+    soilPrevLandUseMeth: String
+    soilCropRotation: String
+    soilAgrochemAddition: String
+    soilTillage: String
+    soilFire: String
+    soilFlooding: String
+    soilExtremeEvent: String
+    soilHorizon: String
+    soilHorizonMethod: String
+    soilSieving: String
+    soilWaterContent: String
+    soilWaterContentSoilMeth: String
+    sampleWeightDnaExt: String
+    soilPoolDnaExtracts: String
+    soilStorageCondition: String
+    soilLinkClimateInfo: String
+    soilLinkClassInfo: String
+    soilFaoClass: String
+    soilLocalClass: String
+    soilLocalClassMethod: String
+    soilType: String
+    soilTypeMethod: String
+    soilSlopeGradient: Double
+    soilSlopeAspect: Double
+    soilProfilePosition: String
+    soilDrainageClass: String
+    soilTexture: String
+    soilTextureMethod: String
+    soilPhMethod: String
+    totOrgCarbon: Double
+    soilTotOrgCMethod: String
+    totNitrogen: String
+    soilTotNMethod: String
+    soilMicrobialBiomass: String
+    soilMicrobialBiomassMethod: String
+    soilLinkAdditAnalys: String
+    soilSalinityMethod: String
+    soilHeavyMetals: Double
+    soilHeavyMetalsMethod: String
+    soilAluminiumSat: Double
+    soilAluminiumSatMethod: String
+    soilMiscParam: String
+    waterAlkalinity: Double
+    waterAlkylDiethers: Double
+    waterAminopeptAct: Double
+    waterAmmonium: Double
+    waterAtmosphericData: String
+    waterBacterialProd: Double
+    waterBacterialResp: Double
+    waterBacterialCarbonProd: Double
+    waterBishomohopanol: String
+    waterBromide: Double
+    waterCalcium: String
+    waterCarbonNitrogRatio: String
+    waterChemAdministration: String
+    waterChloride: Double
+    waterDensity: Double
+    waterDietherLipids: Double
+    waterDissCarbonDioxide: Double
+    waterDissHydrogen: Double
+    waterDissInorgCarbon: Double
+    waterDissInorgNitro: Double
+    waterDissInorgPhosphorus: Double
+    waterDissOrgCarbon: Double
+    waterDissOrgNitrogen: Double
+    waterDownwardPar: Double
+    waterFluorescence: Double
+    waterGlucosidaseActivity: Double
+    waterLightIntensity: Double
+    waterMagnesium: String
+    waterMeanFrictVel: Double
+    waterMeanPeakFrictVel: Double
+    waterMiscParameter: String
+    waterNAlkanes: Double
+    waterNitrite: Double
+    waterOrgMatter: Double
+    waterOrgNitrogen: Double
+    waterOrganismCount: Double
+    waterOxyStatSample: String
+    waterPartOrgCarbon: Double
+    waterPartOrgNitrogen: Double
+    waterPerturbation: String
+    waterPetroleumHydrocarbon: Double
+    waterPhaeopigments: Double
+    waterPhosplipidFattAcid: String
+    waterPhotonFlux: Double
+    waterPotassium: Double
+    waterPrimaryProd: Double
+    waterRedoxPotential: Double
+    waterSampStoreDur: String
+    waterSampStoreLoc: String
+    waterSampStoreTemp: Double
+    waterSodium: Double
+    waterSolubleReactPhosp: Double
+    waterSulfate: String
+    waterSulfide: String
+    waterSuspendPartMatter: Double
+    waterTidalStage: String
+    waterTotDepthWaterCol: Double
+    waterTotDissNitro: Double
+    waterTotInorgNitro: Double
+    waterTotPartCarbon: String
+    waterTotPhosphorus: Double
+    waterCurrent: String
+    latitude: Double
+    longitude: Double
+    depth: Double
+    depth2: Double
+    altitude: Double
+    altitude2: Double
+    solubleIronMicromol: Double
+    bicarbonateMillimol: Double
+    h2sMillimol: Double
+    h2sPresent: String
+    irradiance: String
+    oxygenPresence: String
+    methaneConcMillimol: Double
+    growthTemperature2: Double
+    annotatorComments: String
+    subsurfaceDepth2: Double
+    ph1: Double
+    ph2: Double
+    phOld: String
+    waterAlkalinityMethod: String
+    waterTurbidity: String
+    waterSizeFracLow: Double
+    waterSizeFracUp: Double
+    soilMeanAnnualTemp: Double
+    soilMeanSeasonalTemp: Double
+    soilMeanAnnualPrecpt: Double
+    soilMeanSeasonalPrecpt: Double
+    testPackageId: Integer
+    soilPackageId: Integer
+    waterPackageId: Integer
+    globalPackageId: Integer
+    envoBiomeId: String
+    envoFeatureId: String
+    envoMaterialId: String
+  }
+
+type Contact
+  {
+    username: String
+    password: String
+    name: String
+    title: String
+    department: String
+    email: String
+    phone: String
+    organization: String
+    address: String
+    city: String
+    state: String
+    country: String
+    comments: String
+    addDate: Time
+    xSuperUser: String
+    xImgEditor: String
+    xImgGroup: Double
+    jgiUser: String
+    xImgEditingLevel: String
+    calibanId: Integer
+    calibanUserName: String
+    url: String
+    xImgContactId: Integer
+    masterContactId: Integer
+    oracleUserName: String
+    userRole: String
+    gebaOrganismAvailCount: Double
+    gebaReviewer: String
+  }
+
+type CvapCompletion
+  {
+    term: String
+    sequence: Double
+  }
+
+type CvapReviewStatus
+  {
+    term: String
+    sequence: Double
+  }
+
+type CvapStatus
+  {
+    term: String
+    sequence: Double
+  }
+
+type CvapType
+  {
+    term: String
+    sequence: Double
+  }
+
+type Cvavailability
+  {
+    term: String
+    sequence: Double
+  }
+
+type Cvbiome
+  {
+    term: String
+    sequence: Double
+  }
+
+type Cvbiosafety
+  {
+    term: String
+    sequence: Double
+  }
+
+type CvbioticRelationship
+  {
+    term: String
+    sequence: Double
+  }
+
+type CvbodyProduct
+  {
+    term: String
+    sequence: Double
+  }
+
+type CvbodySite
+  {
+    term: String
+    sequence: Double
+  }
+
+type CvbodySubsite
+  {
+    term: String
+    sequence: Double
+  }
+
+type CvcellArrangement
+  {
+    term: String
+    sequence: Double
+  }
+
+type CvcellShape
+  {
+    term: String
+    sequence: Double
+  }
+
+type Cvcolor
+  {
+    term: String
+    sequence: Double
+  }
+
+type Cvcountry
+  {
+    term: String
+    sequence: Double
+  }
+
+type CvcultureType
+  {
+    term: String
+    sequence: Double
+  }
+
+type CvcurrentLandUse
+  {
+    term: String
+    sequence: Double
+  }
+
+type CvdataValidityType
+  {
+    term: String
+    sequence: Double
+  }
+
+type Cvdisease
+  {
+    term: String
+    sequence: Double
+  }
+
+type Cvdomain
+  {
+    term: String
+    sequence: Double
+  }
+
+type CvdrainageClass
+  {
+    term: String
+    sequence: Double
+  }
+
+type CvenergySource
+  {
+    term: String
+    sequence: Double
+  }
+
+type Cvenvpackage
+  {
+    term: String
+    sequence: Double
+  }
+
+type Cvfastadownloadstatus
+  {
+    term: String
+    sequence: Double
+  }
+
+type CvfinishingGoal
+  {
+    term: String
+    sequence: Double
+  }
+
+type CvgebaPriorityStatus
+  {
+    term: String
+    sequence: Double
+  }
+
+type CvgebaReviewStatus
+  {
+    term: String
+    sequence: Double
+  }
+
+type CvgebaSampleType
+  {
+    term: String
+    sequence: Double
+  }
+
+type CvgebaTypes
+  {
+    term: String
+    sequence: Double
+  }
+
+type CvgramStain
+  {
+    term: String
+    sequence: Double
   }
 
-type CVHABITAT
+type Cvhabitat
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVHORIZON
+type Cvhorizon
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVHOSTGENDER
+type CvhostGender
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVIMGUSE
+type Cvimguse
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVIRRADIANCE
+type Cvirradiance
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVLATLONG
+type Cvlatlong
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVMETABOLISM
+type Cvmetabolism
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVMODEL
+type Cvmodel
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVMONTH
+type Cvmonth
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVMOTILITY
+type Cvmotility
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVNUCLEICACID
+type CvnucleicAcid
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVORGANISMTYPE
+type CvorganismType
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVOXYGEN
+type Cvoxygen
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVOXYGENPRESENCE
+type CvoxygenPresence
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVOXYGENSTATSAMPLE
+type CvoxygenStatSample
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVPACKAGES
+type Cvpackages
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVPHENOTYPE
+type Cvphenotype
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVPHYLOGENY
+type Cvphylogeny
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVPROFILEPOSITION
+type CvprofilePosition
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVPROJECTSTATUS
+type CvprojectStatus
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVPROJECTSUBTYPE
+type CvprojectSubtype
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVPROJECTTYPE
+type CvprojectType
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVRELEVANCE
+type Cvrelevance
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVROLES
+type Cvroles
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVSALINITY
+type Cvsalinity
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVSEQQUALITY
+type CvseqQuality
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVSEQSTATUS
+type CvseqStatus
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVSOILFAOCLASS
+type Cvsoilfaoclass
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVSPECIMEN
+type Cvspecimen
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVSPORULATION
+type Cvsporulation
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVSTUDYTYPE
+type CvstudyType
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVTEMPRANGE
+type CvtempRange
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVTIDALSTAGE
+type CvtidalStage
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVTILLAGE
+type Cvtillage
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVUNCULTUREDTYPE
+type CvunculturedType
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVYESNO
+type CvyesNo
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type CVYESNOONLY
+type CvyesNoOnly
   {
-    tERM: String
-    sEQUENCE: Double
+    term: String
+    sequence: Double
   }
 
-type ENVOLABELS
+type EnvoLabels
   {
-    eNVOLABEL: String
+    envoLabel: String
   }
 
-type INSTITUTION
+type Institution
   {
-    nAME: String
-    uRL: String
-    cOUNTRY: String
-    oRGANIZATION: String
-    dEPARTMENT: String
-    lABORATORY: String
-    iSCURATED: String
+    name: String
+    url: String
+    country: String
+    organization: String
+    department: String
+    laboratory: String
+    isCurated: String
   }
 
-type ORGANISMBIOTICREL
+type OrganismBioticRel
   {
-    bIOTICRELATIONSHIPID: Integer
+    bioticRelationshipId: Integer
   }
 
-type ORGANISMBODYPRODUCT
+type OrganismBodyProduct
   {
-    bODYPRODUCTID: Integer
+    bodyProductId: Integer
   }
 
-type ORGANISMCELLARRANGEMENT
+type OrganismCellArrangement
   {
-    cELLARRANGEMENTID: Integer
+    cellArrangementId: Integer
   }
 
-type ORGANISMDISEASE
+type OrganismDisease
   {
-    dISEASEID: Integer
+    diseaseId: Integer
   }
 
-type ORGANISMENERGYSOURCE
+type OrganismEnergySource
   {
-    eNERGYSOURCEID: Integer
+    energySourceId: Integer
   }
 
-type ORGANISMHABITAT
+type OrganismHabitat
   {
-    hABITATID: Integer
+    habitatId: Integer
   }
 
-type ORGANISMMETABOLISM
+type OrganismMetabolism
   {
-    mETABOLISMID: Integer
+    metabolismId: Integer
   }
 
-type ORGANISMPHENOTYPE
+type OrganismPhenotype
   {
-    pHENOTYPEID: Integer
+    phenotypeId: Integer
   }
 
-type ORGANISMV2
+type OrganismV2
   {
-    eXEMPLARDOI: String
-    eXEMPLARNAME: String
-    tAXONDOI: String
-    cULTURECOLLECTIONID: String
-    tYPESTRAIN: String
-    bIOSAFETYLEVEL: String
-    nCBITAXONOMYID: Integer
-    nCBIKINGDOM: String
-    nCBIPHYLUM: String
-    nCBICLASS: String
-    nCBIORDER: String
-    nCBIFAMILY: String
-    nCBIGENUS: String
-    dOMAIN: String
-    sTRAININFOID: Integer
-    gENBANK16SID: String
-    oXYGENREQUIREMENT: String
-    cELLSHAPE: String
-    mOTILITY: String
-    sPORULATION: String
-    tEMPERATURERANGE: String
-    cOLOR: String
-    gRAMSTAIN: String
-    aDDDATE: Time
-    mODDATE: Time
-    mODBY: Double
-    cOMMONNAME: String
-    sYMBIOTICRELATIONSHIP: String
-    sYMBIOTICPHYSICALINTERACTION: String
-    sYMBIONTNAME: String
-    sYMBIONTTAXONID: Integer
-    cELLLENGTH: String
-    iSPUBLIC: String
-    sUBSPECIES: String
-    cOMMERCIAL: String
-    cOMMERCIALCOMMENTS: String
-    oTHERNAMES: String
-    sYNONYMGROUPID: Integer
-    vIRALGROUP: String
-    vIRALSUBGROUP: String
-    iSDRAFT: String
-    sUBMITTERID: Integer
-    gOLDPHYLOGENY: String
-    cULTURETYPE: String
-    uNCULTUREDTYPE: String
-    oRGANISMTYPE: String
-    cULTURED: String
-    cLADE: String
-    mASTERGROUPID: Integer
-    eCOTYPE: String
-    bIOSAMPLEID: Integer
-    cARBONSOURCE: String
-    iMAGEID: Integer
-    nCBIBIOSAMPLEID: String
-    eCOSYSTEM: String
-    eCOSYSTEMCATEGORY: String
-    eCOSYSTEMTYPE: String
-    eCOSYSTEMSUBTYPE: String
-    sPECIFICECOSYSTEM: String
-    oTHERECOSYSTEM: String
-    eCOSYSTEMPATHID: Integer
-    sAMPLECOLLECTIONSITE: String
-    iSOLATIONPUBLICATIONID: Integer
-    sAMPLEISOLATIONCOMMENTS: String
-    sAMPLINGSTRATEGY: String
-    rEPLICATENUMBER: Double
-    sAMPLEVOLUME: String
-    sAMPLEBIOMASS: String
-    sAMPLECONTACTNAME: String
-    sAMPLECONTACTEMAIL: String
-    gEOGRAPHICLOCATION: String
-    lATLONGINFERRED: String
-    hOSTNAME: String
-    hOSTTAXONOMYID: Integer
-    hOSTGENDER: String
-    hOSTRACE: String
-    hOSTAGE: String
-    hOSTHEALTHCONDITION: String
-    pATIENTVISITNUMBER: Double
-    hOSTMEDICATION: String
-    mRN: String
-    hOSTBODYSITE: String
-    hOSTBODYSUBSITE: String
-    hOSTBODYPRODUCT: String
-    hOSTSPECIFICITY: String
-    hOSTCOMMENTS: String
-    pROJECTOID: Double
-    sAMPLEOID: Double
-    sPECIMEN: String
-    sUBMITBIOSAMPLENAME: String
-    eNVPACKAGE: String
-    sAMPLECOLLECTIONDAY: Double
-    sAMPLECOLLECTIONMONTH: Double
-    sAMPLECOLLECTIONYEAR: Double
-    sAMPLECOLLECTIONHOUR: Double
-    sAMPLECOLLECTIONMINUTE: Double
-    gROWTHCONDITIONS: String
-    oTHERHOSTS: String
-    kNOWNNONHOSTS: String
-    iSOLATIONPUBMEDID: Integer
-    hOSTBODYSITEID: Integer
-    hOSTBODYSUBSITEID: Integer
-    hOSTBODYPRODUCTID: Integer
-    sAMPLEISOLATIONCOUNTRYID: Integer
-    lONGHURSTCODE: String
-    cHLOROPHYLLCONCENTRATION: String
-    nITRATECONCENTRATION: String
-    oXYGENCONCENTRATION: String
-    sALINITYCONCENTRATION: String
-    cRUISELINENAME: String
-    pROPORTOCEAN: String
-    pROPORTISOLATION: String
-    pROPORTSTATION: String
-    pROPORTWOATEMPERATURE: Double
-    pROPORTWOASALINITY: Double
-    pROPORTWOADISSOLVEDOXYGEN: Double
-    pROPORTWOASILICATE: Double
-    pROPORTWOAPHOSPHATE: Double
-    pROPORTWOANITRATE: Double
-    aCTIVE: String
-    iTSGROWTHCONDITIONS: String
-    gOLDID: String
-    oRGANISMNAME: String
-    sUBMITORGANISMNAME: String
-    nCBITAXONOMYNAME: String
-    gENUS: String
-    gENUSSYNONYMS: String
-    sPECIES: String
-    sPECIESSYNONYMS: String
-    sTRAIN: String
-    sEROVAR: String
-    cOMMENTS: String
-    nCBISPECIES: String
-    sALINITY: String
-    pRESSURE: String
-    pH: String
-    cELLDIAMETER: String
-    aNNOTATORCOMMENTS: String
-    iSVIROCELL: String
-    sTRAININFOGROUPID: Integer
-    sOURCE: String
-    gOLDCLASS: String
-    gOLDORDER: String
-    gOLDFAMILY: String
-    nCBISUPERKINGDOM: String
-    tAXONOMYSTATUS: String
-    iSTEST: String
-    gROWTHTEMPERATURE: Double
-    sUBSURFACEDEPTH: Double
-    lEGACYDEPTHDATA: String
-    lATITUDETEST: Double
-    lONGITUDETEST: Double
-    eLEVATION: Double
-    eLEVATION2: Double
-    sOILCURRLANDUSE: String
-    sOILCURRVEGETATION: String
-    sOILCURRVEGETATIONMETHOD: String
-    sOILPREVLANDUSE: String
-    sOILPREVLANDUSEMETH: String
-    sOILCROPROTATION: String
-    sOILAGROCHEMADDITION: String
-    sOILTILLAGE: String
-    sOILFIRE: String
-    sOILFLOODING: String
-    sOILEXTREMEEVENT: String
-    sOILHORIZON: String
-    sOILHORIZONMETHOD: String
-    sOILSIEVING: String
-    sOILWATERCONTENT: String
-    sOILWATERCONTENTSOILMETH: String
-    sAMPLEWEIGHTDNAEXT: String
-    sOILPOOLDNAEXTRACTS: String
-    sOILSTORAGECONDITION: String
-    sOILLINKCLIMATEINFO: String
-    sOILLINKCLASSINFO: String
-    sOILFAOCLASS: String
-    sOILLOCALCLASS: String
-    sOILLOCALCLASSMETHOD: String
-    sOILTYPE: String
-    sOILTYPEMETHOD: String
-    sOILSLOPEGRADIENT: Double
-    sOILSLOPEASPECT: Double
-    sOILPROFILEPOSITION: String
-    sOILDRAINAGECLASS: String
-    sOILTEXTURE: String
-    sOILTEXTUREMETHOD: String
-    sOILPHMETHOD: String
-    tOTORGCARBON: Double
-    sOILTOTORGCMETHOD: String
-    tOTNITROGEN: String
-    sOILTOTNMETHOD: String
-    sOILMICROBIALBIOMASS: String
-    sOILMICROBIALBIOMASSMETHOD: String
-    sOILLINKADDITANALYS: String
-    sOILSALINITYMETHOD: String
-    sOILHEAVYMETALS: Double
-    sOILHEAVYMETALSMETHOD: String
-    sOILALUMINIUMSAT: Double
-    sOILALUMINIUMSATMETHOD: String
-    sOILMISCPARAM: String
-    wATERALKALINITY: Double
-    wATERALKYLDIETHERS: Double
-    wATERAMINOPEPTACT: Double
-    wATERAMMONIUM: Double
-    wATERATMOSPHERICDATA: String
-    wATERBACTERIALPROD: Double
-    wATERBACTERIALRESP: Double
-    wATERBACTERIALCARBONPROD: Double
-    wATERBISHOMOHOPANOL: String
-    wATERBROMIDE: Double
-    wATERCALCIUM: String
-    wATERCARBONNITROGRATIO: String
-    wATERCHEMADMINISTRATION: String
-    wATERCHLORIDE: Double
-    wATERDENSITY: Double
-    wATERDIETHERLIPIDS: Double
-    wATERDISSCARBONDIOXIDE: Double
-    wATERDISSHYDROGEN: Double
-    wATERDISSINORGCARBON: Double
-    wATERDISSINORGNITRO: Double
-    wATERDISSINORGPHOSPHORUS: Double
-    wATERDISSORGCARBON: Double
-    wATERDISSORGNITROGEN: Double
-    wATERDOWNWARDPAR: Double
-    wATERFLUORESCENCE: Double
-    wATERGLUCOSIDASEACTIVITY: Double
-    wATERLIGHTINTENSITY: Double
-    wATERMAGNESIUM: String
-    wATERMEANFRICTVEL: Double
-    wATERMEANPEAKFRICTVEL: Double
-    wATERMISCPARAMETER: String
-    wATERNALKANES: Double
-    wATERNITRITE: Double
-    wATERORGMATTER: Double
-    wATERORGNITROGEN: Double
-    wATERORGANISMCOUNT: Double
-    wATEROXYSTATSAMPLE: String
-    wATERPARTORGCARBON: Double
-    wATERPARTORGNITROGEN: Double
-    wATERPERTURBATION: String
-    wATERPETROLEUMHYDROCARBON: Double
-    wATERPHAEOPIGMENTS: Double
-    wATERPHOSPLIPIDFATTACID: String
-    wATERPHOTONFLUX: Double
-    wATERPOTASSIUM: Double
-    wATERPRIMARYPROD: Double
-    wATERREDOXPOTENTIAL: Double
-    wATERSAMPSTOREDUR: String
-    wATERSAMPSTORELOC: String
-    wATERSAMPSTORETEMP: Double
-    wATERSODIUM: Double
-    wATERSOLUBLEREACTPHOSP: Double
-    wATERSULFATE: String
-    wATERSULFIDE: String
-    wATERSUSPENDPARTMATTER: Double
-    wATERTIDALSTAGE: String
-    wATERTOTDEPTHWATERCOL: Double
-    wATERTOTDISSNITRO: Double
-    wATERTOTINORGNITRO: Double
-    wATERTOTPARTCARBON: String
-    wATERTOTPHOSPHORUS: Double
-    wATERCURRENT: String
-    aLTITUDE: Double
-    aLTITUDE2: Double
-    dEPTH: Double
-    dEPTH2: Double
-    lONGITUDE: Double
-    lATITUDE: Double
-    bICARBONATEMILLIMOL: Double
-    sOLUBLEIRONMICROMOL: Double
-    h2SMILLIMOL: Double
-    h2SPRESENT: String
-    iRRADIANCE: String
-    mETHANECONCMILLIMOL: Double
-    sAMPLECONDUCTIVITY: String
-    sOILSAMPLEBIOMASS: Double
-    sOILSAMPLEVOLUME: Double
-    iMGBREADTHCALC: Double
-    gROWTHTEMPERATURE2: Double
-    sAMPLECOLLECTIONTEMPERATURE: Double
-    sAMPLECOLLECTIONTEMPERATURE2: Double
-    pUBLICSPCOUNT: Double
-    aDMINSPCOUNT: Double
-    pUBLICAPCOUNT: Double
-    aDMINAPCOUNT: Double
-    sUBSURFACEDEPTH1: Double
-    sUBSURFACEDEPTH2: Double
-    pH1: Double
-    pH2: Double
-    pHOLD: String
-    wATERALKALINITYMETHOD: String
-    wATERTURBIDITY: String
-    wATERSIZEFRACLOW: Double
-    wATERSIZEFRACUP: Double
-    sOILMEANANNUALTEMP: Double
-    sOILMEANSEASONALTEMP: Double
-    sOILMEANANNUALPRECPT: Double
-    sOILMEANSEASONALPRECPT: Double
-    sOILPACKAGEID: Integer
-    wATERPACKAGEID: Integer
-    eNVOBIOMEID: String
-    eNVOFEATUREID: String
-    eNVOMATERIALID: String
-  }
-
-type PROJECT
-  {
-    pROJECTNAME: String
-    nCBIBIOPROJECTID: Integer
-    aDDDATE: Time
-    mODDATE: Time
-    mODBY: Double
-    dESCRIPTION: String
-    sPECIMENID: Integer
-    oRGANISMTYPE: String
-    nUCLEICACID: String
-    sUBMITTERPROJECTNAME: String
-    nCBIPROJECTNAME: String
-    iSOLATIONPUBLICATIONID: Integer
-    cOMPLETIONDATE: Time
-    aCTIVE: String
-    pMOPROJECTID: Integer
-    iTSSPID: Double
-    pROJECTOID: Double
-    sAMPLEOID: Double
-    gOLDID: String
-    oLDLEGACYGOLDID: String
-    lEGACYGOLDID: String
-    iSPUBLIC: String
-    oRGANISMID: Integer
-    sEQUENCINGSTATUSID: Integer
-    sEQUENCINGQUALITYID: Integer
-    fINISHINGGOALID: Integer
-    sEQUENCINGCOMMENTS: String
-    gCPERCENT: Double
-    cONTIGCOUNT: Double
-    eSTSIZE: Double
-    cHROMOSOMECOUNT: Double
-    pLASMIDCOUNT: Double
-    sCAFFOLDCOUNT: Double
-    eSTCOUNT: Double
-    sUBMITTERID: Integer
-    nCBIBIOPROJECTACCESSION: String
-    pROJECTCOMMENTS: String
-    aNNOTATORCOMMENTS: String
-    iTSPROPOSALID: Integer
-    gPTSPROPOSALID: Integer
-    nCBISRAID: String
-    lIBRARYMETHOD: String
-    rEADCOUNT: String
-    vECTOR: String
-    rEADSIZE: String
-    nCBILOCUSTAG: String
-    aSSEMBLYACCESSION: String
-    iSDRAFT: String
-    nUCLEICACIDID: Integer
-    pIID: Integer
-    pROJECTSTATUS: String
-    mASTERSTUDYID: Integer
-    oTHERPROJECTNAMES: String
-    iTSPROJECTNAME: String
-    iSSINGLECELLMATERIAL: String
-    iTSSEQUENCINGPRODUCTNAME: String
-    pROJECTMANAGERID: Integer
-    nCBIBIOSAMPLEACCESSION: String
-    lOWQUALITYGENOME: String
-    sEQUENCINGSTRATEGY: String
-    pUBLICAPCOUNT: Double
-    aDMINAPCOUNT: Double
-    pUBLICDAPCOUNT: Double
-    aDMINDAPCOUNT: Double
-    iSJGI: String
-    sRASRSACCESSION: String
-    sRASRXACCESSION: String
-    fUNDINGPROGRAM: String
-    fUNDINGYEAR: Double
-    iTSSAMPLEID: Integer
-    iTSSAMPLEGROUPNAME: String
-    eXPERIMENTALCONDITIONS: String
-    sAMPLEGROUPNAME: String
-    iTSSAMPLENAME: String
-    pROJECTSUBTYPE: String
-    sEQUENCINGSTRATEGYFULL: String
-    iSTEST: String
-    iSAPPROVED: String
-    iSLOCKED: String
-    gPTSSAMPLEID: Integer
-    gPTSDISAMBIGUATOR: String
-  }
-
-type PROJECTANALYSISPROJECT
-  {
-    aNALYSISPROJECTID: Integer
-  }
-
-type PROJECTBIOSAMPLE
-  {
-    bIOSAMPLEID: Integer
-  }
-
-type PROJECTCOLLABORATOR
-  {
-    iNSTITUTIONID: Integer
-  }
-
-type PROJECTFUNDINGAGENCY
-  {
-    iNSTITUTIONID: Integer
-  }
-
-type PROJECTGENOMEPUBLICATION
-  {
-    pUBLICATIONID: Integer
-  }
-
-type PROJECTOTHERPUBLICATION
-  {
-    pUBLICATIONID: Integer
-  }
-
-type PROJECTRELEVANCE
-  {
-    rELEVANCEID: Integer
-  }
-
-type PROJECTSEQUENCINGCENTER
-  {
-    iNSTITUTIONID: Integer
-  }
-
-type PROJECTSEQUENCINGMETHOD
-  {
-    sEQUENCINGMETHODID: Integer
-  }
-
-type PUBLICATION
-  {
-    dOI: String
-    pUBMEDID: Integer
-    jOURNALID: Integer
-    pUBMODEL: String
-    vOLUME: String
-    iSSUE: String
-    pAGE: String
-    pUBLICATIONDATE: String
-    aBSTRACT: String
-    aFFILIATION: String
-    tITLE: String
-    lASTAUTHORID: Integer
-    fIRSTAUTHORID: Integer
-  }
-
-type STUDY
-  {
-    sTUDYNAME: String
-    iTSPROPOSALID: Integer
-    nCBIPROJECTID: Integer
-    aDDDATE: Time
-    mODDATE: Time
-    cONTACTID: Integer
-    lASTMODBY: Double
-    iSPUBLIC: String
-    gPTSPROPOSALID: Integer
-    pROJECTOID: Double
-    aCTIVE: String
-    lEGACYGOLDID: String
-    bIOPROJECTNAME: String
-    gOLDSTUDYNAME: String
-    dESCRIPTION: String
-    gOLDID: String
-    mETAGENOMIC: String
-    sTUDYTYPEID: Integer
-    eCOSYSTEM: String
-    eCOSYSTEMCATEGORY: String
-    eCOSYSTEMTYPE: String
-    eCOSYSTEMSUBTYPE: String
-    sPECIFICECOSYSTEM: String
-    oWNERID: Integer
-    iSDRAFT: String
-    pUBLICSPCOUNT: Double
-    aDMINSPCOUNT: Double
-    pUBLICAPCOUNT: Double
-    aDMINAPCOUNT: Double
-    pUBLICDAPCOUNT: Double
-    aDMINDAPCOUNT: Double
-    pUBLICBIOSAMPLECOUNT: Double
-    aDMINBIOSAMPLECOUNT: Double
-    iSGEBA: String
-    iSHMP: String
-    eCOSYSTEMPATHID: Integer
-    iSTEST: String
+    exemplarDoi: String
+    exemplarName: String
+    taxonDoi: String
+    cultureCollectionId: String
+    typeStrain: String
+    biosafetyLevel: String
+    ncbiTaxonomyId: Integer
+    ncbiKingdom: String
+    ncbiPhylum: String
+    ncbiClass: String
+    ncbiOrder: String
+    ncbiFamily: String
+    ncbiGenus: String
+    domain: String
+    strainInfoId: Integer
+    genbank16sId: String
+    oxygenRequirement: String
+    cellShape: String
+    motility: String
+    sporulation: String
+    temperatureRange: String
+    color: String
+    gramStain: String
+    addDate: Time
+    modDate: Time
+    modBy: Double
+    commonName: String
+    symbioticRelationship: String
+    symbioticPhysicalInteraction: String
+    symbiontName: String
+    symbiontTaxonId: Integer
+    cellLength: String
+    isPublic: String
+    subspecies: String
+    commercial: String
+    commercialComments: String
+    otherNames: String
+    synonymGroupId: Integer
+    viralGroup: String
+    viralSubgroup: String
+    isDraft: String
+    submitterId: Integer
+    goldPhylogeny: String
+    cultureType: String
+    unculturedType: String
+    organismType: String
+    cultured: String
+    clade: String
+    masterGroupId: Integer
+    ecotype: String
+    biosampleId: Integer
+    carbonSource: String
+    imageId: Integer
+    ncbiBiosampleId: String
+    ecosystem: String
+    ecosystemCategory: String
+    ecosystemType: String
+    ecosystemSubtype: String
+    specificEcosystem: String
+    otherEcosystem: String
+    ecosystemPathId: Integer
+    sampleCollectionSite: String
+    isolationPublicationId: Integer
+    sampleIsolationComments: String
+    samplingStrategy: String
+    replicateNumber: Double
+    sampleVolume: String
+    sampleBiomass: String
+    sampleContactName: String
+    sampleContactEmail: String
+    geographicLocation: String
+    latLongInferred: String
+    hostName: String
+    hostTaxonomyId: Integer
+    hostGender: String
+    hostRace: String
+    hostAge: String
+    hostHealthCondition: String
+    patientVisitNumber: Double
+    hostMedication: String
+    mrn: String
+    hostBodySite: String
+    hostBodySubsite: String
+    hostBodyProduct: String
+    hostSpecificity: String
+    hostComments: String
+    projectOid: Double
+    sampleOid: Double
+    specimen: String
+    submitBiosampleName: String
+    envPackage: String
+    sampleCollectionDay: Double
+    sampleCollectionMonth: Double
+    sampleCollectionYear: Double
+    sampleCollectionHour: Double
+    sampleCollectionMinute: Double
+    growthConditions: String
+    otherHosts: String
+    knownNonHosts: String
+    isolationPubmedId: Integer
+    hostBodySiteId: Integer
+    hostBodySubsiteId: Integer
+    hostBodyProductId: Integer
+    sampleIsolationCountryId: Integer
+    longhurstCode: String
+    chlorophyllConcentration: String
+    nitrateConcentration: String
+    oxygenConcentration: String
+    salinityConcentration: String
+    cruiseLineName: String
+    proportOcean: String
+    proportIsolation: String
+    proportStation: String
+    proportWoaTemperature: Double
+    proportWoaSalinity: Double
+    proportWoaDissolvedOxygen: Double
+    proportWoaSilicate: Double
+    proportWoaPhosphate: Double
+    proportWoaNitrate: Double
+    active: String
+    itsGrowthConditions: String
+    goldId: String
+    organismName: String
+    submitOrganismName: String
+    ncbiTaxonomyName: String
+    genus: String
+    genusSynonyms: String
+    species: String
+    speciesSynonyms: String
+    strain: String
+    serovar: String
+    comments: String
+    ncbiSpecies: String
+    salinity: String
+    pressure: String
+    ph: String
+    cellDiameter: String
+    annotatorComments: String
+    isVirocell: String
+    straininfoGroupId: Integer
+    source: String
+    goldClass: String
+    goldOrder: String
+    goldFamily: String
+    ncbiSuperkingdom: String
+    taxonomyStatus: String
+    isTest: String
+    growthTemperature: Double
+    subsurfaceDepth: Double
+    legacyDepthData: String
+    latitudeTest: Double
+    longitudeTest: Double
+    elevation: Double
+    elevation2: Double
+    soilCurrLandUse: String
+    soilCurrVegetation: String
+    soilCurrVegetationMethod: String
+    soilPrevLandUse: String
+    soilPrevLandUseMeth: String
+    soilCropRotation: String
+    soilAgrochemAddition: String
+    soilTillage: String
+    soilFire: String
+    soilFlooding: String
+    soilExtremeEvent: String
+    soilHorizon: String
+    soilHorizonMethod: String
+    soilSieving: String
+    soilWaterContent: String
+    soilWaterContentSoilMeth: String
+    sampleWeightDnaExt: String
+    soilPoolDnaExtracts: String
+    soilStorageCondition: String
+    soilLinkClimateInfo: String
+    soilLinkClassInfo: String
+    soilFaoClass: String
+    soilLocalClass: String
+    soilLocalClassMethod: String
+    soilType: String
+    soilTypeMethod: String
+    soilSlopeGradient: Double
+    soilSlopeAspect: Double
+    soilProfilePosition: String
+    soilDrainageClass: String
+    soilTexture: String
+    soilTextureMethod: String
+    soilPhMethod: String
+    totOrgCarbon: Double
+    soilTotOrgCMethod: String
+    totNitrogen: String
+    soilTotNMethod: String
+    soilMicrobialBiomass: String
+    soilMicrobialBiomassMethod: String
+    soilLinkAdditAnalys: String
+    soilSalinityMethod: String
+    soilHeavyMetals: Double
+    soilHeavyMetalsMethod: String
+    soilAluminiumSat: Double
+    soilAluminiumSatMethod: String
+    soilMiscParam: String
+    waterAlkalinity: Double
+    waterAlkylDiethers: Double
+    waterAminopeptAct: Double
+    waterAmmonium: Double
+    waterAtmosphericData: String
+    waterBacterialProd: Double
+    waterBacterialResp: Double
+    waterBacterialCarbonProd: Double
+    waterBishomohopanol: String
+    waterBromide: Double
+    waterCalcium: String
+    waterCarbonNitrogRatio: String
+    waterChemAdministration: String
+    waterChloride: Double
+    waterDensity: Double
+    waterDietherLipids: Double
+    waterDissCarbonDioxide: Double
+    waterDissHydrogen: Double
+    waterDissInorgCarbon: Double
+    waterDissInorgNitro: Double
+    waterDissInorgPhosphorus: Double
+    waterDissOrgCarbon: Double
+    waterDissOrgNitrogen: Double
+    waterDownwardPar: Double
+    waterFluorescence: Double
+    waterGlucosidaseActivity: Double
+    waterLightIntensity: Double
+    waterMagnesium: String
+    waterMeanFrictVel: Double
+    waterMeanPeakFrictVel: Double
+    waterMiscParameter: String
+    waterNAlkanes: Double
+    waterNitrite: Double
+    waterOrgMatter: Double
+    waterOrgNitrogen: Double
+    waterOrganismCount: Double
+    waterOxyStatSample: String
+    waterPartOrgCarbon: Double
+    waterPartOrgNitrogen: Double
+    waterPerturbation: String
+    waterPetroleumHydrocarbon: Double
+    waterPhaeopigments: Double
+    waterPhosplipidFattAcid: String
+    waterPhotonFlux: Double
+    waterPotassium: Double
+    waterPrimaryProd: Double
+    waterRedoxPotential: Double
+    waterSampStoreDur: String
+    waterSampStoreLoc: String
+    waterSampStoreTemp: Double
+    waterSodium: Double
+    waterSolubleReactPhosp: Double
+    waterSulfate: String
+    waterSulfide: String
+    waterSuspendPartMatter: Double
+    waterTidalStage: String
+    waterTotDepthWaterCol: Double
+    waterTotDissNitro: Double
+    waterTotInorgNitro: Double
+    waterTotPartCarbon: String
+    waterTotPhosphorus: Double
+    waterCurrent: String
+    altitude: Double
+    altitude2: Double
+    depth: Double
+    depth2: Double
+    longitude: Double
+    latitude: Double
+    bicarbonateMillimol: Double
+    solubleIronMicromol: Double
+    h2sMillimol: Double
+    h2sPresent: String
+    irradiance: String
+    methaneConcMillimol: Double
+    sampleConductivity: String
+    soilSampleBiomass: Double
+    soilSampleVolume: Double
+    imgBreadthCalc: Double
+    growthTemperature2: Double
+    sampleCollectionTemperature: Double
+    sampleCollectionTemperature2: Double
+    publicSpCount: Double
+    adminSpCount: Double
+    publicApCount: Double
+    adminApCount: Double
+    subsurfaceDepth1: Double
+    subsurfaceDepth2: Double
+    ph1: Double
+    ph2: Double
+    phOld: String
+    waterAlkalinityMethod: String
+    waterTurbidity: String
+    waterSizeFracLow: Double
+    waterSizeFracUp: Double
+    soilMeanAnnualTemp: Double
+    soilMeanSeasonalTemp: Double
+    soilMeanAnnualPrecpt: Double
+    soilMeanSeasonalPrecpt: Double
+    soilPackageId: Integer
+    waterPackageId: Integer
+    envoBiomeId: String
+    envoFeatureId: String
+    envoMaterialId: String
+  }
+
+type Project
+  {
+    projectName: String
+    ncbiBioprojectId: Integer
+    addDate: Time
+    modDate: Time
+    modBy: Double
+    description: String
+    specimenId: Integer
+    organismType: String
+    nucleicAcid: String
+    submitterProjectName: String
+    ncbiProjectName: String
+    isolationPublicationId: Integer
+    completionDate: Time
+    active: String
+    pmoProjectId: Integer
+    itsSpid: Double
+    projectOid: Double
+    sampleOid: Double
+    goldId: String
+    oldLegacyGoldId: String
+    legacyGoldId: String
+    isPublic: String
+    organismId: Integer
+    sequencingStatusId: Integer
+    sequencingQualityId: Integer
+    finishingGoalId: Integer
+    sequencingComments: String
+    gcPercent: Double
+    contigCount: Double
+    estSize: Double
+    chromosomeCount: Double
+    plasmidCount: Double
+    scaffoldCount: Double
+    estCount: Double
+    submitterId: Integer
+    ncbiBioprojectAccession: String
+    projectComments: String
+    annotatorComments: String
+    itsProposalId: Integer
+    gptsProposalId: Integer
+    ncbiSraId: String
+    libraryMethod: String
+    readCount: String
+    vector: String
+    readSize: String
+    ncbiLocusTag: String
+    assemblyAccession: String
+    isDraft: String
+    nucleicAcidId: Integer
+    piId: Integer
+    projectStatus: String
+    masterStudyId: Integer
+    otherProjectNames: String
+    itsProjectName: String
+    isSingleCellMaterial: String
+    itsSequencingProductName: String
+    projectManagerId: Integer
+    ncbiBiosampleAccession: String
+    lowQualityGenome: String
+    sequencingStrategy: String
+    publicApCount: Double
+    adminApCount: Double
+    publicDapCount: Double
+    adminDapCount: Double
+    isJgi: String
+    sraSrsAccession: String
+    sraSrxAccession: String
+    fundingProgram: String
+    fundingYear: Double
+    itsSampleId: Integer
+    itsSampleGroupName: String
+    experimentalConditions: String
+    sampleGroupName: String
+    itsSampleName: String
+    projectSubtype: String
+    sequencingStrategyFull: String
+    isTest: String
+    isApproved: String
+    isLocked: String
+    gptsSampleId: Integer
+    gptsDisambiguator: String
+  }
+
+type ProjectAnalysisProject
+  {
+    analysisProjectId: Integer
+  }
+
+type ProjectBiosample
+  {
+    biosampleId: Integer
+  }
+
+type ProjectCollaborator
+  {
+    institutionId: Integer
+  }
+
+type ProjectFundingAgency
+  {
+    institutionId: Integer
+  }
+
+type ProjectGenomePublication
+  {
+    publicationId: Integer
+  }
+
+type ProjectOtherPublication
+  {
+    publicationId: Integer
+  }
+
+type ProjectRelevance
+  {
+    relevanceId: Integer
+  }
+
+type ProjectSequencingCenter
+  {
+    institutionId: Integer
+  }
+
+type ProjectSequencingMethod
+  {
+    sequencingMethodId: Integer
+  }
+
+type Publication
+  {
+    doi: String
+    pubmedId: Integer
+    journalId: Integer
+    pubmodel: String
+    volume: String
+    issue: String
+    page: String
+    publicationDate: String
+    abstract: String
+    affiliation: String
+    title: String
+    lastAuthorId: Integer
+    firstAuthorId: Integer
+  }
+
+type Study
+  {
+    studyName: String
+    itsProposalId: Integer
+    ncbiProjectId: Integer
+    addDate: Time
+    modDate: Time
+    contactId: Integer
+    lastModBy: Double
+    isPublic: String
+    gptsProposalId: Integer
+    projectOid: Double
+    active: String
+    legacyGoldId: String
+    bioprojectName: String
+    goldStudyName: String
+    description: String
+    goldId: String
+    metagenomic: String
+    studyTypeId: Integer
+    ecosystem: String
+    ecosystemCategory: String
+    ecosystemType: String
+    ecosystemSubtype: String
+    specificEcosystem: String
+    ownerId: Integer
+    isDraft: String
+    publicSpCount: Double
+    adminSpCount: Double
+    publicApCount: Double
+    adminApCount: Double
+    publicDapCount: Double
+    adminDapCount: Double
+    publicBiosampleCount: Double
+    adminBiosampleCount: Double
+    isGeba: String
+    isHmp: String
+    ecosystemPathId: Integer
+    isTest: String
   }
 
 

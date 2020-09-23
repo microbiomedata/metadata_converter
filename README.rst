@@ -25,6 +25,11 @@ Currently the sources we have include:
         * `yaml <target/kbase/kbase.yaml>`__ (source biolinkml)
         * `json-schema <target/kbase/kbase.schema.json>`__ (derived)
     * `docs <docs/kbase/>`__
+* EMP
+    * `schema products <target/emp/>`__
+        * `yaml <target/emp/emp.yaml>`__ (source biolinkml)
+        * `json-schema <target/emp/emp.schema.json>`__ (derived)
+    * `docs <docs/emp/>`__
 * mixs
     * INCOMPLETE
     * code is currently external

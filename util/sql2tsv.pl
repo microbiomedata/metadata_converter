@@ -39,7 +39,7 @@ sub parse_token {
         # ignore db name
         $s = $2;
     }
-    return $s;
+    return lc($s);
 }
 sub parse_type {
     $_ = shift;
@@ -54,5 +54,5 @@ sub parse_type {
     if (m@default\s+(\S+)@i) {
         $d = parse_token($1);
     }
-    return ($t,$d);
+    return (lc($t),lc($d));
 }

@@ -1,5 +1,5 @@
 # Auto generated from gold.yaml by pythongen.py version: 0.4.0
-# Generation date: 2020-06-26 16:36
+# Generation date: 2020-07-04 19:08
 # Schema: ddl
 #
 # id: https://microbiomedata/schema/ddl
@@ -41,1401 +41,1401 @@ DEFAULT_ = DDL
 
 
 @dataclass
-class ANALYSISPROJECT(YAMLRoot):
+class AnalysisProject(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.ANALYSISPROJECT
-    class_class_curie: ClassVar[str] = "ddl:ANALYSISPROJECT"
-    class_name: ClassVar[str] = "ANALYSIS_PROJECT"
-    class_model_uri: ClassVar[URIRef] = DDL.ANALYSISPROJECT
+    class_class_uri: ClassVar[URIRef] = DDL.AnalysisProject
+    class_class_curie: ClassVar[str] = "ddl:AnalysisProject"
+    class_name: ClassVar[str] = "analysis_project"
+    class_model_uri: ClassVar[URIRef] = DDL.AnalysisProject
 
-    ITS_ANALYSIS_PROJECT_ID: Optional[int] = None
-    ANALYSIS_PROJECT_NAME: Optional[str] = None
-    REFERENCE_AP_ID: Optional[int] = None
-    IMG_TAXON_ID: Optional[int] = None
-    ANALYSIS_PROJECT_TYPE: Optional[str] = None
-    STATUS_ID: Optional[int] = None
-    NCBI_TAX_ID: Optional[int] = None
-    ADDED_BY: Optional[float] = None
-    SUBMISSION_ID: Optional[int] = None
-    GENE_COUNT: Optional[float] = None
-    BINNING_METHOD: Optional[str] = None
-    GENE_CALLING_METHOD: Optional[str] = None
-    ITS_ANALYSIS_PROJECT_NAME: Optional[str] = None
-    ITS_PRODUCT_NAME: Optional[str] = None
-    GENBANK_LOW_QUALITY_ANNOTATION: Optional[str] = None
-    IMG_ANALYSIS_COMPLETE: Optional[str] = None
-    IS_GENE_PRIMP: Optional[str] = None
-    IS_DECONTAMINATION: Optional[str] = None
-    IS_IMG_ANNOTATION: Optional[str] = None
-    ITS_ANNOTATION_AT_ID: Optional[int] = None
-    IS_ASSEMBLED_DELETED: Optional[str] = None
-    STUDY_ID: Optional[int] = None
-    ITS_ASSEMBLY_AT_TYPE: Optional[str] = None
-    APPENDED_AP_NAME: Optional[str] = None
-    PI_NAME: Optional[str] = None
-    ANALYSIS_PROJECT_NAME_FULL: Optional[str] = None
-    IS_PRIMARY: Optional[str] = None
-    PHYLOGENY_SUGGESTION: Optional[str] = None
-    REPLACES_AP_ID: Optional[int] = None
-    SCREENING_METHOD: Optional[str] = None
-    DECONTAMINATION_METHOD: Optional[str] = None
-    COMPLETION: Optional[str] = None
-    REVIEW_STATUS: Optional[str] = None
-    REJECTION_REASONS: Optional[str] = None
-    PIPELINE_ANNOTATION_METHOD: Optional[str] = None
-    CULTURE_COLLECTION: Optional[str] = None
-    SEQUENCING_DEPTH: Optional[str] = None
-    IMG_USE: Optional[str] = None
-    AP_FOR_NONOWNER: Optional[str] = None
-    ITS_NCBI_TAX_ID: Optional[int] = None
-    ITS_VERSION_NUMBER: Optional[float] = None
-    IMG_RNASEQ_ID: Optional[int] = None
-    SUBMISSION_STATUS_ID: Optional[int] = None
-    SUBMISSION_STATUS_NAME: Optional[str] = None
-    SUBMISSION_COMMENTS: Optional[str] = None
-    IMG_SUBMISSION_PRORITY: Optional[str] = None
-    CONTAMINATION_PERCENTAGE: Optional[float] = None
-    COMPLETENESS_PERCENTAGE: Optional[float] = None
-
-@dataclass
-class ANALYSISPROJECTSRARUNV2(YAMLRoot):
-    _inherited_slots: ClassVar[List[str]] = []
-
-    class_class_uri: ClassVar[URIRef] = DDL.ANALYSISPROJECTSRARUNV2
-    class_class_curie: ClassVar[str] = "ddl:ANALYSISPROJECTSRARUNV2"
-    class_name: ClassVar[str] = "ANALYSIS_PROJECT_SRA_RUN_V2"
-    class_model_uri: ClassVar[URIRef] = DDL.ANALYSISPROJECTSRARUNV2
-
-    SRA_RUN_ID: Optional[str] = None
+    its_analysis_project_id: Optional[int] = None
+    analysis_project_name: Optional[str] = None
+    reference_ap_id: Optional[int] = None
+    img_taxon_id: Optional[int] = None
+    analysis_project_type: Optional[str] = None
+    status_id: Optional[int] = None
+    ncbi_tax_id: Optional[int] = None
+    added_by: Optional[float] = None
+    submission_id: Optional[int] = None
+    gene_count: Optional[float] = None
+    binning_method: Optional[str] = None
+    gene_calling_method: Optional[str] = None
+    its_analysis_project_name: Optional[str] = None
+    its_product_name: Optional[str] = None
+    genbank_low_quality_annotation: Optional[str] = None
+    img_analysis_complete: Optional[str] = None
+    is_gene_primp: Optional[str] = None
+    is_decontamination: Optional[str] = None
+    is_img_annotation: Optional[str] = None
+    its_annotation_at_id: Optional[int] = None
+    is_assembled_deleted: Optional[str] = None
+    study_id: Optional[int] = None
+    its_assembly_at_type: Optional[str] = None
+    appended_ap_name: Optional[str] = None
+    pi_name: Optional[str] = None
+    analysis_project_name_full: Optional[str] = None
+    is_primary: Optional[str] = None
+    phylogeny_suggestion: Optional[str] = None
+    replaces_ap_id: Optional[int] = None
+    screening_method: Optional[str] = None
+    decontamination_method: Optional[str] = None
+    completion: Optional[str] = None
+    review_status: Optional[str] = None
+    rejection_reasons: Optional[str] = None
+    pipeline_annotation_method: Optional[str] = None
+    culture_collection: Optional[str] = None
+    sequencing_depth: Optional[str] = None
+    img_use: Optional[str] = None
+    ap_for_nonowner: Optional[str] = None
+    its_ncbi_tax_id: Optional[int] = None
+    its_version_number: Optional[float] = None
+    img_rnaseq_id: Optional[int] = None
+    submission_status_id: Optional[int] = None
+    submission_status_name: Optional[str] = None
+    submission_comments: Optional[str] = None
+    img_submission_prority: Optional[str] = None
+    contamination_percentage: Optional[float] = None
+    completeness_percentage: Optional[float] = None
 
 @dataclass
-class BIOSAMPLE(YAMLRoot):
+class AnalysisProjectSraRunV2(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.BIOSAMPLE
-    class_class_curie: ClassVar[str] = "ddl:BIOSAMPLE"
-    class_name: ClassVar[str] = "BIOSAMPLE"
-    class_model_uri: ClassVar[URIRef] = DDL.BIOSAMPLE
+    class_class_uri: ClassVar[URIRef] = DDL.AnalysisProjectSraRunV2
+    class_class_curie: ClassVar[str] = "ddl:AnalysisProjectSraRunV2"
+    class_name: ClassVar[str] = "analysis_project_sra_run_v2"
+    class_model_uri: ClassVar[URIRef] = DDL.AnalysisProjectSraRunV2
 
-    BIOSAMPLE_NAME: Optional[str] = None
-    HABITAT: Optional[str] = None
-    COMMUNITY: Optional[str] = None
-    LOCATION: Optional[str] = None
-    IDENTIFIER: Optional[str] = None
-    JPA_ENTITY: Optional[str] = None
-    BIOGAS_FED_SUBSTRATES: Optional[str] = None
-    BIOGAS_RETENTION_TIME: Optional[str] = None
-    BIOGAS_TEMPERATURE: Optional[str] = None
-    BIOGAS_YIELD: Optional[str] = None
-    BIOGAS_VOLATILE_ORGANIC_ACIDS: Optional[str] = None
-    BIOGAS_TOTAL_INORGANIC_CARBON: Optional[str] = None
-    BIOGAS_VOA_TIC: Optional[str] = None
-    BIOGAS_AMMONIUM_NH4: Optional[str] = None
-    BIOGAS_BUTANOL: Optional[str] = None
-    BIOGAS_ETHANOL: Optional[str] = None
-    BIOGAS_PROPANOL: Optional[str] = None
-    BIOGAS_METHANOL: Optional[str] = None
-    BIOGAS_ACETIC_ACID: Optional[str] = None
-    BIOGAS_BUTYL_ACID: Optional[str] = None
-    BIOGAS_ISO_BUTYL_ACID: Optional[str] = None
-    BIOGAS_VALERIC_ACID: Optional[str] = None
-    BIOGAS_ISO_VALERIC_ACID: Optional[str] = None
-    BIOGAS_PROPIONIC_ACID: Optional[str] = None
-    BIOGAS_METHANE_PCT: Optional[float] = None
-    OXYGEN_PRESENCE: Optional[str] = None
-    TEST_PACKAGE_ID: Optional[int] = None
-    GLOBAL_PACKAGE_ID: Optional[int] = None
+    sra_run_id: Optional[str] = None
 
 @dataclass
-class CONTACT(YAMLRoot):
+class Biosample(YAMLRoot):
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = DDL.Biosample
+    class_class_curie: ClassVar[str] = "ddl:Biosample"
+    class_name: ClassVar[str] = "biosample"
+    class_model_uri: ClassVar[URIRef] = DDL.Biosample
+
+    biosample_name: Optional[str] = None
+    habitat: Optional[str] = None
+    community: Optional[str] = None
+    location: Optional[str] = None
+    identifier: Optional[str] = None
+    jpa_entity: Optional[str] = None
+    biogas_fed_substrates: Optional[str] = None
+    biogas_retention_time: Optional[str] = None
+    biogas_temperature: Optional[str] = None
+    biogas_yield: Optional[str] = None
+    biogas_volatile_organic_acids: Optional[str] = None
+    biogas_total_inorganic_carbon: Optional[str] = None
+    biogas_voa_tic: Optional[str] = None
+    biogas_ammonium_nh4: Optional[str] = None
+    biogas_butanol: Optional[str] = None
+    biogas_ethanol: Optional[str] = None
+    biogas_propanol: Optional[str] = None
+    biogas_methanol: Optional[str] = None
+    biogas_acetic_acid: Optional[str] = None
+    biogas_butyl_acid: Optional[str] = None
+    biogas_iso_butyl_acid: Optional[str] = None
+    biogas_valeric_acid: Optional[str] = None
+    biogas_iso_valeric_acid: Optional[str] = None
+    biogas_propionic_acid: Optional[str] = None
+    biogas_methane_pct: Optional[float] = None
+    oxygen_presence: Optional[str] = None
+    test_package_id: Optional[int] = None
+    global_package_id: Optional[int] = None
+
+@dataclass
+class Contact(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CONTACT
-    class_class_curie: ClassVar[str] = "ddl:CONTACT"
-    class_name: ClassVar[str] = "CONTACT"
-    class_model_uri: ClassVar[URIRef] = DDL.CONTACT
+    class_class_uri: ClassVar[URIRef] = DDL.Contact
+    class_class_curie: ClassVar[str] = "ddl:Contact"
+    class_name: ClassVar[str] = "contact"
+    class_model_uri: ClassVar[URIRef] = DDL.Contact
 
-    USERNAME: Optional[str] = None
-    PASSWORD: Optional[str] = None
-    EMAIL: Optional[str] = None
-    PHONE: Optional[str] = None
-    ADDRESS: Optional[str] = None
-    CITY: Optional[str] = None
-    STATE: Optional[str] = None
-    X_SUPER_USER: Optional[str] = None
-    X_IMG_EDITOR: Optional[str] = None
-    X_IMG_GROUP: Optional[float] = None
-    JGI_USER: Optional[str] = None
-    X_IMG_EDITING_LEVEL: Optional[str] = None
-    CALIBAN_ID: Optional[int] = None
-    CALIBAN_USER_NAME: Optional[str] = None
-    X_IMG_CONTACT_ID: Optional[int] = None
-    MASTER_CONTACT_ID: Optional[int] = None
-    ORACLE_USER_NAME: Optional[str] = None
-    USER_ROLE: Optional[str] = None
-    GEBA_ORGANISM_AVAIL_COUNT: Optional[float] = None
-    GEBA_REVIEWER: Optional[str] = None
+    username: Optional[str] = None
+    password: Optional[str] = None
+    email: Optional[str] = None
+    phone: Optional[str] = None
+    address: Optional[str] = None
+    city: Optional[str] = None
+    state: Optional[str] = None
+    x_super_user: Optional[str] = None
+    x_img_editor: Optional[str] = None
+    x_img_group: Optional[float] = None
+    jgi_user: Optional[str] = None
+    x_img_editing_level: Optional[str] = None
+    caliban_id: Optional[int] = None
+    caliban_user_name: Optional[str] = None
+    x_img_contact_id: Optional[int] = None
+    master_contact_id: Optional[int] = None
+    oracle_user_name: Optional[str] = None
+    user_role: Optional[str] = None
+    geba_organism_avail_count: Optional[float] = None
+    geba_reviewer: Optional[str] = None
 
-class CVAPCOMPLETION(YAMLRoot):
+class CvapCompletion(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVAPCOMPLETION
-    class_class_curie: ClassVar[str] = "ddl:CVAPCOMPLETION"
-    class_name: ClassVar[str] = "CVAP_COMPLETION"
-    class_model_uri: ClassVar[URIRef] = DDL.CVAPCOMPLETION
+    class_class_uri: ClassVar[URIRef] = DDL.CvapCompletion
+    class_class_curie: ClassVar[str] = "ddl:CvapCompletion"
+    class_name: ClassVar[str] = "cvap_completion"
+    class_model_uri: ClassVar[URIRef] = DDL.CvapCompletion
 
 
-class CVAPREVIEWSTATUS(YAMLRoot):
+class CvapReviewStatus(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVAPREVIEWSTATUS
-    class_class_curie: ClassVar[str] = "ddl:CVAPREVIEWSTATUS"
-    class_name: ClassVar[str] = "CVAP_REVIEW_STATUS"
-    class_model_uri: ClassVar[URIRef] = DDL.CVAPREVIEWSTATUS
+    class_class_uri: ClassVar[URIRef] = DDL.CvapReviewStatus
+    class_class_curie: ClassVar[str] = "ddl:CvapReviewStatus"
+    class_name: ClassVar[str] = "cvap_review_status"
+    class_model_uri: ClassVar[URIRef] = DDL.CvapReviewStatus
 
 
-class CVAPSTATUS(YAMLRoot):
+class CvapStatus(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVAPSTATUS
-    class_class_curie: ClassVar[str] = "ddl:CVAPSTATUS"
-    class_name: ClassVar[str] = "CVAP_STATUS"
-    class_model_uri: ClassVar[URIRef] = DDL.CVAPSTATUS
+    class_class_uri: ClassVar[URIRef] = DDL.CvapStatus
+    class_class_curie: ClassVar[str] = "ddl:CvapStatus"
+    class_name: ClassVar[str] = "cvap_status"
+    class_model_uri: ClassVar[URIRef] = DDL.CvapStatus
 
 
-class CVAPTYPE(YAMLRoot):
+class CvapType(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVAPTYPE
-    class_class_curie: ClassVar[str] = "ddl:CVAPTYPE"
-    class_name: ClassVar[str] = "CVAP_TYPE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVAPTYPE
+    class_class_uri: ClassVar[URIRef] = DDL.CvapType
+    class_class_curie: ClassVar[str] = "ddl:CvapType"
+    class_name: ClassVar[str] = "cvap_type"
+    class_model_uri: ClassVar[URIRef] = DDL.CvapType
 
 
-class CVAVAILABILITY(YAMLRoot):
+class Cvavailability(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVAVAILABILITY
-    class_class_curie: ClassVar[str] = "ddl:CVAVAILABILITY"
-    class_name: ClassVar[str] = "CVAVAILABILITY"
-    class_model_uri: ClassVar[URIRef] = DDL.CVAVAILABILITY
+    class_class_uri: ClassVar[URIRef] = DDL.Cvavailability
+    class_class_curie: ClassVar[str] = "ddl:Cvavailability"
+    class_name: ClassVar[str] = "cvavailability"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvavailability
 
 
-class CVBIOME(YAMLRoot):
+class Cvbiome(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVBIOME
-    class_class_curie: ClassVar[str] = "ddl:CVBIOME"
-    class_name: ClassVar[str] = "CVBIOME"
-    class_model_uri: ClassVar[URIRef] = DDL.CVBIOME
+    class_class_uri: ClassVar[URIRef] = DDL.Cvbiome
+    class_class_curie: ClassVar[str] = "ddl:Cvbiome"
+    class_name: ClassVar[str] = "cvbiome"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvbiome
 
 
-class CVBIOSAFETY(YAMLRoot):
+class Cvbiosafety(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVBIOSAFETY
-    class_class_curie: ClassVar[str] = "ddl:CVBIOSAFETY"
-    class_name: ClassVar[str] = "CVBIOSAFETY"
-    class_model_uri: ClassVar[URIRef] = DDL.CVBIOSAFETY
+    class_class_uri: ClassVar[URIRef] = DDL.Cvbiosafety
+    class_class_curie: ClassVar[str] = "ddl:Cvbiosafety"
+    class_name: ClassVar[str] = "cvbiosafety"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvbiosafety
 
 
-class CVBIOTICRELATIONSHIP(YAMLRoot):
+class CvbioticRelationship(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVBIOTICRELATIONSHIP
-    class_class_curie: ClassVar[str] = "ddl:CVBIOTICRELATIONSHIP"
-    class_name: ClassVar[str] = "CVBIOTIC_RELATIONSHIP"
-    class_model_uri: ClassVar[URIRef] = DDL.CVBIOTICRELATIONSHIP
+    class_class_uri: ClassVar[URIRef] = DDL.CvbioticRelationship
+    class_class_curie: ClassVar[str] = "ddl:CvbioticRelationship"
+    class_name: ClassVar[str] = "cvbiotic_relationship"
+    class_model_uri: ClassVar[URIRef] = DDL.CvbioticRelationship
 
 
-class CVBODYPRODUCT(YAMLRoot):
+class CvbodyProduct(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVBODYPRODUCT
-    class_class_curie: ClassVar[str] = "ddl:CVBODYPRODUCT"
-    class_name: ClassVar[str] = "CVBODY_PRODUCT"
-    class_model_uri: ClassVar[URIRef] = DDL.CVBODYPRODUCT
+    class_class_uri: ClassVar[URIRef] = DDL.CvbodyProduct
+    class_class_curie: ClassVar[str] = "ddl:CvbodyProduct"
+    class_name: ClassVar[str] = "cvbody_product"
+    class_model_uri: ClassVar[URIRef] = DDL.CvbodyProduct
 
 
-class CVBODYSITE(YAMLRoot):
+class CvbodySite(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVBODYSITE
-    class_class_curie: ClassVar[str] = "ddl:CVBODYSITE"
-    class_name: ClassVar[str] = "CVBODY_SITE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVBODYSITE
+    class_class_uri: ClassVar[URIRef] = DDL.CvbodySite
+    class_class_curie: ClassVar[str] = "ddl:CvbodySite"
+    class_name: ClassVar[str] = "cvbody_site"
+    class_model_uri: ClassVar[URIRef] = DDL.CvbodySite
 
 
-class CVBODYSUBSITE(YAMLRoot):
+class CvbodySubsite(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVBODYSUBSITE
-    class_class_curie: ClassVar[str] = "ddl:CVBODYSUBSITE"
-    class_name: ClassVar[str] = "CVBODY_SUBSITE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVBODYSUBSITE
+    class_class_uri: ClassVar[URIRef] = DDL.CvbodySubsite
+    class_class_curie: ClassVar[str] = "ddl:CvbodySubsite"
+    class_name: ClassVar[str] = "cvbody_subsite"
+    class_model_uri: ClassVar[URIRef] = DDL.CvbodySubsite
 
 
-class CVCELLARRANGEMENT(YAMLRoot):
+class CvcellArrangement(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVCELLARRANGEMENT
-    class_class_curie: ClassVar[str] = "ddl:CVCELLARRANGEMENT"
-    class_name: ClassVar[str] = "CVCELL_ARRANGEMENT"
-    class_model_uri: ClassVar[URIRef] = DDL.CVCELLARRANGEMENT
+    class_class_uri: ClassVar[URIRef] = DDL.CvcellArrangement
+    class_class_curie: ClassVar[str] = "ddl:CvcellArrangement"
+    class_name: ClassVar[str] = "cvcell_arrangement"
+    class_model_uri: ClassVar[URIRef] = DDL.CvcellArrangement
 
 
-class CVCELLSHAPE(YAMLRoot):
+class CvcellShape(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVCELLSHAPE
-    class_class_curie: ClassVar[str] = "ddl:CVCELLSHAPE"
-    class_name: ClassVar[str] = "CVCELL_SHAPE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVCELLSHAPE
+    class_class_uri: ClassVar[URIRef] = DDL.CvcellShape
+    class_class_curie: ClassVar[str] = "ddl:CvcellShape"
+    class_name: ClassVar[str] = "cvcell_shape"
+    class_model_uri: ClassVar[URIRef] = DDL.CvcellShape
 
 
-class CVCOLOR(YAMLRoot):
+class Cvcolor(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVCOLOR
-    class_class_curie: ClassVar[str] = "ddl:CVCOLOR"
-    class_name: ClassVar[str] = "CVCOLOR"
-    class_model_uri: ClassVar[URIRef] = DDL.CVCOLOR
+    class_class_uri: ClassVar[URIRef] = DDL.Cvcolor
+    class_class_curie: ClassVar[str] = "ddl:Cvcolor"
+    class_name: ClassVar[str] = "cvcolor"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvcolor
 
 
-class CVCOUNTRY(YAMLRoot):
+class Cvcountry(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVCOUNTRY
-    class_class_curie: ClassVar[str] = "ddl:CVCOUNTRY"
-    class_name: ClassVar[str] = "CVCOUNTRY"
-    class_model_uri: ClassVar[URIRef] = DDL.CVCOUNTRY
+    class_class_uri: ClassVar[URIRef] = DDL.Cvcountry
+    class_class_curie: ClassVar[str] = "ddl:Cvcountry"
+    class_name: ClassVar[str] = "cvcountry"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvcountry
 
 
-class CVCULTURETYPE(YAMLRoot):
+class CvcultureType(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVCULTURETYPE
-    class_class_curie: ClassVar[str] = "ddl:CVCULTURETYPE"
-    class_name: ClassVar[str] = "CVCULTURE_TYPE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVCULTURETYPE
+    class_class_uri: ClassVar[URIRef] = DDL.CvcultureType
+    class_class_curie: ClassVar[str] = "ddl:CvcultureType"
+    class_name: ClassVar[str] = "cvculture_type"
+    class_model_uri: ClassVar[URIRef] = DDL.CvcultureType
 
 
-class CVCURRENTLANDUSE(YAMLRoot):
+class CvcurrentLandUse(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVCURRENTLANDUSE
-    class_class_curie: ClassVar[str] = "ddl:CVCURRENTLANDUSE"
-    class_name: ClassVar[str] = "CVCURRENT_LAND_USE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVCURRENTLANDUSE
+    class_class_uri: ClassVar[URIRef] = DDL.CvcurrentLandUse
+    class_class_curie: ClassVar[str] = "ddl:CvcurrentLandUse"
+    class_name: ClassVar[str] = "cvcurrent_land_use"
+    class_model_uri: ClassVar[URIRef] = DDL.CvcurrentLandUse
 
 
-class CVDATAVALIDITYTYPE(YAMLRoot):
+class CvdataValidityType(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVDATAVALIDITYTYPE
-    class_class_curie: ClassVar[str] = "ddl:CVDATAVALIDITYTYPE"
-    class_name: ClassVar[str] = "CVDATA_VALIDITY_TYPE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVDATAVALIDITYTYPE
+    class_class_uri: ClassVar[URIRef] = DDL.CvdataValidityType
+    class_class_curie: ClassVar[str] = "ddl:CvdataValidityType"
+    class_name: ClassVar[str] = "cvdata_validity_type"
+    class_model_uri: ClassVar[URIRef] = DDL.CvdataValidityType
 
 
-class CVDISEASE(YAMLRoot):
+class Cvdisease(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVDISEASE
-    class_class_curie: ClassVar[str] = "ddl:CVDISEASE"
-    class_name: ClassVar[str] = "CVDISEASE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVDISEASE
+    class_class_uri: ClassVar[URIRef] = DDL.Cvdisease
+    class_class_curie: ClassVar[str] = "ddl:Cvdisease"
+    class_name: ClassVar[str] = "cvdisease"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvdisease
 
 
-class CVDOMAIN(YAMLRoot):
+class Cvdomain(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVDOMAIN
-    class_class_curie: ClassVar[str] = "ddl:CVDOMAIN"
-    class_name: ClassVar[str] = "CVDOMAIN"
-    class_model_uri: ClassVar[URIRef] = DDL.CVDOMAIN
+    class_class_uri: ClassVar[URIRef] = DDL.Cvdomain
+    class_class_curie: ClassVar[str] = "ddl:Cvdomain"
+    class_name: ClassVar[str] = "cvdomain"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvdomain
 
 
-class CVDRAINAGECLASS(YAMLRoot):
+class CvdrainageClass(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVDRAINAGECLASS
-    class_class_curie: ClassVar[str] = "ddl:CVDRAINAGECLASS"
-    class_name: ClassVar[str] = "CVDRAINAGE_CLASS"
-    class_model_uri: ClassVar[URIRef] = DDL.CVDRAINAGECLASS
+    class_class_uri: ClassVar[URIRef] = DDL.CvdrainageClass
+    class_class_curie: ClassVar[str] = "ddl:CvdrainageClass"
+    class_name: ClassVar[str] = "cvdrainage_class"
+    class_model_uri: ClassVar[URIRef] = DDL.CvdrainageClass
 
 
-class CVENERGYSOURCE(YAMLRoot):
+class CvenergySource(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVENERGYSOURCE
-    class_class_curie: ClassVar[str] = "ddl:CVENERGYSOURCE"
-    class_name: ClassVar[str] = "CVENERGY_SOURCE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVENERGYSOURCE
+    class_class_uri: ClassVar[URIRef] = DDL.CvenergySource
+    class_class_curie: ClassVar[str] = "ddl:CvenergySource"
+    class_name: ClassVar[str] = "cvenergy_source"
+    class_model_uri: ClassVar[URIRef] = DDL.CvenergySource
 
 
-class CVENVPACKAGE(YAMLRoot):
+class Cvenvpackage(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVENVPACKAGE
-    class_class_curie: ClassVar[str] = "ddl:CVENVPACKAGE"
-    class_name: ClassVar[str] = "CVENVPACKAGE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVENVPACKAGE
+    class_class_uri: ClassVar[URIRef] = DDL.Cvenvpackage
+    class_class_curie: ClassVar[str] = "ddl:Cvenvpackage"
+    class_name: ClassVar[str] = "cvenvpackage"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvenvpackage
 
 
-class CVFASTADOWNLOADSTATUS(YAMLRoot):
+class Cvfastadownloadstatus(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVFASTADOWNLOADSTATUS
-    class_class_curie: ClassVar[str] = "ddl:CVFASTADOWNLOADSTATUS"
-    class_name: ClassVar[str] = "CVFASTADOWNLOADSTATUS"
-    class_model_uri: ClassVar[URIRef] = DDL.CVFASTADOWNLOADSTATUS
+    class_class_uri: ClassVar[URIRef] = DDL.Cvfastadownloadstatus
+    class_class_curie: ClassVar[str] = "ddl:Cvfastadownloadstatus"
+    class_name: ClassVar[str] = "cvfastadownloadstatus"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvfastadownloadstatus
 
 
-class CVFINISHINGGOAL(YAMLRoot):
+class CvfinishingGoal(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVFINISHINGGOAL
-    class_class_curie: ClassVar[str] = "ddl:CVFINISHINGGOAL"
-    class_name: ClassVar[str] = "CVFINISHING_GOAL"
-    class_model_uri: ClassVar[URIRef] = DDL.CVFINISHINGGOAL
+    class_class_uri: ClassVar[URIRef] = DDL.CvfinishingGoal
+    class_class_curie: ClassVar[str] = "ddl:CvfinishingGoal"
+    class_name: ClassVar[str] = "cvfinishing_goal"
+    class_model_uri: ClassVar[URIRef] = DDL.CvfinishingGoal
 
 
-class CVGEBAPRIORITYSTATUS(YAMLRoot):
+class CvgebaPriorityStatus(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVGEBAPRIORITYSTATUS
-    class_class_curie: ClassVar[str] = "ddl:CVGEBAPRIORITYSTATUS"
-    class_name: ClassVar[str] = "CVGEBA_PRIORITY_STATUS"
-    class_model_uri: ClassVar[URIRef] = DDL.CVGEBAPRIORITYSTATUS
+    class_class_uri: ClassVar[URIRef] = DDL.CvgebaPriorityStatus
+    class_class_curie: ClassVar[str] = "ddl:CvgebaPriorityStatus"
+    class_name: ClassVar[str] = "cvgeba_priority_status"
+    class_model_uri: ClassVar[URIRef] = DDL.CvgebaPriorityStatus
 
 
-class CVGEBAREVIEWSTATUS(YAMLRoot):
+class CvgebaReviewStatus(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVGEBAREVIEWSTATUS
-    class_class_curie: ClassVar[str] = "ddl:CVGEBAREVIEWSTATUS"
-    class_name: ClassVar[str] = "CVGEBA_REVIEW_STATUS"
-    class_model_uri: ClassVar[URIRef] = DDL.CVGEBAREVIEWSTATUS
+    class_class_uri: ClassVar[URIRef] = DDL.CvgebaReviewStatus
+    class_class_curie: ClassVar[str] = "ddl:CvgebaReviewStatus"
+    class_name: ClassVar[str] = "cvgeba_review_status"
+    class_model_uri: ClassVar[URIRef] = DDL.CvgebaReviewStatus
 
 
-class CVGEBASAMPLETYPE(YAMLRoot):
+class CvgebaSampleType(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVGEBASAMPLETYPE
-    class_class_curie: ClassVar[str] = "ddl:CVGEBASAMPLETYPE"
-    class_name: ClassVar[str] = "CVGEBA_SAMPLE_TYPE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVGEBASAMPLETYPE
+    class_class_uri: ClassVar[URIRef] = DDL.CvgebaSampleType
+    class_class_curie: ClassVar[str] = "ddl:CvgebaSampleType"
+    class_name: ClassVar[str] = "cvgeba_sample_type"
+    class_model_uri: ClassVar[URIRef] = DDL.CvgebaSampleType
 
 
-class CVGEBATYPES(YAMLRoot):
+class CvgebaTypes(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVGEBATYPES
-    class_class_curie: ClassVar[str] = "ddl:CVGEBATYPES"
-    class_name: ClassVar[str] = "CVGEBA_TYPES"
-    class_model_uri: ClassVar[URIRef] = DDL.CVGEBATYPES
+    class_class_uri: ClassVar[URIRef] = DDL.CvgebaTypes
+    class_class_curie: ClassVar[str] = "ddl:CvgebaTypes"
+    class_name: ClassVar[str] = "cvgeba_types"
+    class_model_uri: ClassVar[URIRef] = DDL.CvgebaTypes
 
 
-class CVGRAMSTAIN(YAMLRoot):
+class CvgramStain(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVGRAMSTAIN
-    class_class_curie: ClassVar[str] = "ddl:CVGRAMSTAIN"
-    class_name: ClassVar[str] = "CVGRAM_STAIN"
-    class_model_uri: ClassVar[URIRef] = DDL.CVGRAMSTAIN
+    class_class_uri: ClassVar[URIRef] = DDL.CvgramStain
+    class_class_curie: ClassVar[str] = "ddl:CvgramStain"
+    class_name: ClassVar[str] = "cvgram_stain"
+    class_model_uri: ClassVar[URIRef] = DDL.CvgramStain
 
 
-class CVHABITAT(YAMLRoot):
+class Cvhabitat(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVHABITAT
-    class_class_curie: ClassVar[str] = "ddl:CVHABITAT"
-    class_name: ClassVar[str] = "CVHABITAT"
-    class_model_uri: ClassVar[URIRef] = DDL.CVHABITAT
+    class_class_uri: ClassVar[URIRef] = DDL.Cvhabitat
+    class_class_curie: ClassVar[str] = "ddl:Cvhabitat"
+    class_name: ClassVar[str] = "cvhabitat"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvhabitat
 
 
-class CVHORIZON(YAMLRoot):
+class Cvhorizon(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVHORIZON
-    class_class_curie: ClassVar[str] = "ddl:CVHORIZON"
-    class_name: ClassVar[str] = "CVHORIZON"
-    class_model_uri: ClassVar[URIRef] = DDL.CVHORIZON
+    class_class_uri: ClassVar[URIRef] = DDL.Cvhorizon
+    class_class_curie: ClassVar[str] = "ddl:Cvhorizon"
+    class_name: ClassVar[str] = "cvhorizon"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvhorizon
 
 
-class CVHOSTGENDER(YAMLRoot):
+class CvhostGender(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVHOSTGENDER
-    class_class_curie: ClassVar[str] = "ddl:CVHOSTGENDER"
-    class_name: ClassVar[str] = "CVHOST_GENDER"
-    class_model_uri: ClassVar[URIRef] = DDL.CVHOSTGENDER
+    class_class_uri: ClassVar[URIRef] = DDL.CvhostGender
+    class_class_curie: ClassVar[str] = "ddl:CvhostGender"
+    class_name: ClassVar[str] = "cvhost_gender"
+    class_model_uri: ClassVar[URIRef] = DDL.CvhostGender
 
 
-class CVIMGUSE(YAMLRoot):
+class Cvimguse(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVIMGUSE
-    class_class_curie: ClassVar[str] = "ddl:CVIMGUSE"
-    class_name: ClassVar[str] = "CVIMGUSE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVIMGUSE
+    class_class_uri: ClassVar[URIRef] = DDL.Cvimguse
+    class_class_curie: ClassVar[str] = "ddl:Cvimguse"
+    class_name: ClassVar[str] = "cvimguse"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvimguse
 
 
-class CVIRRADIANCE(YAMLRoot):
+class Cvirradiance(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVIRRADIANCE
-    class_class_curie: ClassVar[str] = "ddl:CVIRRADIANCE"
-    class_name: ClassVar[str] = "CVIRRADIANCE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVIRRADIANCE
+    class_class_uri: ClassVar[URIRef] = DDL.Cvirradiance
+    class_class_curie: ClassVar[str] = "ddl:Cvirradiance"
+    class_name: ClassVar[str] = "cvirradiance"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvirradiance
 
 
-class CVLATLONG(YAMLRoot):
+class Cvlatlong(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVLATLONG
-    class_class_curie: ClassVar[str] = "ddl:CVLATLONG"
-    class_name: ClassVar[str] = "CVLATLONG"
-    class_model_uri: ClassVar[URIRef] = DDL.CVLATLONG
+    class_class_uri: ClassVar[URIRef] = DDL.Cvlatlong
+    class_class_curie: ClassVar[str] = "ddl:Cvlatlong"
+    class_name: ClassVar[str] = "cvlatlong"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvlatlong
 
 
-class CVMETABOLISM(YAMLRoot):
+class Cvmetabolism(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVMETABOLISM
-    class_class_curie: ClassVar[str] = "ddl:CVMETABOLISM"
-    class_name: ClassVar[str] = "CVMETABOLISM"
-    class_model_uri: ClassVar[URIRef] = DDL.CVMETABOLISM
+    class_class_uri: ClassVar[URIRef] = DDL.Cvmetabolism
+    class_class_curie: ClassVar[str] = "ddl:Cvmetabolism"
+    class_name: ClassVar[str] = "cvmetabolism"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvmetabolism
 
 
-class CVMODEL(YAMLRoot):
+class Cvmodel(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVMODEL
-    class_class_curie: ClassVar[str] = "ddl:CVMODEL"
-    class_name: ClassVar[str] = "CVMODEL"
-    class_model_uri: ClassVar[URIRef] = DDL.CVMODEL
+    class_class_uri: ClassVar[URIRef] = DDL.Cvmodel
+    class_class_curie: ClassVar[str] = "ddl:Cvmodel"
+    class_name: ClassVar[str] = "cvmodel"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvmodel
 
 
-class CVMONTH(YAMLRoot):
+class Cvmonth(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVMONTH
-    class_class_curie: ClassVar[str] = "ddl:CVMONTH"
-    class_name: ClassVar[str] = "CVMONTH"
-    class_model_uri: ClassVar[URIRef] = DDL.CVMONTH
+    class_class_uri: ClassVar[URIRef] = DDL.Cvmonth
+    class_class_curie: ClassVar[str] = "ddl:Cvmonth"
+    class_name: ClassVar[str] = "cvmonth"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvmonth
 
 
-class CVMOTILITY(YAMLRoot):
+class Cvmotility(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVMOTILITY
-    class_class_curie: ClassVar[str] = "ddl:CVMOTILITY"
-    class_name: ClassVar[str] = "CVMOTILITY"
-    class_model_uri: ClassVar[URIRef] = DDL.CVMOTILITY
+    class_class_uri: ClassVar[URIRef] = DDL.Cvmotility
+    class_class_curie: ClassVar[str] = "ddl:Cvmotility"
+    class_name: ClassVar[str] = "cvmotility"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvmotility
 
 
-class CVNUCLEICACID(YAMLRoot):
+class CvnucleicAcid(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVNUCLEICACID
-    class_class_curie: ClassVar[str] = "ddl:CVNUCLEICACID"
-    class_name: ClassVar[str] = "CVNUCLEIC_ACID"
-    class_model_uri: ClassVar[URIRef] = DDL.CVNUCLEICACID
+    class_class_uri: ClassVar[URIRef] = DDL.CvnucleicAcid
+    class_class_curie: ClassVar[str] = "ddl:CvnucleicAcid"
+    class_name: ClassVar[str] = "cvnucleic_acid"
+    class_model_uri: ClassVar[URIRef] = DDL.CvnucleicAcid
 
 
-class CVORGANISMTYPE(YAMLRoot):
+class CvorganismType(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVORGANISMTYPE
-    class_class_curie: ClassVar[str] = "ddl:CVORGANISMTYPE"
-    class_name: ClassVar[str] = "CVORGANISM_TYPE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVORGANISMTYPE
+    class_class_uri: ClassVar[URIRef] = DDL.CvorganismType
+    class_class_curie: ClassVar[str] = "ddl:CvorganismType"
+    class_name: ClassVar[str] = "cvorganism_type"
+    class_model_uri: ClassVar[URIRef] = DDL.CvorganismType
 
 
-class CVOXYGEN(YAMLRoot):
+class Cvoxygen(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVOXYGEN
-    class_class_curie: ClassVar[str] = "ddl:CVOXYGEN"
-    class_name: ClassVar[str] = "CVOXYGEN"
-    class_model_uri: ClassVar[URIRef] = DDL.CVOXYGEN
+    class_class_uri: ClassVar[URIRef] = DDL.Cvoxygen
+    class_class_curie: ClassVar[str] = "ddl:Cvoxygen"
+    class_name: ClassVar[str] = "cvoxygen"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvoxygen
 
 
-class CVOXYGENPRESENCE(YAMLRoot):
+class CvoxygenPresence(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVOXYGENPRESENCE
-    class_class_curie: ClassVar[str] = "ddl:CVOXYGENPRESENCE"
-    class_name: ClassVar[str] = "CVOXYGEN_PRESENCE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVOXYGENPRESENCE
+    class_class_uri: ClassVar[URIRef] = DDL.CvoxygenPresence
+    class_class_curie: ClassVar[str] = "ddl:CvoxygenPresence"
+    class_name: ClassVar[str] = "cvoxygen_presence"
+    class_model_uri: ClassVar[URIRef] = DDL.CvoxygenPresence
 
 
-class CVOXYGENSTATSAMPLE(YAMLRoot):
+class CvoxygenStatSample(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVOXYGENSTATSAMPLE
-    class_class_curie: ClassVar[str] = "ddl:CVOXYGENSTATSAMPLE"
-    class_name: ClassVar[str] = "CVOXYGEN_STAT_SAMPLE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVOXYGENSTATSAMPLE
+    class_class_uri: ClassVar[URIRef] = DDL.CvoxygenStatSample
+    class_class_curie: ClassVar[str] = "ddl:CvoxygenStatSample"
+    class_name: ClassVar[str] = "cvoxygen_stat_sample"
+    class_model_uri: ClassVar[URIRef] = DDL.CvoxygenStatSample
 
 
-class CVPACKAGES(YAMLRoot):
+class Cvpackages(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVPACKAGES
-    class_class_curie: ClassVar[str] = "ddl:CVPACKAGES"
-    class_name: ClassVar[str] = "CVPACKAGES"
-    class_model_uri: ClassVar[URIRef] = DDL.CVPACKAGES
+    class_class_uri: ClassVar[URIRef] = DDL.Cvpackages
+    class_class_curie: ClassVar[str] = "ddl:Cvpackages"
+    class_name: ClassVar[str] = "cvpackages"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvpackages
 
 
-class CVPHENOTYPE(YAMLRoot):
+class Cvphenotype(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVPHENOTYPE
-    class_class_curie: ClassVar[str] = "ddl:CVPHENOTYPE"
-    class_name: ClassVar[str] = "CVPHENOTYPE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVPHENOTYPE
+    class_class_uri: ClassVar[URIRef] = DDL.Cvphenotype
+    class_class_curie: ClassVar[str] = "ddl:Cvphenotype"
+    class_name: ClassVar[str] = "cvphenotype"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvphenotype
 
 
-class CVPHYLOGENY(YAMLRoot):
+class Cvphylogeny(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVPHYLOGENY
-    class_class_curie: ClassVar[str] = "ddl:CVPHYLOGENY"
-    class_name: ClassVar[str] = "CVPHYLOGENY"
-    class_model_uri: ClassVar[URIRef] = DDL.CVPHYLOGENY
+    class_class_uri: ClassVar[URIRef] = DDL.Cvphylogeny
+    class_class_curie: ClassVar[str] = "ddl:Cvphylogeny"
+    class_name: ClassVar[str] = "cvphylogeny"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvphylogeny
 
 
-class CVPROFILEPOSITION(YAMLRoot):
+class CvprofilePosition(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVPROFILEPOSITION
-    class_class_curie: ClassVar[str] = "ddl:CVPROFILEPOSITION"
-    class_name: ClassVar[str] = "CVPROFILE_POSITION"
-    class_model_uri: ClassVar[URIRef] = DDL.CVPROFILEPOSITION
+    class_class_uri: ClassVar[URIRef] = DDL.CvprofilePosition
+    class_class_curie: ClassVar[str] = "ddl:CvprofilePosition"
+    class_name: ClassVar[str] = "cvprofile_position"
+    class_model_uri: ClassVar[URIRef] = DDL.CvprofilePosition
 
 
-class CVPROJECTSTATUS(YAMLRoot):
+class CvprojectStatus(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVPROJECTSTATUS
-    class_class_curie: ClassVar[str] = "ddl:CVPROJECTSTATUS"
-    class_name: ClassVar[str] = "CVPROJECT_STATUS"
-    class_model_uri: ClassVar[URIRef] = DDL.CVPROJECTSTATUS
+    class_class_uri: ClassVar[URIRef] = DDL.CvprojectStatus
+    class_class_curie: ClassVar[str] = "ddl:CvprojectStatus"
+    class_name: ClassVar[str] = "cvproject_status"
+    class_model_uri: ClassVar[URIRef] = DDL.CvprojectStatus
 
 
-class CVPROJECTSUBTYPE(YAMLRoot):
+class CvprojectSubtype(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVPROJECTSUBTYPE
-    class_class_curie: ClassVar[str] = "ddl:CVPROJECTSUBTYPE"
-    class_name: ClassVar[str] = "CVPROJECT_SUBTYPE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVPROJECTSUBTYPE
+    class_class_uri: ClassVar[URIRef] = DDL.CvprojectSubtype
+    class_class_curie: ClassVar[str] = "ddl:CvprojectSubtype"
+    class_name: ClassVar[str] = "cvproject_subtype"
+    class_model_uri: ClassVar[URIRef] = DDL.CvprojectSubtype
 
 
-class CVPROJECTTYPE(YAMLRoot):
+class CvprojectType(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVPROJECTTYPE
-    class_class_curie: ClassVar[str] = "ddl:CVPROJECTTYPE"
-    class_name: ClassVar[str] = "CVPROJECT_TYPE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVPROJECTTYPE
+    class_class_uri: ClassVar[URIRef] = DDL.CvprojectType
+    class_class_curie: ClassVar[str] = "ddl:CvprojectType"
+    class_name: ClassVar[str] = "cvproject_type"
+    class_model_uri: ClassVar[URIRef] = DDL.CvprojectType
 
 
-class CVRELEVANCE(YAMLRoot):
+class Cvrelevance(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVRELEVANCE
-    class_class_curie: ClassVar[str] = "ddl:CVRELEVANCE"
-    class_name: ClassVar[str] = "CVRELEVANCE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVRELEVANCE
+    class_class_uri: ClassVar[URIRef] = DDL.Cvrelevance
+    class_class_curie: ClassVar[str] = "ddl:Cvrelevance"
+    class_name: ClassVar[str] = "cvrelevance"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvrelevance
 
 
-class CVROLES(YAMLRoot):
+class Cvroles(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVROLES
-    class_class_curie: ClassVar[str] = "ddl:CVROLES"
-    class_name: ClassVar[str] = "CVROLES"
-    class_model_uri: ClassVar[URIRef] = DDL.CVROLES
+    class_class_uri: ClassVar[URIRef] = DDL.Cvroles
+    class_class_curie: ClassVar[str] = "ddl:Cvroles"
+    class_name: ClassVar[str] = "cvroles"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvroles
 
 
-class CVSALINITY(YAMLRoot):
+class Cvsalinity(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVSALINITY
-    class_class_curie: ClassVar[str] = "ddl:CVSALINITY"
-    class_name: ClassVar[str] = "CVSALINITY"
-    class_model_uri: ClassVar[URIRef] = DDL.CVSALINITY
+    class_class_uri: ClassVar[URIRef] = DDL.Cvsalinity
+    class_class_curie: ClassVar[str] = "ddl:Cvsalinity"
+    class_name: ClassVar[str] = "cvsalinity"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvsalinity
 
 
-class CVSEQQUALITY(YAMLRoot):
+class CvseqQuality(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVSEQQUALITY
-    class_class_curie: ClassVar[str] = "ddl:CVSEQQUALITY"
-    class_name: ClassVar[str] = "CVSEQ_QUALITY"
-    class_model_uri: ClassVar[URIRef] = DDL.CVSEQQUALITY
+    class_class_uri: ClassVar[URIRef] = DDL.CvseqQuality
+    class_class_curie: ClassVar[str] = "ddl:CvseqQuality"
+    class_name: ClassVar[str] = "cvseq_quality"
+    class_model_uri: ClassVar[URIRef] = DDL.CvseqQuality
 
 
-class CVSEQSTATUS(YAMLRoot):
+class CvseqStatus(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVSEQSTATUS
-    class_class_curie: ClassVar[str] = "ddl:CVSEQSTATUS"
-    class_name: ClassVar[str] = "CVSEQ_STATUS"
-    class_model_uri: ClassVar[URIRef] = DDL.CVSEQSTATUS
+    class_class_uri: ClassVar[URIRef] = DDL.CvseqStatus
+    class_class_curie: ClassVar[str] = "ddl:CvseqStatus"
+    class_name: ClassVar[str] = "cvseq_status"
+    class_model_uri: ClassVar[URIRef] = DDL.CvseqStatus
 
 
-class CVSOILFAOCLASS(YAMLRoot):
+class Cvsoilfaoclass(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVSOILFAOCLASS
-    class_class_curie: ClassVar[str] = "ddl:CVSOILFAOCLASS"
-    class_name: ClassVar[str] = "CVSOILFAOCLASS"
-    class_model_uri: ClassVar[URIRef] = DDL.CVSOILFAOCLASS
+    class_class_uri: ClassVar[URIRef] = DDL.Cvsoilfaoclass
+    class_class_curie: ClassVar[str] = "ddl:Cvsoilfaoclass"
+    class_name: ClassVar[str] = "cvsoilfaoclass"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvsoilfaoclass
 
 
-class CVSPECIMEN(YAMLRoot):
+class Cvspecimen(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVSPECIMEN
-    class_class_curie: ClassVar[str] = "ddl:CVSPECIMEN"
-    class_name: ClassVar[str] = "CVSPECIMEN"
-    class_model_uri: ClassVar[URIRef] = DDL.CVSPECIMEN
+    class_class_uri: ClassVar[URIRef] = DDL.Cvspecimen
+    class_class_curie: ClassVar[str] = "ddl:Cvspecimen"
+    class_name: ClassVar[str] = "cvspecimen"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvspecimen
 
 
-class CVSPORULATION(YAMLRoot):
+class Cvsporulation(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVSPORULATION
-    class_class_curie: ClassVar[str] = "ddl:CVSPORULATION"
-    class_name: ClassVar[str] = "CVSPORULATION"
-    class_model_uri: ClassVar[URIRef] = DDL.CVSPORULATION
+    class_class_uri: ClassVar[URIRef] = DDL.Cvsporulation
+    class_class_curie: ClassVar[str] = "ddl:Cvsporulation"
+    class_name: ClassVar[str] = "cvsporulation"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvsporulation
 
 
-class CVSTUDYTYPE(YAMLRoot):
+class CvstudyType(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVSTUDYTYPE
-    class_class_curie: ClassVar[str] = "ddl:CVSTUDYTYPE"
-    class_name: ClassVar[str] = "CVSTUDY_TYPE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVSTUDYTYPE
+    class_class_uri: ClassVar[URIRef] = DDL.CvstudyType
+    class_class_curie: ClassVar[str] = "ddl:CvstudyType"
+    class_name: ClassVar[str] = "cvstudy_type"
+    class_model_uri: ClassVar[URIRef] = DDL.CvstudyType
 
 
-class CVTEMPRANGE(YAMLRoot):
+class CvtempRange(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVTEMPRANGE
-    class_class_curie: ClassVar[str] = "ddl:CVTEMPRANGE"
-    class_name: ClassVar[str] = "CVTEMP_RANGE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVTEMPRANGE
+    class_class_uri: ClassVar[URIRef] = DDL.CvtempRange
+    class_class_curie: ClassVar[str] = "ddl:CvtempRange"
+    class_name: ClassVar[str] = "cvtemp_range"
+    class_model_uri: ClassVar[URIRef] = DDL.CvtempRange
 
 
-class CVTIDALSTAGE(YAMLRoot):
+class CvtidalStage(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVTIDALSTAGE
-    class_class_curie: ClassVar[str] = "ddl:CVTIDALSTAGE"
-    class_name: ClassVar[str] = "CVTIDAL_STAGE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVTIDALSTAGE
+    class_class_uri: ClassVar[URIRef] = DDL.CvtidalStage
+    class_class_curie: ClassVar[str] = "ddl:CvtidalStage"
+    class_name: ClassVar[str] = "cvtidal_stage"
+    class_model_uri: ClassVar[URIRef] = DDL.CvtidalStage
 
 
-class CVTILLAGE(YAMLRoot):
+class Cvtillage(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVTILLAGE
-    class_class_curie: ClassVar[str] = "ddl:CVTILLAGE"
-    class_name: ClassVar[str] = "CVTILLAGE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVTILLAGE
+    class_class_uri: ClassVar[URIRef] = DDL.Cvtillage
+    class_class_curie: ClassVar[str] = "ddl:Cvtillage"
+    class_name: ClassVar[str] = "cvtillage"
+    class_model_uri: ClassVar[URIRef] = DDL.Cvtillage
 
 
-class CVUNCULTUREDTYPE(YAMLRoot):
+class CvunculturedType(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVUNCULTUREDTYPE
-    class_class_curie: ClassVar[str] = "ddl:CVUNCULTUREDTYPE"
-    class_name: ClassVar[str] = "CVUNCULTURED_TYPE"
-    class_model_uri: ClassVar[URIRef] = DDL.CVUNCULTUREDTYPE
+    class_class_uri: ClassVar[URIRef] = DDL.CvunculturedType
+    class_class_curie: ClassVar[str] = "ddl:CvunculturedType"
+    class_name: ClassVar[str] = "cvuncultured_type"
+    class_model_uri: ClassVar[URIRef] = DDL.CvunculturedType
 
 
-class CVYESNO(YAMLRoot):
+class CvyesNo(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVYESNO
-    class_class_curie: ClassVar[str] = "ddl:CVYESNO"
-    class_name: ClassVar[str] = "CVYES_NO"
-    class_model_uri: ClassVar[URIRef] = DDL.CVYESNO
+    class_class_uri: ClassVar[URIRef] = DDL.CvyesNo
+    class_class_curie: ClassVar[str] = "ddl:CvyesNo"
+    class_name: ClassVar[str] = "cvyes_no"
+    class_model_uri: ClassVar[URIRef] = DDL.CvyesNo
 
 
 @dataclass
-class CVYESNOONLY(YAMLRoot):
+class CvyesNoOnly(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.CVYESNOONLY
-    class_class_curie: ClassVar[str] = "ddl:CVYESNOONLY"
-    class_name: ClassVar[str] = "CVYES_NO_ONLY"
-    class_model_uri: ClassVar[URIRef] = DDL.CVYESNOONLY
+    class_class_uri: ClassVar[URIRef] = DDL.CvyesNoOnly
+    class_class_curie: ClassVar[str] = "ddl:CvyesNoOnly"
+    class_name: ClassVar[str] = "cvyes_no_only"
+    class_model_uri: ClassVar[URIRef] = DDL.CvyesNoOnly
 
-    TERM: Optional[str] = None
-    SEQUENCE: Optional[float] = None
+    term: Optional[str] = None
+    sequence: Optional[float] = None
 
 @dataclass
-class ENVOLABELS(YAMLRoot):
+class EnvoLabels(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.ENVOLABELS
-    class_class_curie: ClassVar[str] = "ddl:ENVOLABELS"
-    class_name: ClassVar[str] = "ENVO_LABELS"
-    class_model_uri: ClassVar[URIRef] = DDL.ENVOLABELS
+    class_class_uri: ClassVar[URIRef] = DDL.EnvoLabels
+    class_class_curie: ClassVar[str] = "ddl:EnvoLabels"
+    class_name: ClassVar[str] = "envo_labels"
+    class_model_uri: ClassVar[URIRef] = DDL.EnvoLabels
 
-    ENVO_LABEL: Optional[str] = None
+    envo_label: Optional[str] = None
 
 @dataclass
-class INSTITUTION(YAMLRoot):
+class Institution(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.INSTITUTION
-    class_class_curie: ClassVar[str] = "ddl:INSTITUTION"
-    class_name: ClassVar[str] = "INSTITUTION"
-    class_model_uri: ClassVar[URIRef] = DDL.INSTITUTION
+    class_class_uri: ClassVar[URIRef] = DDL.Institution
+    class_class_curie: ClassVar[str] = "ddl:Institution"
+    class_name: ClassVar[str] = "institution"
+    class_model_uri: ClassVar[URIRef] = DDL.Institution
 
-    NAME: Optional[str] = None
-    URL: Optional[str] = None
-    COUNTRY: Optional[str] = None
-    ORGANIZATION: Optional[str] = None
-    DEPARTMENT: Optional[str] = None
-    LABORATORY: Optional[str] = None
-    IS_CURATED: Optional[str] = None
+    name: Optional[str] = None
+    url: Optional[str] = None
+    country: Optional[str] = None
+    organization: Optional[str] = None
+    department: Optional[str] = None
+    laboratory: Optional[str] = None
+    is_curated: Optional[str] = None
 
 @dataclass
-class ORGANISMBIOTICREL(YAMLRoot):
+class OrganismBioticRel(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.ORGANISMBIOTICREL
-    class_class_curie: ClassVar[str] = "ddl:ORGANISMBIOTICREL"
-    class_name: ClassVar[str] = "ORGANISM_BIOTIC_REL"
-    class_model_uri: ClassVar[URIRef] = DDL.ORGANISMBIOTICREL
+    class_class_uri: ClassVar[URIRef] = DDL.OrganismBioticRel
+    class_class_curie: ClassVar[str] = "ddl:OrganismBioticRel"
+    class_name: ClassVar[str] = "organism_biotic_rel"
+    class_model_uri: ClassVar[URIRef] = DDL.OrganismBioticRel
 
-    BIOTIC_RELATIONSHIP_ID: Optional[int] = None
+    biotic_relationship_id: Optional[int] = None
 
 @dataclass
-class ORGANISMBODYPRODUCT(YAMLRoot):
+class OrganismBodyProduct(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.ORGANISMBODYPRODUCT
-    class_class_curie: ClassVar[str] = "ddl:ORGANISMBODYPRODUCT"
-    class_name: ClassVar[str] = "ORGANISM_BODY_PRODUCT"
-    class_model_uri: ClassVar[URIRef] = DDL.ORGANISMBODYPRODUCT
+    class_class_uri: ClassVar[URIRef] = DDL.OrganismBodyProduct
+    class_class_curie: ClassVar[str] = "ddl:OrganismBodyProduct"
+    class_name: ClassVar[str] = "organism_body_product"
+    class_model_uri: ClassVar[URIRef] = DDL.OrganismBodyProduct
 
-    BODY_PRODUCT_ID: Optional[int] = None
+    body_product_id: Optional[int] = None
 
 @dataclass
-class ORGANISMCELLARRANGEMENT(YAMLRoot):
+class OrganismCellArrangement(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.ORGANISMCELLARRANGEMENT
-    class_class_curie: ClassVar[str] = "ddl:ORGANISMCELLARRANGEMENT"
-    class_name: ClassVar[str] = "ORGANISM_CELL_ARRANGEMENT"
-    class_model_uri: ClassVar[URIRef] = DDL.ORGANISMCELLARRANGEMENT
+    class_class_uri: ClassVar[URIRef] = DDL.OrganismCellArrangement
+    class_class_curie: ClassVar[str] = "ddl:OrganismCellArrangement"
+    class_name: ClassVar[str] = "organism_cell_arrangement"
+    class_model_uri: ClassVar[URIRef] = DDL.OrganismCellArrangement
 
-    CELL_ARRANGEMENT_ID: Optional[int] = None
+    cell_arrangement_id: Optional[int] = None
 
 @dataclass
-class ORGANISMDISEASE(YAMLRoot):
+class OrganismDisease(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.ORGANISMDISEASE
-    class_class_curie: ClassVar[str] = "ddl:ORGANISMDISEASE"
-    class_name: ClassVar[str] = "ORGANISM_DISEASE"
-    class_model_uri: ClassVar[URIRef] = DDL.ORGANISMDISEASE
+    class_class_uri: ClassVar[URIRef] = DDL.OrganismDisease
+    class_class_curie: ClassVar[str] = "ddl:OrganismDisease"
+    class_name: ClassVar[str] = "organism_disease"
+    class_model_uri: ClassVar[URIRef] = DDL.OrganismDisease
 
-    DISEASE_ID: Optional[int] = None
+    disease_id: Optional[int] = None
 
 @dataclass
-class ORGANISMENERGYSOURCE(YAMLRoot):
+class OrganismEnergySource(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.ORGANISMENERGYSOURCE
-    class_class_curie: ClassVar[str] = "ddl:ORGANISMENERGYSOURCE"
-    class_name: ClassVar[str] = "ORGANISM_ENERGY_SOURCE"
-    class_model_uri: ClassVar[URIRef] = DDL.ORGANISMENERGYSOURCE
+    class_class_uri: ClassVar[URIRef] = DDL.OrganismEnergySource
+    class_class_curie: ClassVar[str] = "ddl:OrganismEnergySource"
+    class_name: ClassVar[str] = "organism_energy_source"
+    class_model_uri: ClassVar[URIRef] = DDL.OrganismEnergySource
 
-    ENERGY_SOURCE_ID: Optional[int] = None
+    energy_source_id: Optional[int] = None
 
 @dataclass
-class ORGANISMHABITAT(YAMLRoot):
+class OrganismHabitat(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.ORGANISMHABITAT
-    class_class_curie: ClassVar[str] = "ddl:ORGANISMHABITAT"
-    class_name: ClassVar[str] = "ORGANISM_HABITAT"
-    class_model_uri: ClassVar[URIRef] = DDL.ORGANISMHABITAT
+    class_class_uri: ClassVar[URIRef] = DDL.OrganismHabitat
+    class_class_curie: ClassVar[str] = "ddl:OrganismHabitat"
+    class_name: ClassVar[str] = "organism_habitat"
+    class_model_uri: ClassVar[URIRef] = DDL.OrganismHabitat
 
-    HABITAT_ID: Optional[int] = None
+    habitat_id: Optional[int] = None
 
 @dataclass
-class ORGANISMMETABOLISM(YAMLRoot):
+class OrganismMetabolism(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.ORGANISMMETABOLISM
-    class_class_curie: ClassVar[str] = "ddl:ORGANISMMETABOLISM"
-    class_name: ClassVar[str] = "ORGANISM_METABOLISM"
-    class_model_uri: ClassVar[URIRef] = DDL.ORGANISMMETABOLISM
+    class_class_uri: ClassVar[URIRef] = DDL.OrganismMetabolism
+    class_class_curie: ClassVar[str] = "ddl:OrganismMetabolism"
+    class_name: ClassVar[str] = "organism_metabolism"
+    class_model_uri: ClassVar[URIRef] = DDL.OrganismMetabolism
 
-    METABOLISM_ID: Optional[int] = None
+    metabolism_id: Optional[int] = None
 
 @dataclass
-class ORGANISMPHENOTYPE(YAMLRoot):
+class OrganismPhenotype(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.ORGANISMPHENOTYPE
-    class_class_curie: ClassVar[str] = "ddl:ORGANISMPHENOTYPE"
-    class_name: ClassVar[str] = "ORGANISM_PHENOTYPE"
-    class_model_uri: ClassVar[URIRef] = DDL.ORGANISMPHENOTYPE
+    class_class_uri: ClassVar[URIRef] = DDL.OrganismPhenotype
+    class_class_curie: ClassVar[str] = "ddl:OrganismPhenotype"
+    class_name: ClassVar[str] = "organism_phenotype"
+    class_model_uri: ClassVar[URIRef] = DDL.OrganismPhenotype
 
-    PHENOTYPE_ID: Optional[int] = None
+    phenotype_id: Optional[int] = None
 
 @dataclass
-class ORGANISMV2(YAMLRoot):
+class OrganismV2(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.ORGANISMV2
-    class_class_curie: ClassVar[str] = "ddl:ORGANISMV2"
-    class_name: ClassVar[str] = "ORGANISM_V2"
-    class_model_uri: ClassVar[URIRef] = DDL.ORGANISMV2
+    class_class_uri: ClassVar[URIRef] = DDL.OrganismV2
+    class_class_curie: ClassVar[str] = "ddl:OrganismV2"
+    class_name: ClassVar[str] = "organism_v2"
+    class_model_uri: ClassVar[URIRef] = DDL.OrganismV2
 
-    EXEMPLAR_DOI: Optional[str] = None
-    EXEMPLAR_NAME: Optional[str] = None
-    TAXON_DOI: Optional[str] = None
-    CULTURE_COLLECTION_ID: Optional[str] = None
-    TYPE_STRAIN: Optional[str] = None
-    BIOSAFETY_LEVEL: Optional[str] = None
-    NCBI_TAXONOMY_ID: Optional[int] = None
-    NCBI_KINGDOM: Optional[str] = None
-    NCBI_PHYLUM: Optional[str] = None
-    NCBI_CLASS: Optional[str] = None
-    NCBI_ORDER: Optional[str] = None
-    NCBI_FAMILY: Optional[str] = None
-    NCBI_GENUS: Optional[str] = None
-    DOMAIN: Optional[str] = None
-    STRAIN_INFO_ID: Optional[int] = None
-    GENBANK_16S_ID: Optional[str] = None
-    OXYGEN_REQUIREMENT: Optional[str] = None
-    CELL_SHAPE: Optional[str] = None
-    MOTILITY: Optional[str] = None
-    SPORULATION: Optional[str] = None
-    TEMPERATURE_RANGE: Optional[str] = None
-    COLOR: Optional[str] = None
-    GRAM_STAIN: Optional[str] = None
-    COMMON_NAME: Optional[str] = None
-    SYMBIOTIC_RELATIONSHIP: Optional[str] = None
-    SYMBIOTIC_PHYSICAL_INTERACTION: Optional[str] = None
-    SYMBIONT_NAME: Optional[str] = None
-    SYMBIONT_TAXON_ID: Optional[int] = None
-    CELL_LENGTH: Optional[str] = None
-    SUBSPECIES: Optional[str] = None
-    COMMERCIAL: Optional[str] = None
-    COMMERCIAL_COMMENTS: Optional[str] = None
-    OTHER_NAMES: Optional[str] = None
-    SYNONYM_GROUP_ID: Optional[int] = None
-    VIRAL_GROUP: Optional[str] = None
-    VIRAL_SUBGROUP: Optional[str] = None
-    GOLD_PHYLOGENY: Optional[str] = None
-    CULTURE_TYPE: Optional[str] = None
-    UNCULTURED_TYPE: Optional[str] = None
-    CULTURED: Optional[str] = None
-    CLADE: Optional[str] = None
-    MASTER_GROUP_ID: Optional[int] = None
-    ECOTYPE: Optional[str] = None
-    CARBON_SOURCE: Optional[str] = None
-    IMAGE_ID: Optional[int] = None
-    NCBI_BIOSAMPLE_ID: Optional[str] = None
-    OTHER_ECOSYSTEM: Optional[str] = None
-    SAMPLE_COLLECTION_SITE: Optional[str] = None
-    SAMPLE_ISOLATION_COMMENTS: Optional[str] = None
-    SAMPLING_STRATEGY: Optional[str] = None
-    REPLICATE_NUMBER: Optional[float] = None
-    SAMPLE_VOLUME: Optional[str] = None
-    SAMPLE_BIOMASS: Optional[str] = None
-    SAMPLE_CONTACT_NAME: Optional[str] = None
-    SAMPLE_CONTACT_EMAIL: Optional[str] = None
-    GEOGRAPHIC_LOCATION: Optional[str] = None
-    LAT_LONG_INFERRED: Optional[str] = None
-    HOST_NAME: Optional[str] = None
-    HOST_TAXONOMY_ID: Optional[int] = None
-    HOST_GENDER: Optional[str] = None
-    HOST_RACE: Optional[str] = None
-    HOST_AGE: Optional[str] = None
-    HOST_HEALTH_CONDITION: Optional[str] = None
-    PATIENT_VISIT_NUMBER: Optional[float] = None
-    HOST_MEDICATION: Optional[str] = None
-    MRN: Optional[str] = None
-    HOST_BODY_SITE: Optional[str] = None
-    HOST_BODY_SUBSITE: Optional[str] = None
-    HOST_BODY_PRODUCT: Optional[str] = None
-    HOST_SPECIFICITY: Optional[str] = None
-    HOST_COMMENTS: Optional[str] = None
-    SPECIMEN: Optional[str] = None
-    SUBMIT_BIOSAMPLE_NAME: Optional[str] = None
-    ENV_PACKAGE: Optional[str] = None
-    SAMPLE_COLLECTION_DAY: Optional[float] = None
-    SAMPLE_COLLECTION_MONTH: Optional[float] = None
-    SAMPLE_COLLECTION_YEAR: Optional[float] = None
-    SAMPLE_COLLECTION_HOUR: Optional[float] = None
-    SAMPLE_COLLECTION_MINUTE: Optional[float] = None
-    GROWTH_CONDITIONS: Optional[str] = None
-    OTHER_HOSTS: Optional[str] = None
-    KNOWN_NON_HOSTS: Optional[str] = None
-    ISOLATION_PUBMED_ID: Optional[int] = None
-    HOST_BODY_SITE_ID: Optional[int] = None
-    HOST_BODY_SUBSITE_ID: Optional[int] = None
-    HOST_BODY_PRODUCT_ID: Optional[int] = None
-    SAMPLE_ISOLATION_COUNTRY_ID: Optional[int] = None
-    LONGHURST_CODE: Optional[str] = None
-    CHLOROPHYLL_CONCENTRATION: Optional[str] = None
-    NITRATE_CONCENTRATION: Optional[str] = None
-    OXYGEN_CONCENTRATION: Optional[str] = None
-    SALINITY_CONCENTRATION: Optional[str] = None
-    CRUISE_LINE_NAME: Optional[str] = None
-    PROPORT_OCEAN: Optional[str] = None
-    PROPORT_ISOLATION: Optional[str] = None
-    PROPORT_STATION: Optional[str] = None
-    PROPORT_WOA_TEMPERATURE: Optional[float] = None
-    PROPORT_WOA_SALINITY: Optional[float] = None
-    PROPORT_WOA_DISSOLVED_OXYGEN: Optional[float] = None
-    PROPORT_WOA_SILICATE: Optional[float] = None
-    PROPORT_WOA_PHOSPHATE: Optional[float] = None
-    PROPORT_WOA_NITRATE: Optional[float] = None
-    ITS_GROWTH_CONDITIONS: Optional[str] = None
-    ORGANISM_NAME: Optional[str] = None
-    SUBMIT_ORGANISM_NAME: Optional[str] = None
-    NCBI_TAXONOMY_NAME: Optional[str] = None
-    GENUS: Optional[str] = None
-    GENUS_SYNONYMS: Optional[str] = None
-    SPECIES: Optional[str] = None
-    SPECIES_SYNONYMS: Optional[str] = None
-    STRAIN: Optional[str] = None
-    SEROVAR: Optional[str] = None
-    COMMENTS: Optional[str] = None
-    NCBI_SPECIES: Optional[str] = None
-    SALINITY: Optional[str] = None
-    PRESSURE: Optional[str] = None
-    PH: Optional[str] = None
-    CELL_DIAMETER: Optional[str] = None
-    IS_VIROCELL: Optional[str] = None
-    STRAININFO_GROUP_ID: Optional[int] = None
-    SOURCE: Optional[str] = None
-    GOLD_CLASS: Optional[str] = None
-    GOLD_ORDER: Optional[str] = None
-    GOLD_FAMILY: Optional[str] = None
-    NCBI_SUPERKINGDOM: Optional[str] = None
-    TAXONOMY_STATUS: Optional[str] = None
-    GROWTH_TEMPERATURE: Optional[float] = None
-    SUBSURFACE_DEPTH: Optional[float] = None
-    LEGACY_DEPTH_DATA: Optional[str] = None
-    LATITUDE_TEST: Optional[float] = None
-    LONGITUDE_TEST: Optional[float] = None
-    ELEVATION: Optional[float] = None
-    ELEVATION2: Optional[float] = None
-    SOIL_CURR_LAND_USE: Optional[str] = None
-    SOIL_CURR_VEGETATION: Optional[str] = None
-    SOIL_CURR_VEGETATION_METHOD: Optional[str] = None
-    SOIL_PREV_LAND_USE: Optional[str] = None
-    SOIL_PREV_LAND_USE_METH: Optional[str] = None
-    SOIL_CROP_ROTATION: Optional[str] = None
-    SOIL_AGROCHEM_ADDITION: Optional[str] = None
-    SOIL_TILLAGE: Optional[str] = None
-    SOIL_FIRE: Optional[str] = None
-    SOIL_FLOODING: Optional[str] = None
-    SOIL_EXTREME_EVENT: Optional[str] = None
-    SOIL_HORIZON: Optional[str] = None
-    SOIL_HORIZON_METHOD: Optional[str] = None
-    SOIL_SIEVING: Optional[str] = None
-    SOIL_WATER_CONTENT: Optional[str] = None
-    SOIL_WATER_CONTENT_SOIL_METH: Optional[str] = None
-    SAMPLE_WEIGHT_DNA_EXT: Optional[str] = None
-    SOIL_POOL_DNA_EXTRACTS: Optional[str] = None
-    SOIL_STORAGE_CONDITION: Optional[str] = None
-    SOIL_LINK_CLIMATE_INFO: Optional[str] = None
-    SOIL_LINK_CLASS_INFO: Optional[str] = None
-    SOIL_FAO_CLASS: Optional[str] = None
-    SOIL_LOCAL_CLASS: Optional[str] = None
-    SOIL_LOCAL_CLASS_METHOD: Optional[str] = None
-    SOIL_TYPE: Optional[str] = None
-    SOIL_TYPE_METHOD: Optional[str] = None
-    SOIL_SLOPE_GRADIENT: Optional[float] = None
-    SOIL_SLOPE_ASPECT: Optional[float] = None
-    SOIL_PROFILE_POSITION: Optional[str] = None
-    SOIL_DRAINAGE_CLASS: Optional[str] = None
-    SOIL_TEXTURE: Optional[str] = None
-    SOIL_TEXTURE_METHOD: Optional[str] = None
-    SOIL_PH_METHOD: Optional[str] = None
-    TOT_ORG_CARBON: Optional[float] = None
-    SOIL_TOT_ORG_C_METHOD: Optional[str] = None
-    TOT_NITROGEN: Optional[str] = None
-    SOIL_TOT_N_METHOD: Optional[str] = None
-    SOIL_MICROBIAL_BIOMASS: Optional[str] = None
-    SOIL_MICROBIAL_BIOMASS_METHOD: Optional[str] = None
-    SOIL_LINK_ADDIT_ANALYS: Optional[str] = None
-    SOIL_SALINITY_METHOD: Optional[str] = None
-    SOIL_HEAVY_METALS: Optional[float] = None
-    SOIL_HEAVY_METALS_METHOD: Optional[str] = None
-    SOIL_ALUMINIUM_SAT: Optional[float] = None
-    SOIL_ALUMINIUM_SAT_METHOD: Optional[str] = None
-    SOIL_MISC_PARAM: Optional[str] = None
-    WATER_ALKALINITY: Optional[float] = None
-    WATER_ALKYL_DIETHERS: Optional[float] = None
-    WATER_AMINOPEPT_ACT: Optional[float] = None
-    WATER_AMMONIUM: Optional[float] = None
-    WATER_ATMOSPHERIC_DATA: Optional[str] = None
-    WATER_BACTERIAL_PROD: Optional[float] = None
-    WATER_BACTERIAL_RESP: Optional[float] = None
-    WATER_BACTERIAL_CARBON_PROD: Optional[float] = None
-    WATER_BISHOMOHOPANOL: Optional[str] = None
-    WATER_BROMIDE: Optional[float] = None
-    WATER_CALCIUM: Optional[str] = None
-    WATER_CARBON_NITROG_RATIO: Optional[str] = None
-    WATER_CHEM_ADMINISTRATION: Optional[str] = None
-    WATER_CHLORIDE: Optional[float] = None
-    WATER_DENSITY: Optional[float] = None
-    WATER_DIETHER_LIPIDS: Optional[float] = None
-    WATER_DISS_CARBON_DIOXIDE: Optional[float] = None
-    WATER_DISS_HYDROGEN: Optional[float] = None
-    WATER_DISS_INORG_CARBON: Optional[float] = None
-    WATER_DISS_INORG_NITRO: Optional[float] = None
-    WATER_DISS_INORG_PHOSPHORUS: Optional[float] = None
-    WATER_DISS_ORG_CARBON: Optional[float] = None
-    WATER_DISS_ORG_NITROGEN: Optional[float] = None
-    WATER_DOWNWARD_PAR: Optional[float] = None
-    WATER_FLUORESCENCE: Optional[float] = None
-    WATER_GLUCOSIDASE_ACTIVITY: Optional[float] = None
-    WATER_LIGHT_INTENSITY: Optional[float] = None
-    WATER_MAGNESIUM: Optional[str] = None
-    WATER_MEAN_FRICT_VEL: Optional[float] = None
-    WATER_MEAN_PEAK_FRICT_VEL: Optional[float] = None
-    WATER_MISC_PARAMETER: Optional[str] = None
-    WATER_N_ALKANES: Optional[float] = None
-    WATER_NITRITE: Optional[float] = None
-    WATER_ORG_MATTER: Optional[float] = None
-    WATER_ORG_NITROGEN: Optional[float] = None
-    WATER_ORGANISM_COUNT: Optional[float] = None
-    WATER_OXY_STAT_SAMPLE: Optional[str] = None
-    WATER_PART_ORG_CARBON: Optional[float] = None
-    WATER_PART_ORG_NITROGEN: Optional[float] = None
-    WATER_PERTURBATION: Optional[str] = None
-    WATER_PETROLEUM_HYDROCARBON: Optional[float] = None
-    WATER_PHAEOPIGMENTS: Optional[float] = None
-    WATER_PHOSPLIPID_FATT_ACID: Optional[str] = None
-    WATER_PHOTON_FLUX: Optional[float] = None
-    WATER_POTASSIUM: Optional[float] = None
-    WATER_PRIMARY_PROD: Optional[float] = None
-    WATER_REDOX_POTENTIAL: Optional[float] = None
-    WATER_SAMP_STORE_DUR: Optional[str] = None
-    WATER_SAMP_STORE_LOC: Optional[str] = None
-    WATER_SAMP_STORE_TEMP: Optional[float] = None
-    WATER_SODIUM: Optional[float] = None
-    WATER_SOLUBLE_REACT_PHOSP: Optional[float] = None
-    WATER_SULFATE: Optional[str] = None
-    WATER_SULFIDE: Optional[str] = None
-    WATER_SUSPEND_PART_MATTER: Optional[float] = None
-    WATER_TIDAL_STAGE: Optional[str] = None
-    WATER_TOT_DEPTH_WATER_COL: Optional[float] = None
-    WATER_TOT_DISS_NITRO: Optional[float] = None
-    WATER_TOT_INORG_NITRO: Optional[float] = None
-    WATER_TOT_PART_CARBON: Optional[str] = None
-    WATER_TOT_PHOSPHORUS: Optional[float] = None
-    WATER_CURRENT: Optional[str] = None
-    ALTITUDE: Optional[float] = None
-    ALTITUDE2: Optional[float] = None
-    DEPTH: Optional[float] = None
-    DEPTH2: Optional[float] = None
-    LONGITUDE: Optional[float] = None
-    LATITUDE: Optional[float] = None
-    BICARBONATE_MILLIMOL: Optional[float] = None
-    SOLUBLE_IRON_MICROMOL: Optional[float] = None
-    H2S_MILLIMOL: Optional[float] = None
-    H2S_PRESENT: Optional[str] = None
-    IRRADIANCE: Optional[str] = None
-    METHANE_CONC_MILLIMOL: Optional[float] = None
-    SAMPLE_CONDUCTIVITY: Optional[str] = None
-    SOIL_SAMPLE_BIOMASS: Optional[float] = None
-    SOIL_SAMPLE_VOLUME: Optional[float] = None
-    IMG_BREADTH_CALC: Optional[float] = None
-    GROWTH_TEMPERATURE2: Optional[float] = None
-    SAMPLE_COLLECTION_TEMPERATURE: Optional[float] = None
-    SAMPLE_COLLECTION_TEMPERATURE2: Optional[float] = None
-    SUBSURFACE_DEPTH1: Optional[float] = None
-    SUBSURFACE_DEPTH2: Optional[float] = None
-    PH1: Optional[float] = None
-    PH2: Optional[float] = None
-    PH_OLD: Optional[str] = None
-    WATER_ALKALINITY_METHOD: Optional[str] = None
-    WATER_TURBIDITY: Optional[str] = None
-    WATER_SIZE_FRAC_LOW: Optional[float] = None
-    WATER_SIZE_FRAC_UP: Optional[float] = None
-    SOIL_MEAN_ANNUAL_TEMP: Optional[float] = None
-    SOIL_MEAN_SEASONAL_TEMP: Optional[float] = None
-    SOIL_MEAN_ANNUAL_PRECPT: Optional[float] = None
-    SOIL_MEAN_SEASONAL_PRECPT: Optional[float] = None
-    SOIL_PACKAGE_ID: Optional[int] = None
-    WATER_PACKAGE_ID: Optional[int] = None
-    ENVO_BIOME_ID: Optional[str] = None
-    ENVO_FEATURE_ID: Optional[str] = None
-    ENVO_MATERIAL_ID: Optional[str] = None
+    exemplar_doi: Optional[str] = None
+    exemplar_name: Optional[str] = None
+    taxon_doi: Optional[str] = None
+    culture_collection_id: Optional[str] = None
+    type_strain: Optional[str] = None
+    biosafety_level: Optional[str] = None
+    ncbi_taxonomy_id: Optional[int] = None
+    ncbi_kingdom: Optional[str] = None
+    ncbi_phylum: Optional[str] = None
+    ncbi_class: Optional[str] = None
+    ncbi_order: Optional[str] = None
+    ncbi_family: Optional[str] = None
+    ncbi_genus: Optional[str] = None
+    domain: Optional[str] = None
+    strain_info_id: Optional[int] = None
+    genbank_16s_id: Optional[str] = None
+    oxygen_requirement: Optional[str] = None
+    cell_shape: Optional[str] = None
+    motility: Optional[str] = None
+    sporulation: Optional[str] = None
+    temperature_range: Optional[str] = None
+    color: Optional[str] = None
+    gram_stain: Optional[str] = None
+    common_name: Optional[str] = None
+    symbiotic_relationship: Optional[str] = None
+    symbiotic_physical_interaction: Optional[str] = None
+    symbiont_name: Optional[str] = None
+    symbiont_taxon_id: Optional[int] = None
+    cell_length: Optional[str] = None
+    subspecies: Optional[str] = None
+    commercial: Optional[str] = None
+    commercial_comments: Optional[str] = None
+    other_names: Optional[str] = None
+    synonym_group_id: Optional[int] = None
+    viral_group: Optional[str] = None
+    viral_subgroup: Optional[str] = None
+    gold_phylogeny: Optional[str] = None
+    culture_type: Optional[str] = None
+    uncultured_type: Optional[str] = None
+    cultured: Optional[str] = None
+    clade: Optional[str] = None
+    master_group_id: Optional[int] = None
+    ecotype: Optional[str] = None
+    carbon_source: Optional[str] = None
+    image_id: Optional[int] = None
+    ncbi_biosample_id: Optional[str] = None
+    other_ecosystem: Optional[str] = None
+    sample_collection_site: Optional[str] = None
+    sample_isolation_comments: Optional[str] = None
+    sampling_strategy: Optional[str] = None
+    replicate_number: Optional[float] = None
+    sample_volume: Optional[str] = None
+    sample_biomass: Optional[str] = None
+    sample_contact_name: Optional[str] = None
+    sample_contact_email: Optional[str] = None
+    geographic_location: Optional[str] = None
+    lat_long_inferred: Optional[str] = None
+    host_name: Optional[str] = None
+    host_taxonomy_id: Optional[int] = None
+    host_gender: Optional[str] = None
+    host_race: Optional[str] = None
+    host_age: Optional[str] = None
+    host_health_condition: Optional[str] = None
+    patient_visit_number: Optional[float] = None
+    host_medication: Optional[str] = None
+    mrn: Optional[str] = None
+    host_body_site: Optional[str] = None
+    host_body_subsite: Optional[str] = None
+    host_body_product: Optional[str] = None
+    host_specificity: Optional[str] = None
+    host_comments: Optional[str] = None
+    specimen: Optional[str] = None
+    submit_biosample_name: Optional[str] = None
+    env_package: Optional[str] = None
+    sample_collection_day: Optional[float] = None
+    sample_collection_month: Optional[float] = None
+    sample_collection_year: Optional[float] = None
+    sample_collection_hour: Optional[float] = None
+    sample_collection_minute: Optional[float] = None
+    growth_conditions: Optional[str] = None
+    other_hosts: Optional[str] = None
+    known_non_hosts: Optional[str] = None
+    isolation_pubmed_id: Optional[int] = None
+    host_body_site_id: Optional[int] = None
+    host_body_subsite_id: Optional[int] = None
+    host_body_product_id: Optional[int] = None
+    sample_isolation_country_id: Optional[int] = None
+    longhurst_code: Optional[str] = None
+    chlorophyll_concentration: Optional[str] = None
+    nitrate_concentration: Optional[str] = None
+    oxygen_concentration: Optional[str] = None
+    salinity_concentration: Optional[str] = None
+    cruise_line_name: Optional[str] = None
+    proport_ocean: Optional[str] = None
+    proport_isolation: Optional[str] = None
+    proport_station: Optional[str] = None
+    proport_woa_temperature: Optional[float] = None
+    proport_woa_salinity: Optional[float] = None
+    proport_woa_dissolved_oxygen: Optional[float] = None
+    proport_woa_silicate: Optional[float] = None
+    proport_woa_phosphate: Optional[float] = None
+    proport_woa_nitrate: Optional[float] = None
+    its_growth_conditions: Optional[str] = None
+    organism_name: Optional[str] = None
+    submit_organism_name: Optional[str] = None
+    ncbi_taxonomy_name: Optional[str] = None
+    genus: Optional[str] = None
+    genus_synonyms: Optional[str] = None
+    species: Optional[str] = None
+    species_synonyms: Optional[str] = None
+    strain: Optional[str] = None
+    serovar: Optional[str] = None
+    comments: Optional[str] = None
+    ncbi_species: Optional[str] = None
+    salinity: Optional[str] = None
+    pressure: Optional[str] = None
+    ph: Optional[str] = None
+    cell_diameter: Optional[str] = None
+    is_virocell: Optional[str] = None
+    straininfo_group_id: Optional[int] = None
+    source: Optional[str] = None
+    gold_class: Optional[str] = None
+    gold_order: Optional[str] = None
+    gold_family: Optional[str] = None
+    ncbi_superkingdom: Optional[str] = None
+    taxonomy_status: Optional[str] = None
+    growth_temperature: Optional[float] = None
+    subsurface_depth: Optional[float] = None
+    legacy_depth_data: Optional[str] = None
+    latitude_test: Optional[float] = None
+    longitude_test: Optional[float] = None
+    elevation: Optional[float] = None
+    elevation2: Optional[float] = None
+    soil_curr_land_use: Optional[str] = None
+    soil_curr_vegetation: Optional[str] = None
+    soil_curr_vegetation_method: Optional[str] = None
+    soil_prev_land_use: Optional[str] = None
+    soil_prev_land_use_meth: Optional[str] = None
+    soil_crop_rotation: Optional[str] = None
+    soil_agrochem_addition: Optional[str] = None
+    soil_tillage: Optional[str] = None
+    soil_fire: Optional[str] = None
+    soil_flooding: Optional[str] = None
+    soil_extreme_event: Optional[str] = None
+    soil_horizon: Optional[str] = None
+    soil_horizon_method: Optional[str] = None
+    soil_sieving: Optional[str] = None
+    soil_water_content: Optional[str] = None
+    soil_water_content_soil_meth: Optional[str] = None
+    sample_weight_dna_ext: Optional[str] = None
+    soil_pool_dna_extracts: Optional[str] = None
+    soil_storage_condition: Optional[str] = None
+    soil_link_climate_info: Optional[str] = None
+    soil_link_class_info: Optional[str] = None
+    soil_fao_class: Optional[str] = None
+    soil_local_class: Optional[str] = None
+    soil_local_class_method: Optional[str] = None
+    soil_type: Optional[str] = None
+    soil_type_method: Optional[str] = None
+    soil_slope_gradient: Optional[float] = None
+    soil_slope_aspect: Optional[float] = None
+    soil_profile_position: Optional[str] = None
+    soil_drainage_class: Optional[str] = None
+    soil_texture: Optional[str] = None
+    soil_texture_method: Optional[str] = None
+    soil_ph_method: Optional[str] = None
+    tot_org_carbon: Optional[float] = None
+    soil_tot_org_c_method: Optional[str] = None
+    tot_nitrogen: Optional[str] = None
+    soil_tot_n_method: Optional[str] = None
+    soil_microbial_biomass: Optional[str] = None
+    soil_microbial_biomass_method: Optional[str] = None
+    soil_link_addit_analys: Optional[str] = None
+    soil_salinity_method: Optional[str] = None
+    soil_heavy_metals: Optional[float] = None
+    soil_heavy_metals_method: Optional[str] = None
+    soil_aluminium_sat: Optional[float] = None
+    soil_aluminium_sat_method: Optional[str] = None
+    soil_misc_param: Optional[str] = None
+    water_alkalinity: Optional[float] = None
+    water_alkyl_diethers: Optional[float] = None
+    water_aminopept_act: Optional[float] = None
+    water_ammonium: Optional[float] = None
+    water_atmospheric_data: Optional[str] = None
+    water_bacterial_prod: Optional[float] = None
+    water_bacterial_resp: Optional[float] = None
+    water_bacterial_carbon_prod: Optional[float] = None
+    water_bishomohopanol: Optional[str] = None
+    water_bromide: Optional[float] = None
+    water_calcium: Optional[str] = None
+    water_carbon_nitrog_ratio: Optional[str] = None
+    water_chem_administration: Optional[str] = None
+    water_chloride: Optional[float] = None
+    water_density: Optional[float] = None
+    water_diether_lipids: Optional[float] = None
+    water_diss_carbon_dioxide: Optional[float] = None
+    water_diss_hydrogen: Optional[float] = None
+    water_diss_inorg_carbon: Optional[float] = None
+    water_diss_inorg_nitro: Optional[float] = None
+    water_diss_inorg_phosphorus: Optional[float] = None
+    water_diss_org_carbon: Optional[float] = None
+    water_diss_org_nitrogen: Optional[float] = None
+    water_downward_par: Optional[float] = None
+    water_fluorescence: Optional[float] = None
+    water_glucosidase_activity: Optional[float] = None
+    water_light_intensity: Optional[float] = None
+    water_magnesium: Optional[str] = None
+    water_mean_frict_vel: Optional[float] = None
+    water_mean_peak_frict_vel: Optional[float] = None
+    water_misc_parameter: Optional[str] = None
+    water_n_alkanes: Optional[float] = None
+    water_nitrite: Optional[float] = None
+    water_org_matter: Optional[float] = None
+    water_org_nitrogen: Optional[float] = None
+    water_organism_count: Optional[float] = None
+    water_oxy_stat_sample: Optional[str] = None
+    water_part_org_carbon: Optional[float] = None
+    water_part_org_nitrogen: Optional[float] = None
+    water_perturbation: Optional[str] = None
+    water_petroleum_hydrocarbon: Optional[float] = None
+    water_phaeopigments: Optional[float] = None
+    water_phosplipid_fatt_acid: Optional[str] = None
+    water_photon_flux: Optional[float] = None
+    water_potassium: Optional[float] = None
+    water_primary_prod: Optional[float] = None
+    water_redox_potential: Optional[float] = None
+    water_samp_store_dur: Optional[str] = None
+    water_samp_store_loc: Optional[str] = None
+    water_samp_store_temp: Optional[float] = None
+    water_sodium: Optional[float] = None
+    water_soluble_react_phosp: Optional[float] = None
+    water_sulfate: Optional[str] = None
+    water_sulfide: Optional[str] = None
+    water_suspend_part_matter: Optional[float] = None
+    water_tidal_stage: Optional[str] = None
+    water_tot_depth_water_col: Optional[float] = None
+    water_tot_diss_nitro: Optional[float] = None
+    water_tot_inorg_nitro: Optional[float] = None
+    water_tot_part_carbon: Optional[str] = None
+    water_tot_phosphorus: Optional[float] = None
+    water_current: Optional[str] = None
+    altitude: Optional[float] = None
+    altitude2: Optional[float] = None
+    depth: Optional[float] = None
+    depth2: Optional[float] = None
+    longitude: Optional[float] = None
+    latitude: Optional[float] = None
+    bicarbonate_millimol: Optional[float] = None
+    soluble_iron_micromol: Optional[float] = None
+    h2s_millimol: Optional[float] = None
+    h2s_present: Optional[str] = None
+    irradiance: Optional[str] = None
+    methane_conc_millimol: Optional[float] = None
+    sample_conductivity: Optional[str] = None
+    soil_sample_biomass: Optional[float] = None
+    soil_sample_volume: Optional[float] = None
+    img_breadth_calc: Optional[float] = None
+    growth_temperature2: Optional[float] = None
+    sample_collection_temperature: Optional[float] = None
+    sample_collection_temperature2: Optional[float] = None
+    subsurface_depth1: Optional[float] = None
+    subsurface_depth2: Optional[float] = None
+    ph1: Optional[float] = None
+    ph2: Optional[float] = None
+    ph_old: Optional[str] = None
+    water_alkalinity_method: Optional[str] = None
+    water_turbidity: Optional[str] = None
+    water_size_frac_low: Optional[float] = None
+    water_size_frac_up: Optional[float] = None
+    soil_mean_annual_temp: Optional[float] = None
+    soil_mean_seasonal_temp: Optional[float] = None
+    soil_mean_annual_precpt: Optional[float] = None
+    soil_mean_seasonal_precpt: Optional[float] = None
+    soil_package_id: Optional[int] = None
+    water_package_id: Optional[int] = None
+    envo_biome_id: Optional[str] = None
+    envo_feature_id: Optional[str] = None
+    envo_material_id: Optional[str] = None
 
 @dataclass
-class PROJECT(YAMLRoot):
+class Project(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.PROJECT
-    class_class_curie: ClassVar[str] = "ddl:PROJECT"
-    class_name: ClassVar[str] = "PROJECT"
-    class_model_uri: ClassVar[URIRef] = DDL.PROJECT
+    class_class_uri: ClassVar[URIRef] = DDL.Project
+    class_class_curie: ClassVar[str] = "ddl:Project"
+    class_name: ClassVar[str] = "project"
+    class_model_uri: ClassVar[URIRef] = DDL.Project
 
-    PROJECT_NAME: Optional[str] = None
-    NCBI_BIOPROJECT_ID: Optional[int] = None
-    MOD_BY: Optional[float] = None
-    SPECIMEN_ID: Optional[int] = None
-    ORGANISM_TYPE: Optional[str] = None
-    NUCLEIC_ACID: Optional[str] = None
-    SUBMITTER_PROJECT_NAME: Optional[str] = None
-    NCBI_PROJECT_NAME: Optional[str] = None
-    ISOLATION_PUBLICATION_ID: Optional[int] = None
-    COMPLETION_DATE: Optional[Union[str, XSDTime]] = None
-    PMO_PROJECT_ID: Optional[int] = None
-    ITS_SPID: Optional[float] = None
-    SAMPLE_OID: Optional[float] = None
-    OLD_LEGACY_GOLD_ID: Optional[str] = None
-    ORGANISM_ID: Optional[int] = None
-    SEQUENCING_STATUS_ID: Optional[int] = None
-    SEQUENCING_QUALITY_ID: Optional[int] = None
-    FINISHING_GOAL_ID: Optional[int] = None
-    SEQUENCING_COMMENTS: Optional[str] = None
-    GC_PERCENT: Optional[float] = None
-    CONTIG_COUNT: Optional[float] = None
-    EST_SIZE: Optional[float] = None
-    CHROMOSOME_COUNT: Optional[float] = None
-    PLASMID_COUNT: Optional[float] = None
-    SCAFFOLD_COUNT: Optional[float] = None
-    EST_COUNT: Optional[float] = None
-    SUBMITTER_ID: Optional[int] = None
-    NCBI_BIOPROJECT_ACCESSION: Optional[str] = None
-    PROJECT_COMMENTS: Optional[str] = None
-    ANNOTATOR_COMMENTS: Optional[str] = None
-    NCBI_SRA_ID: Optional[str] = None
-    LIBRARY_METHOD: Optional[str] = None
-    READ_COUNT: Optional[str] = None
-    VECTOR: Optional[str] = None
-    READ_SIZE: Optional[str] = None
-    NCBI_LOCUS_TAG: Optional[str] = None
-    ASSEMBLY_ACCESSION: Optional[str] = None
-    NUCLEIC_ACID_ID: Optional[int] = None
-    PI_ID: Optional[int] = None
-    PROJECT_STATUS: Optional[str] = None
-    MASTER_STUDY_ID: Optional[int] = None
-    OTHER_PROJECT_NAMES: Optional[str] = None
-    ITS_PROJECT_NAME: Optional[str] = None
-    IS_SINGLE_CELL_MATERIAL: Optional[str] = None
-    ITS_SEQUENCING_PRODUCT_NAME: Optional[str] = None
-    PROJECT_MANAGER_ID: Optional[int] = None
-    NCBI_BIOSAMPLE_ACCESSION: Optional[str] = None
-    LOW_QUALITY_GENOME: Optional[str] = None
-    SEQUENCING_STRATEGY: Optional[str] = None
-    IS_JGI: Optional[str] = None
-    SRA_SRS_ACCESSION: Optional[str] = None
-    SRA_SRX_ACCESSION: Optional[str] = None
-    FUNDING_PROGRAM: Optional[str] = None
-    FUNDING_YEAR: Optional[float] = None
-    ITS_SAMPLE_ID: Optional[int] = None
-    ITS_SAMPLE_GROUP_NAME: Optional[str] = None
-    EXPERIMENTAL_CONDITIONS: Optional[str] = None
-    SAMPLE_GROUP_NAME: Optional[str] = None
-    ITS_SAMPLE_NAME: Optional[str] = None
-    PROJECT_SUBTYPE: Optional[str] = None
-    SEQUENCING_STRATEGY_FULL: Optional[str] = None
-    IS_APPROVED: Optional[str] = None
-    IS_LOCKED: Optional[str] = None
-    GPTS_SAMPLE_ID: Optional[int] = None
-    GPTS_DISAMBIGUATOR: Optional[str] = None
+    project_name: Optional[str] = None
+    ncbi_bioproject_id: Optional[int] = None
+    mod_by: Optional[float] = None
+    specimen_id: Optional[int] = None
+    organism_type: Optional[str] = None
+    nucleic_acid: Optional[str] = None
+    submitter_project_name: Optional[str] = None
+    ncbi_project_name: Optional[str] = None
+    isolation_publication_id: Optional[int] = None
+    completion_date: Optional[Union[str, XSDTime]] = None
+    pmo_project_id: Optional[int] = None
+    its_spid: Optional[float] = None
+    sample_oid: Optional[float] = None
+    old_legacy_gold_id: Optional[str] = None
+    organism_id: Optional[int] = None
+    sequencing_status_id: Optional[int] = None
+    sequencing_quality_id: Optional[int] = None
+    finishing_goal_id: Optional[int] = None
+    sequencing_comments: Optional[str] = None
+    gc_percent: Optional[float] = None
+    contig_count: Optional[float] = None
+    est_size: Optional[float] = None
+    chromosome_count: Optional[float] = None
+    plasmid_count: Optional[float] = None
+    scaffold_count: Optional[float] = None
+    est_count: Optional[float] = None
+    submitter_id: Optional[int] = None
+    ncbi_bioproject_accession: Optional[str] = None
+    project_comments: Optional[str] = None
+    annotator_comments: Optional[str] = None
+    ncbi_sra_id: Optional[str] = None
+    library_method: Optional[str] = None
+    read_count: Optional[str] = None
+    vector: Optional[str] = None
+    read_size: Optional[str] = None
+    ncbi_locus_tag: Optional[str] = None
+    assembly_accession: Optional[str] = None
+    nucleic_acid_id: Optional[int] = None
+    pi_id: Optional[int] = None
+    project_status: Optional[str] = None
+    master_study_id: Optional[int] = None
+    other_project_names: Optional[str] = None
+    its_project_name: Optional[str] = None
+    is_single_cell_material: Optional[str] = None
+    its_sequencing_product_name: Optional[str] = None
+    project_manager_id: Optional[int] = None
+    ncbi_biosample_accession: Optional[str] = None
+    low_quality_genome: Optional[str] = None
+    sequencing_strategy: Optional[str] = None
+    is_jgi: Optional[str] = None
+    sra_srs_accession: Optional[str] = None
+    sra_srx_accession: Optional[str] = None
+    funding_program: Optional[str] = None
+    funding_year: Optional[float] = None
+    its_sample_id: Optional[int] = None
+    its_sample_group_name: Optional[str] = None
+    experimental_conditions: Optional[str] = None
+    sample_group_name: Optional[str] = None
+    its_sample_name: Optional[str] = None
+    project_subtype: Optional[str] = None
+    sequencing_strategy_full: Optional[str] = None
+    is_approved: Optional[str] = None
+    is_locked: Optional[str] = None
+    gpts_sample_id: Optional[int] = None
+    gpts_disambiguator: Optional[str] = None
 
     def __post_init__(self, **kwargs: Dict[str, Any]):
-        if self.COMPLETION_DATE is not None and not isinstance(self.COMPLETION_DATE, XSDTime):
-            self.COMPLETION_DATE = XSDTime(self.COMPLETION_DATE)
+        if self.completion_date is not None and not isinstance(self.completion_date, XSDTime):
+            self.completion_date = XSDTime(self.completion_date)
         super().__post_init__(**kwargs)
 
 
 @dataclass
-class PROJECTANALYSISPROJECT(YAMLRoot):
+class ProjectAnalysisProject(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.PROJECTANALYSISPROJECT
-    class_class_curie: ClassVar[str] = "ddl:PROJECTANALYSISPROJECT"
-    class_name: ClassVar[str] = "PROJECT_ANALYSIS_PROJECT"
-    class_model_uri: ClassVar[URIRef] = DDL.PROJECTANALYSISPROJECT
+    class_class_uri: ClassVar[URIRef] = DDL.ProjectAnalysisProject
+    class_class_curie: ClassVar[str] = "ddl:ProjectAnalysisProject"
+    class_name: ClassVar[str] = "project_analysis_project"
+    class_model_uri: ClassVar[URIRef] = DDL.ProjectAnalysisProject
 
-    ANALYSIS_PROJECT_ID: Optional[int] = None
+    analysis_project_id: Optional[int] = None
 
 @dataclass
-class PROJECTBIOSAMPLE(YAMLRoot):
+class ProjectBiosample(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.PROJECTBIOSAMPLE
-    class_class_curie: ClassVar[str] = "ddl:PROJECTBIOSAMPLE"
-    class_name: ClassVar[str] = "PROJECT_BIOSAMPLE"
-    class_model_uri: ClassVar[URIRef] = DDL.PROJECTBIOSAMPLE
+    class_class_uri: ClassVar[URIRef] = DDL.ProjectBiosample
+    class_class_curie: ClassVar[str] = "ddl:ProjectBiosample"
+    class_name: ClassVar[str] = "project_biosample"
+    class_model_uri: ClassVar[URIRef] = DDL.ProjectBiosample
 
-    BIOSAMPLE_ID: Optional[int] = None
+    biosample_id: Optional[int] = None
 
-class PROJECTCOLLABORATOR(YAMLRoot):
+class ProjectCollaborator(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.PROJECTCOLLABORATOR
-    class_class_curie: ClassVar[str] = "ddl:PROJECTCOLLABORATOR"
-    class_name: ClassVar[str] = "PROJECT_COLLABORATOR"
-    class_model_uri: ClassVar[URIRef] = DDL.PROJECTCOLLABORATOR
+    class_class_uri: ClassVar[URIRef] = DDL.ProjectCollaborator
+    class_class_curie: ClassVar[str] = "ddl:ProjectCollaborator"
+    class_name: ClassVar[str] = "project_collaborator"
+    class_model_uri: ClassVar[URIRef] = DDL.ProjectCollaborator
 
 
-class PROJECTFUNDINGAGENCY(YAMLRoot):
+class ProjectFundingAgency(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.PROJECTFUNDINGAGENCY
-    class_class_curie: ClassVar[str] = "ddl:PROJECTFUNDINGAGENCY"
-    class_name: ClassVar[str] = "PROJECT_FUNDING_AGENCY"
-    class_model_uri: ClassVar[URIRef] = DDL.PROJECTFUNDINGAGENCY
+    class_class_uri: ClassVar[URIRef] = DDL.ProjectFundingAgency
+    class_class_curie: ClassVar[str] = "ddl:ProjectFundingAgency"
+    class_name: ClassVar[str] = "project_funding_agency"
+    class_model_uri: ClassVar[URIRef] = DDL.ProjectFundingAgency
 
 
-class PROJECTGENOMEPUBLICATION(YAMLRoot):
+class ProjectGenomePublication(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.PROJECTGENOMEPUBLICATION
-    class_class_curie: ClassVar[str] = "ddl:PROJECTGENOMEPUBLICATION"
-    class_name: ClassVar[str] = "PROJECT_GENOME_PUBLICATION"
-    class_model_uri: ClassVar[URIRef] = DDL.PROJECTGENOMEPUBLICATION
+    class_class_uri: ClassVar[URIRef] = DDL.ProjectGenomePublication
+    class_class_curie: ClassVar[str] = "ddl:ProjectGenomePublication"
+    class_name: ClassVar[str] = "project_genome_publication"
+    class_model_uri: ClassVar[URIRef] = DDL.ProjectGenomePublication
 
 
 @dataclass
-class PROJECTOTHERPUBLICATION(YAMLRoot):
+class ProjectOtherPublication(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.PROJECTOTHERPUBLICATION
-    class_class_curie: ClassVar[str] = "ddl:PROJECTOTHERPUBLICATION"
-    class_name: ClassVar[str] = "PROJECT_OTHER_PUBLICATION"
-    class_model_uri: ClassVar[URIRef] = DDL.PROJECTOTHERPUBLICATION
+    class_class_uri: ClassVar[URIRef] = DDL.ProjectOtherPublication
+    class_class_curie: ClassVar[str] = "ddl:ProjectOtherPublication"
+    class_name: ClassVar[str] = "project_other_publication"
+    class_model_uri: ClassVar[URIRef] = DDL.ProjectOtherPublication
 
-    PUBLICATION_ID: Optional[int] = None
+    publication_id: Optional[int] = None
 
 @dataclass
-class PROJECTRELEVANCE(YAMLRoot):
+class ProjectRelevance(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.PROJECTRELEVANCE
-    class_class_curie: ClassVar[str] = "ddl:PROJECTRELEVANCE"
-    class_name: ClassVar[str] = "PROJECT_RELEVANCE"
-    class_model_uri: ClassVar[URIRef] = DDL.PROJECTRELEVANCE
+    class_class_uri: ClassVar[URIRef] = DDL.ProjectRelevance
+    class_class_curie: ClassVar[str] = "ddl:ProjectRelevance"
+    class_name: ClassVar[str] = "project_relevance"
+    class_model_uri: ClassVar[URIRef] = DDL.ProjectRelevance
 
-    RELEVANCE_ID: Optional[int] = None
+    relevance_id: Optional[int] = None
 
 @dataclass
-class PROJECTSEQUENCINGCENTER(YAMLRoot):
+class ProjectSequencingCenter(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.PROJECTSEQUENCINGCENTER
-    class_class_curie: ClassVar[str] = "ddl:PROJECTSEQUENCINGCENTER"
-    class_name: ClassVar[str] = "PROJECT_SEQUENCING_CENTER"
-    class_model_uri: ClassVar[URIRef] = DDL.PROJECTSEQUENCINGCENTER
+    class_class_uri: ClassVar[URIRef] = DDL.ProjectSequencingCenter
+    class_class_curie: ClassVar[str] = "ddl:ProjectSequencingCenter"
+    class_name: ClassVar[str] = "project_sequencing_center"
+    class_model_uri: ClassVar[URIRef] = DDL.ProjectSequencingCenter
 
-    INSTITUTION_ID: Optional[int] = None
+    institution_id: Optional[int] = None
 
 @dataclass
-class PROJECTSEQUENCINGMETHOD(YAMLRoot):
+class ProjectSequencingMethod(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.PROJECTSEQUENCINGMETHOD
-    class_class_curie: ClassVar[str] = "ddl:PROJECTSEQUENCINGMETHOD"
-    class_name: ClassVar[str] = "PROJECT_SEQUENCING_METHOD"
-    class_model_uri: ClassVar[URIRef] = DDL.PROJECTSEQUENCINGMETHOD
+    class_class_uri: ClassVar[URIRef] = DDL.ProjectSequencingMethod
+    class_class_curie: ClassVar[str] = "ddl:ProjectSequencingMethod"
+    class_name: ClassVar[str] = "project_sequencing_method"
+    class_model_uri: ClassVar[URIRef] = DDL.ProjectSequencingMethod
 
-    SEQUENCING_METHOD_ID: Optional[int] = None
+    sequencing_method_id: Optional[int] = None
 
 @dataclass
-class PUBLICATION(YAMLRoot):
+class Publication(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.PUBLICATION
-    class_class_curie: ClassVar[str] = "ddl:PUBLICATION"
-    class_name: ClassVar[str] = "PUBLICATION"
-    class_model_uri: ClassVar[URIRef] = DDL.PUBLICATION
+    class_class_uri: ClassVar[URIRef] = DDL.Publication
+    class_class_curie: ClassVar[str] = "ddl:Publication"
+    class_name: ClassVar[str] = "publication"
+    class_model_uri: ClassVar[URIRef] = DDL.Publication
 
-    DOI: Optional[str] = None
-    PUBMED_ID: Optional[int] = None
-    JOURNAL_ID: Optional[int] = None
-    PUBMODEL: Optional[str] = None
-    VOLUME: Optional[str] = None
-    ISSUE: Optional[str] = None
-    PAGE: Optional[str] = None
-    PUBLICATION_DATE: Optional[str] = None
-    ABSTRACT: Optional[str] = None
-    AFFILIATION: Optional[str] = None
-    TITLE: Optional[str] = None
-    LAST_AUTHOR_ID: Optional[int] = None
-    FIRST_AUTHOR_ID: Optional[int] = None
+    doi: Optional[str] = None
+    pubmed_id: Optional[int] = None
+    journal_id: Optional[int] = None
+    pubmodel: Optional[str] = None
+    volume: Optional[str] = None
+    issue: Optional[str] = None
+    page: Optional[str] = None
+    publication_date: Optional[str] = None
+    abstract: Optional[str] = None
+    affiliation: Optional[str] = None
+    title: Optional[str] = None
+    last_author_id: Optional[int] = None
+    first_author_id: Optional[int] = None
 
 @dataclass
-class STUDY(YAMLRoot):
+class Study(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = DDL.STUDY
-    class_class_curie: ClassVar[str] = "ddl:STUDY"
-    class_name: ClassVar[str] = "STUDY"
-    class_model_uri: ClassVar[URIRef] = DDL.STUDY
+    class_class_uri: ClassVar[URIRef] = DDL.Study
+    class_class_curie: ClassVar[str] = "ddl:Study"
+    class_name: ClassVar[str] = "study"
+    class_model_uri: ClassVar[URIRef] = DDL.Study
 
-    STUDY_NAME: Optional[str] = None
-    ITS_PROPOSAL_ID: Optional[int] = None
-    NCBI_PROJECT_ID: Optional[int] = None
-    ADD_DATE: Optional[Union[str, XSDTime]] = None
-    MOD_DATE: Optional[Union[str, XSDTime]] = None
-    CONTACT_ID: Optional[int] = None
-    LAST_MOD_BY: Optional[float] = None
-    IS_PUBLIC: Optional[str] = None
-    GPTS_PROPOSAL_ID: Optional[int] = None
-    PROJECT_OID: Optional[float] = None
-    ACTIVE: Optional[str] = None
-    LEGACY_GOLD_ID: Optional[str] = None
-    BIOPROJECT_NAME: Optional[str] = None
-    GOLD_STUDY_NAME: Optional[str] = None
-    DESCRIPTION: Optional[str] = None
-    GOLD_ID: Optional[str] = None
-    METAGENOMIC: Optional[str] = None
-    STUDY_TYPE_ID: Optional[int] = None
-    ECOSYSTEM: Optional[str] = None
-    ECOSYSTEM_CATEGORY: Optional[str] = None
-    ECOSYSTEM_TYPE: Optional[str] = None
-    ECOSYSTEM_SUBTYPE: Optional[str] = None
-    SPECIFIC_ECOSYSTEM: Optional[str] = None
-    OWNER_ID: Optional[int] = None
-    IS_DRAFT: Optional[str] = None
-    PUBLIC_SP_COUNT: Optional[float] = None
-    ADMIN_SP_COUNT: Optional[float] = None
-    PUBLIC_AP_COUNT: Optional[float] = None
-    ADMIN_AP_COUNT: Optional[float] = None
-    PUBLIC_DAP_COUNT: Optional[float] = None
-    ADMIN_DAP_COUNT: Optional[float] = None
-    PUBLIC_BIOSAMPLE_COUNT: Optional[float] = None
-    ADMIN_BIOSAMPLE_COUNT: Optional[float] = None
-    IS_GEBA: Optional[str] = None
-    IS_HMP: Optional[str] = None
-    ECOSYSTEM_PATH_ID: Optional[int] = None
-    IS_TEST: Optional[str] = None
+    study_name: Optional[str] = None
+    its_proposal_id: Optional[int] = None
+    ncbi_project_id: Optional[int] = None
+    add_date: Optional[Union[str, XSDTime]] = None
+    mod_date: Optional[Union[str, XSDTime]] = None
+    contact_id: Optional[int] = None
+    last_mod_by: Optional[float] = None
+    is_public: Optional[str] = None
+    gpts_proposal_id: Optional[int] = None
+    project_oid: Optional[float] = None
+    active: Optional[str] = None
+    legacy_gold_id: Optional[str] = None
+    bioproject_name: Optional[str] = None
+    gold_study_name: Optional[str] = None
+    description: Optional[str] = None
+    gold_id: Optional[str] = None
+    metagenomic: Optional[str] = None
+    study_type_id: Optional[int] = None
+    ecosystem: Optional[str] = None
+    ecosystem_category: Optional[str] = None
+    ecosystem_type: Optional[str] = None
+    ecosystem_subtype: Optional[str] = None
+    specific_ecosystem: Optional[str] = None
+    owner_id: Optional[int] = None
+    is_draft: Optional[str] = None
+    public_sp_count: Optional[float] = None
+    admin_sp_count: Optional[float] = None
+    public_ap_count: Optional[float] = None
+    admin_ap_count: Optional[float] = None
+    public_dap_count: Optional[float] = None
+    admin_dap_count: Optional[float] = None
+    public_biosample_count: Optional[float] = None
+    admin_biosample_count: Optional[float] = None
+    is_geba: Optional[str] = None
+    is_hmp: Optional[str] = None
+    ecosystem_path_id: Optional[int] = None
+    is_test: Optional[str] = None
 
     def __post_init__(self, **kwargs: Dict[str, Any]):
-        if self.ADD_DATE is not None and not isinstance(self.ADD_DATE, XSDTime):
-            self.ADD_DATE = XSDTime(self.ADD_DATE)
-        if self.MOD_DATE is not None and not isinstance(self.MOD_DATE, XSDTime):
-            self.MOD_DATE = XSDTime(self.MOD_DATE)
+        if self.add_date is not None and not isinstance(self.add_date, XSDTime):
+            self.add_date = XSDTime(self.add_date)
+        if self.mod_date is not None and not isinstance(self.mod_date, XSDTime):
+            self.mod_date = XSDTime(self.mod_date)
         super().__post_init__(**kwargs)
 
 
@@ -1444,1544 +1444,1544 @@ class STUDY(YAMLRoot):
 class slots:
     pass
 
-slots.ITS_ANALYSIS_PROJECT_ID = Slot(uri=DDL.ITS_ANALYSIS_PROJECT_ID, name="ITS_ANALYSIS_PROJECT_ID", curie=DDL.curie('ITS_ANALYSIS_PROJECT_ID'),
-                      model_uri=DDL.ITS_ANALYSIS_PROJECT_ID, domain=None, range=Optional[int])
+slots.its_analysis_project_id = Slot(uri=DDL.its_analysis_project_id, name="its_analysis_project_id", curie=DDL.curie('its_analysis_project_id'),
+                      model_uri=DDL.its_analysis_project_id, domain=None, range=Optional[int])
 
-slots.ANALYSIS_PROJECT_NAME = Slot(uri=DDL.ANALYSIS_PROJECT_NAME, name="ANALYSIS_PROJECT_NAME", curie=DDL.curie('ANALYSIS_PROJECT_NAME'),
-                      model_uri=DDL.ANALYSIS_PROJECT_NAME, domain=None, range=Optional[str])
+slots.analysis_project_name = Slot(uri=DDL.analysis_project_name, name="analysis_project_name", curie=DDL.curie('analysis_project_name'),
+                      model_uri=DDL.analysis_project_name, domain=None, range=Optional[str])
 
-slots.GOLD_ID = Slot(uri=DDL.GOLD_ID, name="GOLD_ID", curie=DDL.curie('GOLD_ID'),
-                      model_uri=DDL.GOLD_ID, domain=None, range=Optional[str])
+slots.gold_id = Slot(uri=DDL.gold_id, name="gold_id", curie=DDL.curie('gold_id'),
+                      model_uri=DDL.gold_id, domain=None, range=Optional[str])
 
-slots.REFERENCE_AP_ID = Slot(uri=DDL.REFERENCE_AP_ID, name="REFERENCE_AP_ID", curie=DDL.curie('REFERENCE_AP_ID'),
-                      model_uri=DDL.REFERENCE_AP_ID, domain=None, range=Optional[int])
+slots.reference_ap_id = Slot(uri=DDL.reference_ap_id, name="reference_ap_id", curie=DDL.curie('reference_ap_id'),
+                      model_uri=DDL.reference_ap_id, domain=None, range=Optional[int])
 
-slots.IMG_TAXON_ID = Slot(uri=DDL.IMG_TAXON_ID, name="IMG_TAXON_ID", curie=DDL.curie('IMG_TAXON_ID'),
-                      model_uri=DDL.IMG_TAXON_ID, domain=None, range=Optional[int])
+slots.img_taxon_id = Slot(uri=DDL.img_taxon_id, name="img_taxon_id", curie=DDL.curie('img_taxon_id'),
+                      model_uri=DDL.img_taxon_id, domain=None, range=Optional[int])
 
-slots.ANALYSIS_PROJECT_TYPE = Slot(uri=DDL.ANALYSIS_PROJECT_TYPE, name="ANALYSIS_PROJECT_TYPE", curie=DDL.curie('ANALYSIS_PROJECT_TYPE'),
-                      model_uri=DDL.ANALYSIS_PROJECT_TYPE, domain=None, range=Optional[str])
+slots.analysis_project_type = Slot(uri=DDL.analysis_project_type, name="analysis_project_type", curie=DDL.curie('analysis_project_type'),
+                      model_uri=DDL.analysis_project_type, domain=None, range=Optional[str])
 
-slots.STATUS_ID = Slot(uri=DDL.STATUS_ID, name="STATUS_ID", curie=DDL.curie('STATUS_ID'),
-                      model_uri=DDL.STATUS_ID, domain=None, range=Optional[int])
+slots.status_id = Slot(uri=DDL.status_id, name="status_id", curie=DDL.curie('status_id'),
+                      model_uri=DDL.status_id, domain=None, range=Optional[int])
 
-slots.COMMENTS = Slot(uri=DDL.COMMENTS, name="COMMENTS", curie=DDL.curie('COMMENTS'),
-                      model_uri=DDL.COMMENTS, domain=None, range=Optional[str])
+slots.comments = Slot(uri=DDL.comments, name="comments", curie=DDL.curie('comments'),
+                      model_uri=DDL.comments, domain=None, range=Optional[str])
 
-slots.NCBI_TAX_ID = Slot(uri=DDL.NCBI_TAX_ID, name="NCBI_TAX_ID", curie=DDL.curie('NCBI_TAX_ID'),
-                      model_uri=DDL.NCBI_TAX_ID, domain=None, range=Optional[int])
+slots.ncbi_tax_id = Slot(uri=DDL.ncbi_tax_id, name="ncbi_tax_id", curie=DDL.curie('ncbi_tax_id'),
+                      model_uri=DDL.ncbi_tax_id, domain=None, range=Optional[int])
 
-slots.IS_PUBLIC = Slot(uri=DDL.IS_PUBLIC, name="IS_PUBLIC", curie=DDL.curie('IS_PUBLIC'),
-                      model_uri=DDL.IS_PUBLIC, domain=None, range=Optional[str])
+slots.is_public = Slot(uri=DDL.is_public, name="is_public", curie=DDL.curie('is_public'),
+                      model_uri=DDL.is_public, domain=None, range=Optional[str])
 
-slots.ADDED_BY = Slot(uri=DDL.ADDED_BY, name="ADDED_BY", curie=DDL.curie('ADDED_BY'),
-                      model_uri=DDL.ADDED_BY, domain=None, range=Optional[float])
+slots.added_by = Slot(uri=DDL.added_by, name="added_by", curie=DDL.curie('added_by'),
+                      model_uri=DDL.added_by, domain=None, range=Optional[float])
 
-slots.ADD_DATE = Slot(uri=DDL.ADD_DATE, name="ADD_DATE", curie=DDL.curie('ADD_DATE'),
-                      model_uri=DDL.ADD_DATE, domain=None, range=Optional[Union[str, XSDTime]])
+slots.add_date = Slot(uri=DDL.add_date, name="add_date", curie=DDL.curie('add_date'),
+                      model_uri=DDL.add_date, domain=None, range=Optional[Union[str, XSDTime]])
 
-slots.PI_ID = Slot(uri=DDL.PI_ID, name="PI_ID", curie=DDL.curie('PI_ID'),
-                      model_uri=DDL.PI_ID, domain=None, range=Optional[int])
+slots.pi_id = Slot(uri=DDL.pi_id, name="pi_id", curie=DDL.curie('pi_id'),
+                      model_uri=DDL.pi_id, domain=None, range=Optional[int])
 
-slots.SUBMISSION_ID = Slot(uri=DDL.SUBMISSION_ID, name="SUBMISSION_ID", curie=DDL.curie('SUBMISSION_ID'),
-                      model_uri=DDL.SUBMISSION_ID, domain=None, range=Optional[int])
+slots.submission_id = Slot(uri=DDL.submission_id, name="submission_id", curie=DDL.curie('submission_id'),
+                      model_uri=DDL.submission_id, domain=None, range=Optional[int])
 
-slots.SCAFFOLD_COUNT = Slot(uri=DDL.SCAFFOLD_COUNT, name="SCAFFOLD_COUNT", curie=DDL.curie('SCAFFOLD_COUNT'),
-                      model_uri=DDL.SCAFFOLD_COUNT, domain=None, range=Optional[float])
+slots.scaffold_count = Slot(uri=DDL.scaffold_count, name="scaffold_count", curie=DDL.curie('scaffold_count'),
+                      model_uri=DDL.scaffold_count, domain=None, range=Optional[float])
 
-slots.CONTIG_COUNT = Slot(uri=DDL.CONTIG_COUNT, name="CONTIG_COUNT", curie=DDL.curie('CONTIG_COUNT'),
-                      model_uri=DDL.CONTIG_COUNT, domain=None, range=Optional[float])
+slots.contig_count = Slot(uri=DDL.contig_count, name="contig_count", curie=DDL.curie('contig_count'),
+                      model_uri=DDL.contig_count, domain=None, range=Optional[float])
 
-slots.GENE_COUNT = Slot(uri=DDL.GENE_COUNT, name="GENE_COUNT", curie=DDL.curie('GENE_COUNT'),
-                      model_uri=DDL.GENE_COUNT, domain=None, range=Optional[float])
+slots.gene_count = Slot(uri=DDL.gene_count, name="gene_count", curie=DDL.curie('gene_count'),
+                      model_uri=DDL.gene_count, domain=None, range=Optional[float])
 
-slots.BINNING_METHOD = Slot(uri=DDL.BINNING_METHOD, name="BINNING_METHOD", curie=DDL.curie('BINNING_METHOD'),
-                      model_uri=DDL.BINNING_METHOD, domain=None, range=Optional[str])
+slots.binning_method = Slot(uri=DDL.binning_method, name="binning_method", curie=DDL.curie('binning_method'),
+                      model_uri=DDL.binning_method, domain=None, range=Optional[str])
 
-slots.GENE_CALLING_METHOD = Slot(uri=DDL.GENE_CALLING_METHOD, name="GENE_CALLING_METHOD", curie=DDL.curie('GENE_CALLING_METHOD'),
-                      model_uri=DDL.GENE_CALLING_METHOD, domain=None, range=Optional[str])
+slots.gene_calling_method = Slot(uri=DDL.gene_calling_method, name="gene_calling_method", curie=DDL.curie('gene_calling_method'),
+                      model_uri=DDL.gene_calling_method, domain=None, range=Optional[str])
 
-slots.ITS_ANALYSIS_PROJECT_NAME = Slot(uri=DDL.ITS_ANALYSIS_PROJECT_NAME, name="ITS_ANALYSIS_PROJECT_NAME", curie=DDL.curie('ITS_ANALYSIS_PROJECT_NAME'),
-                      model_uri=DDL.ITS_ANALYSIS_PROJECT_NAME, domain=None, range=Optional[str])
+slots.its_analysis_project_name = Slot(uri=DDL.its_analysis_project_name, name="its_analysis_project_name", curie=DDL.curie('its_analysis_project_name'),
+                      model_uri=DDL.its_analysis_project_name, domain=None, range=Optional[str])
 
-slots.ITS_PRODUCT_NAME = Slot(uri=DDL.ITS_PRODUCT_NAME, name="ITS_PRODUCT_NAME", curie=DDL.curie('ITS_PRODUCT_NAME'),
-                      model_uri=DDL.ITS_PRODUCT_NAME, domain=None, range=Optional[str])
+slots.its_product_name = Slot(uri=DDL.its_product_name, name="its_product_name", curie=DDL.curie('its_product_name'),
+                      model_uri=DDL.its_product_name, domain=None, range=Optional[str])
 
-slots.COMPLETION_DATE = Slot(uri=DDL.COMPLETION_DATE, name="COMPLETION_DATE", curie=DDL.curie('COMPLETION_DATE'),
-                      model_uri=DDL.COMPLETION_DATE, domain=None, range=Optional[Union[str, XSDTime]])
+slots.completion_date = Slot(uri=DDL.completion_date, name="completion_date", curie=DDL.curie('completion_date'),
+                      model_uri=DDL.completion_date, domain=None, range=Optional[Union[str, XSDTime]])
 
-slots.EST_SIZE = Slot(uri=DDL.EST_SIZE, name="EST_SIZE", curie=DDL.curie('EST_SIZE'),
-                      model_uri=DDL.EST_SIZE, domain=None, range=Optional[float])
+slots.est_size = Slot(uri=DDL.est_size, name="est_size", curie=DDL.curie('est_size'),
+                      model_uri=DDL.est_size, domain=None, range=Optional[float])
 
-slots.GENBANK_LOW_QUALITY_ANNOTATION = Slot(uri=DDL.GENBANK_LOW_QUALITY_ANNOTATION, name="GENBANK_LOW_QUALITY_ANNOTATION", curie=DDL.curie('GENBANK_LOW_QUALITY_ANNOTATION'),
-                      model_uri=DDL.GENBANK_LOW_QUALITY_ANNOTATION, domain=None, range=Optional[str])
+slots.genbank_low_quality_annotation = Slot(uri=DDL.genbank_low_quality_annotation, name="genbank_low_quality_annotation", curie=DDL.curie('genbank_low_quality_annotation'),
+                      model_uri=DDL.genbank_low_quality_annotation, domain=None, range=Optional[str])
 
-slots.ECOSYSTEM = Slot(uri=DDL.ECOSYSTEM, name="ECOSYSTEM", curie=DDL.curie('ECOSYSTEM'),
-                      model_uri=DDL.ECOSYSTEM, domain=None, range=Optional[str])
+slots.ecosystem = Slot(uri=DDL.ecosystem, name="ecosystem", curie=DDL.curie('ecosystem'),
+                      model_uri=DDL.ecosystem, domain=None, range=Optional[str])
 
-slots.ECOSYSTEM_CATEGORY = Slot(uri=DDL.ECOSYSTEM_CATEGORY, name="ECOSYSTEM_CATEGORY", curie=DDL.curie('ECOSYSTEM_CATEGORY'),
-                      model_uri=DDL.ECOSYSTEM_CATEGORY, domain=None, range=Optional[str])
+slots.ecosystem_category = Slot(uri=DDL.ecosystem_category, name="ecosystem_category", curie=DDL.curie('ecosystem_category'),
+                      model_uri=DDL.ecosystem_category, domain=None, range=Optional[str])
 
-slots.ECOSYSTEM_TYPE = Slot(uri=DDL.ECOSYSTEM_TYPE, name="ECOSYSTEM_TYPE", curie=DDL.curie('ECOSYSTEM_TYPE'),
-                      model_uri=DDL.ECOSYSTEM_TYPE, domain=None, range=Optional[str])
+slots.ecosystem_type = Slot(uri=DDL.ecosystem_type, name="ecosystem_type", curie=DDL.curie('ecosystem_type'),
+                      model_uri=DDL.ecosystem_type, domain=None, range=Optional[str])
 
-slots.ECOSYSTEM_SUBTYPE = Slot(uri=DDL.ECOSYSTEM_SUBTYPE, name="ECOSYSTEM_SUBTYPE", curie=DDL.curie('ECOSYSTEM_SUBTYPE'),
-                      model_uri=DDL.ECOSYSTEM_SUBTYPE, domain=None, range=Optional[str])
+slots.ecosystem_subtype = Slot(uri=DDL.ecosystem_subtype, name="ecosystem_subtype", curie=DDL.curie('ecosystem_subtype'),
+                      model_uri=DDL.ecosystem_subtype, domain=None, range=Optional[str])
 
-slots.SPECIFIC_ECOSYSTEM = Slot(uri=DDL.SPECIFIC_ECOSYSTEM, name="SPECIFIC_ECOSYSTEM", curie=DDL.curie('SPECIFIC_ECOSYSTEM'),
-                      model_uri=DDL.SPECIFIC_ECOSYSTEM, domain=None, range=Optional[str])
+slots.specific_ecosystem = Slot(uri=DDL.specific_ecosystem, name="specific_ecosystem", curie=DDL.curie('specific_ecosystem'),
+                      model_uri=DDL.specific_ecosystem, domain=None, range=Optional[str])
 
-slots.IMG_ANALYSIS_COMPLETE = Slot(uri=DDL.IMG_ANALYSIS_COMPLETE, name="IMG_ANALYSIS_COMPLETE", curie=DDL.curie('IMG_ANALYSIS_COMPLETE'),
-                      model_uri=DDL.IMG_ANALYSIS_COMPLETE, domain=None, range=Optional[str])
+slots.img_analysis_complete = Slot(uri=DDL.img_analysis_complete, name="img_analysis_complete", curie=DDL.curie('img_analysis_complete'),
+                      model_uri=DDL.img_analysis_complete, domain=None, range=Optional[str])
 
-slots.IS_GENE_PRIMP = Slot(uri=DDL.IS_GENE_PRIMP, name="IS_GENE_PRIMP", curie=DDL.curie('IS_GENE_PRIMP'),
-                      model_uri=DDL.IS_GENE_PRIMP, domain=None, range=Optional[str])
+slots.is_gene_primp = Slot(uri=DDL.is_gene_primp, name="is_gene_primp", curie=DDL.curie('is_gene_primp'),
+                      model_uri=DDL.is_gene_primp, domain=None, range=Optional[str])
 
-slots.IS_DECONTAMINATION = Slot(uri=DDL.IS_DECONTAMINATION, name="IS_DECONTAMINATION", curie=DDL.curie('IS_DECONTAMINATION'),
-                      model_uri=DDL.IS_DECONTAMINATION, domain=None, range=Optional[str])
+slots.is_decontamination = Slot(uri=DDL.is_decontamination, name="is_decontamination", curie=DDL.curie('is_decontamination'),
+                      model_uri=DDL.is_decontamination, domain=None, range=Optional[str])
 
-slots.IS_IMG_ANNOTATION = Slot(uri=DDL.IS_IMG_ANNOTATION, name="IS_IMG_ANNOTATION", curie=DDL.curie('IS_IMG_ANNOTATION'),
-                      model_uri=DDL.IS_IMG_ANNOTATION, domain=None, range=Optional[str])
+slots.is_img_annotation = Slot(uri=DDL.is_img_annotation, name="is_img_annotation", curie=DDL.curie('is_img_annotation'),
+                      model_uri=DDL.is_img_annotation, domain=None, range=Optional[str])
 
-slots.ITS_ANNOTATION_AT_ID = Slot(uri=DDL.ITS_ANNOTATION_AT_ID, name="ITS_ANNOTATION_AT_ID", curie=DDL.curie('ITS_ANNOTATION_AT_ID'),
-                      model_uri=DDL.ITS_ANNOTATION_AT_ID, domain=None, range=Optional[int])
+slots.its_annotation_at_id = Slot(uri=DDL.its_annotation_at_id, name="its_annotation_at_id", curie=DDL.curie('its_annotation_at_id'),
+                      model_uri=DDL.its_annotation_at_id, domain=None, range=Optional[int])
 
-slots.IS_ASSEMBLED_DELETED = Slot(uri=DDL.IS_ASSEMBLED_DELETED, name="IS_ASSEMBLED_DELETED", curie=DDL.curie('IS_ASSEMBLED_DELETED'),
-                      model_uri=DDL.IS_ASSEMBLED_DELETED, domain=None, range=Optional[str])
+slots.is_assembled_deleted = Slot(uri=DDL.is_assembled_deleted, name="is_assembled_deleted", curie=DDL.curie('is_assembled_deleted'),
+                      model_uri=DDL.is_assembled_deleted, domain=None, range=Optional[str])
 
-slots.STUDY_ID = Slot(uri=DDL.STUDY_ID, name="STUDY_ID", curie=DDL.curie('STUDY_ID'),
-                      model_uri=DDL.STUDY_ID, domain=None, range=Optional[int])
+slots.study_id = Slot(uri=DDL.study_id, name="study_id", curie=DDL.curie('study_id'),
+                      model_uri=DDL.study_id, domain=None, range=Optional[int])
 
-slots.SPECIMEN = Slot(uri=DDL.SPECIMEN, name="SPECIMEN", curie=DDL.curie('SPECIMEN'),
-                      model_uri=DDL.SPECIMEN, domain=None, range=Optional[str])
+slots.specimen = Slot(uri=DDL.specimen, name="specimen", curie=DDL.curie('specimen'),
+                      model_uri=DDL.specimen, domain=None, range=Optional[str])
 
-slots.ITS_ASSEMBLY_AT_TYPE = Slot(uri=DDL.ITS_ASSEMBLY_AT_TYPE, name="ITS_ASSEMBLY_AT_TYPE", curie=DDL.curie('ITS_ASSEMBLY_AT_TYPE'),
-                      model_uri=DDL.ITS_ASSEMBLY_AT_TYPE, domain=None, range=Optional[str])
+slots.its_assembly_at_type = Slot(uri=DDL.its_assembly_at_type, name="its_assembly_at_type", curie=DDL.curie('its_assembly_at_type'),
+                      model_uri=DDL.its_assembly_at_type, domain=None, range=Optional[str])
 
-slots.DOMAIN = Slot(uri=DDL.DOMAIN, name="DOMAIN", curie=DDL.curie('DOMAIN'),
-                      model_uri=DDL.DOMAIN, domain=None, range=Optional[str])
+slots.domain = Slot(uri=DDL.domain, name="domain", curie=DDL.curie('domain'),
+                      model_uri=DDL.domain, domain=None, range=Optional[str])
 
-slots.NCBI_PHYLUM = Slot(uri=DDL.NCBI_PHYLUM, name="NCBI_PHYLUM", curie=DDL.curie('NCBI_PHYLUM'),
-                      model_uri=DDL.NCBI_PHYLUM, domain=None, range=Optional[str])
+slots.ncbi_phylum = Slot(uri=DDL.ncbi_phylum, name="ncbi_phylum", curie=DDL.curie('ncbi_phylum'),
+                      model_uri=DDL.ncbi_phylum, domain=None, range=Optional[str])
 
-slots.NCBI_CLASS = Slot(uri=DDL.NCBI_CLASS, name="NCBI_CLASS", curie=DDL.curie('NCBI_CLASS'),
-                      model_uri=DDL.NCBI_CLASS, domain=None, range=Optional[str])
+slots.ncbi_class = Slot(uri=DDL.ncbi_class, name="ncbi_class", curie=DDL.curie('ncbi_class'),
+                      model_uri=DDL.ncbi_class, domain=None, range=Optional[str])
 
-slots.NCBI_ORDER = Slot(uri=DDL.NCBI_ORDER, name="NCBI_ORDER", curie=DDL.curie('NCBI_ORDER'),
-                      model_uri=DDL.NCBI_ORDER, domain=None, range=Optional[str])
+slots.ncbi_order = Slot(uri=DDL.ncbi_order, name="ncbi_order", curie=DDL.curie('ncbi_order'),
+                      model_uri=DDL.ncbi_order, domain=None, range=Optional[str])
 
-slots.NCBI_FAMILY = Slot(uri=DDL.NCBI_FAMILY, name="NCBI_FAMILY", curie=DDL.curie('NCBI_FAMILY'),
-                      model_uri=DDL.NCBI_FAMILY, domain=None, range=Optional[str])
+slots.ncbi_family = Slot(uri=DDL.ncbi_family, name="ncbi_family", curie=DDL.curie('ncbi_family'),
+                      model_uri=DDL.ncbi_family, domain=None, range=Optional[str])
 
-slots.NCBI_GENUS = Slot(uri=DDL.NCBI_GENUS, name="NCBI_GENUS", curie=DDL.curie('NCBI_GENUS'),
-                      model_uri=DDL.NCBI_GENUS, domain=None, range=Optional[str])
+slots.ncbi_genus = Slot(uri=DDL.ncbi_genus, name="ncbi_genus", curie=DDL.curie('ncbi_genus'),
+                      model_uri=DDL.ncbi_genus, domain=None, range=Optional[str])
 
-slots.NCBI_SPECIES = Slot(uri=DDL.NCBI_SPECIES, name="NCBI_SPECIES", curie=DDL.curie('NCBI_SPECIES'),
-                      model_uri=DDL.NCBI_SPECIES, domain=None, range=Optional[str])
+slots.ncbi_species = Slot(uri=DDL.ncbi_species, name="ncbi_species", curie=DDL.curie('ncbi_species'),
+                      model_uri=DDL.ncbi_species, domain=None, range=Optional[str])
 
-slots.APPENDED_AP_NAME = Slot(uri=DDL.APPENDED_AP_NAME, name="APPENDED_AP_NAME", curie=DDL.curie('APPENDED_AP_NAME'),
-                      model_uri=DDL.APPENDED_AP_NAME, domain=None, range=Optional[str])
+slots.appended_ap_name = Slot(uri=DDL.appended_ap_name, name="appended_ap_name", curie=DDL.curie('appended_ap_name'),
+                      model_uri=DDL.appended_ap_name, domain=None, range=Optional[str])
 
-slots.MOD_BY = Slot(uri=DDL.MOD_BY, name="MOD_BY", curie=DDL.curie('MOD_BY'),
-                      model_uri=DDL.MOD_BY, domain=None, range=Optional[float])
+slots.mod_by = Slot(uri=DDL.mod_by, name="mod_by", curie=DDL.curie('mod_by'),
+                      model_uri=DDL.mod_by, domain=None, range=Optional[float])
 
-slots.MOD_DATE = Slot(uri=DDL.MOD_DATE, name="MOD_DATE", curie=DDL.curie('MOD_DATE'),
-                      model_uri=DDL.MOD_DATE, domain=None, range=Optional[Union[str, XSDTime]])
+slots.mod_date = Slot(uri=DDL.mod_date, name="mod_date", curie=DDL.curie('mod_date'),
+                      model_uri=DDL.mod_date, domain=None, range=Optional[Union[str, XSDTime]])
 
-slots.PI_NAME = Slot(uri=DDL.PI_NAME, name="PI_NAME", curie=DDL.curie('PI_NAME'),
-                      model_uri=DDL.PI_NAME, domain=None, range=Optional[str])
+slots.pi_name = Slot(uri=DDL.pi_name, name="pi_name", curie=DDL.curie('pi_name'),
+                      model_uri=DDL.pi_name, domain=None, range=Optional[str])
 
-slots.ANALYSIS_PROJECT_NAME_FULL = Slot(uri=DDL.ANALYSIS_PROJECT_NAME_FULL, name="ANALYSIS_PROJECT_NAME_FULL", curie=DDL.curie('ANALYSIS_PROJECT_NAME_FULL'),
-                      model_uri=DDL.ANALYSIS_PROJECT_NAME_FULL, domain=None, range=Optional[str])
+slots.analysis_project_name_full = Slot(uri=DDL.analysis_project_name_full, name="analysis_project_name_full", curie=DDL.curie('analysis_project_name_full'),
+                      model_uri=DDL.analysis_project_name_full, domain=None, range=Optional[str])
 
-slots.IS_PRIMARY = Slot(uri=DDL.IS_PRIMARY, name="IS_PRIMARY", curie=DDL.curie('IS_PRIMARY'),
-                      model_uri=DDL.IS_PRIMARY, domain=None, range=Optional[str])
+slots.is_primary = Slot(uri=DDL.is_primary, name="is_primary", curie=DDL.curie('is_primary'),
+                      model_uri=DDL.is_primary, domain=None, range=Optional[str])
 
-slots.GOLD_PHYLOGENY = Slot(uri=DDL.GOLD_PHYLOGENY, name="GOLD_PHYLOGENY", curie=DDL.curie('GOLD_PHYLOGENY'),
-                      model_uri=DDL.GOLD_PHYLOGENY, domain=None, range=Optional[str])
+slots.gold_phylogeny = Slot(uri=DDL.gold_phylogeny, name="gold_phylogeny", curie=DDL.curie('gold_phylogeny'),
+                      model_uri=DDL.gold_phylogeny, domain=None, range=Optional[str])
 
-slots.PHYLOGENY_SUGGESTION = Slot(uri=DDL.PHYLOGENY_SUGGESTION, name="PHYLOGENY_SUGGESTION", curie=DDL.curie('PHYLOGENY_SUGGESTION'),
-                      model_uri=DDL.PHYLOGENY_SUGGESTION, domain=None, range=Optional[str])
+slots.phylogeny_suggestion = Slot(uri=DDL.phylogeny_suggestion, name="phylogeny_suggestion", curie=DDL.curie('phylogeny_suggestion'),
+                      model_uri=DDL.phylogeny_suggestion, domain=None, range=Optional[str])
 
-slots.REPLACES_AP_ID = Slot(uri=DDL.REPLACES_AP_ID, name="REPLACES_AP_ID", curie=DDL.curie('REPLACES_AP_ID'),
-                      model_uri=DDL.REPLACES_AP_ID, domain=None, range=Optional[int])
+slots.replaces_ap_id = Slot(uri=DDL.replaces_ap_id, name="replaces_ap_id", curie=DDL.curie('replaces_ap_id'),
+                      model_uri=DDL.replaces_ap_id, domain=None, range=Optional[int])
 
-slots.NCBI_BIOPROJECT_ID = Slot(uri=DDL.NCBI_BIOPROJECT_ID, name="NCBI_BIOPROJECT_ID", curie=DDL.curie('NCBI_BIOPROJECT_ID'),
-                      model_uri=DDL.NCBI_BIOPROJECT_ID, domain=None, range=Optional[int])
+slots.ncbi_bioproject_id = Slot(uri=DDL.ncbi_bioproject_id, name="ncbi_bioproject_id", curie=DDL.curie('ncbi_bioproject_id'),
+                      model_uri=DDL.ncbi_bioproject_id, domain=None, range=Optional[int])
 
-slots.SCREENING_METHOD = Slot(uri=DDL.SCREENING_METHOD, name="SCREENING_METHOD", curie=DDL.curie('SCREENING_METHOD'),
-                      model_uri=DDL.SCREENING_METHOD, domain=None, range=Optional[str])
+slots.screening_method = Slot(uri=DDL.screening_method, name="screening_method", curie=DDL.curie('screening_method'),
+                      model_uri=DDL.screening_method, domain=None, range=Optional[str])
 
-slots.DECONTAMINATION_METHOD = Slot(uri=DDL.DECONTAMINATION_METHOD, name="DECONTAMINATION_METHOD", curie=DDL.curie('DECONTAMINATION_METHOD'),
-                      model_uri=DDL.DECONTAMINATION_METHOD, domain=None, range=Optional[str])
+slots.decontamination_method = Slot(uri=DDL.decontamination_method, name="decontamination_method", curie=DDL.curie('decontamination_method'),
+                      model_uri=DDL.decontamination_method, domain=None, range=Optional[str])
 
-slots.NCBI_BIOSAMPLE_ACCESSION = Slot(uri=DDL.NCBI_BIOSAMPLE_ACCESSION, name="NCBI_BIOSAMPLE_ACCESSION", curie=DDL.curie('NCBI_BIOSAMPLE_ACCESSION'),
-                      model_uri=DDL.NCBI_BIOSAMPLE_ACCESSION, domain=None, range=Optional[str])
+slots.ncbi_biosample_accession = Slot(uri=DDL.ncbi_biosample_accession, name="ncbi_biosample_accession", curie=DDL.curie('ncbi_biosample_accession'),
+                      model_uri=DDL.ncbi_biosample_accession, domain=None, range=Optional[str])
 
-slots.NCBI_BIOPROJECT_ACCESSION = Slot(uri=DDL.NCBI_BIOPROJECT_ACCESSION, name="NCBI_BIOPROJECT_ACCESSION", curie=DDL.curie('NCBI_BIOPROJECT_ACCESSION'),
-                      model_uri=DDL.NCBI_BIOPROJECT_ACCESSION, domain=None, range=Optional[str])
+slots.ncbi_bioproject_accession = Slot(uri=DDL.ncbi_bioproject_accession, name="ncbi_bioproject_accession", curie=DDL.curie('ncbi_bioproject_accession'),
+                      model_uri=DDL.ncbi_bioproject_accession, domain=None, range=Optional[str])
 
-slots.COMPLETION = Slot(uri=DDL.COMPLETION, name="COMPLETION", curie=DDL.curie('COMPLETION'),
-                      model_uri=DDL.COMPLETION, domain=None, range=Optional[str])
+slots.completion = Slot(uri=DDL.completion, name="completion", curie=DDL.curie('completion'),
+                      model_uri=DDL.completion, domain=None, range=Optional[str])
 
-slots.NCBI_KINGDOM = Slot(uri=DDL.NCBI_KINGDOM, name="NCBI_KINGDOM", curie=DDL.curie('NCBI_KINGDOM'),
-                      model_uri=DDL.NCBI_KINGDOM, domain=None, range=Optional[str])
+slots.ncbi_kingdom = Slot(uri=DDL.ncbi_kingdom, name="ncbi_kingdom", curie=DDL.curie('ncbi_kingdom'),
+                      model_uri=DDL.ncbi_kingdom, domain=None, range=Optional[str])
 
-slots.REVIEW_STATUS = Slot(uri=DDL.REVIEW_STATUS, name="REVIEW_STATUS", curie=DDL.curie('REVIEW_STATUS'),
-                      model_uri=DDL.REVIEW_STATUS, domain=None, range=Optional[str])
+slots.review_status = Slot(uri=DDL.review_status, name="review_status", curie=DDL.curie('review_status'),
+                      model_uri=DDL.review_status, domain=None, range=Optional[str])
 
-slots.REJECTION_REASONS = Slot(uri=DDL.REJECTION_REASONS, name="REJECTION_REASONS", curie=DDL.curie('REJECTION_REASONS'),
-                      model_uri=DDL.REJECTION_REASONS, domain=None, range=Optional[str])
+slots.rejection_reasons = Slot(uri=DDL.rejection_reasons, name="rejection_reasons", curie=DDL.curie('rejection_reasons'),
+                      model_uri=DDL.rejection_reasons, domain=None, range=Optional[str])
 
-slots.ORGANISM_ID = Slot(uri=DDL.ORGANISM_ID, name="ORGANISM_ID", curie=DDL.curie('ORGANISM_ID'),
-                      model_uri=DDL.ORGANISM_ID, domain=None, range=Optional[int])
+slots.organism_id = Slot(uri=DDL.organism_id, name="organism_id", curie=DDL.curie('organism_id'),
+                      model_uri=DDL.organism_id, domain=None, range=Optional[int])
 
-slots.PIPELINE_ANNOTATION_METHOD = Slot(uri=DDL.PIPELINE_ANNOTATION_METHOD, name="PIPELINE_ANNOTATION_METHOD", curie=DDL.curie('PIPELINE_ANNOTATION_METHOD'),
-                      model_uri=DDL.PIPELINE_ANNOTATION_METHOD, domain=None, range=Optional[str])
+slots.pipeline_annotation_method = Slot(uri=DDL.pipeline_annotation_method, name="pipeline_annotation_method", curie=DDL.curie('pipeline_annotation_method'),
+                      model_uri=DDL.pipeline_annotation_method, domain=None, range=Optional[str])
 
-slots.GENUS = Slot(uri=DDL.GENUS, name="GENUS", curie=DDL.curie('GENUS'),
-                      model_uri=DDL.GENUS, domain=None, range=Optional[str])
+slots.genus = Slot(uri=DDL.genus, name="genus", curie=DDL.curie('genus'),
+                      model_uri=DDL.genus, domain=None, range=Optional[str])
 
-slots.SPECIES = Slot(uri=DDL.SPECIES, name="SPECIES", curie=DDL.curie('SPECIES'),
-                      model_uri=DDL.SPECIES, domain=None, range=Optional[str])
+slots.species = Slot(uri=DDL.species, name="species", curie=DDL.curie('species'),
+                      model_uri=DDL.species, domain=None, range=Optional[str])
 
-slots.SUBSPECIES = Slot(uri=DDL.SUBSPECIES, name="SUBSPECIES", curie=DDL.curie('SUBSPECIES'),
-                      model_uri=DDL.SUBSPECIES, domain=None, range=Optional[str])
+slots.subspecies = Slot(uri=DDL.subspecies, name="subspecies", curie=DDL.curie('subspecies'),
+                      model_uri=DDL.subspecies, domain=None, range=Optional[str])
 
-slots.CULTURE_COLLECTION = Slot(uri=DDL.CULTURE_COLLECTION, name="CULTURE_COLLECTION", curie=DDL.curie('CULTURE_COLLECTION'),
-                      model_uri=DDL.CULTURE_COLLECTION, domain=None, range=Optional[str])
+slots.culture_collection = Slot(uri=DDL.culture_collection, name="culture_collection", curie=DDL.curie('culture_collection'),
+                      model_uri=DDL.culture_collection, domain=None, range=Optional[str])
 
-slots.SEROVAR = Slot(uri=DDL.SEROVAR, name="SEROVAR", curie=DDL.curie('SEROVAR'),
-                      model_uri=DDL.SEROVAR, domain=None, range=Optional[str])
+slots.serovar = Slot(uri=DDL.serovar, name="serovar", curie=DDL.curie('serovar'),
+                      model_uri=DDL.serovar, domain=None, range=Optional[str])
 
-slots.STRAIN = Slot(uri=DDL.STRAIN, name="STRAIN", curie=DDL.curie('STRAIN'),
-                      model_uri=DDL.STRAIN, domain=None, range=Optional[str])
+slots.strain = Slot(uri=DDL.strain, name="strain", curie=DDL.curie('strain'),
+                      model_uri=DDL.strain, domain=None, range=Optional[str])
 
-slots.ECOSYSTEM_PATH_ID = Slot(uri=DDL.ECOSYSTEM_PATH_ID, name="ECOSYSTEM_PATH_ID", curie=DDL.curie('ECOSYSTEM_PATH_ID'),
-                      model_uri=DDL.ECOSYSTEM_PATH_ID, domain=None, range=Optional[int])
+slots.ecosystem_path_id = Slot(uri=DDL.ecosystem_path_id, name="ecosystem_path_id", curie=DDL.curie('ecosystem_path_id'),
+                      model_uri=DDL.ecosystem_path_id, domain=None, range=Optional[int])
 
-slots.SEQUENCING_DEPTH = Slot(uri=DDL.SEQUENCING_DEPTH, name="SEQUENCING_DEPTH", curie=DDL.curie('SEQUENCING_DEPTH'),
-                      model_uri=DDL.SEQUENCING_DEPTH, domain=None, range=Optional[str])
+slots.sequencing_depth = Slot(uri=DDL.sequencing_depth, name="sequencing_depth", curie=DDL.curie('sequencing_depth'),
+                      model_uri=DDL.sequencing_depth, domain=None, range=Optional[str])
 
-slots.IMG_USE = Slot(uri=DDL.IMG_USE, name="IMG_USE", curie=DDL.curie('IMG_USE'),
-                      model_uri=DDL.IMG_USE, domain=None, range=Optional[str])
+slots.img_use = Slot(uri=DDL.img_use, name="img_use", curie=DDL.curie('img_use'),
+                      model_uri=DDL.img_use, domain=None, range=Optional[str])
 
-slots.ANNOTATOR_COMMENTS = Slot(uri=DDL.ANNOTATOR_COMMENTS, name="ANNOTATOR_COMMENTS", curie=DDL.curie('ANNOTATOR_COMMENTS'),
-                      model_uri=DDL.ANNOTATOR_COMMENTS, domain=None, range=Optional[str])
+slots.annotator_comments = Slot(uri=DDL.annotator_comments, name="annotator_comments", curie=DDL.curie('annotator_comments'),
+                      model_uri=DDL.annotator_comments, domain=None, range=Optional[str])
 
-slots.AP_FOR_NONOWNER = Slot(uri=DDL.AP_FOR_NONOWNER, name="AP_FOR_NONOWNER", curie=DDL.curie('AP_FOR_NONOWNER'),
-                      model_uri=DDL.AP_FOR_NONOWNER, domain=None, range=Optional[str])
+slots.ap_for_nonowner = Slot(uri=DDL.ap_for_nonowner, name="ap_for_nonowner", curie=DDL.curie('ap_for_nonowner'),
+                      model_uri=DDL.ap_for_nonowner, domain=None, range=Optional[str])
 
-slots.NCBI_SUPERKINGDOM = Slot(uri=DDL.NCBI_SUPERKINGDOM, name="NCBI_SUPERKINGDOM", curie=DDL.curie('NCBI_SUPERKINGDOM'),
-                      model_uri=DDL.NCBI_SUPERKINGDOM, domain=None, range=Optional[str])
+slots.ncbi_superkingdom = Slot(uri=DDL.ncbi_superkingdom, name="ncbi_superkingdom", curie=DDL.curie('ncbi_superkingdom'),
+                      model_uri=DDL.ncbi_superkingdom, domain=None, range=Optional[str])
 
-slots.IS_TEST = Slot(uri=DDL.IS_TEST, name="IS_TEST", curie=DDL.curie('IS_TEST'),
-                      model_uri=DDL.IS_TEST, domain=None, range=Optional[str])
+slots.is_test = Slot(uri=DDL.is_test, name="is_test", curie=DDL.curie('is_test'),
+                      model_uri=DDL.is_test, domain=None, range=Optional[str])
 
-slots.ITS_NCBI_TAX_ID = Slot(uri=DDL.ITS_NCBI_TAX_ID, name="ITS_NCBI_TAX_ID", curie=DDL.curie('ITS_NCBI_TAX_ID'),
-                      model_uri=DDL.ITS_NCBI_TAX_ID, domain=None, range=Optional[int])
+slots.its_ncbi_tax_id = Slot(uri=DDL.its_ncbi_tax_id, name="its_ncbi_tax_id", curie=DDL.curie('its_ncbi_tax_id'),
+                      model_uri=DDL.its_ncbi_tax_id, domain=None, range=Optional[int])
 
-slots.ITS_VERSION_NUMBER = Slot(uri=DDL.ITS_VERSION_NUMBER, name="ITS_VERSION_NUMBER", curie=DDL.curie('ITS_VERSION_NUMBER'),
-                      model_uri=DDL.ITS_VERSION_NUMBER, domain=None, range=Optional[float])
+slots.its_version_number = Slot(uri=DDL.its_version_number, name="its_version_number", curie=DDL.curie('its_version_number'),
+                      model_uri=DDL.its_version_number, domain=None, range=Optional[float])
 
-slots.IMG_RNASEQ_ID = Slot(uri=DDL.IMG_RNASEQ_ID, name="IMG_RNASEQ_ID", curie=DDL.curie('IMG_RNASEQ_ID'),
-                      model_uri=DDL.IMG_RNASEQ_ID, domain=None, range=Optional[int])
+slots.img_rnaseq_id = Slot(uri=DDL.img_rnaseq_id, name="img_rnaseq_id", curie=DDL.curie('img_rnaseq_id'),
+                      model_uri=DDL.img_rnaseq_id, domain=None, range=Optional[int])
 
-slots.SUBMISSION_STATUS_ID = Slot(uri=DDL.SUBMISSION_STATUS_ID, name="SUBMISSION_STATUS_ID", curie=DDL.curie('SUBMISSION_STATUS_ID'),
-                      model_uri=DDL.SUBMISSION_STATUS_ID, domain=None, range=Optional[int])
+slots.submission_status_id = Slot(uri=DDL.submission_status_id, name="submission_status_id", curie=DDL.curie('submission_status_id'),
+                      model_uri=DDL.submission_status_id, domain=None, range=Optional[int])
 
-slots.SUBMISSION_STATUS_NAME = Slot(uri=DDL.SUBMISSION_STATUS_NAME, name="SUBMISSION_STATUS_NAME", curie=DDL.curie('SUBMISSION_STATUS_NAME'),
-                      model_uri=DDL.SUBMISSION_STATUS_NAME, domain=None, range=Optional[str])
+slots.submission_status_name = Slot(uri=DDL.submission_status_name, name="submission_status_name", curie=DDL.curie('submission_status_name'),
+                      model_uri=DDL.submission_status_name, domain=None, range=Optional[str])
 
-slots.SUBMISSION_COMMENTS = Slot(uri=DDL.SUBMISSION_COMMENTS, name="SUBMISSION_COMMENTS", curie=DDL.curie('SUBMISSION_COMMENTS'),
-                      model_uri=DDL.SUBMISSION_COMMENTS, domain=None, range=Optional[str])
+slots.submission_comments = Slot(uri=DDL.submission_comments, name="submission_comments", curie=DDL.curie('submission_comments'),
+                      model_uri=DDL.submission_comments, domain=None, range=Optional[str])
 
-slots.IMG_SUBMISSION_PRORITY = Slot(uri=DDL.IMG_SUBMISSION_PRORITY, name="IMG_SUBMISSION_PRORITY", curie=DDL.curie('IMG_SUBMISSION_PRORITY'),
-                      model_uri=DDL.IMG_SUBMISSION_PRORITY, domain=None, range=Optional[str])
+slots.img_submission_prority = Slot(uri=DDL.img_submission_prority, name="img_submission_prority", curie=DDL.curie('img_submission_prority'),
+                      model_uri=DDL.img_submission_prority, domain=None, range=Optional[str])
 
-slots.CONTAMINATION_PERCENTAGE = Slot(uri=DDL.CONTAMINATION_PERCENTAGE, name="CONTAMINATION_PERCENTAGE", curie=DDL.curie('CONTAMINATION_PERCENTAGE'),
-                      model_uri=DDL.CONTAMINATION_PERCENTAGE, domain=None, range=Optional[float])
+slots.contamination_percentage = Slot(uri=DDL.contamination_percentage, name="contamination_percentage", curie=DDL.curie('contamination_percentage'),
+                      model_uri=DDL.contamination_percentage, domain=None, range=Optional[float])
 
-slots.COMPLETENESS_PERCENTAGE = Slot(uri=DDL.COMPLETENESS_PERCENTAGE, name="COMPLETENESS_PERCENTAGE", curie=DDL.curie('COMPLETENESS_PERCENTAGE'),
-                      model_uri=DDL.COMPLETENESS_PERCENTAGE, domain=None, range=Optional[float])
+slots.completeness_percentage = Slot(uri=DDL.completeness_percentage, name="completeness_percentage", curie=DDL.curie('completeness_percentage'),
+                      model_uri=DDL.completeness_percentage, domain=None, range=Optional[float])
 
-slots.SRA_RUN_ID = Slot(uri=DDL.SRA_RUN_ID, name="SRA_RUN_ID", curie=DDL.curie('SRA_RUN_ID'),
-                      model_uri=DDL.SRA_RUN_ID, domain=None, range=Optional[str])
+slots.sra_run_id = Slot(uri=DDL.sra_run_id, name="sra_run_id", curie=DDL.curie('sra_run_id'),
+                      model_uri=DDL.sra_run_id, domain=None, range=Optional[str])
 
-slots.BIOSAMPLE_NAME = Slot(uri=DDL.BIOSAMPLE_NAME, name="BIOSAMPLE_NAME", curie=DDL.curie('BIOSAMPLE_NAME'),
-                      model_uri=DDL.BIOSAMPLE_NAME, domain=None, range=Optional[str])
+slots.biosample_name = Slot(uri=DDL.biosample_name, name="biosample_name", curie=DDL.curie('biosample_name'),
+                      model_uri=DDL.biosample_name, domain=None, range=Optional[str])
 
-slots.DESCRIPTION = Slot(uri=DDL.DESCRIPTION, name="DESCRIPTION", curie=DDL.curie('DESCRIPTION'),
-                      model_uri=DDL.DESCRIPTION, domain=None, range=Optional[str])
+slots.description = Slot(uri=DDL.description, name="description", curie=DDL.curie('description'),
+                      model_uri=DDL.description, domain=None, range=Optional[str])
 
-slots.SAMPLE_COLLECTION_SITE = Slot(uri=DDL.SAMPLE_COLLECTION_SITE, name="SAMPLE_COLLECTION_SITE", curie=DDL.curie('SAMPLE_COLLECTION_SITE'),
-                      model_uri=DDL.SAMPLE_COLLECTION_SITE, domain=None, range=Optional[str])
+slots.sample_collection_site = Slot(uri=DDL.sample_collection_site, name="sample_collection_site", curie=DDL.curie('sample_collection_site'),
+                      model_uri=DDL.sample_collection_site, domain=None, range=Optional[str])
 
-slots.ISOLATION_PUBLICATION_ID = Slot(uri=DDL.ISOLATION_PUBLICATION_ID, name="ISOLATION_PUBLICATION_ID", curie=DDL.curie('ISOLATION_PUBLICATION_ID'),
-                      model_uri=DDL.ISOLATION_PUBLICATION_ID, domain=None, range=Optional[int])
+slots.isolation_publication_id = Slot(uri=DDL.isolation_publication_id, name="isolation_publication_id", curie=DDL.curie('isolation_publication_id'),
+                      model_uri=DDL.isolation_publication_id, domain=None, range=Optional[int])
 
-slots.SAMPLE_ISOLATION_COMMENTS = Slot(uri=DDL.SAMPLE_ISOLATION_COMMENTS, name="SAMPLE_ISOLATION_COMMENTS", curie=DDL.curie('SAMPLE_ISOLATION_COMMENTS'),
-                      model_uri=DDL.SAMPLE_ISOLATION_COMMENTS, domain=None, range=Optional[str])
+slots.sample_isolation_comments = Slot(uri=DDL.sample_isolation_comments, name="sample_isolation_comments", curie=DDL.curie('sample_isolation_comments'),
+                      model_uri=DDL.sample_isolation_comments, domain=None, range=Optional[str])
 
-slots.SAMPLING_STRATEGY = Slot(uri=DDL.SAMPLING_STRATEGY, name="SAMPLING_STRATEGY", curie=DDL.curie('SAMPLING_STRATEGY'),
-                      model_uri=DDL.SAMPLING_STRATEGY, domain=None, range=Optional[str])
+slots.sampling_strategy = Slot(uri=DDL.sampling_strategy, name="sampling_strategy", curie=DDL.curie('sampling_strategy'),
+                      model_uri=DDL.sampling_strategy, domain=None, range=Optional[str])
 
-slots.REPLICATE_NUMBER = Slot(uri=DDL.REPLICATE_NUMBER, name="REPLICATE_NUMBER", curie=DDL.curie('REPLICATE_NUMBER'),
-                      model_uri=DDL.REPLICATE_NUMBER, domain=None, range=Optional[float])
+slots.replicate_number = Slot(uri=DDL.replicate_number, name="replicate_number", curie=DDL.curie('replicate_number'),
+                      model_uri=DDL.replicate_number, domain=None, range=Optional[float])
 
-slots.SAMPLE_VOLUME = Slot(uri=DDL.SAMPLE_VOLUME, name="SAMPLE_VOLUME", curie=DDL.curie('SAMPLE_VOLUME'),
-                      model_uri=DDL.SAMPLE_VOLUME, domain=None, range=Optional[str])
+slots.sample_volume = Slot(uri=DDL.sample_volume, name="sample_volume", curie=DDL.curie('sample_volume'),
+                      model_uri=DDL.sample_volume, domain=None, range=Optional[str])
 
-slots.SAMPLE_BIOMASS = Slot(uri=DDL.SAMPLE_BIOMASS, name="SAMPLE_BIOMASS", curie=DDL.curie('SAMPLE_BIOMASS'),
-                      model_uri=DDL.SAMPLE_BIOMASS, domain=None, range=Optional[str])
+slots.sample_biomass = Slot(uri=DDL.sample_biomass, name="sample_biomass", curie=DDL.curie('sample_biomass'),
+                      model_uri=DDL.sample_biomass, domain=None, range=Optional[str])
 
-slots.SAMPLE_CONTACT_NAME = Slot(uri=DDL.SAMPLE_CONTACT_NAME, name="SAMPLE_CONTACT_NAME", curie=DDL.curie('SAMPLE_CONTACT_NAME'),
-                      model_uri=DDL.SAMPLE_CONTACT_NAME, domain=None, range=Optional[str])
+slots.sample_contact_name = Slot(uri=DDL.sample_contact_name, name="sample_contact_name", curie=DDL.curie('sample_contact_name'),
+                      model_uri=DDL.sample_contact_name, domain=None, range=Optional[str])
 
-slots.SAMPLE_CONTACT_EMAIL = Slot(uri=DDL.SAMPLE_CONTACT_EMAIL, name="SAMPLE_CONTACT_EMAIL", curie=DDL.curie('SAMPLE_CONTACT_EMAIL'),
-                      model_uri=DDL.SAMPLE_CONTACT_EMAIL, domain=None, range=Optional[str])
+slots.sample_contact_email = Slot(uri=DDL.sample_contact_email, name="sample_contact_email", curie=DDL.curie('sample_contact_email'),
+                      model_uri=DDL.sample_contact_email, domain=None, range=Optional[str])
 
-slots.GEOGRAPHIC_LOCATION = Slot(uri=DDL.GEOGRAPHIC_LOCATION, name="GEOGRAPHIC_LOCATION", curie=DDL.curie('GEOGRAPHIC_LOCATION'),
-                      model_uri=DDL.GEOGRAPHIC_LOCATION, domain=None, range=Optional[str])
+slots.geographic_location = Slot(uri=DDL.geographic_location, name="geographic_location", curie=DDL.curie('geographic_location'),
+                      model_uri=DDL.geographic_location, domain=None, range=Optional[str])
 
-slots.LAT_LONG_INFERRED = Slot(uri=DDL.LAT_LONG_INFERRED, name="LAT_LONG_INFERRED", curie=DDL.curie('LAT_LONG_INFERRED'),
-                      model_uri=DDL.LAT_LONG_INFERRED, domain=None, range=Optional[str])
+slots.lat_long_inferred = Slot(uri=DDL.lat_long_inferred, name="lat_long_inferred", curie=DDL.curie('lat_long_inferred'),
+                      model_uri=DDL.lat_long_inferred, domain=None, range=Optional[str])
 
-slots.SALINITY = Slot(uri=DDL.SALINITY, name="SALINITY", curie=DDL.curie('SALINITY'),
-                      model_uri=DDL.SALINITY, domain=None, range=Optional[str])
+slots.salinity = Slot(uri=DDL.salinity, name="salinity", curie=DDL.curie('salinity'),
+                      model_uri=DDL.salinity, domain=None, range=Optional[str])
 
-slots.PRESSURE = Slot(uri=DDL.PRESSURE, name="PRESSURE", curie=DDL.curie('PRESSURE'),
-                      model_uri=DDL.PRESSURE, domain=None, range=Optional[str])
+slots.pressure = Slot(uri=DDL.pressure, name="pressure", curie=DDL.curie('pressure'),
+                      model_uri=DDL.pressure, domain=None, range=Optional[str])
 
-slots.PH = Slot(uri=DDL.PH, name="PH", curie=DDL.curie('PH'),
-                      model_uri=DDL.PH, domain=None, range=Optional[str])
+slots.ph = Slot(uri=DDL.ph, name="ph", curie=DDL.curie('ph'),
+                      model_uri=DDL.ph, domain=None, range=Optional[str])
 
-slots.HABITAT = Slot(uri=DDL.HABITAT, name="HABITAT", curie=DDL.curie('HABITAT'),
-                      model_uri=DDL.HABITAT, domain=None, range=Optional[str])
+slots.habitat = Slot(uri=DDL.habitat, name="habitat", curie=DDL.curie('habitat'),
+                      model_uri=DDL.habitat, domain=None, range=Optional[str])
 
-slots.HOST_NAME = Slot(uri=DDL.HOST_NAME, name="HOST_NAME", curie=DDL.curie('HOST_NAME'),
-                      model_uri=DDL.HOST_NAME, domain=None, range=Optional[str])
+slots.host_name = Slot(uri=DDL.host_name, name="host_name", curie=DDL.curie('host_name'),
+                      model_uri=DDL.host_name, domain=None, range=Optional[str])
 
-slots.HOST_TAXONOMY_ID = Slot(uri=DDL.HOST_TAXONOMY_ID, name="HOST_TAXONOMY_ID", curie=DDL.curie('HOST_TAXONOMY_ID'),
-                      model_uri=DDL.HOST_TAXONOMY_ID, domain=None, range=Optional[int])
+slots.host_taxonomy_id = Slot(uri=DDL.host_taxonomy_id, name="host_taxonomy_id", curie=DDL.curie('host_taxonomy_id'),
+                      model_uri=DDL.host_taxonomy_id, domain=None, range=Optional[int])
 
-slots.HOST_GENDER = Slot(uri=DDL.HOST_GENDER, name="HOST_GENDER", curie=DDL.curie('HOST_GENDER'),
-                      model_uri=DDL.HOST_GENDER, domain=None, range=Optional[str])
+slots.host_gender = Slot(uri=DDL.host_gender, name="host_gender", curie=DDL.curie('host_gender'),
+                      model_uri=DDL.host_gender, domain=None, range=Optional[str])
 
-slots.HOST_RACE = Slot(uri=DDL.HOST_RACE, name="HOST_RACE", curie=DDL.curie('HOST_RACE'),
-                      model_uri=DDL.HOST_RACE, domain=None, range=Optional[str])
+slots.host_race = Slot(uri=DDL.host_race, name="host_race", curie=DDL.curie('host_race'),
+                      model_uri=DDL.host_race, domain=None, range=Optional[str])
 
-slots.HOST_AGE = Slot(uri=DDL.HOST_AGE, name="HOST_AGE", curie=DDL.curie('HOST_AGE'),
-                      model_uri=DDL.HOST_AGE, domain=None, range=Optional[str])
+slots.host_age = Slot(uri=DDL.host_age, name="host_age", curie=DDL.curie('host_age'),
+                      model_uri=DDL.host_age, domain=None, range=Optional[str])
 
-slots.HOST_HEALTH_CONDITION = Slot(uri=DDL.HOST_HEALTH_CONDITION, name="HOST_HEALTH_CONDITION", curie=DDL.curie('HOST_HEALTH_CONDITION'),
-                      model_uri=DDL.HOST_HEALTH_CONDITION, domain=None, range=Optional[str])
+slots.host_health_condition = Slot(uri=DDL.host_health_condition, name="host_health_condition", curie=DDL.curie('host_health_condition'),
+                      model_uri=DDL.host_health_condition, domain=None, range=Optional[str])
 
-slots.PATIENT_VISIT_NUMBER = Slot(uri=DDL.PATIENT_VISIT_NUMBER, name="PATIENT_VISIT_NUMBER", curie=DDL.curie('PATIENT_VISIT_NUMBER'),
-                      model_uri=DDL.PATIENT_VISIT_NUMBER, domain=None, range=Optional[float])
+slots.patient_visit_number = Slot(uri=DDL.patient_visit_number, name="patient_visit_number", curie=DDL.curie('patient_visit_number'),
+                      model_uri=DDL.patient_visit_number, domain=None, range=Optional[float])
 
-slots.HOST_MEDICATION = Slot(uri=DDL.HOST_MEDICATION, name="HOST_MEDICATION", curie=DDL.curie('HOST_MEDICATION'),
-                      model_uri=DDL.HOST_MEDICATION, domain=None, range=Optional[str])
+slots.host_medication = Slot(uri=DDL.host_medication, name="host_medication", curie=DDL.curie('host_medication'),
+                      model_uri=DDL.host_medication, domain=None, range=Optional[str])
 
-slots.MRN = Slot(uri=DDL.MRN, name="MRN", curie=DDL.curie('MRN'),
-                      model_uri=DDL.MRN, domain=None, range=Optional[str])
+slots.mrn = Slot(uri=DDL.mrn, name="mrn", curie=DDL.curie('mrn'),
+                      model_uri=DDL.mrn, domain=None, range=Optional[str])
 
-slots.HOST_BODY_SITE = Slot(uri=DDL.HOST_BODY_SITE, name="HOST_BODY_SITE", curie=DDL.curie('HOST_BODY_SITE'),
-                      model_uri=DDL.HOST_BODY_SITE, domain=None, range=Optional[str])
+slots.host_body_site = Slot(uri=DDL.host_body_site, name="host_body_site", curie=DDL.curie('host_body_site'),
+                      model_uri=DDL.host_body_site, domain=None, range=Optional[str])
 
-slots.HOST_BODY_SUBSITE = Slot(uri=DDL.HOST_BODY_SUBSITE, name="HOST_BODY_SUBSITE", curie=DDL.curie('HOST_BODY_SUBSITE'),
-                      model_uri=DDL.HOST_BODY_SUBSITE, domain=None, range=Optional[str])
+slots.host_body_subsite = Slot(uri=DDL.host_body_subsite, name="host_body_subsite", curie=DDL.curie('host_body_subsite'),
+                      model_uri=DDL.host_body_subsite, domain=None, range=Optional[str])
 
-slots.HOST_BODY_PRODUCT = Slot(uri=DDL.HOST_BODY_PRODUCT, name="HOST_BODY_PRODUCT", curie=DDL.curie('HOST_BODY_PRODUCT'),
-                      model_uri=DDL.HOST_BODY_PRODUCT, domain=None, range=Optional[str])
+slots.host_body_product = Slot(uri=DDL.host_body_product, name="host_body_product", curie=DDL.curie('host_body_product'),
+                      model_uri=DDL.host_body_product, domain=None, range=Optional[str])
 
-slots.HOST_SPECIFICITY = Slot(uri=DDL.HOST_SPECIFICITY, name="HOST_SPECIFICITY", curie=DDL.curie('HOST_SPECIFICITY'),
-                      model_uri=DDL.HOST_SPECIFICITY, domain=None, range=Optional[str])
+slots.host_specificity = Slot(uri=DDL.host_specificity, name="host_specificity", curie=DDL.curie('host_specificity'),
+                      model_uri=DDL.host_specificity, domain=None, range=Optional[str])
 
-slots.HOST_COMMENTS = Slot(uri=DDL.HOST_COMMENTS, name="HOST_COMMENTS", curie=DDL.curie('HOST_COMMENTS'),
-                      model_uri=DDL.HOST_COMMENTS, domain=None, range=Optional[str])
+slots.host_comments = Slot(uri=DDL.host_comments, name="host_comments", curie=DDL.curie('host_comments'),
+                      model_uri=DDL.host_comments, domain=None, range=Optional[str])
 
-slots.ACTIVE = Slot(uri=DDL.ACTIVE, name="ACTIVE", curie=DDL.curie('ACTIVE'),
-                      model_uri=DDL.ACTIVE, domain=None, range=Optional[str])
+slots.active = Slot(uri=DDL.active, name="active", curie=DDL.curie('active'),
+                      model_uri=DDL.active, domain=None, range=Optional[str])
 
-slots.PROJECT_OID = Slot(uri=DDL.PROJECT_OID, name="PROJECT_OID", curie=DDL.curie('PROJECT_OID'),
-                      model_uri=DDL.PROJECT_OID, domain=None, range=Optional[float])
+slots.project_oid = Slot(uri=DDL.project_oid, name="project_oid", curie=DDL.curie('project_oid'),
+                      model_uri=DDL.project_oid, domain=None, range=Optional[float])
 
-slots.SAMPLE_OID = Slot(uri=DDL.SAMPLE_OID, name="SAMPLE_OID", curie=DDL.curie('SAMPLE_OID'),
-                      model_uri=DDL.SAMPLE_OID, domain=None, range=Optional[float])
+slots.sample_oid = Slot(uri=DDL.sample_oid, name="sample_oid", curie=DDL.curie('sample_oid'),
+                      model_uri=DDL.sample_oid, domain=None, range=Optional[float])
 
-slots.SUBMIT_BIOSAMPLE_NAME = Slot(uri=DDL.SUBMIT_BIOSAMPLE_NAME, name="SUBMIT_BIOSAMPLE_NAME", curie=DDL.curie('SUBMIT_BIOSAMPLE_NAME'),
-                      model_uri=DDL.SUBMIT_BIOSAMPLE_NAME, domain=None, range=Optional[str])
+slots.submit_biosample_name = Slot(uri=DDL.submit_biosample_name, name="submit_biosample_name", curie=DDL.curie('submit_biosample_name'),
+                      model_uri=DDL.submit_biosample_name, domain=None, range=Optional[str])
 
-slots.NCBI_TAXONOMY_ID = Slot(uri=DDL.NCBI_TAXONOMY_ID, name="NCBI_TAXONOMY_ID", curie=DDL.curie('NCBI_TAXONOMY_ID'),
-                      model_uri=DDL.NCBI_TAXONOMY_ID, domain=None, range=Optional[int])
+slots.ncbi_taxonomy_id = Slot(uri=DDL.ncbi_taxonomy_id, name="ncbi_taxonomy_id", curie=DDL.curie('ncbi_taxonomy_id'),
+                      model_uri=DDL.ncbi_taxonomy_id, domain=None, range=Optional[int])
 
-slots.COMMUNITY = Slot(uri=DDL.COMMUNITY, name="COMMUNITY", curie=DDL.curie('COMMUNITY'),
-                      model_uri=DDL.COMMUNITY, domain=None, range=Optional[str])
+slots.community = Slot(uri=DDL.community, name="community", curie=DDL.curie('community'),
+                      model_uri=DDL.community, domain=None, range=Optional[str])
 
-slots.LOCATION = Slot(uri=DDL.LOCATION, name="LOCATION", curie=DDL.curie('LOCATION'),
-                      model_uri=DDL.LOCATION, domain=None, range=Optional[str])
+slots.location = Slot(uri=DDL.location, name="location", curie=DDL.curie('location'),
+                      model_uri=DDL.location, domain=None, range=Optional[str])
 
-slots.IDENTIFIER = Slot(uri=DDL.IDENTIFIER, name="IDENTIFIER", curie=DDL.curie('IDENTIFIER'),
-                      model_uri=DDL.IDENTIFIER, domain=None, range=Optional[str])
+slots.identifier = Slot(uri=DDL.identifier, name="identifier", curie=DDL.curie('identifier'),
+                      model_uri=DDL.identifier, domain=None, range=Optional[str])
 
-slots.ENV_PACKAGE = Slot(uri=DDL.ENV_PACKAGE, name="ENV_PACKAGE", curie=DDL.curie('ENV_PACKAGE'),
-                      model_uri=DDL.ENV_PACKAGE, domain=None, range=Optional[str])
+slots.env_package = Slot(uri=DDL.env_package, name="env_package", curie=DDL.curie('env_package'),
+                      model_uri=DDL.env_package, domain=None, range=Optional[str])
 
-slots.SAMPLE_COLLECTION_DAY = Slot(uri=DDL.SAMPLE_COLLECTION_DAY, name="SAMPLE_COLLECTION_DAY", curie=DDL.curie('SAMPLE_COLLECTION_DAY'),
-                      model_uri=DDL.SAMPLE_COLLECTION_DAY, domain=None, range=Optional[float])
+slots.sample_collection_day = Slot(uri=DDL.sample_collection_day, name="sample_collection_day", curie=DDL.curie('sample_collection_day'),
+                      model_uri=DDL.sample_collection_day, domain=None, range=Optional[float])
 
-slots.SAMPLE_COLLECTION_MONTH = Slot(uri=DDL.SAMPLE_COLLECTION_MONTH, name="SAMPLE_COLLECTION_MONTH", curie=DDL.curie('SAMPLE_COLLECTION_MONTH'),
-                      model_uri=DDL.SAMPLE_COLLECTION_MONTH, domain=None, range=Optional[float])
+slots.sample_collection_month = Slot(uri=DDL.sample_collection_month, name="sample_collection_month", curie=DDL.curie('sample_collection_month'),
+                      model_uri=DDL.sample_collection_month, domain=None, range=Optional[float])
 
-slots.SAMPLE_COLLECTION_YEAR = Slot(uri=DDL.SAMPLE_COLLECTION_YEAR, name="SAMPLE_COLLECTION_YEAR", curie=DDL.curie('SAMPLE_COLLECTION_YEAR'),
-                      model_uri=DDL.SAMPLE_COLLECTION_YEAR, domain=None, range=Optional[float])
+slots.sample_collection_year = Slot(uri=DDL.sample_collection_year, name="sample_collection_year", curie=DDL.curie('sample_collection_year'),
+                      model_uri=DDL.sample_collection_year, domain=None, range=Optional[float])
 
-slots.SUBMITTER_ID = Slot(uri=DDL.SUBMITTER_ID, name="SUBMITTER_ID", curie=DDL.curie('SUBMITTER_ID'),
-                      model_uri=DDL.SUBMITTER_ID, domain=None, range=Optional[int])
+slots.submitter_id = Slot(uri=DDL.submitter_id, name="submitter_id", curie=DDL.curie('submitter_id'),
+                      model_uri=DDL.submitter_id, domain=None, range=Optional[int])
 
-slots.GROWTH_CONDITIONS = Slot(uri=DDL.GROWTH_CONDITIONS, name="GROWTH_CONDITIONS", curie=DDL.curie('GROWTH_CONDITIONS'),
-                      model_uri=DDL.GROWTH_CONDITIONS, domain=None, range=Optional[str])
+slots.growth_conditions = Slot(uri=DDL.growth_conditions, name="growth_conditions", curie=DDL.curie('growth_conditions'),
+                      model_uri=DDL.growth_conditions, domain=None, range=Optional[str])
 
-slots.JPA_ENTITY = Slot(uri=DDL.JPA_ENTITY, name="JPA_ENTITY", curie=DDL.curie('JPA_ENTITY'),
-                      model_uri=DDL.JPA_ENTITY, domain=None, range=Optional[str])
+slots.jpa_entity = Slot(uri=DDL.jpa_entity, name="jpa_entity", curie=DDL.curie('jpa_entity'),
+                      model_uri=DDL.jpa_entity, domain=None, range=Optional[str])
 
-slots.OTHER_HOSTS = Slot(uri=DDL.OTHER_HOSTS, name="OTHER_HOSTS", curie=DDL.curie('OTHER_HOSTS'),
-                      model_uri=DDL.OTHER_HOSTS, domain=None, range=Optional[str])
+slots.other_hosts = Slot(uri=DDL.other_hosts, name="other_hosts", curie=DDL.curie('other_hosts'),
+                      model_uri=DDL.other_hosts, domain=None, range=Optional[str])
 
-slots.KNOWN_NON_HOSTS = Slot(uri=DDL.KNOWN_NON_HOSTS, name="KNOWN_NON_HOSTS", curie=DDL.curie('KNOWN_NON_HOSTS'),
-                      model_uri=DDL.KNOWN_NON_HOSTS, domain=None, range=Optional[str])
+slots.known_non_hosts = Slot(uri=DDL.known_non_hosts, name="known_non_hosts", curie=DDL.curie('known_non_hosts'),
+                      model_uri=DDL.known_non_hosts, domain=None, range=Optional[str])
 
-slots.ISOLATION_PUBMED_ID = Slot(uri=DDL.ISOLATION_PUBMED_ID, name="ISOLATION_PUBMED_ID", curie=DDL.curie('ISOLATION_PUBMED_ID'),
-                      model_uri=DDL.ISOLATION_PUBMED_ID, domain=None, range=Optional[int])
+slots.isolation_pubmed_id = Slot(uri=DDL.isolation_pubmed_id, name="isolation_pubmed_id", curie=DDL.curie('isolation_pubmed_id'),
+                      model_uri=DDL.isolation_pubmed_id, domain=None, range=Optional[int])
 
-slots.HOST_BODY_SITE_ID = Slot(uri=DDL.HOST_BODY_SITE_ID, name="HOST_BODY_SITE_ID", curie=DDL.curie('HOST_BODY_SITE_ID'),
-                      model_uri=DDL.HOST_BODY_SITE_ID, domain=None, range=Optional[int])
+slots.host_body_site_id = Slot(uri=DDL.host_body_site_id, name="host_body_site_id", curie=DDL.curie('host_body_site_id'),
+                      model_uri=DDL.host_body_site_id, domain=None, range=Optional[int])
 
-slots.HOST_BODY_SUBSITE_ID = Slot(uri=DDL.HOST_BODY_SUBSITE_ID, name="HOST_BODY_SUBSITE_ID", curie=DDL.curie('HOST_BODY_SUBSITE_ID'),
-                      model_uri=DDL.HOST_BODY_SUBSITE_ID, domain=None, range=Optional[int])
+slots.host_body_subsite_id = Slot(uri=DDL.host_body_subsite_id, name="host_body_subsite_id", curie=DDL.curie('host_body_subsite_id'),
+                      model_uri=DDL.host_body_subsite_id, domain=None, range=Optional[int])
 
-slots.HOST_BODY_PRODUCT_ID = Slot(uri=DDL.HOST_BODY_PRODUCT_ID, name="HOST_BODY_PRODUCT_ID", curie=DDL.curie('HOST_BODY_PRODUCT_ID'),
-                      model_uri=DDL.HOST_BODY_PRODUCT_ID, domain=None, range=Optional[int])
+slots.host_body_product_id = Slot(uri=DDL.host_body_product_id, name="host_body_product_id", curie=DDL.curie('host_body_product_id'),
+                      model_uri=DDL.host_body_product_id, domain=None, range=Optional[int])
 
-slots.IS_DRAFT = Slot(uri=DDL.IS_DRAFT, name="IS_DRAFT", curie=DDL.curie('IS_DRAFT'),
-                      model_uri=DDL.IS_DRAFT, domain=None, range=Optional[str])
+slots.is_draft = Slot(uri=DDL.is_draft, name="is_draft", curie=DDL.curie('is_draft'),
+                      model_uri=DDL.is_draft, domain=None, range=Optional[str])
 
-slots.SAMPLE_ISOLATION_COUNTRY_ID = Slot(uri=DDL.SAMPLE_ISOLATION_COUNTRY_ID, name="SAMPLE_ISOLATION_COUNTRY_ID", curie=DDL.curie('SAMPLE_ISOLATION_COUNTRY_ID'),
-                      model_uri=DDL.SAMPLE_ISOLATION_COUNTRY_ID, domain=None, range=Optional[int])
+slots.sample_isolation_country_id = Slot(uri=DDL.sample_isolation_country_id, name="sample_isolation_country_id", curie=DDL.curie('sample_isolation_country_id'),
+                      model_uri=DDL.sample_isolation_country_id, domain=None, range=Optional[int])
 
-slots.OTHER_ECOSYSTEM = Slot(uri=DDL.OTHER_ECOSYSTEM, name="OTHER_ECOSYSTEM", curie=DDL.curie('OTHER_ECOSYSTEM'),
-                      model_uri=DDL.OTHER_ECOSYSTEM, domain=None, range=Optional[str])
+slots.other_ecosystem = Slot(uri=DDL.other_ecosystem, name="other_ecosystem", curie=DDL.curie('other_ecosystem'),
+                      model_uri=DDL.other_ecosystem, domain=None, range=Optional[str])
 
-slots.LONGHURST_CODE = Slot(uri=DDL.LONGHURST_CODE, name="LONGHURST_CODE", curie=DDL.curie('LONGHURST_CODE'),
-                      model_uri=DDL.LONGHURST_CODE, domain=None, range=Optional[str])
+slots.longhurst_code = Slot(uri=DDL.longhurst_code, name="longhurst_code", curie=DDL.curie('longhurst_code'),
+                      model_uri=DDL.longhurst_code, domain=None, range=Optional[str])
 
-slots.SAMPLE_COLLECTION_HOUR = Slot(uri=DDL.SAMPLE_COLLECTION_HOUR, name="SAMPLE_COLLECTION_HOUR", curie=DDL.curie('SAMPLE_COLLECTION_HOUR'),
-                      model_uri=DDL.SAMPLE_COLLECTION_HOUR, domain=None, range=Optional[float])
+slots.sample_collection_hour = Slot(uri=DDL.sample_collection_hour, name="sample_collection_hour", curie=DDL.curie('sample_collection_hour'),
+                      model_uri=DDL.sample_collection_hour, domain=None, range=Optional[float])
 
-slots.SAMPLE_COLLECTION_MINUTE = Slot(uri=DDL.SAMPLE_COLLECTION_MINUTE, name="SAMPLE_COLLECTION_MINUTE", curie=DDL.curie('SAMPLE_COLLECTION_MINUTE'),
-                      model_uri=DDL.SAMPLE_COLLECTION_MINUTE, domain=None, range=Optional[float])
+slots.sample_collection_minute = Slot(uri=DDL.sample_collection_minute, name="sample_collection_minute", curie=DDL.curie('sample_collection_minute'),
+                      model_uri=DDL.sample_collection_minute, domain=None, range=Optional[float])
 
-slots.CHLOROPHYLL_CONCENTRATION = Slot(uri=DDL.CHLOROPHYLL_CONCENTRATION, name="CHLOROPHYLL_CONCENTRATION", curie=DDL.curie('CHLOROPHYLL_CONCENTRATION'),
-                      model_uri=DDL.CHLOROPHYLL_CONCENTRATION, domain=None, range=Optional[str])
+slots.chlorophyll_concentration = Slot(uri=DDL.chlorophyll_concentration, name="chlorophyll_concentration", curie=DDL.curie('chlorophyll_concentration'),
+                      model_uri=DDL.chlorophyll_concentration, domain=None, range=Optional[str])
 
-slots.NITRATE_CONCENTRATION = Slot(uri=DDL.NITRATE_CONCENTRATION, name="NITRATE_CONCENTRATION", curie=DDL.curie('NITRATE_CONCENTRATION'),
-                      model_uri=DDL.NITRATE_CONCENTRATION, domain=None, range=Optional[str])
+slots.nitrate_concentration = Slot(uri=DDL.nitrate_concentration, name="nitrate_concentration", curie=DDL.curie('nitrate_concentration'),
+                      model_uri=DDL.nitrate_concentration, domain=None, range=Optional[str])
 
-slots.OXYGEN_CONCENTRATION = Slot(uri=DDL.OXYGEN_CONCENTRATION, name="OXYGEN_CONCENTRATION", curie=DDL.curie('OXYGEN_CONCENTRATION'),
-                      model_uri=DDL.OXYGEN_CONCENTRATION, domain=None, range=Optional[str])
+slots.oxygen_concentration = Slot(uri=DDL.oxygen_concentration, name="oxygen_concentration", curie=DDL.curie('oxygen_concentration'),
+                      model_uri=DDL.oxygen_concentration, domain=None, range=Optional[str])
 
-slots.SALINITY_CONCENTRATION = Slot(uri=DDL.SALINITY_CONCENTRATION, name="SALINITY_CONCENTRATION", curie=DDL.curie('SALINITY_CONCENTRATION'),
-                      model_uri=DDL.SALINITY_CONCENTRATION, domain=None, range=Optional[str])
+slots.salinity_concentration = Slot(uri=DDL.salinity_concentration, name="salinity_concentration", curie=DDL.curie('salinity_concentration'),
+                      model_uri=DDL.salinity_concentration, domain=None, range=Optional[str])
 
-slots.PUBLIC_SP_COUNT = Slot(uri=DDL.PUBLIC_SP_COUNT, name="PUBLIC_SP_COUNT", curie=DDL.curie('PUBLIC_SP_COUNT'),
-                      model_uri=DDL.PUBLIC_SP_COUNT, domain=None, range=Optional[float])
+slots.public_sp_count = Slot(uri=DDL.public_sp_count, name="public_sp_count", curie=DDL.curie('public_sp_count'),
+                      model_uri=DDL.public_sp_count, domain=None, range=Optional[float])
 
-slots.ADMIN_SP_COUNT = Slot(uri=DDL.ADMIN_SP_COUNT, name="ADMIN_SP_COUNT", curie=DDL.curie('ADMIN_SP_COUNT'),
-                      model_uri=DDL.ADMIN_SP_COUNT, domain=None, range=Optional[float])
+slots.admin_sp_count = Slot(uri=DDL.admin_sp_count, name="admin_sp_count", curie=DDL.curie('admin_sp_count'),
+                      model_uri=DDL.admin_sp_count, domain=None, range=Optional[float])
 
-slots.PUBLIC_AP_COUNT = Slot(uri=DDL.PUBLIC_AP_COUNT, name="PUBLIC_AP_COUNT", curie=DDL.curie('PUBLIC_AP_COUNT'),
-                      model_uri=DDL.PUBLIC_AP_COUNT, domain=None, range=Optional[float])
+slots.public_ap_count = Slot(uri=DDL.public_ap_count, name="public_ap_count", curie=DDL.curie('public_ap_count'),
+                      model_uri=DDL.public_ap_count, domain=None, range=Optional[float])
 
-slots.ADMIN_AP_COUNT = Slot(uri=DDL.ADMIN_AP_COUNT, name="ADMIN_AP_COUNT", curie=DDL.curie('ADMIN_AP_COUNT'),
-                      model_uri=DDL.ADMIN_AP_COUNT, domain=None, range=Optional[float])
+slots.admin_ap_count = Slot(uri=DDL.admin_ap_count, name="admin_ap_count", curie=DDL.curie('admin_ap_count'),
+                      model_uri=DDL.admin_ap_count, domain=None, range=Optional[float])
 
-slots.PUBLIC_DAP_COUNT = Slot(uri=DDL.PUBLIC_DAP_COUNT, name="PUBLIC_DAP_COUNT", curie=DDL.curie('PUBLIC_DAP_COUNT'),
-                      model_uri=DDL.PUBLIC_DAP_COUNT, domain=None, range=Optional[float])
+slots.public_dap_count = Slot(uri=DDL.public_dap_count, name="public_dap_count", curie=DDL.curie('public_dap_count'),
+                      model_uri=DDL.public_dap_count, domain=None, range=Optional[float])
 
-slots.ADMIN_DAP_COUNT = Slot(uri=DDL.ADMIN_DAP_COUNT, name="ADMIN_DAP_COUNT", curie=DDL.curie('ADMIN_DAP_COUNT'),
-                      model_uri=DDL.ADMIN_DAP_COUNT, domain=None, range=Optional[float])
+slots.admin_dap_count = Slot(uri=DDL.admin_dap_count, name="admin_dap_count", curie=DDL.curie('admin_dap_count'),
+                      model_uri=DDL.admin_dap_count, domain=None, range=Optional[float])
 
-slots.CRUISE_LINE_NAME = Slot(uri=DDL.CRUISE_LINE_NAME, name="CRUISE_LINE_NAME", curie=DDL.curie('CRUISE_LINE_NAME'),
-                      model_uri=DDL.CRUISE_LINE_NAME, domain=None, range=Optional[str])
+slots.cruise_line_name = Slot(uri=DDL.cruise_line_name, name="cruise_line_name", curie=DDL.curie('cruise_line_name'),
+                      model_uri=DDL.cruise_line_name, domain=None, range=Optional[str])
 
-slots.PROPORT_OCEAN = Slot(uri=DDL.PROPORT_OCEAN, name="PROPORT_OCEAN", curie=DDL.curie('PROPORT_OCEAN'),
-                      model_uri=DDL.PROPORT_OCEAN, domain=None, range=Optional[str])
+slots.proport_ocean = Slot(uri=DDL.proport_ocean, name="proport_ocean", curie=DDL.curie('proport_ocean'),
+                      model_uri=DDL.proport_ocean, domain=None, range=Optional[str])
 
-slots.PROPORT_ISOLATION = Slot(uri=DDL.PROPORT_ISOLATION, name="PROPORT_ISOLATION", curie=DDL.curie('PROPORT_ISOLATION'),
-                      model_uri=DDL.PROPORT_ISOLATION, domain=None, range=Optional[str])
+slots.proport_isolation = Slot(uri=DDL.proport_isolation, name="proport_isolation", curie=DDL.curie('proport_isolation'),
+                      model_uri=DDL.proport_isolation, domain=None, range=Optional[str])
 
-slots.PROPORT_STATION = Slot(uri=DDL.PROPORT_STATION, name="PROPORT_STATION", curie=DDL.curie('PROPORT_STATION'),
-                      model_uri=DDL.PROPORT_STATION, domain=None, range=Optional[str])
+slots.proport_station = Slot(uri=DDL.proport_station, name="proport_station", curie=DDL.curie('proport_station'),
+                      model_uri=DDL.proport_station, domain=None, range=Optional[str])
 
-slots.PROPORT_WOA_TEMPERATURE = Slot(uri=DDL.PROPORT_WOA_TEMPERATURE, name="PROPORT_WOA_TEMPERATURE", curie=DDL.curie('PROPORT_WOA_TEMPERATURE'),
-                      model_uri=DDL.PROPORT_WOA_TEMPERATURE, domain=None, range=Optional[float])
+slots.proport_woa_temperature = Slot(uri=DDL.proport_woa_temperature, name="proport_woa_temperature", curie=DDL.curie('proport_woa_temperature'),
+                      model_uri=DDL.proport_woa_temperature, domain=None, range=Optional[float])
 
-slots.PROPORT_WOA_SALINITY = Slot(uri=DDL.PROPORT_WOA_SALINITY, name="PROPORT_WOA_SALINITY", curie=DDL.curie('PROPORT_WOA_SALINITY'),
-                      model_uri=DDL.PROPORT_WOA_SALINITY, domain=None, range=Optional[float])
+slots.proport_woa_salinity = Slot(uri=DDL.proport_woa_salinity, name="proport_woa_salinity", curie=DDL.curie('proport_woa_salinity'),
+                      model_uri=DDL.proport_woa_salinity, domain=None, range=Optional[float])
 
-slots.PROPORT_WOA_DISSOLVED_OXYGEN = Slot(uri=DDL.PROPORT_WOA_DISSOLVED_OXYGEN, name="PROPORT_WOA_DISSOLVED_OXYGEN", curie=DDL.curie('PROPORT_WOA_DISSOLVED_OXYGEN'),
-                      model_uri=DDL.PROPORT_WOA_DISSOLVED_OXYGEN, domain=None, range=Optional[float])
+slots.proport_woa_dissolved_oxygen = Slot(uri=DDL.proport_woa_dissolved_oxygen, name="proport_woa_dissolved_oxygen", curie=DDL.curie('proport_woa_dissolved_oxygen'),
+                      model_uri=DDL.proport_woa_dissolved_oxygen, domain=None, range=Optional[float])
 
-slots.PROPORT_WOA_SILICATE = Slot(uri=DDL.PROPORT_WOA_SILICATE, name="PROPORT_WOA_SILICATE", curie=DDL.curie('PROPORT_WOA_SILICATE'),
-                      model_uri=DDL.PROPORT_WOA_SILICATE, domain=None, range=Optional[float])
+slots.proport_woa_silicate = Slot(uri=DDL.proport_woa_silicate, name="proport_woa_silicate", curie=DDL.curie('proport_woa_silicate'),
+                      model_uri=DDL.proport_woa_silicate, domain=None, range=Optional[float])
 
-slots.PROPORT_WOA_PHOSPHATE = Slot(uri=DDL.PROPORT_WOA_PHOSPHATE, name="PROPORT_WOA_PHOSPHATE", curie=DDL.curie('PROPORT_WOA_PHOSPHATE'),
-                      model_uri=DDL.PROPORT_WOA_PHOSPHATE, domain=None, range=Optional[float])
+slots.proport_woa_phosphate = Slot(uri=DDL.proport_woa_phosphate, name="proport_woa_phosphate", curie=DDL.curie('proport_woa_phosphate'),
+                      model_uri=DDL.proport_woa_phosphate, domain=None, range=Optional[float])
 
-slots.PROPORT_WOA_NITRATE = Slot(uri=DDL.PROPORT_WOA_NITRATE, name="PROPORT_WOA_NITRATE", curie=DDL.curie('PROPORT_WOA_NITRATE'),
-                      model_uri=DDL.PROPORT_WOA_NITRATE, domain=None, range=Optional[float])
+slots.proport_woa_nitrate = Slot(uri=DDL.proport_woa_nitrate, name="proport_woa_nitrate", curie=DDL.curie('proport_woa_nitrate'),
+                      model_uri=DDL.proport_woa_nitrate, domain=None, range=Optional[float])
 
-slots.NCBI_TAXONOMY_NAME = Slot(uri=DDL.NCBI_TAXONOMY_NAME, name="NCBI_TAXONOMY_NAME", curie=DDL.curie('NCBI_TAXONOMY_NAME'),
-                      model_uri=DDL.NCBI_TAXONOMY_NAME, domain=None, range=Optional[str])
+slots.ncbi_taxonomy_name = Slot(uri=DDL.ncbi_taxonomy_name, name="ncbi_taxonomy_name", curie=DDL.curie('ncbi_taxonomy_name'),
+                      model_uri=DDL.ncbi_taxonomy_name, domain=None, range=Optional[str])
 
-slots.ITS_GROWTH_CONDITIONS = Slot(uri=DDL.ITS_GROWTH_CONDITIONS, name="ITS_GROWTH_CONDITIONS", curie=DDL.curie('ITS_GROWTH_CONDITIONS'),
-                      model_uri=DDL.ITS_GROWTH_CONDITIONS, domain=None, range=Optional[str])
+slots.its_growth_conditions = Slot(uri=DDL.its_growth_conditions, name="its_growth_conditions", curie=DDL.curie('its_growth_conditions'),
+                      model_uri=DDL.its_growth_conditions, domain=None, range=Optional[str])
 
-slots.BIOGAS_FED_SUBSTRATES = Slot(uri=DDL.BIOGAS_FED_SUBSTRATES, name="BIOGAS_FED_SUBSTRATES", curie=DDL.curie('BIOGAS_FED_SUBSTRATES'),
-                      model_uri=DDL.BIOGAS_FED_SUBSTRATES, domain=None, range=Optional[str])
+slots.biogas_fed_substrates = Slot(uri=DDL.biogas_fed_substrates, name="biogas_fed_substrates", curie=DDL.curie('biogas_fed_substrates'),
+                      model_uri=DDL.biogas_fed_substrates, domain=None, range=Optional[str])
 
-slots.BIOGAS_RETENTION_TIME = Slot(uri=DDL.BIOGAS_RETENTION_TIME, name="BIOGAS_RETENTION_TIME", curie=DDL.curie('BIOGAS_RETENTION_TIME'),
-                      model_uri=DDL.BIOGAS_RETENTION_TIME, domain=None, range=Optional[str])
+slots.biogas_retention_time = Slot(uri=DDL.biogas_retention_time, name="biogas_retention_time", curie=DDL.curie('biogas_retention_time'),
+                      model_uri=DDL.biogas_retention_time, domain=None, range=Optional[str])
 
-slots.BIOGAS_TEMPERATURE = Slot(uri=DDL.BIOGAS_TEMPERATURE, name="BIOGAS_TEMPERATURE", curie=DDL.curie('BIOGAS_TEMPERATURE'),
-                      model_uri=DDL.BIOGAS_TEMPERATURE, domain=None, range=Optional[str])
+slots.biogas_temperature = Slot(uri=DDL.biogas_temperature, name="biogas_temperature", curie=DDL.curie('biogas_temperature'),
+                      model_uri=DDL.biogas_temperature, domain=None, range=Optional[str])
 
-slots.BIOGAS_YIELD = Slot(uri=DDL.BIOGAS_YIELD, name="BIOGAS_YIELD", curie=DDL.curie('BIOGAS_YIELD'),
-                      model_uri=DDL.BIOGAS_YIELD, domain=None, range=Optional[str])
+slots.biogas_yield = Slot(uri=DDL.biogas_yield, name="biogas_yield", curie=DDL.curie('biogas_yield'),
+                      model_uri=DDL.biogas_yield, domain=None, range=Optional[str])
 
-slots.BIOGAS_VOLATILE_ORGANIC_ACIDS = Slot(uri=DDL.BIOGAS_VOLATILE_ORGANIC_ACIDS, name="BIOGAS_VOLATILE_ORGANIC_ACIDS", curie=DDL.curie('BIOGAS_VOLATILE_ORGANIC_ACIDS'),
-                      model_uri=DDL.BIOGAS_VOLATILE_ORGANIC_ACIDS, domain=None, range=Optional[str])
+slots.biogas_volatile_organic_acids = Slot(uri=DDL.biogas_volatile_organic_acids, name="biogas_volatile_organic_acids", curie=DDL.curie('biogas_volatile_organic_acids'),
+                      model_uri=DDL.biogas_volatile_organic_acids, domain=None, range=Optional[str])
 
-slots.BIOGAS_TOTAL_INORGANIC_CARBON = Slot(uri=DDL.BIOGAS_TOTAL_INORGANIC_CARBON, name="BIOGAS_TOTAL_INORGANIC_CARBON", curie=DDL.curie('BIOGAS_TOTAL_INORGANIC_CARBON'),
-                      model_uri=DDL.BIOGAS_TOTAL_INORGANIC_CARBON, domain=None, range=Optional[str])
+slots.biogas_total_inorganic_carbon = Slot(uri=DDL.biogas_total_inorganic_carbon, name="biogas_total_inorganic_carbon", curie=DDL.curie('biogas_total_inorganic_carbon'),
+                      model_uri=DDL.biogas_total_inorganic_carbon, domain=None, range=Optional[str])
 
-slots.BIOGAS_VOA_TIC = Slot(uri=DDL.BIOGAS_VOA_TIC, name="BIOGAS_VOA_TIC", curie=DDL.curie('BIOGAS_VOA_TIC'),
-                      model_uri=DDL.BIOGAS_VOA_TIC, domain=None, range=Optional[str])
+slots.biogas_voa_tic = Slot(uri=DDL.biogas_voa_tic, name="biogas_voa_tic", curie=DDL.curie('biogas_voa_tic'),
+                      model_uri=DDL.biogas_voa_tic, domain=None, range=Optional[str])
 
-slots.BIOGAS_AMMONIUM_NH4 = Slot(uri=DDL.BIOGAS_AMMONIUM_NH4, name="BIOGAS_AMMONIUM_NH4", curie=DDL.curie('BIOGAS_AMMONIUM_NH4'),
-                      model_uri=DDL.BIOGAS_AMMONIUM_NH4, domain=None, range=Optional[str])
+slots.biogas_ammonium_nh4 = Slot(uri=DDL.biogas_ammonium_nh4, name="biogas_ammonium_nh4", curie=DDL.curie('biogas_ammonium_nh4'),
+                      model_uri=DDL.biogas_ammonium_nh4, domain=None, range=Optional[str])
 
-slots.BIOGAS_BUTANOL = Slot(uri=DDL.BIOGAS_BUTANOL, name="BIOGAS_BUTANOL", curie=DDL.curie('BIOGAS_BUTANOL'),
-                      model_uri=DDL.BIOGAS_BUTANOL, domain=None, range=Optional[str])
+slots.biogas_butanol = Slot(uri=DDL.biogas_butanol, name="biogas_butanol", curie=DDL.curie('biogas_butanol'),
+                      model_uri=DDL.biogas_butanol, domain=None, range=Optional[str])
 
-slots.BIOGAS_ETHANOL = Slot(uri=DDL.BIOGAS_ETHANOL, name="BIOGAS_ETHANOL", curie=DDL.curie('BIOGAS_ETHANOL'),
-                      model_uri=DDL.BIOGAS_ETHANOL, domain=None, range=Optional[str])
+slots.biogas_ethanol = Slot(uri=DDL.biogas_ethanol, name="biogas_ethanol", curie=DDL.curie('biogas_ethanol'),
+                      model_uri=DDL.biogas_ethanol, domain=None, range=Optional[str])
 
-slots.BIOGAS_PROPANOL = Slot(uri=DDL.BIOGAS_PROPANOL, name="BIOGAS_PROPANOL", curie=DDL.curie('BIOGAS_PROPANOL'),
-                      model_uri=DDL.BIOGAS_PROPANOL, domain=None, range=Optional[str])
+slots.biogas_propanol = Slot(uri=DDL.biogas_propanol, name="biogas_propanol", curie=DDL.curie('biogas_propanol'),
+                      model_uri=DDL.biogas_propanol, domain=None, range=Optional[str])
 
-slots.BIOGAS_METHANOL = Slot(uri=DDL.BIOGAS_METHANOL, name="BIOGAS_METHANOL", curie=DDL.curie('BIOGAS_METHANOL'),
-                      model_uri=DDL.BIOGAS_METHANOL, domain=None, range=Optional[str])
+slots.biogas_methanol = Slot(uri=DDL.biogas_methanol, name="biogas_methanol", curie=DDL.curie('biogas_methanol'),
+                      model_uri=DDL.biogas_methanol, domain=None, range=Optional[str])
 
-slots.BIOGAS_ACETIC_ACID = Slot(uri=DDL.BIOGAS_ACETIC_ACID, name="BIOGAS_ACETIC_ACID", curie=DDL.curie('BIOGAS_ACETIC_ACID'),
-                      model_uri=DDL.BIOGAS_ACETIC_ACID, domain=None, range=Optional[str])
+slots.biogas_acetic_acid = Slot(uri=DDL.biogas_acetic_acid, name="biogas_acetic_acid", curie=DDL.curie('biogas_acetic_acid'),
+                      model_uri=DDL.biogas_acetic_acid, domain=None, range=Optional[str])
 
-slots.BIOGAS_BUTYL_ACID = Slot(uri=DDL.BIOGAS_BUTYL_ACID, name="BIOGAS_BUTYL_ACID", curie=DDL.curie('BIOGAS_BUTYL_ACID'),
-                      model_uri=DDL.BIOGAS_BUTYL_ACID, domain=None, range=Optional[str])
+slots.biogas_butyl_acid = Slot(uri=DDL.biogas_butyl_acid, name="biogas_butyl_acid", curie=DDL.curie('biogas_butyl_acid'),
+                      model_uri=DDL.biogas_butyl_acid, domain=None, range=Optional[str])
 
-slots.BIOGAS_ISO_BUTYL_ACID = Slot(uri=DDL.BIOGAS_ISO_BUTYL_ACID, name="BIOGAS_ISO_BUTYL_ACID", curie=DDL.curie('BIOGAS_ISO_BUTYL_ACID'),
-                      model_uri=DDL.BIOGAS_ISO_BUTYL_ACID, domain=None, range=Optional[str])
+slots.biogas_iso_butyl_acid = Slot(uri=DDL.biogas_iso_butyl_acid, name="biogas_iso_butyl_acid", curie=DDL.curie('biogas_iso_butyl_acid'),
+                      model_uri=DDL.biogas_iso_butyl_acid, domain=None, range=Optional[str])
 
-slots.BIOGAS_VALERIC_ACID = Slot(uri=DDL.BIOGAS_VALERIC_ACID, name="BIOGAS_VALERIC_ACID", curie=DDL.curie('BIOGAS_VALERIC_ACID'),
-                      model_uri=DDL.BIOGAS_VALERIC_ACID, domain=None, range=Optional[str])
+slots.biogas_valeric_acid = Slot(uri=DDL.biogas_valeric_acid, name="biogas_valeric_acid", curie=DDL.curie('biogas_valeric_acid'),
+                      model_uri=DDL.biogas_valeric_acid, domain=None, range=Optional[str])
 
-slots.BIOGAS_ISO_VALERIC_ACID = Slot(uri=DDL.BIOGAS_ISO_VALERIC_ACID, name="BIOGAS_ISO_VALERIC_ACID", curie=DDL.curie('BIOGAS_ISO_VALERIC_ACID'),
-                      model_uri=DDL.BIOGAS_ISO_VALERIC_ACID, domain=None, range=Optional[str])
+slots.biogas_iso_valeric_acid = Slot(uri=DDL.biogas_iso_valeric_acid, name="biogas_iso_valeric_acid", curie=DDL.curie('biogas_iso_valeric_acid'),
+                      model_uri=DDL.biogas_iso_valeric_acid, domain=None, range=Optional[str])
 
-slots.BIOGAS_PROPIONIC_ACID = Slot(uri=DDL.BIOGAS_PROPIONIC_ACID, name="BIOGAS_PROPIONIC_ACID", curie=DDL.curie('BIOGAS_PROPIONIC_ACID'),
-                      model_uri=DDL.BIOGAS_PROPIONIC_ACID, domain=None, range=Optional[str])
+slots.biogas_propionic_acid = Slot(uri=DDL.biogas_propionic_acid, name="biogas_propionic_acid", curie=DDL.curie('biogas_propionic_acid'),
+                      model_uri=DDL.biogas_propionic_acid, domain=None, range=Optional[str])
 
-slots.BIOGAS_METHANE_PCT = Slot(uri=DDL.BIOGAS_METHANE_PCT, name="BIOGAS_METHANE_PCT", curie=DDL.curie('BIOGAS_METHANE_PCT'),
-                      model_uri=DDL.BIOGAS_METHANE_PCT, domain=None, range=Optional[float])
+slots.biogas_methane_pct = Slot(uri=DDL.biogas_methane_pct, name="biogas_methane_pct", curie=DDL.curie('biogas_methane_pct'),
+                      model_uri=DDL.biogas_methane_pct, domain=None, range=Optional[float])
 
-slots.SAMPLE_CONDUCTIVITY = Slot(uri=DDL.SAMPLE_CONDUCTIVITY, name="SAMPLE_CONDUCTIVITY", curie=DDL.curie('SAMPLE_CONDUCTIVITY'),
-                      model_uri=DDL.SAMPLE_CONDUCTIVITY, domain=None, range=Optional[str])
+slots.sample_conductivity = Slot(uri=DDL.sample_conductivity, name="sample_conductivity", curie=DDL.curie('sample_conductivity'),
+                      model_uri=DDL.sample_conductivity, domain=None, range=Optional[str])
 
-slots.GROWTH_TEMPERATURE = Slot(uri=DDL.GROWTH_TEMPERATURE, name="GROWTH_TEMPERATURE", curie=DDL.curie('GROWTH_TEMPERATURE'),
-                      model_uri=DDL.GROWTH_TEMPERATURE, domain=None, range=Optional[float])
+slots.growth_temperature = Slot(uri=DDL.growth_temperature, name="growth_temperature", curie=DDL.curie('growth_temperature'),
+                      model_uri=DDL.growth_temperature, domain=None, range=Optional[float])
 
-slots.SUBSURFACE_DEPTH = Slot(uri=DDL.SUBSURFACE_DEPTH, name="SUBSURFACE_DEPTH", curie=DDL.curie('SUBSURFACE_DEPTH'),
-                      model_uri=DDL.SUBSURFACE_DEPTH, domain=None, range=Optional[float])
+slots.subsurface_depth = Slot(uri=DDL.subsurface_depth, name="subsurface_depth", curie=DDL.curie('subsurface_depth'),
+                      model_uri=DDL.subsurface_depth, domain=None, range=Optional[float])
 
-slots.LEGACY_DEPTH_DATA = Slot(uri=DDL.LEGACY_DEPTH_DATA, name="LEGACY_DEPTH_DATA", curie=DDL.curie('LEGACY_DEPTH_DATA'),
-                      model_uri=DDL.LEGACY_DEPTH_DATA, domain=None, range=Optional[str])
+slots.legacy_depth_data = Slot(uri=DDL.legacy_depth_data, name="legacy_depth_data", curie=DDL.curie('legacy_depth_data'),
+                      model_uri=DDL.legacy_depth_data, domain=None, range=Optional[str])
 
-slots.LATITUDE_TEST = Slot(uri=DDL.LATITUDE_TEST, name="LATITUDE_TEST", curie=DDL.curie('LATITUDE_TEST'),
-                      model_uri=DDL.LATITUDE_TEST, domain=None, range=Optional[float])
+slots.latitude_test = Slot(uri=DDL.latitude_test, name="latitude_test", curie=DDL.curie('latitude_test'),
+                      model_uri=DDL.latitude_test, domain=None, range=Optional[float])
 
-slots.LONGITUDE_TEST = Slot(uri=DDL.LONGITUDE_TEST, name="LONGITUDE_TEST", curie=DDL.curie('LONGITUDE_TEST'),
-                      model_uri=DDL.LONGITUDE_TEST, domain=None, range=Optional[float])
+slots.longitude_test = Slot(uri=DDL.longitude_test, name="longitude_test", curie=DDL.curie('longitude_test'),
+                      model_uri=DDL.longitude_test, domain=None, range=Optional[float])
 
-slots.ELEVATION = Slot(uri=DDL.ELEVATION, name="ELEVATION", curie=DDL.curie('ELEVATION'),
-                      model_uri=DDL.ELEVATION, domain=None, range=Optional[float])
+slots.elevation = Slot(uri=DDL.elevation, name="elevation", curie=DDL.curie('elevation'),
+                      model_uri=DDL.elevation, domain=None, range=Optional[float])
 
-slots.ELEVATION2 = Slot(uri=DDL.ELEVATION2, name="ELEVATION2", curie=DDL.curie('ELEVATION2'),
-                      model_uri=DDL.ELEVATION2, domain=None, range=Optional[float])
+slots.elevation2 = Slot(uri=DDL.elevation2, name="elevation2", curie=DDL.curie('elevation2'),
+                      model_uri=DDL.elevation2, domain=None, range=Optional[float])
 
-slots.SOIL_CURR_LAND_USE = Slot(uri=DDL.SOIL_CURR_LAND_USE, name="SOIL_CURR_LAND_USE", curie=DDL.curie('SOIL_CURR_LAND_USE'),
-                      model_uri=DDL.SOIL_CURR_LAND_USE, domain=None, range=Optional[str])
+slots.soil_curr_land_use = Slot(uri=DDL.soil_curr_land_use, name="soil_curr_land_use", curie=DDL.curie('soil_curr_land_use'),
+                      model_uri=DDL.soil_curr_land_use, domain=None, range=Optional[str])
 
-slots.SOIL_CURR_VEGETATION = Slot(uri=DDL.SOIL_CURR_VEGETATION, name="SOIL_CURR_VEGETATION", curie=DDL.curie('SOIL_CURR_VEGETATION'),
-                      model_uri=DDL.SOIL_CURR_VEGETATION, domain=None, range=Optional[str])
+slots.soil_curr_vegetation = Slot(uri=DDL.soil_curr_vegetation, name="soil_curr_vegetation", curie=DDL.curie('soil_curr_vegetation'),
+                      model_uri=DDL.soil_curr_vegetation, domain=None, range=Optional[str])
 
-slots.SOIL_CURR_VEGETATION_METHOD = Slot(uri=DDL.SOIL_CURR_VEGETATION_METHOD, name="SOIL_CURR_VEGETATION_METHOD", curie=DDL.curie('SOIL_CURR_VEGETATION_METHOD'),
-                      model_uri=DDL.SOIL_CURR_VEGETATION_METHOD, domain=None, range=Optional[str])
+slots.soil_curr_vegetation_method = Slot(uri=DDL.soil_curr_vegetation_method, name="soil_curr_vegetation_method", curie=DDL.curie('soil_curr_vegetation_method'),
+                      model_uri=DDL.soil_curr_vegetation_method, domain=None, range=Optional[str])
 
-slots.SOIL_PREV_LAND_USE = Slot(uri=DDL.SOIL_PREV_LAND_USE, name="SOIL_PREV_LAND_USE", curie=DDL.curie('SOIL_PREV_LAND_USE'),
-                      model_uri=DDL.SOIL_PREV_LAND_USE, domain=None, range=Optional[str])
+slots.soil_prev_land_use = Slot(uri=DDL.soil_prev_land_use, name="soil_prev_land_use", curie=DDL.curie('soil_prev_land_use'),
+                      model_uri=DDL.soil_prev_land_use, domain=None, range=Optional[str])
 
-slots.SOIL_PREV_LAND_USE_METH = Slot(uri=DDL.SOIL_PREV_LAND_USE_METH, name="SOIL_PREV_LAND_USE_METH", curie=DDL.curie('SOIL_PREV_LAND_USE_METH'),
-                      model_uri=DDL.SOIL_PREV_LAND_USE_METH, domain=None, range=Optional[str])
+slots.soil_prev_land_use_meth = Slot(uri=DDL.soil_prev_land_use_meth, name="soil_prev_land_use_meth", curie=DDL.curie('soil_prev_land_use_meth'),
+                      model_uri=DDL.soil_prev_land_use_meth, domain=None, range=Optional[str])
 
-slots.SOIL_CROP_ROTATION = Slot(uri=DDL.SOIL_CROP_ROTATION, name="SOIL_CROP_ROTATION", curie=DDL.curie('SOIL_CROP_ROTATION'),
-                      model_uri=DDL.SOIL_CROP_ROTATION, domain=None, range=Optional[str])
+slots.soil_crop_rotation = Slot(uri=DDL.soil_crop_rotation, name="soil_crop_rotation", curie=DDL.curie('soil_crop_rotation'),
+                      model_uri=DDL.soil_crop_rotation, domain=None, range=Optional[str])
 
-slots.SOIL_AGROCHEM_ADDITION = Slot(uri=DDL.SOIL_AGROCHEM_ADDITION, name="SOIL_AGROCHEM_ADDITION", curie=DDL.curie('SOIL_AGROCHEM_ADDITION'),
-                      model_uri=DDL.SOIL_AGROCHEM_ADDITION, domain=None, range=Optional[str])
+slots.soil_agrochem_addition = Slot(uri=DDL.soil_agrochem_addition, name="soil_agrochem_addition", curie=DDL.curie('soil_agrochem_addition'),
+                      model_uri=DDL.soil_agrochem_addition, domain=None, range=Optional[str])
 
-slots.SOIL_TILLAGE = Slot(uri=DDL.SOIL_TILLAGE, name="SOIL_TILLAGE", curie=DDL.curie('SOIL_TILLAGE'),
-                      model_uri=DDL.SOIL_TILLAGE, domain=None, range=Optional[str])
+slots.soil_tillage = Slot(uri=DDL.soil_tillage, name="soil_tillage", curie=DDL.curie('soil_tillage'),
+                      model_uri=DDL.soil_tillage, domain=None, range=Optional[str])
 
-slots.SOIL_FIRE = Slot(uri=DDL.SOIL_FIRE, name="SOIL_FIRE", curie=DDL.curie('SOIL_FIRE'),
-                      model_uri=DDL.SOIL_FIRE, domain=None, range=Optional[str])
+slots.soil_fire = Slot(uri=DDL.soil_fire, name="soil_fire", curie=DDL.curie('soil_fire'),
+                      model_uri=DDL.soil_fire, domain=None, range=Optional[str])
 
-slots.SOIL_FLOODING = Slot(uri=DDL.SOIL_FLOODING, name="SOIL_FLOODING", curie=DDL.curie('SOIL_FLOODING'),
-                      model_uri=DDL.SOIL_FLOODING, domain=None, range=Optional[str])
+slots.soil_flooding = Slot(uri=DDL.soil_flooding, name="soil_flooding", curie=DDL.curie('soil_flooding'),
+                      model_uri=DDL.soil_flooding, domain=None, range=Optional[str])
 
-slots.SOIL_EXTREME_EVENT = Slot(uri=DDL.SOIL_EXTREME_EVENT, name="SOIL_EXTREME_EVENT", curie=DDL.curie('SOIL_EXTREME_EVENT'),
-                      model_uri=DDL.SOIL_EXTREME_EVENT, domain=None, range=Optional[str])
+slots.soil_extreme_event = Slot(uri=DDL.soil_extreme_event, name="soil_extreme_event", curie=DDL.curie('soil_extreme_event'),
+                      model_uri=DDL.soil_extreme_event, domain=None, range=Optional[str])
 
-slots.SOIL_HORIZON = Slot(uri=DDL.SOIL_HORIZON, name="SOIL_HORIZON", curie=DDL.curie('SOIL_HORIZON'),
-                      model_uri=DDL.SOIL_HORIZON, domain=None, range=Optional[str])
+slots.soil_horizon = Slot(uri=DDL.soil_horizon, name="soil_horizon", curie=DDL.curie('soil_horizon'),
+                      model_uri=DDL.soil_horizon, domain=None, range=Optional[str])
 
-slots.SOIL_HORIZON_METHOD = Slot(uri=DDL.SOIL_HORIZON_METHOD, name="SOIL_HORIZON_METHOD", curie=DDL.curie('SOIL_HORIZON_METHOD'),
-                      model_uri=DDL.SOIL_HORIZON_METHOD, domain=None, range=Optional[str])
+slots.soil_horizon_method = Slot(uri=DDL.soil_horizon_method, name="soil_horizon_method", curie=DDL.curie('soil_horizon_method'),
+                      model_uri=DDL.soil_horizon_method, domain=None, range=Optional[str])
 
-slots.SOIL_SIEVING = Slot(uri=DDL.SOIL_SIEVING, name="SOIL_SIEVING", curie=DDL.curie('SOIL_SIEVING'),
-                      model_uri=DDL.SOIL_SIEVING, domain=None, range=Optional[str])
+slots.soil_sieving = Slot(uri=DDL.soil_sieving, name="soil_sieving", curie=DDL.curie('soil_sieving'),
+                      model_uri=DDL.soil_sieving, domain=None, range=Optional[str])
 
-slots.SOIL_WATER_CONTENT = Slot(uri=DDL.SOIL_WATER_CONTENT, name="SOIL_WATER_CONTENT", curie=DDL.curie('SOIL_WATER_CONTENT'),
-                      model_uri=DDL.SOIL_WATER_CONTENT, domain=None, range=Optional[str])
+slots.soil_water_content = Slot(uri=DDL.soil_water_content, name="soil_water_content", curie=DDL.curie('soil_water_content'),
+                      model_uri=DDL.soil_water_content, domain=None, range=Optional[str])
 
-slots.SOIL_WATER_CONTENT_SOIL_METH = Slot(uri=DDL.SOIL_WATER_CONTENT_SOIL_METH, name="SOIL_WATER_CONTENT_SOIL_METH", curie=DDL.curie('SOIL_WATER_CONTENT_SOIL_METH'),
-                      model_uri=DDL.SOIL_WATER_CONTENT_SOIL_METH, domain=None, range=Optional[str])
+slots.soil_water_content_soil_meth = Slot(uri=DDL.soil_water_content_soil_meth, name="soil_water_content_soil_meth", curie=DDL.curie('soil_water_content_soil_meth'),
+                      model_uri=DDL.soil_water_content_soil_meth, domain=None, range=Optional[str])
 
-slots.SAMPLE_WEIGHT_DNA_EXT = Slot(uri=DDL.SAMPLE_WEIGHT_DNA_EXT, name="SAMPLE_WEIGHT_DNA_EXT", curie=DDL.curie('SAMPLE_WEIGHT_DNA_EXT'),
-                      model_uri=DDL.SAMPLE_WEIGHT_DNA_EXT, domain=None, range=Optional[str])
+slots.sample_weight_dna_ext = Slot(uri=DDL.sample_weight_dna_ext, name="sample_weight_dna_ext", curie=DDL.curie('sample_weight_dna_ext'),
+                      model_uri=DDL.sample_weight_dna_ext, domain=None, range=Optional[str])
 
-slots.SOIL_POOL_DNA_EXTRACTS = Slot(uri=DDL.SOIL_POOL_DNA_EXTRACTS, name="SOIL_POOL_DNA_EXTRACTS", curie=DDL.curie('SOIL_POOL_DNA_EXTRACTS'),
-                      model_uri=DDL.SOIL_POOL_DNA_EXTRACTS, domain=None, range=Optional[str])
+slots.soil_pool_dna_extracts = Slot(uri=DDL.soil_pool_dna_extracts, name="soil_pool_dna_extracts", curie=DDL.curie('soil_pool_dna_extracts'),
+                      model_uri=DDL.soil_pool_dna_extracts, domain=None, range=Optional[str])
 
-slots.SOIL_STORAGE_CONDITION = Slot(uri=DDL.SOIL_STORAGE_CONDITION, name="SOIL_STORAGE_CONDITION", curie=DDL.curie('SOIL_STORAGE_CONDITION'),
-                      model_uri=DDL.SOIL_STORAGE_CONDITION, domain=None, range=Optional[str])
+slots.soil_storage_condition = Slot(uri=DDL.soil_storage_condition, name="soil_storage_condition", curie=DDL.curie('soil_storage_condition'),
+                      model_uri=DDL.soil_storage_condition, domain=None, range=Optional[str])
 
-slots.SOIL_LINK_CLIMATE_INFO = Slot(uri=DDL.SOIL_LINK_CLIMATE_INFO, name="SOIL_LINK_CLIMATE_INFO", curie=DDL.curie('SOIL_LINK_CLIMATE_INFO'),
-                      model_uri=DDL.SOIL_LINK_CLIMATE_INFO, domain=None, range=Optional[str])
+slots.soil_link_climate_info = Slot(uri=DDL.soil_link_climate_info, name="soil_link_climate_info", curie=DDL.curie('soil_link_climate_info'),
+                      model_uri=DDL.soil_link_climate_info, domain=None, range=Optional[str])
 
-slots.SOIL_LINK_CLASS_INFO = Slot(uri=DDL.SOIL_LINK_CLASS_INFO, name="SOIL_LINK_CLASS_INFO", curie=DDL.curie('SOIL_LINK_CLASS_INFO'),
-                      model_uri=DDL.SOIL_LINK_CLASS_INFO, domain=None, range=Optional[str])
+slots.soil_link_class_info = Slot(uri=DDL.soil_link_class_info, name="soil_link_class_info", curie=DDL.curie('soil_link_class_info'),
+                      model_uri=DDL.soil_link_class_info, domain=None, range=Optional[str])
 
-slots.SOIL_FAO_CLASS = Slot(uri=DDL.SOIL_FAO_CLASS, name="SOIL_FAO_CLASS", curie=DDL.curie('SOIL_FAO_CLASS'),
-                      model_uri=DDL.SOIL_FAO_CLASS, domain=None, range=Optional[str])
+slots.soil_fao_class = Slot(uri=DDL.soil_fao_class, name="soil_fao_class", curie=DDL.curie('soil_fao_class'),
+                      model_uri=DDL.soil_fao_class, domain=None, range=Optional[str])
 
-slots.SOIL_LOCAL_CLASS = Slot(uri=DDL.SOIL_LOCAL_CLASS, name="SOIL_LOCAL_CLASS", curie=DDL.curie('SOIL_LOCAL_CLASS'),
-                      model_uri=DDL.SOIL_LOCAL_CLASS, domain=None, range=Optional[str])
+slots.soil_local_class = Slot(uri=DDL.soil_local_class, name="soil_local_class", curie=DDL.curie('soil_local_class'),
+                      model_uri=DDL.soil_local_class, domain=None, range=Optional[str])
 
-slots.SOIL_LOCAL_CLASS_METHOD = Slot(uri=DDL.SOIL_LOCAL_CLASS_METHOD, name="SOIL_LOCAL_CLASS_METHOD", curie=DDL.curie('SOIL_LOCAL_CLASS_METHOD'),
-                      model_uri=DDL.SOIL_LOCAL_CLASS_METHOD, domain=None, range=Optional[str])
+slots.soil_local_class_method = Slot(uri=DDL.soil_local_class_method, name="soil_local_class_method", curie=DDL.curie('soil_local_class_method'),
+                      model_uri=DDL.soil_local_class_method, domain=None, range=Optional[str])
 
-slots.SOIL_TYPE = Slot(uri=DDL.SOIL_TYPE, name="SOIL_TYPE", curie=DDL.curie('SOIL_TYPE'),
-                      model_uri=DDL.SOIL_TYPE, domain=None, range=Optional[str])
+slots.soil_type = Slot(uri=DDL.soil_type, name="soil_type", curie=DDL.curie('soil_type'),
+                      model_uri=DDL.soil_type, domain=None, range=Optional[str])
 
-slots.SOIL_TYPE_METHOD = Slot(uri=DDL.SOIL_TYPE_METHOD, name="SOIL_TYPE_METHOD", curie=DDL.curie('SOIL_TYPE_METHOD'),
-                      model_uri=DDL.SOIL_TYPE_METHOD, domain=None, range=Optional[str])
+slots.soil_type_method = Slot(uri=DDL.soil_type_method, name="soil_type_method", curie=DDL.curie('soil_type_method'),
+                      model_uri=DDL.soil_type_method, domain=None, range=Optional[str])
 
-slots.SOIL_SLOPE_GRADIENT = Slot(uri=DDL.SOIL_SLOPE_GRADIENT, name="SOIL_SLOPE_GRADIENT", curie=DDL.curie('SOIL_SLOPE_GRADIENT'),
-                      model_uri=DDL.SOIL_SLOPE_GRADIENT, domain=None, range=Optional[float])
+slots.soil_slope_gradient = Slot(uri=DDL.soil_slope_gradient, name="soil_slope_gradient", curie=DDL.curie('soil_slope_gradient'),
+                      model_uri=DDL.soil_slope_gradient, domain=None, range=Optional[float])
 
-slots.SOIL_SLOPE_ASPECT = Slot(uri=DDL.SOIL_SLOPE_ASPECT, name="SOIL_SLOPE_ASPECT", curie=DDL.curie('SOIL_SLOPE_ASPECT'),
-                      model_uri=DDL.SOIL_SLOPE_ASPECT, domain=None, range=Optional[float])
+slots.soil_slope_aspect = Slot(uri=DDL.soil_slope_aspect, name="soil_slope_aspect", curie=DDL.curie('soil_slope_aspect'),
+                      model_uri=DDL.soil_slope_aspect, domain=None, range=Optional[float])
 
-slots.SOIL_PROFILE_POSITION = Slot(uri=DDL.SOIL_PROFILE_POSITION, name="SOIL_PROFILE_POSITION", curie=DDL.curie('SOIL_PROFILE_POSITION'),
-                      model_uri=DDL.SOIL_PROFILE_POSITION, domain=None, range=Optional[str])
+slots.soil_profile_position = Slot(uri=DDL.soil_profile_position, name="soil_profile_position", curie=DDL.curie('soil_profile_position'),
+                      model_uri=DDL.soil_profile_position, domain=None, range=Optional[str])
 
-slots.SOIL_DRAINAGE_CLASS = Slot(uri=DDL.SOIL_DRAINAGE_CLASS, name="SOIL_DRAINAGE_CLASS", curie=DDL.curie('SOIL_DRAINAGE_CLASS'),
-                      model_uri=DDL.SOIL_DRAINAGE_CLASS, domain=None, range=Optional[str])
+slots.soil_drainage_class = Slot(uri=DDL.soil_drainage_class, name="soil_drainage_class", curie=DDL.curie('soil_drainage_class'),
+                      model_uri=DDL.soil_drainage_class, domain=None, range=Optional[str])
 
-slots.SOIL_TEXTURE = Slot(uri=DDL.SOIL_TEXTURE, name="SOIL_TEXTURE", curie=DDL.curie('SOIL_TEXTURE'),
-                      model_uri=DDL.SOIL_TEXTURE, domain=None, range=Optional[str])
+slots.soil_texture = Slot(uri=DDL.soil_texture, name="soil_texture", curie=DDL.curie('soil_texture'),
+                      model_uri=DDL.soil_texture, domain=None, range=Optional[str])
 
-slots.SOIL_TEXTURE_METHOD = Slot(uri=DDL.SOIL_TEXTURE_METHOD, name="SOIL_TEXTURE_METHOD", curie=DDL.curie('SOIL_TEXTURE_METHOD'),
-                      model_uri=DDL.SOIL_TEXTURE_METHOD, domain=None, range=Optional[str])
+slots.soil_texture_method = Slot(uri=DDL.soil_texture_method, name="soil_texture_method", curie=DDL.curie('soil_texture_method'),
+                      model_uri=DDL.soil_texture_method, domain=None, range=Optional[str])
 
-slots.SOIL_PH_METHOD = Slot(uri=DDL.SOIL_PH_METHOD, name="SOIL_PH_METHOD", curie=DDL.curie('SOIL_PH_METHOD'),
-                      model_uri=DDL.SOIL_PH_METHOD, domain=None, range=Optional[str])
+slots.soil_ph_method = Slot(uri=DDL.soil_ph_method, name="soil_ph_method", curie=DDL.curie('soil_ph_method'),
+                      model_uri=DDL.soil_ph_method, domain=None, range=Optional[str])
 
-slots.TOT_ORG_CARBON = Slot(uri=DDL.TOT_ORG_CARBON, name="TOT_ORG_CARBON", curie=DDL.curie('TOT_ORG_CARBON'),
-                      model_uri=DDL.TOT_ORG_CARBON, domain=None, range=Optional[float])
+slots.tot_org_carbon = Slot(uri=DDL.tot_org_carbon, name="tot_org_carbon", curie=DDL.curie('tot_org_carbon'),
+                      model_uri=DDL.tot_org_carbon, domain=None, range=Optional[float])
 
-slots.SOIL_TOT_ORG_C_METHOD = Slot(uri=DDL.SOIL_TOT_ORG_C_METHOD, name="SOIL_TOT_ORG_C_METHOD", curie=DDL.curie('SOIL_TOT_ORG_C_METHOD'),
-                      model_uri=DDL.SOIL_TOT_ORG_C_METHOD, domain=None, range=Optional[str])
+slots.soil_tot_org_c_method = Slot(uri=DDL.soil_tot_org_c_method, name="soil_tot_org_c_method", curie=DDL.curie('soil_tot_org_c_method'),
+                      model_uri=DDL.soil_tot_org_c_method, domain=None, range=Optional[str])
 
-slots.TOT_NITROGEN = Slot(uri=DDL.TOT_NITROGEN, name="TOT_NITROGEN", curie=DDL.curie('TOT_NITROGEN'),
-                      model_uri=DDL.TOT_NITROGEN, domain=None, range=Optional[str])
+slots.tot_nitrogen = Slot(uri=DDL.tot_nitrogen, name="tot_nitrogen", curie=DDL.curie('tot_nitrogen'),
+                      model_uri=DDL.tot_nitrogen, domain=None, range=Optional[str])
 
-slots.SOIL_TOT_N_METHOD = Slot(uri=DDL.SOIL_TOT_N_METHOD, name="SOIL_TOT_N_METHOD", curie=DDL.curie('SOIL_TOT_N_METHOD'),
-                      model_uri=DDL.SOIL_TOT_N_METHOD, domain=None, range=Optional[str])
+slots.soil_tot_n_method = Slot(uri=DDL.soil_tot_n_method, name="soil_tot_n_method", curie=DDL.curie('soil_tot_n_method'),
+                      model_uri=DDL.soil_tot_n_method, domain=None, range=Optional[str])
 
-slots.SOIL_MICROBIAL_BIOMASS = Slot(uri=DDL.SOIL_MICROBIAL_BIOMASS, name="SOIL_MICROBIAL_BIOMASS", curie=DDL.curie('SOIL_MICROBIAL_BIOMASS'),
-                      model_uri=DDL.SOIL_MICROBIAL_BIOMASS, domain=None, range=Optional[str])
+slots.soil_microbial_biomass = Slot(uri=DDL.soil_microbial_biomass, name="soil_microbial_biomass", curie=DDL.curie('soil_microbial_biomass'),
+                      model_uri=DDL.soil_microbial_biomass, domain=None, range=Optional[str])
 
-slots.SOIL_MICROBIAL_BIOMASS_METHOD = Slot(uri=DDL.SOIL_MICROBIAL_BIOMASS_METHOD, name="SOIL_MICROBIAL_BIOMASS_METHOD", curie=DDL.curie('SOIL_MICROBIAL_BIOMASS_METHOD'),
-                      model_uri=DDL.SOIL_MICROBIAL_BIOMASS_METHOD, domain=None, range=Optional[str])
+slots.soil_microbial_biomass_method = Slot(uri=DDL.soil_microbial_biomass_method, name="soil_microbial_biomass_method", curie=DDL.curie('soil_microbial_biomass_method'),
+                      model_uri=DDL.soil_microbial_biomass_method, domain=None, range=Optional[str])
 
-slots.SOIL_LINK_ADDIT_ANALYS = Slot(uri=DDL.SOIL_LINK_ADDIT_ANALYS, name="SOIL_LINK_ADDIT_ANALYS", curie=DDL.curie('SOIL_LINK_ADDIT_ANALYS'),
-                      model_uri=DDL.SOIL_LINK_ADDIT_ANALYS, domain=None, range=Optional[str])
+slots.soil_link_addit_analys = Slot(uri=DDL.soil_link_addit_analys, name="soil_link_addit_analys", curie=DDL.curie('soil_link_addit_analys'),
+                      model_uri=DDL.soil_link_addit_analys, domain=None, range=Optional[str])
 
-slots.SOIL_SALINITY_METHOD = Slot(uri=DDL.SOIL_SALINITY_METHOD, name="SOIL_SALINITY_METHOD", curie=DDL.curie('SOIL_SALINITY_METHOD'),
-                      model_uri=DDL.SOIL_SALINITY_METHOD, domain=None, range=Optional[str])
+slots.soil_salinity_method = Slot(uri=DDL.soil_salinity_method, name="soil_salinity_method", curie=DDL.curie('soil_salinity_method'),
+                      model_uri=DDL.soil_salinity_method, domain=None, range=Optional[str])
 
-slots.SOIL_HEAVY_METALS = Slot(uri=DDL.SOIL_HEAVY_METALS, name="SOIL_HEAVY_METALS", curie=DDL.curie('SOIL_HEAVY_METALS'),
-                      model_uri=DDL.SOIL_HEAVY_METALS, domain=None, range=Optional[float])
+slots.soil_heavy_metals = Slot(uri=DDL.soil_heavy_metals, name="soil_heavy_metals", curie=DDL.curie('soil_heavy_metals'),
+                      model_uri=DDL.soil_heavy_metals, domain=None, range=Optional[float])
 
-slots.SOIL_HEAVY_METALS_METHOD = Slot(uri=DDL.SOIL_HEAVY_METALS_METHOD, name="SOIL_HEAVY_METALS_METHOD", curie=DDL.curie('SOIL_HEAVY_METALS_METHOD'),
-                      model_uri=DDL.SOIL_HEAVY_METALS_METHOD, domain=None, range=Optional[str])
+slots.soil_heavy_metals_method = Slot(uri=DDL.soil_heavy_metals_method, name="soil_heavy_metals_method", curie=DDL.curie('soil_heavy_metals_method'),
+                      model_uri=DDL.soil_heavy_metals_method, domain=None, range=Optional[str])
 
-slots.SOIL_ALUMINIUM_SAT = Slot(uri=DDL.SOIL_ALUMINIUM_SAT, name="SOIL_ALUMINIUM_SAT", curie=DDL.curie('SOIL_ALUMINIUM_SAT'),
-                      model_uri=DDL.SOIL_ALUMINIUM_SAT, domain=None, range=Optional[float])
+slots.soil_aluminium_sat = Slot(uri=DDL.soil_aluminium_sat, name="soil_aluminium_sat", curie=DDL.curie('soil_aluminium_sat'),
+                      model_uri=DDL.soil_aluminium_sat, domain=None, range=Optional[float])
 
-slots.SOIL_ALUMINIUM_SAT_METHOD = Slot(uri=DDL.SOIL_ALUMINIUM_SAT_METHOD, name="SOIL_ALUMINIUM_SAT_METHOD", curie=DDL.curie('SOIL_ALUMINIUM_SAT_METHOD'),
-                      model_uri=DDL.SOIL_ALUMINIUM_SAT_METHOD, domain=None, range=Optional[str])
+slots.soil_aluminium_sat_method = Slot(uri=DDL.soil_aluminium_sat_method, name="soil_aluminium_sat_method", curie=DDL.curie('soil_aluminium_sat_method'),
+                      model_uri=DDL.soil_aluminium_sat_method, domain=None, range=Optional[str])
 
-slots.SOIL_MISC_PARAM = Slot(uri=DDL.SOIL_MISC_PARAM, name="SOIL_MISC_PARAM", curie=DDL.curie('SOIL_MISC_PARAM'),
-                      model_uri=DDL.SOIL_MISC_PARAM, domain=None, range=Optional[str])
+slots.soil_misc_param = Slot(uri=DDL.soil_misc_param, name="soil_misc_param", curie=DDL.curie('soil_misc_param'),
+                      model_uri=DDL.soil_misc_param, domain=None, range=Optional[str])
 
-slots.WATER_ALKALINITY = Slot(uri=DDL.WATER_ALKALINITY, name="WATER_ALKALINITY", curie=DDL.curie('WATER_ALKALINITY'),
-                      model_uri=DDL.WATER_ALKALINITY, domain=None, range=Optional[float])
+slots.water_alkalinity = Slot(uri=DDL.water_alkalinity, name="water_alkalinity", curie=DDL.curie('water_alkalinity'),
+                      model_uri=DDL.water_alkalinity, domain=None, range=Optional[float])
 
-slots.WATER_ALKYL_DIETHERS = Slot(uri=DDL.WATER_ALKYL_DIETHERS, name="WATER_ALKYL_DIETHERS", curie=DDL.curie('WATER_ALKYL_DIETHERS'),
-                      model_uri=DDL.WATER_ALKYL_DIETHERS, domain=None, range=Optional[float])
+slots.water_alkyl_diethers = Slot(uri=DDL.water_alkyl_diethers, name="water_alkyl_diethers", curie=DDL.curie('water_alkyl_diethers'),
+                      model_uri=DDL.water_alkyl_diethers, domain=None, range=Optional[float])
 
-slots.WATER_AMINOPEPT_ACT = Slot(uri=DDL.WATER_AMINOPEPT_ACT, name="WATER_AMINOPEPT_ACT", curie=DDL.curie('WATER_AMINOPEPT_ACT'),
-                      model_uri=DDL.WATER_AMINOPEPT_ACT, domain=None, range=Optional[float])
+slots.water_aminopept_act = Slot(uri=DDL.water_aminopept_act, name="water_aminopept_act", curie=DDL.curie('water_aminopept_act'),
+                      model_uri=DDL.water_aminopept_act, domain=None, range=Optional[float])
 
-slots.WATER_AMMONIUM = Slot(uri=DDL.WATER_AMMONIUM, name="WATER_AMMONIUM", curie=DDL.curie('WATER_AMMONIUM'),
-                      model_uri=DDL.WATER_AMMONIUM, domain=None, range=Optional[float])
+slots.water_ammonium = Slot(uri=DDL.water_ammonium, name="water_ammonium", curie=DDL.curie('water_ammonium'),
+                      model_uri=DDL.water_ammonium, domain=None, range=Optional[float])
 
-slots.WATER_ATMOSPHERIC_DATA = Slot(uri=DDL.WATER_ATMOSPHERIC_DATA, name="WATER_ATMOSPHERIC_DATA", curie=DDL.curie('WATER_ATMOSPHERIC_DATA'),
-                      model_uri=DDL.WATER_ATMOSPHERIC_DATA, domain=None, range=Optional[str])
+slots.water_atmospheric_data = Slot(uri=DDL.water_atmospheric_data, name="water_atmospheric_data", curie=DDL.curie('water_atmospheric_data'),
+                      model_uri=DDL.water_atmospheric_data, domain=None, range=Optional[str])
 
-slots.WATER_BACTERIAL_PROD = Slot(uri=DDL.WATER_BACTERIAL_PROD, name="WATER_BACTERIAL_PROD", curie=DDL.curie('WATER_BACTERIAL_PROD'),
-                      model_uri=DDL.WATER_BACTERIAL_PROD, domain=None, range=Optional[float])
+slots.water_bacterial_prod = Slot(uri=DDL.water_bacterial_prod, name="water_bacterial_prod", curie=DDL.curie('water_bacterial_prod'),
+                      model_uri=DDL.water_bacterial_prod, domain=None, range=Optional[float])
 
-slots.WATER_BACTERIAL_RESP = Slot(uri=DDL.WATER_BACTERIAL_RESP, name="WATER_BACTERIAL_RESP", curie=DDL.curie('WATER_BACTERIAL_RESP'),
-                      model_uri=DDL.WATER_BACTERIAL_RESP, domain=None, range=Optional[float])
+slots.water_bacterial_resp = Slot(uri=DDL.water_bacterial_resp, name="water_bacterial_resp", curie=DDL.curie('water_bacterial_resp'),
+                      model_uri=DDL.water_bacterial_resp, domain=None, range=Optional[float])
 
-slots.WATER_BACTERIAL_CARBON_PROD = Slot(uri=DDL.WATER_BACTERIAL_CARBON_PROD, name="WATER_BACTERIAL_CARBON_PROD", curie=DDL.curie('WATER_BACTERIAL_CARBON_PROD'),
-                      model_uri=DDL.WATER_BACTERIAL_CARBON_PROD, domain=None, range=Optional[float])
+slots.water_bacterial_carbon_prod = Slot(uri=DDL.water_bacterial_carbon_prod, name="water_bacterial_carbon_prod", curie=DDL.curie('water_bacterial_carbon_prod'),
+                      model_uri=DDL.water_bacterial_carbon_prod, domain=None, range=Optional[float])
 
-slots.WATER_BISHOMOHOPANOL = Slot(uri=DDL.WATER_BISHOMOHOPANOL, name="WATER_BISHOMOHOPANOL", curie=DDL.curie('WATER_BISHOMOHOPANOL'),
-                      model_uri=DDL.WATER_BISHOMOHOPANOL, domain=None, range=Optional[str])
+slots.water_bishomohopanol = Slot(uri=DDL.water_bishomohopanol, name="water_bishomohopanol", curie=DDL.curie('water_bishomohopanol'),
+                      model_uri=DDL.water_bishomohopanol, domain=None, range=Optional[str])
 
-slots.WATER_BROMIDE = Slot(uri=DDL.WATER_BROMIDE, name="WATER_BROMIDE", curie=DDL.curie('WATER_BROMIDE'),
-                      model_uri=DDL.WATER_BROMIDE, domain=None, range=Optional[float])
+slots.water_bromide = Slot(uri=DDL.water_bromide, name="water_bromide", curie=DDL.curie('water_bromide'),
+                      model_uri=DDL.water_bromide, domain=None, range=Optional[float])
 
-slots.WATER_CALCIUM = Slot(uri=DDL.WATER_CALCIUM, name="WATER_CALCIUM", curie=DDL.curie('WATER_CALCIUM'),
-                      model_uri=DDL.WATER_CALCIUM, domain=None, range=Optional[str])
+slots.water_calcium = Slot(uri=DDL.water_calcium, name="water_calcium", curie=DDL.curie('water_calcium'),
+                      model_uri=DDL.water_calcium, domain=None, range=Optional[str])
 
-slots.WATER_CARBON_NITROG_RATIO = Slot(uri=DDL.WATER_CARBON_NITROG_RATIO, name="WATER_CARBON_NITROG_RATIO", curie=DDL.curie('WATER_CARBON_NITROG_RATIO'),
-                      model_uri=DDL.WATER_CARBON_NITROG_RATIO, domain=None, range=Optional[str])
+slots.water_carbon_nitrog_ratio = Slot(uri=DDL.water_carbon_nitrog_ratio, name="water_carbon_nitrog_ratio", curie=DDL.curie('water_carbon_nitrog_ratio'),
+                      model_uri=DDL.water_carbon_nitrog_ratio, domain=None, range=Optional[str])
 
-slots.WATER_CHEM_ADMINISTRATION = Slot(uri=DDL.WATER_CHEM_ADMINISTRATION, name="WATER_CHEM_ADMINISTRATION", curie=DDL.curie('WATER_CHEM_ADMINISTRATION'),
-                      model_uri=DDL.WATER_CHEM_ADMINISTRATION, domain=None, range=Optional[str])
+slots.water_chem_administration = Slot(uri=DDL.water_chem_administration, name="water_chem_administration", curie=DDL.curie('water_chem_administration'),
+                      model_uri=DDL.water_chem_administration, domain=None, range=Optional[str])
 
-slots.WATER_CHLORIDE = Slot(uri=DDL.WATER_CHLORIDE, name="WATER_CHLORIDE", curie=DDL.curie('WATER_CHLORIDE'),
-                      model_uri=DDL.WATER_CHLORIDE, domain=None, range=Optional[float])
+slots.water_chloride = Slot(uri=DDL.water_chloride, name="water_chloride", curie=DDL.curie('water_chloride'),
+                      model_uri=DDL.water_chloride, domain=None, range=Optional[float])
 
-slots.WATER_DENSITY = Slot(uri=DDL.WATER_DENSITY, name="WATER_DENSITY", curie=DDL.curie('WATER_DENSITY'),
-                      model_uri=DDL.WATER_DENSITY, domain=None, range=Optional[float])
+slots.water_density = Slot(uri=DDL.water_density, name="water_density", curie=DDL.curie('water_density'),
+                      model_uri=DDL.water_density, domain=None, range=Optional[float])
 
-slots.WATER_DIETHER_LIPIDS = Slot(uri=DDL.WATER_DIETHER_LIPIDS, name="WATER_DIETHER_LIPIDS", curie=DDL.curie('WATER_DIETHER_LIPIDS'),
-                      model_uri=DDL.WATER_DIETHER_LIPIDS, domain=None, range=Optional[float])
+slots.water_diether_lipids = Slot(uri=DDL.water_diether_lipids, name="water_diether_lipids", curie=DDL.curie('water_diether_lipids'),
+                      model_uri=DDL.water_diether_lipids, domain=None, range=Optional[float])
 
-slots.WATER_DISS_CARBON_DIOXIDE = Slot(uri=DDL.WATER_DISS_CARBON_DIOXIDE, name="WATER_DISS_CARBON_DIOXIDE", curie=DDL.curie('WATER_DISS_CARBON_DIOXIDE'),
-                      model_uri=DDL.WATER_DISS_CARBON_DIOXIDE, domain=None, range=Optional[float])
+slots.water_diss_carbon_dioxide = Slot(uri=DDL.water_diss_carbon_dioxide, name="water_diss_carbon_dioxide", curie=DDL.curie('water_diss_carbon_dioxide'),
+                      model_uri=DDL.water_diss_carbon_dioxide, domain=None, range=Optional[float])
 
-slots.WATER_DISS_HYDROGEN = Slot(uri=DDL.WATER_DISS_HYDROGEN, name="WATER_DISS_HYDROGEN", curie=DDL.curie('WATER_DISS_HYDROGEN'),
-                      model_uri=DDL.WATER_DISS_HYDROGEN, domain=None, range=Optional[float])
+slots.water_diss_hydrogen = Slot(uri=DDL.water_diss_hydrogen, name="water_diss_hydrogen", curie=DDL.curie('water_diss_hydrogen'),
+                      model_uri=DDL.water_diss_hydrogen, domain=None, range=Optional[float])
 
-slots.WATER_DISS_INORG_CARBON = Slot(uri=DDL.WATER_DISS_INORG_CARBON, name="WATER_DISS_INORG_CARBON", curie=DDL.curie('WATER_DISS_INORG_CARBON'),
-                      model_uri=DDL.WATER_DISS_INORG_CARBON, domain=None, range=Optional[float])
+slots.water_diss_inorg_carbon = Slot(uri=DDL.water_diss_inorg_carbon, name="water_diss_inorg_carbon", curie=DDL.curie('water_diss_inorg_carbon'),
+                      model_uri=DDL.water_diss_inorg_carbon, domain=None, range=Optional[float])
 
-slots.WATER_DISS_INORG_NITRO = Slot(uri=DDL.WATER_DISS_INORG_NITRO, name="WATER_DISS_INORG_NITRO", curie=DDL.curie('WATER_DISS_INORG_NITRO'),
-                      model_uri=DDL.WATER_DISS_INORG_NITRO, domain=None, range=Optional[float])
+slots.water_diss_inorg_nitro = Slot(uri=DDL.water_diss_inorg_nitro, name="water_diss_inorg_nitro", curie=DDL.curie('water_diss_inorg_nitro'),
+                      model_uri=DDL.water_diss_inorg_nitro, domain=None, range=Optional[float])
 
-slots.WATER_DISS_INORG_PHOSPHORUS = Slot(uri=DDL.WATER_DISS_INORG_PHOSPHORUS, name="WATER_DISS_INORG_PHOSPHORUS", curie=DDL.curie('WATER_DISS_INORG_PHOSPHORUS'),
-                      model_uri=DDL.WATER_DISS_INORG_PHOSPHORUS, domain=None, range=Optional[float])
+slots.water_diss_inorg_phosphorus = Slot(uri=DDL.water_diss_inorg_phosphorus, name="water_diss_inorg_phosphorus", curie=DDL.curie('water_diss_inorg_phosphorus'),
+                      model_uri=DDL.water_diss_inorg_phosphorus, domain=None, range=Optional[float])
 
-slots.WATER_DISS_ORG_CARBON = Slot(uri=DDL.WATER_DISS_ORG_CARBON, name="WATER_DISS_ORG_CARBON", curie=DDL.curie('WATER_DISS_ORG_CARBON'),
-                      model_uri=DDL.WATER_DISS_ORG_CARBON, domain=None, range=Optional[float])
+slots.water_diss_org_carbon = Slot(uri=DDL.water_diss_org_carbon, name="water_diss_org_carbon", curie=DDL.curie('water_diss_org_carbon'),
+                      model_uri=DDL.water_diss_org_carbon, domain=None, range=Optional[float])
 
-slots.WATER_DISS_ORG_NITROGEN = Slot(uri=DDL.WATER_DISS_ORG_NITROGEN, name="WATER_DISS_ORG_NITROGEN", curie=DDL.curie('WATER_DISS_ORG_NITROGEN'),
-                      model_uri=DDL.WATER_DISS_ORG_NITROGEN, domain=None, range=Optional[float])
+slots.water_diss_org_nitrogen = Slot(uri=DDL.water_diss_org_nitrogen, name="water_diss_org_nitrogen", curie=DDL.curie('water_diss_org_nitrogen'),
+                      model_uri=DDL.water_diss_org_nitrogen, domain=None, range=Optional[float])
 
-slots.WATER_DOWNWARD_PAR = Slot(uri=DDL.WATER_DOWNWARD_PAR, name="WATER_DOWNWARD_PAR", curie=DDL.curie('WATER_DOWNWARD_PAR'),
-                      model_uri=DDL.WATER_DOWNWARD_PAR, domain=None, range=Optional[float])
+slots.water_downward_par = Slot(uri=DDL.water_downward_par, name="water_downward_par", curie=DDL.curie('water_downward_par'),
+                      model_uri=DDL.water_downward_par, domain=None, range=Optional[float])
 
-slots.WATER_FLUORESCENCE = Slot(uri=DDL.WATER_FLUORESCENCE, name="WATER_FLUORESCENCE", curie=DDL.curie('WATER_FLUORESCENCE'),
-                      model_uri=DDL.WATER_FLUORESCENCE, domain=None, range=Optional[float])
+slots.water_fluorescence = Slot(uri=DDL.water_fluorescence, name="water_fluorescence", curie=DDL.curie('water_fluorescence'),
+                      model_uri=DDL.water_fluorescence, domain=None, range=Optional[float])
 
-slots.WATER_GLUCOSIDASE_ACTIVITY = Slot(uri=DDL.WATER_GLUCOSIDASE_ACTIVITY, name="WATER_GLUCOSIDASE_ACTIVITY", curie=DDL.curie('WATER_GLUCOSIDASE_ACTIVITY'),
-                      model_uri=DDL.WATER_GLUCOSIDASE_ACTIVITY, domain=None, range=Optional[float])
+slots.water_glucosidase_activity = Slot(uri=DDL.water_glucosidase_activity, name="water_glucosidase_activity", curie=DDL.curie('water_glucosidase_activity'),
+                      model_uri=DDL.water_glucosidase_activity, domain=None, range=Optional[float])
 
-slots.WATER_LIGHT_INTENSITY = Slot(uri=DDL.WATER_LIGHT_INTENSITY, name="WATER_LIGHT_INTENSITY", curie=DDL.curie('WATER_LIGHT_INTENSITY'),
-                      model_uri=DDL.WATER_LIGHT_INTENSITY, domain=None, range=Optional[float])
+slots.water_light_intensity = Slot(uri=DDL.water_light_intensity, name="water_light_intensity", curie=DDL.curie('water_light_intensity'),
+                      model_uri=DDL.water_light_intensity, domain=None, range=Optional[float])
 
-slots.WATER_MAGNESIUM = Slot(uri=DDL.WATER_MAGNESIUM, name="WATER_MAGNESIUM", curie=DDL.curie('WATER_MAGNESIUM'),
-                      model_uri=DDL.WATER_MAGNESIUM, domain=None, range=Optional[str])
+slots.water_magnesium = Slot(uri=DDL.water_magnesium, name="water_magnesium", curie=DDL.curie('water_magnesium'),
+                      model_uri=DDL.water_magnesium, domain=None, range=Optional[str])
 
-slots.WATER_MEAN_FRICT_VEL = Slot(uri=DDL.WATER_MEAN_FRICT_VEL, name="WATER_MEAN_FRICT_VEL", curie=DDL.curie('WATER_MEAN_FRICT_VEL'),
-                      model_uri=DDL.WATER_MEAN_FRICT_VEL, domain=None, range=Optional[float])
+slots.water_mean_frict_vel = Slot(uri=DDL.water_mean_frict_vel, name="water_mean_frict_vel", curie=DDL.curie('water_mean_frict_vel'),
+                      model_uri=DDL.water_mean_frict_vel, domain=None, range=Optional[float])
 
-slots.WATER_MEAN_PEAK_FRICT_VEL = Slot(uri=DDL.WATER_MEAN_PEAK_FRICT_VEL, name="WATER_MEAN_PEAK_FRICT_VEL", curie=DDL.curie('WATER_MEAN_PEAK_FRICT_VEL'),
-                      model_uri=DDL.WATER_MEAN_PEAK_FRICT_VEL, domain=None, range=Optional[float])
+slots.water_mean_peak_frict_vel = Slot(uri=DDL.water_mean_peak_frict_vel, name="water_mean_peak_frict_vel", curie=DDL.curie('water_mean_peak_frict_vel'),
+                      model_uri=DDL.water_mean_peak_frict_vel, domain=None, range=Optional[float])
 
-slots.WATER_MISC_PARAMETER = Slot(uri=DDL.WATER_MISC_PARAMETER, name="WATER_MISC_PARAMETER", curie=DDL.curie('WATER_MISC_PARAMETER'),
-                      model_uri=DDL.WATER_MISC_PARAMETER, domain=None, range=Optional[str])
+slots.water_misc_parameter = Slot(uri=DDL.water_misc_parameter, name="water_misc_parameter", curie=DDL.curie('water_misc_parameter'),
+                      model_uri=DDL.water_misc_parameter, domain=None, range=Optional[str])
 
-slots.WATER_N_ALKANES = Slot(uri=DDL.WATER_N_ALKANES, name="WATER_N_ALKANES", curie=DDL.curie('WATER_N_ALKANES'),
-                      model_uri=DDL.WATER_N_ALKANES, domain=None, range=Optional[float])
+slots.water_n_alkanes = Slot(uri=DDL.water_n_alkanes, name="water_n_alkanes", curie=DDL.curie('water_n_alkanes'),
+                      model_uri=DDL.water_n_alkanes, domain=None, range=Optional[float])
 
-slots.WATER_NITRITE = Slot(uri=DDL.WATER_NITRITE, name="WATER_NITRITE", curie=DDL.curie('WATER_NITRITE'),
-                      model_uri=DDL.WATER_NITRITE, domain=None, range=Optional[float])
+slots.water_nitrite = Slot(uri=DDL.water_nitrite, name="water_nitrite", curie=DDL.curie('water_nitrite'),
+                      model_uri=DDL.water_nitrite, domain=None, range=Optional[float])
 
-slots.WATER_ORG_MATTER = Slot(uri=DDL.WATER_ORG_MATTER, name="WATER_ORG_MATTER", curie=DDL.curie('WATER_ORG_MATTER'),
-                      model_uri=DDL.WATER_ORG_MATTER, domain=None, range=Optional[float])
+slots.water_org_matter = Slot(uri=DDL.water_org_matter, name="water_org_matter", curie=DDL.curie('water_org_matter'),
+                      model_uri=DDL.water_org_matter, domain=None, range=Optional[float])
 
-slots.WATER_ORG_NITROGEN = Slot(uri=DDL.WATER_ORG_NITROGEN, name="WATER_ORG_NITROGEN", curie=DDL.curie('WATER_ORG_NITROGEN'),
-                      model_uri=DDL.WATER_ORG_NITROGEN, domain=None, range=Optional[float])
+slots.water_org_nitrogen = Slot(uri=DDL.water_org_nitrogen, name="water_org_nitrogen", curie=DDL.curie('water_org_nitrogen'),
+                      model_uri=DDL.water_org_nitrogen, domain=None, range=Optional[float])
 
-slots.WATER_ORGANISM_COUNT = Slot(uri=DDL.WATER_ORGANISM_COUNT, name="WATER_ORGANISM_COUNT", curie=DDL.curie('WATER_ORGANISM_COUNT'),
-                      model_uri=DDL.WATER_ORGANISM_COUNT, domain=None, range=Optional[float])
+slots.water_organism_count = Slot(uri=DDL.water_organism_count, name="water_organism_count", curie=DDL.curie('water_organism_count'),
+                      model_uri=DDL.water_organism_count, domain=None, range=Optional[float])
 
-slots.WATER_OXY_STAT_SAMPLE = Slot(uri=DDL.WATER_OXY_STAT_SAMPLE, name="WATER_OXY_STAT_SAMPLE", curie=DDL.curie('WATER_OXY_STAT_SAMPLE'),
-                      model_uri=DDL.WATER_OXY_STAT_SAMPLE, domain=None, range=Optional[str])
+slots.water_oxy_stat_sample = Slot(uri=DDL.water_oxy_stat_sample, name="water_oxy_stat_sample", curie=DDL.curie('water_oxy_stat_sample'),
+                      model_uri=DDL.water_oxy_stat_sample, domain=None, range=Optional[str])
 
-slots.WATER_PART_ORG_CARBON = Slot(uri=DDL.WATER_PART_ORG_CARBON, name="WATER_PART_ORG_CARBON", curie=DDL.curie('WATER_PART_ORG_CARBON'),
-                      model_uri=DDL.WATER_PART_ORG_CARBON, domain=None, range=Optional[float])
+slots.water_part_org_carbon = Slot(uri=DDL.water_part_org_carbon, name="water_part_org_carbon", curie=DDL.curie('water_part_org_carbon'),
+                      model_uri=DDL.water_part_org_carbon, domain=None, range=Optional[float])
 
-slots.WATER_PART_ORG_NITROGEN = Slot(uri=DDL.WATER_PART_ORG_NITROGEN, name="WATER_PART_ORG_NITROGEN", curie=DDL.curie('WATER_PART_ORG_NITROGEN'),
-                      model_uri=DDL.WATER_PART_ORG_NITROGEN, domain=None, range=Optional[float])
+slots.water_part_org_nitrogen = Slot(uri=DDL.water_part_org_nitrogen, name="water_part_org_nitrogen", curie=DDL.curie('water_part_org_nitrogen'),
+                      model_uri=DDL.water_part_org_nitrogen, domain=None, range=Optional[float])
 
-slots.WATER_PERTURBATION = Slot(uri=DDL.WATER_PERTURBATION, name="WATER_PERTURBATION", curie=DDL.curie('WATER_PERTURBATION'),
-                      model_uri=DDL.WATER_PERTURBATION, domain=None, range=Optional[str])
+slots.water_perturbation = Slot(uri=DDL.water_perturbation, name="water_perturbation", curie=DDL.curie('water_perturbation'),
+                      model_uri=DDL.water_perturbation, domain=None, range=Optional[str])
 
-slots.WATER_PETROLEUM_HYDROCARBON = Slot(uri=DDL.WATER_PETROLEUM_HYDROCARBON, name="WATER_PETROLEUM_HYDROCARBON", curie=DDL.curie('WATER_PETROLEUM_HYDROCARBON'),
-                      model_uri=DDL.WATER_PETROLEUM_HYDROCARBON, domain=None, range=Optional[float])
+slots.water_petroleum_hydrocarbon = Slot(uri=DDL.water_petroleum_hydrocarbon, name="water_petroleum_hydrocarbon", curie=DDL.curie('water_petroleum_hydrocarbon'),
+                      model_uri=DDL.water_petroleum_hydrocarbon, domain=None, range=Optional[float])
 
-slots.WATER_PHAEOPIGMENTS = Slot(uri=DDL.WATER_PHAEOPIGMENTS, name="WATER_PHAEOPIGMENTS", curie=DDL.curie('WATER_PHAEOPIGMENTS'),
-                      model_uri=DDL.WATER_PHAEOPIGMENTS, domain=None, range=Optional[float])
+slots.water_phaeopigments = Slot(uri=DDL.water_phaeopigments, name="water_phaeopigments", curie=DDL.curie('water_phaeopigments'),
+                      model_uri=DDL.water_phaeopigments, domain=None, range=Optional[float])
 
-slots.WATER_PHOSPLIPID_FATT_ACID = Slot(uri=DDL.WATER_PHOSPLIPID_FATT_ACID, name="WATER_PHOSPLIPID_FATT_ACID", curie=DDL.curie('WATER_PHOSPLIPID_FATT_ACID'),
-                      model_uri=DDL.WATER_PHOSPLIPID_FATT_ACID, domain=None, range=Optional[str])
+slots.water_phosplipid_fatt_acid = Slot(uri=DDL.water_phosplipid_fatt_acid, name="water_phosplipid_fatt_acid", curie=DDL.curie('water_phosplipid_fatt_acid'),
+                      model_uri=DDL.water_phosplipid_fatt_acid, domain=None, range=Optional[str])
 
-slots.WATER_PHOTON_FLUX = Slot(uri=DDL.WATER_PHOTON_FLUX, name="WATER_PHOTON_FLUX", curie=DDL.curie('WATER_PHOTON_FLUX'),
-                      model_uri=DDL.WATER_PHOTON_FLUX, domain=None, range=Optional[float])
+slots.water_photon_flux = Slot(uri=DDL.water_photon_flux, name="water_photon_flux", curie=DDL.curie('water_photon_flux'),
+                      model_uri=DDL.water_photon_flux, domain=None, range=Optional[float])
 
-slots.WATER_POTASSIUM = Slot(uri=DDL.WATER_POTASSIUM, name="WATER_POTASSIUM", curie=DDL.curie('WATER_POTASSIUM'),
-                      model_uri=DDL.WATER_POTASSIUM, domain=None, range=Optional[float])
+slots.water_potassium = Slot(uri=DDL.water_potassium, name="water_potassium", curie=DDL.curie('water_potassium'),
+                      model_uri=DDL.water_potassium, domain=None, range=Optional[float])
 
-slots.WATER_PRIMARY_PROD = Slot(uri=DDL.WATER_PRIMARY_PROD, name="WATER_PRIMARY_PROD", curie=DDL.curie('WATER_PRIMARY_PROD'),
-                      model_uri=DDL.WATER_PRIMARY_PROD, domain=None, range=Optional[float])
+slots.water_primary_prod = Slot(uri=DDL.water_primary_prod, name="water_primary_prod", curie=DDL.curie('water_primary_prod'),
+                      model_uri=DDL.water_primary_prod, domain=None, range=Optional[float])
 
-slots.WATER_REDOX_POTENTIAL = Slot(uri=DDL.WATER_REDOX_POTENTIAL, name="WATER_REDOX_POTENTIAL", curie=DDL.curie('WATER_REDOX_POTENTIAL'),
-                      model_uri=DDL.WATER_REDOX_POTENTIAL, domain=None, range=Optional[float])
+slots.water_redox_potential = Slot(uri=DDL.water_redox_potential, name="water_redox_potential", curie=DDL.curie('water_redox_potential'),
+                      model_uri=DDL.water_redox_potential, domain=None, range=Optional[float])
 
-slots.WATER_SAMP_STORE_DUR = Slot(uri=DDL.WATER_SAMP_STORE_DUR, name="WATER_SAMP_STORE_DUR", curie=DDL.curie('WATER_SAMP_STORE_DUR'),
-                      model_uri=DDL.WATER_SAMP_STORE_DUR, domain=None, range=Optional[str])
+slots.water_samp_store_dur = Slot(uri=DDL.water_samp_store_dur, name="water_samp_store_dur", curie=DDL.curie('water_samp_store_dur'),
+                      model_uri=DDL.water_samp_store_dur, domain=None, range=Optional[str])
 
-slots.WATER_SAMP_STORE_LOC = Slot(uri=DDL.WATER_SAMP_STORE_LOC, name="WATER_SAMP_STORE_LOC", curie=DDL.curie('WATER_SAMP_STORE_LOC'),
-                      model_uri=DDL.WATER_SAMP_STORE_LOC, domain=None, range=Optional[str])
+slots.water_samp_store_loc = Slot(uri=DDL.water_samp_store_loc, name="water_samp_store_loc", curie=DDL.curie('water_samp_store_loc'),
+                      model_uri=DDL.water_samp_store_loc, domain=None, range=Optional[str])
 
-slots.WATER_SAMP_STORE_TEMP = Slot(uri=DDL.WATER_SAMP_STORE_TEMP, name="WATER_SAMP_STORE_TEMP", curie=DDL.curie('WATER_SAMP_STORE_TEMP'),
-                      model_uri=DDL.WATER_SAMP_STORE_TEMP, domain=None, range=Optional[float])
+slots.water_samp_store_temp = Slot(uri=DDL.water_samp_store_temp, name="water_samp_store_temp", curie=DDL.curie('water_samp_store_temp'),
+                      model_uri=DDL.water_samp_store_temp, domain=None, range=Optional[float])
 
-slots.WATER_SODIUM = Slot(uri=DDL.WATER_SODIUM, name="WATER_SODIUM", curie=DDL.curie('WATER_SODIUM'),
-                      model_uri=DDL.WATER_SODIUM, domain=None, range=Optional[float])
+slots.water_sodium = Slot(uri=DDL.water_sodium, name="water_sodium", curie=DDL.curie('water_sodium'),
+                      model_uri=DDL.water_sodium, domain=None, range=Optional[float])
 
-slots.WATER_SOLUBLE_REACT_PHOSP = Slot(uri=DDL.WATER_SOLUBLE_REACT_PHOSP, name="WATER_SOLUBLE_REACT_PHOSP", curie=DDL.curie('WATER_SOLUBLE_REACT_PHOSP'),
-                      model_uri=DDL.WATER_SOLUBLE_REACT_PHOSP, domain=None, range=Optional[float])
+slots.water_soluble_react_phosp = Slot(uri=DDL.water_soluble_react_phosp, name="water_soluble_react_phosp", curie=DDL.curie('water_soluble_react_phosp'),
+                      model_uri=DDL.water_soluble_react_phosp, domain=None, range=Optional[float])
 
-slots.WATER_SULFATE = Slot(uri=DDL.WATER_SULFATE, name="WATER_SULFATE", curie=DDL.curie('WATER_SULFATE'),
-                      model_uri=DDL.WATER_SULFATE, domain=None, range=Optional[str])
+slots.water_sulfate = Slot(uri=DDL.water_sulfate, name="water_sulfate", curie=DDL.curie('water_sulfate'),
+                      model_uri=DDL.water_sulfate, domain=None, range=Optional[str])
 
-slots.WATER_SULFIDE = Slot(uri=DDL.WATER_SULFIDE, name="WATER_SULFIDE", curie=DDL.curie('WATER_SULFIDE'),
-                      model_uri=DDL.WATER_SULFIDE, domain=None, range=Optional[str])
+slots.water_sulfide = Slot(uri=DDL.water_sulfide, name="water_sulfide", curie=DDL.curie('water_sulfide'),
+                      model_uri=DDL.water_sulfide, domain=None, range=Optional[str])
 
-slots.WATER_SUSPEND_PART_MATTER = Slot(uri=DDL.WATER_SUSPEND_PART_MATTER, name="WATER_SUSPEND_PART_MATTER", curie=DDL.curie('WATER_SUSPEND_PART_MATTER'),
-                      model_uri=DDL.WATER_SUSPEND_PART_MATTER, domain=None, range=Optional[float])
+slots.water_suspend_part_matter = Slot(uri=DDL.water_suspend_part_matter, name="water_suspend_part_matter", curie=DDL.curie('water_suspend_part_matter'),
+                      model_uri=DDL.water_suspend_part_matter, domain=None, range=Optional[float])
 
-slots.WATER_TIDAL_STAGE = Slot(uri=DDL.WATER_TIDAL_STAGE, name="WATER_TIDAL_STAGE", curie=DDL.curie('WATER_TIDAL_STAGE'),
-                      model_uri=DDL.WATER_TIDAL_STAGE, domain=None, range=Optional[str])
+slots.water_tidal_stage = Slot(uri=DDL.water_tidal_stage, name="water_tidal_stage", curie=DDL.curie('water_tidal_stage'),
+                      model_uri=DDL.water_tidal_stage, domain=None, range=Optional[str])
 
-slots.WATER_TOT_DEPTH_WATER_COL = Slot(uri=DDL.WATER_TOT_DEPTH_WATER_COL, name="WATER_TOT_DEPTH_WATER_COL", curie=DDL.curie('WATER_TOT_DEPTH_WATER_COL'),
-                      model_uri=DDL.WATER_TOT_DEPTH_WATER_COL, domain=None, range=Optional[float])
+slots.water_tot_depth_water_col = Slot(uri=DDL.water_tot_depth_water_col, name="water_tot_depth_water_col", curie=DDL.curie('water_tot_depth_water_col'),
+                      model_uri=DDL.water_tot_depth_water_col, domain=None, range=Optional[float])
 
-slots.WATER_TOT_DISS_NITRO = Slot(uri=DDL.WATER_TOT_DISS_NITRO, name="WATER_TOT_DISS_NITRO", curie=DDL.curie('WATER_TOT_DISS_NITRO'),
-                      model_uri=DDL.WATER_TOT_DISS_NITRO, domain=None, range=Optional[float])
+slots.water_tot_diss_nitro = Slot(uri=DDL.water_tot_diss_nitro, name="water_tot_diss_nitro", curie=DDL.curie('water_tot_diss_nitro'),
+                      model_uri=DDL.water_tot_diss_nitro, domain=None, range=Optional[float])
 
-slots.WATER_TOT_INORG_NITRO = Slot(uri=DDL.WATER_TOT_INORG_NITRO, name="WATER_TOT_INORG_NITRO", curie=DDL.curie('WATER_TOT_INORG_NITRO'),
-                      model_uri=DDL.WATER_TOT_INORG_NITRO, domain=None, range=Optional[float])
+slots.water_tot_inorg_nitro = Slot(uri=DDL.water_tot_inorg_nitro, name="water_tot_inorg_nitro", curie=DDL.curie('water_tot_inorg_nitro'),
+                      model_uri=DDL.water_tot_inorg_nitro, domain=None, range=Optional[float])
 
-slots.WATER_TOT_PART_CARBON = Slot(uri=DDL.WATER_TOT_PART_CARBON, name="WATER_TOT_PART_CARBON", curie=DDL.curie('WATER_TOT_PART_CARBON'),
-                      model_uri=DDL.WATER_TOT_PART_CARBON, domain=None, range=Optional[str])
+slots.water_tot_part_carbon = Slot(uri=DDL.water_tot_part_carbon, name="water_tot_part_carbon", curie=DDL.curie('water_tot_part_carbon'),
+                      model_uri=DDL.water_tot_part_carbon, domain=None, range=Optional[str])
 
-slots.WATER_TOT_PHOSPHORUS = Slot(uri=DDL.WATER_TOT_PHOSPHORUS, name="WATER_TOT_PHOSPHORUS", curie=DDL.curie('WATER_TOT_PHOSPHORUS'),
-                      model_uri=DDL.WATER_TOT_PHOSPHORUS, domain=None, range=Optional[float])
+slots.water_tot_phosphorus = Slot(uri=DDL.water_tot_phosphorus, name="water_tot_phosphorus", curie=DDL.curie('water_tot_phosphorus'),
+                      model_uri=DDL.water_tot_phosphorus, domain=None, range=Optional[float])
 
-slots.WATER_CURRENT = Slot(uri=DDL.WATER_CURRENT, name="WATER_CURRENT", curie=DDL.curie('WATER_CURRENT'),
-                      model_uri=DDL.WATER_CURRENT, domain=None, range=Optional[str])
+slots.water_current = Slot(uri=DDL.water_current, name="water_current", curie=DDL.curie('water_current'),
+                      model_uri=DDL.water_current, domain=None, range=Optional[str])
 
-slots.LATITUDE = Slot(uri=DDL.LATITUDE, name="LATITUDE", curie=DDL.curie('LATITUDE'),
-                      model_uri=DDL.LATITUDE, domain=None, range=Optional[float])
+slots.latitude = Slot(uri=DDL.latitude, name="latitude", curie=DDL.curie('latitude'),
+                      model_uri=DDL.latitude, domain=None, range=Optional[float])
 
-slots.LONGITUDE = Slot(uri=DDL.LONGITUDE, name="LONGITUDE", curie=DDL.curie('LONGITUDE'),
-                      model_uri=DDL.LONGITUDE, domain=None, range=Optional[float])
+slots.longitude = Slot(uri=DDL.longitude, name="longitude", curie=DDL.curie('longitude'),
+                      model_uri=DDL.longitude, domain=None, range=Optional[float])
 
-slots.DEPTH = Slot(uri=DDL.DEPTH, name="DEPTH", curie=DDL.curie('DEPTH'),
-                      model_uri=DDL.DEPTH, domain=None, range=Optional[float])
+slots.depth = Slot(uri=DDL.depth, name="depth", curie=DDL.curie('depth'),
+                      model_uri=DDL.depth, domain=None, range=Optional[float])
 
-slots.DEPTH2 = Slot(uri=DDL.DEPTH2, name="DEPTH2", curie=DDL.curie('DEPTH2'),
-                      model_uri=DDL.DEPTH2, domain=None, range=Optional[float])
+slots.depth2 = Slot(uri=DDL.depth2, name="depth2", curie=DDL.curie('depth2'),
+                      model_uri=DDL.depth2, domain=None, range=Optional[float])
 
-slots.ALTITUDE = Slot(uri=DDL.ALTITUDE, name="ALTITUDE", curie=DDL.curie('ALTITUDE'),
-                      model_uri=DDL.ALTITUDE, domain=None, range=Optional[float])
+slots.altitude = Slot(uri=DDL.altitude, name="altitude", curie=DDL.curie('altitude'),
+                      model_uri=DDL.altitude, domain=None, range=Optional[float])
 
-slots.ALTITUDE2 = Slot(uri=DDL.ALTITUDE2, name="ALTITUDE2", curie=DDL.curie('ALTITUDE2'),
-                      model_uri=DDL.ALTITUDE2, domain=None, range=Optional[float])
+slots.altitude2 = Slot(uri=DDL.altitude2, name="altitude2", curie=DDL.curie('altitude2'),
+                      model_uri=DDL.altitude2, domain=None, range=Optional[float])
 
-slots.SOLUBLE_IRON_MICROMOL = Slot(uri=DDL.SOLUBLE_IRON_MICROMOL, name="SOLUBLE_IRON_MICROMOL", curie=DDL.curie('SOLUBLE_IRON_MICROMOL'),
-                      model_uri=DDL.SOLUBLE_IRON_MICROMOL, domain=None, range=Optional[float])
+slots.soluble_iron_micromol = Slot(uri=DDL.soluble_iron_micromol, name="soluble_iron_micromol", curie=DDL.curie('soluble_iron_micromol'),
+                      model_uri=DDL.soluble_iron_micromol, domain=None, range=Optional[float])
 
-slots.BICARBONATE_MILLIMOL = Slot(uri=DDL.BICARBONATE_MILLIMOL, name="BICARBONATE_MILLIMOL", curie=DDL.curie('BICARBONATE_MILLIMOL'),
-                      model_uri=DDL.BICARBONATE_MILLIMOL, domain=None, range=Optional[float])
+slots.bicarbonate_millimol = Slot(uri=DDL.bicarbonate_millimol, name="bicarbonate_millimol", curie=DDL.curie('bicarbonate_millimol'),
+                      model_uri=DDL.bicarbonate_millimol, domain=None, range=Optional[float])
 
-slots.H2S_MILLIMOL = Slot(uri=DDL.H2S_MILLIMOL, name="H2S_MILLIMOL", curie=DDL.curie('H2S_MILLIMOL'),
-                      model_uri=DDL.H2S_MILLIMOL, domain=None, range=Optional[float])
+slots.h2s_millimol = Slot(uri=DDL.h2s_millimol, name="h2s_millimol", curie=DDL.curie('h2s_millimol'),
+                      model_uri=DDL.h2s_millimol, domain=None, range=Optional[float])
 
-slots.H2S_PRESENT = Slot(uri=DDL.H2S_PRESENT, name="H2S_PRESENT", curie=DDL.curie('H2S_PRESENT'),
-                      model_uri=DDL.H2S_PRESENT, domain=None, range=Optional[str])
+slots.h2s_present = Slot(uri=DDL.h2s_present, name="h2s_present", curie=DDL.curie('h2s_present'),
+                      model_uri=DDL.h2s_present, domain=None, range=Optional[str])
 
-slots.IRRADIANCE = Slot(uri=DDL.IRRADIANCE, name="IRRADIANCE", curie=DDL.curie('IRRADIANCE'),
-                      model_uri=DDL.IRRADIANCE, domain=None, range=Optional[str])
+slots.irradiance = Slot(uri=DDL.irradiance, name="irradiance", curie=DDL.curie('irradiance'),
+                      model_uri=DDL.irradiance, domain=None, range=Optional[str])
 
-slots.OXYGEN_PRESENCE = Slot(uri=DDL.OXYGEN_PRESENCE, name="OXYGEN_PRESENCE", curie=DDL.curie('OXYGEN_PRESENCE'),
-                      model_uri=DDL.OXYGEN_PRESENCE, domain=None, range=Optional[str])
+slots.oxygen_presence = Slot(uri=DDL.oxygen_presence, name="oxygen_presence", curie=DDL.curie('oxygen_presence'),
+                      model_uri=DDL.oxygen_presence, domain=None, range=Optional[str])
 
-slots.METHANE_CONC_MILLIMOL = Slot(uri=DDL.METHANE_CONC_MILLIMOL, name="METHANE_CONC_MILLIMOL", curie=DDL.curie('METHANE_CONC_MILLIMOL'),
-                      model_uri=DDL.METHANE_CONC_MILLIMOL, domain=None, range=Optional[float])
+slots.methane_conc_millimol = Slot(uri=DDL.methane_conc_millimol, name="methane_conc_millimol", curie=DDL.curie('methane_conc_millimol'),
+                      model_uri=DDL.methane_conc_millimol, domain=None, range=Optional[float])
 
-slots.GROWTH_TEMPERATURE2 = Slot(uri=DDL.GROWTH_TEMPERATURE2, name="GROWTH_TEMPERATURE2", curie=DDL.curie('GROWTH_TEMPERATURE2'),
-                      model_uri=DDL.GROWTH_TEMPERATURE2, domain=None, range=Optional[float])
+slots.growth_temperature2 = Slot(uri=DDL.growth_temperature2, name="growth_temperature2", curie=DDL.curie('growth_temperature2'),
+                      model_uri=DDL.growth_temperature2, domain=None, range=Optional[float])
 
-slots.SUBSURFACE_DEPTH2 = Slot(uri=DDL.SUBSURFACE_DEPTH2, name="SUBSURFACE_DEPTH2", curie=DDL.curie('SUBSURFACE_DEPTH2'),
-                      model_uri=DDL.SUBSURFACE_DEPTH2, domain=None, range=Optional[float])
+slots.subsurface_depth2 = Slot(uri=DDL.subsurface_depth2, name="subsurface_depth2", curie=DDL.curie('subsurface_depth2'),
+                      model_uri=DDL.subsurface_depth2, domain=None, range=Optional[float])
 
-slots.PH1 = Slot(uri=DDL.PH1, name="PH1", curie=DDL.curie('PH1'),
-                      model_uri=DDL.PH1, domain=None, range=Optional[float])
+slots.ph1 = Slot(uri=DDL.ph1, name="ph1", curie=DDL.curie('ph1'),
+                      model_uri=DDL.ph1, domain=None, range=Optional[float])
 
-slots.PH2 = Slot(uri=DDL.PH2, name="PH2", curie=DDL.curie('PH2'),
-                      model_uri=DDL.PH2, domain=None, range=Optional[float])
+slots.ph2 = Slot(uri=DDL.ph2, name="ph2", curie=DDL.curie('ph2'),
+                      model_uri=DDL.ph2, domain=None, range=Optional[float])
 
-slots.PH_OLD = Slot(uri=DDL.PH_OLD, name="PH_OLD", curie=DDL.curie('PH_OLD'),
-                      model_uri=DDL.PH_OLD, domain=None, range=Optional[str])
+slots.ph_old = Slot(uri=DDL.ph_old, name="ph_old", curie=DDL.curie('ph_old'),
+                      model_uri=DDL.ph_old, domain=None, range=Optional[str])
 
-slots.WATER_ALKALINITY_METHOD = Slot(uri=DDL.WATER_ALKALINITY_METHOD, name="WATER_ALKALINITY_METHOD", curie=DDL.curie('WATER_ALKALINITY_METHOD'),
-                      model_uri=DDL.WATER_ALKALINITY_METHOD, domain=None, range=Optional[str])
+slots.water_alkalinity_method = Slot(uri=DDL.water_alkalinity_method, name="water_alkalinity_method", curie=DDL.curie('water_alkalinity_method'),
+                      model_uri=DDL.water_alkalinity_method, domain=None, range=Optional[str])
 
-slots.WATER_TURBIDITY = Slot(uri=DDL.WATER_TURBIDITY, name="WATER_TURBIDITY", curie=DDL.curie('WATER_TURBIDITY'),
-                      model_uri=DDL.WATER_TURBIDITY, domain=None, range=Optional[str])
+slots.water_turbidity = Slot(uri=DDL.water_turbidity, name="water_turbidity", curie=DDL.curie('water_turbidity'),
+                      model_uri=DDL.water_turbidity, domain=None, range=Optional[str])
 
-slots.WATER_SIZE_FRAC_LOW = Slot(uri=DDL.WATER_SIZE_FRAC_LOW, name="WATER_SIZE_FRAC_LOW", curie=DDL.curie('WATER_SIZE_FRAC_LOW'),
-                      model_uri=DDL.WATER_SIZE_FRAC_LOW, domain=None, range=Optional[float])
+slots.water_size_frac_low = Slot(uri=DDL.water_size_frac_low, name="water_size_frac_low", curie=DDL.curie('water_size_frac_low'),
+                      model_uri=DDL.water_size_frac_low, domain=None, range=Optional[float])
 
-slots.WATER_SIZE_FRAC_UP = Slot(uri=DDL.WATER_SIZE_FRAC_UP, name="WATER_SIZE_FRAC_UP", curie=DDL.curie('WATER_SIZE_FRAC_UP'),
-                      model_uri=DDL.WATER_SIZE_FRAC_UP, domain=None, range=Optional[float])
+slots.water_size_frac_up = Slot(uri=DDL.water_size_frac_up, name="water_size_frac_up", curie=DDL.curie('water_size_frac_up'),
+                      model_uri=DDL.water_size_frac_up, domain=None, range=Optional[float])
 
-slots.SOIL_MEAN_ANNUAL_TEMP = Slot(uri=DDL.SOIL_MEAN_ANNUAL_TEMP, name="SOIL_MEAN_ANNUAL_TEMP", curie=DDL.curie('SOIL_MEAN_ANNUAL_TEMP'),
-                      model_uri=DDL.SOIL_MEAN_ANNUAL_TEMP, domain=None, range=Optional[float])
+slots.soil_mean_annual_temp = Slot(uri=DDL.soil_mean_annual_temp, name="soil_mean_annual_temp", curie=DDL.curie('soil_mean_annual_temp'),
+                      model_uri=DDL.soil_mean_annual_temp, domain=None, range=Optional[float])
 
-slots.SOIL_MEAN_SEASONAL_TEMP = Slot(uri=DDL.SOIL_MEAN_SEASONAL_TEMP, name="SOIL_MEAN_SEASONAL_TEMP", curie=DDL.curie('SOIL_MEAN_SEASONAL_TEMP'),
-                      model_uri=DDL.SOIL_MEAN_SEASONAL_TEMP, domain=None, range=Optional[float])
+slots.soil_mean_seasonal_temp = Slot(uri=DDL.soil_mean_seasonal_temp, name="soil_mean_seasonal_temp", curie=DDL.curie('soil_mean_seasonal_temp'),
+                      model_uri=DDL.soil_mean_seasonal_temp, domain=None, range=Optional[float])
 
-slots.SOIL_MEAN_ANNUAL_PRECPT = Slot(uri=DDL.SOIL_MEAN_ANNUAL_PRECPT, name="SOIL_MEAN_ANNUAL_PRECPT", curie=DDL.curie('SOIL_MEAN_ANNUAL_PRECPT'),
-                      model_uri=DDL.SOIL_MEAN_ANNUAL_PRECPT, domain=None, range=Optional[float])
+slots.soil_mean_annual_precpt = Slot(uri=DDL.soil_mean_annual_precpt, name="soil_mean_annual_precpt", curie=DDL.curie('soil_mean_annual_precpt'),
+                      model_uri=DDL.soil_mean_annual_precpt, domain=None, range=Optional[float])
 
-slots.SOIL_MEAN_SEASONAL_PRECPT = Slot(uri=DDL.SOIL_MEAN_SEASONAL_PRECPT, name="SOIL_MEAN_SEASONAL_PRECPT", curie=DDL.curie('SOIL_MEAN_SEASONAL_PRECPT'),
-                      model_uri=DDL.SOIL_MEAN_SEASONAL_PRECPT, domain=None, range=Optional[float])
+slots.soil_mean_seasonal_precpt = Slot(uri=DDL.soil_mean_seasonal_precpt, name="soil_mean_seasonal_precpt", curie=DDL.curie('soil_mean_seasonal_precpt'),
+                      model_uri=DDL.soil_mean_seasonal_precpt, domain=None, range=Optional[float])
 
-slots.TEST_PACKAGE_ID = Slot(uri=DDL.TEST_PACKAGE_ID, name="TEST_PACKAGE_ID", curie=DDL.curie('TEST_PACKAGE_ID'),
-                      model_uri=DDL.TEST_PACKAGE_ID, domain=None, range=Optional[int])
+slots.test_package_id = Slot(uri=DDL.test_package_id, name="test_package_id", curie=DDL.curie('test_package_id'),
+                      model_uri=DDL.test_package_id, domain=None, range=Optional[int])
 
-slots.SOIL_PACKAGE_ID = Slot(uri=DDL.SOIL_PACKAGE_ID, name="SOIL_PACKAGE_ID", curie=DDL.curie('SOIL_PACKAGE_ID'),
-                      model_uri=DDL.SOIL_PACKAGE_ID, domain=None, range=Optional[int])
+slots.soil_package_id = Slot(uri=DDL.soil_package_id, name="soil_package_id", curie=DDL.curie('soil_package_id'),
+                      model_uri=DDL.soil_package_id, domain=None, range=Optional[int])
 
-slots.WATER_PACKAGE_ID = Slot(uri=DDL.WATER_PACKAGE_ID, name="WATER_PACKAGE_ID", curie=DDL.curie('WATER_PACKAGE_ID'),
-                      model_uri=DDL.WATER_PACKAGE_ID, domain=None, range=Optional[int])
+slots.water_package_id = Slot(uri=DDL.water_package_id, name="water_package_id", curie=DDL.curie('water_package_id'),
+                      model_uri=DDL.water_package_id, domain=None, range=Optional[int])
 
-slots.GLOBAL_PACKAGE_ID = Slot(uri=DDL.GLOBAL_PACKAGE_ID, name="GLOBAL_PACKAGE_ID", curie=DDL.curie('GLOBAL_PACKAGE_ID'),
-                      model_uri=DDL.GLOBAL_PACKAGE_ID, domain=None, range=Optional[int])
+slots.global_package_id = Slot(uri=DDL.global_package_id, name="global_package_id", curie=DDL.curie('global_package_id'),
+                      model_uri=DDL.global_package_id, domain=None, range=Optional[int])
 
-slots.ENVO_BIOME_ID = Slot(uri=DDL.ENVO_BIOME_ID, name="ENVO_BIOME_ID", curie=DDL.curie('ENVO_BIOME_ID'),
-                      model_uri=DDL.ENVO_BIOME_ID, domain=None, range=Optional[str])
+slots.envo_biome_id = Slot(uri=DDL.envo_biome_id, name="envo_biome_id", curie=DDL.curie('envo_biome_id'),
+                      model_uri=DDL.envo_biome_id, domain=None, range=Optional[str])
 
-slots.ENVO_FEATURE_ID = Slot(uri=DDL.ENVO_FEATURE_ID, name="ENVO_FEATURE_ID", curie=DDL.curie('ENVO_FEATURE_ID'),
-                      model_uri=DDL.ENVO_FEATURE_ID, domain=None, range=Optional[str])
+slots.envo_feature_id = Slot(uri=DDL.envo_feature_id, name="envo_feature_id", curie=DDL.curie('envo_feature_id'),
+                      model_uri=DDL.envo_feature_id, domain=None, range=Optional[str])
 
-slots.ENVO_MATERIAL_ID = Slot(uri=DDL.ENVO_MATERIAL_ID, name="ENVO_MATERIAL_ID", curie=DDL.curie('ENVO_MATERIAL_ID'),
-                      model_uri=DDL.ENVO_MATERIAL_ID, domain=None, range=Optional[str])
+slots.envo_material_id = Slot(uri=DDL.envo_material_id, name="envo_material_id", curie=DDL.curie('envo_material_id'),
+                      model_uri=DDL.envo_material_id, domain=None, range=Optional[str])
 
-slots.USERNAME = Slot(uri=DDL.USERNAME, name="USERNAME", curie=DDL.curie('USERNAME'),
-                      model_uri=DDL.USERNAME, domain=None, range=Optional[str])
+slots.username = Slot(uri=DDL.username, name="username", curie=DDL.curie('username'),
+                      model_uri=DDL.username, domain=None, range=Optional[str])
 
-slots.PASSWORD = Slot(uri=DDL.PASSWORD, name="PASSWORD", curie=DDL.curie('PASSWORD'),
-                      model_uri=DDL.PASSWORD, domain=None, range=Optional[str])
+slots.password = Slot(uri=DDL.password, name="password", curie=DDL.curie('password'),
+                      model_uri=DDL.password, domain=None, range=Optional[str])
 
-slots.NAME = Slot(uri=DDL.NAME, name="NAME", curie=DDL.curie('NAME'),
-                      model_uri=DDL.NAME, domain=None, range=Optional[str])
+slots.name = Slot(uri=DDL.name, name="name", curie=DDL.curie('name'),
+                      model_uri=DDL.name, domain=None, range=Optional[str])
 
-slots.TITLE = Slot(uri=DDL.TITLE, name="TITLE", curie=DDL.curie('TITLE'),
-                      model_uri=DDL.TITLE, domain=None, range=Optional[str])
+slots.title = Slot(uri=DDL.title, name="title", curie=DDL.curie('title'),
+                      model_uri=DDL.title, domain=None, range=Optional[str])
 
-slots.DEPARTMENT = Slot(uri=DDL.DEPARTMENT, name="DEPARTMENT", curie=DDL.curie('DEPARTMENT'),
-                      model_uri=DDL.DEPARTMENT, domain=None, range=Optional[str])
+slots.department = Slot(uri=DDL.department, name="department", curie=DDL.curie('department'),
+                      model_uri=DDL.department, domain=None, range=Optional[str])
 
-slots.EMAIL = Slot(uri=DDL.EMAIL, name="EMAIL", curie=DDL.curie('EMAIL'),
-                      model_uri=DDL.EMAIL, domain=None, range=Optional[str])
+slots.email = Slot(uri=DDL.email, name="email", curie=DDL.curie('email'),
+                      model_uri=DDL.email, domain=None, range=Optional[str])
 
-slots.PHONE = Slot(uri=DDL.PHONE, name="PHONE", curie=DDL.curie('PHONE'),
-                      model_uri=DDL.PHONE, domain=None, range=Optional[str])
+slots.phone = Slot(uri=DDL.phone, name="phone", curie=DDL.curie('phone'),
+                      model_uri=DDL.phone, domain=None, range=Optional[str])
 
-slots.ORGANIZATION = Slot(uri=DDL.ORGANIZATION, name="ORGANIZATION", curie=DDL.curie('ORGANIZATION'),
-                      model_uri=DDL.ORGANIZATION, domain=None, range=Optional[str])
+slots.organization = Slot(uri=DDL.organization, name="organization", curie=DDL.curie('organization'),
+                      model_uri=DDL.organization, domain=None, range=Optional[str])
 
-slots.ADDRESS = Slot(uri=DDL.ADDRESS, name="ADDRESS", curie=DDL.curie('ADDRESS'),
-                      model_uri=DDL.ADDRESS, domain=None, range=Optional[str])
+slots.address = Slot(uri=DDL.address, name="address", curie=DDL.curie('address'),
+                      model_uri=DDL.address, domain=None, range=Optional[str])
 
-slots.CITY = Slot(uri=DDL.CITY, name="CITY", curie=DDL.curie('CITY'),
-                      model_uri=DDL.CITY, domain=None, range=Optional[str])
+slots.city = Slot(uri=DDL.city, name="city", curie=DDL.curie('city'),
+                      model_uri=DDL.city, domain=None, range=Optional[str])
 
-slots.STATE = Slot(uri=DDL.STATE, name="STATE", curie=DDL.curie('STATE'),
-                      model_uri=DDL.STATE, domain=None, range=Optional[str])
+slots.state = Slot(uri=DDL.state, name="state", curie=DDL.curie('state'),
+                      model_uri=DDL.state, domain=None, range=Optional[str])
 
-slots.COUNTRY = Slot(uri=DDL.COUNTRY, name="COUNTRY", curie=DDL.curie('COUNTRY'),
-                      model_uri=DDL.COUNTRY, domain=None, range=Optional[str])
+slots.country = Slot(uri=DDL.country, name="country", curie=DDL.curie('country'),
+                      model_uri=DDL.country, domain=None, range=Optional[str])
 
-slots.X_SUPER_USER = Slot(uri=DDL.X_SUPER_USER, name="X_SUPER_USER", curie=DDL.curie('X_SUPER_USER'),
-                      model_uri=DDL.X_SUPER_USER, domain=None, range=Optional[str])
+slots.x_super_user = Slot(uri=DDL.x_super_user, name="x_super_user", curie=DDL.curie('x_super_user'),
+                      model_uri=DDL.x_super_user, domain=None, range=Optional[str])
 
-slots.X_IMG_EDITOR = Slot(uri=DDL.X_IMG_EDITOR, name="X_IMG_EDITOR", curie=DDL.curie('X_IMG_EDITOR'),
-                      model_uri=DDL.X_IMG_EDITOR, domain=None, range=Optional[str])
+slots.x_img_editor = Slot(uri=DDL.x_img_editor, name="x_img_editor", curie=DDL.curie('x_img_editor'),
+                      model_uri=DDL.x_img_editor, domain=None, range=Optional[str])
 
-slots.X_IMG_GROUP = Slot(uri=DDL.X_IMG_GROUP, name="X_IMG_GROUP", curie=DDL.curie('X_IMG_GROUP'),
-                      model_uri=DDL.X_IMG_GROUP, domain=None, range=Optional[float])
+slots.x_img_group = Slot(uri=DDL.x_img_group, name="x_img_group", curie=DDL.curie('x_img_group'),
+                      model_uri=DDL.x_img_group, domain=None, range=Optional[float])
 
-slots.JGI_USER = Slot(uri=DDL.JGI_USER, name="JGI_USER", curie=DDL.curie('JGI_USER'),
-                      model_uri=DDL.JGI_USER, domain=None, range=Optional[str])
+slots.jgi_user = Slot(uri=DDL.jgi_user, name="jgi_user", curie=DDL.curie('jgi_user'),
+                      model_uri=DDL.jgi_user, domain=None, range=Optional[str])
 
-slots.X_IMG_EDITING_LEVEL = Slot(uri=DDL.X_IMG_EDITING_LEVEL, name="X_IMG_EDITING_LEVEL", curie=DDL.curie('X_IMG_EDITING_LEVEL'),
-                      model_uri=DDL.X_IMG_EDITING_LEVEL, domain=None, range=Optional[str])
+slots.x_img_editing_level = Slot(uri=DDL.x_img_editing_level, name="x_img_editing_level", curie=DDL.curie('x_img_editing_level'),
+                      model_uri=DDL.x_img_editing_level, domain=None, range=Optional[str])
 
-slots.CALIBAN_ID = Slot(uri=DDL.CALIBAN_ID, name="CALIBAN_ID", curie=DDL.curie('CALIBAN_ID'),
-                      model_uri=DDL.CALIBAN_ID, domain=None, range=Optional[int])
+slots.caliban_id = Slot(uri=DDL.caliban_id, name="caliban_id", curie=DDL.curie('caliban_id'),
+                      model_uri=DDL.caliban_id, domain=None, range=Optional[int])
 
-slots.CALIBAN_USER_NAME = Slot(uri=DDL.CALIBAN_USER_NAME, name="CALIBAN_USER_NAME", curie=DDL.curie('CALIBAN_USER_NAME'),
-                      model_uri=DDL.CALIBAN_USER_NAME, domain=None, range=Optional[str])
+slots.caliban_user_name = Slot(uri=DDL.caliban_user_name, name="caliban_user_name", curie=DDL.curie('caliban_user_name'),
+                      model_uri=DDL.caliban_user_name, domain=None, range=Optional[str])
 
-slots.URL = Slot(uri=DDL.URL, name="URL", curie=DDL.curie('URL'),
-                      model_uri=DDL.URL, domain=None, range=Optional[str])
+slots.url = Slot(uri=DDL.url, name="url", curie=DDL.curie('url'),
+                      model_uri=DDL.url, domain=None, range=Optional[str])
 
-slots.X_IMG_CONTACT_ID = Slot(uri=DDL.X_IMG_CONTACT_ID, name="X_IMG_CONTACT_ID", curie=DDL.curie('X_IMG_CONTACT_ID'),
-                      model_uri=DDL.X_IMG_CONTACT_ID, domain=None, range=Optional[int])
+slots.x_img_contact_id = Slot(uri=DDL.x_img_contact_id, name="x_img_contact_id", curie=DDL.curie('x_img_contact_id'),
+                      model_uri=DDL.x_img_contact_id, domain=None, range=Optional[int])
 
-slots.MASTER_CONTACT_ID = Slot(uri=DDL.MASTER_CONTACT_ID, name="MASTER_CONTACT_ID", curie=DDL.curie('MASTER_CONTACT_ID'),
-                      model_uri=DDL.MASTER_CONTACT_ID, domain=None, range=Optional[int])
+slots.master_contact_id = Slot(uri=DDL.master_contact_id, name="master_contact_id", curie=DDL.curie('master_contact_id'),
+                      model_uri=DDL.master_contact_id, domain=None, range=Optional[int])
 
-slots.ORACLE_USER_NAME = Slot(uri=DDL.ORACLE_USER_NAME, name="ORACLE_USER_NAME", curie=DDL.curie('ORACLE_USER_NAME'),
-                      model_uri=DDL.ORACLE_USER_NAME, domain=None, range=Optional[str])
+slots.oracle_user_name = Slot(uri=DDL.oracle_user_name, name="oracle_user_name", curie=DDL.curie('oracle_user_name'),
+                      model_uri=DDL.oracle_user_name, domain=None, range=Optional[str])
 
-slots.USER_ROLE = Slot(uri=DDL.USER_ROLE, name="USER_ROLE", curie=DDL.curie('USER_ROLE'),
-                      model_uri=DDL.USER_ROLE, domain=None, range=Optional[str])
+slots.user_role = Slot(uri=DDL.user_role, name="user_role", curie=DDL.curie('user_role'),
+                      model_uri=DDL.user_role, domain=None, range=Optional[str])
 
-slots.GEBA_ORGANISM_AVAIL_COUNT = Slot(uri=DDL.GEBA_ORGANISM_AVAIL_COUNT, name="GEBA_ORGANISM_AVAIL_COUNT", curie=DDL.curie('GEBA_ORGANISM_AVAIL_COUNT'),
-                      model_uri=DDL.GEBA_ORGANISM_AVAIL_COUNT, domain=None, range=Optional[float])
+slots.geba_organism_avail_count = Slot(uri=DDL.geba_organism_avail_count, name="geba_organism_avail_count", curie=DDL.curie('geba_organism_avail_count'),
+                      model_uri=DDL.geba_organism_avail_count, domain=None, range=Optional[float])
 
-slots.GEBA_REVIEWER = Slot(uri=DDL.GEBA_REVIEWER, name="GEBA_REVIEWER", curie=DDL.curie('GEBA_REVIEWER'),
-                      model_uri=DDL.GEBA_REVIEWER, domain=None, range=Optional[str])
+slots.geba_reviewer = Slot(uri=DDL.geba_reviewer, name="geba_reviewer", curie=DDL.curie('geba_reviewer'),
+                      model_uri=DDL.geba_reviewer, domain=None, range=Optional[str])
 
-slots.TERM = Slot(uri=DDL.TERM, name="TERM", curie=DDL.curie('TERM'),
-                      model_uri=DDL.TERM, domain=None, range=Optional[str])
+slots.term = Slot(uri=DDL.term, name="term", curie=DDL.curie('term'),
+                      model_uri=DDL.term, domain=None, range=Optional[str])
 
-slots.SEQUENCE = Slot(uri=DDL.SEQUENCE, name="SEQUENCE", curie=DDL.curie('SEQUENCE'),
-                      model_uri=DDL.SEQUENCE, domain=None, range=Optional[float])
+slots.sequence = Slot(uri=DDL.sequence, name="sequence", curie=DDL.curie('sequence'),
+                      model_uri=DDL.sequence, domain=None, range=Optional[float])
 
-slots.ENVO_LABEL = Slot(uri=DDL.ENVO_LABEL, name="ENVO_LABEL", curie=DDL.curie('ENVO_LABEL'),
-                      model_uri=DDL.ENVO_LABEL, domain=None, range=Optional[str])
+slots.envo_label = Slot(uri=DDL.envo_label, name="envo_label", curie=DDL.curie('envo_label'),
+                      model_uri=DDL.envo_label, domain=None, range=Optional[str])
 
-slots.LABORATORY = Slot(uri=DDL.LABORATORY, name="LABORATORY", curie=DDL.curie('LABORATORY'),
-                      model_uri=DDL.LABORATORY, domain=None, range=Optional[str])
+slots.laboratory = Slot(uri=DDL.laboratory, name="laboratory", curie=DDL.curie('laboratory'),
+                      model_uri=DDL.laboratory, domain=None, range=Optional[str])
 
-slots.IS_CURATED = Slot(uri=DDL.IS_CURATED, name="IS_CURATED", curie=DDL.curie('IS_CURATED'),
-                      model_uri=DDL.IS_CURATED, domain=None, range=Optional[str])
+slots.is_curated = Slot(uri=DDL.is_curated, name="is_curated", curie=DDL.curie('is_curated'),
+                      model_uri=DDL.is_curated, domain=None, range=Optional[str])
 
-slots.BIOTIC_RELATIONSHIP_ID = Slot(uri=DDL.BIOTIC_RELATIONSHIP_ID, name="BIOTIC_RELATIONSHIP_ID", curie=DDL.curie('BIOTIC_RELATIONSHIP_ID'),
-                      model_uri=DDL.BIOTIC_RELATIONSHIP_ID, domain=None, range=Optional[int])
+slots.biotic_relationship_id = Slot(uri=DDL.biotic_relationship_id, name="biotic_relationship_id", curie=DDL.curie('biotic_relationship_id'),
+                      model_uri=DDL.biotic_relationship_id, domain=None, range=Optional[int])
 
-slots.BODY_PRODUCT_ID = Slot(uri=DDL.BODY_PRODUCT_ID, name="BODY_PRODUCT_ID", curie=DDL.curie('BODY_PRODUCT_ID'),
-                      model_uri=DDL.BODY_PRODUCT_ID, domain=None, range=Optional[int])
+slots.body_product_id = Slot(uri=DDL.body_product_id, name="body_product_id", curie=DDL.curie('body_product_id'),
+                      model_uri=DDL.body_product_id, domain=None, range=Optional[int])
 
-slots.CELL_ARRANGEMENT_ID = Slot(uri=DDL.CELL_ARRANGEMENT_ID, name="CELL_ARRANGEMENT_ID", curie=DDL.curie('CELL_ARRANGEMENT_ID'),
-                      model_uri=DDL.CELL_ARRANGEMENT_ID, domain=None, range=Optional[int])
+slots.cell_arrangement_id = Slot(uri=DDL.cell_arrangement_id, name="cell_arrangement_id", curie=DDL.curie('cell_arrangement_id'),
+                      model_uri=DDL.cell_arrangement_id, domain=None, range=Optional[int])
 
-slots.DISEASE_ID = Slot(uri=DDL.DISEASE_ID, name="DISEASE_ID", curie=DDL.curie('DISEASE_ID'),
-                      model_uri=DDL.DISEASE_ID, domain=None, range=Optional[int])
+slots.disease_id = Slot(uri=DDL.disease_id, name="disease_id", curie=DDL.curie('disease_id'),
+                      model_uri=DDL.disease_id, domain=None, range=Optional[int])
 
-slots.ENERGY_SOURCE_ID = Slot(uri=DDL.ENERGY_SOURCE_ID, name="ENERGY_SOURCE_ID", curie=DDL.curie('ENERGY_SOURCE_ID'),
-                      model_uri=DDL.ENERGY_SOURCE_ID, domain=None, range=Optional[int])
+slots.energy_source_id = Slot(uri=DDL.energy_source_id, name="energy_source_id", curie=DDL.curie('energy_source_id'),
+                      model_uri=DDL.energy_source_id, domain=None, range=Optional[int])
 
-slots.HABITAT_ID = Slot(uri=DDL.HABITAT_ID, name="HABITAT_ID", curie=DDL.curie('HABITAT_ID'),
-                      model_uri=DDL.HABITAT_ID, domain=None, range=Optional[int])
+slots.habitat_id = Slot(uri=DDL.habitat_id, name="habitat_id", curie=DDL.curie('habitat_id'),
+                      model_uri=DDL.habitat_id, domain=None, range=Optional[int])
 
-slots.METABOLISM_ID = Slot(uri=DDL.METABOLISM_ID, name="METABOLISM_ID", curie=DDL.curie('METABOLISM_ID'),
-                      model_uri=DDL.METABOLISM_ID, domain=None, range=Optional[int])
+slots.metabolism_id = Slot(uri=DDL.metabolism_id, name="metabolism_id", curie=DDL.curie('metabolism_id'),
+                      model_uri=DDL.metabolism_id, domain=None, range=Optional[int])
 
-slots.PHENOTYPE_ID = Slot(uri=DDL.PHENOTYPE_ID, name="PHENOTYPE_ID", curie=DDL.curie('PHENOTYPE_ID'),
-                      model_uri=DDL.PHENOTYPE_ID, domain=None, range=Optional[int])
+slots.phenotype_id = Slot(uri=DDL.phenotype_id, name="phenotype_id", curie=DDL.curie('phenotype_id'),
+                      model_uri=DDL.phenotype_id, domain=None, range=Optional[int])
 
-slots.EXEMPLAR_DOI = Slot(uri=DDL.EXEMPLAR_DOI, name="EXEMPLAR_DOI", curie=DDL.curie('EXEMPLAR_DOI'),
-                      model_uri=DDL.EXEMPLAR_DOI, domain=None, range=Optional[str])
+slots.exemplar_doi = Slot(uri=DDL.exemplar_doi, name="exemplar_doi", curie=DDL.curie('exemplar_doi'),
+                      model_uri=DDL.exemplar_doi, domain=None, range=Optional[str])
 
-slots.EXEMPLAR_NAME = Slot(uri=DDL.EXEMPLAR_NAME, name="EXEMPLAR_NAME", curie=DDL.curie('EXEMPLAR_NAME'),
-                      model_uri=DDL.EXEMPLAR_NAME, domain=None, range=Optional[str])
+slots.exemplar_name = Slot(uri=DDL.exemplar_name, name="exemplar_name", curie=DDL.curie('exemplar_name'),
+                      model_uri=DDL.exemplar_name, domain=None, range=Optional[str])
 
-slots.TAXON_DOI = Slot(uri=DDL.TAXON_DOI, name="TAXON_DOI", curie=DDL.curie('TAXON_DOI'),
-                      model_uri=DDL.TAXON_DOI, domain=None, range=Optional[str])
+slots.taxon_doi = Slot(uri=DDL.taxon_doi, name="taxon_doi", curie=DDL.curie('taxon_doi'),
+                      model_uri=DDL.taxon_doi, domain=None, range=Optional[str])
 
-slots.CULTURE_COLLECTION_ID = Slot(uri=DDL.CULTURE_COLLECTION_ID, name="CULTURE_COLLECTION_ID", curie=DDL.curie('CULTURE_COLLECTION_ID'),
-                      model_uri=DDL.CULTURE_COLLECTION_ID, domain=None, range=Optional[str])
+slots.culture_collection_id = Slot(uri=DDL.culture_collection_id, name="culture_collection_id", curie=DDL.curie('culture_collection_id'),
+                      model_uri=DDL.culture_collection_id, domain=None, range=Optional[str])
 
-slots.TYPE_STRAIN = Slot(uri=DDL.TYPE_STRAIN, name="TYPE_STRAIN", curie=DDL.curie('TYPE_STRAIN'),
-                      model_uri=DDL.TYPE_STRAIN, domain=None, range=Optional[str])
+slots.type_strain = Slot(uri=DDL.type_strain, name="type_strain", curie=DDL.curie('type_strain'),
+                      model_uri=DDL.type_strain, domain=None, range=Optional[str])
 
-slots.BIOSAFETY_LEVEL = Slot(uri=DDL.BIOSAFETY_LEVEL, name="BIOSAFETY_LEVEL", curie=DDL.curie('BIOSAFETY_LEVEL'),
-                      model_uri=DDL.BIOSAFETY_LEVEL, domain=None, range=Optional[str])
+slots.biosafety_level = Slot(uri=DDL.biosafety_level, name="biosafety_level", curie=DDL.curie('biosafety_level'),
+                      model_uri=DDL.biosafety_level, domain=None, range=Optional[str])
 
-slots.STRAIN_INFO_ID = Slot(uri=DDL.STRAIN_INFO_ID, name="STRAIN_INFO_ID", curie=DDL.curie('STRAIN_INFO_ID'),
-                      model_uri=DDL.STRAIN_INFO_ID, domain=None, range=Optional[int])
+slots.strain_info_id = Slot(uri=DDL.strain_info_id, name="strain_info_id", curie=DDL.curie('strain_info_id'),
+                      model_uri=DDL.strain_info_id, domain=None, range=Optional[int])
 
-slots.GENBANK_16S_ID = Slot(uri=DDL.GENBANK_16S_ID, name="GENBANK_16S_ID", curie=DDL.curie('GENBANK_16S_ID'),
-                      model_uri=DDL.GENBANK_16S_ID, domain=None, range=Optional[str])
+slots.genbank_16s_id = Slot(uri=DDL.genbank_16s_id, name="genbank_16s_id", curie=DDL.curie('genbank_16s_id'),
+                      model_uri=DDL.genbank_16s_id, domain=None, range=Optional[str])
 
-slots.OXYGEN_REQUIREMENT = Slot(uri=DDL.OXYGEN_REQUIREMENT, name="OXYGEN_REQUIREMENT", curie=DDL.curie('OXYGEN_REQUIREMENT'),
-                      model_uri=DDL.OXYGEN_REQUIREMENT, domain=None, range=Optional[str])
+slots.oxygen_requirement = Slot(uri=DDL.oxygen_requirement, name="oxygen_requirement", curie=DDL.curie('oxygen_requirement'),
+                      model_uri=DDL.oxygen_requirement, domain=None, range=Optional[str])
 
-slots.CELL_SHAPE = Slot(uri=DDL.CELL_SHAPE, name="CELL_SHAPE", curie=DDL.curie('CELL_SHAPE'),
-                      model_uri=DDL.CELL_SHAPE, domain=None, range=Optional[str])
+slots.cell_shape = Slot(uri=DDL.cell_shape, name="cell_shape", curie=DDL.curie('cell_shape'),
+                      model_uri=DDL.cell_shape, domain=None, range=Optional[str])
 
-slots.MOTILITY = Slot(uri=DDL.MOTILITY, name="MOTILITY", curie=DDL.curie('MOTILITY'),
-                      model_uri=DDL.MOTILITY, domain=None, range=Optional[str])
+slots.motility = Slot(uri=DDL.motility, name="motility", curie=DDL.curie('motility'),
+                      model_uri=DDL.motility, domain=None, range=Optional[str])
 
-slots.SPORULATION = Slot(uri=DDL.SPORULATION, name="SPORULATION", curie=DDL.curie('SPORULATION'),
-                      model_uri=DDL.SPORULATION, domain=None, range=Optional[str])
+slots.sporulation = Slot(uri=DDL.sporulation, name="sporulation", curie=DDL.curie('sporulation'),
+                      model_uri=DDL.sporulation, domain=None, range=Optional[str])
 
-slots.TEMPERATURE_RANGE = Slot(uri=DDL.TEMPERATURE_RANGE, name="TEMPERATURE_RANGE", curie=DDL.curie('TEMPERATURE_RANGE'),
-                      model_uri=DDL.TEMPERATURE_RANGE, domain=None, range=Optional[str])
+slots.temperature_range = Slot(uri=DDL.temperature_range, name="temperature_range", curie=DDL.curie('temperature_range'),
+                      model_uri=DDL.temperature_range, domain=None, range=Optional[str])
 
-slots.COLOR = Slot(uri=DDL.COLOR, name="COLOR", curie=DDL.curie('COLOR'),
-                      model_uri=DDL.COLOR, domain=None, range=Optional[str])
+slots.color = Slot(uri=DDL.color, name="color", curie=DDL.curie('color'),
+                      model_uri=DDL.color, domain=None, range=Optional[str])
 
-slots.GRAM_STAIN = Slot(uri=DDL.GRAM_STAIN, name="GRAM_STAIN", curie=DDL.curie('GRAM_STAIN'),
-                      model_uri=DDL.GRAM_STAIN, domain=None, range=Optional[str])
+slots.gram_stain = Slot(uri=DDL.gram_stain, name="gram_stain", curie=DDL.curie('gram_stain'),
+                      model_uri=DDL.gram_stain, domain=None, range=Optional[str])
 
-slots.COMMON_NAME = Slot(uri=DDL.COMMON_NAME, name="COMMON_NAME", curie=DDL.curie('COMMON_NAME'),
-                      model_uri=DDL.COMMON_NAME, domain=None, range=Optional[str])
+slots.common_name = Slot(uri=DDL.common_name, name="common_name", curie=DDL.curie('common_name'),
+                      model_uri=DDL.common_name, domain=None, range=Optional[str])
 
-slots.SYMBIOTIC_RELATIONSHIP = Slot(uri=DDL.SYMBIOTIC_RELATIONSHIP, name="SYMBIOTIC_RELATIONSHIP", curie=DDL.curie('SYMBIOTIC_RELATIONSHIP'),
-                      model_uri=DDL.SYMBIOTIC_RELATIONSHIP, domain=None, range=Optional[str])
+slots.symbiotic_relationship = Slot(uri=DDL.symbiotic_relationship, name="symbiotic_relationship", curie=DDL.curie('symbiotic_relationship'),
+                      model_uri=DDL.symbiotic_relationship, domain=None, range=Optional[str])
 
-slots.SYMBIOTIC_PHYSICAL_INTERACTION = Slot(uri=DDL.SYMBIOTIC_PHYSICAL_INTERACTION, name="SYMBIOTIC_PHYSICAL_INTERACTION", curie=DDL.curie('SYMBIOTIC_PHYSICAL_INTERACTION'),
-                      model_uri=DDL.SYMBIOTIC_PHYSICAL_INTERACTION, domain=None, range=Optional[str])
+slots.symbiotic_physical_interaction = Slot(uri=DDL.symbiotic_physical_interaction, name="symbiotic_physical_interaction", curie=DDL.curie('symbiotic_physical_interaction'),
+                      model_uri=DDL.symbiotic_physical_interaction, domain=None, range=Optional[str])
 
-slots.SYMBIONT_NAME = Slot(uri=DDL.SYMBIONT_NAME, name="SYMBIONT_NAME", curie=DDL.curie('SYMBIONT_NAME'),
-                      model_uri=DDL.SYMBIONT_NAME, domain=None, range=Optional[str])
+slots.symbiont_name = Slot(uri=DDL.symbiont_name, name="symbiont_name", curie=DDL.curie('symbiont_name'),
+                      model_uri=DDL.symbiont_name, domain=None, range=Optional[str])
 
-slots.SYMBIONT_TAXON_ID = Slot(uri=DDL.SYMBIONT_TAXON_ID, name="SYMBIONT_TAXON_ID", curie=DDL.curie('SYMBIONT_TAXON_ID'),
-                      model_uri=DDL.SYMBIONT_TAXON_ID, domain=None, range=Optional[int])
+slots.symbiont_taxon_id = Slot(uri=DDL.symbiont_taxon_id, name="symbiont_taxon_id", curie=DDL.curie('symbiont_taxon_id'),
+                      model_uri=DDL.symbiont_taxon_id, domain=None, range=Optional[int])
 
-slots.CELL_LENGTH = Slot(uri=DDL.CELL_LENGTH, name="CELL_LENGTH", curie=DDL.curie('CELL_LENGTH'),
-                      model_uri=DDL.CELL_LENGTH, domain=None, range=Optional[str])
+slots.cell_length = Slot(uri=DDL.cell_length, name="cell_length", curie=DDL.curie('cell_length'),
+                      model_uri=DDL.cell_length, domain=None, range=Optional[str])
 
-slots.COMMERCIAL = Slot(uri=DDL.COMMERCIAL, name="COMMERCIAL", curie=DDL.curie('COMMERCIAL'),
-                      model_uri=DDL.COMMERCIAL, domain=None, range=Optional[str])
+slots.commercial = Slot(uri=DDL.commercial, name="commercial", curie=DDL.curie('commercial'),
+                      model_uri=DDL.commercial, domain=None, range=Optional[str])
 
-slots.COMMERCIAL_COMMENTS = Slot(uri=DDL.COMMERCIAL_COMMENTS, name="COMMERCIAL_COMMENTS", curie=DDL.curie('COMMERCIAL_COMMENTS'),
-                      model_uri=DDL.COMMERCIAL_COMMENTS, domain=None, range=Optional[str])
+slots.commercial_comments = Slot(uri=DDL.commercial_comments, name="commercial_comments", curie=DDL.curie('commercial_comments'),
+                      model_uri=DDL.commercial_comments, domain=None, range=Optional[str])
 
-slots.OTHER_NAMES = Slot(uri=DDL.OTHER_NAMES, name="OTHER_NAMES", curie=DDL.curie('OTHER_NAMES'),
-                      model_uri=DDL.OTHER_NAMES, domain=None, range=Optional[str])
+slots.other_names = Slot(uri=DDL.other_names, name="other_names", curie=DDL.curie('other_names'),
+                      model_uri=DDL.other_names, domain=None, range=Optional[str])
 
-slots.SYNONYM_GROUP_ID = Slot(uri=DDL.SYNONYM_GROUP_ID, name="SYNONYM_GROUP_ID", curie=DDL.curie('SYNONYM_GROUP_ID'),
-                      model_uri=DDL.SYNONYM_GROUP_ID, domain=None, range=Optional[int])
+slots.synonym_group_id = Slot(uri=DDL.synonym_group_id, name="synonym_group_id", curie=DDL.curie('synonym_group_id'),
+                      model_uri=DDL.synonym_group_id, domain=None, range=Optional[int])
 
-slots.VIRAL_GROUP = Slot(uri=DDL.VIRAL_GROUP, name="VIRAL_GROUP", curie=DDL.curie('VIRAL_GROUP'),
-                      model_uri=DDL.VIRAL_GROUP, domain=None, range=Optional[str])
+slots.viral_group = Slot(uri=DDL.viral_group, name="viral_group", curie=DDL.curie('viral_group'),
+                      model_uri=DDL.viral_group, domain=None, range=Optional[str])
 
-slots.VIRAL_SUBGROUP = Slot(uri=DDL.VIRAL_SUBGROUP, name="VIRAL_SUBGROUP", curie=DDL.curie('VIRAL_SUBGROUP'),
-                      model_uri=DDL.VIRAL_SUBGROUP, domain=None, range=Optional[str])
+slots.viral_subgroup = Slot(uri=DDL.viral_subgroup, name="viral_subgroup", curie=DDL.curie('viral_subgroup'),
+                      model_uri=DDL.viral_subgroup, domain=None, range=Optional[str])
 
-slots.CULTURE_TYPE = Slot(uri=DDL.CULTURE_TYPE, name="CULTURE_TYPE", curie=DDL.curie('CULTURE_TYPE'),
-                      model_uri=DDL.CULTURE_TYPE, domain=None, range=Optional[str])
+slots.culture_type = Slot(uri=DDL.culture_type, name="culture_type", curie=DDL.curie('culture_type'),
+                      model_uri=DDL.culture_type, domain=None, range=Optional[str])
 
-slots.UNCULTURED_TYPE = Slot(uri=DDL.UNCULTURED_TYPE, name="UNCULTURED_TYPE", curie=DDL.curie('UNCULTURED_TYPE'),
-                      model_uri=DDL.UNCULTURED_TYPE, domain=None, range=Optional[str])
+slots.uncultured_type = Slot(uri=DDL.uncultured_type, name="uncultured_type", curie=DDL.curie('uncultured_type'),
+                      model_uri=DDL.uncultured_type, domain=None, range=Optional[str])
 
-slots.ORGANISM_TYPE = Slot(uri=DDL.ORGANISM_TYPE, name="ORGANISM_TYPE", curie=DDL.curie('ORGANISM_TYPE'),
-                      model_uri=DDL.ORGANISM_TYPE, domain=None, range=Optional[str])
+slots.organism_type = Slot(uri=DDL.organism_type, name="organism_type", curie=DDL.curie('organism_type'),
+                      model_uri=DDL.organism_type, domain=None, range=Optional[str])
 
-slots.CULTURED = Slot(uri=DDL.CULTURED, name="CULTURED", curie=DDL.curie('CULTURED'),
-                      model_uri=DDL.CULTURED, domain=None, range=Optional[str])
+slots.cultured = Slot(uri=DDL.cultured, name="cultured", curie=DDL.curie('cultured'),
+                      model_uri=DDL.cultured, domain=None, range=Optional[str])
 
-slots.CLADE = Slot(uri=DDL.CLADE, name="CLADE", curie=DDL.curie('CLADE'),
-                      model_uri=DDL.CLADE, domain=None, range=Optional[str])
+slots.clade = Slot(uri=DDL.clade, name="clade", curie=DDL.curie('clade'),
+                      model_uri=DDL.clade, domain=None, range=Optional[str])
 
-slots.MASTER_GROUP_ID = Slot(uri=DDL.MASTER_GROUP_ID, name="MASTER_GROUP_ID", curie=DDL.curie('MASTER_GROUP_ID'),
-                      model_uri=DDL.MASTER_GROUP_ID, domain=None, range=Optional[int])
+slots.master_group_id = Slot(uri=DDL.master_group_id, name="master_group_id", curie=DDL.curie('master_group_id'),
+                      model_uri=DDL.master_group_id, domain=None, range=Optional[int])
 
-slots.ECOTYPE = Slot(uri=DDL.ECOTYPE, name="ECOTYPE", curie=DDL.curie('ECOTYPE'),
-                      model_uri=DDL.ECOTYPE, domain=None, range=Optional[str])
+slots.ecotype = Slot(uri=DDL.ecotype, name="ecotype", curie=DDL.curie('ecotype'),
+                      model_uri=DDL.ecotype, domain=None, range=Optional[str])
 
-slots.BIOSAMPLE_ID = Slot(uri=DDL.BIOSAMPLE_ID, name="BIOSAMPLE_ID", curie=DDL.curie('BIOSAMPLE_ID'),
-                      model_uri=DDL.BIOSAMPLE_ID, domain=None, range=Optional[int])
+slots.biosample_id = Slot(uri=DDL.biosample_id, name="biosample_id", curie=DDL.curie('biosample_id'),
+                      model_uri=DDL.biosample_id, domain=None, range=Optional[int])
 
-slots.CARBON_SOURCE = Slot(uri=DDL.CARBON_SOURCE, name="CARBON_SOURCE", curie=DDL.curie('CARBON_SOURCE'),
-                      model_uri=DDL.CARBON_SOURCE, domain=None, range=Optional[str])
+slots.carbon_source = Slot(uri=DDL.carbon_source, name="carbon_source", curie=DDL.curie('carbon_source'),
+                      model_uri=DDL.carbon_source, domain=None, range=Optional[str])
 
-slots.IMAGE_ID = Slot(uri=DDL.IMAGE_ID, name="IMAGE_ID", curie=DDL.curie('IMAGE_ID'),
-                      model_uri=DDL.IMAGE_ID, domain=None, range=Optional[int])
+slots.image_id = Slot(uri=DDL.image_id, name="image_id", curie=DDL.curie('image_id'),
+                      model_uri=DDL.image_id, domain=None, range=Optional[int])
 
-slots.NCBI_BIOSAMPLE_ID = Slot(uri=DDL.NCBI_BIOSAMPLE_ID, name="NCBI_BIOSAMPLE_ID", curie=DDL.curie('NCBI_BIOSAMPLE_ID'),
-                      model_uri=DDL.NCBI_BIOSAMPLE_ID, domain=None, range=Optional[str])
+slots.ncbi_biosample_id = Slot(uri=DDL.ncbi_biosample_id, name="ncbi_biosample_id", curie=DDL.curie('ncbi_biosample_id'),
+                      model_uri=DDL.ncbi_biosample_id, domain=None, range=Optional[str])
 
-slots.ORGANISM_NAME = Slot(uri=DDL.ORGANISM_NAME, name="ORGANISM_NAME", curie=DDL.curie('ORGANISM_NAME'),
-                      model_uri=DDL.ORGANISM_NAME, domain=None, range=Optional[str])
+slots.organism_name = Slot(uri=DDL.organism_name, name="organism_name", curie=DDL.curie('organism_name'),
+                      model_uri=DDL.organism_name, domain=None, range=Optional[str])
 
-slots.SUBMIT_ORGANISM_NAME = Slot(uri=DDL.SUBMIT_ORGANISM_NAME, name="SUBMIT_ORGANISM_NAME", curie=DDL.curie('SUBMIT_ORGANISM_NAME'),
-                      model_uri=DDL.SUBMIT_ORGANISM_NAME, domain=None, range=Optional[str])
+slots.submit_organism_name = Slot(uri=DDL.submit_organism_name, name="submit_organism_name", curie=DDL.curie('submit_organism_name'),
+                      model_uri=DDL.submit_organism_name, domain=None, range=Optional[str])
 
-slots.GENUS_SYNONYMS = Slot(uri=DDL.GENUS_SYNONYMS, name="GENUS_SYNONYMS", curie=DDL.curie('GENUS_SYNONYMS'),
-                      model_uri=DDL.GENUS_SYNONYMS, domain=None, range=Optional[str])
+slots.genus_synonyms = Slot(uri=DDL.genus_synonyms, name="genus_synonyms", curie=DDL.curie('genus_synonyms'),
+                      model_uri=DDL.genus_synonyms, domain=None, range=Optional[str])
 
-slots.SPECIES_SYNONYMS = Slot(uri=DDL.SPECIES_SYNONYMS, name="SPECIES_SYNONYMS", curie=DDL.curie('SPECIES_SYNONYMS'),
-                      model_uri=DDL.SPECIES_SYNONYMS, domain=None, range=Optional[str])
+slots.species_synonyms = Slot(uri=DDL.species_synonyms, name="species_synonyms", curie=DDL.curie('species_synonyms'),
+                      model_uri=DDL.species_synonyms, domain=None, range=Optional[str])
 
-slots.CELL_DIAMETER = Slot(uri=DDL.CELL_DIAMETER, name="CELL_DIAMETER", curie=DDL.curie('CELL_DIAMETER'),
-                      model_uri=DDL.CELL_DIAMETER, domain=None, range=Optional[str])
+slots.cell_diameter = Slot(uri=DDL.cell_diameter, name="cell_diameter", curie=DDL.curie('cell_diameter'),
+                      model_uri=DDL.cell_diameter, domain=None, range=Optional[str])
 
-slots.IS_VIROCELL = Slot(uri=DDL.IS_VIROCELL, name="IS_VIROCELL", curie=DDL.curie('IS_VIROCELL'),
-                      model_uri=DDL.IS_VIROCELL, domain=None, range=Optional[str])
+slots.is_virocell = Slot(uri=DDL.is_virocell, name="is_virocell", curie=DDL.curie('is_virocell'),
+                      model_uri=DDL.is_virocell, domain=None, range=Optional[str])
 
-slots.STRAININFO_GROUP_ID = Slot(uri=DDL.STRAININFO_GROUP_ID, name="STRAININFO_GROUP_ID", curie=DDL.curie('STRAININFO_GROUP_ID'),
-                      model_uri=DDL.STRAININFO_GROUP_ID, domain=None, range=Optional[int])
+slots.straininfo_group_id = Slot(uri=DDL.straininfo_group_id, name="straininfo_group_id", curie=DDL.curie('straininfo_group_id'),
+                      model_uri=DDL.straininfo_group_id, domain=None, range=Optional[int])
 
-slots.SOURCE = Slot(uri=DDL.SOURCE, name="SOURCE", curie=DDL.curie('SOURCE'),
-                      model_uri=DDL.SOURCE, domain=None, range=Optional[str])
+slots.source = Slot(uri=DDL.source, name="source", curie=DDL.curie('source'),
+                      model_uri=DDL.source, domain=None, range=Optional[str])
 
-slots.GOLD_CLASS = Slot(uri=DDL.GOLD_CLASS, name="GOLD_CLASS", curie=DDL.curie('GOLD_CLASS'),
-                      model_uri=DDL.GOLD_CLASS, domain=None, range=Optional[str])
+slots.gold_class = Slot(uri=DDL.gold_class, name="gold_class", curie=DDL.curie('gold_class'),
+                      model_uri=DDL.gold_class, domain=None, range=Optional[str])
 
-slots.GOLD_ORDER = Slot(uri=DDL.GOLD_ORDER, name="GOLD_ORDER", curie=DDL.curie('GOLD_ORDER'),
-                      model_uri=DDL.GOLD_ORDER, domain=None, range=Optional[str])
+slots.gold_order = Slot(uri=DDL.gold_order, name="gold_order", curie=DDL.curie('gold_order'),
+                      model_uri=DDL.gold_order, domain=None, range=Optional[str])
 
-slots.GOLD_FAMILY = Slot(uri=DDL.GOLD_FAMILY, name="GOLD_FAMILY", curie=DDL.curie('GOLD_FAMILY'),
-                      model_uri=DDL.GOLD_FAMILY, domain=None, range=Optional[str])
+slots.gold_family = Slot(uri=DDL.gold_family, name="gold_family", curie=DDL.curie('gold_family'),
+                      model_uri=DDL.gold_family, domain=None, range=Optional[str])
 
-slots.TAXONOMY_STATUS = Slot(uri=DDL.TAXONOMY_STATUS, name="TAXONOMY_STATUS", curie=DDL.curie('TAXONOMY_STATUS'),
-                      model_uri=DDL.TAXONOMY_STATUS, domain=None, range=Optional[str])
+slots.taxonomy_status = Slot(uri=DDL.taxonomy_status, name="taxonomy_status", curie=DDL.curie('taxonomy_status'),
+                      model_uri=DDL.taxonomy_status, domain=None, range=Optional[str])
 
-slots.SOIL_SAMPLE_BIOMASS = Slot(uri=DDL.SOIL_SAMPLE_BIOMASS, name="SOIL_SAMPLE_BIOMASS", curie=DDL.curie('SOIL_SAMPLE_BIOMASS'),
-                      model_uri=DDL.SOIL_SAMPLE_BIOMASS, domain=None, range=Optional[float])
+slots.soil_sample_biomass = Slot(uri=DDL.soil_sample_biomass, name="soil_sample_biomass", curie=DDL.curie('soil_sample_biomass'),
+                      model_uri=DDL.soil_sample_biomass, domain=None, range=Optional[float])
 
-slots.SOIL_SAMPLE_VOLUME = Slot(uri=DDL.SOIL_SAMPLE_VOLUME, name="SOIL_SAMPLE_VOLUME", curie=DDL.curie('SOIL_SAMPLE_VOLUME'),
-                      model_uri=DDL.SOIL_SAMPLE_VOLUME, domain=None, range=Optional[float])
+slots.soil_sample_volume = Slot(uri=DDL.soil_sample_volume, name="soil_sample_volume", curie=DDL.curie('soil_sample_volume'),
+                      model_uri=DDL.soil_sample_volume, domain=None, range=Optional[float])
 
-slots.IMG_BREADTH_CALC = Slot(uri=DDL.IMG_BREADTH_CALC, name="IMG_BREADTH_CALC", curie=DDL.curie('IMG_BREADTH_CALC'),
-                      model_uri=DDL.IMG_BREADTH_CALC, domain=None, range=Optional[float])
+slots.img_breadth_calc = Slot(uri=DDL.img_breadth_calc, name="img_breadth_calc", curie=DDL.curie('img_breadth_calc'),
+                      model_uri=DDL.img_breadth_calc, domain=None, range=Optional[float])
 
-slots.SAMPLE_COLLECTION_TEMPERATURE = Slot(uri=DDL.SAMPLE_COLLECTION_TEMPERATURE, name="SAMPLE_COLLECTION_TEMPERATURE", curie=DDL.curie('SAMPLE_COLLECTION_TEMPERATURE'),
-                      model_uri=DDL.SAMPLE_COLLECTION_TEMPERATURE, domain=None, range=Optional[float])
+slots.sample_collection_temperature = Slot(uri=DDL.sample_collection_temperature, name="sample_collection_temperature", curie=DDL.curie('sample_collection_temperature'),
+                      model_uri=DDL.sample_collection_temperature, domain=None, range=Optional[float])
 
-slots.SAMPLE_COLLECTION_TEMPERATURE2 = Slot(uri=DDL.SAMPLE_COLLECTION_TEMPERATURE2, name="SAMPLE_COLLECTION_TEMPERATURE2", curie=DDL.curie('SAMPLE_COLLECTION_TEMPERATURE2'),
-                      model_uri=DDL.SAMPLE_COLLECTION_TEMPERATURE2, domain=None, range=Optional[float])
+slots.sample_collection_temperature2 = Slot(uri=DDL.sample_collection_temperature2, name="sample_collection_temperature2", curie=DDL.curie('sample_collection_temperature2'),
+                      model_uri=DDL.sample_collection_temperature2, domain=None, range=Optional[float])
 
-slots.SUBSURFACE_DEPTH1 = Slot(uri=DDL.SUBSURFACE_DEPTH1, name="SUBSURFACE_DEPTH1", curie=DDL.curie('SUBSURFACE_DEPTH1'),
-                      model_uri=DDL.SUBSURFACE_DEPTH1, domain=None, range=Optional[float])
+slots.subsurface_depth1 = Slot(uri=DDL.subsurface_depth1, name="subsurface_depth1", curie=DDL.curie('subsurface_depth1'),
+                      model_uri=DDL.subsurface_depth1, domain=None, range=Optional[float])
 
-slots.PROJECT_NAME = Slot(uri=DDL.PROJECT_NAME, name="PROJECT_NAME", curie=DDL.curie('PROJECT_NAME'),
-                      model_uri=DDL.PROJECT_NAME, domain=None, range=Optional[str])
+slots.project_name = Slot(uri=DDL.project_name, name="project_name", curie=DDL.curie('project_name'),
+                      model_uri=DDL.project_name, domain=None, range=Optional[str])
 
-slots.SPECIMEN_ID = Slot(uri=DDL.SPECIMEN_ID, name="SPECIMEN_ID", curie=DDL.curie('SPECIMEN_ID'),
-                      model_uri=DDL.SPECIMEN_ID, domain=None, range=Optional[int])
+slots.specimen_id = Slot(uri=DDL.specimen_id, name="specimen_id", curie=DDL.curie('specimen_id'),
+                      model_uri=DDL.specimen_id, domain=None, range=Optional[int])
 
-slots.NUCLEIC_ACID = Slot(uri=DDL.NUCLEIC_ACID, name="NUCLEIC_ACID", curie=DDL.curie('NUCLEIC_ACID'),
-                      model_uri=DDL.NUCLEIC_ACID, domain=None, range=Optional[str])
+slots.nucleic_acid = Slot(uri=DDL.nucleic_acid, name="nucleic_acid", curie=DDL.curie('nucleic_acid'),
+                      model_uri=DDL.nucleic_acid, domain=None, range=Optional[str])
 
-slots.SUBMITTER_PROJECT_NAME = Slot(uri=DDL.SUBMITTER_PROJECT_NAME, name="SUBMITTER_PROJECT_NAME", curie=DDL.curie('SUBMITTER_PROJECT_NAME'),
-                      model_uri=DDL.SUBMITTER_PROJECT_NAME, domain=None, range=Optional[str])
+slots.submitter_project_name = Slot(uri=DDL.submitter_project_name, name="submitter_project_name", curie=DDL.curie('submitter_project_name'),
+                      model_uri=DDL.submitter_project_name, domain=None, range=Optional[str])
 
-slots.NCBI_PROJECT_NAME = Slot(uri=DDL.NCBI_PROJECT_NAME, name="NCBI_PROJECT_NAME", curie=DDL.curie('NCBI_PROJECT_NAME'),
-                      model_uri=DDL.NCBI_PROJECT_NAME, domain=None, range=Optional[str])
+slots.ncbi_project_name = Slot(uri=DDL.ncbi_project_name, name="ncbi_project_name", curie=DDL.curie('ncbi_project_name'),
+                      model_uri=DDL.ncbi_project_name, domain=None, range=Optional[str])
 
-slots.PMO_PROJECT_ID = Slot(uri=DDL.PMO_PROJECT_ID, name="PMO_PROJECT_ID", curie=DDL.curie('PMO_PROJECT_ID'),
-                      model_uri=DDL.PMO_PROJECT_ID, domain=None, range=Optional[int])
+slots.pmo_project_id = Slot(uri=DDL.pmo_project_id, name="pmo_project_id", curie=DDL.curie('pmo_project_id'),
+                      model_uri=DDL.pmo_project_id, domain=None, range=Optional[int])
 
-slots.ITS_SPID = Slot(uri=DDL.ITS_SPID, name="ITS_SPID", curie=DDL.curie('ITS_SPID'),
-                      model_uri=DDL.ITS_SPID, domain=None, range=Optional[float])
+slots.its_spid = Slot(uri=DDL.its_spid, name="its_spid", curie=DDL.curie('its_spid'),
+                      model_uri=DDL.its_spid, domain=None, range=Optional[float])
 
-slots.OLD_LEGACY_GOLD_ID = Slot(uri=DDL.OLD_LEGACY_GOLD_ID, name="OLD_LEGACY_GOLD_ID", curie=DDL.curie('OLD_LEGACY_GOLD_ID'),
-                      model_uri=DDL.OLD_LEGACY_GOLD_ID, domain=None, range=Optional[str])
+slots.old_legacy_gold_id = Slot(uri=DDL.old_legacy_gold_id, name="old_legacy_gold_id", curie=DDL.curie('old_legacy_gold_id'),
+                      model_uri=DDL.old_legacy_gold_id, domain=None, range=Optional[str])
 
-slots.LEGACY_GOLD_ID = Slot(uri=DDL.LEGACY_GOLD_ID, name="LEGACY_GOLD_ID", curie=DDL.curie('LEGACY_GOLD_ID'),
-                      model_uri=DDL.LEGACY_GOLD_ID, domain=None, range=Optional[str])
+slots.legacy_gold_id = Slot(uri=DDL.legacy_gold_id, name="legacy_gold_id", curie=DDL.curie('legacy_gold_id'),
+                      model_uri=DDL.legacy_gold_id, domain=None, range=Optional[str])
 
-slots.SEQUENCING_STATUS_ID = Slot(uri=DDL.SEQUENCING_STATUS_ID, name="SEQUENCING_STATUS_ID", curie=DDL.curie('SEQUENCING_STATUS_ID'),
-                      model_uri=DDL.SEQUENCING_STATUS_ID, domain=None, range=Optional[int])
+slots.sequencing_status_id = Slot(uri=DDL.sequencing_status_id, name="sequencing_status_id", curie=DDL.curie('sequencing_status_id'),
+                      model_uri=DDL.sequencing_status_id, domain=None, range=Optional[int])
 
-slots.SEQUENCING_QUALITY_ID = Slot(uri=DDL.SEQUENCING_QUALITY_ID, name="SEQUENCING_QUALITY_ID", curie=DDL.curie('SEQUENCING_QUALITY_ID'),
-                      model_uri=DDL.SEQUENCING_QUALITY_ID, domain=None, range=Optional[int])
+slots.sequencing_quality_id = Slot(uri=DDL.sequencing_quality_id, name="sequencing_quality_id", curie=DDL.curie('sequencing_quality_id'),
+                      model_uri=DDL.sequencing_quality_id, domain=None, range=Optional[int])
 
-slots.FINISHING_GOAL_ID = Slot(uri=DDL.FINISHING_GOAL_ID, name="FINISHING_GOAL_ID", curie=DDL.curie('FINISHING_GOAL_ID'),
-                      model_uri=DDL.FINISHING_GOAL_ID, domain=None, range=Optional[int])
+slots.finishing_goal_id = Slot(uri=DDL.finishing_goal_id, name="finishing_goal_id", curie=DDL.curie('finishing_goal_id'),
+                      model_uri=DDL.finishing_goal_id, domain=None, range=Optional[int])
 
-slots.SEQUENCING_COMMENTS = Slot(uri=DDL.SEQUENCING_COMMENTS, name="SEQUENCING_COMMENTS", curie=DDL.curie('SEQUENCING_COMMENTS'),
-                      model_uri=DDL.SEQUENCING_COMMENTS, domain=None, range=Optional[str])
+slots.sequencing_comments = Slot(uri=DDL.sequencing_comments, name="sequencing_comments", curie=DDL.curie('sequencing_comments'),
+                      model_uri=DDL.sequencing_comments, domain=None, range=Optional[str])
 
-slots.GC_PERCENT = Slot(uri=DDL.GC_PERCENT, name="GC_PERCENT", curie=DDL.curie('GC_PERCENT'),
-                      model_uri=DDL.GC_PERCENT, domain=None, range=Optional[float])
+slots.gc_percent = Slot(uri=DDL.gc_percent, name="gc_percent", curie=DDL.curie('gc_percent'),
+                      model_uri=DDL.gc_percent, domain=None, range=Optional[float])
 
-slots.CHROMOSOME_COUNT = Slot(uri=DDL.CHROMOSOME_COUNT, name="CHROMOSOME_COUNT", curie=DDL.curie('CHROMOSOME_COUNT'),
-                      model_uri=DDL.CHROMOSOME_COUNT, domain=None, range=Optional[float])
+slots.chromosome_count = Slot(uri=DDL.chromosome_count, name="chromosome_count", curie=DDL.curie('chromosome_count'),
+                      model_uri=DDL.chromosome_count, domain=None, range=Optional[float])
 
-slots.PLASMID_COUNT = Slot(uri=DDL.PLASMID_COUNT, name="PLASMID_COUNT", curie=DDL.curie('PLASMID_COUNT'),
-                      model_uri=DDL.PLASMID_COUNT, domain=None, range=Optional[float])
+slots.plasmid_count = Slot(uri=DDL.plasmid_count, name="plasmid_count", curie=DDL.curie('plasmid_count'),
+                      model_uri=DDL.plasmid_count, domain=None, range=Optional[float])
 
-slots.EST_COUNT = Slot(uri=DDL.EST_COUNT, name="EST_COUNT", curie=DDL.curie('EST_COUNT'),
-                      model_uri=DDL.EST_COUNT, domain=None, range=Optional[float])
+slots.est_count = Slot(uri=DDL.est_count, name="est_count", curie=DDL.curie('est_count'),
+                      model_uri=DDL.est_count, domain=None, range=Optional[float])
 
-slots.PROJECT_COMMENTS = Slot(uri=DDL.PROJECT_COMMENTS, name="PROJECT_COMMENTS", curie=DDL.curie('PROJECT_COMMENTS'),
-                      model_uri=DDL.PROJECT_COMMENTS, domain=None, range=Optional[str])
+slots.project_comments = Slot(uri=DDL.project_comments, name="project_comments", curie=DDL.curie('project_comments'),
+                      model_uri=DDL.project_comments, domain=None, range=Optional[str])
 
-slots.ITS_PROPOSAL_ID = Slot(uri=DDL.ITS_PROPOSAL_ID, name="ITS_PROPOSAL_ID", curie=DDL.curie('ITS_PROPOSAL_ID'),
-                      model_uri=DDL.ITS_PROPOSAL_ID, domain=None, range=Optional[int])
+slots.its_proposal_id = Slot(uri=DDL.its_proposal_id, name="its_proposal_id", curie=DDL.curie('its_proposal_id'),
+                      model_uri=DDL.its_proposal_id, domain=None, range=Optional[int])
 
-slots.GPTS_PROPOSAL_ID = Slot(uri=DDL.GPTS_PROPOSAL_ID, name="GPTS_PROPOSAL_ID", curie=DDL.curie('GPTS_PROPOSAL_ID'),
-                      model_uri=DDL.GPTS_PROPOSAL_ID, domain=None, range=Optional[int])
+slots.gpts_proposal_id = Slot(uri=DDL.gpts_proposal_id, name="gpts_proposal_id", curie=DDL.curie('gpts_proposal_id'),
+                      model_uri=DDL.gpts_proposal_id, domain=None, range=Optional[int])
 
-slots.NCBI_SRA_ID = Slot(uri=DDL.NCBI_SRA_ID, name="NCBI_SRA_ID", curie=DDL.curie('NCBI_SRA_ID'),
-                      model_uri=DDL.NCBI_SRA_ID, domain=None, range=Optional[str])
+slots.ncbi_sra_id = Slot(uri=DDL.ncbi_sra_id, name="ncbi_sra_id", curie=DDL.curie('ncbi_sra_id'),
+                      model_uri=DDL.ncbi_sra_id, domain=None, range=Optional[str])
 
-slots.LIBRARY_METHOD = Slot(uri=DDL.LIBRARY_METHOD, name="LIBRARY_METHOD", curie=DDL.curie('LIBRARY_METHOD'),
-                      model_uri=DDL.LIBRARY_METHOD, domain=None, range=Optional[str])
+slots.library_method = Slot(uri=DDL.library_method, name="library_method", curie=DDL.curie('library_method'),
+                      model_uri=DDL.library_method, domain=None, range=Optional[str])
 
-slots.READ_COUNT = Slot(uri=DDL.READ_COUNT, name="READ_COUNT", curie=DDL.curie('READ_COUNT'),
-                      model_uri=DDL.READ_COUNT, domain=None, range=Optional[str])
+slots.read_count = Slot(uri=DDL.read_count, name="read_count", curie=DDL.curie('read_count'),
+                      model_uri=DDL.read_count, domain=None, range=Optional[str])
 
-slots.VECTOR = Slot(uri=DDL.VECTOR, name="VECTOR", curie=DDL.curie('VECTOR'),
-                      model_uri=DDL.VECTOR, domain=None, range=Optional[str])
+slots.vector = Slot(uri=DDL.vector, name="vector", curie=DDL.curie('vector'),
+                      model_uri=DDL.vector, domain=None, range=Optional[str])
 
-slots.READ_SIZE = Slot(uri=DDL.READ_SIZE, name="READ_SIZE", curie=DDL.curie('READ_SIZE'),
-                      model_uri=DDL.READ_SIZE, domain=None, range=Optional[str])
+slots.read_size = Slot(uri=DDL.read_size, name="read_size", curie=DDL.curie('read_size'),
+                      model_uri=DDL.read_size, domain=None, range=Optional[str])
 
-slots.NCBI_LOCUS_TAG = Slot(uri=DDL.NCBI_LOCUS_TAG, name="NCBI_LOCUS_TAG", curie=DDL.curie('NCBI_LOCUS_TAG'),
-                      model_uri=DDL.NCBI_LOCUS_TAG, domain=None, range=Optional[str])
+slots.ncbi_locus_tag = Slot(uri=DDL.ncbi_locus_tag, name="ncbi_locus_tag", curie=DDL.curie('ncbi_locus_tag'),
+                      model_uri=DDL.ncbi_locus_tag, domain=None, range=Optional[str])
 
-slots.ASSEMBLY_ACCESSION = Slot(uri=DDL.ASSEMBLY_ACCESSION, name="ASSEMBLY_ACCESSION", curie=DDL.curie('ASSEMBLY_ACCESSION'),
-                      model_uri=DDL.ASSEMBLY_ACCESSION, domain=None, range=Optional[str])
+slots.assembly_accession = Slot(uri=DDL.assembly_accession, name="assembly_accession", curie=DDL.curie('assembly_accession'),
+                      model_uri=DDL.assembly_accession, domain=None, range=Optional[str])
 
-slots.NUCLEIC_ACID_ID = Slot(uri=DDL.NUCLEIC_ACID_ID, name="NUCLEIC_ACID_ID", curie=DDL.curie('NUCLEIC_ACID_ID'),
-                      model_uri=DDL.NUCLEIC_ACID_ID, domain=None, range=Optional[int])
+slots.nucleic_acid_id = Slot(uri=DDL.nucleic_acid_id, name="nucleic_acid_id", curie=DDL.curie('nucleic_acid_id'),
+                      model_uri=DDL.nucleic_acid_id, domain=None, range=Optional[int])
 
-slots.PROJECT_STATUS = Slot(uri=DDL.PROJECT_STATUS, name="PROJECT_STATUS", curie=DDL.curie('PROJECT_STATUS'),
-                      model_uri=DDL.PROJECT_STATUS, domain=None, range=Optional[str])
+slots.project_status = Slot(uri=DDL.project_status, name="project_status", curie=DDL.curie('project_status'),
+                      model_uri=DDL.project_status, domain=None, range=Optional[str])
 
-slots.MASTER_STUDY_ID = Slot(uri=DDL.MASTER_STUDY_ID, name="MASTER_STUDY_ID", curie=DDL.curie('MASTER_STUDY_ID'),
-                      model_uri=DDL.MASTER_STUDY_ID, domain=None, range=Optional[int])
+slots.master_study_id = Slot(uri=DDL.master_study_id, name="master_study_id", curie=DDL.curie('master_study_id'),
+                      model_uri=DDL.master_study_id, domain=None, range=Optional[int])
 
-slots.OTHER_PROJECT_NAMES = Slot(uri=DDL.OTHER_PROJECT_NAMES, name="OTHER_PROJECT_NAMES", curie=DDL.curie('OTHER_PROJECT_NAMES'),
-                      model_uri=DDL.OTHER_PROJECT_NAMES, domain=None, range=Optional[str])
+slots.other_project_names = Slot(uri=DDL.other_project_names, name="other_project_names", curie=DDL.curie('other_project_names'),
+                      model_uri=DDL.other_project_names, domain=None, range=Optional[str])
 
-slots.ITS_PROJECT_NAME = Slot(uri=DDL.ITS_PROJECT_NAME, name="ITS_PROJECT_NAME", curie=DDL.curie('ITS_PROJECT_NAME'),
-                      model_uri=DDL.ITS_PROJECT_NAME, domain=None, range=Optional[str])
+slots.its_project_name = Slot(uri=DDL.its_project_name, name="its_project_name", curie=DDL.curie('its_project_name'),
+                      model_uri=DDL.its_project_name, domain=None, range=Optional[str])
 
-slots.IS_SINGLE_CELL_MATERIAL = Slot(uri=DDL.IS_SINGLE_CELL_MATERIAL, name="IS_SINGLE_CELL_MATERIAL", curie=DDL.curie('IS_SINGLE_CELL_MATERIAL'),
-                      model_uri=DDL.IS_SINGLE_CELL_MATERIAL, domain=None, range=Optional[str])
+slots.is_single_cell_material = Slot(uri=DDL.is_single_cell_material, name="is_single_cell_material", curie=DDL.curie('is_single_cell_material'),
+                      model_uri=DDL.is_single_cell_material, domain=None, range=Optional[str])
 
-slots.ITS_SEQUENCING_PRODUCT_NAME = Slot(uri=DDL.ITS_SEQUENCING_PRODUCT_NAME, name="ITS_SEQUENCING_PRODUCT_NAME", curie=DDL.curie('ITS_SEQUENCING_PRODUCT_NAME'),
-                      model_uri=DDL.ITS_SEQUENCING_PRODUCT_NAME, domain=None, range=Optional[str])
+slots.its_sequencing_product_name = Slot(uri=DDL.its_sequencing_product_name, name="its_sequencing_product_name", curie=DDL.curie('its_sequencing_product_name'),
+                      model_uri=DDL.its_sequencing_product_name, domain=None, range=Optional[str])
 
-slots.PROJECT_MANAGER_ID = Slot(uri=DDL.PROJECT_MANAGER_ID, name="PROJECT_MANAGER_ID", curie=DDL.curie('PROJECT_MANAGER_ID'),
-                      model_uri=DDL.PROJECT_MANAGER_ID, domain=None, range=Optional[int])
+slots.project_manager_id = Slot(uri=DDL.project_manager_id, name="project_manager_id", curie=DDL.curie('project_manager_id'),
+                      model_uri=DDL.project_manager_id, domain=None, range=Optional[int])
 
-slots.LOW_QUALITY_GENOME = Slot(uri=DDL.LOW_QUALITY_GENOME, name="LOW_QUALITY_GENOME", curie=DDL.curie('LOW_QUALITY_GENOME'),
-                      model_uri=DDL.LOW_QUALITY_GENOME, domain=None, range=Optional[str])
+slots.low_quality_genome = Slot(uri=DDL.low_quality_genome, name="low_quality_genome", curie=DDL.curie('low_quality_genome'),
+                      model_uri=DDL.low_quality_genome, domain=None, range=Optional[str])
 
-slots.SEQUENCING_STRATEGY = Slot(uri=DDL.SEQUENCING_STRATEGY, name="SEQUENCING_STRATEGY", curie=DDL.curie('SEQUENCING_STRATEGY'),
-                      model_uri=DDL.SEQUENCING_STRATEGY, domain=None, range=Optional[str])
+slots.sequencing_strategy = Slot(uri=DDL.sequencing_strategy, name="sequencing_strategy", curie=DDL.curie('sequencing_strategy'),
+                      model_uri=DDL.sequencing_strategy, domain=None, range=Optional[str])
 
-slots.IS_JGI = Slot(uri=DDL.IS_JGI, name="IS_JGI", curie=DDL.curie('IS_JGI'),
-                      model_uri=DDL.IS_JGI, domain=None, range=Optional[str])
+slots.is_jgi = Slot(uri=DDL.is_jgi, name="is_jgi", curie=DDL.curie('is_jgi'),
+                      model_uri=DDL.is_jgi, domain=None, range=Optional[str])
 
-slots.SRA_SRS_ACCESSION = Slot(uri=DDL.SRA_SRS_ACCESSION, name="SRA_SRS_ACCESSION", curie=DDL.curie('SRA_SRS_ACCESSION'),
-                      model_uri=DDL.SRA_SRS_ACCESSION, domain=None, range=Optional[str])
+slots.sra_srs_accession = Slot(uri=DDL.sra_srs_accession, name="sra_srs_accession", curie=DDL.curie('sra_srs_accession'),
+                      model_uri=DDL.sra_srs_accession, domain=None, range=Optional[str])
 
-slots.SRA_SRX_ACCESSION = Slot(uri=DDL.SRA_SRX_ACCESSION, name="SRA_SRX_ACCESSION", curie=DDL.curie('SRA_SRX_ACCESSION'),
-                      model_uri=DDL.SRA_SRX_ACCESSION, domain=None, range=Optional[str])
+slots.sra_srx_accession = Slot(uri=DDL.sra_srx_accession, name="sra_srx_accession", curie=DDL.curie('sra_srx_accession'),
+                      model_uri=DDL.sra_srx_accession, domain=None, range=Optional[str])
 
-slots.FUNDING_PROGRAM = Slot(uri=DDL.FUNDING_PROGRAM, name="FUNDING_PROGRAM", curie=DDL.curie('FUNDING_PROGRAM'),
-                      model_uri=DDL.FUNDING_PROGRAM, domain=None, range=Optional[str])
+slots.funding_program = Slot(uri=DDL.funding_program, name="funding_program", curie=DDL.curie('funding_program'),
+                      model_uri=DDL.funding_program, domain=None, range=Optional[str])
 
-slots.FUNDING_YEAR = Slot(uri=DDL.FUNDING_YEAR, name="FUNDING_YEAR", curie=DDL.curie('FUNDING_YEAR'),
-                      model_uri=DDL.FUNDING_YEAR, domain=None, range=Optional[float])
+slots.funding_year = Slot(uri=DDL.funding_year, name="funding_year", curie=DDL.curie('funding_year'),
+                      model_uri=DDL.funding_year, domain=None, range=Optional[float])
 
-slots.ITS_SAMPLE_ID = Slot(uri=DDL.ITS_SAMPLE_ID, name="ITS_SAMPLE_ID", curie=DDL.curie('ITS_SAMPLE_ID'),
-                      model_uri=DDL.ITS_SAMPLE_ID, domain=None, range=Optional[int])
+slots.its_sample_id = Slot(uri=DDL.its_sample_id, name="its_sample_id", curie=DDL.curie('its_sample_id'),
+                      model_uri=DDL.its_sample_id, domain=None, range=Optional[int])
 
-slots.ITS_SAMPLE_GROUP_NAME = Slot(uri=DDL.ITS_SAMPLE_GROUP_NAME, name="ITS_SAMPLE_GROUP_NAME", curie=DDL.curie('ITS_SAMPLE_GROUP_NAME'),
-                      model_uri=DDL.ITS_SAMPLE_GROUP_NAME, domain=None, range=Optional[str])
+slots.its_sample_group_name = Slot(uri=DDL.its_sample_group_name, name="its_sample_group_name", curie=DDL.curie('its_sample_group_name'),
+                      model_uri=DDL.its_sample_group_name, domain=None, range=Optional[str])
 
-slots.EXPERIMENTAL_CONDITIONS = Slot(uri=DDL.EXPERIMENTAL_CONDITIONS, name="EXPERIMENTAL_CONDITIONS", curie=DDL.curie('EXPERIMENTAL_CONDITIONS'),
-                      model_uri=DDL.EXPERIMENTAL_CONDITIONS, domain=None, range=Optional[str])
+slots.experimental_conditions = Slot(uri=DDL.experimental_conditions, name="experimental_conditions", curie=DDL.curie('experimental_conditions'),
+                      model_uri=DDL.experimental_conditions, domain=None, range=Optional[str])
 
-slots.SAMPLE_GROUP_NAME = Slot(uri=DDL.SAMPLE_GROUP_NAME, name="SAMPLE_GROUP_NAME", curie=DDL.curie('SAMPLE_GROUP_NAME'),
-                      model_uri=DDL.SAMPLE_GROUP_NAME, domain=None, range=Optional[str])
+slots.sample_group_name = Slot(uri=DDL.sample_group_name, name="sample_group_name", curie=DDL.curie('sample_group_name'),
+                      model_uri=DDL.sample_group_name, domain=None, range=Optional[str])
 
-slots.ITS_SAMPLE_NAME = Slot(uri=DDL.ITS_SAMPLE_NAME, name="ITS_SAMPLE_NAME", curie=DDL.curie('ITS_SAMPLE_NAME'),
-                      model_uri=DDL.ITS_SAMPLE_NAME, domain=None, range=Optional[str])
+slots.its_sample_name = Slot(uri=DDL.its_sample_name, name="its_sample_name", curie=DDL.curie('its_sample_name'),
+                      model_uri=DDL.its_sample_name, domain=None, range=Optional[str])
 
-slots.PROJECT_SUBTYPE = Slot(uri=DDL.PROJECT_SUBTYPE, name="PROJECT_SUBTYPE", curie=DDL.curie('PROJECT_SUBTYPE'),
-                      model_uri=DDL.PROJECT_SUBTYPE, domain=None, range=Optional[str])
+slots.project_subtype = Slot(uri=DDL.project_subtype, name="project_subtype", curie=DDL.curie('project_subtype'),
+                      model_uri=DDL.project_subtype, domain=None, range=Optional[str])
 
-slots.SEQUENCING_STRATEGY_FULL = Slot(uri=DDL.SEQUENCING_STRATEGY_FULL, name="SEQUENCING_STRATEGY_FULL", curie=DDL.curie('SEQUENCING_STRATEGY_FULL'),
-                      model_uri=DDL.SEQUENCING_STRATEGY_FULL, domain=None, range=Optional[str])
+slots.sequencing_strategy_full = Slot(uri=DDL.sequencing_strategy_full, name="sequencing_strategy_full", curie=DDL.curie('sequencing_strategy_full'),
+                      model_uri=DDL.sequencing_strategy_full, domain=None, range=Optional[str])
 
-slots.IS_APPROVED = Slot(uri=DDL.IS_APPROVED, name="IS_APPROVED", curie=DDL.curie('IS_APPROVED'),
-                      model_uri=DDL.IS_APPROVED, domain=None, range=Optional[str])
+slots.is_approved = Slot(uri=DDL.is_approved, name="is_approved", curie=DDL.curie('is_approved'),
+                      model_uri=DDL.is_approved, domain=None, range=Optional[str])
 
-slots.IS_LOCKED = Slot(uri=DDL.IS_LOCKED, name="IS_LOCKED", curie=DDL.curie('IS_LOCKED'),
-                      model_uri=DDL.IS_LOCKED, domain=None, range=Optional[str])
+slots.is_locked = Slot(uri=DDL.is_locked, name="is_locked", curie=DDL.curie('is_locked'),
+                      model_uri=DDL.is_locked, domain=None, range=Optional[str])
 
-slots.GPTS_SAMPLE_ID = Slot(uri=DDL.GPTS_SAMPLE_ID, name="GPTS_SAMPLE_ID", curie=DDL.curie('GPTS_SAMPLE_ID'),
-                      model_uri=DDL.GPTS_SAMPLE_ID, domain=None, range=Optional[int])
+slots.gpts_sample_id = Slot(uri=DDL.gpts_sample_id, name="gpts_sample_id", curie=DDL.curie('gpts_sample_id'),
+                      model_uri=DDL.gpts_sample_id, domain=None, range=Optional[int])
 
-slots.GPTS_DISAMBIGUATOR = Slot(uri=DDL.GPTS_DISAMBIGUATOR, name="GPTS_DISAMBIGUATOR", curie=DDL.curie('GPTS_DISAMBIGUATOR'),
-                      model_uri=DDL.GPTS_DISAMBIGUATOR, domain=None, range=Optional[str])
+slots.gpts_disambiguator = Slot(uri=DDL.gpts_disambiguator, name="gpts_disambiguator", curie=DDL.curie('gpts_disambiguator'),
+                      model_uri=DDL.gpts_disambiguator, domain=None, range=Optional[str])
 
-slots.ANALYSIS_PROJECT_ID = Slot(uri=DDL.ANALYSIS_PROJECT_ID, name="ANALYSIS_PROJECT_ID", curie=DDL.curie('ANALYSIS_PROJECT_ID'),
-                      model_uri=DDL.ANALYSIS_PROJECT_ID, domain=None, range=Optional[int])
+slots.analysis_project_id = Slot(uri=DDL.analysis_project_id, name="analysis_project_id", curie=DDL.curie('analysis_project_id'),
+                      model_uri=DDL.analysis_project_id, domain=None, range=Optional[int])
 
-slots.INSTITUTION_ID = Slot(uri=DDL.INSTITUTION_ID, name="INSTITUTION_ID", curie=DDL.curie('INSTITUTION_ID'),
-                      model_uri=DDL.INSTITUTION_ID, domain=None, range=Optional[int])
+slots.institution_id = Slot(uri=DDL.institution_id, name="institution_id", curie=DDL.curie('institution_id'),
+                      model_uri=DDL.institution_id, domain=None, range=Optional[int])
 
-slots.PUBLICATION_ID = Slot(uri=DDL.PUBLICATION_ID, name="PUBLICATION_ID", curie=DDL.curie('PUBLICATION_ID'),
-                      model_uri=DDL.PUBLICATION_ID, domain=None, range=Optional[int])
+slots.publication_id = Slot(uri=DDL.publication_id, name="publication_id", curie=DDL.curie('publication_id'),
+                      model_uri=DDL.publication_id, domain=None, range=Optional[int])
 
-slots.RELEVANCE_ID = Slot(uri=DDL.RELEVANCE_ID, name="RELEVANCE_ID", curie=DDL.curie('RELEVANCE_ID'),
-                      model_uri=DDL.RELEVANCE_ID, domain=None, range=Optional[int])
+slots.relevance_id = Slot(uri=DDL.relevance_id, name="relevance_id", curie=DDL.curie('relevance_id'),
+                      model_uri=DDL.relevance_id, domain=None, range=Optional[int])
 
-slots.SEQUENCING_METHOD_ID = Slot(uri=DDL.SEQUENCING_METHOD_ID, name="SEQUENCING_METHOD_ID", curie=DDL.curie('SEQUENCING_METHOD_ID'),
-                      model_uri=DDL.SEQUENCING_METHOD_ID, domain=None, range=Optional[int])
+slots.sequencing_method_id = Slot(uri=DDL.sequencing_method_id, name="sequencing_method_id", curie=DDL.curie('sequencing_method_id'),
+                      model_uri=DDL.sequencing_method_id, domain=None, range=Optional[int])
 
-slots.DOI = Slot(uri=DDL.DOI, name="DOI", curie=DDL.curie('DOI'),
-                      model_uri=DDL.DOI, domain=None, range=Optional[str])
+slots.doi = Slot(uri=DDL.doi, name="doi", curie=DDL.curie('doi'),
+                      model_uri=DDL.doi, domain=None, range=Optional[str])
 
-slots.PUBMED_ID = Slot(uri=DDL.PUBMED_ID, name="PUBMED_ID", curie=DDL.curie('PUBMED_ID'),
-                      model_uri=DDL.PUBMED_ID, domain=None, range=Optional[int])
+slots.pubmed_id = Slot(uri=DDL.pubmed_id, name="pubmed_id", curie=DDL.curie('pubmed_id'),
+                      model_uri=DDL.pubmed_id, domain=None, range=Optional[int])
 
-slots.JOURNAL_ID = Slot(uri=DDL.JOURNAL_ID, name="JOURNAL_ID", curie=DDL.curie('JOURNAL_ID'),
-                      model_uri=DDL.JOURNAL_ID, domain=None, range=Optional[int])
+slots.journal_id = Slot(uri=DDL.journal_id, name="journal_id", curie=DDL.curie('journal_id'),
+                      model_uri=DDL.journal_id, domain=None, range=Optional[int])
 
-slots.PUBMODEL = Slot(uri=DDL.PUBMODEL, name="PUBMODEL", curie=DDL.curie('PUBMODEL'),
-                      model_uri=DDL.PUBMODEL, domain=None, range=Optional[str])
+slots.pubmodel = Slot(uri=DDL.pubmodel, name="pubmodel", curie=DDL.curie('pubmodel'),
+                      model_uri=DDL.pubmodel, domain=None, range=Optional[str])
 
-slots.VOLUME = Slot(uri=DDL.VOLUME, name="VOLUME", curie=DDL.curie('VOLUME'),
-                      model_uri=DDL.VOLUME, domain=None, range=Optional[str])
+slots.volume = Slot(uri=DDL.volume, name="volume", curie=DDL.curie('volume'),
+                      model_uri=DDL.volume, domain=None, range=Optional[str])
 
-slots.ISSUE = Slot(uri=DDL.ISSUE, name="ISSUE", curie=DDL.curie('ISSUE'),
-                      model_uri=DDL.ISSUE, domain=None, range=Optional[str])
+slots.issue = Slot(uri=DDL.issue, name="issue", curie=DDL.curie('issue'),
+                      model_uri=DDL.issue, domain=None, range=Optional[str])
 
-slots.PAGE = Slot(uri=DDL.PAGE, name="PAGE", curie=DDL.curie('PAGE'),
-                      model_uri=DDL.PAGE, domain=None, range=Optional[str])
+slots.page = Slot(uri=DDL.page, name="page", curie=DDL.curie('page'),
+                      model_uri=DDL.page, domain=None, range=Optional[str])
 
-slots.PUBLICATION_DATE = Slot(uri=DDL.PUBLICATION_DATE, name="PUBLICATION_DATE", curie=DDL.curie('PUBLICATION_DATE'),
-                      model_uri=DDL.PUBLICATION_DATE, domain=None, range=Optional[str])
+slots.publication_date = Slot(uri=DDL.publication_date, name="publication_date", curie=DDL.curie('publication_date'),
+                      model_uri=DDL.publication_date, domain=None, range=Optional[str])
 
-slots.ABSTRACT = Slot(uri=DDL.ABSTRACT, name="ABSTRACT", curie=DDL.curie('ABSTRACT'),
-                      model_uri=DDL.ABSTRACT, domain=None, range=Optional[str])
+slots.abstract = Slot(uri=DDL.abstract, name="abstract", curie=DDL.curie('abstract'),
+                      model_uri=DDL.abstract, domain=None, range=Optional[str])
 
-slots.AFFILIATION = Slot(uri=DDL.AFFILIATION, name="AFFILIATION", curie=DDL.curie('AFFILIATION'),
-                      model_uri=DDL.AFFILIATION, domain=None, range=Optional[str])
+slots.affiliation = Slot(uri=DDL.affiliation, name="affiliation", curie=DDL.curie('affiliation'),
+                      model_uri=DDL.affiliation, domain=None, range=Optional[str])
 
-slots.LAST_AUTHOR_ID = Slot(uri=DDL.LAST_AUTHOR_ID, name="LAST_AUTHOR_ID", curie=DDL.curie('LAST_AUTHOR_ID'),
-                      model_uri=DDL.LAST_AUTHOR_ID, domain=None, range=Optional[int])
+slots.last_author_id = Slot(uri=DDL.last_author_id, name="last_author_id", curie=DDL.curie('last_author_id'),
+                      model_uri=DDL.last_author_id, domain=None, range=Optional[int])
 
-slots.FIRST_AUTHOR_ID = Slot(uri=DDL.FIRST_AUTHOR_ID, name="FIRST_AUTHOR_ID", curie=DDL.curie('FIRST_AUTHOR_ID'),
-                      model_uri=DDL.FIRST_AUTHOR_ID, domain=None, range=Optional[int])
+slots.first_author_id = Slot(uri=DDL.first_author_id, name="first_author_id", curie=DDL.curie('first_author_id'),
+                      model_uri=DDL.first_author_id, domain=None, range=Optional[int])
 
-slots.STUDY_NAME = Slot(uri=DDL.STUDY_NAME, name="STUDY_NAME", curie=DDL.curie('STUDY_NAME'),
-                      model_uri=DDL.STUDY_NAME, domain=None, range=Optional[str])
+slots.study_name = Slot(uri=DDL.study_name, name="study_name", curie=DDL.curie('study_name'),
+                      model_uri=DDL.study_name, domain=None, range=Optional[str])
 
-slots.NCBI_PROJECT_ID = Slot(uri=DDL.NCBI_PROJECT_ID, name="NCBI_PROJECT_ID", curie=DDL.curie('NCBI_PROJECT_ID'),
-                      model_uri=DDL.NCBI_PROJECT_ID, domain=None, range=Optional[int])
+slots.ncbi_project_id = Slot(uri=DDL.ncbi_project_id, name="ncbi_project_id", curie=DDL.curie('ncbi_project_id'),
+                      model_uri=DDL.ncbi_project_id, domain=None, range=Optional[int])
 
-slots.CONTACT_ID = Slot(uri=DDL.CONTACT_ID, name="CONTACT_ID", curie=DDL.curie('CONTACT_ID'),
-                      model_uri=DDL.CONTACT_ID, domain=None, range=Optional[int])
+slots.contact_id = Slot(uri=DDL.contact_id, name="contact_id", curie=DDL.curie('contact_id'),
+                      model_uri=DDL.contact_id, domain=None, range=Optional[int])
 
-slots.LAST_MOD_BY = Slot(uri=DDL.LAST_MOD_BY, name="LAST_MOD_BY", curie=DDL.curie('LAST_MOD_BY'),
-                      model_uri=DDL.LAST_MOD_BY, domain=None, range=Optional[float])
+slots.last_mod_by = Slot(uri=DDL.last_mod_by, name="last_mod_by", curie=DDL.curie('last_mod_by'),
+                      model_uri=DDL.last_mod_by, domain=None, range=Optional[float])
 
-slots.BIOPROJECT_NAME = Slot(uri=DDL.BIOPROJECT_NAME, name="BIOPROJECT_NAME", curie=DDL.curie('BIOPROJECT_NAME'),
-                      model_uri=DDL.BIOPROJECT_NAME, domain=None, range=Optional[str])
+slots.bioproject_name = Slot(uri=DDL.bioproject_name, name="bioproject_name", curie=DDL.curie('bioproject_name'),
+                      model_uri=DDL.bioproject_name, domain=None, range=Optional[str])
 
-slots.GOLD_STUDY_NAME = Slot(uri=DDL.GOLD_STUDY_NAME, name="GOLD_STUDY_NAME", curie=DDL.curie('GOLD_STUDY_NAME'),
-                      model_uri=DDL.GOLD_STUDY_NAME, domain=None, range=Optional[str])
+slots.gold_study_name = Slot(uri=DDL.gold_study_name, name="gold_study_name", curie=DDL.curie('gold_study_name'),
+                      model_uri=DDL.gold_study_name, domain=None, range=Optional[str])
 
-slots.METAGENOMIC = Slot(uri=DDL.METAGENOMIC, name="METAGENOMIC", curie=DDL.curie('METAGENOMIC'),
-                      model_uri=DDL.METAGENOMIC, domain=None, range=Optional[str])
+slots.metagenomic = Slot(uri=DDL.metagenomic, name="metagenomic", curie=DDL.curie('metagenomic'),
+                      model_uri=DDL.metagenomic, domain=None, range=Optional[str])
 
-slots.STUDY_TYPE_ID = Slot(uri=DDL.STUDY_TYPE_ID, name="STUDY_TYPE_ID", curie=DDL.curie('STUDY_TYPE_ID'),
-                      model_uri=DDL.STUDY_TYPE_ID, domain=None, range=Optional[int])
+slots.study_type_id = Slot(uri=DDL.study_type_id, name="study_type_id", curie=DDL.curie('study_type_id'),
+                      model_uri=DDL.study_type_id, domain=None, range=Optional[int])
 
-slots.OWNER_ID = Slot(uri=DDL.OWNER_ID, name="OWNER_ID", curie=DDL.curie('OWNER_ID'),
-                      model_uri=DDL.OWNER_ID, domain=None, range=Optional[int])
+slots.owner_id = Slot(uri=DDL.owner_id, name="owner_id", curie=DDL.curie('owner_id'),
+                      model_uri=DDL.owner_id, domain=None, range=Optional[int])
 
-slots.PUBLIC_BIOSAMPLE_COUNT = Slot(uri=DDL.PUBLIC_BIOSAMPLE_COUNT, name="PUBLIC_BIOSAMPLE_COUNT", curie=DDL.curie('PUBLIC_BIOSAMPLE_COUNT'),
-                      model_uri=DDL.PUBLIC_BIOSAMPLE_COUNT, domain=None, range=Optional[float])
+slots.public_biosample_count = Slot(uri=DDL.public_biosample_count, name="public_biosample_count", curie=DDL.curie('public_biosample_count'),
+                      model_uri=DDL.public_biosample_count, domain=None, range=Optional[float])
 
-slots.ADMIN_BIOSAMPLE_COUNT = Slot(uri=DDL.ADMIN_BIOSAMPLE_COUNT, name="ADMIN_BIOSAMPLE_COUNT", curie=DDL.curie('ADMIN_BIOSAMPLE_COUNT'),
-                      model_uri=DDL.ADMIN_BIOSAMPLE_COUNT, domain=None, range=Optional[float])
+slots.admin_biosample_count = Slot(uri=DDL.admin_biosample_count, name="admin_biosample_count", curie=DDL.curie('admin_biosample_count'),
+                      model_uri=DDL.admin_biosample_count, domain=None, range=Optional[float])
 
-slots.IS_GEBA = Slot(uri=DDL.IS_GEBA, name="IS_GEBA", curie=DDL.curie('IS_GEBA'),
-                      model_uri=DDL.IS_GEBA, domain=None, range=Optional[str])
+slots.is_geba = Slot(uri=DDL.is_geba, name="is_geba", curie=DDL.curie('is_geba'),
+                      model_uri=DDL.is_geba, domain=None, range=Optional[str])
 
-slots.IS_HMP = Slot(uri=DDL.IS_HMP, name="IS_HMP", curie=DDL.curie('IS_HMP'),
-                      model_uri=DDL.IS_HMP, domain=None, range=Optional[str])
+slots.is_hmp = Slot(uri=DDL.is_hmp, name="is_hmp", curie=DDL.curie('is_hmp'),
+                      model_uri=DDL.is_hmp, domain=None, range=Optional[str])

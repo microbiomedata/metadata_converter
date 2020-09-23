@@ -1,5 +1,5 @@
 # Auto generated from kbase.yaml by pythongen.py version: 0.4.0
-# Generation date: 2020-06-26 16:36
+# Generation date: 2020-09-22 22:52
 # Schema: kbase
 #
 # id: https://microbiomedata/schema/kbase

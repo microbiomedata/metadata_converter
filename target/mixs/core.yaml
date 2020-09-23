@@ -1,5 +1,6 @@
 id: https://microbiomedata/schema/core
-name: NMDC Schema Core Types
+name: NMDC-Core
+title: NMDC Schema Core Types
 description: >-
   Schema for National Microbiome Data Collaborative (NMDC), Core Types
 license: https://creativecommons.org/publicdomain/zero/1.0/
@@ -34,6 +35,15 @@ subsets:
   soil: {}
 
 types:
+
+  bytes:
+    description: >-
+      An integer value that corresponds to a size in bytes
+    base: int
+    uri: xsd:int
+    see_also:
+      - UO:0000233
+  
   decimal degree:
     description: >-
       A decimal degree expresses latitude or longitude as decimal fractions.
@@ -232,6 +242,8 @@ slots:
   has unit:
     description: >-
       Links a quantity value to a unit
+    aliases:
+      - scale
     range: unit
     mappings:
       - qud:unit

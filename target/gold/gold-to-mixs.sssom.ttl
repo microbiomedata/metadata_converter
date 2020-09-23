@@ -1,0 +1,745 @@
+@prefix : <http://example.org/sssom/> .
+@prefix gold.vocab: <https://microbiomedata/schema/ddl/> .
+@prefix mixs: <https://microbiomedata/schema/mixs> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core> .
+@prefix sssom: <http://example.org/sssom/> .
+
+gold.vocab:altitude skos:exactMatch mixs:alt .
+
+gold.vocab:chlorophyll_concentration skos:exactMatch mixs:chlorophyll .
+
+gold.vocab:geographic_location skos:exactMatch mixs:geo_loc_name .
+
+gold.vocab:nitrate_concentration skos:exactMatch mixs:nitrate .
+
+gold.vocab:oxygen_concentration skos:exactMatch mixs:diss_oxygen .
+
+gold.vocab:salinity_concentration skos:exactMatch mixs:salinity .
+
+gold.vocab:sample_weight_dna_ext skos:exactMatch mixs:samp_vol_we_dna_ext .
+
+gold.vocab:soil_agrochem_addition skos:exactMatch mixs:agrochem_addition .
+
+gold.vocab:soil_aluminum_sat skos:exactMatch mixs:al_sat .
+
+gold.vocab:soil_aluminum_sat_method skos:exactMatch mixs:al_sat_meth .
+
+gold.vocab:soil_crop_rotation skos:exactMatch mixs:crop_rotation .
+
+gold.vocab:soil_curr_land_use skos:exactMatch mixs:cur_land_use .
+
+gold.vocab:soil_curr_vegitation skos:exactMatch mixs:cur_vegetation .
+
+gold.vocab:soil_curr_vegitation_method skos:exactMatch mixs:cur_vegetation_meth .
+
+gold.vocab:soil_drainage_class skos:exactMatch mixs:drainage_class .
+
+gold.vocab:soil_extreme_event skos:exactMatch mixs:extreme_event .
+
+gold.vocab:soil_fao_class skos:exactMatch mixs:fao_class .
+
+gold.vocab:soil_fire skos:exactMatch mixs:fire .
+
+gold.vocab:soil_flodding skos:exactMatch mixs:flooding .
+
+gold.vocab:soil_heavy_metals skos:exactMatch mixs:heavy_metals .
+
+gold.vocab:soil_heavy_metals_method skos:exactMatch mixs:heavy_metals_meth .
+
+gold.vocab:soil_horizon skos:exactMatch mixs:horizon .
+
+gold.vocab:soil_horizon_method skos:exactMatch mixs:horizon_meth .
+
+gold.vocab:soil_link_addit_analys skos:exactMatch mixs:link_addit_analys .
+
+gold.vocab:soil_link_class_info skos:exactMatch mixs:link_class_info .
+
+gold.vocab:soil_link_climate_info skos:exactMatch mixs:link_climate_info .
+
+gold.vocab:soil_local_class skos:exactMatch mixs:local_class .
+
+gold.vocab:soil_local_class_method skos:exactMatch mixs:local_class_meth .
+
+gold.vocab:soil_microbial_biomass skos:exactMatch mixs:microbial_biomass .
+
+gold.vocab:soil_microbial_biomass_method skos:exactMatch mixs:microbial_biomass_meth .
+
+gold.vocab:soil_ph_method skos:exactMatch mixs:ph_meth .
+
+gold.vocab:soil_pool_dna_extracts skos:exactMatch mixs:pool_dna_extracts .
+
+gold.vocab:soil_prev_land_use skos:exactMatch mixs:previous_land_use .
+
+gold.vocab:soil_prev_land_use_meth skos:exactMatch mixs:previous_land_use_meth .
+
+gold.vocab:soil_profile_position skos:exactMatch mixs:profile_position .
+
+gold.vocab:soil_salinity_method skos:exactMatch mixs:salinity_meth .
+
+gold.vocab:soil_seiving skos:exactMatch mixs:sieving .
+
+gold.vocab:soil_slope_aspect skos:exactMatch mixs:slope_aspect .
+
+gold.vocab:soil_slope_gradient skos:exactMatch mixs:slope_gradient .
+
+gold.vocab:soil_store_condition skos:exactMatch mixs:store_cond .
+
+gold.vocab:soil_texture skos:exactMatch mixs:texture .
+
+gold.vocab:soil_texture_method skos:exactMatch mixs:texture_meth .
+
+gold.vocab:soil_tillage skos:exactMatch mixs:tillage .
+
+gold.vocab:soil_tot_n_method skos:exactMatch mixs:tot_nitro_content_meth .
+
+gold.vocab:soil_tot_org_c_method skos:exactMatch mixs:tot_org_c_meth .
+
+gold.vocab:soil_type skos:exactMatch mixs:soil_type .
+
+gold.vocab:soil_type_method skos:exactMatch mixs:soil_type_meth .
+
+gold.vocab:soil_water_content skos:exactMatch mixs:water_content .
+
+gold.vocab:soil_water_content_soil_meth skos:exactMatch mixs:water_content_soil_meth .
+
+gold.vocab:tot_nitrogen skos:exactMatch mixs:tot_nitro_content .
+
+gold.vocab:tot_org_carbon skos:exactMatch mixs:tot_org_carb .
+
+gold.vocab:soil_annual_season_precpt skos:closeMatch mixs:annual_precpt,
+        mixs:season_precpt .
+
+gold.vocab:soil_annual_season_temp skos:closeMatch mixs:annual_temp,
+        mixs:season_temp .
+
+gold.vocab:soil_misc_param skos:exactMatch mixs:misc_param .
+
+[] a sssom:MappingSet ;
+    sssom:comment "." ;
+    sssom:confidence "1.0"^^<xsd:double> ;
+    sssom:mappings [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "geo_loc_name" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "geographic_location" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:geographic_location ;
+            owl:annotatedTarget mixs:geo_loc_name ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "profile_position" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_profile_position" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_profile_position ;
+            owl:annotatedTarget mixs:profile_position ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "crop_rotation" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_crop_rotation" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_crop_rotation ;
+            owl:annotatedTarget mixs:crop_rotation ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "tot_org_carb" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "tot_org_carbon" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:tot_org_carbon ;
+            owl:annotatedTarget mixs:tot_org_carb ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "extreme_event" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_extreme_event" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_extreme_event ;
+            owl:annotatedTarget mixs:extreme_event ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "local_class" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_local_class" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_local_class ;
+            owl:annotatedTarget mixs:local_class ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "season_temp" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_annual_season_temp" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:closeMatch ;
+            owl:annotatedSource gold.vocab:soil_annual_season_temp ;
+            owl:annotatedTarget mixs:season_temp ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "horizon" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_horizon" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_horizon ;
+            owl:annotatedTarget mixs:horizon ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "texture" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_texture" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_texture ;
+            owl:annotatedTarget mixs:texture ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "flooding" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_flodding" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_flodding ;
+            owl:annotatedTarget mixs:flooding ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "local_class_meth" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_local_class_method" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_local_class_method ;
+            owl:annotatedTarget mixs:local_class_meth ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "samp_vol_we_dna_ext" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "sample_weight_dna_ext" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:sample_weight_dna_ext ;
+            owl:annotatedTarget mixs:samp_vol_we_dna_ext ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "previous_land_use" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_prev_land_use" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_prev_land_use ;
+            owl:annotatedTarget mixs:previous_land_use ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "tot_nitro_content_meth" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_tot_n_method" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_tot_n_method ;
+            owl:annotatedTarget mixs:tot_nitro_content_meth ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "microbial_biomass_meth" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_microbial_biomass_method" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_microbial_biomass_method ;
+            owl:annotatedTarget mixs:microbial_biomass_meth ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "annual_precpt" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_annual_season_precpt " ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:closeMatch ;
+            owl:annotatedSource gold.vocab:soil_annual_season_precpt ;
+            owl:annotatedTarget mixs:annual_precpt ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "tillage" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_tillage" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_tillage ;
+            owl:annotatedTarget mixs:tillage ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "misc_param" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_misc_param" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_misc_param ;
+            owl:annotatedTarget mixs:misc_param ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "annual_temp" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_annual_season_temp" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:closeMatch ;
+            owl:annotatedSource gold.vocab:soil_annual_season_temp ;
+            owl:annotatedTarget mixs:annual_temp ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "texture_meth" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_texture_method" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_texture_method ;
+            owl:annotatedTarget mixs:texture_meth ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "sieving" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_seiving" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_seiving ;
+            owl:annotatedTarget mixs:sieving ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "cur_vegetation" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_curr_vegitation" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_curr_vegitation ;
+            owl:annotatedTarget mixs:cur_vegetation ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "nitrate" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "nitrate_concentration" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:nitrate_concentration ;
+            owl:annotatedTarget mixs:nitrate ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "slope_gradient" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_slope_gradient" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_slope_gradient ;
+            owl:annotatedTarget mixs:slope_gradient ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "alt" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "altitude" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:altitude ;
+            owl:annotatedTarget mixs:alt ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "horizon_meth" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_horizon_method" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_horizon_method ;
+            owl:annotatedTarget mixs:horizon_meth ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "fao_class" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_fao_class" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_fao_class ;
+            owl:annotatedTarget mixs:fao_class ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "salinity" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "salinity_concentration" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:salinity_concentration ;
+            owl:annotatedTarget mixs:salinity ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "link_climate_info" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_link_climate_info" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_link_climate_info ;
+            owl:annotatedTarget mixs:link_climate_info ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "tot_org_c_meth" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_tot_org_c_method" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_tot_org_c_method ;
+            owl:annotatedTarget mixs:tot_org_c_meth ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "drainage_class" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_drainage_class" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_drainage_class ;
+            owl:annotatedTarget mixs:drainage_class ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "microbial_biomass" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_microbial_biomass" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_microbial_biomass ;
+            owl:annotatedTarget mixs:microbial_biomass ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "season_precpt" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_annual_season_precpt " ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:closeMatch ;
+            owl:annotatedSource gold.vocab:soil_annual_season_precpt ;
+            owl:annotatedTarget mixs:season_precpt ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "cur_land_use" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_curr_land_use" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_curr_land_use ;
+            owl:annotatedTarget mixs:cur_land_use ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "store_cond" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_store_condition" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_store_condition ;
+            owl:annotatedTarget mixs:store_cond ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "soil_type" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_type" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_type ;
+            owl:annotatedTarget mixs:soil_type ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "slope_aspect" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_slope_aspect" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_slope_aspect ;
+            owl:annotatedTarget mixs:slope_aspect ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "agrochem_addition" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_agrochem_addition" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_agrochem_addition ;
+            owl:annotatedTarget mixs:agrochem_addition ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "heavy_metals" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_heavy_metals" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_heavy_metals ;
+            owl:annotatedTarget mixs:heavy_metals ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "water_content" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_water_content" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_water_content ;
+            owl:annotatedTarget mixs:water_content ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "previous_land_use_meth" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_prev_land_use_meth" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_prev_land_use_meth ;
+            owl:annotatedTarget mixs:previous_land_use_meth ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "tot_nitro_content" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "tot_nitrogen" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:tot_nitrogen ;
+            owl:annotatedTarget mixs:tot_nitro_content ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "al_sat" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_aluminum_sat" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_aluminum_sat ;
+            owl:annotatedTarget mixs:al_sat ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "fire" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_fire" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_fire ;
+            owl:annotatedTarget mixs:fire ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "pool_dna_extracts" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_pool_dna_extracts" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_pool_dna_extracts ;
+            owl:annotatedTarget mixs:pool_dna_extracts ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "cur_vegetation_meth" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_curr_vegitation_method" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_curr_vegitation_method ;
+            owl:annotatedTarget mixs:cur_vegetation_meth ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "salinity_meth" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_salinity_method" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_salinity_method ;
+            owl:annotatedTarget mixs:salinity_meth ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "ph_meth" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_ph_method" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_ph_method ;
+            owl:annotatedTarget mixs:ph_meth ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "al_sat_meth" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_aluminum_sat_method" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_aluminum_sat_method ;
+            owl:annotatedTarget mixs:al_sat_meth ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "diss_oxygen" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "oxygen_concentration" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:oxygen_concentration ;
+            owl:annotatedTarget mixs:diss_oxygen ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "chlorophyll" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "chlorophyll_concentration" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:chlorophyll_concentration ;
+            owl:annotatedTarget mixs:chlorophyll ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "water_content_soil_meth" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_water_content_soil_meth" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_water_content_soil_meth ;
+            owl:annotatedTarget mixs:water_content_soil_meth ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "link_class_info" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_link_class_info" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_link_class_info ;
+            owl:annotatedTarget mixs:link_class_info ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "link_addit_analys" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_link_addit_analys" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_link_addit_analys ;
+            owl:annotatedTarget mixs:link_addit_analys ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "heavy_metals_meth" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_heavy_metals_method" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_heavy_metals_method ;
+            owl:annotatedTarget mixs:heavy_metals_meth ],
+        [ a owl:Axiom ;
+            sssom:comment "." ;
+            sssom:confidence "1.0"^^<xsd:double> ;
+            sssom:match_type "SSSOMC:HumanCurated" ;
+            sssom:object_label "soil_type_meth" ;
+            sssom:object_source "mixs" ;
+            sssom:subject_label "soil_type_method" ;
+            sssom:subject_source "gold.vocab" ;
+            owl:annotatedProperty skos:exactMatch ;
+            owl:annotatedSource gold.vocab:soil_type_method ;
+            owl:annotatedTarget mixs:soil_type_meth ] ;
+    sssom:match_type "SSSOMC:HumanCurated" ;
+    sssom:object_label "misc_param" ;
+    sssom:object_source "mixs" ;
+    sssom:subject_label "soil_misc_param" ;
+    sssom:subject_source "gold.vocab" ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource gold.vocab:soil_misc_param ;
+    owl:annotatedTarget mixs:misc_param .
+

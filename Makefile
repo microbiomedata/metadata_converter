@@ -64,8 +64,11 @@ tests/gold/gold-%-schema.tsv: tests/gold/schema/%.sql
 target/gold/biosample.ttl: tests/gold/biosample.yaml
 	gen-owl $< > $@.tmp && mv $@.tmp $@
 
-target/gold/gold-to-mixs.sssom.tsv: ../nmdc-metadata//metadata-translation/src/data/GOLD-to-mixs-map.tsv
-	./util/goldmap2sssom.pl $< > $@.tmp && mv $@.tmp $@
+# this is curated
+#target/gold/gold-to-mixs.sssom.tsv: ../nmdc-metadata//metadata-translation/src/data/GOLD-to-mixs-map.tsv
+#	./util/goldmap2sssom.pl $< > $@.tmp && mv $@.tmp $@
+target/gold/gold-to-mixs.sssom.tsv: ../nmdc-metadata//schema/mappings/gold-to-mixs.sssom.tsv
+	cp $< $@
 target/gold/gold-to-mixs.sssom.ttl: target/gold/gold-to-mixs.sssom.tsv
 	sssom convert -i $< -o $@
 

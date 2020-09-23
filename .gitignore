@@ -5,7 +5,6 @@ RDF-Cache/
 *.old
 downloads
 *.dsv
-target/*/*.ttl
 docs/*/types/
 target/*/*-docs/
 tests/gold/biosample.yaml

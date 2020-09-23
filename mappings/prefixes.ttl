@@ -4,6 +4,7 @@
 [
 
   sh:declare
+    [ sh:prefix "biolinkml.types" ; sh:namespace "https://w3id.org/biolink/biolinkml/meta/types/"],
     [ sh:prefix "dce" ; sh:namespace "http://purl.org/dc/elements/1.1/"],
     [ sh:prefix "coll" ; sh:namespace "http://purl.org/co/"],
     [ sh:prefix "datacite" ; sh:namespace "http://purl.org/spar/datacite/"],
@@ -15,8 +16,9 @@
     [ sh:prefix "BCO" ; sh:namespace "http://purl.obolibrary.org/obo/BCO_"],
     [ sh:prefix "AGRO" ; sh:namespace "http://purl.obolibrary.org/obo/AGRO_"],
     [ sh:prefix "CHEBI" ; sh:namespace "http://purl.obolibrary.org/obo/CHEBI_"],
-    [ sh:prefix "mixs" ; sh:namespace "https://microbiomedata/schema/mixs#"],
+    [ sh:prefix "mixs" ; sh:namespace "https://microbiomedata/schema/mixs/"],
     [ sh:prefix "dwc" ; sh:namespace "http://rs.tdwg.org/dwc/terms/"],
+    [ sh:prefix "emp" ; sh:namespace "https://microbiomedata/schema/emp/"],
     [ sh:prefix "kbase" ; sh:namespace "http://kbase.us/"],
     [ sh:prefix "neon" ; sh:namespace "https://data.neonscience.org/"],
     [ sh:prefix "schema" ; sh:namespace "http://schema.org/"],

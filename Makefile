@@ -1,11 +1,13 @@
-SOURCES = kbase dwc gold neon mixs emp
+OBO = http://purl.obolibrary.org/obo
+SOURCES = kbase dwc gold neon mixs emp mixs6
 #EXTS = _datamodel.py .graphql .schema.json .owl -docs .shex
 EXTS = .graphql .schema.json .owl -docs .shex
 
 all: $(foreach s,$(SOURCES), $(foreach x,$(EXTS), target/$s/$s$x))
 #all: $(foreach s,$(SOURCES), all_$s/$s)
-#all_%: 
-#	echo $(foreach x,$(EXTS), target/$*.$x)
+all_%: $(foreach x,$(EXTS), target/$*/$*$x)
+	echo $(foreach x,$(EXTS), target/$*/$*$x)
+
 
 rebuild: test all
 
@@ -18,6 +20,19 @@ downloads/kbase/%:
 downloads/dwc.csv:
 	curl -L -s https://raw.githubusercontent.com/tdwg/dwc/master/vocabulary/term_versions.csv > $@
 
+downloads/mixs6.tsv:
+	curl -L -s 'https://docs.google.com/spreadsheets/d/1QDeeUcDqXes69Y2RjU2aWgOpCVWo5OVsBX9MKmMqi_o/export?format=tsv&gid=345753674' > $@
+downloads/mixs6_core.tsv:
+	curl -L -s 'https://docs.google.com/spreadsheets/d/1QDeeUcDqXes69Y2RjU2aWgOpCVWo5OVsBX9MKmMqi_o/export?format=tsv&gid=567040283' > $@
+
+downloads/mixs_v5.xlsx:
+	curl -L -s https://github.com/GenomicsStandardsConsortium/mixs-legacy/blob/master/mixs5/mixs_v5.xlsx?raw=true > $@
+
+downloads/ms.ttl:
+	robot convert -I $(OBO)/ms.obo -o $@
+downloads/ms.obo:
+	curl -L -s $(OBO)/ms.obo > $@
+
 # run tests to first generate yaml; these are then copied to target area
 target/kbase/kbase.yaml: tests/kbase/kbase.yaml
 	cp $< $@
@@ -27,6 +42,8 @@ target/gold/gold.yaml: tests/gold/gold.yaml
 	cp $< $@
 target/dwc/dwc.yaml: tests/dwc/dwc.yaml
 	cp $< $@
+target/mixs6/mixs6.yaml: tests/mixs6/mixs.yaml
+	cp $< $@
 
 # mixs needs extra stuff
 target/mixs/mixs.yaml: 
@@ -35,6 +52,9 @@ target/mixs/core.yaml:
 	cp ../nmdc-metadata/schema/core.yaml $@
 target/mixs/prov.yaml: 
 	cp ../nmdc-metadata/schema/prov.yaml $@
+
+target/mixs6/mixs6.tsv: downloads/mixs6.tsv
+	cp $< $@
 
 
 

@@ -133,8 +133,8 @@ $DOCKERRUN --network "$NETWORK" \
            -e spring.data.solr.host=$OXO_SOLR \
            -e oxo.neo.uri=http://neo4j:dba@oxo-neo4j:7474 $EBISPOT_OXOINDEXER
 
-echo "Running Zooma"
-sleep 50
-$DOCKERCOMPOSE up -d zooma-web
+#echo "Running Zooma"
+#sleep 50
+#$DOCKERCOMPOSE up -d zooma-web
 
 echo "INFO: Redploying Custom OLS/OXO pipeline completed in $SECONDS seconds!"

@@ -1,0 +1,52 @@
+'@context': null
+ontologies:
+
+#  - id: dwc
+#    title: DWC_SCHEMA
+#    preferredPrefix: dwc
+#    base_uri:
+#      - https://microbiomedata/schema/dwc/
+#    ontology_purl: https://raw.githubusercontent.com/hrshdhgd/metadata_converter/master/target/dwc/dwc.owl
+
+  - id: emp
+    title: EMP_SCHEMA
+    preferredPrefix: emp
+    base_uri:
+      - https://microbiomedata/schema/emp/
+    ontology_purl: https://raw.githubusercontent.com/hrshdhgd/metadata_converter/master/target/emp/emp.owl
+  
+#  - id: gold
+#    title: GOLD_SCHEMA
+#    preferredPrefix: gold
+#    base_uri:
+#      - https://microbiomedata/schema/gold/
+#    ontology_purl: https://raw.githubusercontent.com/hrshdhgd/metadata_converter/master/target/gold/gold.owl
+
+
+#  - id: kbase
+#    title: KBase_SCHEMA
+#    preferredPrefix: kbase
+#    base_uri:
+#      - https://microbiomedata/schema/kbase/
+#    ontology_purl: https://raw.githubusercontent.com/hrshdhgd/metadata_converter/master/target/kbase/kbase.owl
+
+  - id: mixs
+    title: MIXS_SCHEMA
+    preferredPrefix: mixs
+    base_uri:
+      - https://microbiomedata/meta/
+    ontology_purl: https://raw.githubusercontent.com/hrshdhgd/metadata_converter/master/target/mixs/mixs.owl
+  
+#  - id: mixs6
+#    title: MIXS6_SCHEMA
+#    preferredPrefix: mixs6
+#    base_uri:
+#      - https://microbiomedata/meta6/
+#    ontology_purl: https://raw.githubusercontent.com/hrshdhgd/metadata_converter/master/target/mixs6/mixs6.owl
+
+#  - id: neon
+#    title: Neon_SCHEMA
+#    preferredPrefix: neon
+#    base_uri:
+#      - https://microbiomedata/neon/
+#    ontology_purl: https://raw.githubusercontent.com/hrshdhgd/metadata_converter/master/target/neon/neon.owl

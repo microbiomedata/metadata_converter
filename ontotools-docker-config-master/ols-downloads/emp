@@ -1,0 +1,1138 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix meta: <https://w3id.org/biolink/biolinkml/meta/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://microbiomedata/schema/emp> a owl:Ontology ;
+    rdfs:label "emp" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    skos:definition "NMDC rendering of EMP metadata schema" ;
+    meta:generation_date "2020-09-22 23:08" ;
+    meta:metamodel_version "1.5.3" ;
+    meta:source_file "emp.yaml" ;
+    meta:source_file_date "Tue Sep 22 23:08:20 2020" ;
+    meta:source_file_size 8187 .
+
+<https://microbiomedata/schema/emp/Sample> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "sample" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/ph> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/oxygen_mg_per_l> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/run_center> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/env_feature> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/longitude_deg> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/principal_investigator> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/observations_deblur_100bp> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/target_gene> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/adiv_observed_otus> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/host_phylum> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/temperature_deg_c> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/adiv_shannon> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/envo_biome_0> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/empo_2> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/host_kingdom> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/sample_scientific_name> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/host_family> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/empo_3> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/collection_timestamp> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/elevation_m> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/qc_filtered> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/phosphate_umol_per_l> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/observations_closed_ref_greengenes> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/read_length_bp> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/envo_biome_5> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/emp_release1> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/subset_5k> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/observations_deblur_90bp> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/depth_m> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/country> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/sequences_split_libraries> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/nitrate_umol_per_l> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/target_subfragment> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/envo_biome_2> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/title> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/envo_biome_3> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/observations_open_ref_greengenes> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/host_common_name_provided> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/host_species> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/ammonium_umol_per_l> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/host_order> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/observations_deblur_150bp> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/SampleID> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/empo_1> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/env_biome> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/envo_biome_1> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/subset_10k> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/salinity_psu> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/host_class> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/sulfate_umol_per_l> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/host_taxid> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/Description> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/env_material> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/envo_biome_4> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/host_common_name> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/illumina_technology> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/adiv_chao1> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/observations_closed_ref_silva> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/ebi_accession> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/latitude_deg> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/LinkerPrimerSequence> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/run_date> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/BarcodeSequence> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/sample_taxid> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/pcr_primers> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/altitude_m> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/host_scientific_name> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/empo_0> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/host_subject_id> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/host_genus> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/doi> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/extraction_center> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/host_superkingdom> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/subset_2k> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/adiv_faith_pd> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/study_id> ] .
+
+<https://microbiomedata/schema/emp/Study> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "study" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/pmid_other> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/coauthors> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/study_id> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/email> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/ix> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/release2_study> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/metadata_minimal> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/primer_reference> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/modified_protocol> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/ebi_accession> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/principal_investigator> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/comment_from_gail> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/primer_version> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/study_ok> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/num_samples> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/read_length_bp> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/institution> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/dense_sampling> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/alias> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/pcr_primers> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/publication_notes> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/release1_study> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/extraction_center> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/doi> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/units_status> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://microbiomedata/schema/emp/title> ] .
+
+meta:SubsetDefinition a owl:Class ;
+    rdfs:label "subset_definition" ;
+    skos:definition "the name and description of a subset" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Boolean> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "boolean" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:boolean ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "A binary (true or false) value" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Date> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "date" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:date ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "a date (year, month and day) in an idealized calendar" ;
+    skos:editorialNote "URI is dateTime because OWL reasoners don't work with straight date or time" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Datetime> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "datetime" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:dateTime ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "The combination of a date and time" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Double> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "double" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:double ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "A real number that conforms to the xsd:double specification" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Float> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "float" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:float ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "A real number that conforms to the xsd:float specification" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Integer> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "integer" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:integer ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "An integer" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Ncname> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "ncname" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:string ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "Prefix part of CURIE" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Nodeidentifier> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "nodeidentifier" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange <http://www.w3.org/ns/shex#nonLiteral> ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "A URI, CURIE or BNODE that represents a node in a model." .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Objectidentifier> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "objectidentifier" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange <http://www.w3.org/ns/shex#iri> ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "A URI or CURIE that represents an object in the model." ;
+    skos:note "Used for inheritence and type checking" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Time> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "time" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:dateTime ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "A time object represents a (local) time of day, independent of any particular day" ;
+    skos:editorialNote "URI is dateTime because OWL reasoners don't work with straight date or time" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Uri> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "uri" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:anyURI ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "a complete URI" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Uriorcurie> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "uriorcurie" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:anyURI ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "a URI or a CURIE" .
+
+<https://microbiomedata/schema/emp/BarcodeSequence> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "BarcodeSequence" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/Description> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "Description" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/LinkerPrimerSequence> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "LinkerPrimerSequence" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/SampleID> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "SampleID" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/adiv_chao1> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "adiv_chao1" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/adiv_faith_pd> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "adiv_faith_pd" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/adiv_observed_otus> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "adiv_observed_otus" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/adiv_shannon> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "adiv_shannon" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/alias> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "alias" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/altitude_m> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "altitude_m" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/ammonium_umol_per_l> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "ammonium_umol_per_l" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/coauthors> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "coauthors" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/collection_timestamp> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "collection_timestamp" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/comment_from_gail> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "comment_from_gail" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/country> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "country" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/dense_sampling> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "dense_sampling" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/depth_m> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "depth_m" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/elevation_m> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "elevation_m" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/email> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "email" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/emp_release1> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "emp_release1" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/empo_0> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "empo_0" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/empo_1> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "empo_1" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/empo_2> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "empo_2" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/empo_3> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "empo_3" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/env_biome> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "env_biome" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/env_feature> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "env_feature" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/env_material> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "env_material" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/envo_biome_0> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "envo_biome_0" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/envo_biome_1> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "envo_biome_1" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/envo_biome_2> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "envo_biome_2" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/envo_biome_3> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "envo_biome_3" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/envo_biome_4> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "envo_biome_4" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/envo_biome_5> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "envo_biome_5" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/host_class> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "host_class" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/host_common_name> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "host_common_name" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/host_common_name_provided> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "host_common_name_provided" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/host_family> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "host_family" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/host_genus> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "host_genus" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/host_kingdom> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "host_kingdom" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/host_order> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "host_order" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/host_phylum> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "host_phylum" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/host_scientific_name> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "host_scientific_name" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/host_species> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "host_species" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/host_subject_id> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "host_subject_id" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/host_superkingdom> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "host_superkingdom" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/host_taxid> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "host_taxid" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/illumina_technology> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "illumina_technology" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/institution> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "institution" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/ix> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "ix" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/latitude_deg> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "latitude_deg" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/longitude_deg> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "longitude_deg" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/metadata_minimal> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "metadata_minimal" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/modified_protocol> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "modified_protocol" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/nitrate_umol_per_l> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "nitrate_umol_per_l" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/num_samples> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "num_samples" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/observations_closed_ref_greengenes> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "observations_closed_ref_greengenes" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/observations_closed_ref_silva> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "observations_closed_ref_silva" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/observations_deblur_100bp> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "observations_deblur_100bp" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/observations_deblur_150bp> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "observations_deblur_150bp" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/observations_deblur_90bp> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "observations_deblur_90bp" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/observations_open_ref_greengenes> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "observations_open_ref_greengenes" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/oxygen_mg_per_l> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "oxygen_mg_per_l" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/ph> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "ph" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/phosphate_umol_per_l> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "phosphate_umol_per_l" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/pmid_other> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "pmid_other" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/primer_reference> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "primer_reference" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/primer_version> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "primer_version" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/publication_notes> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "publication_notes" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/qc_filtered> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "qc_filtered" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/release1_study> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "release1_study" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/release2_study> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "release2_study" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/run_center> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "run_center" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/run_date> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "run_date" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/salinity_psu> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "salinity_psu" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/sample_scientific_name> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "sample_scientific_name" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/sample_taxid> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "sample_taxid" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/sequences_split_libraries> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "sequences_split_libraries" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/study_ok> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "study_ok" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/subset_10k> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "subset_10k" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/subset_2k> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "subset_2k" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/subset_5k> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "subset_5k" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/sulfate_umol_per_l> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "sulfate_umol_per_l" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/target_gene> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "target_gene" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/target_subfragment> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "target_subfragment" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/temperature_deg_c> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "temperature_deg_c" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/units_status> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "units_status" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/doi> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "doi" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/ebi_accession> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "ebi_accession" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/extraction_center> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "extraction_center" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/pcr_primers> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "pcr_primers" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/principal_investigator> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "principal_investigator" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/read_length_bp> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "read_length_bp" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/study_id> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "study_id" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+<https://microbiomedata/schema/emp/title> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "title" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+    skos:definition "TODO" .
+
+meta:ClassDefinition a owl:Class ;
+    rdfs:label "class_definition" ;
+    skos:definition "the definition of a class or interface" .
+
+meta:TypeDefinition a owl:Class ;
+    rdfs:label "type_definition" ;
+    skos:definition "A data type definition." .
+
+meta:topValue a owl:DatatypeProperty ;
+    rdfs:label "value" .
+
+meta:SlotDefinition a owl:Class ;
+    rdfs:label "slot_definition" ;
+    skos:definition "the definition of a property or a slot" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/String> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "string" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:string ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "A character string" .
+
+
+

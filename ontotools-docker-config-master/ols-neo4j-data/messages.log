@@ -739,3 +739,6 @@ Storage files: (filename : modification date - size)
 2021-02-04 16:20:50.518+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is now ready
 2021-02-04 16:20:53.964+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for 940ms.
 2021-02-04 17:25:22.276+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for 611ms.
+2021-02-04 19:52:04.524+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for 237ms.
+2021-02-04 19:58:44.956+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for 833ms.
+2021-02-04 20:07:00.010+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for 940ms.

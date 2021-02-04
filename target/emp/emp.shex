@@ -1,0 +1,150 @@
+BASE <https://microbiomedata/schema/emp/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX metatype: <https://w3id.org/biolink/biolinkml/meta/types/>
+
+
+metatype:String xsd:string
+
+metatype:Integer xsd:integer
+
+metatype:Boolean xsd:boolean
+
+metatype:Float xsd:float
+
+metatype:Double xsd:double
+
+metatype:Decimal xsd:decimal
+
+metatype:Time xsd:dateTime
+
+metatype:Date xsd:date
+
+metatype:Datetime xsd:dateTime
+
+metatype:Uriorcurie IRI
+
+metatype:Uri IRI
+
+metatype:Ncname xsd:string
+
+metatype:Objectidentifier IRI
+
+metatype:Nodeidentifier NONLITERAL
+
+<Sample> CLOSED {
+    (  $<Sample_tes> (  <SampleID> @metatype:String ? ;
+          <BarcodeSequence> @metatype:String ? ;
+          <LinkerPrimerSequence> @metatype:String ? ;
+          <Description> @metatype:String ? ;
+          <host_subject_id> @metatype:String ? ;
+          <study_id> @metatype:String ? ;
+          <title> @metatype:String ? ;
+          <principal_investigator> @metatype:String ? ;
+          <doi> @metatype:String ? ;
+          <ebi_accession> @metatype:String ? ;
+          <target_gene> @metatype:String ? ;
+          <target_subfragment> @metatype:String ? ;
+          <pcr_primers> @metatype:String ? ;
+          <illumina_technology> @metatype:String ? ;
+          <extraction_center> @metatype:String ? ;
+          <run_center> @metatype:String ? ;
+          <run_date> @metatype:String ? ;
+          <read_length_bp> @metatype:String ? ;
+          <sequences_split_libraries> @metatype:String ? ;
+          <observations_closed_ref_greengenes> @metatype:String ? ;
+          <observations_closed_ref_silva> @metatype:String ? ;
+          <observations_open_ref_greengenes> @metatype:String ? ;
+          <observations_deblur_90bp> @metatype:String ? ;
+          <observations_deblur_100bp> @metatype:String ? ;
+          <observations_deblur_150bp> @metatype:String ? ;
+          <emp_release1> @metatype:String ? ;
+          <qc_filtered> @metatype:String ? ;
+          <subset_10k> @metatype:String ? ;
+          <subset_5k> @metatype:String ? ;
+          <subset_2k> @metatype:String ? ;
+          <sample_taxid> @metatype:String ? ;
+          <sample_scientific_name> @metatype:String ? ;
+          <host_taxid> @metatype:String ? ;
+          <host_common_name_provided> @metatype:String ? ;
+          <host_common_name> @metatype:String ? ;
+          <host_scientific_name> @metatype:String ? ;
+          <host_superkingdom> @metatype:String ? ;
+          <host_kingdom> @metatype:String ? ;
+          <host_phylum> @metatype:String ? ;
+          <host_class> @metatype:String ? ;
+          <host_order> @metatype:String ? ;
+          <host_family> @metatype:String ? ;
+          <host_genus> @metatype:String ? ;
+          <host_species> @metatype:String ? ;
+          <collection_timestamp> @metatype:String ? ;
+          <country> @metatype:String ? ;
+          <latitude_deg> @metatype:String ? ;
+          <longitude_deg> @metatype:String ? ;
+          <depth_m> @metatype:String ? ;
+          <altitude_m> @metatype:String ? ;
+          <elevation_m> @metatype:String ? ;
+          <env_biome> @metatype:String ? ;
+          <env_feature> @metatype:String ? ;
+          <env_material> @metatype:String ? ;
+          <envo_biome_0> @metatype:String ? ;
+          <envo_biome_1> @metatype:String ? ;
+          <envo_biome_2> @metatype:String ? ;
+          <envo_biome_3> @metatype:String ? ;
+          <envo_biome_4> @metatype:String ? ;
+          <envo_biome_5> @metatype:String ? ;
+          <empo_0> @metatype:String ? ;
+          <empo_1> @metatype:String ? ;
+          <empo_2> @metatype:String ? ;
+          <empo_3> @metatype:String ? ;
+          <adiv_observed_otus> @metatype:String ? ;
+          <adiv_chao1> @metatype:String ? ;
+          <adiv_shannon> @metatype:String ? ;
+          <adiv_faith_pd> @metatype:String ? ;
+          <temperature_deg_c> @metatype:String ? ;
+          <ph> @metatype:String ? ;
+          <salinity_psu> @metatype:String ? ;
+          <oxygen_mg_per_l> @metatype:String ? ;
+          <phosphate_umol_per_l> @metatype:String ? ;
+          <ammonium_umol_per_l> @metatype:String ? ;
+          <nitrate_umol_per_l> @metatype:String ? ;
+          <sulfate_umol_per_l> @metatype:String ?
+       ) ;
+       rdf:type [ <Sample> ] ?
+    )
+}
+
+<Study> CLOSED {
+    (  $<Study_tes> (  <ix> @metatype:String ? ;
+          <study_id> @metatype:String ? ;
+          <title> @metatype:String ? ;
+          <num_samples> @metatype:String ? ;
+          <extraction_center> @metatype:String ? ;
+          <modified_protocol> @metatype:String ? ;
+          <principal_investigator> @metatype:String ? ;
+          <email> @metatype:String ? ;
+          <institution> @metatype:String ? ;
+          <coauthors> @metatype:String ? ;
+          <doi> @metatype:String ? ;
+          <pmid_other> @metatype:String ? ;
+          <ebi_accession> @metatype:String ? ;
+          <publication_notes> @metatype:String ? ;
+          <alias> @metatype:String ? ;
+          <primer_version> @metatype:String ? ;
+          <primer_reference> @metatype:String ? ;
+          <pcr_primers> @metatype:String ? ;
+          <read_length_bp> @metatype:String ? ;
+          <study_ok> @metatype:String ? ;
+          <release1_study> @metatype:String ? ;
+          <release2_study> @metatype:String ? ;
+          <metadata_minimal> @metatype:String ? ;
+          <dense_sampling> @metatype:String ? ;
+          <units_status> @metatype:String ? ;
+          <comment_from_gail> @metatype:String ?
+       ) ;
+       rdf:type [ <Study> ] ?
+    )
+}
+
+
+

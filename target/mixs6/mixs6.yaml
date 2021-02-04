@@ -10,14 +10,14 @@ default_prefix: mixs.vocab
 slots:
   core field:
     description: basic fields
-  environment field:
-    description: field describing environmental aspect of a sample
   investigation field:
     description: field describing aspect of the investigation/study to which the sample
       belongs
   nucleic acid sequence source field: {}
   sequencing field: {}
   mixs extension field: {}
+  environment field:
+    description: field describing environmental aspect of a sample
   submitted_to_insdc:
     is_a: investigation field
     aliases:

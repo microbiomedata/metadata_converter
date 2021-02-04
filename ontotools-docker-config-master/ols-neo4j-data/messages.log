@@ -738,3 +738,4 @@ Storage files: (filename : modification date - size)
 2021-02-04 16:20:50.452+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
 2021-02-04 16:20:50.518+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is now ready
 2021-02-04 16:20:53.964+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for 940ms.
+2021-02-04 17:25:22.276+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for 611ms.

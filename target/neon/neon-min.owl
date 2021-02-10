@@ -1,0 +1,103 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix meta: <https://w3id.org/biolink/biolinkml/meta/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://data.neonscience.org/SLRNR1min> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "SLRNR_1min" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/Double> ;
+            owl:onProperty <https://data.neonscience.org/inLWNullNAQM> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/Double> ;
+            owl:onProperty <https://data.neonscience.org/outLWSpikeNAQM> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://data.neonscience.org/outLWPersistenceQAQCRpt> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/Double> ;
+            owl:onProperty <https://data.neonscience.org/inLWConsistencyFailQM> ] ;
+    skos:exactMatch <https://data.neonscience.org/SLRNR_1min> .
+
+<https://data.neonscience.org/SLRNR30min> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "SLRNR_30min" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://data.neonscience.org/outLWFinalQFSciRvw> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/Double> ;
+            owl:onProperty <https://data.neonscience.org/inLWConsistencyFailQM> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/Double> ;
+            owl:onProperty <https://data.neonscience.org/outLWSpikeNAQM> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/Double> ;
+            owl:onProperty <https://data.neonscience.org/outLWNullFailQM> ] ;
+    skos:exactMatch <https://data.neonscience.org/SLRNR_30min> .
+
+<https://data.neonscience.org/SLRNRB1min> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "SLRNRB_1min" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/Double> ;
+            owl:onProperty <https://data.neonscience.org/outSWSpikeFailQM> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/Double> ;
+            owl:onProperty <https://data.neonscience.org/outSWRangeFailQM> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/Double> ;
+            owl:onProperty <https://data.neonscience.org/outLWSpikeNAQM> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/Double> ;
+            owl:onProperty <https://data.neonscience.org/inSWNumPts> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://data.neonscience.org/inSWPersistenceQAQCRpt> ] ;
+    skos:exactMatch <https://data.neonscience.org/SLRNRB_1min> .
+
+<https://data.neonscience.org/SLRNRB30min> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "SLRNRB_30min" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/String> ;
+            owl:onProperty <https://data.neonscience.org/outLWFinalQF> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/Double> ;
+            owl:onProperty <https://data.neonscience.org/outLWMinimum> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/Double> ;
+            owl:onProperty <https://data.neonscience.org/outLWSpikeNAQM> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/biolink/biolinkml/meta/types/Double> ;
+            owl:onProperty <https://data.neonscience.org/inSWMean> ] ;
+    skos:exactMatch <https://data.neonscience.org/SLRNRB_30min> .
+
+
+
+
+<https://data.neonscience.org/outLWSpikeNAQM> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "outLWSpikeNAQM" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/Double> ;
+    skos:definition "Outgoing longwave radiation  quality metric that summarizes when the spike test could not be run over the averaging period, as a percent" .

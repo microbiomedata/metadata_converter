@@ -13,6 +13,6 @@ tests/kbase/kbase.yaml
 tests/neon/neon.yaml
 tests/dwc/dwc.yaml
 *#
-ontotools-docker-config-master/ols-neo4j-data
-ontotools-docker-config-master/oxo-neo4j-import
+ontotools-docker-config-master/ols-neo4j-data/
+ontotools-docker-config-master/oxo-neo4j-import/
 target/neon/.DS_Store

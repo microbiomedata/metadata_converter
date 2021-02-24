@@ -106,11 +106,14 @@ class MIxS6Converter:
         if '|' in pattern:
             vals = pattern.replace('[', '').replace(']','').split('|')
             vals = [v.strip() for v in vals]
-            enum_name = f'{s_id}_enum'
-            slot['range'] = enum_name
-            enums[enum_name] = {
-                'permissible_values': {v: {} for v in vals}
-            }
+            # remove entries like '[{PMID}|{DOI}|...]'
+            vals = [v for v in vals if not v.startswith('{')]
+            if len(vals) > 2:
+                enum_name = f'{s_id}_enum'
+                slot['range'] = enum_name
+                enums[enum_name] = {
+                    'permissible_values': {v: {} for v in vals}
+                }
         if slot_uri is not None:
             slot['slot_uri'] = slot_uri
         if 'Expected value' in row:

@@ -98,7 +98,6 @@ slots:
     - 'Expected value: text or EFO and/or OBI'
     - 'Preferred unit: '
     - 'Position: 4.0'
-    range: experimental_factor_enum
   lat_lon:
     is_a: environment field
     aliases:
@@ -375,7 +374,6 @@ slots:
     - 'Expected value: PMID, DOI or URL'
     - 'Preferred unit: '
     - 'Position: 19.0'
-    range: ref_biomaterial_enum
   source_mat_id:
     is_a: nucleic acid sequence source field
     aliases:
@@ -443,7 +441,6 @@ slots:
     - 'Expected value: host taxid, unknown, environmental'
     - 'Preferred unit: '
     - 'Position: 23.0'
-    range: specific_host_enum
   host_spec_range:
     is_a: nucleic acid sequence source field
     aliases:
@@ -542,7 +539,6 @@ slots:
     - 'Expected value: PMID,DOI or URL'
     - 'Preferred unit: '
     - 'Position: 30.0'
-    range: isol_growth_condt_enum
   samp_collect_device:
     is_a: nucleic acid sequence source field
     aliases:
@@ -569,7 +565,6 @@ slots:
     - 'Expected value: text or OBI'
     - 'Preferred unit: '
     - 'Position: 32.0'
-    range: samp_mat_process_enum
   size_frac:
     is_a: nucleic acid sequence source field
     aliases:
@@ -638,7 +633,6 @@ slots:
     - 'Expected value: PMID, DOI or URL'
     - 'Preferred unit: '
     - 'Position: 37.0'
-    range: nucl_acid_ext_enum
   nucl_acid_amp:
     is_a: sequencing field
     aliases:
@@ -653,7 +647,6 @@ slots:
     - 'Expected value: PMID, DOI or URL'
     - 'Preferred unit: '
     - 'Position: 38.0'
-    range: nucl_acid_amp_enum
   lib_size:
     is_a: sequencing field
     aliases:
@@ -839,7 +832,6 @@ slots:
     - 'Expected value: none or manually edited'
     - 'Preferred unit: '
     - 'Position: 51.0'
-    range: seq_quality_check_enum
   chimera_check:
     is_a: sequencing field
     aliases:
@@ -1129,7 +1121,6 @@ slots:
     - 'Expected value: enumeration'
     - 'Preferred unit: '
     - 'Position: 71.0'
-    range: contam_screen_input_enum
   contam_screen_param:
     is_a: sequencing field
     aliases:
@@ -1209,7 +1200,6 @@ slots:
     - 'Expected value: enumeration'
     - 'Preferred unit: '
     - 'Position: 77.0'
-    range: wga_amp_appr_enum
   wga_amp_kit:
     is_a: sequencing field
     aliases:
@@ -1327,7 +1317,6 @@ slots:
     - 'Expected value: enumeration'
     - 'Preferred unit: '
     - 'Position: 86.0'
-    range: detec_type_enum
   votu_class_appr:
     is_a: sequencing field
     aliases:
@@ -1421,7 +1410,6 @@ slots:
     - 'Expected value: reference to SOP'
     - 'Preferred unit: '
     - 'Position: 93.0'
-    range: sop_enum
   barometric_press:
     is_a: environment field
     aliases:
@@ -2187,7 +2175,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 23'
     - 'This field is used uniquely in: built environment'
-    range: space_typ_state_enum
     slot_uri: MIXS:0000770
   typ_occup_density:
     is_a: environment field
@@ -2281,7 +2268,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 29'
     - 'This field is used uniquely in: built environment'
-    range: aero_struc_enum
     slot_uri: MIXS:0000773
   amount_light:
     is_a: environment field
@@ -2423,7 +2409,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 38'
     - 'This field is used uniquely in: built environment'
-    range: built_struc_set_enum
     slot_uri: MIXS:0000778
   built_struc_type:
     is_a: environment field
@@ -2504,7 +2489,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 43'
     - 'This field is used uniquely in: built environment'
-    range: ceil_water_mold_enum
     slot_uri: MIXS:0000781
   ceil_struc:
     is_a: environment field
@@ -2520,7 +2504,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 44'
     - 'This field is used uniquely in: built environment'
-    range: ceil_struc_enum
     slot_uri: MIXS:0000782
   ceil_texture:
     is_a: environment field
@@ -2731,7 +2714,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 57'
     - 'This field is used uniquely in: built environment'
-    range: door_water_mold_enum
     slot_uri: MIXS:0000793
   door_type:
     is_a: environment field
@@ -2905,7 +2887,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 68'
     - 'This field is used uniquely in: built environment'
-    range: fireplace_type_enum
     slot_uri: MIXS:0000802
   floor_age:
     is_a: environment field
@@ -3097,7 +3078,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 80'
     - 'This field is used uniquely in: built environment'
-    range: gender_restroom_enum
     slot_uri: MIXS:0000808
   hall_count:
     is_a: environment field
@@ -3160,7 +3140,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 84'
     - 'This field is used uniquely in: built environment'
-    range: heat_system_deliv_meth_enum
     slot_uri: MIXS:0000812
   heat_system_id:
     is_a: environment field
@@ -3840,7 +3819,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 127'
     - 'This field is used uniquely in: built environment'
-    range: shading_device_loc_enum
     slot_uri: MIXS:0000832
   shading_device_mat:
     is_a: environment field
@@ -3871,7 +3849,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 129'
     - 'This field is used uniquely in: built environment'
-    range: shading_device_water_mold_enum
     slot_uri: MIXS:0000834
   shading_device_type:
     is_a: environment field
@@ -4101,7 +4078,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 143'
     - 'This field is used uniquely in: built environment'
-    range: wall_water_mold_enum
     slot_uri: MIXS:0000844
   wall_surf_treatment:
     is_a: environment field
@@ -4324,7 +4300,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 157'
     - 'This field is used uniquely in: built environment'
-    range: window_water_mold_enum
     slot_uri: MIXS:0000854
   window_status:
     is_a: environment field
@@ -4341,7 +4316,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 158'
     - 'This field is used uniquely in: built environment'
-    range: window_status_enum
     slot_uri: MIXS:0000855
   window_type:
     is_a: environment field
@@ -4426,7 +4400,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 3'
     - 'This field is used in: 2 packages: host-associated, plant-associated'
-    range: genetic_mod_enum
     slot_uri: MIXS:0000859
   host_common_name:
     is_a: environment field
@@ -4575,7 +4548,6 @@ slots:
     - 'Position: 12'
     - 'This field is used in: 7 packages: host-associated, human-associated, human-gut,
       human-oral, human-skin, human-vaginal, plant-associated'
-    range: host_disease_stat_enum
     slot_uri: MIXS:0000031
   host_body_habitat:
     is_a: environment field
@@ -4725,7 +4697,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 22'
     - 'This field is used uniquely in: host-associated'
-    range: host_growth_cond_enum
     slot_uri: MIXS:0000871
   host_substrate:
     is_a: environment field
@@ -5058,7 +5029,6 @@ slots:
     - 'Position: 23'
     - 'This field is used in: 5 packages: human-associated, human-gut, human-oral,
       human-skin, human-vaginal'
-    range: ihmc_ethnicity_enum
     slot_uri: MIXS:0000895
   host_occupation:
     is_a: environment field
@@ -5317,7 +5287,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 43'
     - 'This field is used uniquely in: human-associated'
-    range: urine_collect_meth_enum
     slot_uri: MIXS:0000899
   gastrointest_disord:
     is_a: environment field
@@ -7717,7 +7686,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 1'
     - 'This field is used uniquely in: plant-associated'
-    range: cult_root_med_enum
     slot_uri: MIXS:0001041
   fertilizer_regm:
     is_a: environment field
@@ -7809,7 +7777,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 1'
     - 'This field is used uniquely in: plant-associated'
-    range: growth_facil_enum
     slot_uri: MIXS:0001043
   growth_habit:
     is_a: environment field
@@ -8133,7 +8100,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 1'
     - 'This field is used uniquely in: plant-associated'
-    range: root_cond_enum
     slot_uri: MIXS:0001061
   root_med_carbon:
     is_a: environment field
@@ -8315,7 +8281,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 1'
     - 'This field is used uniquely in: plant-associated'
-    range: tiss_cult_growth_med_enum
     slot_uri: MIXS:0001070
   water_temp_regm:
     is_a: environment field
@@ -8475,7 +8440,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 3'
     - 'This field is used uniquely in: soil'
-    range: cur_vegetation_meth_enum
     slot_uri: MIXS:0000314
   previous_land_use:
     is_a: environment field
@@ -8506,7 +8470,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 5'
     - 'This field is used uniquely in: soil'
-    range: previous_land_use_meth_enum
     slot_uri: MIXS:0000316
   crop_rotation:
     is_a: environment field
@@ -8632,7 +8595,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 13'
     - 'This field is used uniquely in: soil'
-    range: horizon_meth_enum
     slot_uri: MIXS:0000321
   sieving:
     is_a: environment field
@@ -8649,7 +8611,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 14'
     - 'This field is used uniquely in: soil'
-    range: sieving_enum
     slot_uri: MIXS:0000322
   water_content_soil_meth:
     is_a: environment field
@@ -8665,7 +8626,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 16'
     - 'This field is used uniquely in: soil'
-    range: water_content_soil_meth_enum
     slot_uri: MIXS:0000323
   pool_dna_extracts:
     is_a: environment field
@@ -8713,7 +8673,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 20'
     - 'This field is used uniquely in: soil'
-    range: link_climate_info_enum
     slot_uri: MIXS:0000328
   annual_temp:
     is_a: environment field
@@ -8791,7 +8750,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 25'
     - 'This field is used uniquely in: soil'
-    range: link_class_info_enum
     slot_uri: MIXS:0000329
   fao_class:
     is_a: environment field
@@ -8839,7 +8797,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 28'
     - 'This field is used uniquely in: soil'
-    range: local_class_meth_enum
     slot_uri: MIXS:0000331
   soil_type:
     is_a: environment field
@@ -8871,7 +8828,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 30'
     - 'This field is used uniquely in: soil'
-    range: soil_type_meth_enum
     slot_uri: MIXS:0000334
   slope_gradient:
     is_a: environment field
@@ -8974,7 +8930,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 36'
     - 'This field is used uniquely in: soil'
-    range: texture_meth_enum
     slot_uri: MIXS:0000336
   ph_meth:
     is_a: environment field
@@ -8990,7 +8945,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 38'
     - 'This field is used uniquely in: soil'
-    range: ph_meth_enum
     slot_uri: MIXS:0001106
   tot_org_c_meth:
     is_a: environment field
@@ -9006,7 +8960,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 40'
     - 'This field is used uniquely in: soil'
-    range: tot_org_c_meth_enum
     slot_uri: MIXS:0000337
   tot_nitro_content_meth:
     is_a: environment field
@@ -9022,7 +8975,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 42'
     - 'This field is used uniquely in: soil'
-    range: tot_nitro_content_meth_enum
     slot_uri: MIXS:0000338
   microbial_biomass:
     is_a: environment field
@@ -9055,7 +9007,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 44'
     - 'This field is used uniquely in: soil'
-    range: microbial_biomass_meth_enum
     slot_uri: MIXS:0000339
   link_addit_analys:
     is_a: environment field
@@ -9071,7 +9022,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 45'
     - 'This field is used uniquely in: soil'
-    range: link_addit_analys_enum
     slot_uri: MIXS:0000340
   extreme_salinity:
     is_a: environment field
@@ -9102,7 +9052,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 47'
     - 'This field is used uniquely in: soil'
-    range: salinity_meth_enum
     slot_uri: MIXS:0000341
   heavy_metals:
     is_a: environment field
@@ -9134,7 +9083,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 49'
     - 'This field is used uniquely in: soil'
-    range: heavy_metals_meth_enum
     slot_uri: MIXS:0000343
   al_sat:
     is_a: environment field
@@ -9165,7 +9113,6 @@ slots:
     - 'Occurrence: 1'
     - 'Position: 51'
     - 'This field is used uniquely in: soil'
-    range: al_sat_meth_enum
     slot_uri: MIXS:0000324
   biochem_oxygen_dem:
     is_a: environment field
@@ -10944,10 +10891,6 @@ enums:
       misag: {}
       mimag: {}
       miuvig: {}
-  experimental_factor_enum:
-    permissible_values:
-      '{termLabel} {termID}': {}
-      '{text}': {}
   env_package_enum:
     permissible_values:
       air: {}
@@ -10967,11 +10910,6 @@ enums:
       soil: {}
       wastewater/sludge: {}
       water: {}
-  ref_biomaterial_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
   biotic_relationship_enum:
     permissible_values:
       free living: {}
@@ -10979,10 +10917,6 @@ enums:
       commensalism: {}
       symbiotic: {}
       mutualism: {}
-  specific_host_enum:
-    permissible_values:
-      '{NCBI taxid}': {}
-      '{text}': {}
   health_disease_stat_enum:
     permissible_values:
       healthy: {}
@@ -11038,15 +10972,6 @@ enums:
       microanaerobe: {}
       obligate aerobe: {}
       obligate anaerobe: {}
-  isol_growth_condt_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
-  samp_mat_process_enum:
-    permissible_values:
-      '{text}': {}
-      '{termLabel} {termID}': {}
   source_uvig_enum:
     permissible_values:
       metagenome (not viral targeted): {}
@@ -11073,16 +10998,6 @@ enums:
       targeted sequence capture: {}
       other: {}
       none: {}
-  nucl_acid_ext_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
-  nucl_acid_amp_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
   lib_layout_enum:
     permissible_values:
       paired: {}
@@ -11140,10 +11055,6 @@ enums:
       PacBio RS II: {}
       PromethION: {}
       Sequel: {}
-  seq_quality_check_enum:
-    permissible_values:
-      none: {}
-      manually edited: {}
   tax_ident_enum:
     permissible_values:
       16S rRNA gene: {}
@@ -11166,10 +11077,6 @@ enums:
       marker gene: {}
       reference based: {}
       other: {}
-  contam_screen_input_enum:
-    permissible_values:
-      reads: {}
-      contigs: {}
   contam_screen_param_enum:
     permissible_values:
       ref db: {}
@@ -11199,10 +11106,6 @@ enums:
       enzymatic: {}
       physical: {}
       combination: {}
-  wga_amp_appr_enum:
-    permissible_values:
-      pcr based: {}
-      mda based: {}
   bin_param_enum:
     permissible_values:
       homology search: {}
@@ -11243,10 +11146,6 @@ enums:
       segmented: {}
       non-segmented: {}
       undetermined: {}
-  detec_type_enum:
-    permissible_values:
-      independent sequence (UViG): {}
-      provirus (UpViG): {}
   host_pred_appr_enum:
     permissible_values:
       provirus: {}
@@ -11256,14 +11155,8 @@ enums:
       co-occurrence: {}
       combination: {}
       other: {}
-  sop_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
   organism_count_enum:
     permissible_values:
-      '{text};{float} {unit};qPCR': {}
       ATP: {}
       MPN: {}
       other: {}
@@ -11367,23 +11260,11 @@ enums:
       desk lamp: {}
       flourescent lights: {}
       none: {}
-  space_typ_state_enum:
-    permissible_values:
-      typically occupied: {}
-      typically unoccupied: {}
-  aero_struc_enum:
-    permissible_values:
-      plane: {}
-      glider: {}
   arch_struc_enum:
     permissible_values:
       building: {}
       shed: {}
       home: {}
-  built_struc_set_enum:
-    permissible_values:
-      urban: {}
-      rural: {}
   ceil_cond_enum:
     permissible_values:
       new: {}
@@ -11403,14 +11284,6 @@ enums:
       stucco: {}
       mineral wool/calcium silicate: {}
       wood: {}
-  ceil_water_mold_enum:
-    permissible_values:
-      presence of mold visible: {}
-      no presence of mold visible: {}
-  ceil_struc_enum:
-    permissible_values:
-      wood frame: {}
-      concrete: {}
   ceil_texture_enum:
     permissible_values:
       crows feet: {}
@@ -11488,10 +11361,6 @@ enums:
       rolling shutter: {}
       sliding: {}
       swinging: {}
-  door_water_mold_enum:
-    permissible_values:
-      presence of mold visible: {}
-      no presence of mold visible: {}
   door_type_enum:
     permissible_values:
       composite: {}
@@ -11532,10 +11401,6 @@ enums:
       building navigation map: {}
       diagram: {}
       sketch: {}
-  fireplace_type_enum:
-    permissible_values:
-      gas burning: {}
-      wood burning: {}
   floor_cond_enum:
     permissible_values:
       new: {}
@@ -11587,10 +11452,6 @@ enums:
       cabinet: {}
       chair: {}
       desks: {}
-  gender_restroom_enum:
-    permissible_values:
-      male: {}
-      female: {}
   handidness_enum:
     permissible_values:
       ambidexterity: {}
@@ -11603,10 +11464,6 @@ enums:
       south: {}
       east: {}
       west: {}
-  heat_system_deliv_meth_enum:
-    permissible_values:
-      conductive: {}
-      radiant: {}
   int_wall_cond_enum:
     permissible_values:
       new: {}
@@ -11748,7 +11605,6 @@ enums:
     permissible_values:
       1st floor: {}
       2nd floor: {}
-      '{integer} floor': {}
       basement: {}
       lobby: {}
   season_use_enum:
@@ -11764,14 +11620,6 @@ enums:
       new: {}
       rupture: {}
       visible wear: {}
-  shading_device_loc_enum:
-    permissible_values:
-      exterior: {}
-      interior: {}
-  shading_device_water_mold_enum:
-    permissible_values:
-      presence of mold visible: {}
-      no presence of mold visible: {}
   shading_device_type_enum:
     permissible_values:
       bahama shutters: {}
@@ -11847,10 +11695,6 @@ enums:
       south: {}
       east: {}
       west: {}
-  wall_water_mold_enum:
-    permissible_values:
-      presence of mold visible: {}
-      no presence of mold visible: {}
   wall_surf_treatment_enum:
     permissible_values:
       painted: {}
@@ -11922,14 +11766,6 @@ enums:
       metal: {}
       vinyl: {}
       wood: {}
-  window_water_mold_enum:
-    permissible_values:
-      presence of mold visible: {}
-      no presence of mold visible: {}
-  window_status_enum:
-    permissible_values:
-      closed: {}
-      open: {}
   window_type_enum:
     permissible_values:
       single-hung sash window: {}
@@ -11952,12 +11788,6 @@ enums:
       hybrid: {}
       clonal selection: {}
       mutant: {}
-  genetic_mod_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
-      '{text}': {}
   samp_capt_status_enum:
     permissible_values:
       active surveillance in response to an outbreak: {}
@@ -11972,37 +11802,17 @@ enums:
       neuter: {}
       hermaphrodite: {}
       not determined: {}
-  host_disease_stat_enum:
-    permissible_values:
-      '{text}': {}
-      '{termLabel} {termID}': {}
-  host_growth_cond_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
-      '{text}': {}
   drug_usage_enum:
     permissible_values:
-      '{text};{integer}/year': {}
       month: {}
       week: {}
       day: {}
       hour: {}
-  ihmc_ethnicity_enum:
-    permissible_values:
-      '{integer}': {}
-      '{text}': {}
   study_complt_stat_enum:
     permissible_values:
-      '{boolean};adverse event': {}
       non-compliance: {}
       lost to follow up: {}
       other-specify: {}
-  urine_collect_meth_enum:
-    permissible_values:
-      clean catch: {}
-      catheter: {}
   special_diet_enum:
     permissible_values:
       low carb: {}
@@ -12155,7 +11965,6 @@ enums:
       other: {}
   samp_md_enum:
     permissible_values:
-      '{float} {unit};GL': {}
       DF: {}
       RT: {}
       KB: {}
@@ -12180,16 +11989,6 @@ enums:
       separator: {}
       storage tank: {}
       other: {}
-  cult_root_med_enum:
-    permissible_values:
-      '{text}': {}
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
-  growth_facil_enum:
-    permissible_values:
-      '{text}': {}
-      '{termLabel} {termID}': {}
   growth_habit_enum:
     permissible_values:
       erect: {}
@@ -12198,7 +11997,6 @@ enums:
       prostrate: {}
   plant_growth_med_enum:
     permissible_values:
-      '{termLabel} {termID} or husk': {}
       other artificial liquid medium: {}
       other artificial solid medium: {}
       peat moss: {}
@@ -12239,18 +12037,6 @@ enums:
       Trimonoecious: {}
       Trioecious: {}
       Unisexual: {}
-  root_cond_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
-      '{text}': {}
-  tiss_cult_growth_med_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
-      '{text}': {}
   sediment_type_enum:
     permissible_values:
       biogenous: {}
@@ -12300,16 +12086,6 @@ enums:
       rainforest (evergreen forest receiving >406 cm annual rainfall): {}
       swamp (permanent or semi-permanent water body dominated by woody plants): {}
       crop trees (nuts,fruit,christmas trees,nursery trees): {}
-  cur_vegetation_meth_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
-  previous_land_use_meth_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
   tillage_enum:
     permissible_values:
       drill: {}
@@ -12330,30 +12106,6 @@ enums:
       C horizon: {}
       R layer: {}
       Permafrost: {}
-  horizon_meth_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
-  sieving_enum:
-    permissible_values:
-      '{{text}': {}
-      '{float} {unit}};{float} {unit}': {}
-  water_content_soil_meth_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
-  link_climate_info_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
-  link_class_info_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
   fao_class_enum:
     permissible_values:
       Acrisols: {}
@@ -12382,16 +12134,6 @@ enums:
       Solonetz: {}
       Vertisols: {}
       Yermosols: {}
-  local_class_meth_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
-  soil_type_meth_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
   profile_position_enum:
     permissible_values:
       summit: {}
@@ -12407,48 +12149,3 @@ enums:
       moderately well: {}
       well: {}
       excessively drained: {}
-  texture_meth_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
-  ph_meth_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
-  tot_org_c_meth_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
-  tot_nitro_content_meth_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
-  microbial_biomass_meth_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
-  link_addit_analys_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
-  salinity_meth_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
-  heavy_metals_meth_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}
-  al_sat_meth_enum:
-    permissible_values:
-      '{PMID}': {}
-      '{DOI}': {}
-      '{URL}': {}

@@ -43,7 +43,7 @@ class MIxS6Converter:
         with open(fn, 'w') as stream:
             yaml.safe_dump(obj, stream, sort_keys=False)
 
-    def create_slot(self, row) -> (str, Dict):
+    def create_slot(self, row, enums: dict = {}) -> (str, Dict):
         """
         turn a row from EITHER core tab OR packages tab into a slot definition
 
@@ -91,16 +91,26 @@ class MIxS6Converter:
             logging.warning(f'No section: {s_id}')
             section = 'core'
         is_a = f'{section} field'
+        pattern = row['Value syntax']
         slot = {
             'is_a': is_a,
             'aliases': [s_name],
             'description': row['Definition'],
-            'pattern': row['Value syntax'],
+            'pattern': pattern,
             'examples': [
                 {'value': row['Example']}
             ],
             'comments': comments
         }
+        s_id = safe(s_id)
+        if '|' in pattern:
+            vals = pattern.replace('[', '').replace(']','').split('|')
+            vals = [v.strip() for v in vals]
+            enum_name = f'{s_id}_enum'
+            slot['range'] = enum_name
+            enums[enum_name] = {
+                'permissible_values': {v: {} for v in vals}
+            }
         if slot_uri is not None:
             slot['slot_uri'] = slot_uri
         if 'Expected value' in row:
@@ -110,7 +120,7 @@ class MIxS6Converter:
             row['in_subset'] = [row['Section']]
         if 'migs_eu' in row:
             None ## TODO
-        s_id = safe(s_id)
+
         return (s_id, slot)
 
     def convert(self) -> Dict[str, Any]:
@@ -132,6 +142,7 @@ class MIxS6Converter:
         }
         classes = {}
         subsets = {}
+        enums = {}
         obj = {
             'id': f'http://w3id.org/mixs6',
             'description': 'MIxS 6 linkml rendering',
@@ -146,7 +157,8 @@ class MIxS6Converter:
             'default_prefix': 'mixs.vocab',
             'slots': slots,
             'classes': classes,
-            'subsets': subsets
+            'subsets': subsets,
+            'enums': enums
         }
 
         cls_slot_req = {}
@@ -154,7 +166,7 @@ class MIxS6Converter:
 
         core_slots = []
         for _, row in core_df.iterrows():
-            s_id, slot = self.create_slot(row)
+            s_id, slot = self.create_slot(row, enums=enums)
             if s_id is None:
                 continue
             slots[s_id] = slot
@@ -179,7 +191,7 @@ class MIxS6Converter:
                 }
             c = classes[cn]
 
-            s_id, slot = self.create_slot(row)
+            s_id, slot = self.create_slot(row, enums=enums)
 
             if s_id is not None:
                 # TODO: this makes the documentation odd

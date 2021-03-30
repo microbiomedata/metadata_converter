@@ -112,6 +112,8 @@ mappings/nomatches-biosample-gold-%.tsv: target/gold/biosample.ttl $(SRC_TTL)
 	rdfmatch $(INC_PRIOR_MAPPINGS) -p gold.vocab --match_prefix $*  -w mappings/weights.pro -i mappings/prefixes.ttl -i $< -i target/$*/$*.ttl nomatch > $@.tmp && mv $@.tmp $@
 mappings/nomatches-kbase-%.tsv: $(SRC_TTL)
 	rdfmatch $(INC_PRIOR_MAPPINGS) -p kbase  -w mappings/weights.pro -i mappings/prefixes.ttl -i target/kbase/kbase.ttl -i target/$*/$*.ttl nomatch > $@.tmp && mv $@.tmp $@
+mappings/nomatches-mixs-%.tsv: $(SRC_TTL)
+	rdfmatch $(INC_PRIOR_MAPPINGS) -p mixs  -w mappings/weights.pro -i mappings/prefixes.ttl -i target/mixs6/mixs.ttl -i target/$*/$*.ttl nomatch > $@.tmp && mv $@.tmp $@
 
 mappings/%-summary.tsv: mappings/%.tsv
 	grep -v ^# $<  | mlr --tsv count-distinct -f subject_source,object_source then sort -nr count > $@.tmp && mv $@.tmp $@

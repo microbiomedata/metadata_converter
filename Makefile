@@ -123,3 +123,8 @@ ontologies/%.ttl:
 	robot convert -I $(OBO)/$*.owl -o $@
 ontologies/datacite.ttl:
 	robot merge -I http://purl.org/spar/datacite.ttl  -o  $@
+
+mixs-demo:
+	cp tests/mixs6/mixs.yaml ../mixs-demo/src/schema
+mixs-demo2:
+	cp tests/mixs6/mixs.yaml ../mixs-demo-combinatorial/src/schema

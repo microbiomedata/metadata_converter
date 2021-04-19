@@ -9,12 +9,44 @@ Note: should also work for mixs5 xlsx files too, once exported to tsv
 """
 import yaml
 from dataclasses import dataclass, field
-from typing import Optional, Set, List, Union, Dict, Any
+from typing import Optional, Set, List, Union, Dict, Any, Tuple
 import pandas as pd
 import logging
 import re
 
 CORE_PACKAGE_NAME = 'core'
+
+# TODO: find source of metadata for each checklist
+CHECKLISTS = ['migs_eu',
+              'migs_ba',
+              'migs_pl',
+              'migs_vi',
+              'migs_org',
+              'me',
+              'mimarks_s',
+              'mimarks_c',
+              'misag',
+              'mimag',
+              'miuvig']
+
+datatype_schema = {
+    'classes':
+        {'quantity value':
+             {'description': 'used to record a measurement',
+              'attributes': {
+                  'has unit': {
+                      'description': 'Example "m"'
+                  },
+                  'has numeric value': {
+                      'range': 'double'
+                  },
+                  'has raw value': {
+                      'string_serialization': '{has numeric value} {has unit}'
+                  }
+              }
+            }
+        }
+}
 
 def safe(s: str) -> str:
     """
@@ -29,10 +61,19 @@ def safe(s: str) -> str:
         s = s.replace("/", "_")
     return s
 
+def parse_value_syntax(s: str) -> Tuple[str,str]:
+    pattern = s
+    range = 'string'
+    if s == '{float} {unit}':
+        return None, 'quantity value'
+    elif s == '{float}':
+        return None, 'double'
+    return pattern, range
+
 @dataclass
 class MIxS6Converter:
     """
-    converts TSV from MIxS spreadsheet
+    converts TSV from MIxS spreadsheet into LinkML yaml
     """
 
     core_filename: Optional[str] = None
@@ -91,19 +132,27 @@ class MIxS6Converter:
             logging.warning(f'No section: {s_id}')
             section = 'core'
         is_a = f'{section} field'
-        pattern = row['Value syntax']
+        pattern, range = parse_value_syntax(row['Value syntax'])
         slot = {
             'is_a': is_a,
             'aliases': [s_name],
             'description': row['Definition'],
-            'pattern': pattern,
+            'range': range,
             'examples': [
                 {'value': row['Example']}
             ],
             'comments': comments
         }
+        if pattern is not None:
+            slot['pattern'] = pattern
+        LINK = 'Link to GH issue'
+        if LINK in row:
+            url = row[LINK]
+            if url is not None and url.startswith("http"):
+                slot['see_also'] = url
+
         s_id = safe(s_id)
-        if '|' in pattern:
+        if pattern is not None and '|' in pattern:
             vals = pattern.replace('[', '').replace(']','').split('|')
             vals = [v.strip() for v in vals]
             # remove entries like '[{PMID}|{DOI}|...]'
@@ -121,12 +170,15 @@ class MIxS6Converter:
 
         if 'Section' in row:
             row['in_subset'] = [row['Section']]
-        if 'migs_eu' in row:
-            None ## TODO
 
         return (s_id, slot)
 
     def convert(self) -> Dict[str, Any]:
+        """
+        Converts set of inputs to a schema
+
+        :return: link schema as a python Dictionary
+        """
         core_df = pd.read_csv(self.core_filename, sep="\t").fillna("")
         pkg_df  = pd.read_csv(self.packages_filename, sep="\t").fillna("")
         slots = {
@@ -164,32 +216,65 @@ class MIxS6Converter:
             'enums': enums
         }
 
+        # TODO: make configurable whether this is in main schema or import
+        for cid,c in datatype_schema['classes'].items():
+            classes[cid] = c
+
         cls_slot_req = {}
         slot_cls_req = {}
 
         core_slots = []
+        core_env_slots = []
+
+        core_slot_dict = {}
         for _, row in core_df.iterrows():
             s_id, slot = self.create_slot(row, enums=enums)
             if s_id is None:
                 continue
             slots[s_id] = slot
+            core_slot_dict[s_id] = row
             core_slots.append(s_id)
+            if row['Section'] == 'environment':
+                core_env_slots.append(s_id)
+
+        for checklist in CHECKLISTS:
+            checklist_slot_usage = {}
+            for s_id, s_row in core_slot_dict.items():
+                cardinality = s_row[checklist]
+                if cardinality != '-' and cardinality != 'E':
+                    usage = {}
+                    checklist_slot_usage[s_id] = usage
+                    if cardinality == 'M':
+                        usage['required'] = 'True'
+                    elif cardinality == 'X':
+                        usage['required'] = 'False'
+                    elif cardinality == 'C':
+                        usage['comments'] = ['conditional mandatory']
+            classes[checklist] = {
+                'mixin': True,
+                'description': f'{checklist} Checklist',
+                'todos': ['add details here'],
+                'slots': list(checklist_slot_usage.keys()),
+                'slot_usage': checklist_slot_usage
+            }
         classes[CORE_PACKAGE_NAME] = {
-            'description': 'core package',
+            'description': 'Core package. Do not use this directly, this is used to build other packages',
             'slots': core_slots
         }
+        env_packages = []
         for _, row in pkg_df.iterrows():
             p = row['Environmental package']
             req = row['Requirement']
             is_required = req == 'M'
             cn = safe(p.lower())
             if cn not in classes:
+                env_packages.append(cn)
                 cls_slot_req[cn] = {}
                 classes[cn] = {
                     #'is_a': CORE_PACKAGE_NAME,
                     'description': p,
                     'mappings': [],
-                    'slots': [],
+                    'slots': list(core_env_slots),
                     'slot_usage': {}
                 }
             c = classes[cn]
@@ -211,7 +296,6 @@ class MIxS6Converter:
                 if s_id not in core_slots:
                     c['slots'].append(s_id)
 
-
         n_cls = len(cls_slot_req.keys())
         inf_core_slots = []
         for s_id, s in slot_cls_req.items():
@@ -224,4 +308,14 @@ class MIxS6Converter:
             else:
                 cmt = f"This field is used in: {len(s.keys())} packages: {packages_str}"
             slots[s_id]['comments'].append(cmt)
+
+
+        for p in env_packages:
+            for checklist in CHECKLISTS:
+                combo = f'{p} {checklist}'
+                classes[combo] = {
+                    'is_a': p,
+                    'mixins': [checklist],
+                    'description': f'Combinatorial checklist for {p} with {checklist}'
+                }
         return obj

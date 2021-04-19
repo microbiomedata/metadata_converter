@@ -16,18 +16,57 @@ import re
 
 CORE_PACKAGE_NAME = 'core'
 
-# TODO: find source of metadata for each checklist
-CHECKLISTS = ['migs_eu',
-              'migs_ba',
-              'migs_pl',
-              'migs_vi',
-              'migs_org',
-              'me',
-              'mimarks_s',
-              'mimarks_c',
-              'misag',
-              'mimag',
-              'miuvig']
+# technology-specific checklists from the previous MIGS and MIMS standards
+CHECKLISTS = {'migs_eu':
+                  {'name': 'MIGS eukaryote',
+                   'fullname': 'Minimal Information about a Genome Sequence: eukaryote',
+                    'abbrev': 'MIGS.eu'},
+              'migs_ba':
+                  {'name': 'MIGS bacteria',
+                   'fullname': 'Minimal Information about a Genome Sequence: cultured bacteria/archaea',
+                    'abbrev': 'MIGS.ba'
+                   },
+              'migs_pl':
+                  {'name': 'MIGS plant',
+                   'fullname': 'Minimal Information about a Genome Sequence: plant',
+                   'abbrev': 'MIGS.pl'},
+              'migs_vi':
+                  {'name': 'MIGS virus',
+                   'fullname': 'Minimal Information about a Genome Sequence: cultured bacteria/archaea',
+                   'abbrev': 'MIGS.ba'
+                   },
+              'migs_org':
+                  {'name': 'MIGS org',
+                   'fullname': 'Minimal Information about a Genome Sequence: org',
+                   'abbrev': 'MIGS.org'},
+              'me':
+                  {'name': 'ME',
+                   'fullname': 'Metagenome or Environmental',
+                   'abbrev': 'ME'},
+              'mimarks_s':
+                  {'name': 'MIMARKS specimen',
+                   'fullname': 'Minimal Information about a Marker Specimen: specimen',
+                   'abbrev': 'MIMARKS.specimen'},
+              'mimarks_c':  ## TODO check this
+                  {'name': 'MIMARKS survey',
+                   'fullname': 'Minimal Information about a Marker Specimen: survey',
+                   'abbrev': 'MIMARKS.survey'},
+              'misag': {
+                  'name': 'MISAG',
+                  'fullname': 'Minimum Information About a Single Amplified Genome',
+                  'abbrev': 'MISAG'
+              },
+              'mimag': {
+                  'name': 'MIMAG',
+                  'fullname': 'Minimum Information About a Metagenome-Assembled Genome',
+                  'abbrev': 'MIMAG'
+              },
+              'miuvig': {
+                  'name': 'MIUVIG',
+                  'fullname': 'Minimum Information About an Uncultivated Virus Genome',
+                  'abbrev': 'MIUVIG'}
+              }
+
 
 datatype_schema = {
     'classes':
@@ -202,10 +241,10 @@ class MIxS6Converter:
             'id': f'http://w3id.org/mixs6',
             'description': 'MIxS 6 linkml rendering',
             'imports': [
-                'biolinkml:types'
+                'linkml:types'
             ],
             'prefixes': {
-                'biolinkml': 'https://w3id.org/biolink/biolinkml/',
+                'linkml': 'https://w3id.org/linkml/',
                 'mixs.vocab': 'https://w3id.org/mixs/vocab/',
                 'MIXS': 'https://w3id.org/mixs/terms/',
             },
@@ -237,8 +276,9 @@ class MIxS6Converter:
             if row['Section'] == 'environment':
                 core_env_slots.append(s_id)
 
-        for checklist in CHECKLISTS:
+        for checklist, info in CHECKLISTS.items():
             checklist_slot_usage = {}
+            checklist_name = info['name']
             for s_id, s_row in core_slot_dict.items():
                 cardinality = s_row[checklist]
                 if cardinality != '-' and cardinality != 'E':
@@ -250,10 +290,13 @@ class MIxS6Converter:
                         usage['required'] = 'False'
                     elif cardinality == 'C':
                         usage['comments'] = ['conditional mandatory']
-            classes[checklist] = {
+            classes[checklist_name] = {
                 'mixin': True,
-                'description': f'{checklist} Checklist',
-                'todos': ['add details here'],
+                'description': info['fullname'],
+                'aliases': [
+                    info['abbrev']
+                ],
+                #'todos': ['add details here'],
                 'slots': list(checklist_slot_usage.keys()),
                 'slot_usage': checklist_slot_usage
             }
@@ -311,11 +354,13 @@ class MIxS6Converter:
 
 
         for p in env_packages:
-            for checklist in CHECKLISTS:
-                combo = f'{p} {checklist}'
+            for checklist, info in CHECKLISTS.items():
+                name = info['name']
+                fullname = info['fullname']
+                combo = f'{p} {name}'
                 classes[combo] = {
                     'is_a': p,
-                    'mixins': [checklist],
-                    'description': f'Combinatorial checklist for {p} with {checklist}'
+                    'mixins': [name],
+                    'description': f'Combinatorial checklist {fullname} with environmental package {p}'
                 }
         return obj
